@@ -1,0 +1,67 @@
+name: Full Pipeline (Stages 1-4)
+
+# Manual / API trigger only. Scheduling is wired up separately.
+on:
+  workflow_dispatch:
+
+# Allow the default GITHUB_TOKEN to commit pipeline state back to the repo.
+permissions:
+  contents: write
+
+# Never let two full-pipeline runs overlap (they both push to main).
+concurrency:
+  group: pipeline
+  cancel-in-progress: false
+
+jobs:
+  pipeline:
+    runs-on: ubuntu-latest
+    # A cold full run can exceed this 6h GitHub-hosted cap; if it is killed,
+    # re-dispatching resumes via the pipeline's own freshness checks (and
+    # Stage 2 commits its per-company outputs incrementally).
+    timeout-minutes: 360
+
+    # API keys, injected from repository secrets. Inherited by every step and
+    # by the orchestrator's stage subprocesses.
+    env:
+      MOONSHOT_API_KEY: ${{ secrets.MOONSHOT_API_KEY }}
+      ALPACA_API_KEY: ${{ secrets.ALPACA_API_KEY }}
+      ALPACA_SECRET_KEY: ${{ secrets.ALPACA_SECRET_KEY }}
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Run full pipeline (Stages 1-4)
+        run: python "pipeline tools/orchestrator.py"
+
+      - name: Commit & push state
+        if: always()
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          if git diff --cached --quiet; then
+            echo "No state changes to commit."
+            exit 0
+          fi
+          git commit -m "pipeline: full run state update ($(date -u +%Y-%m-%dT%H:%M:%SZ))"
+          for attempt in 1 2 3 4 5; do
+            git pull --rebase --autostash origin main \
+              && git push origin HEAD:main \
+              && { echo "Pushed on attempt $attempt."; exit 0; }
+            echo "Push attempt $attempt failed; retrying..."
+            sleep 5
+          done
+          echo "Could not push state after 5 attempts." >&2
+          exit 1
