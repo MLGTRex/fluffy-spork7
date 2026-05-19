@@ -1,0 +1,47 @@
+{
+    "_comment": "Stage 5 schedule definitions. Hand-edited. main.py reads this and schedule_state.json to decide what is due. To add a job: add an entry here, and add a SUB_STAGE entry in main.py once the sub-stage exists. The 'priority' field controls run order when multiple jobs are due simultaneously (lower = runs first). Keys starting with underscore are ignored by main.py (used for comments or temporarily disabled jobs).",
+    "_disabled_comment": "Renaming an entry to start with underscore disables it without losing the config — main.py skips underscore-prefixed keys. Useful when superseding a sub-stage and wanting easy rollback.",
+    "thesis_decomposition": {
+        "trigger": "on_summary_change",
+        "anchor": null,
+        "priority": 1,
+        "description": "Decompose candidate summaries into structured thesis claims. Runs whenever Stage 4 candidate_summaries.json is newer than the latest decomposition."
+    },
+    "_disabled_hourly_watcher": {
+        "_disabled_reason": "Superseded 2026-05-18 by the price-led `monitor` sub-stage below. State files preserved on disk untouched. To restore: rename this key back to `hourly_watcher` AND uncomment the matching SUB_STAGES entry in main.py.",
+        "trigger": "anchored_interval",
+        "interval_minutes": 60,
+        "anchor": "top_of_hour",
+        "priority": 2,
+        "description": "Monitor held 15 positions for urgent events. Polls Alpaca News + yfinance."
+    },
+    "monitor": {
+        "trigger": "times_of_day",
+        "times": ["09:00", "10:00", "15:30", "16:30"],
+        "timezone": "America/New_York",
+        "priority": 2,
+        "description": "Price-led monitor (Stage 5 redesign). Runs 4x daily ET: 09:00 pre-open, 10:00 just-after-open, 15:30 just-before-close, 16:30 post-close. At post-close the universe expands from 15 held to all 50 candidates. Triggers pipeline rerun for tickers where price/volume signals cross thresholds AND LLM investigation concludes the thesis needs re-evaluation."
+    },
+    "twice_daily_watcher": {
+        "trigger": "times_of_day",
+        "times": ["09:30", "15:30"],
+        "timezone": "America/New_York",
+        "priority": 3,
+        "description": "Monitor unselected 35 candidates from the top 50."
+    },
+    "daily_run": {
+        "trigger": "time_of_day",
+        "time": "06:00",
+        "timezone": "America/New_York",
+        "priority": 4,
+        "description": "Refresh Stage 1 scores, drain Tier 2 queue, run thesis integrity check."
+    },
+    "weekly_run": {
+        "trigger": "day_of_week_time",
+        "day": "saturday",
+        "time": "00:00",
+        "timezone": "UTC",
+        "priority": 5,
+        "description": "Full pipeline rerun via orchestrator.py (Stages 1-4, including Stage 4's portfolio execution)."
+    }
+}

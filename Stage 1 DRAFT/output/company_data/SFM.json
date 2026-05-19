@@ -1,0 +1,195 @@
+{
+    "ticker": "SFM",
+    "company_name": "Sprouts Farmers Market",
+    "universe_added_date": "2026-05-18",
+    "financial_raw_metrics": {
+        "sector": "Consumer Defensive",
+        "industry": "Grocery Stores",
+        "market_cap_usd": 8041728512,
+        "profitability": {
+            "gross_margin_ttm": 0.38972,
+            "operating_margin_ttm": 0.09244,
+            "net_margin_ttm": 0.057010002,
+            "operating_margin_trend_3yr": 0.020872698368526066
+        },
+        "returns_on_capital": {
+            "roe_ttm": 0.37276,
+            "roa_ttm": 0.10539,
+            "roic_ttm": null
+        },
+        "cash_flow": {
+            "fcf_margin_ttm": 0.04942191016478768,
+            "fcf_to_net_income_ttm": 0.8668278961227354,
+            "ocf_cagr_3yr": 0.24466070979514432
+        },
+        "balance_sheet": {
+            "debt_to_equity": 1.4369,
+            "net_debt_to_ebitda": 2.152412642055029,
+            "current_ratio": 0.922,
+            "interest_coverage": 390.36348219332956,
+            "total_debt_usd": 2060856960,
+            "total_cash_usd": 252160992
+        },
+        "growth": {
+            "revenue_growth_1yr": 0.041,
+            "revenue_cagr_3yr": 0.11200487762890488,
+            "eps_growth_1yr": -0.055,
+            "eps_cagr_3yr": 0.2609991515612067,
+            "fcf_cagr_3yr": 0.2366483555401695
+        },
+        "valuation": {
+            "pe_trailing": 16.412668,
+            "pe_forward": 14.410956,
+            "ps_ratio": 0.9036765,
+            "pb_ratio": 5.8460383,
+            "ev_ebitda": 11.722,
+            "peg_ratio": 1.1385,
+            "fcf_yield": 0.054689826365528514
+        },
+        "data_quality_flags": [
+            "SFM: eps_cagr_3yr approximated by net income CAGR (share count changes not adjusted)"
+        ]
+    },
+    "financial_raw_metrics_date": "2026-05-18",
+    "financial_score": 61.01012294902688,
+    "financial_score_date": "2026-05-18",
+    "financial_subscores": {
+        "profitability": 51.51656985010069,
+        "returns_on_capital": 56.68709465510236,
+        "cash_flow_quality": 59.837668101395536,
+        "balance_sheet": 62.864073863559774,
+        "growth": 70.86183917082926,
+        "valuation": 68.89901918412393
+    },
+    "financial_drivers": {
+        "strongest": [
+            "interest_coverage (balance_sheet): score=100, value=390.36",
+            "ocf_cagr_3yr (cash_flow_quality): score=93, value=24.5%",
+            "eps_cagr_3yr (growth): score=90, value=26.1%"
+        ],
+        "weakest": [
+            "eps_growth_1yr (growth): score=24, value=-5.5%",
+            "current_ratio (balance_sheet): score=25, value=92.2%",
+            "fcf_margin_ttm (cash_flow_quality): score=35, value=4.9%"
+        ]
+    },
+    "professional_raw_metrics": {
+        "sector": "Consumer Defensive",
+        "industry": "Grocery Stores",
+        "market_cap_usd": 8041728512,
+        "current_price": 85.51,
+        "analyst": {
+            "recommendation_mean": 2.25,
+            "recommendation_key": "buy",
+            "target_mean_price": 92.42857,
+            "target_median_price": 92.5,
+            "target_high_price": 140.0,
+            "target_low_price": 70.0,
+            "upside_to_target": 0.08090948427084538,
+            "target_dispersion": 0.7573415882123894,
+            "num_analysts": 14
+        },
+        "rating_momentum": {
+            "upgrades_12m": 3,
+            "downgrades_12m": 0,
+            "total_actions_12m": 37
+        },
+        "institutional": {
+            "held_pct_institutions": 0.010626199999999999,
+            "held_pct_insiders": 0.0058999998
+        },
+        "short_interest": {
+            "short_pct_of_float": 0.13939999,
+            "short_ratio": 5.17,
+            "short_change_pct": -0.014328097003474783
+        },
+        "data_quality_flags": []
+    },
+    "professional_raw_metrics_date": "2026-05-18",
+    "professional_score": 47.74333390881303,
+    "professional_score_date": "2026-05-18",
+    "professional_subscores": {
+        "analyst_consensus": 58.09094842708454,
+        "rating_momentum": 57.608108108108105,
+        "institutional_positioning": 28.42739723243937,
+        "short_interest": 39.350837494643784
+    },
+    "professional_drivers": {
+        "strongest": [
+            "recommendation_mean (analyst_consensus): score=65, value=2.25",
+            "total_actions_12m (rating_momentum): score=58, value=37.00",
+            "downgrades_12m (rating_momentum): score=58, value=0.00"
+        ],
+        "weakest": [
+            "held_pct_institutions (institutional_positioning): score=17, value=1.1%",
+            "short_pct_of_float (short_interest): score=28, value=13.9%",
+            "upside_to_target (analyst_consensus): score=48, value=8.1%"
+        ]
+    },
+    "news_sentiment_raw_metrics": {
+        "sector": "Consumer Defensive",
+        "industry": "Grocery Stores",
+        "market_cap_usd": 8041728512,
+        "current_price": 85.51,
+        "earnings": {
+            "beat_count_4q": null,
+            "miss_count_4q": null,
+            "total_quarters_4q": null,
+            "avg_surprise_magnitude_4q": null,
+            "eps_estimate_revision_90d": null,
+            "trailing_eps": 5.21,
+            "forward_eps": 5.93368
+        },
+        "price_momentum": {
+            "return_1m": 0.14119844724054287,
+            "return_3m": 0.26437976449390427,
+            "return_6m": 0.04676211830613817
+        },
+        "insider_activity": {
+            "insider_purchases_count_90d": 2,
+            "insider_sales_count_90d": 41,
+            "insider_net_value_90d_usd": -10396395.0
+        },
+        "data_quality_flags": [
+            "SFM: earnings_dates fetch failed (['Earnings Date'])"
+        ]
+    },
+    "news_sentiment_raw_metrics_date": "2026-05-18",
+    "news_sentiment_score": 55.486704917336475,
+    "news_sentiment_score_date": "2026-05-18",
+    "news_sentiment_subscores": {
+        "earnings_surprise_revisions": null,
+        "price_momentum": 74.42289611757624,
+        "insider_activity": 17.614322516856948
+    },
+    "news_sentiment_drivers": {
+        "strongest": [
+            "return_3m (price_momentum): score=94, value=26.4%",
+            "return_1m (price_momentum): score=74, value=14.1%",
+            "return_6m (price_momentum): score=58, value=4.7%"
+        ],
+        "weakest": [
+            "insider_count_ratio_90d (insider_activity): score=5, value=-90.7%",
+            "net_insider_value_pct_mcap_90d (insider_activity): score=23, value=-0.1%",
+            "return_6m (price_momentum): score=58, value=4.7%"
+        ]
+    },
+    "composite_score": 55.925402630624646,
+    "composite_score_date": "2026-05-18",
+    "composite_rank": 425,
+    "composite_metadata": {
+        "scores_used": [
+            "financial",
+            "professional",
+            "news_sentiment"
+        ],
+        "scores_imputed": [],
+        "imputed_values": {},
+        "imputation_r_squared": null,
+        "weights_applied": {
+            "financial": 50,
+            "professional": 30,
+            "news_sentiment": 20
+        }
+    }
+}

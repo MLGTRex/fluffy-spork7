@@ -1,0 +1,195 @@
+{
+    "ticker": "NYT",
+    "company_name": "New York Times Company",
+    "universe_added_date": "2026-05-18",
+    "financial_raw_metrics": {
+        "sector": "Communication Services",
+        "industry": "Publishing",
+        "market_cap_usd": 12055534592,
+        "profitability": {
+            "gross_margin_ttm": 0.50663,
+            "operating_margin_ttm": 0.1313,
+            "net_margin_ttm": 0.13303,
+            "operating_margin_trend_3yr": 0.04875633201146594
+        },
+        "returns_on_capital": {
+            "roe_ttm": 0.19677,
+            "roa_ttm": 0.10448,
+            "roic_ttm": null
+        },
+        "cash_flow": {
+            "fcf_margin_ttm": 0.13804323235022323,
+            "fcf_to_net_income_ttm": 1.03767242750136,
+            "ocf_cagr_3yr": 0.5712074095695625
+        },
+        "balance_sheet": {
+            "debt_to_equity": 0.02387,
+            "net_debt_to_ebitda": -1.0922949026985713,
+            "current_ratio": 1.604,
+            "interest_coverage": 387.68037703513284,
+            "total_debt_usd": 0,
+            "total_cash_usd": 594523008
+        },
+        "growth": {
+            "revenue_growth_1yr": 0.121,
+            "revenue_cagr_3yr": 0.06963732141273948,
+            "eps_growth_1yr": 0.8,
+            "eps_cagr_3yr": 0.25528053741918466,
+            "fcf_cagr_3yr": 0.6916110024087103
+        },
+        "valuation": {
+            "pe_trailing": 31.965668,
+            "pe_forward": 23.341743,
+            "ps_ratio": 4.1944785,
+            "pb_ratio": 5.9929194,
+            "ev_ebitda": 21.057,
+            "peg_ratio": 3.79,
+            "fcf_yield": 0.03291070379104429
+        },
+        "data_quality_flags": [
+            "NYT: eps_cagr_3yr approximated by net income CAGR (share count changes not adjusted)"
+        ]
+    },
+    "financial_raw_metrics_date": "2026-05-18",
+    "financial_score": 67.67078766711657,
+    "financial_score_date": "2026-05-18",
+    "financial_subscores": {
+        "profitability": 58.77222267811461,
+        "returns_on_capital": 60.28019988902484,
+        "cash_flow_quality": 81.15756566128907,
+        "balance_sheet": 93.21032500000001,
+        "growth": 80.08550879940323,
+        "valuation": 37.94862156389889
+    },
+    "financial_drivers": {
+        "strongest": [
+            "fcf_cagr_3yr (growth): score=100, value=69.2%",
+            "eps_growth_1yr (growth): score=100, value=80.0%",
+            "interest_coverage (balance_sheet): score=100, value=387.68"
+        ],
+        "weakest": [
+            "peg_ratio (valuation): score=3, value=3.79",
+            "pe_trailing (valuation): score=33, value=31.97",
+            "ev_ebitda (valuation): score=43, value=21.06"
+        ]
+    },
+    "professional_raw_metrics": {
+        "sector": "Communication Services",
+        "industry": "Publishing",
+        "market_cap_usd": 12055534592,
+        "current_price": 74.48,
+        "analyst": {
+            "recommendation_mean": 1.9,
+            "recommendation_key": "buy",
+            "target_mean_price": 84.0,
+            "target_median_price": 88.0,
+            "target_high_price": 95.0,
+            "target_low_price": 66.0,
+            "upside_to_target": 0.1278195488721804,
+            "target_dispersion": 0.34523809523809523,
+            "num_analysts": 9
+        },
+        "rating_momentum": {
+            "upgrades_12m": 0,
+            "downgrades_12m": 0,
+            "total_actions_12m": 20
+        },
+        "institutional": {
+            "held_pct_institutions": 0.94542,
+            "held_pct_insiders": 0.10908
+        },
+        "short_interest": {
+            "short_pct_of_float": 0.0652,
+            "short_ratio": 5.24,
+            "short_change_pct": 0.059398589334364954
+        },
+        "data_quality_flags": []
+    },
+    "professional_raw_metrics_date": "2026-05-18",
+    "professional_score": 65.25012246163644,
+    "professional_score_date": "2026-05-18",
+    "professional_subscores": {
+        "analyst_consensus": 70.58195488721805,
+        "rating_momentum": 52.5,
+        "institutional_positioning": 79.78413302021698,
+        "short_interest": 49.83603330703919
+    },
+    "professional_drivers": {
+        "strongest": [
+            "held_pct_insiders (institutional_positioning): score=91, value=10.9%",
+            "recommendation_mean (analyst_consensus): score=78, value=1.90",
+            "held_pct_institutions (institutional_positioning): score=75, value=94.5%"
+        ],
+        "weakest": [
+            "short_change_pct (short_interest): score=43, value=5.9%",
+            "short_ratio (short_interest): score=49, value=5.24",
+            "upgrades_12m (rating_momentum): score=52, value=0.00"
+        ]
+    },
+    "news_sentiment_raw_metrics": {
+        "sector": "Communication Services",
+        "industry": "Publishing",
+        "market_cap_usd": 12055534592,
+        "current_price": 74.48,
+        "earnings": {
+            "beat_count_4q": null,
+            "miss_count_4q": null,
+            "total_quarters_4q": null,
+            "avg_surprise_magnitude_4q": null,
+            "eps_estimate_revision_90d": null,
+            "trailing_eps": 2.33,
+            "forward_eps": 3.19085
+        },
+        "price_momentum": {
+            "return_1m": -0.08162760294297074,
+            "return_3m": 0.03298961798216497,
+            "return_6m": 0.16106982278247364
+        },
+        "insider_activity": {
+            "insider_purchases_count_90d": 0,
+            "insider_sales_count_90d": 7,
+            "insider_net_value_90d_usd": -8343270.0
+        },
+        "data_quality_flags": [
+            "NYT: earnings_dates fetch failed (['Earnings Date'])"
+        ]
+    },
+    "news_sentiment_raw_metrics_date": "2026-05-18",
+    "news_sentiment_score": 47.13708181429596,
+    "news_sentiment_score_date": "2026-05-18",
+    "news_sentiment_subscores": {
+        "earnings_surprise_revisions": null,
+        "price_momentum": 59.26123244516742,
+        "insider_activity": 22.888780552553037
+    },
+    "news_sentiment_drivers": {
+        "strongest": [
+            "return_6m (price_momentum): score=77, value=16.1%",
+            "return_3m (price_momentum): score=55, value=3.3%",
+            "return_1m (price_momentum): score=36, value=-8.2%"
+        ],
+        "weakest": [
+            "insider_count_ratio_90d (insider_activity): score=0, value=-1.00",
+            "net_insider_value_pct_mcap_90d (insider_activity): score=33, value=-0.1%",
+            "return_1m (price_momentum): score=36, value=-8.2%"
+        ]
+    },
+    "composite_score": 62.83784693490841,
+    "composite_score_date": "2026-05-18",
+    "composite_rank": 115,
+    "composite_metadata": {
+        "scores_used": [
+            "financial",
+            "professional",
+            "news_sentiment"
+        ],
+        "scores_imputed": [],
+        "imputed_values": {},
+        "imputation_r_squared": null,
+        "weights_applied": {
+            "financial": 50,
+            "professional": 30,
+            "news_sentiment": 20
+        }
+    }
+}

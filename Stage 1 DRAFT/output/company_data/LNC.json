@@ -1,0 +1,195 @@
+{
+    "ticker": "LNC",
+    "company_name": "Lincoln Financial",
+    "universe_added_date": "2026-05-18",
+    "financial_raw_metrics": {
+        "sector": "Financial Services",
+        "industry": "Insurance - Life",
+        "market_cap_usd": 6571997696,
+        "profitability": {
+            "gross_margin_ttm": 0.27021,
+            "operating_margin_ttm": -0.04072,
+            "net_margin_ttm": 0.09172,
+            "operating_margin_trend_3yr": null
+        },
+        "returns_on_capital": {
+            "roe_ttm": 0.18767,
+            "roa_ttm": 0.00283,
+            "roic_ttm": null
+        },
+        "cash_flow": {
+            "fcf_margin_ttm": 0.1524761005036144,
+            "fcf_to_net_income_ttm": 1.7549663765281174,
+            "ocf_cagr_3yr": null
+        },
+        "balance_sheet": {
+            "debt_to_equity": 0.65727,
+            "net_debt_to_ebitda": null,
+            "current_ratio": 2.193,
+            "interest_coverage": 6.894273127753304,
+            "total_debt_usd": 6712000000,
+            "total_cash_usd": 42687000576
+        },
+        "growth": {
+            "revenue_growth_1yr": 0.125,
+            "revenue_cagr_3yr": -0.010445603601623943,
+            "eps_growth_1yr": null,
+            "eps_cagr_3yr": -0.04656249639121357,
+            "fcf_cagr_3yr": null
+        },
+        "valuation": {
+            "pe_trailing": 3.7603936,
+            "pe_forward": 4.112095,
+            "ps_ratio": 0.3490174,
+            "pb_ratio": 0.71786624,
+            "ev_ebitda": null,
+            "peg_ratio": 1.01,
+            "fcf_yield": 0.43687248912876064
+        },
+        "data_quality_flags": [
+            "LNC: eps_cagr_3yr approximated by net income CAGR (share count changes not adjusted)"
+        ]
+    },
+    "financial_raw_metrics_date": "2026-05-18",
+    "financial_score": 56.40160198275519,
+    "financial_score_date": "2026-05-18",
+    "financial_subscores": {
+        "profitability": 29.5716649784995,
+        "returns_on_capital": 41.54835987748888,
+        "cash_flow_quality": 73.08196408527913,
+        "balance_sheet": 84.51029974302496,
+        "growth": 28.691716248746037,
+        "valuation": 94.89999999999999
+    },
+    "financial_drivers": {
+        "strongest": [
+            "fcf_yield (valuation): score=100, value=43.7%",
+            "pe_forward (valuation): score=100, value=4.11",
+            "pe_trailing (valuation): score=100, value=3.76"
+        ],
+        "weakest": [
+            "eps_cagr_3yr (growth): score=15, value=-4.7%",
+            "revenue_cagr_3yr (growth): score=18, value=-1.0%",
+            "operating_margin_ttm (profitability): score=24, value=-4.1%"
+        ]
+    },
+    "professional_raw_metrics": {
+        "sector": "Financial Services",
+        "industry": "Insurance - Life",
+        "market_cap_usd": 6571997696,
+        "current_price": 34.37,
+        "analyst": {
+            "recommendation_mean": 2.61538,
+            "recommendation_key": "hold",
+            "target_mean_price": 42.83333,
+            "target_median_price": 42.5,
+            "target_high_price": 56.0,
+            "target_low_price": 33.0,
+            "upside_to_target": 0.24624178062263602,
+            "target_dispersion": 0.5369650223319083,
+            "num_analysts": 12
+        },
+        "rating_momentum": {
+            "upgrades_12m": 2,
+            "downgrades_12m": 0,
+            "total_actions_12m": 35
+        },
+        "institutional": {
+            "held_pct_institutions": 0.84693,
+            "held_pct_insiders": 0.0037099998
+        },
+        "short_interest": {
+            "short_pct_of_float": 0.0001,
+            "short_ratio": 0.01,
+            "short_change_pct": -0.7276849493757376
+        },
+        "data_quality_flags": []
+    },
+    "professional_raw_metrics_date": "2026-05-18",
+    "professional_score": 63.447327733094404,
+    "professional_score_date": "2026-05-18",
+    "professional_subscores": {
+        "analyst_consensus": 62.64699870817574,
+        "rating_momentum": 56.1,
+        "institutional_positioning": 57.71242653468232,
+        "short_interest": 87.11847701041546
+    },
+    "professional_drivers": {
+        "strongest": [
+            "short_change_pct (short_interest): score=100, value=-72.8%",
+            "short_ratio (short_interest): score=100, value=1.0%",
+            "upside_to_target (analyst_consensus): score=81, value=24.6%"
+        ],
+        "weakest": [
+            "recommendation_mean (analyst_consensus): score=50, value=2.62",
+            "held_pct_insiders (institutional_positioning): score=54, value=0.4%",
+            "upgrades_12m (rating_momentum): score=56, value=2.00"
+        ]
+    },
+    "news_sentiment_raw_metrics": {
+        "sector": "Financial Services",
+        "industry": "Insurance - Life",
+        "market_cap_usd": 6571997696,
+        "current_price": 34.37,
+        "earnings": {
+            "beat_count_4q": null,
+            "miss_count_4q": null,
+            "total_quarters_4q": null,
+            "avg_surprise_magnitude_4q": null,
+            "eps_estimate_revision_90d": null,
+            "trailing_eps": 9.14,
+            "forward_eps": 8.35827
+        },
+        "price_momentum": {
+            "return_1m": -0.04554286026035503,
+            "return_3m": -0.1438631403276869,
+            "return_6m": -0.14360534035642622
+        },
+        "insider_activity": {
+            "insider_purchases_count_90d": 1,
+            "insider_sales_count_90d": 3,
+            "insider_net_value_90d_usd": -724257.0
+        },
+        "data_quality_flags": [
+            "LNC: earnings_dates fetch failed (['Earnings Date'])"
+        ]
+    },
+    "news_sentiment_raw_metrics_date": "2026-05-18",
+    "news_sentiment_score": 33.61492967896303,
+    "news_sentiment_score_date": "2026-05-18",
+    "news_sentiment_subscores": {
+        "earnings_surprise_revisions": null,
+        "price_momentum": 30.136674946275058,
+        "insider_activity": 40.57143914433898
+    },
+    "news_sentiment_drivers": {
+        "strongest": [
+            "net_insider_value_pct_mcap_90d (insider_activity): score=47, value=-0.0%",
+            "return_1m (price_momentum): score=42, value=-4.6%",
+            "return_6m (price_momentum): score=26, value=-14.4%"
+        ],
+        "weakest": [
+            "insider_count_ratio_90d (insider_activity): score=25, value=-50.0%",
+            "return_3m (price_momentum): score=26, value=-14.4%",
+            "return_6m (price_momentum): score=26, value=-14.4%"
+        ]
+    },
+    "composite_score": 53.95798524709852,
+    "composite_score_date": "2026-05-18",
+    "composite_rank": 544,
+    "composite_metadata": {
+        "scores_used": [
+            "financial",
+            "professional",
+            "news_sentiment"
+        ],
+        "scores_imputed": [],
+        "imputed_values": {},
+        "imputation_r_squared": null,
+        "weights_applied": {
+            "financial": 50,
+            "professional": 30,
+            "news_sentiment": 20
+        }
+    }
+}

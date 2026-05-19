@@ -1,0 +1,184 @@
+{
+    "track": "A",
+    "method": "Quant MILP with quadratic concentration penalty",
+    "constraints": {
+        "portfolio_size": 15,
+        "min_position_weight": 0.03,
+        "max_position_weight": 0.2,
+        "sector_cap": 0.35,
+        "base_return_filter": "base_return_12m > 0",
+        "lambda_concentration_penalty": 2.0
+    },
+    "n_input_candidates": 32,
+    "n_eligible": 18,
+    "n_filtered_out": 14,
+    "filtered_out": [
+        {
+            "ticker": "ALL",
+            "reason": "base_return_12m=-0.1020 <= 0"
+        },
+        {
+            "ticker": "AU",
+            "reason": "base_return_12m=-0.2062 <= 0"
+        },
+        {
+            "ticker": "APP",
+            "reason": "base_return_12m=-0.0803 <= 0"
+        },
+        {
+            "ticker": "ALAB",
+            "reason": "base_return_12m=-0.2525 <= 0"
+        },
+        {
+            "ticker": "EL",
+            "reason": "base_return_12m=-0.0255 <= 0"
+        },
+        {
+            "ticker": "FICO",
+            "reason": "base_return_12m=-0.1300 <= 0"
+        },
+        {
+            "ticker": "GRMN",
+            "reason": "base_return_12m=-0.1006 <= 0"
+        },
+        {
+            "ticker": "KTOS",
+            "reason": "base_return_12m=-0.1363 <= 0"
+        },
+        {
+            "ticker": "MSFT",
+            "reason": "base_return_12m=-0.1328 <= 0"
+        },
+        {
+            "ticker": "NEM",
+            "reason": "base_return_12m=-0.1050 <= 0"
+        },
+        {
+            "ticker": "QXO",
+            "reason": "base_return_12m=-0.1738 <= 0"
+        },
+        {
+            "ticker": "RDDT",
+            "reason": "base_return_12m=-0.0051 <= 0"
+        },
+        {
+            "ticker": "TXN",
+            "reason": "base_return_12m=-0.1035 <= 0"
+        },
+        {
+            "ticker": "VOD",
+            "reason": "base_return_12m=-0.2000 <= 0"
+        }
+    ],
+    "status": "optimal",
+    "objective_value": 0.159632,
+    "positions": [
+        {
+            "ticker": "BIP",
+            "allocation_pct": 11.6824,
+            "sector": "Utilities",
+            "expected_return_12m": 0.4713,
+            "base_return_12m": 0.3598
+        },
+        {
+            "ticker": "ARDX",
+            "allocation_pct": 11.0642,
+            "sector": "Healthcare",
+            "expected_return_12m": 0.4469,
+            "base_return_12m": 0.2537
+        },
+        {
+            "ticker": "SEK.AX",
+            "allocation_pct": 10.0813,
+            "sector": "Communication Services",
+            "expected_return_12m": 0.4079,
+            "base_return_12m": 0.3373
+        },
+        {
+            "ticker": "DVN",
+            "allocation_pct": 9.1209,
+            "sector": "Energy",
+            "expected_return_12m": 0.3692,
+            "base_return_12m": 0.4032
+        },
+        {
+            "ticker": "NFLX",
+            "allocation_pct": 8.6985,
+            "sector": "Communication Services",
+            "expected_return_12m": 0.3517,
+            "base_return_12m": 0.3341
+        },
+        {
+            "ticker": "ANG.AX",
+            "allocation_pct": 7.2542,
+            "sector": "Industrials",
+            "expected_return_12m": 0.2943,
+            "base_return_12m": 0.3143
+        },
+        {
+            "ticker": "RMD",
+            "allocation_pct": 7.2137,
+            "sector": "Healthcare",
+            "expected_return_12m": 0.2928,
+            "base_return_12m": 0.3987
+        },
+        {
+            "ticker": "META",
+            "allocation_pct": 6.4324,
+            "sector": "Communication Services",
+            "expected_return_12m": 0.2616,
+            "base_return_12m": 0.2858
+        },
+        {
+            "ticker": "LLY",
+            "allocation_pct": 5.9094,
+            "sector": "Healthcare",
+            "expected_return_12m": 0.2402,
+            "base_return_12m": 0.3443
+        },
+        {
+            "ticker": "MA",
+            "allocation_pct": 5.5857,
+            "sector": "Financial Services",
+            "expected_return_12m": 0.2271,
+            "base_return_12m": 0.3421
+        },
+        {
+            "ticker": "VST",
+            "allocation_pct": 4.3864,
+            "sector": "Utilities",
+            "expected_return_12m": 0.1796,
+            "base_return_12m": 0.2524
+        },
+        {
+            "ticker": "NOW",
+            "allocation_pct": 3.4766,
+            "sector": "Technology",
+            "expected_return_12m": 0.1433,
+            "base_return_12m": 0.0443
+        },
+        {
+            "ticker": "AVGO",
+            "allocation_pct": 3.0945,
+            "sector": "Technology",
+            "expected_return_12m": 0.1281,
+            "base_return_12m": 0.1512
+        },
+        {
+            "ticker": "ANET",
+            "allocation_pct": 3.0,
+            "sector": "Technology",
+            "expected_return_12m": 0.0471,
+            "base_return_12m": 0.1581
+        },
+        {
+            "ticker": "NVDA",
+            "allocation_pct": 3.0,
+            "sector": "Technology",
+            "expected_return_12m": 0.1141,
+            "base_return_12m": 0.0781
+        }
+    ],
+    "error_message": null,
+    "analysis_date": "2026-05-19"
+}

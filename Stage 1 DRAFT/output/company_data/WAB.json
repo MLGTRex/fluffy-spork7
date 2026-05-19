@@ -1,0 +1,195 @@
+{
+    "ticker": "WAB",
+    "company_name": "Wabtec",
+    "universe_added_date": "2026-05-18",
+    "financial_raw_metrics": {
+        "sector": "Industrials",
+        "industry": "Railroads",
+        "market_cap_usd": 44777848832,
+        "profitability": {
+            "gross_margin_ttm": 0.35239,
+            "operating_margin_ttm": 0.18983,
+            "net_margin_ttm": 0.10515001,
+            "operating_margin_trend_3yr": 0.03965828134186074
+        },
+        "returns_on_capital": {
+            "roe_ttm": 0.11305001,
+            "roa_ttm": 0.06041,
+            "roic_ttm": null
+        },
+        "cash_flow": {
+            "fcf_margin_ttm": 0.0976144969812602,
+            "fcf_to_net_income_ttm": 0.9306130807297124,
+            "ocf_cagr_3yr": 0.19221933827693927
+        },
+        "balance_sheet": {
+            "debt_to_equity": 0.6203,
+            "net_debt_to_ebitda": 2.538095314285714,
+            "current_ratio": 1.024,
+            "interest_coverage": 8.075555555555555,
+            "total_debt_usd": 6917000192,
+            "total_cash_usd": 521000000
+        },
+        "growth": {
+            "revenue_growth_1yr": 0.13,
+            "revenue_cagr_3yr": 0.10122345018267498,
+            "eps_growth_1yr": 0.128,
+            "eps_cagr_3yr": 0.22723401467359272,
+            "fcf_cagr_3yr": 0.19023657219546997
+        },
+        "valuation": {
+            "pe_trailing": 37.326733,
+            "pe_forward": 21.75707,
+            "ps_ratio": 3.8913572,
+            "pb_ratio": 4.040667,
+            "ev_ebitda": 20.326,
+            "peg_ratio": 1.37,
+            "fcf_yield": 0.025084948859742492
+        },
+        "data_quality_flags": [
+            "WAB: eps_cagr_3yr approximated by net income CAGR (share count changes not adjusted)"
+        ]
+    },
+    "financial_raw_metrics_date": "2026-05-18",
+    "financial_score": 59.777254230195055,
+    "financial_score_date": "2026-05-18",
+    "financial_subscores": {
+        "profitability": 61.76849466484938,
+        "returns_on_capital": 46.016335553329185,
+        "cash_flow_quality": 69.49838156279925,
+        "balance_sheet": 64.48365415238095,
+        "growth": 76.42069319018997,
+        "valuation": 44.39919233835878
+    },
+    "financial_drivers": {
+        "strongest": [
+            "fcf_to_net_income_ttm (cash_flow_quality): score=88, value=93.1%",
+            "eps_cagr_3yr (growth): score=87, value=22.7%",
+            "debt_to_equity (balance_sheet): score=86, value=62.0%"
+        ],
+        "weakest": [
+            "pe_trailing (valuation): score=26, value=37.33",
+            "current_ratio (balance_sheet): score=32, value=1.02",
+            "fcf_yield (valuation): score=38, value=2.5%"
+        ]
+    },
+    "professional_raw_metrics": {
+        "sector": "Industrials",
+        "industry": "Railroads",
+        "market_cap_usd": 44777848832,
+        "current_price": 263.9,
+        "analyst": {
+            "recommendation_mean": 1.45455,
+            "recommendation_key": "strong_buy",
+            "target_mean_price": 300.0,
+            "target_median_price": 303.0,
+            "target_high_price": 318.0,
+            "target_low_price": 280.0,
+            "upside_to_target": 0.1367942402425162,
+            "target_dispersion": 0.12666666666666668,
+            "num_analysts": 11
+        },
+        "rating_momentum": {
+            "upgrades_12m": 2,
+            "downgrades_12m": 0,
+            "total_actions_12m": 26
+        },
+        "institutional": {
+            "held_pct_institutions": 0.96055,
+            "held_pct_insiders": 0.0070200004
+        },
+        "short_interest": {
+            "short_pct_of_float": 0.0229,
+            "short_ratio": 2.68,
+            "short_change_pct": 0.3601243498156178
+        },
+        "data_quality_flags": []
+    },
+    "professional_raw_metrics_date": "2026-05-18",
+    "professional_score": 67.33812726471302,
+    "professional_score_date": "2026-05-18",
+    "professional_subscores": {
+        "analyst_consensus": 79.22482402425162,
+        "rating_momentum": 57.34615384615385,
+        "institutional_positioning": 67.84427894087631,
+        "short_interest": 55.41220439644942
+    },
+    "professional_drivers": {
+        "strongest": [
+            "recommendation_mean (analyst_consensus): score=91, value=1.45",
+            "short_ratio (short_interest): score=73, value=2.68",
+            "held_pct_institutions (institutional_positioning): score=72, value=96.1%"
+        ],
+        "weakest": [
+            "short_change_pct (short_interest): score=12, value=36.0%",
+            "held_pct_insiders (institutional_positioning): score=57, value=0.7%",
+            "upgrades_12m (rating_momentum): score=57, value=2.00"
+        ]
+    },
+    "news_sentiment_raw_metrics": {
+        "sector": "Industrials",
+        "industry": "Railroads",
+        "market_cap_usd": 44777848832,
+        "current_price": 263.9,
+        "earnings": {
+            "beat_count_4q": null,
+            "miss_count_4q": null,
+            "total_quarters_4q": null,
+            "avg_surprise_magnitude_4q": null,
+            "eps_estimate_revision_90d": null,
+            "trailing_eps": 7.07,
+            "forward_eps": 12.12939
+        },
+        "price_momentum": {
+            "return_1m": 0.02533217419183783,
+            "return_3m": 0.04109651645518101,
+            "return_6m": 0.29348348704104565
+        },
+        "insider_activity": {
+            "insider_purchases_count_90d": 0,
+            "insider_sales_count_90d": 10,
+            "insider_net_value_90d_usd": -25648768.0
+        },
+        "data_quality_flags": [
+            "WAB: earnings_dates fetch failed (['Earnings Date'])"
+        ]
+    },
+    "news_sentiment_raw_metrics_date": "2026-05-18",
+    "news_sentiment_score": 57.004244460309565,
+    "news_sentiment_score_date": "2026-05-18",
+    "news_sentiment_subscores": {
+        "earnings_surprise_revisions": null,
+        "price_momentum": 73.01836985394851,
+        "insider_activity": 24.975993673031656
+    },
+    "news_sentiment_drivers": {
+        "strongest": [
+            "return_6m (price_momentum): score=99, value=29.3%",
+            "return_3m (price_momentum): score=57, value=4.1%",
+            "return_1m (price_momentum): score=54, value=2.5%"
+        ],
+        "weakest": [
+            "insider_count_ratio_90d (insider_activity): score=0, value=-1.00",
+            "net_insider_value_pct_mcap_90d (insider_activity): score=36, value=-0.1%",
+            "return_1m (price_momentum): score=54, value=2.5%"
+        ]
+    },
+    "composite_score": 61.490914186573356,
+    "composite_score_date": "2026-05-18",
+    "composite_rank": 161,
+    "composite_metadata": {
+        "scores_used": [
+            "financial",
+            "professional",
+            "news_sentiment"
+        ],
+        "scores_imputed": [],
+        "imputed_values": {},
+        "imputation_r_squared": null,
+        "weights_applied": {
+            "financial": 50,
+            "professional": 30,
+            "news_sentiment": 20
+        }
+    }
+}

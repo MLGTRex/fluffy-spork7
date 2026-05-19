@@ -1,0 +1,14 @@
+# === Secrets — never commit ===
+.env
+.env.*
+*.pem
+
+# === macOS / editor noise ===
+.DS_Store
+
+# === Python ===
+__pycache__/
+*.py[cod]
+
+# === Run logs (diagnostic, regenerated every run — not pipeline state) ===
+*.log

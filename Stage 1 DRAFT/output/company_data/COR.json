@@ -1,0 +1,193 @@
+{
+    "ticker": "COR",
+    "company_name": "Cencora",
+    "universe_added_date": "2026-05-18",
+    "financial_raw_metrics": {
+        "sector": "Healthcare",
+        "industry": "Medical Distribution",
+        "market_cap_usd": 50140327936,
+        "profitability": {
+            "gross_margin_ttm": 0.03796,
+            "operating_margin_ttm": 0.01716,
+            "net_margin_ttm": 0.00775,
+            "operating_margin_trend_3yr": 0.0007006767110874328
+        },
+        "returns_on_capital": {
+            "roe_ttm": 1.0713401,
+            "roa_ttm": 0.03486,
+            "roic_ttm": null
+        },
+        "cash_flow": {
+            "fcf_margin_ttm": -0.0009682551375649294,
+            "fcf_to_net_income_ttm": -0.12486717501509174,
+            "ocf_cagr_3yr": 0.12756518254652183
+        },
+        "balance_sheet": {
+            "debt_to_equity": 4.20985,
+            "net_debt_to_ebitda": 2.4367071538262848,
+            "current_ratio": 0.947,
+            "interest_coverage": 6.380154519443577,
+            "total_debt_usd": 15092111360,
+            "total_cash_usd": 2176496128
+        },
+        "growth": {
+            "revenue_growth_1yr": 0.038,
+            "revenue_cagr_3yr": 0.1043399050694318,
+            "eps_growth_1yr": 1.283,
+            "eps_cagr_3yr": -0.029228631503102065,
+            "fcf_cagr_3yr": 0.1327139190078339
+        },
+        "valuation": {
+            "pe_trailing": 19.763037,
+            "pe_forward": 13.031504,
+            "ps_ratio": 0.15255058,
+            "pb_ratio": 14.757487,
+            "ev_ebitda": 11.932,
+            "peg_ratio": 0.6243,
+            "fcf_yield": -0.006347108706712388
+        },
+        "data_quality_flags": [
+            "COR: eps_cagr_3yr approximated by net income CAGR (share count changes not adjusted)"
+        ]
+    },
+    "financial_raw_metrics_date": "2026-05-18",
+    "financial_score": 48.11241376109063,
+    "financial_score_date": "2026-05-18",
+    "financial_subscores": {
+        "profitability": 37.17941314122709,
+        "returns_on_capital": 75.2264258588162,
+        "cash_flow_quality": 15.942020457715234,
+        "balance_sheet": 43.8746774089724,
+        "growth": 55.3271128488247,
+        "valuation": 55.73116235836751
+    },
+    "financial_drivers": {
+        "strongest": [
+            "eps_growth_1yr (growth): score=100, value=1.28",
+            "roe_ttm (returns_on_capital): score=92, value=1.07",
+            "peg_ratio (valuation): score=92, value=62.4%"
+        ],
+        "weakest": [
+            "fcf_to_net_income_ttm (cash_flow_quality): score=0, value=-12.5%",
+            "fcf_yield (valuation): score=9, value=-0.6%",
+            "debt_to_equity (balance_sheet): score=10, value=4.21"
+        ]
+    },
+    "professional_raw_metrics": {
+        "sector": "Healthcare",
+        "industry": "Medical Distribution",
+        "market_cap_usd": 50140327936,
+        "current_price": 257.71,
+        "analyst": {
+            "recommendation_mean": 1.57143,
+            "recommendation_key": "buy",
+            "target_mean_price": 357.0,
+            "target_median_price": 352.5,
+            "target_high_price": 425.0,
+            "target_low_price": 280.0,
+            "upside_to_target": 0.3852780256877887,
+            "target_dispersion": 0.4061624649859944,
+            "num_analysts": 12
+        },
+        "rating_momentum": {
+            "upgrades_12m": 3,
+            "downgrades_12m": 0,
+            "total_actions_12m": 28
+        },
+        "institutional": {
+            "held_pct_institutions": 0.98462,
+            "held_pct_insiders": 0.04227
+        },
+        "short_interest": {
+            "short_pct_of_float": 0.030299999,
+            "short_ratio": 3.82,
+            "short_change_pct": 0.007113900581910628
+        },
+        "data_quality_flags": []
+    },
+    "professional_raw_metrics_date": "2026-05-18",
+    "professional_score": 74.90429401951691,
+    "professional_score_date": "2026-05-18",
+    "professional_subscores": {
+        "analyst_consensus": 90.41982051375578,
+        "rating_momentum": 59.25000000000001,
+        "institutional_positioning": 77.30995208787425,
+        "short_interest": 60.78245878489215
+    },
+    "professional_drivers": {
+        "strongest": [
+            "upside_to_target (analyst_consensus): score=94, value=38.5%",
+            "recommendation_mean (analyst_consensus): score=88, value=1.57",
+            "held_pct_institutions (institutional_positioning): score=78, value=98.5%"
+        ],
+        "weakest": [
+            "short_change_pct (short_interest): score=49, value=0.7%",
+            "upgrades_12m (rating_momentum): score=59, value=3.00",
+            "downgrades_12m (rating_momentum): score=59, value=0.00"
+        ]
+    },
+    "news_sentiment_raw_metrics": {
+        "sector": "Healthcare",
+        "industry": "Medical Distribution",
+        "market_cap_usd": 50140327936,
+        "current_price": 257.71,
+        "earnings": {
+            "beat_count_4q": 3,
+            "miss_count_4q": 1,
+            "total_quarters_4q": 4,
+            "avg_surprise_magnitude_4q": -0.023576180442471478,
+            "eps_estimate_revision_90d": null,
+            "trailing_eps": 13.04,
+            "forward_eps": 19.77592
+        },
+        "price_momentum": {
+            "return_1m": -0.18665039834152472,
+            "return_3m": -0.2629584924578556,
+            "return_6m": -0.29081604464798677
+        },
+        "insider_activity": {
+            "insider_purchases_count_90d": 0,
+            "insider_sales_count_90d": 2,
+            "insider_net_value_90d_usd": -1829492.0
+        },
+        "data_quality_flags": []
+    },
+    "news_sentiment_raw_metrics_date": "2026-05-18",
+    "news_sentiment_score": 33.514266457360506,
+    "news_sentiment_score_date": "2026-05-18",
+    "news_sentiment_subscores": {
+        "earnings_surprise_revisions": 59.10901284138989,
+        "price_momentum": 7.495918365862442,
+        "insider_activity": 34.36146987229788
+    },
+    "news_sentiment_drivers": {
+        "strongest": [
+            "beat_rate_4q (earnings_surprise_revisions): score=75, value=75.0%",
+            "net_insider_value_pct_mcap_90d (insider_activity): score=49, value=-0.0%",
+            "avg_surprise_magnitude_4q (earnings_surprise_revisions): score=41, value=-2.4%"
+        ],
+        "weakest": [
+            "insider_count_ratio_90d (insider_activity): score=0, value=-1.00",
+            "return_6m (price_momentum): score=2, value=-29.1%",
+            "return_3m (price_momentum): score=6, value=-26.3%"
+        ]
+    },
+    "composite_score": 53.23034837787249,
+    "composite_score_date": "2026-05-18",
+    "composite_rank": 581,
+    "composite_metadata": {
+        "scores_used": [
+            "financial",
+            "professional",
+            "news_sentiment"
+        ],
+        "scores_imputed": [],
+        "imputed_values": {},
+        "imputation_r_squared": null,
+        "weights_applied": {
+            "financial": 50,
+            "professional": 30,
+            "news_sentiment": 20
+        }
+    }
+}

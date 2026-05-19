@@ -1,0 +1,127 @@
+{
+    "track": "B",
+    "method": "Pure LLM (Kimi K2.6)",
+    "analysis_date": "2026-05-13",
+    "model": "kimi-k2.6",
+    "n_input_candidates": 32,
+    "constraints": {
+        "portfolio_size": 15,
+        "min_position_weight": 3.0,
+        "max_position_weight": 20.0,
+        "sector_cap": 35.0,
+        "base_return_filter": "base_return_12m > 0"
+    },
+    "constraint_violations": [],
+    "portfolio": {
+        "positions": [
+            {
+                "ticker": "BIP",
+                "allocation_pct": 9.0,
+                "rationale": "Deeply discounted infrastructure compounder with a defensive yield floor and an accelerating Data segment; the market has over-discounted complexity."
+            },
+            {
+                "ticker": "DVN",
+                "allocation_pct": 8.0,
+                "rationale": "Imminent Coterra merger close and pre-committed capital returns create a catalyst-rich re-rating in a discounted E&P name."
+            },
+            {
+                "ticker": "META",
+                "allocation_pct": 8.0,
+                "rationale": "Core advertising momentum and fortress balance sheet are mispriced against AI capex fears; valuation embeds excessive pessimism."
+            },
+            {
+                "ticker": "NFLX",
+                "allocation_pct": 8.0,
+                "rationale": "Transition to utility-like profitability with strong margins, buyback mechanics, and a non-premium valuation after recent selloff."
+            },
+            {
+                "ticker": "SEK.AX",
+                "allocation_pct": 8.0,
+                "rationale": "Dominant ANZ employment marketplace with widening placement share and operational momentum; valuation reset offers convex recovery."
+            },
+            {
+                "ticker": "LLY",
+                "allocation_pct": 7.0,
+                "rationale": "Volume flywheel in metabolic disease continues to overwhelm pricing headwinds, with visible pipeline catalysts and manufacturing scale."
+            },
+            {
+                "ticker": "MA",
+                "allocation_pct": 7.0,
+                "rationale": "Indispensable payment network with durable cross-border recovery and aggressive buybacks; temporary macro fears compress a high-ROIC compounder."
+            },
+            {
+                "ticker": "NOW",
+                "allocation_pct": 7.0,
+                "rationale": "Enterprise workflow incumbent with massive backlog and resilient renewals; AI displacement fears appear overstated at current multiples."
+            },
+            {
+                "ticker": "RMD",
+                "allocation_pct": 7.0,
+                "rationale": "Market leader in CPAP facing an overdone GLP-1 demand-destruction narrative; margins and cash flows are genuinely best-in-class."
+            },
+            {
+                "ticker": "ARDX",
+                "allocation_pct": 6.0,
+                "rationale": "IBSRELA revenue inflection is validated, but XPHOZAH reimbursement and working-capital drag keep sizing modest despite high expected return."
+            },
+            {
+                "ticker": "ANG.AX",
+                "allocation_pct": 6.0,
+                "rationale": "Deeply distressed mining fabricator with a clear turnaround path; August earnings represent a high-beta bifurcation catalyst."
+            },
+            {
+                "ticker": "VST",
+                "allocation_pct": 6.0,
+                "rationale": "Irreplaceable nuclear fleet with contracted tech-PPAs provides earnings visibility, though regulatory overhang limits size."
+            },
+            {
+                "ticker": "AVGO",
+                "allocation_pct": 5.0,
+                "rationale": "Hybrid AI silicon and software utility with best-in-class cash conversion, but customer concentration and VMware regulatory risk warrant restraint."
+            },
+            {
+                "ticker": "NVDA",
+                "allocation_pct": 5.0,
+                "rationale": "AI infrastructure backlog is mechanically secure near-term, yet peak-cycle valuation and custom-silicon threats demand a smaller tactical weight."
+            },
+            {
+                "ticker": "ANET",
+                "allocation_pct": 3.0,
+                "rationale": "Supply-constrained networking leader with a strong moat but negatively skewed risk/reward and extreme valuation; sized at the minimum."
+            }
+        ],
+        "notable_rejections": [
+            {
+                "ticker": "CI",
+                "rationale": "Eligible but structurally challenged by PBM rebate erosion and single-client concentration; negative expected return offers poor asymmetry."
+            },
+            {
+                "ticker": "HALO",
+                "rationale": "Eligible but binary patent/partner cliffs and a flat probability-weighted return offer insufficient compensation for terminal-value risk."
+            },
+            {
+                "ticker": "ICE",
+                "rationale": "Eligible but cyclical transaction-peak risks and Mortgage Technology stagnation produce a low-conviction, modestly negative expected return."
+            },
+            {
+                "ticker": "MSFT",
+                "rationale": "Disqualified by non-positive base return; OpenAI exclusivity loss and a $190B capex cycle create a capital-intensity trap even if demand is durable."
+            },
+            {
+                "ticker": "APP",
+                "rationale": "Disqualified by non-positive base return; regulatory overhang and extreme ad-tech multiples make it a negatively skewed binary outcome."
+            },
+            {
+                "ticker": "NEM",
+                "rationale": "Disqualified by non-positive base return; gold-cycle peak, NGM governance fracture, and cost pressures create a negatively convex mining exposure."
+            }
+        ],
+        "portfolio_thesis": "The portfolio blends durable compounders and event-driven recoveries, emphasizing names with positive base-case returns, strong free cash flow, and idiosyncratic catalysts while strictly capping sector and correlated factor exposure. By underweighting richly priced AI hardware and avoiding structurally impaired financials and healthcare names with negative expected returns, the construction aims to capture a positively skewed probability-weighted outcome with a defensive floor from utilities, payments, and medical devices.",
+        "key_risks": [
+            "Correlated AI capex cycle exposure across AVGO, NVDA, and ANET could simultaneous underperform if hyperscaler demand moderates.",
+            "Cyclical and commodity-linked names (DVN, ANG.AX, SEK.AX) remain vulnerable to macro deceleration or commodity price normalization.",
+            "Healthcare reimbursement and regulatory shifts could impair ARDX and LLY if pricing or policy headwinds intensify beyond base-case assumptions.",
+            "Leverage and refinancing risks in BIP and VST may widen if credit spreads deteriorate or infrastructure regulatory rulings prove adverse."
+        ]
+    }
+}

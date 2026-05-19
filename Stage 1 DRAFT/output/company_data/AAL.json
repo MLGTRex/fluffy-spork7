@@ -1,0 +1,193 @@
+{
+    "ticker": "AAL",
+    "company_name": "American Airlines Group",
+    "universe_added_date": "2026-05-18",
+    "financial_raw_metrics": {
+        "sector": "Industrials",
+        "industry": "Airlines",
+        "market_cap_usd": 8141651456,
+        "profitability": {
+            "gross_margin_ttm": 0.22872,
+            "operating_margin_ttm": -0.00065,
+            "net_margin_ttm": 0.00361,
+            "operating_margin_trend_3yr": -0.006994216075280203
+        },
+        "returns_on_capital": {
+            "roe_ttm": null,
+            "roa_ttm": 0.01846,
+            "roic_ttm": null
+        },
+        "cash_flow": {
+            "fcf_margin_ttm": 0.015378879912892152,
+            "fcf_to_net_income_ttm": 4.26299500990099,
+            "ocf_cagr_3yr": -0.038758466611266806
+        },
+        "balance_sheet": {
+            "debt_to_equity": null,
+            "net_debt_to_ebitda": 6.593353196480939,
+            "current_ratio": 0.492,
+            "interest_coverage": 1.1107226107226107,
+            "total_debt_usd": 34892001280,
+            "total_cash_usd": 7912000000
+        },
+        "growth": {
+            "revenue_growth_1yr": 0.108,
+            "revenue_cagr_3yr": 0.03714312343491266,
+            "eps_growth_1yr": null,
+            "eps_cagr_3yr": -0.04389317293530448,
+            "fcf_cagr_3yr": null
+        },
+        "valuation": {
+            "pe_trailing": 39.70968,
+            "pe_forward": 5.613341,
+            "ps_ratio": 0.14540221,
+            "pb_ratio": -1.9970798,
+            "ev_ebitda": 8.583,
+            "peg_ratio": 0.5083,
+            "fcf_yield": 0.1057678527082356
+        },
+        "data_quality_flags": [
+            "AAL: eps_cagr_3yr approximated by net income CAGR (share count changes not adjusted)"
+        ]
+    },
+    "financial_raw_metrics_date": "2026-05-18",
+    "financial_score": 33.076230385281626,
+    "financial_score_date": "2026-05-18",
+    "financial_subscores": {
+        "profitability": 23.874566113741015,
+        "returns_on_capital": null,
+        "cash_flow_quality": 33.47265447946953,
+        "balance_sheet": 0.6643356643356642,
+        "growth": 38.140618421288096,
+        "valuation": 72.2961986714207
+    },
+    "financial_drivers": {
+        "strongest": [
+            "fcf_yield (valuation): score=100, value=10.6%",
+            "pe_forward (valuation): score=99, value=5.61",
+            "peg_ratio (valuation): score=95, value=50.8%"
+        ],
+        "weakest": [
+            "net_debt_to_ebitda (balance_sheet): score=0, value=6.59",
+            "current_ratio (balance_sheet): score=0, value=49.2%",
+            "interest_coverage (balance_sheet): score=3, value=1.11"
+        ]
+    },
+    "professional_raw_metrics": {
+        "sector": "Industrials",
+        "industry": "Airlines",
+        "market_cap_usd": 8141651456,
+        "current_price": 12.31,
+        "analyst": {
+            "recommendation_mean": 2.19231,
+            "recommendation_key": "buy",
+            "target_mean_price": 14.86042,
+            "target_median_price": 14.5,
+            "target_high_price": 22.0,
+            "target_low_price": 10.0,
+            "upside_to_target": 0.20718277822908196,
+            "target_dispersion": 0.8075141886972239,
+            "num_analysts": 24
+        },
+        "rating_momentum": {
+            "upgrades_12m": 2,
+            "downgrades_12m": 2,
+            "total_actions_12m": 43
+        },
+        "institutional": {
+            "held_pct_institutions": 0.67856,
+            "held_pct_insiders": 0.0155299995
+        },
+        "short_interest": {
+            "short_pct_of_float": 0.1221,
+            "short_ratio": 1.44,
+            "short_change_pct": 0.0774034458962786
+        },
+        "data_quality_flags": []
+    },
+    "professional_raw_metrics_date": "2026-05-18",
+    "professional_score": 58.853752364228285,
+    "professional_score_date": "2026-05-18",
+    "professional_subscores": {
+        "analyst_consensus": 70.19674521527213,
+        "rating_momentum": 52.5,
+        "institutional_positioning": 57.70303385618295,
+        "short_interest": 44.894220498915324
+    },
+    "professional_drivers": {
+        "strongest": [
+            "short_ratio (short_interest): score=86, value=1.44",
+            "upside_to_target (analyst_consensus): score=75, value=20.7%",
+            "recommendation_mean (analyst_consensus): score=67, value=2.19"
+        ],
+        "weakest": [
+            "short_pct_of_float (short_interest): score=22, value=12.2%",
+            "short_change_pct (short_interest): score=40, value=7.7%",
+            "upgrades_12m (rating_momentum): score=52, value=2.00"
+        ]
+    },
+    "news_sentiment_raw_metrics": {
+        "sector": "Industrials",
+        "industry": "Airlines",
+        "market_cap_usd": 8141651456,
+        "current_price": 12.31,
+        "earnings": {
+            "beat_count_4q": 3,
+            "miss_count_4q": 1,
+            "total_quarters_4q": 4,
+            "avg_surprise_magnitude_4q": 0.03677536231884059,
+            "eps_estimate_revision_90d": null,
+            "trailing_eps": 0.31,
+            "forward_eps": 2.19299
+        },
+        "price_momentum": {
+            "return_1m": 0.011503691275956712,
+            "return_3m": -0.12384342826431341,
+            "return_6m": -0.05814840953096439
+        },
+        "insider_activity": {
+            "insider_purchases_count_90d": 0,
+            "insider_sales_count_90d": 0,
+            "insider_net_value_90d_usd": null
+        },
+        "data_quality_flags": []
+    },
+    "news_sentiment_raw_metrics_date": "2026-05-18",
+    "news_sentiment_score": 54.53068815498642,
+    "news_sentiment_score_date": "2026-05-18",
+    "news_sentiment_subscores": {
+        "earnings_surprise_revisions": 71.94816053511708,
+        "price_momentum": 39.37855985234895,
+        "insider_activity": 50.0
+    },
+    "news_sentiment_drivers": {
+        "strongest": [
+            "beat_rate_4q (earnings_surprise_revisions): score=75, value=75.0%",
+            "avg_surprise_magnitude_4q (earnings_surprise_revisions): score=68, value=3.7%",
+            "return_1m (price_momentum): score=52, value=1.2%"
+        ],
+        "weakest": [
+            "return_3m (price_momentum): score=29, value=-12.4%",
+            "return_6m (price_momentum): score=40, value=-5.8%",
+            "insider_activity_summary (insider_activity): score=50, value=no activity in 90d"
+        ]
+    },
+    "composite_score": 45.10037853290658,
+    "composite_score_date": "2026-05-18",
+    "composite_rank": 902,
+    "composite_metadata": {
+        "scores_used": [
+            "financial",
+            "professional",
+            "news_sentiment"
+        ],
+        "scores_imputed": [],
+        "imputed_values": {},
+        "imputation_r_squared": null,
+        "weights_applied": {
+            "financial": 50,
+            "professional": 30,
+            "news_sentiment": 20
+        }
+    }
+}
