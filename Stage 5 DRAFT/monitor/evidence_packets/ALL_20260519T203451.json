@@ -1,0 +1,3869 @@
+{
+  "ticker": "ALL",
+  "evidence_written_at": "2026-05-19T20:34:51.854027+00:00",
+  "call_one_packet": {
+    "ticker": "ALL",
+    "thesis": {
+      "summary": "Allstate Corp sits at a contested cyclical inflection point following one of the most profitable quarters in its recent history. The personal-lines insurer generated trailing-twelve-month earnings of roughly $45 per share and a 45% return on equity in early 2026, yet the consolidated view treats these figures as a hard-market apex rather than a new structural baseline. At approximately $214, the stock carries optically cheap trailing multiples near 4.7x earnings and 1.9x book value, but the forward price-to-earnings ratio already sits near 8x, implying the market expects a severe normalization toward the mid-$20s in earnings per share. The central thesis is therefore one of cyclical gravity: the most probable path over the next year involves underwriting margins gradually decompressing from their peaks, capital returns moderating, and the valuation multiple compressing toward mid-cycle levels as investors accept that the extraordinary profitability of 2025–2026 is not repeatable without further rate hikes.\n\nThe bull case rests on a handful of genuinely durable advantages. Management has assembled a formidable capital-return engine, pairing a fortress balance sheet with a combined $7.6 billion share repurchase authorization and a free-cash-flow yield near 23%. Even if earnings soften, the mechanical reduction in shares outstanding—potentially 8% to 10% over the next year—provides a tangible per-share floor that would be difficult to replicate among peers. Operationally, years of investment in granular pricing, telematics, and claims automation have driven the adjusted expense ratio below 22%, while the fixed-income portfolio yields 4.5% on a 5.5-year duration, anchoring roughly $3.6 billion to $3.8 billion in annual net investment income. Multi-channel distribution flexibility and new product rollouts like Affordable, Simple, Connected auto have also allowed the company to grow policies in force across both exclusive and independent agents even as rate actions turn net-neutral.\n\nAgainst these strengths stand several formidable risks that have tilted the probability distribution modestly bearish. The most immediate concern is pricing power exhaustion: the auto underlying combined ratio already deteriorated sequentially from 88.1% for full-year 2025 to 89.5% in the first quarter of 2026, even as rate changes turned net-neutral across 39 states. If loss severity from motor vehicle repair and bodily injury costs continues to outrun earned pricing, margins could drift into the low-90s, eradicating the earnings windfall that buybacks are currently capitalizing. Catastrophe stochasticity presents an equally material threat; an active hurricane season or elevated convective storm losses could push full-year cat loads above $6 billion, eroding statutory surplus and likely forcing management to throttle repurchases to preserve capital. Competitive dynamics add further pressure, as Progressive’s sub-20% expense ratio and superior data analytics allow it to skim preferred risks, while GEICO’s renewed price aggression under Berkshire’s balance sheet limits Allstate’s ability to defend volume without sacrificing margin. Regulatory dysfunction in California and restrictive environments in Florida further constrain growth and rate adequacy in two of the nation’s largest markets.\n\nConviction is medium because the evidence points clearly toward peak earnings but leaves critical uncertainty around the slope of normalization. The debate synthesis validated the bear argument that sequential margin deterioration in the first quarter is likely a signal, not noise, yet no historical precedent exists for Allstate’s current operational toolkit navigating a full soft market without the tailwind of emergency rate hikes. Confidence would rise if the auto underlying combined ratio stabilizes at or below 89% through the third quarter, proving that operational offsets are genuinely substituting for pricing power. Conversely, conviction would drop sharply if the auto combined ratio prints above 92% for two consecutive quarters, if prior-year reserve development turns materially adverse, or if full-year share repurchases fall below $4 billion—any of which would confirm that management sees capital impairment ahead.\n\nFrom a risk-reward perspective, the probability-weighted twelve-month expected return is roughly negative 3%, reflecting a base case that envisions a grind lower toward $192 as earnings normalize in the low-$20s per share and the price-to-book multiple contracts toward 1.55x. While the bull case offers roughly 50% upside if the market accepts a structurally higher earnings floor, it carries only a 26% probability. The bear case, weighted at 32%, implies more than 35% downside should margins revert rapidly and the multiple compress toward 1.1x book. The asymmetry is therefore unfavorable in the central expectation, with capital returns acting less as a catalyst and more as a shock absorber that blunts terminal downside without reversing the directional trend. A portfolio manager should treat this as a late-cycle de-risking story rather than a deep-value entry, where the shareholder yield is attractive but insufficient to overcome the gravitational pull of underwriting normalization.\n\nWhat distinguishes Allstate from many of its property-and-casualty peers is the sheer magnitude of its cyclical inflection and the aggressiveness of its capital return program. Whereas the sector often trades as a collection of steady-state compounders, Allstate is explicitly a transformation story being stress-tested in real time—its operational overhaul must prove it can maintain mid-cycle margins without the relentless rate hikes that drove the 2023–2025 recovery. The 22.6% free-cash-flow yield and the potential for near-double-digit share count reduction in a single year are exceptional even within a capital-rich industry, offering a mechanical differentiation that provides downside mitigation. Yet this same intensity of buybacks also embeds a vulnerability: if earnings collapse faster than expected, the company could be forced to halt its repurchase engine, removing the very floor that currently supports the valuation.",
+      "source_date": "2026-05-11",
+      "error": null
+    },
+    "signal_decision": {
+      "ticker": "ALL",
+      "computed_at": "2026-05-19T20:30:08.031568+00:00",
+      "triggered": true,
+      "trigger_path": "major",
+      "fired_signals": [
+        {
+          "signal_type": "volume",
+          "tier": "major",
+          "details": {
+            "current_volume": 3092896,
+            "is_partial_day": false,
+            "percentile_reached": 99.0045691718588,
+            "threshold_p95": 2243529.9999999995,
+            "threshold_p99": 3064888.000000001,
+            "ratio_to_median": 2.22927490269569
+          }
+        }
+      ],
+      "signal_summary": {
+        "price_fired": false,
+        "price_tier": null,
+        "volume_fired": true,
+        "volume_tier": "major",
+        "cumulative_fired": false,
+        "major_count": 1,
+        "minor_count": 0
+      },
+      "config": {
+        "minor_signals_required_for_trigger": 2
+      },
+      "data_quality_flags": [
+        "cumulative_signal: No evaluation anchor for this ticker; signal cannot fire. Anchor will be created on next successful pipeline rerun."
+      ]
+    },
+    "macro_context": {
+      "data_source": "macroContext",
+      "fetched_at": "2026-05-19T20:30:03.722446+00:00",
+      "status": "ok",
+      "lookback_days_requested": 60,
+      "indicators": {
+        "SPY": {
+          "label": "SPY",
+          "current_price": 733.72998046875,
+          "previous_close": 738.6500244140625,
+          "daily_change_pct": -0.6660859382243095,
+          "daily_change_abs": -4.9200439453125,
+          "historical": {
+            "daily_closes": [
+              {
+                "date": "2026-02-24",
+                "close": 687.3499755859375
+              },
+              {
+                "date": "2026-02-25",
+                "close": 693.1500244140625
+              },
+              {
+                "date": "2026-02-26",
+                "close": 689.2999877929688
+              },
+              {
+                "date": "2026-02-27",
+                "close": 685.989990234375
+              },
+              {
+                "date": "2026-03-02",
+                "close": 686.3800048828125
+              },
+              {
+                "date": "2026-03-03",
+                "close": 680.3300170898438
+              },
+              {
+                "date": "2026-03-04",
+                "close": 685.1300048828125
+              },
+              {
+                "date": "2026-03-05",
+                "close": 681.3099975585938
+              },
+              {
+                "date": "2026-03-06",
+                "close": 672.3800048828125
+              },
+              {
+                "date": "2026-03-09",
+                "close": 678.27001953125
+              },
+              {
+                "date": "2026-03-10",
+                "close": 677.1799926757812
+              },
+              {
+                "date": "2026-03-11",
+                "close": 676.3300170898438
+              },
+              {
+                "date": "2026-03-12",
+                "close": 666.0599975585938
+              },
+              {
+                "date": "2026-03-13",
+                "close": 662.2899780273438
+              },
+              {
+                "date": "2026-03-16",
+                "close": 669.030029296875
+              },
+              {
+                "date": "2026-03-17",
+                "close": 670.7899780273438
+              },
+              {
+                "date": "2026-03-18",
+                "close": 661.4299926757812
+              },
+              {
+                "date": "2026-03-19",
+                "close": 659.7999877929688
+              },
+              {
+                "date": "2026-03-20",
+                "close": 648.5700073242188
+              },
+              {
+                "date": "2026-03-23",
+                "close": 655.3800048828125
+              },
+              {
+                "date": "2026-03-24",
+                "close": 653.1799926757812
+              },
+              {
+                "date": "2026-03-25",
+                "close": 656.8200073242188
+              },
+              {
+                "date": "2026-03-26",
+                "close": 645.0900268554688
+              },
+              {
+                "date": "2026-03-27",
+                "close": 634.0900268554688
+              },
+              {
+                "date": "2026-03-30",
+                "close": 631.969970703125
+              },
+              {
+                "date": "2026-03-31",
+                "close": 650.3400268554688
+              },
+              {
+                "date": "2026-04-01",
+                "close": 655.239990234375
+              },
+              {
+                "date": "2026-04-02",
+                "close": 655.8300170898438
+              },
+              {
+                "date": "2026-04-06",
+                "close": 658.9299926757812
+              },
+              {
+                "date": "2026-04-07",
+                "close": 659.219970703125
+              },
+              {
+                "date": "2026-04-08",
+                "close": 676.010009765625
+              },
+              {
+                "date": "2026-04-09",
+                "close": 679.9099731445312
+              },
+              {
+                "date": "2026-04-10",
+                "close": 679.4600219726562
+              },
+              {
+                "date": "2026-04-13",
+                "close": 686.0999755859375
+              },
+              {
+                "date": "2026-04-14",
+                "close": 694.4600219726562
+              },
+              {
+                "date": "2026-04-15",
+                "close": 699.9400024414062
+              },
+              {
+                "date": "2026-04-16",
+                "close": 701.6599731445312
+              },
+              {
+                "date": "2026-04-17",
+                "close": 710.1400146484375
+              },
+              {
+                "date": "2026-04-20",
+                "close": 708.719970703125
+              },
+              {
+                "date": "2026-04-21",
+                "close": 704.0800170898438
+              },
+              {
+                "date": "2026-04-22",
+                "close": 711.2100219726562
+              },
+              {
+                "date": "2026-04-23",
+                "close": 708.4500122070312
+              },
+              {
+                "date": "2026-04-24",
+                "close": 713.9400024414062
+              },
+              {
+                "date": "2026-04-27",
+                "close": 715.1699829101562
+              },
+              {
+                "date": "2026-04-28",
+                "close": 711.6900024414062
+              },
+              {
+                "date": "2026-04-29",
+                "close": 711.5800170898438
+              },
+              {
+                "date": "2026-04-30",
+                "close": 718.6599731445312
+              },
+              {
+                "date": "2026-05-01",
+                "close": 720.6500244140625
+              },
+              {
+                "date": "2026-05-04",
+                "close": 718.010009765625
+              },
+              {
+                "date": "2026-05-05",
+                "close": 723.77001953125
+              },
+              {
+                "date": "2026-05-06",
+                "close": 733.8300170898438
+              },
+              {
+                "date": "2026-05-07",
+                "close": 731.5800170898438
+              },
+              {
+                "date": "2026-05-08",
+                "close": 737.6199951171875
+              },
+              {
+                "date": "2026-05-11",
+                "close": 739.2999877929688
+              },
+              {
+                "date": "2026-05-12",
+                "close": 738.1799926757812
+              },
+              {
+                "date": "2026-05-13",
+                "close": 742.3099975585938
+              },
+              {
+                "date": "2026-05-14",
+                "close": 748.1699829101562
+              },
+              {
+                "date": "2026-05-15",
+                "close": 739.1699829101562
+              },
+              {
+                "date": "2026-05-18",
+                "close": 738.6500244140625
+              },
+              {
+                "date": "2026-05-19",
+                "close": 733.72998046875
+              }
+            ],
+            "lookback_days_received": 60
+          },
+          "data_quality_flags": []
+        },
+        "IOZ.AX": {
+          "label": "IOZ.AX",
+          "current_price": 34.689998626708984,
+          "previous_close": 34.310001373291016,
+          "daily_change_pct": 1.1075407700618212,
+          "daily_change_abs": 0.37999725341796875,
+          "historical": {
+            "daily_closes": [
+              {
+                "date": "2026-02-23",
+                "close": 36.2599983215332
+              },
+              {
+                "date": "2026-02-24",
+                "close": 36.279998779296875
+              },
+              {
+                "date": "2026-02-25",
+                "close": 36.709999084472656
+              },
+              {
+                "date": "2026-02-26",
+                "close": 36.93000030517578
+              },
+              {
+                "date": "2026-02-27",
+                "close": 37.02000045776367
+              },
+              {
+                "date": "2026-03-02",
+                "close": 37.029998779296875
+              },
+              {
+                "date": "2026-03-03",
+                "close": 36.54999923706055
+              },
+              {
+                "date": "2026-03-04",
+                "close": 35.869998931884766
+              },
+              {
+                "date": "2026-03-05",
+                "close": 36.189998626708984
+              },
+              {
+                "date": "2026-03-06",
+                "close": 35.7599983215332
+              },
+              {
+                "date": "2026-03-09",
+                "close": 34.77000045776367
+              },
+              {
+                "date": "2026-03-10",
+                "close": 35.18000030517578
+              },
+              {
+                "date": "2026-03-11",
+                "close": 35.38999938964844
+              },
+              {
+                "date": "2026-03-12",
+                "close": 34.95000076293945
+              },
+              {
+                "date": "2026-03-13",
+                "close": 34.88999938964844
+              },
+              {
+                "date": "2026-03-16",
+                "close": 34.790000915527344
+              },
+              {
+                "date": "2026-03-17",
+                "close": 34.90999984741211
+              },
+              {
+                "date": "2026-03-18",
+                "close": 35.02000045776367
+              },
+              {
+                "date": "2026-03-19",
+                "close": 34.41999816894531
+              },
+              {
+                "date": "2026-03-20",
+                "close": 34.150001525878906
+              },
+              {
+                "date": "2026-03-23",
+                "close": 33.900001525878906
+              },
+              {
+                "date": "2026-03-24",
+                "close": 33.95000076293945
+              },
+              {
+                "date": "2026-03-25",
+                "close": 34.54999923706055
+              },
+              {
+                "date": "2026-03-26",
+                "close": 34.54999923706055
+              },
+              {
+                "date": "2026-03-27",
+                "close": 34.5
+              },
+              {
+                "date": "2026-03-30",
+                "close": 34.29999923706055
+              },
+              {
+                "date": "2026-03-31",
+                "close": 34.369998931884766
+              },
+              {
+                "date": "2026-04-01",
+                "close": 35.119998931884766
+              },
+              {
+                "date": "2026-04-02",
+                "close": 34.7599983215332
+              },
+              {
+                "date": "2026-04-07",
+                "close": 35.349998474121094
+              },
+              {
+                "date": "2026-04-08",
+                "close": 36.2599983215332
+              },
+              {
+                "date": "2026-04-09",
+                "close": 35.9900016784668
+              },
+              {
+                "date": "2026-04-10",
+                "close": 35.95000076293945
+              },
+              {
+                "date": "2026-04-13",
+                "close": 35.810001373291016
+              },
+              {
+                "date": "2026-04-14",
+                "close": 36.02000045776367
+              },
+              {
+                "date": "2026-04-15",
+                "close": 36.04999923706055
+              },
+              {
+                "date": "2026-04-16",
+                "close": 35.95000076293945
+              },
+              {
+                "date": "2026-04-17",
+                "close": 35.91999816894531
+              },
+              {
+                "date": "2026-04-20",
+                "close": 35.939998626708984
+              },
+              {
+                "date": "2026-04-21",
+                "close": 35.93000030517578
+              },
+              {
+                "date": "2026-04-22",
+                "close": 35.5
+              },
+              {
+                "date": "2026-04-23",
+                "close": 35.31999969482422
+              },
+              {
+                "date": "2026-04-24",
+                "close": 35.29999923706055
+              },
+              {
+                "date": "2026-04-27",
+                "close": 35.18000030517578
+              },
+              {
+                "date": "2026-04-28",
+                "close": 34.9900016784668
+              },
+              {
+                "date": "2026-04-29",
+                "close": 34.869998931884766
+              },
+              {
+                "date": "2026-04-30",
+                "close": 34.790000915527344
+              },
+              {
+                "date": "2026-05-01",
+                "close": 35.08000183105469
+              },
+              {
+                "date": "2026-05-04",
+                "close": 34.939998626708984
+              },
+              {
+                "date": "2026-05-05",
+                "close": 34.86000061035156
+              },
+              {
+                "date": "2026-05-06",
+                "close": 35.31999969482422
+              },
+              {
+                "date": "2026-05-07",
+                "close": 35.66999816894531
+              },
+              {
+                "date": "2026-05-08",
+                "close": 35.18000030517578
+              },
+              {
+                "date": "2026-05-11",
+                "close": 35.04999923706055
+              },
+              {
+                "date": "2026-05-12",
+                "close": 34.93000030517578
+              },
+              {
+                "date": "2026-05-13",
+                "close": 34.779998779296875
+              },
+              {
+                "date": "2026-05-14",
+                "close": 34.790000915527344
+              },
+              {
+                "date": "2026-05-15",
+                "close": 34.849998474121094
+              },
+              {
+                "date": "2026-05-18",
+                "close": 34.310001373291016
+              },
+              {
+                "date": "2026-05-19",
+                "close": 34.689998626708984
+              }
+            ],
+            "lookback_days_received": 60
+          },
+          "data_quality_flags": []
+        },
+        "VIX": {
+          "label": "VIX",
+          "current_price": 18.059999465942383,
+          "previous_close": 17.81999969482422,
+          "daily_change_pct": 1.3468000854560704,
+          "daily_change_abs": 0.23999977111816406,
+          "historical": {
+            "daily_closes": [
+              {
+                "date": "2026-02-25",
+                "close": 17.93000030517578
+              },
+              {
+                "date": "2026-02-26",
+                "close": 18.6299991607666
+              },
+              {
+                "date": "2026-02-27",
+                "close": 19.860000610351562
+              },
+              {
+                "date": "2026-03-02",
+                "close": 21.440000534057617
+              },
+              {
+                "date": "2026-03-03",
+                "close": 23.56999969482422
+              },
+              {
+                "date": "2026-03-04",
+                "close": 21.149999618530273
+              },
+              {
+                "date": "2026-03-05",
+                "close": 23.75
+              },
+              {
+                "date": "2026-03-06",
+                "close": 29.489999771118164
+              },
+              {
+                "date": "2026-03-09",
+                "close": 25.5
+              },
+              {
+                "date": "2026-03-10",
+                "close": 24.93000030517578
+              },
+              {
+                "date": "2026-03-11",
+                "close": 24.229999542236328
+              },
+              {
+                "date": "2026-03-12",
+                "close": 27.290000915527344
+              },
+              {
+                "date": "2026-03-13",
+                "close": 27.190000534057617
+              },
+              {
+                "date": "2026-03-16",
+                "close": 23.510000228881836
+              },
+              {
+                "date": "2026-03-17",
+                "close": 22.3700008392334
+              },
+              {
+                "date": "2026-03-18",
+                "close": 25.09000015258789
+              },
+              {
+                "date": "2026-03-19",
+                "close": 24.059999465942383
+              },
+              {
+                "date": "2026-03-20",
+                "close": 26.780000686645508
+              },
+              {
+                "date": "2026-03-23",
+                "close": 26.149999618530273
+              },
+              {
+                "date": "2026-03-24",
+                "close": 26.950000762939453
+              },
+              {
+                "date": "2026-03-25",
+                "close": 25.329999923706055
+              },
+              {
+                "date": "2026-03-26",
+                "close": 27.440000534057617
+              },
+              {
+                "date": "2026-03-27",
+                "close": 31.049999237060547
+              },
+              {
+                "date": "2026-03-30",
+                "close": 30.610000610351562
+              },
+              {
+                "date": "2026-03-31",
+                "close": 25.25
+              },
+              {
+                "date": "2026-04-01",
+                "close": 24.540000915527344
+              },
+              {
+                "date": "2026-04-02",
+                "close": 23.8700008392334
+              },
+              {
+                "date": "2026-04-06",
+                "close": 24.170000076293945
+              },
+              {
+                "date": "2026-04-07",
+                "close": 25.780000686645508
+              },
+              {
+                "date": "2026-04-08",
+                "close": 21.040000915527344
+              },
+              {
+                "date": "2026-04-09",
+                "close": 19.489999771118164
+              },
+              {
+                "date": "2026-04-10",
+                "close": 19.229999542236328
+              },
+              {
+                "date": "2026-04-13",
+                "close": 19.1200008392334
+              },
+              {
+                "date": "2026-04-14",
+                "close": 18.360000610351562
+              },
+              {
+                "date": "2026-04-15",
+                "close": 18.170000076293945
+              },
+              {
+                "date": "2026-04-16",
+                "close": 17.940000534057617
+              },
+              {
+                "date": "2026-04-17",
+                "close": 17.479999542236328
+              },
+              {
+                "date": "2026-04-20",
+                "close": 18.8700008392334
+              },
+              {
+                "date": "2026-04-21",
+                "close": 19.5
+              },
+              {
+                "date": "2026-04-22",
+                "close": 18.920000076293945
+              },
+              {
+                "date": "2026-04-23",
+                "close": 19.309999465942383
+              },
+              {
+                "date": "2026-04-24",
+                "close": 18.709999084472656
+              },
+              {
+                "date": "2026-04-27",
+                "close": 18.020000457763672
+              },
+              {
+                "date": "2026-04-28",
+                "close": 17.829999923706055
+              },
+              {
+                "date": "2026-04-29",
+                "close": 18.809999465942383
+              },
+              {
+                "date": "2026-04-30",
+                "close": 16.889999389648438
+              },
+              {
+                "date": "2026-05-01",
+                "close": 16.989999771118164
+              },
+              {
+                "date": "2026-05-04",
+                "close": 18.290000915527344
+              },
+              {
+                "date": "2026-05-05",
+                "close": 17.3799991607666
+              },
+              {
+                "date": "2026-05-06",
+                "close": 17.389999389648438
+              },
+              {
+                "date": "2026-05-07",
+                "close": 17.079999923706055
+              },
+              {
+                "date": "2026-05-08",
+                "close": 17.190000534057617
+              },
+              {
+                "date": "2026-05-11",
+                "close": 18.3799991607666
+              },
+              {
+                "date": "2026-05-12",
+                "close": 17.989999771118164
+              },
+              {
+                "date": "2026-05-13",
+                "close": 17.8700008392334
+              },
+              {
+                "date": "2026-05-14",
+                "close": 17.260000228881836
+              },
+              {
+                "date": "2026-05-15",
+                "close": 18.43000030517578
+              },
+              {
+                "date": "2026-05-18",
+                "close": 17.81999969482422
+              },
+              {
+                "date": "2026-05-19",
+                "close": 18.059999465942383
+              }
+            ],
+            "lookback_days_received": 59
+          },
+          "data_quality_flags": []
+        },
+        "XLV": {
+          "label": "XLV",
+          "current_price": 147.32000732421875,
+          "previous_close": 145.72000122070312,
+          "daily_change_pct": 1.098000336338389,
+          "daily_change_abs": 1.600006103515625,
+          "historical": {
+            "daily_closes": [
+              {
+                "date": "2026-02-24",
+                "close": 157.8699951171875
+              },
+              {
+                "date": "2026-02-25",
+                "close": 157.8300018310547
+              },
+              {
+                "date": "2026-02-26",
+                "close": 157.4199981689453
+              },
+              {
+                "date": "2026-02-27",
+                "close": 160.1999969482422
+              },
+              {
+                "date": "2026-03-02",
+                "close": 158.52999877929688
+              },
+              {
+                "date": "2026-03-03",
+                "close": 156.74000549316406
+              },
+              {
+                "date": "2026-03-04",
+                "close": 157.0500030517578
+              },
+              {
+                "date": "2026-03-05",
+                "close": 153.91000366210938
+              },
+              {
+                "date": "2026-03-06",
+                "close": 152.6999969482422
+              },
+              {
+                "date": "2026-03-09",
+                "close": 154.25999450683594
+              },
+              {
+                "date": "2026-03-10",
+                "close": 153.14999389648438
+              },
+              {
+                "date": "2026-03-11",
+                "close": 152.85000610351562
+              },
+              {
+                "date": "2026-03-12",
+                "close": 150.16000366210938
+              },
+              {
+                "date": "2026-03-13",
+                "close": 149.7899932861328
+              },
+              {
+                "date": "2026-03-16",
+                "close": 151.00999450683594
+              },
+              {
+                "date": "2026-03-17",
+                "close": 149.63999938964844
+              },
+              {
+                "date": "2026-03-18",
+                "close": 147.13999938964844
+              },
+              {
+                "date": "2026-03-19",
+                "close": 146.61000061035156
+              },
+              {
+                "date": "2026-03-20",
+                "close": 145.3300018310547
+              },
+              {
+                "date": "2026-03-23",
+                "close": 144.77000427246094
+              },
+              {
+                "date": "2026-03-24",
+                "close": 144.7899932861328
+              },
+              {
+                "date": "2026-03-25",
+                "close": 146.24000549316406
+              },
+              {
+                "date": "2026-03-26",
+                "close": 145.74000549316406
+              },
+              {
+                "date": "2026-03-27",
+                "close": 143.25999450683594
+              },
+              {
+                "date": "2026-03-30",
+                "close": 143.82000732421875
+              },
+              {
+                "date": "2026-03-31",
+                "close": 146.61000061035156
+              },
+              {
+                "date": "2026-04-01",
+                "close": 147.72999572753906
+              },
+              {
+                "date": "2026-04-02",
+                "close": 146.80999755859375
+              },
+              {
+                "date": "2026-04-06",
+                "close": 146.27999877929688
+              },
+              {
+                "date": "2026-04-07",
+                "close": 146.57000732421875
+              },
+              {
+                "date": "2026-04-08",
+                "close": 149.6699981689453
+              },
+              {
+                "date": "2026-04-09",
+                "close": 149.3300018310547
+              },
+              {
+                "date": "2026-04-10",
+                "close": 147.30999755859375
+              },
+              {
+                "date": "2026-04-13",
+                "close": 147.97000122070312
+              },
+              {
+                "date": "2026-04-14",
+                "close": 148.8300018310547
+              },
+              {
+                "date": "2026-04-15",
+                "close": 147.77000427246094
+              },
+              {
+                "date": "2026-04-16",
+                "close": 146.61000061035156
+              },
+              {
+                "date": "2026-04-17",
+                "close": 148.8000030517578
+              },
+              {
+                "date": "2026-04-20",
+                "close": 147.4199981689453
+              },
+              {
+                "date": "2026-04-21",
+                "close": 145.9199981689453
+              },
+              {
+                "date": "2026-04-22",
+                "close": 146.3800048828125
+              },
+              {
+                "date": "2026-04-23",
+                "close": 146.24000549316406
+              },
+              {
+                "date": "2026-04-24",
+                "close": 144.17999267578125
+              },
+              {
+                "date": "2026-04-27",
+                "close": 143.4600067138672
+              },
+              {
+                "date": "2026-04-28",
+                "close": 143.83999633789062
+              },
+              {
+                "date": "2026-04-29",
+                "close": 142.83999633789062
+              },
+              {
+                "date": "2026-04-30",
+                "close": 145.99000549316406
+              },
+              {
+                "date": "2026-05-01",
+                "close": 145.16000366210938
+              },
+              {
+                "date": "2026-05-04",
+                "close": 144.72999572753906
+              },
+              {
+                "date": "2026-05-05",
+                "close": 145.3000030517578
+              },
+              {
+                "date": "2026-05-06",
+                "close": 145.39999389648438
+              },
+              {
+                "date": "2026-05-07",
+                "close": 144.72000122070312
+              },
+              {
+                "date": "2026-05-08",
+                "close": 143.49000549316406
+              },
+              {
+                "date": "2026-05-11",
+                "close": 143.0399932861328
+              },
+              {
+                "date": "2026-05-12",
+                "close": 145.85000610351562
+              },
+              {
+                "date": "2026-05-13",
+                "close": 146.7100067138672
+              },
+              {
+                "date": "2026-05-14",
+                "close": 146.6300048828125
+              },
+              {
+                "date": "2026-05-15",
+                "close": 145.10000610351562
+              },
+              {
+                "date": "2026-05-18",
+                "close": 145.72000122070312
+              },
+              {
+                "date": "2026-05-19",
+                "close": 147.32000732421875
+              }
+            ],
+            "lookback_days_received": 60
+          },
+          "data_quality_flags": []
+        },
+        "XLK": {
+          "label": "XLK",
+          "current_price": 173.24000549316406,
+          "previous_close": 174.36000061035156,
+          "daily_change_pct": -0.642346359983327,
+          "daily_change_abs": -1.1199951171875,
+          "historical": {
+            "daily_closes": [
+              {
+                "date": "2026-02-24",
+                "close": 140.32000732421875
+              },
+              {
+                "date": "2026-02-25",
+                "close": 143.00999450683594
+              },
+              {
+                "date": "2026-02-26",
+                "close": 141.00999450683594
+              },
+              {
+                "date": "2026-02-27",
+                "close": 138.75999450683594
+              },
+              {
+                "date": "2026-03-02",
+                "close": 139.5399932861328
+              },
+              {
+                "date": "2026-03-03",
+                "close": 137.5
+              },
+              {
+                "date": "2026-03-04",
+                "close": 139.83999633789062
+              },
+              {
+                "date": "2026-03-05",
+                "close": 140.17999267578125
+              },
+              {
+                "date": "2026-03-06",
+                "close": 137.2899932861328
+              },
+              {
+                "date": "2026-03-09",
+                "close": 139.75999450683594
+              },
+              {
+                "date": "2026-03-10",
+                "close": 139.75999450683594
+              },
+              {
+                "date": "2026-03-11",
+                "close": 140.42999267578125
+              },
+              {
+                "date": "2026-03-12",
+                "close": 137.83999633789062
+              },
+              {
+                "date": "2026-03-13",
+                "close": 136.8000030517578
+              },
+              {
+                "date": "2026-03-16",
+                "close": 138.77999877929688
+              },
+              {
+                "date": "2026-03-17",
+                "close": 139.5399932861328
+              },
+              {
+                "date": "2026-03-18",
+                "close": 137.9600067138672
+              },
+              {
+                "date": "2026-03-19",
+                "close": 138.42999267578125
+              },
+              {
+                "date": "2026-03-20",
+                "close": 135.2899932861328
+              },
+              {
+                "date": "2026-03-23",
+                "close": 136.9499969482422
+              },
+              {
+                "date": "2026-03-24",
+                "close": 136.14999389648438
+              },
+              {
+                "date": "2026-03-25",
+                "close": 136.75999450683594
+              },
+              {
+                "date": "2026-03-26",
+                "close": 132.5
+              },
+              {
+                "date": "2026-03-27",
+                "close": 129.9199981689453
+              },
+              {
+                "date": "2026-03-30",
+                "close": 127.5
+              },
+              {
+                "date": "2026-03-31",
+                "close": 132.89999389648438
+              },
+              {
+                "date": "2026-04-01",
+                "close": 134.91000366210938
+              },
+              {
+                "date": "2026-04-02",
+                "close": 135.99000549316406
+              },
+              {
+                "date": "2026-04-06",
+                "close": 136.77999877929688
+              },
+              {
+                "date": "2026-04-07",
+                "close": 137.42999267578125
+              },
+              {
+                "date": "2026-04-08",
+                "close": 141.69000244140625
+              },
+              {
+                "date": "2026-04-09",
+                "close": 142.07000732421875
+              },
+              {
+                "date": "2026-04-10",
+                "close": 142.6199951171875
+              },
+              {
+                "date": "2026-04-13",
+                "close": 145.61000061035156
+              },
+              {
+                "date": "2026-04-14",
+                "close": 147.94000244140625
+              },
+              {
+                "date": "2026-04-15",
+                "close": 150.3000030517578
+              },
+              {
+                "date": "2026-04-16",
+                "close": 152.02000427246094
+              },
+              {
+                "date": "2026-04-17",
+                "close": 154.35000610351562
+              },
+              {
+                "date": "2026-04-20",
+                "close": 154.55999755859375
+              },
+              {
+                "date": "2026-04-21",
+                "close": 154.69000244140625
+              },
+              {
+                "date": "2026-04-22",
+                "close": 158.08999633789062
+              },
+              {
+                "date": "2026-04-23",
+                "close": 155.83999633789062
+              },
+              {
+                "date": "2026-04-24",
+                "close": 160.22000122070312
+              },
+              {
+                "date": "2026-04-27",
+                "close": 160.57000732421875
+              },
+              {
+                "date": "2026-04-28",
+                "close": 157.85000610351562
+              },
+              {
+                "date": "2026-04-29",
+                "close": 159.11000061035156
+              },
+              {
+                "date": "2026-04-30",
+                "close": 159.5
+              },
+              {
+                "date": "2026-05-01",
+                "close": 161.8699951171875
+              },
+              {
+                "date": "2026-05-04",
+                "close": 162.0500030517578
+              },
+              {
+                "date": "2026-05-05",
+                "close": 165.6300048828125
+              },
+              {
+                "date": "2026-05-06",
+                "close": 170.02999877929688
+              },
+              {
+                "date": "2026-05-07",
+                "close": 169.69000244140625
+              },
+              {
+                "date": "2026-05-08",
+                "close": 175.52000427246094
+              },
+              {
+                "date": "2026-05-11",
+                "close": 177.8800048828125
+              },
+              {
+                "date": "2026-05-12",
+                "close": 175.1999969482422
+              },
+              {
+                "date": "2026-05-13",
+                "close": 176.85000610351562
+              },
+              {
+                "date": "2026-05-14",
+                "close": 179.5
+              },
+              {
+                "date": "2026-05-15",
+                "close": 176.25999450683594
+              },
+              {
+                "date": "2026-05-18",
+                "close": 174.36000061035156
+              },
+              {
+                "date": "2026-05-19",
+                "close": 173.24000549316406
+              }
+            ],
+            "lookback_days_received": 60
+          },
+          "data_quality_flags": []
+        },
+        "XLF": {
+          "label": "XLF",
+          "current_price": 51.099998474121094,
+          "previous_close": 51.7400016784668,
+          "daily_change_pct": -1.236960153814723,
+          "daily_change_abs": -0.6400032043457031,
+          "historical": {
+            "daily_closes": [
+              {
+                "date": "2026-02-24",
+                "close": 50.97999954223633
+              },
+              {
+                "date": "2026-02-25",
+                "close": 51.869998931884766
+              },
+              {
+                "date": "2026-02-26",
+                "close": 52.5
+              },
+              {
+                "date": "2026-02-27",
+                "close": 51.43000030517578
+              },
+              {
+                "date": "2026-03-02",
+                "close": 51.29999923706055
+              },
+              {
+                "date": "2026-03-03",
+                "close": 51.209999084472656
+              },
+              {
+                "date": "2026-03-04",
+                "close": 51.5
+              },
+              {
+                "date": "2026-03-05",
+                "close": 51.22999954223633
+              },
+              {
+                "date": "2026-03-06",
+                "close": 50.56999969482422
+              },
+              {
+                "date": "2026-03-09",
+                "close": 50.33000183105469
+              },
+              {
+                "date": "2026-03-10",
+                "close": 50.060001373291016
+              },
+              {
+                "date": "2026-03-11",
+                "close": 49.63999938964844
+              },
+              {
+                "date": "2026-03-12",
+                "close": 48.83000183105469
+              },
+              {
+                "date": "2026-03-13",
+                "close": 48.88999938964844
+              },
+              {
+                "date": "2026-03-16",
+                "close": 49.29999923706055
+              },
+              {
+                "date": "2026-03-17",
+                "close": 49.560001373291016
+              },
+              {
+                "date": "2026-03-18",
+                "close": 48.970001220703125
+              },
+              {
+                "date": "2026-03-19",
+                "close": 48.9900016784668
+              },
+              {
+                "date": "2026-03-20",
+                "close": 49.08000183105469
+              },
+              {
+                "date": "2026-03-23",
+                "close": 49.27000045776367
+              },
+              {
+                "date": "2026-03-24",
+                "close": 49.279998779296875
+              },
+              {
+                "date": "2026-03-25",
+                "close": 49.34000015258789
+              },
+              {
+                "date": "2026-03-26",
+                "close": 49.04999923706055
+              },
+              {
+                "date": "2026-03-27",
+                "close": 47.810001373291016
+              },
+              {
+                "date": "2026-03-30",
+                "close": 48.36000061035156
+              },
+              {
+                "date": "2026-03-31",
+                "close": 49.369998931884766
+              },
+              {
+                "date": "2026-04-01",
+                "close": 49.439998626708984
+              },
+              {
+                "date": "2026-04-02",
+                "close": 49.529998779296875
+              },
+              {
+                "date": "2026-04-06",
+                "close": 49.880001068115234
+              },
+              {
+                "date": "2026-04-07",
+                "close": 49.880001068115234
+              },
+              {
+                "date": "2026-04-08",
+                "close": 51.20000076293945
+              },
+              {
+                "date": "2026-04-09",
+                "close": 51.33000183105469
+              },
+              {
+                "date": "2026-04-10",
+                "close": 50.77000045776367
+              },
+              {
+                "date": "2026-04-13",
+                "close": 51.65999984741211
+              },
+              {
+                "date": "2026-04-14",
+                "close": 51.779998779296875
+              },
+              {
+                "date": "2026-04-15",
+                "close": 52.16999816894531
+              },
+              {
+                "date": "2026-04-16",
+                "close": 52.029998779296875
+              },
+              {
+                "date": "2026-04-17",
+                "close": 52.43000030517578
+              },
+              {
+                "date": "2026-04-20",
+                "close": 52.630001068115234
+              },
+              {
+                "date": "2026-04-21",
+                "close": 52.29999923706055
+              },
+              {
+                "date": "2026-04-22",
+                "close": 52.209999084472656
+              },
+              {
+                "date": "2026-04-23",
+                "close": 51.79999923706055
+              },
+              {
+                "date": "2026-04-24",
+                "close": 51.41999816894531
+              },
+              {
+                "date": "2026-04-27",
+                "close": 51.810001373291016
+              },
+              {
+                "date": "2026-04-28",
+                "close": 51.849998474121094
+              },
+              {
+                "date": "2026-04-29",
+                "close": 51.91999816894531
+              },
+              {
+                "date": "2026-04-30",
+                "close": 52.130001068115234
+              },
+              {
+                "date": "2026-05-01",
+                "close": 51.91999816894531
+              },
+              {
+                "date": "2026-05-04",
+                "close": 51.58000183105469
+              },
+              {
+                "date": "2026-05-05",
+                "close": 51.59000015258789
+              },
+              {
+                "date": "2026-05-06",
+                "close": 51.84000015258789
+              },
+              {
+                "date": "2026-05-07",
+                "close": 51.54999923706055
+              },
+              {
+                "date": "2026-05-08",
+                "close": 51.2400016784668
+              },
+              {
+                "date": "2026-05-11",
+                "close": 51.18000030517578
+              },
+              {
+                "date": "2026-05-12",
+                "close": 51.58000183105469
+              },
+              {
+                "date": "2026-05-13",
+                "close": 50.9900016784668
+              },
+              {
+                "date": "2026-05-14",
+                "close": 51.290000915527344
+              },
+              {
+                "date": "2026-05-15",
+                "close": 51.099998474121094
+              },
+              {
+                "date": "2026-05-18",
+                "close": 51.7400016784668
+              },
+              {
+                "date": "2026-05-19",
+                "close": 51.099998474121094
+              }
+            ],
+            "lookback_days_received": 60
+          },
+          "data_quality_flags": []
+        },
+        "XLY": {
+          "label": "XLY",
+          "current_price": 115.02999877929688,
+          "previous_close": 116.31999969482422,
+          "daily_change_pct": -1.1090104185967804,
+          "daily_change_abs": -1.2900009155273438,
+          "historical": {
+            "daily_closes": [
+              {
+                "date": "2026-02-24",
+                "close": 116.73999786376953
+              },
+              {
+                "date": "2026-02-25",
+                "close": 117.08999633789062
+              },
+              {
+                "date": "2026-02-26",
+                "close": 117.05000305175781
+              },
+              {
+                "date": "2026-02-27",
+                "close": 116.86000061035156
+              },
+              {
+                "date": "2026-03-02",
+                "close": 115.41999816894531
+              },
+              {
+                "date": "2026-03-03",
+                "close": 114.36000061035156
+              },
+              {
+                "date": "2026-03-04",
+                "close": 116.38999938964844
+              },
+              {
+                "date": "2026-03-05",
+                "close": 116.55000305175781
+              },
+              {
+                "date": "2026-03-06",
+                "close": 114.44000244140625
+              },
+              {
+                "date": "2026-03-09",
+                "close": 114.58999633789062
+              },
+              {
+                "date": "2026-03-10",
+                "close": 114.44000244140625
+              },
+              {
+                "date": "2026-03-11",
+                "close": 114.13999938964844
+              },
+              {
+                "date": "2026-03-12",
+                "close": 111.5199966430664
+              },
+              {
+                "date": "2026-03-13",
+                "close": 110.86000061035156
+              },
+              {
+                "date": "2026-03-16",
+                "close": 112.19999694824219
+              },
+              {
+                "date": "2026-03-17",
+                "close": 113.18000030517578
+              },
+              {
+                "date": "2026-03-18",
+                "close": 110.56999969482422
+              },
+              {
+                "date": "2026-03-19",
+                "close": 109.69999694824219
+              },
+              {
+                "date": "2026-03-20",
+                "close": 107.73999786376953
+              },
+              {
+                "date": "2026-03-23",
+                "close": 110.12000274658203
+              },
+              {
+                "date": "2026-03-24",
+                "close": 109.68000030517578
+              },
+              {
+                "date": "2026-03-25",
+                "close": 110.7300033569336
+              },
+              {
+                "date": "2026-03-26",
+                "close": 108.83000183105469
+              },
+              {
+                "date": "2026-03-27",
+                "close": 105.68000030517578
+              },
+              {
+                "date": "2026-03-30",
+                "close": 105.66000366210938
+              },
+              {
+                "date": "2026-03-31",
+                "close": 108.9800033569336
+              },
+              {
+                "date": "2026-04-01",
+                "close": 109.80000305175781
+              },
+              {
+                "date": "2026-04-02",
+                "close": 108.1500015258789
+              },
+              {
+                "date": "2026-04-06",
+                "close": 109.04000091552734
+              },
+              {
+                "date": "2026-04-07",
+                "close": 107.7699966430664
+              },
+              {
+                "date": "2026-04-08",
+                "close": 110.81999969482422
+              },
+              {
+                "date": "2026-04-09",
+                "close": 112.73999786376953
+              },
+              {
+                "date": "2026-04-10",
+                "close": 112.88999938964844
+              },
+              {
+                "date": "2026-04-13",
+                "close": 113.91999816894531
+              },
+              {
+                "date": "2026-04-14",
+                "close": 116.44000244140625
+              },
+              {
+                "date": "2026-04-15",
+                "close": 118.18000030517578
+              },
+              {
+                "date": "2026-04-16",
+                "close": 117.62999725341797
+              },
+              {
+                "date": "2026-04-17",
+                "close": 120.41000366210938
+              },
+              {
+                "date": "2026-04-20",
+                "close": 119.87000274658203
+              },
+              {
+                "date": "2026-04-21",
+                "close": 118.97000122070312
+              },
+              {
+                "date": "2026-04-22",
+                "close": 118.93000030517578
+              },
+              {
+                "date": "2026-04-23",
+                "close": 117.73999786376953
+              },
+              {
+                "date": "2026-04-24",
+                "close": 118.69000244140625
+              },
+              {
+                "date": "2026-04-27",
+                "close": 117.83999633789062
+              },
+              {
+                "date": "2026-04-28",
+                "close": 117.01000213623047
+              },
+              {
+                "date": "2026-04-29",
+                "close": 116.83999633789062
+              },
+              {
+                "date": "2026-04-30",
+                "close": 118.3499984741211
+              },
+              {
+                "date": "2026-05-01",
+                "close": 118.62999725341797
+              },
+              {
+                "date": "2026-05-04",
+                "close": 117.72000122070312
+              },
+              {
+                "date": "2026-05-05",
+                "close": 118.06999969482422
+              },
+              {
+                "date": "2026-05-06",
+                "close": 119.87000274658203
+              },
+              {
+                "date": "2026-05-07",
+                "close": 119.87999725341797
+              },
+              {
+                "date": "2026-05-08",
+                "close": 120.19999694824219
+              },
+              {
+                "date": "2026-05-11",
+                "close": 119.37000274658203
+              },
+              {
+                "date": "2026-05-12",
+                "close": 118.29000091552734
+              },
+              {
+                "date": "2026-05-13",
+                "close": 118.72000122070312
+              },
+              {
+                "date": "2026-05-14",
+                "close": 118.66999816894531
+              },
+              {
+                "date": "2026-05-15",
+                "close": 116.52999877929688
+              },
+              {
+                "date": "2026-05-18",
+                "close": 116.31999969482422
+              },
+              {
+                "date": "2026-05-19",
+                "close": 115.02999877929688
+              }
+            ],
+            "lookback_days_received": 60
+          },
+          "data_quality_flags": []
+        },
+        "XLP": {
+          "label": "XLP",
+          "current_price": 86.08999633789062,
+          "previous_close": 85.9000015258789,
+          "daily_change_pct": 0.22118138374477145,
+          "daily_change_abs": 0.18999481201171875,
+          "historical": {
+            "daily_closes": [
+              {
+                "date": "2026-02-24",
+                "close": 89.73999786376953
+              },
+              {
+                "date": "2026-02-25",
+                "close": 89.01000213623047
+              },
+              {
+                "date": "2026-02-26",
+                "close": 88.86000061035156
+              },
+              {
+                "date": "2026-02-27",
+                "close": 90.01000213623047
+              },
+              {
+                "date": "2026-03-02",
+                "close": 88.70999908447266
+              },
+              {
+                "date": "2026-03-03",
+                "close": 87.73999786376953
+              },
+              {
+                "date": "2026-03-04",
+                "close": 87.16000366210938
+              },
+              {
+                "date": "2026-03-05",
+                "close": 85.41000366210938
+              },
+              {
+                "date": "2026-03-06",
+                "close": 85.77999877929688
+              },
+              {
+                "date": "2026-03-09",
+                "close": 85.97000122070312
+              },
+              {
+                "date": "2026-03-10",
+                "close": 85.72000122070312
+              },
+              {
+                "date": "2026-03-11",
+                "close": 84.58999633789062
+              },
+              {
+                "date": "2026-03-12",
+                "close": 84.25
+              },
+              {
+                "date": "2026-03-13",
+                "close": 84.73999786376953
+              },
+              {
+                "date": "2026-03-16",
+                "close": 84.9800033569336
+              },
+              {
+                "date": "2026-03-17",
+                "close": 84.69999694824219
+              },
+              {
+                "date": "2026-03-18",
+                "close": 82.63999938964844
+              },
+              {
+                "date": "2026-03-19",
+                "close": 81.97000122070312
+              },
+              {
+                "date": "2026-03-20",
+                "close": 81.29000091552734
+              },
+              {
+                "date": "2026-03-23",
+                "close": 81.18000030517578
+              },
+              {
+                "date": "2026-03-24",
+                "close": 81.11000061035156
+              },
+              {
+                "date": "2026-03-25",
+                "close": 81.51000213623047
+              },
+              {
+                "date": "2026-03-26",
+                "close": 81.13999938964844
+              },
+              {
+                "date": "2026-03-27",
+                "close": 81.77999877929688
+              },
+              {
+                "date": "2026-03-30",
+                "close": 81.87999725341797
+              },
+              {
+                "date": "2026-03-31",
+                "close": 81.9800033569336
+              },
+              {
+                "date": "2026-04-01",
+                "close": 81.45999908447266
+              },
+              {
+                "date": "2026-04-02",
+                "close": 81.88999938964844
+              },
+              {
+                "date": "2026-04-06",
+                "close": 82.66000366210938
+              },
+              {
+                "date": "2026-04-07",
+                "close": 81.26000213623047
+              },
+              {
+                "date": "2026-04-08",
+                "close": 82.77999877929688
+              },
+              {
+                "date": "2026-04-09",
+                "close": 83.44999694824219
+              },
+              {
+                "date": "2026-04-10",
+                "close": 82.37000274658203
+              },
+              {
+                "date": "2026-04-13",
+                "close": 81.55000305175781
+              },
+              {
+                "date": "2026-04-14",
+                "close": 81.47000122070312
+              },
+              {
+                "date": "2026-04-15",
+                "close": 81.05999755859375
+              },
+              {
+                "date": "2026-04-16",
+                "close": 81.43000030517578
+              },
+              {
+                "date": "2026-04-17",
+                "close": 82.45999908447266
+              },
+              {
+                "date": "2026-04-20",
+                "close": 82.38999938964844
+              },
+              {
+                "date": "2026-04-21",
+                "close": 81.83999633789062
+              },
+              {
+                "date": "2026-04-22",
+                "close": 82.11000061035156
+              },
+              {
+                "date": "2026-04-23",
+                "close": 83.4800033569336
+              },
+              {
+                "date": "2026-04-24",
+                "close": 83.2300033569336
+              },
+              {
+                "date": "2026-04-27",
+                "close": 82.33999633789062
+              },
+              {
+                "date": "2026-04-28",
+                "close": 83.08000183105469
+              },
+              {
+                "date": "2026-04-29",
+                "close": 82.91999816894531
+              },
+              {
+                "date": "2026-04-30",
+                "close": 84.30999755859375
+              },
+              {
+                "date": "2026-05-01",
+                "close": 84.16999816894531
+              },
+              {
+                "date": "2026-05-04",
+                "close": 83.54000091552734
+              },
+              {
+                "date": "2026-05-05",
+                "close": 84.05999755859375
+              },
+              {
+                "date": "2026-05-06",
+                "close": 84.23999786376953
+              },
+              {
+                "date": "2026-05-07",
+                "close": 83.9800033569336
+              },
+              {
+                "date": "2026-05-08",
+                "close": 84.18000030517578
+              },
+              {
+                "date": "2026-05-11",
+                "close": 83.37000274658203
+              },
+              {
+                "date": "2026-05-12",
+                "close": 84.44000244140625
+              },
+              {
+                "date": "2026-05-13",
+                "close": 84.72000122070312
+              },
+              {
+                "date": "2026-05-14",
+                "close": 84.9800033569336
+              },
+              {
+                "date": "2026-05-15",
+                "close": 84.63999938964844
+              },
+              {
+                "date": "2026-05-18",
+                "close": 85.9000015258789
+              },
+              {
+                "date": "2026-05-19",
+                "close": 86.08999633789062
+              }
+            ],
+            "lookback_days_received": 60
+          },
+          "data_quality_flags": []
+        },
+        "XLI": {
+          "label": "XLI",
+          "current_price": 168.74000549316406,
+          "previous_close": 170.75,
+          "daily_change_pct": -1.1771563729639458,
+          "daily_change_abs": -2.0099945068359375,
+          "historical": {
+            "daily_closes": [
+              {
+                "date": "2026-02-24",
+                "close": 176.97999572753906
+              },
+              {
+                "date": "2026-02-25",
+                "close": 175.60000610351562
+              },
+              {
+                "date": "2026-02-26",
+                "close": 176.6999969482422
+              },
+              {
+                "date": "2026-02-27",
+                "close": 177.13999938964844
+              },
+              {
+                "date": "2026-03-02",
+                "close": 178.89999389648438
+              },
+              {
+                "date": "2026-03-03",
+                "close": 175.44000244140625
+              },
+              {
+                "date": "2026-03-04",
+                "close": 175.97000122070312
+              },
+              {
+                "date": "2026-03-05",
+                "close": 172.05999755859375
+              },
+              {
+                "date": "2026-03-06",
+                "close": 169.94000244140625
+              },
+              {
+                "date": "2026-03-09",
+                "close": 170.94000244140625
+              },
+              {
+                "date": "2026-03-10",
+                "close": 170.02000427246094
+              },
+              {
+                "date": "2026-03-11",
+                "close": 169.49000549316406
+              },
+              {
+                "date": "2026-03-12",
+                "close": 165.24000549316406
+              },
+              {
+                "date": "2026-03-13",
+                "close": 164.64999389648438
+              },
+              {
+                "date": "2026-03-16",
+                "close": 166.05999755859375
+              },
+              {
+                "date": "2026-03-17",
+                "close": 166.5
+              },
+              {
+                "date": "2026-03-18",
+                "close": 165.17999267578125
+              },
+              {
+                "date": "2026-03-19",
+                "close": 164.05999755859375
+              },
+              {
+                "date": "2026-03-20",
+                "close": 161.6699981689453
+              },
+              {
+                "date": "2026-03-23",
+                "close": 163.0500030517578
+              },
+              {
+                "date": "2026-03-24",
+                "close": 164.0
+              },
+              {
+                "date": "2026-03-25",
+                "close": 165.10000610351562
+              },
+              {
+                "date": "2026-03-26",
+                "close": 161.27000427246094
+              },
+              {
+                "date": "2026-03-27",
+                "close": 159.1999969482422
+              },
+              {
+                "date": "2026-03-30",
+                "close": 156.61000061035156
+              },
+              {
+                "date": "2026-03-31",
+                "close": 161.72999572753906
+              },
+              {
+                "date": "2026-04-01",
+                "close": 164.42999267578125
+              },
+              {
+                "date": "2026-04-02",
+                "close": 163.77000427246094
+              },
+              {
+                "date": "2026-04-06",
+                "close": 164.61000061035156
+              },
+              {
+                "date": "2026-04-07",
+                "close": 164.27999877929688
+              },
+              {
+                "date": "2026-04-08",
+                "close": 170.44000244140625
+              },
+              {
+                "date": "2026-04-09",
+                "close": 172.19000244140625
+              },
+              {
+                "date": "2026-04-10",
+                "close": 171.52000427246094
+              },
+              {
+                "date": "2026-04-13",
+                "close": 172.72999572753906
+              },
+              {
+                "date": "2026-04-14",
+                "close": 173.35000610351562
+              },
+              {
+                "date": "2026-04-15",
+                "close": 171.17999267578125
+              },
+              {
+                "date": "2026-04-16",
+                "close": 170.3300018310547
+              },
+              {
+                "date": "2026-04-17",
+                "close": 173.50999450683594
+              },
+              {
+                "date": "2026-04-20",
+                "close": 173.89999389648438
+              },
+              {
+                "date": "2026-04-21",
+                "close": 171.44000244140625
+              },
+              {
+                "date": "2026-04-22",
+                "close": 171.0399932861328
+              },
+              {
+                "date": "2026-04-23",
+                "close": 174.07000732421875
+              },
+              {
+                "date": "2026-04-24",
+                "close": 172.47000122070312
+              },
+              {
+                "date": "2026-04-27",
+                "close": 172.50999450683594
+              },
+              {
+                "date": "2026-04-28",
+                "close": 170.97999572753906
+              },
+              {
+                "date": "2026-04-29",
+                "close": 169.92999267578125
+              },
+              {
+                "date": "2026-04-30",
+                "close": 174.5800018310547
+              },
+              {
+                "date": "2026-05-01",
+                "close": 172.9600067138672
+              },
+              {
+                "date": "2026-05-04",
+                "close": 170.97999572753906
+              },
+              {
+                "date": "2026-05-05",
+                "close": 172.41000366210938
+              },
+              {
+                "date": "2026-05-06",
+                "close": 176.8699951171875
+              },
+              {
+                "date": "2026-05-07",
+                "close": 174.0
+              },
+              {
+                "date": "2026-05-08",
+                "close": 173.1999969482422
+              },
+              {
+                "date": "2026-05-11",
+                "close": 175.0399932861328
+              },
+              {
+                "date": "2026-05-12",
+                "close": 174.35000610351562
+              },
+              {
+                "date": "2026-05-13",
+                "close": 173.6199951171875
+              },
+              {
+                "date": "2026-05-14",
+                "close": 174.50999450683594
+              },
+              {
+                "date": "2026-05-15",
+                "close": 171.39999389648438
+              },
+              {
+                "date": "2026-05-18",
+                "close": 170.75
+              },
+              {
+                "date": "2026-05-19",
+                "close": 168.74000549316406
+              }
+            ],
+            "lookback_days_received": 60
+          },
+          "data_quality_flags": []
+        },
+        "XLE": {
+          "label": "XLE",
+          "current_price": 61.2599983215332,
+          "previous_close": 60.58000183105469,
+          "daily_change_pct": 1.1224768404182086,
+          "daily_change_abs": 0.6799964904785156,
+          "historical": {
+            "daily_closes": [
+              {
+                "date": "2026-02-24",
+                "close": 55.099998474121094
+              },
+              {
+                "date": "2026-02-25",
+                "close": 54.869998931884766
+              },
+              {
+                "date": "2026-02-26",
+                "close": 55.04999923706055
+              },
+              {
+                "date": "2026-02-27",
+                "close": 55.91999816894531
+              },
+              {
+                "date": "2026-03-02",
+                "close": 57.040000915527344
+              },
+              {
+                "date": "2026-03-03",
+                "close": 56.52000045776367
+              },
+              {
+                "date": "2026-03-04",
+                "close": 56.189998626708984
+              },
+              {
+                "date": "2026-03-05",
+                "close": 56.47999954223633
+              },
+              {
+                "date": "2026-03-06",
+                "close": 56.56999969482422
+              },
+              {
+                "date": "2026-03-09",
+                "close": 56.31999969482422
+              },
+              {
+                "date": "2026-03-10",
+                "close": 55.599998474121094
+              },
+              {
+                "date": "2026-03-11",
+                "close": 56.97999954223633
+              },
+              {
+                "date": "2026-03-12",
+                "close": 57.5099983215332
+              },
+              {
+                "date": "2026-03-13",
+                "close": 57.70000076293945
+              },
+              {
+                "date": "2026-03-16",
+                "close": 57.900001525878906
+              },
+              {
+                "date": "2026-03-17",
+                "close": 58.5099983215332
+              },
+              {
+                "date": "2026-03-18",
+                "close": 58.43000030517578
+              },
+              {
+                "date": "2026-03-19",
+                "close": 59.36000061035156
+              },
+              {
+                "date": "2026-03-20",
+                "close": 59.310001373291016
+              },
+              {
+                "date": "2026-03-23",
+                "close": 59.630001068115234
+              },
+              {
+                "date": "2026-03-24",
+                "close": 60.84000015258789
+              },
+              {
+                "date": "2026-03-25",
+                "close": 60.56999969482422
+              },
+              {
+                "date": "2026-03-26",
+                "close": 61.52000045776367
+              },
+              {
+                "date": "2026-03-27",
+                "close": 62.560001373291016
+              },
+              {
+                "date": "2026-03-30",
+                "close": 61.959999084472656
+              },
+              {
+                "date": "2026-03-31",
+                "close": 61.2599983215332
+              },
+              {
+                "date": "2026-04-01",
+                "close": 58.970001220703125
+              },
+              {
+                "date": "2026-04-02",
+                "close": 59.25
+              },
+              {
+                "date": "2026-04-06",
+                "close": 59.68000030517578
+              },
+              {
+                "date": "2026-04-07",
+                "close": 60.15999984741211
+              },
+              {
+                "date": "2026-04-08",
+                "close": 58.04999923706055
+              },
+              {
+                "date": "2026-04-09",
+                "close": 57.33000183105469
+              },
+              {
+                "date": "2026-04-10",
+                "close": 56.939998626708984
+              },
+              {
+                "date": "2026-04-13",
+                "close": 57.11000061035156
+              },
+              {
+                "date": "2026-04-14",
+                "close": 55.95000076293945
+              },
+              {
+                "date": "2026-04-15",
+                "close": 55.7599983215332
+              },
+              {
+                "date": "2026-04-16",
+                "close": 56.58000183105469
+              },
+              {
+                "date": "2026-04-17",
+                "close": 55.02000045776367
+              },
+              {
+                "date": "2026-04-20",
+                "close": 55.06999969482422
+              },
+              {
+                "date": "2026-04-21",
+                "close": 55.869998931884766
+              },
+              {
+                "date": "2026-04-22",
+                "close": 56.540000915527344
+              },
+              {
+                "date": "2026-04-23",
+                "close": 56.97999954223633
+              },
+              {
+                "date": "2026-04-24",
+                "close": 56.869998931884766
+              },
+              {
+                "date": "2026-04-27",
+                "close": 56.77000045776367
+              },
+              {
+                "date": "2026-04-28",
+                "close": 57.709999084472656
+              },
+              {
+                "date": "2026-04-29",
+                "close": 59.029998779296875
+              },
+              {
+                "date": "2026-04-30",
+                "close": 59.650001525878906
+              },
+              {
+                "date": "2026-05-01",
+                "close": 58.849998474121094
+              },
+              {
+                "date": "2026-05-04",
+                "close": 59.38999938964844
+              },
+              {
+                "date": "2026-05-05",
+                "close": 59.45000076293945
+              },
+              {
+                "date": "2026-05-06",
+                "close": 57.0
+              },
+              {
+                "date": "2026-05-07",
+                "close": 55.95000076293945
+              },
+              {
+                "date": "2026-05-08",
+                "close": 55.70000076293945
+              },
+              {
+                "date": "2026-05-11",
+                "close": 57.16999816894531
+              },
+              {
+                "date": "2026-05-12",
+                "close": 57.56999969482422
+              },
+              {
+                "date": "2026-05-13",
+                "close": 57.630001068115234
+              },
+              {
+                "date": "2026-05-14",
+                "close": 58.06999969482422
+              },
+              {
+                "date": "2026-05-15",
+                "close": 59.439998626708984
+              },
+              {
+                "date": "2026-05-18",
+                "close": 60.58000183105469
+              },
+              {
+                "date": "2026-05-19",
+                "close": 61.2599983215332
+              }
+            ],
+            "lookback_days_received": 60
+          },
+          "data_quality_flags": []
+        },
+        "XLB": {
+          "label": "XLB",
+          "current_price": 49.040000915527344,
+          "previous_close": 50.220001220703125,
+          "daily_change_pct": -2.3496620400107195,
+          "daily_change_abs": -1.1800003051757812,
+          "historical": {
+            "daily_closes": [
+              {
+                "date": "2026-02-24",
+                "close": 53.36000061035156
+              },
+              {
+                "date": "2026-02-25",
+                "close": 53.060001373291016
+              },
+              {
+                "date": "2026-02-26",
+                "close": 53.0
+              },
+              {
+                "date": "2026-02-27",
+                "close": 53.40999984741211
+              },
+              {
+                "date": "2026-03-02",
+                "close": 53.25
+              },
+              {
+                "date": "2026-03-03",
+                "close": 51.939998626708984
+              },
+              {
+                "date": "2026-03-04",
+                "close": 51.91999816894531
+              },
+              {
+                "date": "2026-03-05",
+                "close": 50.83000183105469
+              },
+              {
+                "date": "2026-03-06",
+                "close": 49.86000061035156
+              },
+              {
+                "date": "2026-03-09",
+                "close": 49.9900016784668
+              },
+              {
+                "date": "2026-03-10",
+                "close": 49.880001068115234
+              },
+              {
+                "date": "2026-03-11",
+                "close": 49.84000015258789
+              },
+              {
+                "date": "2026-03-12",
+                "close": 49.68000030517578
+              },
+              {
+                "date": "2026-03-13",
+                "close": 49.189998626708984
+              },
+              {
+                "date": "2026-03-16",
+                "close": 49.400001525878906
+              },
+              {
+                "date": "2026-03-17",
+                "close": 49.52000045776367
+              },
+              {
+                "date": "2026-03-18",
+                "close": 48.47999954223633
+              },
+              {
+                "date": "2026-03-19",
+                "close": 47.7400016784668
+              },
+              {
+                "date": "2026-03-20",
+                "close": 46.97999954223633
+              },
+              {
+                "date": "2026-03-23",
+                "close": 47.54999923706055
+              },
+              {
+                "date": "2026-03-24",
+                "close": 48.45000076293945
+              },
+              {
+                "date": "2026-03-25",
+                "close": 49.40999984741211
+              },
+              {
+                "date": "2026-03-26",
+                "close": 49.09000015258789
+              },
+              {
+                "date": "2026-03-27",
+                "close": 48.90999984741211
+              },
+              {
+                "date": "2026-03-30",
+                "close": 49.09000015258789
+              },
+              {
+                "date": "2026-03-31",
+                "close": 49.970001220703125
+              },
+              {
+                "date": "2026-04-01",
+                "close": 50.459999084472656
+              },
+              {
+                "date": "2026-04-02",
+                "close": 50.40999984741211
+              },
+              {
+                "date": "2026-04-06",
+                "close": 50.220001220703125
+              },
+              {
+                "date": "2026-04-07",
+                "close": 50.08000183105469
+              },
+              {
+                "date": "2026-04-08",
+                "close": 51.75
+              },
+              {
+                "date": "2026-04-09",
+                "close": 51.66999816894531
+              },
+              {
+                "date": "2026-04-10",
+                "close": 51.959999084472656
+              },
+              {
+                "date": "2026-04-13",
+                "close": 52.189998626708984
+              },
+              {
+                "date": "2026-04-14",
+                "close": 52.0099983215332
+              },
+              {
+                "date": "2026-04-15",
+                "close": 51.380001068115234
+              },
+              {
+                "date": "2026-04-16",
+                "close": 51.75
+              },
+              {
+                "date": "2026-04-17",
+                "close": 51.880001068115234
+              },
+              {
+                "date": "2026-04-20",
+                "close": 52.22999954223633
+              },
+              {
+                "date": "2026-04-21",
+                "close": 51.77000045776367
+              },
+              {
+                "date": "2026-04-22",
+                "close": 51.83000183105469
+              },
+              {
+                "date": "2026-04-23",
+                "close": 51.810001373291016
+              },
+              {
+                "date": "2026-04-24",
+                "close": 51.91999816894531
+              },
+              {
+                "date": "2026-04-27",
+                "close": 51.779998779296875
+              },
+              {
+                "date": "2026-04-28",
+                "close": 51.400001525878906
+              },
+              {
+                "date": "2026-04-29",
+                "close": 50.959999084472656
+              },
+              {
+                "date": "2026-04-30",
+                "close": 51.470001220703125
+              },
+              {
+                "date": "2026-05-01",
+                "close": 51.349998474121094
+              },
+              {
+                "date": "2026-05-04",
+                "close": 50.650001525878906
+              },
+              {
+                "date": "2026-05-05",
+                "close": 51.529998779296875
+              },
+              {
+                "date": "2026-05-06",
+                "close": 52.40999984741211
+              },
+              {
+                "date": "2026-05-07",
+                "close": 51.400001525878906
+              },
+              {
+                "date": "2026-05-08",
+                "close": 51.59000015258789
+              },
+              {
+                "date": "2026-05-11",
+                "close": 52.2599983215332
+              },
+              {
+                "date": "2026-05-12",
+                "close": 52.13999938964844
+              },
+              {
+                "date": "2026-05-13",
+                "close": 52.060001373291016
+              },
+              {
+                "date": "2026-05-14",
+                "close": 51.66999816894531
+              },
+              {
+                "date": "2026-05-15",
+                "close": 50.29999923706055
+              },
+              {
+                "date": "2026-05-18",
+                "close": 50.220001220703125
+              },
+              {
+                "date": "2026-05-19",
+                "close": 49.040000915527344
+              }
+            ],
+            "lookback_days_received": 60
+          },
+          "data_quality_flags": []
+        },
+        "XLU": {
+          "label": "XLU",
+          "current_price": 44.34000015258789,
+          "previous_close": 43.939998626708984,
+          "daily_change_pct": 0.9103357723724753,
+          "daily_change_abs": 0.40000152587890625,
+          "historical": {
+            "daily_closes": [
+              {
+                "date": "2026-02-24",
+                "close": 47.20000076293945
+              },
+              {
+                "date": "2026-02-25",
+                "close": 47.36000061035156
+              },
+              {
+                "date": "2026-02-26",
+                "close": 47.18000030517578
+              },
+              {
+                "date": "2026-02-27",
+                "close": 47.72999954223633
+              },
+              {
+                "date": "2026-03-02",
+                "close": 47.369998931884766
+              },
+              {
+                "date": "2026-03-03",
+                "close": 47.06999969482422
+              },
+              {
+                "date": "2026-03-04",
+                "close": 47.27000045776367
+              },
+              {
+                "date": "2026-03-05",
+                "close": 46.900001525878906
+              },
+              {
+                "date": "2026-03-06",
+                "close": 46.7400016784668
+              },
+              {
+                "date": "2026-03-09",
+                "close": 46.849998474121094
+              },
+              {
+                "date": "2026-03-10",
+                "close": 46.560001373291016
+              },
+              {
+                "date": "2026-03-11",
+                "close": 46.16999816894531
+              },
+              {
+                "date": "2026-03-12",
+                "close": 46.5
+              },
+              {
+                "date": "2026-03-13",
+                "close": 46.959999084472656
+              },
+              {
+                "date": "2026-03-16",
+                "close": 47.2599983215332
+              },
+              {
+                "date": "2026-03-17",
+                "close": 47.130001068115234
+              },
+              {
+                "date": "2026-03-18",
+                "close": 46.72999954223633
+              },
+              {
+                "date": "2026-03-19",
+                "close": 46.540000915527344
+              },
+              {
+                "date": "2026-03-20",
+                "close": 44.650001525878906
+              },
+              {
+                "date": "2026-03-23",
+                "close": 44.779998779296875
+              },
+              {
+                "date": "2026-03-24",
+                "close": 45.09000015258789
+              },
+              {
+                "date": "2026-03-25",
+                "close": 45.25
+              },
+              {
+                "date": "2026-03-26",
+                "close": 45.33000183105469
+              },
+              {
+                "date": "2026-03-27",
+                "close": 45.59000015258789
+              },
+              {
+                "date": "2026-03-30",
+                "close": 45.91999816894531
+              },
+              {
+                "date": "2026-03-31",
+                "close": 45.88999938964844
+              },
+              {
+                "date": "2026-04-01",
+                "close": 46.11000061035156
+              },
+              {
+                "date": "2026-04-02",
+                "close": 46.34000015258789
+              },
+              {
+                "date": "2026-04-06",
+                "close": 46.16999816894531
+              },
+              {
+                "date": "2026-04-07",
+                "close": 46.27000045776367
+              },
+              {
+                "date": "2026-04-08",
+                "close": 46.779998779296875
+              },
+              {
+                "date": "2026-04-09",
+                "close": 47.150001525878906
+              },
+              {
+                "date": "2026-04-10",
+                "close": 46.959999084472656
+              },
+              {
+                "date": "2026-04-13",
+                "close": 46.38999938964844
+              },
+              {
+                "date": "2026-04-14",
+                "close": 46.470001220703125
+              },
+              {
+                "date": "2026-04-15",
+                "close": 46.02000045776367
+              },
+              {
+                "date": "2026-04-16",
+                "close": 46.349998474121094
+              },
+              {
+                "date": "2026-04-17",
+                "close": 46.15999984741211
+              },
+              {
+                "date": "2026-04-20",
+                "close": 45.75
+              },
+              {
+                "date": "2026-04-21",
+                "close": 44.95000076293945
+              },
+              {
+                "date": "2026-04-22",
+                "close": 44.869998931884766
+              },
+              {
+                "date": "2026-04-23",
+                "close": 46.09000015258789
+              },
+              {
+                "date": "2026-04-24",
+                "close": 46.18000030517578
+              },
+              {
+                "date": "2026-04-27",
+                "close": 46.189998626708984
+              },
+              {
+                "date": "2026-04-28",
+                "close": 46.25
+              },
+              {
+                "date": "2026-04-29",
+                "close": 45.68000030517578
+              },
+              {
+                "date": "2026-04-30",
+                "close": 46.849998474121094
+              },
+              {
+                "date": "2026-05-01",
+                "close": 46.54999923706055
+              },
+              {
+                "date": "2026-05-04",
+                "close": 46.369998931884766
+              },
+              {
+                "date": "2026-05-05",
+                "close": 46.369998931884766
+              },
+              {
+                "date": "2026-05-06",
+                "close": 45.709999084472656
+              },
+              {
+                "date": "2026-05-07",
+                "close": 45.119998931884766
+              },
+              {
+                "date": "2026-05-08",
+                "close": 44.720001220703125
+              },
+              {
+                "date": "2026-05-11",
+                "close": 45.13999938964844
+              },
+              {
+                "date": "2026-05-12",
+                "close": 45.189998626708984
+              },
+              {
+                "date": "2026-05-13",
+                "close": 44.66999816894531
+              },
+              {
+                "date": "2026-05-14",
+                "close": 44.900001525878906
+              },
+              {
+                "date": "2026-05-15",
+                "close": 43.869998931884766
+              },
+              {
+                "date": "2026-05-18",
+                "close": 43.939998626708984
+              },
+              {
+                "date": "2026-05-19",
+                "close": 44.34000015258789
+              }
+            ],
+            "lookback_days_received": 60
+          },
+          "data_quality_flags": []
+        },
+        "XLRE": {
+          "label": "XLRE",
+          "current_price": 43.939998626708984,
+          "previous_close": 43.75,
+          "daily_change_pct": 0.43428257533482145,
+          "daily_change_abs": 0.18999862670898438,
+          "historical": {
+            "daily_closes": [
+              {
+                "date": "2026-02-24",
+                "close": 43.72999954223633
+              },
+              {
+                "date": "2026-02-25",
+                "close": 43.439998626708984
+              },
+              {
+                "date": "2026-02-26",
+                "close": 43.630001068115234
+              },
+              {
+                "date": "2026-02-27",
+                "close": 43.84000015258789
+              },
+              {
+                "date": "2026-03-02",
+                "close": 43.91999816894531
+              },
+              {
+                "date": "2026-03-03",
+                "close": 43.70000076293945
+              },
+              {
+                "date": "2026-03-04",
+                "close": 43.7599983215332
+              },
+              {
+                "date": "2026-03-05",
+                "close": 43.34000015258789
+              },
+              {
+                "date": "2026-03-06",
+                "close": 42.88999938964844
+              },
+              {
+                "date": "2026-03-09",
+                "close": 42.97999954223633
+              },
+              {
+                "date": "2026-03-10",
+                "close": 42.91999816894531
+              },
+              {
+                "date": "2026-03-11",
+                "close": 42.40999984741211
+              },
+              {
+                "date": "2026-03-12",
+                "close": 42.13999938964844
+              },
+              {
+                "date": "2026-03-13",
+                "close": 42.25
+              },
+              {
+                "date": "2026-03-16",
+                "close": 42.58000183105469
+              },
+              {
+                "date": "2026-03-17",
+                "close": 42.720001220703125
+              },
+              {
+                "date": "2026-03-18",
+                "close": 42.02000045776367
+              },
+              {
+                "date": "2026-03-19",
+                "close": 41.91999816894531
+              },
+              {
+                "date": "2026-03-20",
+                "close": 40.59000015258789
+              },
+              {
+                "date": "2026-03-23",
+                "close": 40.619998931884766
+              },
+              {
+                "date": "2026-03-24",
+                "close": 40.290000915527344
+              },
+              {
+                "date": "2026-03-25",
+                "close": 40.27000045776367
+              },
+              {
+                "date": "2026-03-26",
+                "close": 40.290000915527344
+              },
+              {
+                "date": "2026-03-27",
+                "close": 40.0099983215332
+              },
+              {
+                "date": "2026-03-30",
+                "close": 40.209999084472656
+              },
+              {
+                "date": "2026-03-31",
+                "close": 40.83000183105469
+              },
+              {
+                "date": "2026-04-01",
+                "close": 40.95000076293945
+              },
+              {
+                "date": "2026-04-02",
+                "close": 41.61000061035156
+              },
+              {
+                "date": "2026-04-06",
+                "close": 41.7599983215332
+              },
+              {
+                "date": "2026-04-07",
+                "close": 41.720001220703125
+              },
+              {
+                "date": "2026-04-08",
+                "close": 42.439998626708984
+              },
+              {
+                "date": "2026-04-09",
+                "close": 42.72999954223633
+              },
+              {
+                "date": "2026-04-10",
+                "close": 42.81999969482422
+              },
+              {
+                "date": "2026-04-13",
+                "close": 43.02000045776367
+              },
+              {
+                "date": "2026-04-14",
+                "close": 43.43000030517578
+              },
+              {
+                "date": "2026-04-15",
+                "close": 43.40999984741211
+              },
+              {
+                "date": "2026-04-16",
+                "close": 43.810001373291016
+              },
+              {
+                "date": "2026-04-17",
+                "close": 44.47999954223633
+              },
+              {
+                "date": "2026-04-20",
+                "close": 44.63999938964844
+              },
+              {
+                "date": "2026-04-21",
+                "close": 43.779998779296875
+              },
+              {
+                "date": "2026-04-22",
+                "close": 43.459999084472656
+              },
+              {
+                "date": "2026-04-23",
+                "close": 43.959999084472656
+              },
+              {
+                "date": "2026-04-24",
+                "close": 43.83000183105469
+              },
+              {
+                "date": "2026-04-27",
+                "close": 43.4900016784668
+              },
+              {
+                "date": "2026-04-28",
+                "close": 43.90999984741211
+              },
+              {
+                "date": "2026-04-29",
+                "close": 43.63999938964844
+              },
+              {
+                "date": "2026-04-30",
+                "close": 44.400001525878906
+              },
+              {
+                "date": "2026-05-01",
+                "close": 44.31999969482422
+              },
+              {
+                "date": "2026-05-04",
+                "close": 44.08000183105469
+              },
+              {
+                "date": "2026-05-05",
+                "close": 44.16999816894531
+              },
+              {
+                "date": "2026-05-06",
+                "close": 44.7400016784668
+              },
+              {
+                "date": "2026-05-07",
+                "close": 44.400001525878906
+              },
+              {
+                "date": "2026-05-08",
+                "close": 44.40999984741211
+              },
+              {
+                "date": "2026-05-11",
+                "close": 44.56999969482422
+              },
+              {
+                "date": "2026-05-12",
+                "close": 44.58000183105469
+              },
+              {
+                "date": "2026-05-13",
+                "close": 44.209999084472656
+              },
+              {
+                "date": "2026-05-14",
+                "close": 43.90999984741211
+              },
+              {
+                "date": "2026-05-15",
+                "close": 43.22999954223633
+              },
+              {
+                "date": "2026-05-18",
+                "close": 43.75
+              },
+              {
+                "date": "2026-05-19",
+                "close": 43.939998626708984
+              }
+            ],
+            "lookback_days_received": 60
+          },
+          "data_quality_flags": []
+        },
+        "XLC": {
+          "label": "XLC",
+          "current_price": 115.8499984741211,
+          "previous_close": 116.9800033569336,
+          "daily_change_pct": -0.965981236437982,
+          "daily_change_abs": -1.1300048828125,
+          "historical": {
+            "daily_closes": [
+              {
+                "date": "2026-02-24",
+                "close": 116.16000366210938
+              },
+              {
+                "date": "2026-02-25",
+                "close": 116.5
+              },
+              {
+                "date": "2026-02-26",
+                "close": 116.72000122070312
+              },
+              {
+                "date": "2026-02-27",
+                "close": 118.05000305175781
+              },
+              {
+                "date": "2026-03-02",
+                "close": 117.87000274658203
+              },
+              {
+                "date": "2026-03-03",
+                "close": 117.95999908447266
+              },
+              {
+                "date": "2026-03-04",
+                "close": 118.79000091552734
+              },
+              {
+                "date": "2026-03-05",
+                "close": 118.44000244140625
+              },
+              {
+                "date": "2026-03-06",
+                "close": 117.45999908447266
+              },
+              {
+                "date": "2026-03-09",
+                "close": 117.55999755859375
+              },
+              {
+                "date": "2026-03-10",
+                "close": 117.37999725341797
+              },
+              {
+                "date": "2026-03-11",
+                "close": 117.0
+              },
+              {
+                "date": "2026-03-12",
+                "close": 115.2699966430664
+              },
+              {
+                "date": "2026-03-13",
+                "close": 114.44999694824219
+              },
+              {
+                "date": "2026-03-16",
+                "close": 115.33000183105469
+              },
+              {
+                "date": "2026-03-17",
+                "close": 115.37000274658203
+              },
+              {
+                "date": "2026-03-18",
+                "close": 113.66000366210938
+              },
+              {
+                "date": "2026-03-19",
+                "close": 113.13999938964844
+              },
+              {
+                "date": "2026-03-20",
+                "close": 112.2300033569336
+              },
+              {
+                "date": "2026-03-23",
+                "close": 112.70999908447266
+              },
+              {
+                "date": "2026-03-24",
+                "close": 111.12999725341797
+              },
+              {
+                "date": "2026-03-25",
+                "close": 111.44000244140625
+              },
+              {
+                "date": "2026-03-26",
+                "close": 108.80999755859375
+              },
+              {
+                "date": "2026-03-27",
+                "close": 107.04000091552734
+              },
+              {
+                "date": "2026-03-30",
+                "close": 107.95999908447266
+              },
+              {
+                "date": "2026-03-31",
+                "close": 110.86000061035156
+              },
+              {
+                "date": "2026-04-01",
+                "close": 111.23999786376953
+              },
+              {
+                "date": "2026-04-02",
+                "close": 111.69999694824219
+              },
+              {
+                "date": "2026-04-06",
+                "close": 111.76000213623047
+              },
+              {
+                "date": "2026-04-07",
+                "close": 111.81999969482422
+              },
+              {
+                "date": "2026-04-08",
+                "close": 113.80999755859375
+              },
+              {
+                "date": "2026-04-09",
+                "close": 114.2699966430664
+              },
+              {
+                "date": "2026-04-10",
+                "close": 113.94999694824219
+              },
+              {
+                "date": "2026-04-13",
+                "close": 114.81999969482422
+              },
+              {
+                "date": "2026-04-14",
+                "close": 116.55999755859375
+              },
+              {
+                "date": "2026-04-15",
+                "close": 117.36000061035156
+              },
+              {
+                "date": "2026-04-16",
+                "close": 118.83000183105469
+              },
+              {
+                "date": "2026-04-17",
+                "close": 119.0999984741211
+              },
+              {
+                "date": "2026-04-20",
+                "close": 118.75
+              },
+              {
+                "date": "2026-04-21",
+                "close": 117.16000366210938
+              },
+              {
+                "date": "2026-04-22",
+                "close": 117.87999725341797
+              },
+              {
+                "date": "2026-04-23",
+                "close": 117.38999938964844
+              },
+              {
+                "date": "2026-04-24",
+                "close": 115.54000091552734
+              },
+              {
+                "date": "2026-04-27",
+                "close": 115.80999755859375
+              },
+              {
+                "date": "2026-04-28",
+                "close": 115.75
+              },
+              {
+                "date": "2026-04-29",
+                "close": 115.29000091552734
+              },
+              {
+                "date": "2026-04-30",
+                "close": 116.51000213623047
+              },
+              {
+                "date": "2026-05-01",
+                "close": 116.72000122070312
+              },
+              {
+                "date": "2026-05-04",
+                "close": 116.0999984741211
+              },
+              {
+                "date": "2026-05-05",
+                "close": 115.62999725341797
+              },
+              {
+                "date": "2026-05-06",
+                "close": 117.3499984741211
+              },
+              {
+                "date": "2026-05-07",
+                "close": 117.37999725341797
+              },
+              {
+                "date": "2026-05-08",
+                "close": 116.94000244140625
+              },
+              {
+                "date": "2026-05-11",
+                "close": 115.58000183105469
+              },
+              {
+                "date": "2026-05-12",
+                "close": 115.86000061035156
+              },
+              {
+                "date": "2026-05-13",
+                "close": 116.76000213623047
+              },
+              {
+                "date": "2026-05-14",
+                "close": 117.11000061035156
+              },
+              {
+                "date": "2026-05-15",
+                "close": 116.08000183105469
+              },
+              {
+                "date": "2026-05-18",
+                "close": 116.9800033569336
+              },
+              {
+                "date": "2026-05-19",
+                "close": 115.8499984741211
+              }
+            ],
+            "lookback_days_received": 60
+          },
+          "data_quality_flags": []
+        }
+      },
+      "data_quality_flags": []
+    },
+    "cadence_window": "post_close",
+    "anchor": {},
+    "sector_etf_symbol": "XLF"
+  },
+  "call_one_result": {
+    "ticker": "ALL",
+    "investigation": {
+      "ticker": "ALL",
+      "investigation_summary": "Allstate Corp (ALL) closed at $224.58 on May 19, 2026, up $3.37 (+1.52%) from the prior close, after printing a new 52-week intraday high of $227.62 **(CNBC, May 19 2026)**. Volume surged to roughly 3.1 million shares, more than double the 10-day average of 1.70 million and approximately 2.2x the median, triggering the system’s 99th-percentile volume alert **(CNBC, May 19 2026; StockAnalysis, May 19 2026)**. The stock outperformed a down market, with the SPY falling 0.67% and the XLF down 1.24% on the day.\n\nNo material corporate catalyst appears to have driven the move. Allstate did not file any 8-K, 10-Q, or other material SEC filing on May 19; the most recent filings were dated May 11, 2026 **(Allstate Investors SEC filings page, May 11 2026)**. Likewise, no analyst upgrades or downgrades were issued on the stock today; the latest ratings changes occurred in early May and April **(CNN/TipRanks, May 7 2026)**. The company published a press release announcing $5.25 million in community-trust awards with the Aspen Institute, but the release contained no financial guidance or operating metrics and is unlikely to be material to valuation ***(PRNewswire, May 19 2026)***.\n\nThe most plausible explanation is technical: a breakout to a new 52-week high on heavy volume can trigger momentum and algorithmic buying in the absence of news. A secondary factor may be sector sentiment; AM Best published a report on May 18 noting stabilization in personal auto and homeowners markets **(AM Best, May 18 2026)**, which could have provided a modest tailwind for personal-line insurers, though no source directly links this report to today’s volume spike in ALL.\n\nBecause no primary source confirms a specific fundamental driver, the picture remains ambiguous. The move could reflect mechanical rebalancing, buyback flows, or technical positioning that has not yet been reported in the financial press. Absent a confirmed catalyst, the volume spike should be treated as an unexplained breakout rather than a thesis-altering event.",
+      "established_facts": [
+        "Allstate closed at $224.58 on May 19, 2026, up $3.37 (+1.52%), after reaching an intraday 52-week high of $227.62 **(CNBC, May 19 2026)**.",
+        "Trading volume was approximately 3.1 million shares, roughly double the 10-day average of 1.70 million and ~2.2x the median, placing it in the 99th percentile **(CNBC, May 19 2026; StockAnalysis, May 19 2026)**.",
+        "No material SEC filings were published by Allstate on May 19, 2026; the most recent filings were dated May 11, 2026 **(Allstate Investors SEC filings page, May 11 2026)**.",
+        "No analyst upgrades or downgrades were issued on May 19, 2026; the latest actions occurred in early May and April 2026 **(CNN/TipRanks, May 7 2026)**.",
+        "Allstate issued a press release on May 19, 2026 announcing $5.25 million in Trust in Practice Awards with the Aspen Institute, which does not contain financial guidance or material operating metrics ***(PRNewswire, May 19 2026)***."
+      ],
+      "candidate_causes": [
+        {
+          "cause": "Technical breakout and momentum-driven buying after printing a new 52-week high",
+          "supporting_evidence": "ALL hit a new 52-week high of $227.62 intraday and closed up 1.52% on volume more than double its 10-day average. No material news accompanied the move, which is consistent with algorithmic or technical flow following a range breakout.",
+          "confidence": "medium",
+          "time_horizon": "hours"
+        },
+        {
+          "cause": "Broad sector sentiment lift following an AM Best report on personal-lines stabilization",
+          "supporting_evidence": "AM Best published a report on May 18, 2026, stating that personal auto and homeowners markets are stabilizing and approved rate changes are declining. This could have improved sentiment for personal-line insurers broadly, though no source directly links it to today's volume in ALL.",
+          "confidence": "low",
+          "time_horizon": "days"
+        }
+      ],
+      "relationship_to_existing_thesis": "The findings do not constitute new information that changes the Stage 3 thesis. The thesis already accounted for high capital returns, peak earnings, and contested cyclical inflection. Today's price/volume action lacks any new data on underwriting margins, pricing power, catastrophe loads, or buyback pace. It appears consistent with the existing thesis's acknowledgment that the stock can experience technical volatility around capital-return flows and cyclical debate, but it does not resolve the central question of margin normalization.",
+      "sources_consulted": [
+        {
+          "url": "https://www.cnbc.com/quotes/ALL",
+          "publisher": "CNBC",
+          "date": "2026-05-19",
+          "credibility": "**"
+        },
+        {
+          "url": "https://stockanalysis.com/stocks/all/",
+          "publisher": "StockAnalysis",
+          "date": "2026-05-19",
+          "credibility": "*"
+        },
+        {
+          "url": "https://www.marketwatch.com/investing/stock/all",
+          "publisher": "MarketWatch",
+          "date": "2026-05-19",
+          "credibility": "**"
+        },
+        {
+          "url": "https://www.allstateinvestors.com/financials/sec-filings",
+          "publisher": "Allstate Investors",
+          "date": "2026-05-11",
+          "credibility": "***"
+        },
+        {
+          "url": "https://www.prnewswire.com/news-releases/us-nonprofits-demonstrate-overwhelming-interest-in-improving-trust-302775402.html",
+          "publisher": "PRNewswire",
+          "date": "2026-05-19",
+          "credibility": "***"
+        },
+        {
+          "url": "https://news.ambest.com/",
+          "publisher": "AM Best",
+          "date": "2026-05-18",
+          "credibility": "**"
+        },
+        {
+          "url": "https://www.cnn.com/markets/stocks/ALL",
+          "publisher": "CNN/TipRanks",
+          "date": "2026-05-07",
+          "credibility": "*"
+        }
+      ],
+      "search_queries_used": [
+        "Allstate ALL stock news May 19 2026 volume spike",
+        "Allstate Corporation press release May 2026",
+        "Allstate ALL analyst upgrade downgrade May 2026",
+        "\"Allstate\" \"May 19\" 2026 news",
+        "Allstate stock volume spike May 19 2026",
+        "ALL Allstate news today insurance",
+        "Allstate 8-K May 19 2026 SEC filing",
+        "Allstate investor day May 2026",
+        "Allstate stock upgrade downgrade May 19 2026",
+        "Allstate news 2026-05-19"
+      ],
+      "investigation_confidence": "low",
+      "ambiguity_notes": "No material news, filings, or analyst actions were identified for May 19, 2026. The volume spike and new 52-week high appear disconnected from identifiable fundamental catalysts, suggesting the move may be technical or flow-driven. Coverage may not have fully caught up if a post-close catalyst exists."
+    },
+    "raw_response": "```json\n{\n  \"ticker\": \"ALL\",\n  \"investigation_summary\": \"Allstate Corp (ALL) closed at $224.58 on May 19, 2026, up $3.37 (+1.52%) from the prior close, after printing a new 52-week intraday high of $227.62 **(CNBC, May 19 2026)**. Volume surged to roughly 3.1 million shares, more than double the 10-day average of 1.70 million and approximately 2.2x the median, triggering the system’s 99th-percentile volume alert **(CNBC, May 19 2026; StockAnalysis, May 19 2026)**. The stock outperformed a down market, with the SPY falling 0.67% and the XLF down 1.24% on the day.\\n\\nNo material corporate catalyst appears to have driven the move. Allstate did not file any 8-K, 10-Q, or other material SEC filing on May 19; the most recent filings were dated May 11, 2026 **(Allstate Investors SEC filings page, May 11 2026)**. Likewise, no analyst upgrades or downgrades were issued on the stock today; the latest ratings changes occurred in early May and April **(CNN/TipRanks, May 7 2026)**. The company published a press release announcing $5.25 million in community-trust awards with the Aspen Institute, but the release contained no financial guidance or operating metrics and is unlikely to be material to valuation ***(PRNewswire, May 19 2026)***.\\n\\nThe most plausible explanation is technical: a breakout to a new 52-week high on heavy volume can trigger momentum and algorithmic buying in the absence of news. A secondary factor may be sector sentiment; AM Best published a report on May 18 noting stabilization in personal auto and homeowners markets **(AM Best, May 18 2026)**, which could have provided a modest tailwind for personal-line insurers, though no source directly links this report to today’s volume spike in ALL.\\n\\nBecause no primary source confirms a specific fundamental driver, the picture remains ambiguous. The move could reflect mechanical rebalancing, buyback flows, or technical positioning that has not yet been reported in the financial press. Absent a confirmed catalyst, the volume spike should be treated as an unexplained breakout rather than a thesis-altering event.\",\n  \"established_facts\": [\n    \"Allstate closed at $224.58 on May 19, 2026, up $3.37 (+1.52%), after reaching an intraday 52-week high of $227.62 **(CNBC, May 19 2026)**.\",\n    \"Trading volume was approximately 3.1 million shares, roughly double the 10-day average of 1.70 million and ~2.2x the median, placing it in the 99th percentile **(CNBC, May 19 2026; StockAnalysis, May 19 2026)**.\",\n    \"No material SEC filings were published by Allstate on May 19, 2026; the most recent filings were dated May 11, 2026 **(Allstate Investors SEC filings page, May 11 2026)**.\",\n    \"No analyst upgrades or downgrades were issued on May 19, 2026; the latest actions occurred in early May and April 2026 **(CNN/TipRanks, May 7 2026)**.\",\n    \"Allstate issued a press release on May 19, 2026 announcing $5.25 million in Trust in Practice Awards with the Aspen Institute, which does not contain financial guidance or material operating metrics ***(PRNewswire, May 19 2026)***.\"\n  ],\n  \"candidate_causes\": [\n    {\n      \"cause\": \"Technical breakout and momentum-driven buying after printing a new 52-week high\",\n      \"supporting_evidence\": \"ALL hit a new 52-week high of $227.62 intraday and closed up 1.52% on volume more than double its 10-day average. No material news accompanied the move, which is consistent with algorithmic or technical flow following a range breakout.\",\n      \"confidence\": \"medium\",\n      \"time_horizon\": \"hours\"\n    },\n    {\n      \"cause\": \"Broad sector sentiment lift following an AM Best report on personal-lines stabilization\",\n      \"supporting_evidence\": \"AM Best published a report on May 18, 2026, stating that personal auto and homeowners markets are stabilizing and approved rate changes are declining. This could have improved sentiment for personal-line insurers broadly, though no source directly links it to today's volume in ALL.\",\n      \"confidence\": \"low\",\n      \"time_horizon\": \"days\"\n    }\n  ],\n  \"relationship_to_existing_thesis\": \"The findings do not constitute new information that changes the Stage 3 thesis. The thesis already accounted for high capital returns, peak earnings, and contested cyclical inflection. Today's price/volume action lacks any new data on underwriting margins, pricing power, catastrophe loads, or buyback pace. It appears consistent with the existing thesis's acknowledgment that the stock can experience technical volatility around capital-return flows and cyclical debate, but it does not resolve the central question of margin normalization.\",\n  \"sources_consulted\": [\n    {\"url\": \"https://www.cnbc.com/quotes/ALL\", \"publisher\": \"CNBC\", \"date\": \"2026-05-19\", \"credibility\": \"**\"},\n    {\"url\": \"https://stockanalysis.com/stocks/all/\", \"publisher\": \"StockAnalysis\", \"date\": \"2026-05-19\", \"credibility\": \"*\"},\n    {\"url\": \"https://www.marketwatch.com/investing/stock/all\", \"publisher\": \"MarketWatch\", \"date\": \"2026-05-19\", \"credibility\": \"**\"},\n    {\"url\": \"https://www.allstateinvestors.com/financials/sec-filings\", \"publisher\": \"Allstate Investors\", \"date\": \"2026-05-11\", \"credibility\": \"***\"},\n    {\"url\": \"https://www.prnewswire.com/news-releases/us-nonprofits-demonstrate-overwhelming-interest-in-improving-trust-302775402.html\", \"publisher\": \"PRNewswire\", \"date\": \"2026-05-19\", \"credibility\": \"***\"},\n    {\"url\": \"https://news.ambest.com/\", \"publisher\": \"AM Best\", \"date\": \"2026-05-18\", \"credibility\": \"**\"},\n    {\"url\": \"https://www.cnn.com/markets/stocks/ALL\", \"publisher\": \"CNN/TipRanks\", \"date\": \"2026-05-07\", \"credibility\": \"*\"}\n  ],\n  \"search_queries_used\": [\n    \"Allstate ALL stock news May 19 2026 volume spike\",\n    \"Allstate Corporation press release May 2026\",\n    \"Allstate ALL analyst upgrade downgrade May 2026\",\n    \"\\\"Allstate\\\" \\\"May 19\\\" 2026 news\",\n    \"Allstate stock volume spike May 19 2026\",\n    \"ALL Allstate news today insurance\",\n    \"Allstate 8-K May 19 2026 SEC filing\",\n    \"Allstate investor day May 2026\",\n    \"Allstate stock upgrade downgrade May 19 2026\",\n    \"Allstate news 2026-05-19\"\n  ],\n  \"investigation_confidence\": \"low\",\n  \"ambiguity_notes\": \"No material news, filings, or analyst actions were identified for May 19, 2026. The volume spike and new 52-week high appear disconnected from identifiable fundamental catalysts, suggesting the move may be technical or flow-driven. Coverage may not have fully caught up if a post-close catalyst exists.\"\n}\n```",
+    "validation_violations": [],
+    "web_search_calls_made": 12,
+    "web_search_cap_reached": true,
+    "token_usage": {
+      "input_tokens": 58126,
+      "output_tokens": 7988,
+      "total_tokens": 66114
+    },
+    "model": "kimi-k2.6",
+    "status": "ok",
+    "error": null
+  },
+  "call_two_packet": {
+    "ticker": "ALL",
+    "investigation_result": {
+      "ticker": "ALL",
+      "investigation": {
+        "ticker": "ALL",
+        "investigation_summary": "Allstate Corp (ALL) closed at $224.58 on May 19, 2026, up $3.37 (+1.52%) from the prior close, after printing a new 52-week intraday high of $227.62 **(CNBC, May 19 2026)**. Volume surged to roughly 3.1 million shares, more than double the 10-day average of 1.70 million and approximately 2.2x the median, triggering the system’s 99th-percentile volume alert **(CNBC, May 19 2026; StockAnalysis, May 19 2026)**. The stock outperformed a down market, with the SPY falling 0.67% and the XLF down 1.24% on the day.\n\nNo material corporate catalyst appears to have driven the move. Allstate did not file any 8-K, 10-Q, or other material SEC filing on May 19; the most recent filings were dated May 11, 2026 **(Allstate Investors SEC filings page, May 11 2026)**. Likewise, no analyst upgrades or downgrades were issued on the stock today; the latest ratings changes occurred in early May and April **(CNN/TipRanks, May 7 2026)**. The company published a press release announcing $5.25 million in community-trust awards with the Aspen Institute, but the release contained no financial guidance or operating metrics and is unlikely to be material to valuation ***(PRNewswire, May 19 2026)***.\n\nThe most plausible explanation is technical: a breakout to a new 52-week high on heavy volume can trigger momentum and algorithmic buying in the absence of news. A secondary factor may be sector sentiment; AM Best published a report on May 18 noting stabilization in personal auto and homeowners markets **(AM Best, May 18 2026)**, which could have provided a modest tailwind for personal-line insurers, though no source directly links this report to today’s volume spike in ALL.\n\nBecause no primary source confirms a specific fundamental driver, the picture remains ambiguous. The move could reflect mechanical rebalancing, buyback flows, or technical positioning that has not yet been reported in the financial press. Absent a confirmed catalyst, the volume spike should be treated as an unexplained breakout rather than a thesis-altering event.",
+        "established_facts": [
+          "Allstate closed at $224.58 on May 19, 2026, up $3.37 (+1.52%), after reaching an intraday 52-week high of $227.62 **(CNBC, May 19 2026)**.",
+          "Trading volume was approximately 3.1 million shares, roughly double the 10-day average of 1.70 million and ~2.2x the median, placing it in the 99th percentile **(CNBC, May 19 2026; StockAnalysis, May 19 2026)**.",
+          "No material SEC filings were published by Allstate on May 19, 2026; the most recent filings were dated May 11, 2026 **(Allstate Investors SEC filings page, May 11 2026)**.",
+          "No analyst upgrades or downgrades were issued on May 19, 2026; the latest actions occurred in early May and April 2026 **(CNN/TipRanks, May 7 2026)**.",
+          "Allstate issued a press release on May 19, 2026 announcing $5.25 million in Trust in Practice Awards with the Aspen Institute, which does not contain financial guidance or material operating metrics ***(PRNewswire, May 19 2026)***."
+        ],
+        "candidate_causes": [
+          {
+            "cause": "Technical breakout and momentum-driven buying after printing a new 52-week high",
+            "supporting_evidence": "ALL hit a new 52-week high of $227.62 intraday and closed up 1.52% on volume more than double its 10-day average. No material news accompanied the move, which is consistent with algorithmic or technical flow following a range breakout.",
+            "confidence": "medium",
+            "time_horizon": "hours"
+          },
+          {
+            "cause": "Broad sector sentiment lift following an AM Best report on personal-lines stabilization",
+            "supporting_evidence": "AM Best published a report on May 18, 2026, stating that personal auto and homeowners markets are stabilizing and approved rate changes are declining. This could have improved sentiment for personal-line insurers broadly, though no source directly links it to today's volume in ALL.",
+            "confidence": "low",
+            "time_horizon": "days"
+          }
+        ],
+        "relationship_to_existing_thesis": "The findings do not constitute new information that changes the Stage 3 thesis. The thesis already accounted for high capital returns, peak earnings, and contested cyclical inflection. Today's price/volume action lacks any new data on underwriting margins, pricing power, catastrophe loads, or buyback pace. It appears consistent with the existing thesis's acknowledgment that the stock can experience technical volatility around capital-return flows and cyclical debate, but it does not resolve the central question of margin normalization.",
+        "sources_consulted": [
+          {
+            "url": "https://www.cnbc.com/quotes/ALL",
+            "publisher": "CNBC",
+            "date": "2026-05-19",
+            "credibility": "**"
+          },
+          {
+            "url": "https://stockanalysis.com/stocks/all/",
+            "publisher": "StockAnalysis",
+            "date": "2026-05-19",
+            "credibility": "*"
+          },
+          {
+            "url": "https://www.marketwatch.com/investing/stock/all",
+            "publisher": "MarketWatch",
+            "date": "2026-05-19",
+            "credibility": "**"
+          },
+          {
+            "url": "https://www.allstateinvestors.com/financials/sec-filings",
+            "publisher": "Allstate Investors",
+            "date": "2026-05-11",
+            "credibility": "***"
+          },
+          {
+            "url": "https://www.prnewswire.com/news-releases/us-nonprofits-demonstrate-overwhelming-interest-in-improving-trust-302775402.html",
+            "publisher": "PRNewswire",
+            "date": "2026-05-19",
+            "credibility": "***"
+          },
+          {
+            "url": "https://news.ambest.com/",
+            "publisher": "AM Best",
+            "date": "2026-05-18",
+            "credibility": "**"
+          },
+          {
+            "url": "https://www.cnn.com/markets/stocks/ALL",
+            "publisher": "CNN/TipRanks",
+            "date": "2026-05-07",
+            "credibility": "*"
+          }
+        ],
+        "search_queries_used": [
+          "Allstate ALL stock news May 19 2026 volume spike",
+          "Allstate Corporation press release May 2026",
+          "Allstate ALL analyst upgrade downgrade May 2026",
+          "\"Allstate\" \"May 19\" 2026 news",
+          "Allstate stock volume spike May 19 2026",
+          "ALL Allstate news today insurance",
+          "Allstate 8-K May 19 2026 SEC filing",
+          "Allstate investor day May 2026",
+          "Allstate stock upgrade downgrade May 19 2026",
+          "Allstate news 2026-05-19"
+        ],
+        "investigation_confidence": "low",
+        "ambiguity_notes": "No material news, filings, or analyst actions were identified for May 19, 2026. The volume spike and new 52-week high appear disconnected from identifiable fundamental catalysts, suggesting the move may be technical or flow-driven. Coverage may not have fully caught up if a post-close catalyst exists."
+      },
+      "raw_response": "```json\n{\n  \"ticker\": \"ALL\",\n  \"investigation_summary\": \"Allstate Corp (ALL) closed at $224.58 on May 19, 2026, up $3.37 (+1.52%) from the prior close, after printing a new 52-week intraday high of $227.62 **(CNBC, May 19 2026)**. Volume surged to roughly 3.1 million shares, more than double the 10-day average of 1.70 million and approximately 2.2x the median, triggering the system’s 99th-percentile volume alert **(CNBC, May 19 2026; StockAnalysis, May 19 2026)**. The stock outperformed a down market, with the SPY falling 0.67% and the XLF down 1.24% on the day.\\n\\nNo material corporate catalyst appears to have driven the move. Allstate did not file any 8-K, 10-Q, or other material SEC filing on May 19; the most recent filings were dated May 11, 2026 **(Allstate Investors SEC filings page, May 11 2026)**. Likewise, no analyst upgrades or downgrades were issued on the stock today; the latest ratings changes occurred in early May and April **(CNN/TipRanks, May 7 2026)**. The company published a press release announcing $5.25 million in community-trust awards with the Aspen Institute, but the release contained no financial guidance or operating metrics and is unlikely to be material to valuation ***(PRNewswire, May 19 2026)***.\\n\\nThe most plausible explanation is technical: a breakout to a new 52-week high on heavy volume can trigger momentum and algorithmic buying in the absence of news. A secondary factor may be sector sentiment; AM Best published a report on May 18 noting stabilization in personal auto and homeowners markets **(AM Best, May 18 2026)**, which could have provided a modest tailwind for personal-line insurers, though no source directly links this report to today’s volume spike in ALL.\\n\\nBecause no primary source confirms a specific fundamental driver, the picture remains ambiguous. The move could reflect mechanical rebalancing, buyback flows, or technical positioning that has not yet been reported in the financial press. Absent a confirmed catalyst, the volume spike should be treated as an unexplained breakout rather than a thesis-altering event.\",\n  \"established_facts\": [\n    \"Allstate closed at $224.58 on May 19, 2026, up $3.37 (+1.52%), after reaching an intraday 52-week high of $227.62 **(CNBC, May 19 2026)**.\",\n    \"Trading volume was approximately 3.1 million shares, roughly double the 10-day average of 1.70 million and ~2.2x the median, placing it in the 99th percentile **(CNBC, May 19 2026; StockAnalysis, May 19 2026)**.\",\n    \"No material SEC filings were published by Allstate on May 19, 2026; the most recent filings were dated May 11, 2026 **(Allstate Investors SEC filings page, May 11 2026)**.\",\n    \"No analyst upgrades or downgrades were issued on May 19, 2026; the latest actions occurred in early May and April 2026 **(CNN/TipRanks, May 7 2026)**.\",\n    \"Allstate issued a press release on May 19, 2026 announcing $5.25 million in Trust in Practice Awards with the Aspen Institute, which does not contain financial guidance or material operating metrics ***(PRNewswire, May 19 2026)***.\"\n  ],\n  \"candidate_causes\": [\n    {\n      \"cause\": \"Technical breakout and momentum-driven buying after printing a new 52-week high\",\n      \"supporting_evidence\": \"ALL hit a new 52-week high of $227.62 intraday and closed up 1.52% on volume more than double its 10-day average. No material news accompanied the move, which is consistent with algorithmic or technical flow following a range breakout.\",\n      \"confidence\": \"medium\",\n      \"time_horizon\": \"hours\"\n    },\n    {\n      \"cause\": \"Broad sector sentiment lift following an AM Best report on personal-lines stabilization\",\n      \"supporting_evidence\": \"AM Best published a report on May 18, 2026, stating that personal auto and homeowners markets are stabilizing and approved rate changes are declining. This could have improved sentiment for personal-line insurers broadly, though no source directly links it to today's volume in ALL.\",\n      \"confidence\": \"low\",\n      \"time_horizon\": \"days\"\n    }\n  ],\n  \"relationship_to_existing_thesis\": \"The findings do not constitute new information that changes the Stage 3 thesis. The thesis already accounted for high capital returns, peak earnings, and contested cyclical inflection. Today's price/volume action lacks any new data on underwriting margins, pricing power, catastrophe loads, or buyback pace. It appears consistent with the existing thesis's acknowledgment that the stock can experience technical volatility around capital-return flows and cyclical debate, but it does not resolve the central question of margin normalization.\",\n  \"sources_consulted\": [\n    {\"url\": \"https://www.cnbc.com/quotes/ALL\", \"publisher\": \"CNBC\", \"date\": \"2026-05-19\", \"credibility\": \"**\"},\n    {\"url\": \"https://stockanalysis.com/stocks/all/\", \"publisher\": \"StockAnalysis\", \"date\": \"2026-05-19\", \"credibility\": \"*\"},\n    {\"url\": \"https://www.marketwatch.com/investing/stock/all\", \"publisher\": \"MarketWatch\", \"date\": \"2026-05-19\", \"credibility\": \"**\"},\n    {\"url\": \"https://www.allstateinvestors.com/financials/sec-filings\", \"publisher\": \"Allstate Investors\", \"date\": \"2026-05-11\", \"credibility\": \"***\"},\n    {\"url\": \"https://www.prnewswire.com/news-releases/us-nonprofits-demonstrate-overwhelming-interest-in-improving-trust-302775402.html\", \"publisher\": \"PRNewswire\", \"date\": \"2026-05-19\", \"credibility\": \"***\"},\n    {\"url\": \"https://news.ambest.com/\", \"publisher\": \"AM Best\", \"date\": \"2026-05-18\", \"credibility\": \"**\"},\n    {\"url\": \"https://www.cnn.com/markets/stocks/ALL\", \"publisher\": \"CNN/TipRanks\", \"date\": \"2026-05-07\", \"credibility\": \"*\"}\n  ],\n  \"search_queries_used\": [\n    \"Allstate ALL stock news May 19 2026 volume spike\",\n    \"Allstate Corporation press release May 2026\",\n    \"Allstate ALL analyst upgrade downgrade May 2026\",\n    \"\\\"Allstate\\\" \\\"May 19\\\" 2026 news\",\n    \"Allstate stock volume spike May 19 2026\",\n    \"ALL Allstate news today insurance\",\n    \"Allstate 8-K May 19 2026 SEC filing\",\n    \"Allstate investor day May 2026\",\n    \"Allstate stock upgrade downgrade May 19 2026\",\n    \"Allstate news 2026-05-19\"\n  ],\n  \"investigation_confidence\": \"low\",\n  \"ambiguity_notes\": \"No material news, filings, or analyst actions were identified for May 19, 2026. The volume spike and new 52-week high appear disconnected from identifiable fundamental catalysts, suggesting the move may be technical or flow-driven. Coverage may not have fully caught up if a post-close catalyst exists.\"\n}\n```",
+      "validation_violations": [],
+      "web_search_calls_made": 12,
+      "web_search_cap_reached": true,
+      "token_usage": {
+        "input_tokens": 58126,
+        "output_tokens": 7988,
+        "total_tokens": 66114
+      },
+      "model": "kimi-k2.6",
+      "status": "ok",
+      "error": null
+    },
+    "thesis": {
+      "summary": "Allstate Corp sits at a contested cyclical inflection point following one of the most profitable quarters in its recent history. The personal-lines insurer generated trailing-twelve-month earnings of roughly $45 per share and a 45% return on equity in early 2026, yet the consolidated view treats these figures as a hard-market apex rather than a new structural baseline. At approximately $214, the stock carries optically cheap trailing multiples near 4.7x earnings and 1.9x book value, but the forward price-to-earnings ratio already sits near 8x, implying the market expects a severe normalization toward the mid-$20s in earnings per share. The central thesis is therefore one of cyclical gravity: the most probable path over the next year involves underwriting margins gradually decompressing from their peaks, capital returns moderating, and the valuation multiple compressing toward mid-cycle levels as investors accept that the extraordinary profitability of 2025–2026 is not repeatable without further rate hikes.\n\nThe bull case rests on a handful of genuinely durable advantages. Management has assembled a formidable capital-return engine, pairing a fortress balance sheet with a combined $7.6 billion share repurchase authorization and a free-cash-flow yield near 23%. Even if earnings soften, the mechanical reduction in shares outstanding—potentially 8% to 10% over the next year—provides a tangible per-share floor that would be difficult to replicate among peers. Operationally, years of investment in granular pricing, telematics, and claims automation have driven the adjusted expense ratio below 22%, while the fixed-income portfolio yields 4.5% on a 5.5-year duration, anchoring roughly $3.6 billion to $3.8 billion in annual net investment income. Multi-channel distribution flexibility and new product rollouts like Affordable, Simple, Connected auto have also allowed the company to grow policies in force across both exclusive and independent agents even as rate actions turn net-neutral.\n\nAgainst these strengths stand several formidable risks that have tilted the probability distribution modestly bearish. The most immediate concern is pricing power exhaustion: the auto underlying combined ratio already deteriorated sequentially from 88.1% for full-year 2025 to 89.5% in the first quarter of 2026, even as rate changes turned net-neutral across 39 states. If loss severity from motor vehicle repair and bodily injury costs continues to outrun earned pricing, margins could drift into the low-90s, eradicating the earnings windfall that buybacks are currently capitalizing. Catastrophe stochasticity presents an equally material threat; an active hurricane season or elevated convective storm losses could push full-year cat loads above $6 billion, eroding statutory surplus and likely forcing management to throttle repurchases to preserve capital. Competitive dynamics add further pressure, as Progressive’s sub-20% expense ratio and superior data analytics allow it to skim preferred risks, while GEICO’s renewed price aggression under Berkshire’s balance sheet limits Allstate’s ability to defend volume without sacrificing margin. Regulatory dysfunction in California and restrictive environments in Florida further constrain growth and rate adequacy in two of the nation’s largest markets.\n\nConviction is medium because the evidence points clearly toward peak earnings but leaves critical uncertainty around the slope of normalization. The debate synthesis validated the bear argument that sequential margin deterioration in the first quarter is likely a signal, not noise, yet no historical precedent exists for Allstate’s current operational toolkit navigating a full soft market without the tailwind of emergency rate hikes. Confidence would rise if the auto underlying combined ratio stabilizes at or below 89% through the third quarter, proving that operational offsets are genuinely substituting for pricing power. Conversely, conviction would drop sharply if the auto combined ratio prints above 92% for two consecutive quarters, if prior-year reserve development turns materially adverse, or if full-year share repurchases fall below $4 billion—any of which would confirm that management sees capital impairment ahead.\n\nFrom a risk-reward perspective, the probability-weighted twelve-month expected return is roughly negative 3%, reflecting a base case that envisions a grind lower toward $192 as earnings normalize in the low-$20s per share and the price-to-book multiple contracts toward 1.55x. While the bull case offers roughly 50% upside if the market accepts a structurally higher earnings floor, it carries only a 26% probability. The bear case, weighted at 32%, implies more than 35% downside should margins revert rapidly and the multiple compress toward 1.1x book. The asymmetry is therefore unfavorable in the central expectation, with capital returns acting less as a catalyst and more as a shock absorber that blunts terminal downside without reversing the directional trend. A portfolio manager should treat this as a late-cycle de-risking story rather than a deep-value entry, where the shareholder yield is attractive but insufficient to overcome the gravitational pull of underwriting normalization.\n\nWhat distinguishes Allstate from many of its property-and-casualty peers is the sheer magnitude of its cyclical inflection and the aggressiveness of its capital return program. Whereas the sector often trades as a collection of steady-state compounders, Allstate is explicitly a transformation story being stress-tested in real time—its operational overhaul must prove it can maintain mid-cycle margins without the relentless rate hikes that drove the 2023–2025 recovery. The 22.6% free-cash-flow yield and the potential for near-double-digit share count reduction in a single year are exceptional even within a capital-rich industry, offering a mechanical differentiation that provides downside mitigation. Yet this same intensity of buybacks also embeds a vulnerability: if earnings collapse faster than expected, the company could be forced to halt its repurchase engine, removing the very floor that currently supports the valuation.",
+      "source_date": "2026-05-11",
+      "error": null
+    },
+    "signal_decision": {
+      "ticker": "ALL",
+      "computed_at": "2026-05-19T20:30:08.031568+00:00",
+      "triggered": true,
+      "trigger_path": "major",
+      "fired_signals": [
+        {
+          "signal_type": "volume",
+          "tier": "major",
+          "details": {
+            "current_volume": 3092896,
+            "is_partial_day": false,
+            "percentile_reached": 99.0045691718588,
+            "threshold_p95": 2243529.9999999995,
+            "threshold_p99": 3064888.000000001,
+            "ratio_to_median": 2.22927490269569
+          }
+        }
+      ],
+      "signal_summary": {
+        "price_fired": false,
+        "price_tier": null,
+        "volume_fired": true,
+        "volume_tier": "major",
+        "cumulative_fired": false,
+        "major_count": 1,
+        "minor_count": 0
+      },
+      "config": {
+        "minor_signals_required_for_trigger": 2
+      },
+      "data_quality_flags": [
+        "cumulative_signal: No evaluation anchor for this ticker; signal cannot fire. Anchor will be created on next successful pipeline rerun."
+      ]
+    },
+    "anchor": {}
+  },
+  "call_two_result": {
+    "ticker": "ALL",
+    "decision": {
+      "ticker": "ALL",
+      "rerun_decision": false,
+      "rationale": "Call 1’s investigation confidence is low and it identified no material corporate catalyst for the May 19 volume spike. No material SEC filings were published on May 19, 2026, with the most recent filings dated May 11, 2026 (***, Allstate Investors SEC filings page, May 11 2026), and no analyst upgrades or downgrades were issued that day (*, CNN/TipRanks, May 7 2026). The only primary-source release was a $5.25 million community-trust award announcement that contained no financial guidance or operating metrics (***, PRNewswire, May 19 2026). Without a new fact established by high-credibility sources, there is nothing the existing thesis failed to contemplate.\n\nThe AM Best report on personal-lines stabilization published May 18 (** AM Best, May 18 2026) is an established but indirect source; it is not linked to Allstate specifically and does not alter the structural assumptions in the Stage 4 thesis about peak earnings, impending margin normalization, or the contested cyclical inflection. Call 1 explicitly states that the findings do not constitute new information changing the thesis, and no data emerged on underwriting margins, pricing power, catastrophe loads, or buyback pace. The price action is therefore consistent with already-known conditions rather than a challenge to the thesis.\n\nThe cumulative price move from the thesis anchor price of approximately $214 (source date May 11, 2026) to the May 19 close of $224.58 represents roughly a 5% increase, well below the 15% threshold that would render the old thesis price-irrelevant. The breakout to a new 52-week high on roughly double the average volume (** CNBC, May 19 2026; * StockAnalysis, May 19 2026) appears technical or flow-driven—likely momentum and algorithmic buying—rather than a market reaction to fresh fundamental information.\n\nGiven the absence of material new facts, the lack of any challenged structural assumption, and the modest displacement from the anchor price, the default of no-rerun is the appropriate, cost-sensitive decision. A rerun would be justified only by speculation about unreported catalysts, which is insufficient given the weak source picture and low investigation confidence.",
+      "thesis_elements_touched": [],
+      "evidence_strength": "low",
+      "key_facts_relied_on": [
+        "No material SEC filings were published by Allstate on May 19, 2026; the most recent filings were dated May 11, 2026 (***, Allstate Investors SEC filings page, May 11 2026)",
+        "No analyst upgrades or downgrades were issued on May 19, 2026; the latest actions occurred in early May and April 2026 (*, CNN/TipRanks, May 7 2026)",
+        "Allstate issued a press release on May 19, 2026 announcing $5.25 million in Trust in Practice Awards with the Aspen Institute, which does not contain financial guidance or material operating metrics (***, PRNewswire, May 19 2026)",
+        "AM Best published a report on May 18, 2026 noting stabilization in personal auto and homeowners markets (** AM Best, May 18 2026)",
+        "Trading volume was approximately 3.1 million shares, roughly double the 10-day average of 1.70 million and ~2.2x the median (** CNBC, May 19 2026; * StockAnalysis, May 19 2026)"
+      ],
+      "uncertainty_acknowledged": "Call 1’s ambiguity notes acknowledge that a post-close catalyst could theoretically exist but has not been reported. This possibility is pure speculation; absent any confirming source, it does not shift the balance toward an expensive rerun.",
+      "considered_alternative": "The case for rerun is that a 99th-percentile volume spike coinciding with a new 52-week high might signal an incoming fundamental repricing, leaked information, or a shift in market regime that primary sources have not yet captured. However, with investigation confidence rated low and zero confirming high-credibility sources, acting on this would require betting on absence of evidence, which the criteria explicitly disfavor."
+    },
+    "raw_response": "```json\n{\n  \"ticker\": \"ALL\",\n  \"rerun_decision\": false,\n  \"rationale\": \"Call 1’s investigation confidence is low and it identified no material corporate catalyst for the May 19 volume spike. No material SEC filings were published on May 19, 2026, with the most recent filings dated May 11, 2026 (***, Allstate Investors SEC filings page, May 11 2026), and no analyst upgrades or downgrades were issued that day (*, CNN/TipRanks, May 7 2026). The only primary-source release was a $5.25 million community-trust award announcement that contained no financial guidance or operating metrics (***, PRNewswire, May 19 2026). Without a new fact established by high-credibility sources, there is nothing the existing thesis failed to contemplate.\\n\\nThe AM Best report on personal-lines stabilization published May 18 (** AM Best, May 18 2026) is an established but indirect source; it is not linked to Allstate specifically and does not alter the structural assumptions in the Stage 4 thesis about peak earnings, impending margin normalization, or the contested cyclical inflection. Call 1 explicitly states that the findings do not constitute new information changing the thesis, and no data emerged on underwriting margins, pricing power, catastrophe loads, or buyback pace. The price action is therefore consistent with already-known conditions rather than a challenge to the thesis.\\n\\nThe cumulative price move from the thesis anchor price of approximately $214 (source date May 11, 2026) to the May 19 close of $224.58 represents roughly a 5% increase, well below the 15% threshold that would render the old thesis price-irrelevant. The breakout to a new 52-week high on roughly double the average volume (** CNBC, May 19 2026; * StockAnalysis, May 19 2026) appears technical or flow-driven—likely momentum and algorithmic buying—rather than a market reaction to fresh fundamental information.\\n\\nGiven the absence of material new facts, the lack of any challenged structural assumption, and the modest displacement from the anchor price, the default of no-rerun is the appropriate, cost-sensitive decision. A rerun would be justified only by speculation about unreported catalysts, which is insufficient given the weak source picture and low investigation confidence.\",\n  \"thesis_elements_touched\": [],\n  \"evidence_strength\": \"low\",\n  \"key_facts_relied_on\": [\n    \"No material SEC filings were published by Allstate on May 19, 2026; the most recent filings were dated May 11, 2026 (***, Allstate Investors SEC filings page, May 11 2026)\",\n    \"No analyst upgrades or downgrades were issued on May 19, 2026; the latest actions occurred in early May and April 2026 (*, CNN/TipRanks, May 7 2026)\",\n    \"Allstate issued a press release on May 19, 2026 announcing $5.25 million in Trust in Practice Awards with the Aspen Institute, which does not contain financial guidance or material operating metrics (***, PRNewswire, May 19 2026)\",\n    \"AM Best published a report on May 18, 2026 noting stabilization in personal auto and homeowners markets (** AM Best, May 18 2026)\",\n    \"Trading volume was approximately 3.1 million shares, roughly double the 10-day average of 1.70 million and ~2.2x the median (** CNBC, May 19 2026; * StockAnalysis, May 19 2026)\"\n  ],\n  \"uncertainty_acknowledged\": \"Call 1’s ambiguity notes acknowledge that a post-close catalyst could theoretically exist but has not been reported. This possibility is pure speculation; absent any confirming source, it does not shift the balance toward an expensive rerun.\",\n  \"considered_alternative\": \"The case for rerun is that a 99th-percentile volume spike coinciding with a new 52-week high might signal an incoming fundamental repricing, leaked information, or a shift in market regime that primary sources have not yet captured. However, with investigation confidence rated low and zero confirming high-credibility sources, acting on this would require betting on absence of evidence, which the criteria explicitly disfavor.\"\n}\n```",
+    "validation_violations": [],
+    "token_usage": {
+      "input_tokens": 4336,
+      "output_tokens": 4165,
+      "total_tokens": 8501
+    },
+    "model": "kimi-k2.6",
+    "status": "ok",
+    "error": null
+  },
+  "final_rerun_decision": false
+}
