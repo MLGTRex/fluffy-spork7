@@ -105,6 +105,10 @@ LLM_CONCURRENCY = 3
 # Pending reruns queue
 PENDING_RERUNS_SOFT_CAP = 20
 
+# Novelty filter — set False to byte-restore the pre-filter Gate 0 → LLM flow
+# (cache file is harmless if orphaned; no data migration needed).
+NOVELTY_FILTER_ENABLED = True
+
 # Baselines
 BASELINE_LOOKBACK_DAYS = 60
 
@@ -146,6 +150,7 @@ def _import_modules():
     import volumeData
     import macroContext
     import alpacaPositions
+    import alpacaNews
     import earningsCalendar
     import percentileBaselines
     import betaBaselines
@@ -154,6 +159,7 @@ def _import_modules():
     import cumulativeSignalAnalyzer
     import signalAggregator
     import gate0Filter
+    import noveltyFilter
     import callOneInvestigator
     import callTwoDecider
 
@@ -162,6 +168,7 @@ def _import_modules():
         "volumeData": volumeData,
         "macroContext": macroContext,
         "alpacaPositions": alpacaPositions,
+        "alpacaNews": alpacaNews,
         "earningsCalendar": earningsCalendar,
         "percentileBaselines": percentileBaselines,
         "betaBaselines": betaBaselines,
@@ -170,6 +177,7 @@ def _import_modules():
         "cumulativeSignalAnalyzer": cumulativeSignalAnalyzer,
         "signalAggregator": signalAggregator,
         "gate0Filter": gate0Filter,
+        "noveltyFilter": noveltyFilter,
         "callOneInvestigator": callOneInvestigator,
         "callTwoDecider": callTwoDecider,
     }
@@ -828,6 +836,7 @@ async def run_llm_gates(modules: dict, gate0_decisions: dict,
                          portfolio: dict, anchors: dict,
                          macro_context: dict, cadence_window: dict,
                          beta_baselines: dict,
+                         run_id: str = "",
                          skip_llm: bool = False) -> dict:
     """
     For each ticker marked 'investigate' by Gate 0, run Call 1 + Call 2.
@@ -876,7 +885,7 @@ async def run_llm_gates(modules: dict, gate0_decisions: dict,
         async with semaphore:
             return await _run_call_one_and_two(
                 t, modules, portfolio, anchors, macro_context,
-                cadence_window, beta_baselines,
+                cadence_window, beta_baselines, run_id,
             )
 
     tasks = [_process_one(t) for t in to_investigate]
@@ -932,7 +941,8 @@ async def run_llm_gates(modules: dict, gate0_decisions: dict,
 async def _run_call_one_and_two(ticker: str, modules: dict, portfolio: dict,
                                   anchors: dict, macro_context: dict,
                                   cadence_window: dict,
-                                  beta_baselines: dict) -> dict:
+                                  beta_baselines: dict,
+                                  run_id: str = "") -> dict:
     """Run Call 1 then Call 2 for one ticker."""
     thesis = portfolio["thesis_by_ticker"].get(ticker, {})
     anchor = anchors.get(ticker, {})
@@ -1027,6 +1037,28 @@ async def _run_call_one_and_two(ticker: str, modules: dict, portfolio: dict,
     except Exception as e:
         logger.warning(f"[{ticker}] Could not write evidence packet: {e}")
 
+    # Persist no-rerun verdicts to the novelty cache so subsequent cadences
+    # on the same ET trading day can short-circuit if the news set is unchanged.
+    # Guarded on status=="ok" so a transient Moonshot failure (which
+    # orchestrator_should_rerun also treats as False, see callTwoDecider.py)
+    # cannot suppress LLM calls for the rest of the day.
+    if (call_two_result.get("status") == "ok"
+            and not rerun
+            and _NEWS_SNAPSHOT_BY_TICKER.get(ticker) is not None):
+        try:
+            modules["noveltyFilter"].store_no_rerun_verdict(
+                ticker=ticker,
+                call_two_result=call_two_result,
+                news_snapshot=_NEWS_SNAPSHOT_BY_TICKER[ticker],
+                cadence_window=cadence_window.get("name") or "unknown",
+                run_id=run_id,
+                signal_decision=_SIGNAL_DECISIONS_BY_TICKER.get(ticker, {}),
+            )
+        except Exception as e:
+            logger.warning(
+                f"[{ticker}] Could not persist verdict to novelty cache: {e}"
+            )
+
     return {
         "call_one": call_one_result,
         "call_two": call_two_result,
@@ -1037,6 +1069,11 @@ async def _run_call_one_and_two(ticker: str, modules: dict, portfolio: dict,
 # Module-level pseudo-state used by _run_call_one_and_two. Populated by the
 # orchestrator before LLM gates run, cleared after.
 _SIGNAL_DECISIONS_BY_TICKER: dict = {}
+
+# Mirror of _SIGNAL_DECISIONS_BY_TICKER for the Alpaca news snapshots captured
+# during the novelty filter pass. Lets the Call 2 cache write reuse the same
+# fetch instead of hitting the news API twice per cadence.
+_NEWS_SNAPSHOT_BY_TICKER: dict = {}
 
 
 # ============ PIPELINE INVOCATION ============
@@ -1183,7 +1220,8 @@ async def drain_pending_reruns(dry_run: bool = False) -> dict:
 
 def log_observations(run_id: str, cadence_window: dict, tickers: list,
                       signal_results: dict, gate0_results: dict,
-                      llm_results: dict) -> None:
+                      llm_results: dict,
+                      novelty_result: dict = None) -> None:
     """
     Append per-ticker observations to the JSONL file. One line per ticker.
     """
@@ -1194,7 +1232,19 @@ def log_observations(run_id: str, cadence_window: dict, tickers: list,
     gate0_decisions = gate0_results.get("decisions", {})
     llm_per_ticker = llm_results.get("per_ticker_results", {})
 
+    novelty_per_ticker = {}
+    if isinstance(novelty_result, dict):
+        novelty_per_ticker = novelty_result.get("per_ticker") or {}
+
     for ticker in tickers:
+        nf = novelty_per_ticker.get(ticker)
+        if nf:
+            # Strip the news_snapshot from the observation log — it can be
+            # large and is already captured implicitly via prior_news_ids /
+            # current_news_ids. Audit trail stays compact.
+            nf_compact = {k: v for k, v in nf.items() if k != "news_snapshot"}
+        else:
+            nf_compact = {"decision": "not_evaluated"}
         obs = {
             "ticker": ticker,
             "run_id": run_id,
@@ -1204,6 +1254,7 @@ def log_observations(run_id: str, cadence_window: dict, tickers: list,
             "signals": per_ticker_signals.get(ticker, {}),
             "aggregation_decision": decisions.get(ticker, {}),
             "gate_0_decision": gate0_decisions.get(ticker),
+            "novelty_filter": nf_compact,
             "llm_result": llm_per_ticker.get(ticker),
         }
         _append_jsonl(OBSERVATIONS_PATH, obs)
@@ -1361,8 +1412,59 @@ async def run_monitor(
         for _t, _d in gate0_results.get("decisions", {}).items():
             logger.info(f"  Gate 0 [{_t}]: {json.dumps(_d, default=str)[:400]}")
 
-        # Step 7: Call 1 + Call 2 — wire the signal decisions through module-level state
+        # Step 6.5: Novelty filter — suppress repeat LLM spend when a prior
+        # no-rerun Call 2 verdict exists for this ticker on the current ET
+        # trading day and no new Alpaca headlines have appeared since.
         global _SIGNAL_DECISIONS_BY_TICKER
+        global _NEWS_SNAPSHOT_BY_TICKER
+        investigate_tickers = [
+            t for t, d in gate0_results["decisions"].items()
+            if d.get("action") == "investigate"
+        ]
+        if NOVELTY_FILTER_ENABLED and investigate_tickers and not skip_llm:
+            novelty_result = await modules["noveltyFilter"].apply_novelty_filter(
+                investigate_tickers=investigate_tickers,
+                alpaca_news_module=modules["alpacaNews"],
+                now_utc=run_started_at,
+            )
+            result["novelty_filter"] = novelty_result
+            for _t, _nf in novelty_result["per_ticker"].items():
+                if _nf["decision"] == "suppressed":
+                    _dec = gate0_results["decisions"][_t]
+                    _dec["action"] = "skip"
+                    _dec["suppressed_by_novelty_filter"] = True
+                    _dec["rationale"] = (
+                        f"Suppressed by novelty filter: no new Alpaca "
+                        f"headlines since prior "
+                        f"{_nf['prior_verdict_cadence']} no-rerun verdict "
+                        f"(run {_nf['prior_verdict_run_id']}). "
+                        f"prior_ids={len(_nf['prior_news_ids'])}, "
+                        f"current_ids={len(_nf['current_news_ids'])}"
+                    )
+                    gate0_results["summary"]["tickers_skipped"] += 1
+                    gate0_results["summary"]["tickers_to_investigate"] -= 1
+            _NEWS_SNAPSHOT_BY_TICKER = {
+                _t: _nf["news_snapshot"]
+                for _t, _nf in novelty_result["per_ticker"].items()
+                if _nf.get("news_snapshot") is not None
+            }
+            logger.info(
+                f"Novelty filter: "
+                f"suppressed={novelty_result['summary']['suppressed']}, "
+                f"novel={novelty_result['summary']['proceeded_novel']}, "
+                f"no_prior={novelty_result['summary']['proceeded_no_prior']}, "
+                f"fetch_failed={novelty_result['summary']['proceeded_fetch_failed']}"
+            )
+        else:
+            result["novelty_filter"] = {
+                "skipped_reason": (
+                    "disabled" if not NOVELTY_FILTER_ENABLED
+                    else ("skip_llm" if skip_llm else "no_candidates")
+                )
+            }
+            _NEWS_SNAPSHOT_BY_TICKER = {}
+
+        # Step 7: Call 1 + Call 2 — wire the signal decisions through module-level state
         _SIGNAL_DECISIONS_BY_TICKER = triggered_decisions
 
         try:
@@ -1374,10 +1476,12 @@ async def run_monitor(
                 macro_context=live_data["macro_context"] or {},
                 cadence_window=cadence,
                 beta_baselines=beta_baselines,
+                run_id=run_id,
                 skip_llm=skip_llm,
             )
         finally:
             _SIGNAL_DECISIONS_BY_TICKER = {}
+            _NEWS_SNAPSHOT_BY_TICKER = {}
 
         result["llm_results"] = llm_results
 
@@ -1409,14 +1513,22 @@ async def run_monitor(
         # Step 10: write observation log — always, even on a dry run. This is
         # pure record-keeping; inspecting it is exactly the point of a dry run.
         log_observations(run_id, cadence, tickers_in_scope,
-                          signal_results, gate0_results, llm_results)
+                          signal_results, gate0_results, llm_results,
+                          novelty_result=result.get("novelty_filter"))
 
         # Build summary
+        nf_block = result.get("novelty_filter")
+        novelty_suppressed = (
+            nf_block.get("summary", {}).get("suppressed", 0)
+            if isinstance(nf_block, dict) and isinstance(nf_block.get("summary"), dict)
+            else 0
+        )
         result["summary"] = {
             "tickers_in_scope": len(tickers_in_scope),
             "tickers_triggered_by_signals": signal_results["aggregation"]["summary"]["tickers_triggered"],
             "gate0_skipped": gate0_results["summary"]["tickers_skipped"],
             "gate0_to_investigate": gate0_results["summary"]["tickers_to_investigate"],
+            "novelty_suppressed": novelty_suppressed,
             "llm_call_one_succeeded": llm_results["summary"]["call_one_succeeded"],
             "llm_call_two_succeeded": llm_results["summary"]["call_two_succeeded"],
             "tickers_to_rerun": len(rerun_tickers),
