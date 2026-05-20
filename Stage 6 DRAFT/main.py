@@ -217,12 +217,14 @@ def main() -> int:
             perf_bundle.get("performance", {}),
             perf_bundle.get("portfolio_value_history", {}),
             perf_bundle.get("benchmark_history", {}),
+            portfolio_overview,
+            config.PER_TICKER_DOSSIER_DIR,
             snapshot_info.get("snapshot_id") or snapshot_info.get("prior_snapshot_id"),
             live_stale,
         ),
         audit,
         warnings,
-    ) or {"performance": {}, "value_history": [], "benchmark_history": [], "live_stale": True}
+    ) or {"performance": {}, "value_history": [], "benchmark_history": [], "positions": [], "live_stale": True}
 
     # 11. Write all UI outputs (atomic)
     def _write_outputs():
