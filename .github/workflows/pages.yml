@@ -1,0 +1,61 @@
+name: Deploy Stage 6 UI to Pages
+
+# Auto after every Stage 6 run; also on direct UI / output edits; also manual.
+on:
+   workflow_run:
+      workflows: ["Stage 6 Consolidation"]
+      types: [completed]
+   workflow_dispatch:
+   push:
+      branches: [main]
+      paths:
+         - 'pipeline tools/ui/**'
+         - 'Stage 6 DRAFT/output/**'
+
+# GitHub Pages requires this exact permissions block + concurrency group.
+permissions:
+   contents: read
+   pages: write
+   id-token: write
+
+concurrency:
+   group: pages
+   cancel-in-progress: false
+
+jobs:
+   deploy:
+      runs-on: ubuntu-latest
+      environment:
+         name: github-pages
+         url: ${{ steps.deployment.outputs.page_url }}
+      steps:
+         - name: Checkout
+           uses: actions/checkout@v4
+
+         - name: Assemble _site/
+           run: |
+              mkdir -p _site/data/per_ticker_dossier
+              cp "pipeline tools/ui/index.html" _site/
+              cp "pipeline tools/ui/styles.css" _site/
+              cp "pipeline tools/ui/app.js"     _site/
+              cp "Stage 6 DRAFT/output/"*.json _site/data/ 2>/dev/null || true
+              cp "Stage 6 DRAFT/output/per_ticker_dossier/"*.json \
+                 _site/data/per_ticker_dossier/ 2>/dev/null || true
+              touch _site/.nojekyll
+              echo "Assembled _site/ contents:"
+              ls -la _site/
+              echo "Data files:"
+              ls -la _site/data/ || true
+              echo "Per-ticker dossiers: $(ls _site/data/per_ticker_dossier/ 2>/dev/null | wc -l)"
+
+         - name: Configure Pages
+           uses: actions/configure-pages@v5
+
+         - name: Upload artifact
+           uses: actions/upload-pages-artifact@v3
+           with:
+              path: _site
+
+         - name: Deploy to GitHub Pages
+           id: deployment
+           uses: actions/deploy-pages@v4
