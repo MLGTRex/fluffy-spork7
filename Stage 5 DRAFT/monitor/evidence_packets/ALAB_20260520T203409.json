@@ -1,0 +1,3895 @@
+{
+  "ticker": "ALAB",
+  "evidence_written_at": "2026-05-20T20:34:09.420072+00:00",
+  "call_one_packet": {
+    "ticker": "ALAB",
+    "thesis": {
+      "summary": "Astera Labs sits at a critical chokepoint in AI infrastructure, supplying PCIe Gen 6 retimers and the Scorpio family of fabric switches that stitch together GPUs, custom ASICs, and memory inside hyperscaler racks. The company is in the midst of a genuine product-transition moment: Scorpio is moving from initial to high-volume production in 2026, while the industry-wide upgrade to PCIe Gen 6 is mechanically expanding connectivity silicon content per server. Revenue is growing at roughly ninety percent year-over-year, and a massive performance-based warrant agreement with Amazon underwrites multi-year demand visibility. Yet this operational momentum is overshadowed by an extreme valuation—forward earnings near fifty times and a price-to-sales ratio above thirty-five times, exceeding the peer maximum—that prices in a flawless, perpetual platform-premium outcome. The investment case is therefore less about the business, which is executing, and more about whether the equity can survive its own expectations.\n\nThe bull case rests on four pillars. First, the Scorpio X-Series ramp and the broader PCIe Gen 6 transition are not theoretical; initial volumes are already shipping, and management has guided for Scorpio to surpass the legacy Aries retimer line by year-end, anchoring a 2026 revenue trajectory toward one-and-a-half billion dollars or more. Second, the Amazon warrant—up to six-and-a-half billion dollars in cumulative purchases through 2033—provides a strategic seal of indispensability and a backlog buffer that is difficult to replicate. Third, Astera currently holds an estimated eighteen-to-twenty-four-month production lead in PCIe Gen 6 fabric switching; Marvell’s competing Structera S only began sampling in the third quarter of 2026, meaning Astera is effectively the only merchant game in town for the current server generation. Finally, longer-dated optionality in UALink switches and optical interconnects offers a plausible path toward a much larger total addressable market, giving the narrative a second-act growth story if current products maintain dominance.\n\nAgainst these strengths, the bear case identifies structural fractures that are already visible. The most immediate is acute customer concentration: a single end customer still drives roughly sixty to seventy percent of revenue, transforming Amazon from an anchor tenant into a source of persistent pricing leverage and dual-sourcing risk. Compounding this is a durable margin squeeze: the shift from high-margin Aries retimer integrated circuits toward Scorpio switches and Taurus hardware modules mechanically dilutes gross margins, while the Amazon warrant’s contra-revenue accounting imposes a recurring two-hundred basis-point headwind that appears persistent rather than transitory. The third risk is competitive timing: Marvell and Broadcom are not standing still, and credible alternatives are expected to qualify for the next hyperscaler platform cycle in 2027, suggesting Astera’s incumbency is rented, not owned. The final, overarching risk is valuation itself; with the stock trading at a sales multiple above every semiconductor peer, there is no valuation cushion for any operational friction, deceleration, or governance concern.\n\nConviction is Medium because the near-term operational picture is genuinely robust—current-generation design wins are locked behind long qualification cycles, backlog is visible, and 2026 revenue growth is almost certainly going to remain exceptional—yet the stock’s starting price embeds a degree of perfection that is difficult to defend. Two genuinely symmetric, high-materiality debates remain unresolved: whether hyperscaler AI capex is a multi-year structural build-out or a cyclical peak approaching digestion, and whether Marvell’s 2026 sampling translates into immediate share loss at the next refresh or remains more than eighteen months behind. Conviction would rise toward High if non-GAAP gross margins were to recover and sustain above seventy-five percent, proving that mix-shift and warrant drags are transitory, or if two or more additional Tier-1 hyperscalers were to publicly adopt Scorpio at scale, diversifying revenue and validating the open-ecosystem model. It would fall toward Low if Scorpio high-volume production slips into 2027, if credible evidence emerges that Amazon is dual-sourcing retimer or switch sockets to Marvell, or if year-over-year revenue growth decelerates below forty-five percent in the second half of 2026.\n\nThe risk/reward profile is negatively asymmetric and argues for caution. The probability-weighted twelve-month expected return is approximately negative twenty percent, reflecting a forty percent base case of multiple compression toward forty-times forward earnings and a forty percent bear case of violent re-rating toward cyclical fabless multiples. The bull case, assigned only a twenty percent probability, demands not just flawless execution but further multiple expansion from a starting point that already exceeds the peer-maximum price-to-sales ratio. In practical terms, the equity offers a potential upside of roughly seventy percent in a tail scenario against a downside of nearly sixty percent if margin compression and competitive encroachment converge. A portfolio manager should treat this as a high-variance name where the median and modal outcomes are both unfavorable, and where even a “good” operational year in 2026 is likely to be punished by de-rating as investors look ahead to 2027 deceleration and share-of-socket risk.\n\nWhat distinguishes Astera from its larger semiconductor peers is its positioning as the only independent, merchant connectivity fabric vendor—truly the “Switzerland” of the AI rack—supplying open-ecosystem switching and retimer silicon across NVIDIA, AMD, and proprietary hyperscaler ASICs without the conflicts of a bundled ASIC or optical incumbent. This independence earned it a first-mover production slot in PCIe Gen 6 fabric switching that Marvell and Broadcom have yet to match in volume. However, this same independence is the source of its vulnerability: unlike Broadcom or Marvell, Astera cannot bundle switching with custom XPUs or optical transceivers, and it lacks the capital depth to endure a price war or absorb a major customer defection. In a peer group dominated by diversified giants with fortress balance sheets and bundled platforms, ALAB is both the purest exposure to open-rack interconnect and the most fragile.",
+      "source_date": "2026-05-11",
+      "error": null
+    },
+    "signal_decision": {
+      "ticker": "ALAB",
+      "computed_at": "2026-05-20T20:30:08.668462+00:00",
+      "triggered": true,
+      "trigger_path": "major",
+      "fired_signals": [
+        {
+          "signal_type": "price",
+          "tier": "major",
+          "details": {
+            "daily_move": {
+              "current_pct": 17.735197346947178,
+              "absolute_pct": 17.735197346947178,
+              "fired": false,
+              "tier": null,
+              "percentile_reached": null,
+              "threshold_p95_abs": null,
+              "threshold_p99_abs": null
+            },
+            "move_from_open": {
+              "current_pct": 14.806970444221479,
+              "absolute_pct": 14.806970444221479,
+              "fired": true,
+              "tier": "major",
+              "threshold_minor_pct": 3.0,
+              "threshold_major_pct": 5.0
+            }
+          }
+        }
+      ],
+      "signal_summary": {
+        "price_fired": true,
+        "price_tier": "major",
+        "volume_fired": false,
+        "volume_tier": null,
+        "cumulative_fired": false,
+        "major_count": 1,
+        "minor_count": 0
+      },
+      "config": {
+        "minor_signals_required_for_trigger": 2
+      },
+      "data_quality_flags": [
+        "price_signal: No baseline provided; daily move sub-signal cannot use percentile thresholds",
+        "volume_signal: No baseline provided; volume signal cannot use percentile thresholds",
+        "cumulative_signal: No evaluation anchor for this ticker; signal cannot fire. Anchor will be created on next successful pipeline rerun."
+      ]
+    },
+    "macro_context": {
+      "data_source": "macroContext",
+      "fetched_at": "2026-05-20T20:30:04.174037+00:00",
+      "status": "ok",
+      "lookback_days_requested": 60,
+      "indicators": {
+        "SPY": {
+          "label": "SPY",
+          "current_price": 741.260009765625,
+          "previous_close": 733.72998046875,
+          "daily_change_pct": 1.026267086982649,
+          "daily_change_abs": 7.530029296875,
+          "historical": {
+            "daily_closes": [
+              {
+                "date": "2026-02-25",
+                "close": 693.1500244140625
+              },
+              {
+                "date": "2026-02-26",
+                "close": 689.2999877929688
+              },
+              {
+                "date": "2026-02-27",
+                "close": 685.989990234375
+              },
+              {
+                "date": "2026-03-02",
+                "close": 686.3800048828125
+              },
+              {
+                "date": "2026-03-03",
+                "close": 680.3300170898438
+              },
+              {
+                "date": "2026-03-04",
+                "close": 685.1300048828125
+              },
+              {
+                "date": "2026-03-05",
+                "close": 681.3099975585938
+              },
+              {
+                "date": "2026-03-06",
+                "close": 672.3800048828125
+              },
+              {
+                "date": "2026-03-09",
+                "close": 678.27001953125
+              },
+              {
+                "date": "2026-03-10",
+                "close": 677.1799926757812
+              },
+              {
+                "date": "2026-03-11",
+                "close": 676.3300170898438
+              },
+              {
+                "date": "2026-03-12",
+                "close": 666.0599975585938
+              },
+              {
+                "date": "2026-03-13",
+                "close": 662.2899780273438
+              },
+              {
+                "date": "2026-03-16",
+                "close": 669.030029296875
+              },
+              {
+                "date": "2026-03-17",
+                "close": 670.7899780273438
+              },
+              {
+                "date": "2026-03-18",
+                "close": 661.4299926757812
+              },
+              {
+                "date": "2026-03-19",
+                "close": 659.7999877929688
+              },
+              {
+                "date": "2026-03-20",
+                "close": 648.5700073242188
+              },
+              {
+                "date": "2026-03-23",
+                "close": 655.3800048828125
+              },
+              {
+                "date": "2026-03-24",
+                "close": 653.1799926757812
+              },
+              {
+                "date": "2026-03-25",
+                "close": 656.8200073242188
+              },
+              {
+                "date": "2026-03-26",
+                "close": 645.0900268554688
+              },
+              {
+                "date": "2026-03-27",
+                "close": 634.0900268554688
+              },
+              {
+                "date": "2026-03-30",
+                "close": 631.969970703125
+              },
+              {
+                "date": "2026-03-31",
+                "close": 650.3400268554688
+              },
+              {
+                "date": "2026-04-01",
+                "close": 655.239990234375
+              },
+              {
+                "date": "2026-04-02",
+                "close": 655.8300170898438
+              },
+              {
+                "date": "2026-04-06",
+                "close": 658.9299926757812
+              },
+              {
+                "date": "2026-04-07",
+                "close": 659.219970703125
+              },
+              {
+                "date": "2026-04-08",
+                "close": 676.010009765625
+              },
+              {
+                "date": "2026-04-09",
+                "close": 679.9099731445312
+              },
+              {
+                "date": "2026-04-10",
+                "close": 679.4600219726562
+              },
+              {
+                "date": "2026-04-13",
+                "close": 686.0999755859375
+              },
+              {
+                "date": "2026-04-14",
+                "close": 694.4600219726562
+              },
+              {
+                "date": "2026-04-15",
+                "close": 699.9400024414062
+              },
+              {
+                "date": "2026-04-16",
+                "close": 701.6599731445312
+              },
+              {
+                "date": "2026-04-17",
+                "close": 710.1400146484375
+              },
+              {
+                "date": "2026-04-20",
+                "close": 708.719970703125
+              },
+              {
+                "date": "2026-04-21",
+                "close": 704.0800170898438
+              },
+              {
+                "date": "2026-04-22",
+                "close": 711.2100219726562
+              },
+              {
+                "date": "2026-04-23",
+                "close": 708.4500122070312
+              },
+              {
+                "date": "2026-04-24",
+                "close": 713.9400024414062
+              },
+              {
+                "date": "2026-04-27",
+                "close": 715.1699829101562
+              },
+              {
+                "date": "2026-04-28",
+                "close": 711.6900024414062
+              },
+              {
+                "date": "2026-04-29",
+                "close": 711.5800170898438
+              },
+              {
+                "date": "2026-04-30",
+                "close": 718.6599731445312
+              },
+              {
+                "date": "2026-05-01",
+                "close": 720.6500244140625
+              },
+              {
+                "date": "2026-05-04",
+                "close": 718.010009765625
+              },
+              {
+                "date": "2026-05-05",
+                "close": 723.77001953125
+              },
+              {
+                "date": "2026-05-06",
+                "close": 733.8300170898438
+              },
+              {
+                "date": "2026-05-07",
+                "close": 731.5800170898438
+              },
+              {
+                "date": "2026-05-08",
+                "close": 737.6199951171875
+              },
+              {
+                "date": "2026-05-11",
+                "close": 739.2999877929688
+              },
+              {
+                "date": "2026-05-12",
+                "close": 738.1799926757812
+              },
+              {
+                "date": "2026-05-13",
+                "close": 742.3099975585938
+              },
+              {
+                "date": "2026-05-14",
+                "close": 748.1699829101562
+              },
+              {
+                "date": "2026-05-15",
+                "close": 739.1699829101562
+              },
+              {
+                "date": "2026-05-18",
+                "close": 738.6500244140625
+              },
+              {
+                "date": "2026-05-19",
+                "close": 733.72998046875
+              },
+              {
+                "date": "2026-05-20",
+                "close": 741.260009765625
+              }
+            ],
+            "lookback_days_received": 60
+          },
+          "data_quality_flags": []
+        },
+        "IOZ.AX": {
+          "label": "IOZ.AX",
+          "current_price": 34.22999954223633,
+          "previous_close": 34.689998626708984,
+          "daily_change_pct": -1.3260279696825577,
+          "daily_change_abs": -0.45999908447265625,
+          "historical": {
+            "daily_closes": [
+              {
+                "date": "2026-02-24",
+                "close": 36.279998779296875
+              },
+              {
+                "date": "2026-02-25",
+                "close": 36.709999084472656
+              },
+              {
+                "date": "2026-02-26",
+                "close": 36.93000030517578
+              },
+              {
+                "date": "2026-02-27",
+                "close": 37.02000045776367
+              },
+              {
+                "date": "2026-03-02",
+                "close": 37.029998779296875
+              },
+              {
+                "date": "2026-03-03",
+                "close": 36.54999923706055
+              },
+              {
+                "date": "2026-03-04",
+                "close": 35.869998931884766
+              },
+              {
+                "date": "2026-03-05",
+                "close": 36.189998626708984
+              },
+              {
+                "date": "2026-03-06",
+                "close": 35.7599983215332
+              },
+              {
+                "date": "2026-03-09",
+                "close": 34.77000045776367
+              },
+              {
+                "date": "2026-03-10",
+                "close": 35.18000030517578
+              },
+              {
+                "date": "2026-03-11",
+                "close": 35.38999938964844
+              },
+              {
+                "date": "2026-03-12",
+                "close": 34.95000076293945
+              },
+              {
+                "date": "2026-03-13",
+                "close": 34.88999938964844
+              },
+              {
+                "date": "2026-03-16",
+                "close": 34.790000915527344
+              },
+              {
+                "date": "2026-03-17",
+                "close": 34.90999984741211
+              },
+              {
+                "date": "2026-03-18",
+                "close": 35.02000045776367
+              },
+              {
+                "date": "2026-03-19",
+                "close": 34.41999816894531
+              },
+              {
+                "date": "2026-03-20",
+                "close": 34.150001525878906
+              },
+              {
+                "date": "2026-03-23",
+                "close": 33.900001525878906
+              },
+              {
+                "date": "2026-03-24",
+                "close": 33.95000076293945
+              },
+              {
+                "date": "2026-03-25",
+                "close": 34.54999923706055
+              },
+              {
+                "date": "2026-03-26",
+                "close": 34.54999923706055
+              },
+              {
+                "date": "2026-03-27",
+                "close": 34.5
+              },
+              {
+                "date": "2026-03-30",
+                "close": 34.29999923706055
+              },
+              {
+                "date": "2026-03-31",
+                "close": 34.369998931884766
+              },
+              {
+                "date": "2026-04-01",
+                "close": 35.119998931884766
+              },
+              {
+                "date": "2026-04-02",
+                "close": 34.7599983215332
+              },
+              {
+                "date": "2026-04-07",
+                "close": 35.349998474121094
+              },
+              {
+                "date": "2026-04-08",
+                "close": 36.2599983215332
+              },
+              {
+                "date": "2026-04-09",
+                "close": 35.9900016784668
+              },
+              {
+                "date": "2026-04-10",
+                "close": 35.95000076293945
+              },
+              {
+                "date": "2026-04-13",
+                "close": 35.810001373291016
+              },
+              {
+                "date": "2026-04-14",
+                "close": 36.02000045776367
+              },
+              {
+                "date": "2026-04-15",
+                "close": 36.04999923706055
+              },
+              {
+                "date": "2026-04-16",
+                "close": 35.95000076293945
+              },
+              {
+                "date": "2026-04-17",
+                "close": 35.91999816894531
+              },
+              {
+                "date": "2026-04-20",
+                "close": 35.939998626708984
+              },
+              {
+                "date": "2026-04-21",
+                "close": 35.93000030517578
+              },
+              {
+                "date": "2026-04-22",
+                "close": 35.5
+              },
+              {
+                "date": "2026-04-23",
+                "close": 35.31999969482422
+              },
+              {
+                "date": "2026-04-24",
+                "close": 35.29999923706055
+              },
+              {
+                "date": "2026-04-27",
+                "close": 35.18000030517578
+              },
+              {
+                "date": "2026-04-28",
+                "close": 34.9900016784668
+              },
+              {
+                "date": "2026-04-29",
+                "close": 34.869998931884766
+              },
+              {
+                "date": "2026-04-30",
+                "close": 34.790000915527344
+              },
+              {
+                "date": "2026-05-01",
+                "close": 35.08000183105469
+              },
+              {
+                "date": "2026-05-04",
+                "close": 34.939998626708984
+              },
+              {
+                "date": "2026-05-05",
+                "close": 34.86000061035156
+              },
+              {
+                "date": "2026-05-06",
+                "close": 35.31999969482422
+              },
+              {
+                "date": "2026-05-07",
+                "close": 35.66999816894531
+              },
+              {
+                "date": "2026-05-08",
+                "close": 35.18000030517578
+              },
+              {
+                "date": "2026-05-11",
+                "close": 35.04999923706055
+              },
+              {
+                "date": "2026-05-12",
+                "close": 34.93000030517578
+              },
+              {
+                "date": "2026-05-13",
+                "close": 34.779998779296875
+              },
+              {
+                "date": "2026-05-14",
+                "close": 34.790000915527344
+              },
+              {
+                "date": "2026-05-15",
+                "close": 34.849998474121094
+              },
+              {
+                "date": "2026-05-18",
+                "close": 34.310001373291016
+              },
+              {
+                "date": "2026-05-19",
+                "close": 34.689998626708984
+              },
+              {
+                "date": "2026-05-20",
+                "close": 34.22999954223633
+              }
+            ],
+            "lookback_days_received": 60
+          },
+          "data_quality_flags": []
+        },
+        "VIX": {
+          "label": "VIX",
+          "current_price": 17.440000534057617,
+          "previous_close": 18.059999465942383,
+          "daily_change_pct": -3.432995294678508,
+          "daily_change_abs": -0.6199989318847656,
+          "historical": {
+            "daily_closes": [
+              {
+                "date": "2026-02-26",
+                "close": 18.6299991607666
+              },
+              {
+                "date": "2026-02-27",
+                "close": 19.860000610351562
+              },
+              {
+                "date": "2026-03-02",
+                "close": 21.440000534057617
+              },
+              {
+                "date": "2026-03-03",
+                "close": 23.56999969482422
+              },
+              {
+                "date": "2026-03-04",
+                "close": 21.149999618530273
+              },
+              {
+                "date": "2026-03-05",
+                "close": 23.75
+              },
+              {
+                "date": "2026-03-06",
+                "close": 29.489999771118164
+              },
+              {
+                "date": "2026-03-09",
+                "close": 25.5
+              },
+              {
+                "date": "2026-03-10",
+                "close": 24.93000030517578
+              },
+              {
+                "date": "2026-03-11",
+                "close": 24.229999542236328
+              },
+              {
+                "date": "2026-03-12",
+                "close": 27.290000915527344
+              },
+              {
+                "date": "2026-03-13",
+                "close": 27.190000534057617
+              },
+              {
+                "date": "2026-03-16",
+                "close": 23.510000228881836
+              },
+              {
+                "date": "2026-03-17",
+                "close": 22.3700008392334
+              },
+              {
+                "date": "2026-03-18",
+                "close": 25.09000015258789
+              },
+              {
+                "date": "2026-03-19",
+                "close": 24.059999465942383
+              },
+              {
+                "date": "2026-03-20",
+                "close": 26.780000686645508
+              },
+              {
+                "date": "2026-03-23",
+                "close": 26.149999618530273
+              },
+              {
+                "date": "2026-03-24",
+                "close": 26.950000762939453
+              },
+              {
+                "date": "2026-03-25",
+                "close": 25.329999923706055
+              },
+              {
+                "date": "2026-03-26",
+                "close": 27.440000534057617
+              },
+              {
+                "date": "2026-03-27",
+                "close": 31.049999237060547
+              },
+              {
+                "date": "2026-03-30",
+                "close": 30.610000610351562
+              },
+              {
+                "date": "2026-03-31",
+                "close": 25.25
+              },
+              {
+                "date": "2026-04-01",
+                "close": 24.540000915527344
+              },
+              {
+                "date": "2026-04-02",
+                "close": 23.8700008392334
+              },
+              {
+                "date": "2026-04-06",
+                "close": 24.170000076293945
+              },
+              {
+                "date": "2026-04-07",
+                "close": 25.780000686645508
+              },
+              {
+                "date": "2026-04-08",
+                "close": 21.040000915527344
+              },
+              {
+                "date": "2026-04-09",
+                "close": 19.489999771118164
+              },
+              {
+                "date": "2026-04-10",
+                "close": 19.229999542236328
+              },
+              {
+                "date": "2026-04-13",
+                "close": 19.1200008392334
+              },
+              {
+                "date": "2026-04-14",
+                "close": 18.360000610351562
+              },
+              {
+                "date": "2026-04-15",
+                "close": 18.170000076293945
+              },
+              {
+                "date": "2026-04-16",
+                "close": 17.940000534057617
+              },
+              {
+                "date": "2026-04-17",
+                "close": 17.479999542236328
+              },
+              {
+                "date": "2026-04-20",
+                "close": 18.8700008392334
+              },
+              {
+                "date": "2026-04-21",
+                "close": 19.5
+              },
+              {
+                "date": "2026-04-22",
+                "close": 18.920000076293945
+              },
+              {
+                "date": "2026-04-23",
+                "close": 19.309999465942383
+              },
+              {
+                "date": "2026-04-24",
+                "close": 18.709999084472656
+              },
+              {
+                "date": "2026-04-27",
+                "close": 18.020000457763672
+              },
+              {
+                "date": "2026-04-28",
+                "close": 17.829999923706055
+              },
+              {
+                "date": "2026-04-29",
+                "close": 18.809999465942383
+              },
+              {
+                "date": "2026-04-30",
+                "close": 16.889999389648438
+              },
+              {
+                "date": "2026-05-01",
+                "close": 16.989999771118164
+              },
+              {
+                "date": "2026-05-04",
+                "close": 18.290000915527344
+              },
+              {
+                "date": "2026-05-05",
+                "close": 17.3799991607666
+              },
+              {
+                "date": "2026-05-06",
+                "close": 17.389999389648438
+              },
+              {
+                "date": "2026-05-07",
+                "close": 17.079999923706055
+              },
+              {
+                "date": "2026-05-08",
+                "close": 17.190000534057617
+              },
+              {
+                "date": "2026-05-11",
+                "close": 18.3799991607666
+              },
+              {
+                "date": "2026-05-12",
+                "close": 17.989999771118164
+              },
+              {
+                "date": "2026-05-13",
+                "close": 17.8700008392334
+              },
+              {
+                "date": "2026-05-14",
+                "close": 17.260000228881836
+              },
+              {
+                "date": "2026-05-15",
+                "close": 18.43000030517578
+              },
+              {
+                "date": "2026-05-18",
+                "close": 17.81999969482422
+              },
+              {
+                "date": "2026-05-19",
+                "close": 18.059999465942383
+              },
+              {
+                "date": "2026-05-20",
+                "close": 17.440000534057617
+              }
+            ],
+            "lookback_days_received": 59
+          },
+          "data_quality_flags": []
+        },
+        "XLV": {
+          "label": "XLV",
+          "current_price": 147.1300048828125,
+          "previous_close": 147.32000732421875,
+          "daily_change_pct": -0.12897259839805508,
+          "daily_change_abs": -0.19000244140625,
+          "historical": {
+            "daily_closes": [
+              {
+                "date": "2026-02-25",
+                "close": 157.8300018310547
+              },
+              {
+                "date": "2026-02-26",
+                "close": 157.4199981689453
+              },
+              {
+                "date": "2026-02-27",
+                "close": 160.1999969482422
+              },
+              {
+                "date": "2026-03-02",
+                "close": 158.52999877929688
+              },
+              {
+                "date": "2026-03-03",
+                "close": 156.74000549316406
+              },
+              {
+                "date": "2026-03-04",
+                "close": 157.0500030517578
+              },
+              {
+                "date": "2026-03-05",
+                "close": 153.91000366210938
+              },
+              {
+                "date": "2026-03-06",
+                "close": 152.6999969482422
+              },
+              {
+                "date": "2026-03-09",
+                "close": 154.25999450683594
+              },
+              {
+                "date": "2026-03-10",
+                "close": 153.14999389648438
+              },
+              {
+                "date": "2026-03-11",
+                "close": 152.85000610351562
+              },
+              {
+                "date": "2026-03-12",
+                "close": 150.16000366210938
+              },
+              {
+                "date": "2026-03-13",
+                "close": 149.7899932861328
+              },
+              {
+                "date": "2026-03-16",
+                "close": 151.00999450683594
+              },
+              {
+                "date": "2026-03-17",
+                "close": 149.63999938964844
+              },
+              {
+                "date": "2026-03-18",
+                "close": 147.13999938964844
+              },
+              {
+                "date": "2026-03-19",
+                "close": 146.61000061035156
+              },
+              {
+                "date": "2026-03-20",
+                "close": 145.3300018310547
+              },
+              {
+                "date": "2026-03-23",
+                "close": 144.77000427246094
+              },
+              {
+                "date": "2026-03-24",
+                "close": 144.7899932861328
+              },
+              {
+                "date": "2026-03-25",
+                "close": 146.24000549316406
+              },
+              {
+                "date": "2026-03-26",
+                "close": 145.74000549316406
+              },
+              {
+                "date": "2026-03-27",
+                "close": 143.25999450683594
+              },
+              {
+                "date": "2026-03-30",
+                "close": 143.82000732421875
+              },
+              {
+                "date": "2026-03-31",
+                "close": 146.61000061035156
+              },
+              {
+                "date": "2026-04-01",
+                "close": 147.72999572753906
+              },
+              {
+                "date": "2026-04-02",
+                "close": 146.80999755859375
+              },
+              {
+                "date": "2026-04-06",
+                "close": 146.27999877929688
+              },
+              {
+                "date": "2026-04-07",
+                "close": 146.57000732421875
+              },
+              {
+                "date": "2026-04-08",
+                "close": 149.6699981689453
+              },
+              {
+                "date": "2026-04-09",
+                "close": 149.3300018310547
+              },
+              {
+                "date": "2026-04-10",
+                "close": 147.30999755859375
+              },
+              {
+                "date": "2026-04-13",
+                "close": 147.97000122070312
+              },
+              {
+                "date": "2026-04-14",
+                "close": 148.8300018310547
+              },
+              {
+                "date": "2026-04-15",
+                "close": 147.77000427246094
+              },
+              {
+                "date": "2026-04-16",
+                "close": 146.61000061035156
+              },
+              {
+                "date": "2026-04-17",
+                "close": 148.8000030517578
+              },
+              {
+                "date": "2026-04-20",
+                "close": 147.4199981689453
+              },
+              {
+                "date": "2026-04-21",
+                "close": 145.9199981689453
+              },
+              {
+                "date": "2026-04-22",
+                "close": 146.3800048828125
+              },
+              {
+                "date": "2026-04-23",
+                "close": 146.24000549316406
+              },
+              {
+                "date": "2026-04-24",
+                "close": 144.17999267578125
+              },
+              {
+                "date": "2026-04-27",
+                "close": 143.4600067138672
+              },
+              {
+                "date": "2026-04-28",
+                "close": 143.83999633789062
+              },
+              {
+                "date": "2026-04-29",
+                "close": 142.83999633789062
+              },
+              {
+                "date": "2026-04-30",
+                "close": 145.99000549316406
+              },
+              {
+                "date": "2026-05-01",
+                "close": 145.16000366210938
+              },
+              {
+                "date": "2026-05-04",
+                "close": 144.72999572753906
+              },
+              {
+                "date": "2026-05-05",
+                "close": 145.3000030517578
+              },
+              {
+                "date": "2026-05-06",
+                "close": 145.39999389648438
+              },
+              {
+                "date": "2026-05-07",
+                "close": 144.72000122070312
+              },
+              {
+                "date": "2026-05-08",
+                "close": 143.49000549316406
+              },
+              {
+                "date": "2026-05-11",
+                "close": 143.0399932861328
+              },
+              {
+                "date": "2026-05-12",
+                "close": 145.85000610351562
+              },
+              {
+                "date": "2026-05-13",
+                "close": 146.7100067138672
+              },
+              {
+                "date": "2026-05-14",
+                "close": 146.6300048828125
+              },
+              {
+                "date": "2026-05-15",
+                "close": 145.10000610351562
+              },
+              {
+                "date": "2026-05-18",
+                "close": 145.72000122070312
+              },
+              {
+                "date": "2026-05-19",
+                "close": 147.32000732421875
+              },
+              {
+                "date": "2026-05-20",
+                "close": 147.1300048828125
+              }
+            ],
+            "lookback_days_received": 60
+          },
+          "data_quality_flags": []
+        },
+        "XLK": {
+          "label": "XLK",
+          "current_price": 177.13999938964844,
+          "previous_close": 173.24000549316406,
+          "daily_change_pct": 2.2512085966415336,
+          "daily_change_abs": 3.899993896484375,
+          "historical": {
+            "daily_closes": [
+              {
+                "date": "2026-02-25",
+                "close": 143.00999450683594
+              },
+              {
+                "date": "2026-02-26",
+                "close": 141.00999450683594
+              },
+              {
+                "date": "2026-02-27",
+                "close": 138.75999450683594
+              },
+              {
+                "date": "2026-03-02",
+                "close": 139.5399932861328
+              },
+              {
+                "date": "2026-03-03",
+                "close": 137.5
+              },
+              {
+                "date": "2026-03-04",
+                "close": 139.83999633789062
+              },
+              {
+                "date": "2026-03-05",
+                "close": 140.17999267578125
+              },
+              {
+                "date": "2026-03-06",
+                "close": 137.2899932861328
+              },
+              {
+                "date": "2026-03-09",
+                "close": 139.75999450683594
+              },
+              {
+                "date": "2026-03-10",
+                "close": 139.75999450683594
+              },
+              {
+                "date": "2026-03-11",
+                "close": 140.42999267578125
+              },
+              {
+                "date": "2026-03-12",
+                "close": 137.83999633789062
+              },
+              {
+                "date": "2026-03-13",
+                "close": 136.8000030517578
+              },
+              {
+                "date": "2026-03-16",
+                "close": 138.77999877929688
+              },
+              {
+                "date": "2026-03-17",
+                "close": 139.5399932861328
+              },
+              {
+                "date": "2026-03-18",
+                "close": 137.9600067138672
+              },
+              {
+                "date": "2026-03-19",
+                "close": 138.42999267578125
+              },
+              {
+                "date": "2026-03-20",
+                "close": 135.2899932861328
+              },
+              {
+                "date": "2026-03-23",
+                "close": 136.9499969482422
+              },
+              {
+                "date": "2026-03-24",
+                "close": 136.14999389648438
+              },
+              {
+                "date": "2026-03-25",
+                "close": 136.75999450683594
+              },
+              {
+                "date": "2026-03-26",
+                "close": 132.5
+              },
+              {
+                "date": "2026-03-27",
+                "close": 129.9199981689453
+              },
+              {
+                "date": "2026-03-30",
+                "close": 127.5
+              },
+              {
+                "date": "2026-03-31",
+                "close": 132.89999389648438
+              },
+              {
+                "date": "2026-04-01",
+                "close": 134.91000366210938
+              },
+              {
+                "date": "2026-04-02",
+                "close": 135.99000549316406
+              },
+              {
+                "date": "2026-04-06",
+                "close": 136.77999877929688
+              },
+              {
+                "date": "2026-04-07",
+                "close": 137.42999267578125
+              },
+              {
+                "date": "2026-04-08",
+                "close": 141.69000244140625
+              },
+              {
+                "date": "2026-04-09",
+                "close": 142.07000732421875
+              },
+              {
+                "date": "2026-04-10",
+                "close": 142.6199951171875
+              },
+              {
+                "date": "2026-04-13",
+                "close": 145.61000061035156
+              },
+              {
+                "date": "2026-04-14",
+                "close": 147.94000244140625
+              },
+              {
+                "date": "2026-04-15",
+                "close": 150.3000030517578
+              },
+              {
+                "date": "2026-04-16",
+                "close": 152.02000427246094
+              },
+              {
+                "date": "2026-04-17",
+                "close": 154.35000610351562
+              },
+              {
+                "date": "2026-04-20",
+                "close": 154.55999755859375
+              },
+              {
+                "date": "2026-04-21",
+                "close": 154.69000244140625
+              },
+              {
+                "date": "2026-04-22",
+                "close": 158.08999633789062
+              },
+              {
+                "date": "2026-04-23",
+                "close": 155.83999633789062
+              },
+              {
+                "date": "2026-04-24",
+                "close": 160.22000122070312
+              },
+              {
+                "date": "2026-04-27",
+                "close": 160.57000732421875
+              },
+              {
+                "date": "2026-04-28",
+                "close": 157.85000610351562
+              },
+              {
+                "date": "2026-04-29",
+                "close": 159.11000061035156
+              },
+              {
+                "date": "2026-04-30",
+                "close": 159.5
+              },
+              {
+                "date": "2026-05-01",
+                "close": 161.8699951171875
+              },
+              {
+                "date": "2026-05-04",
+                "close": 162.0500030517578
+              },
+              {
+                "date": "2026-05-05",
+                "close": 165.6300048828125
+              },
+              {
+                "date": "2026-05-06",
+                "close": 170.02999877929688
+              },
+              {
+                "date": "2026-05-07",
+                "close": 169.69000244140625
+              },
+              {
+                "date": "2026-05-08",
+                "close": 175.52000427246094
+              },
+              {
+                "date": "2026-05-11",
+                "close": 177.8800048828125
+              },
+              {
+                "date": "2026-05-12",
+                "close": 175.1999969482422
+              },
+              {
+                "date": "2026-05-13",
+                "close": 176.85000610351562
+              },
+              {
+                "date": "2026-05-14",
+                "close": 179.5
+              },
+              {
+                "date": "2026-05-15",
+                "close": 176.25999450683594
+              },
+              {
+                "date": "2026-05-18",
+                "close": 174.36000061035156
+              },
+              {
+                "date": "2026-05-19",
+                "close": 173.24000549316406
+              },
+              {
+                "date": "2026-05-20",
+                "close": 177.13999938964844
+              }
+            ],
+            "lookback_days_received": 60
+          },
+          "data_quality_flags": []
+        },
+        "XLF": {
+          "label": "XLF",
+          "current_price": 51.650001525878906,
+          "previous_close": 51.099998474121094,
+          "daily_change_pct": 1.0763269436032452,
+          "daily_change_abs": 0.5500030517578125,
+          "historical": {
+            "daily_closes": [
+              {
+                "date": "2026-02-25",
+                "close": 51.869998931884766
+              },
+              {
+                "date": "2026-02-26",
+                "close": 52.5
+              },
+              {
+                "date": "2026-02-27",
+                "close": 51.43000030517578
+              },
+              {
+                "date": "2026-03-02",
+                "close": 51.29999923706055
+              },
+              {
+                "date": "2026-03-03",
+                "close": 51.209999084472656
+              },
+              {
+                "date": "2026-03-04",
+                "close": 51.5
+              },
+              {
+                "date": "2026-03-05",
+                "close": 51.22999954223633
+              },
+              {
+                "date": "2026-03-06",
+                "close": 50.56999969482422
+              },
+              {
+                "date": "2026-03-09",
+                "close": 50.33000183105469
+              },
+              {
+                "date": "2026-03-10",
+                "close": 50.060001373291016
+              },
+              {
+                "date": "2026-03-11",
+                "close": 49.63999938964844
+              },
+              {
+                "date": "2026-03-12",
+                "close": 48.83000183105469
+              },
+              {
+                "date": "2026-03-13",
+                "close": 48.88999938964844
+              },
+              {
+                "date": "2026-03-16",
+                "close": 49.29999923706055
+              },
+              {
+                "date": "2026-03-17",
+                "close": 49.560001373291016
+              },
+              {
+                "date": "2026-03-18",
+                "close": 48.970001220703125
+              },
+              {
+                "date": "2026-03-19",
+                "close": 48.9900016784668
+              },
+              {
+                "date": "2026-03-20",
+                "close": 49.08000183105469
+              },
+              {
+                "date": "2026-03-23",
+                "close": 49.27000045776367
+              },
+              {
+                "date": "2026-03-24",
+                "close": 49.279998779296875
+              },
+              {
+                "date": "2026-03-25",
+                "close": 49.34000015258789
+              },
+              {
+                "date": "2026-03-26",
+                "close": 49.04999923706055
+              },
+              {
+                "date": "2026-03-27",
+                "close": 47.810001373291016
+              },
+              {
+                "date": "2026-03-30",
+                "close": 48.36000061035156
+              },
+              {
+                "date": "2026-03-31",
+                "close": 49.369998931884766
+              },
+              {
+                "date": "2026-04-01",
+                "close": 49.439998626708984
+              },
+              {
+                "date": "2026-04-02",
+                "close": 49.529998779296875
+              },
+              {
+                "date": "2026-04-06",
+                "close": 49.880001068115234
+              },
+              {
+                "date": "2026-04-07",
+                "close": 49.880001068115234
+              },
+              {
+                "date": "2026-04-08",
+                "close": 51.20000076293945
+              },
+              {
+                "date": "2026-04-09",
+                "close": 51.33000183105469
+              },
+              {
+                "date": "2026-04-10",
+                "close": 50.77000045776367
+              },
+              {
+                "date": "2026-04-13",
+                "close": 51.65999984741211
+              },
+              {
+                "date": "2026-04-14",
+                "close": 51.779998779296875
+              },
+              {
+                "date": "2026-04-15",
+                "close": 52.16999816894531
+              },
+              {
+                "date": "2026-04-16",
+                "close": 52.029998779296875
+              },
+              {
+                "date": "2026-04-17",
+                "close": 52.43000030517578
+              },
+              {
+                "date": "2026-04-20",
+                "close": 52.630001068115234
+              },
+              {
+                "date": "2026-04-21",
+                "close": 52.29999923706055
+              },
+              {
+                "date": "2026-04-22",
+                "close": 52.209999084472656
+              },
+              {
+                "date": "2026-04-23",
+                "close": 51.79999923706055
+              },
+              {
+                "date": "2026-04-24",
+                "close": 51.41999816894531
+              },
+              {
+                "date": "2026-04-27",
+                "close": 51.810001373291016
+              },
+              {
+                "date": "2026-04-28",
+                "close": 51.849998474121094
+              },
+              {
+                "date": "2026-04-29",
+                "close": 51.91999816894531
+              },
+              {
+                "date": "2026-04-30",
+                "close": 52.130001068115234
+              },
+              {
+                "date": "2026-05-01",
+                "close": 51.91999816894531
+              },
+              {
+                "date": "2026-05-04",
+                "close": 51.58000183105469
+              },
+              {
+                "date": "2026-05-05",
+                "close": 51.59000015258789
+              },
+              {
+                "date": "2026-05-06",
+                "close": 51.84000015258789
+              },
+              {
+                "date": "2026-05-07",
+                "close": 51.54999923706055
+              },
+              {
+                "date": "2026-05-08",
+                "close": 51.2400016784668
+              },
+              {
+                "date": "2026-05-11",
+                "close": 51.18000030517578
+              },
+              {
+                "date": "2026-05-12",
+                "close": 51.58000183105469
+              },
+              {
+                "date": "2026-05-13",
+                "close": 50.9900016784668
+              },
+              {
+                "date": "2026-05-14",
+                "close": 51.290000915527344
+              },
+              {
+                "date": "2026-05-15",
+                "close": 51.099998474121094
+              },
+              {
+                "date": "2026-05-18",
+                "close": 51.7400016784668
+              },
+              {
+                "date": "2026-05-19",
+                "close": 51.099998474121094
+              },
+              {
+                "date": "2026-05-20",
+                "close": 51.650001525878906
+              }
+            ],
+            "lookback_days_received": 60
+          },
+          "data_quality_flags": []
+        },
+        "XLY": {
+          "label": "XLY",
+          "current_price": 117.94000244140625,
+          "previous_close": 115.02999877929688,
+          "daily_change_pct": 2.5297780518042727,
+          "daily_change_abs": 2.910003662109375,
+          "historical": {
+            "daily_closes": [
+              {
+                "date": "2026-02-25",
+                "close": 117.08999633789062
+              },
+              {
+                "date": "2026-02-26",
+                "close": 117.05000305175781
+              },
+              {
+                "date": "2026-02-27",
+                "close": 116.86000061035156
+              },
+              {
+                "date": "2026-03-02",
+                "close": 115.41999816894531
+              },
+              {
+                "date": "2026-03-03",
+                "close": 114.36000061035156
+              },
+              {
+                "date": "2026-03-04",
+                "close": 116.38999938964844
+              },
+              {
+                "date": "2026-03-05",
+                "close": 116.55000305175781
+              },
+              {
+                "date": "2026-03-06",
+                "close": 114.44000244140625
+              },
+              {
+                "date": "2026-03-09",
+                "close": 114.58999633789062
+              },
+              {
+                "date": "2026-03-10",
+                "close": 114.44000244140625
+              },
+              {
+                "date": "2026-03-11",
+                "close": 114.13999938964844
+              },
+              {
+                "date": "2026-03-12",
+                "close": 111.5199966430664
+              },
+              {
+                "date": "2026-03-13",
+                "close": 110.86000061035156
+              },
+              {
+                "date": "2026-03-16",
+                "close": 112.19999694824219
+              },
+              {
+                "date": "2026-03-17",
+                "close": 113.18000030517578
+              },
+              {
+                "date": "2026-03-18",
+                "close": 110.56999969482422
+              },
+              {
+                "date": "2026-03-19",
+                "close": 109.69999694824219
+              },
+              {
+                "date": "2026-03-20",
+                "close": 107.73999786376953
+              },
+              {
+                "date": "2026-03-23",
+                "close": 110.12000274658203
+              },
+              {
+                "date": "2026-03-24",
+                "close": 109.68000030517578
+              },
+              {
+                "date": "2026-03-25",
+                "close": 110.7300033569336
+              },
+              {
+                "date": "2026-03-26",
+                "close": 108.83000183105469
+              },
+              {
+                "date": "2026-03-27",
+                "close": 105.68000030517578
+              },
+              {
+                "date": "2026-03-30",
+                "close": 105.66000366210938
+              },
+              {
+                "date": "2026-03-31",
+                "close": 108.9800033569336
+              },
+              {
+                "date": "2026-04-01",
+                "close": 109.80000305175781
+              },
+              {
+                "date": "2026-04-02",
+                "close": 108.1500015258789
+              },
+              {
+                "date": "2026-04-06",
+                "close": 109.04000091552734
+              },
+              {
+                "date": "2026-04-07",
+                "close": 107.7699966430664
+              },
+              {
+                "date": "2026-04-08",
+                "close": 110.81999969482422
+              },
+              {
+                "date": "2026-04-09",
+                "close": 112.73999786376953
+              },
+              {
+                "date": "2026-04-10",
+                "close": 112.88999938964844
+              },
+              {
+                "date": "2026-04-13",
+                "close": 113.91999816894531
+              },
+              {
+                "date": "2026-04-14",
+                "close": 116.44000244140625
+              },
+              {
+                "date": "2026-04-15",
+                "close": 118.18000030517578
+              },
+              {
+                "date": "2026-04-16",
+                "close": 117.62999725341797
+              },
+              {
+                "date": "2026-04-17",
+                "close": 120.41000366210938
+              },
+              {
+                "date": "2026-04-20",
+                "close": 119.87000274658203
+              },
+              {
+                "date": "2026-04-21",
+                "close": 118.97000122070312
+              },
+              {
+                "date": "2026-04-22",
+                "close": 118.93000030517578
+              },
+              {
+                "date": "2026-04-23",
+                "close": 117.73999786376953
+              },
+              {
+                "date": "2026-04-24",
+                "close": 118.69000244140625
+              },
+              {
+                "date": "2026-04-27",
+                "close": 117.83999633789062
+              },
+              {
+                "date": "2026-04-28",
+                "close": 117.01000213623047
+              },
+              {
+                "date": "2026-04-29",
+                "close": 116.83999633789062
+              },
+              {
+                "date": "2026-04-30",
+                "close": 118.3499984741211
+              },
+              {
+                "date": "2026-05-01",
+                "close": 118.62999725341797
+              },
+              {
+                "date": "2026-05-04",
+                "close": 117.72000122070312
+              },
+              {
+                "date": "2026-05-05",
+                "close": 118.06999969482422
+              },
+              {
+                "date": "2026-05-06",
+                "close": 119.87000274658203
+              },
+              {
+                "date": "2026-05-07",
+                "close": 119.87999725341797
+              },
+              {
+                "date": "2026-05-08",
+                "close": 120.19999694824219
+              },
+              {
+                "date": "2026-05-11",
+                "close": 119.37000274658203
+              },
+              {
+                "date": "2026-05-12",
+                "close": 118.29000091552734
+              },
+              {
+                "date": "2026-05-13",
+                "close": 118.72000122070312
+              },
+              {
+                "date": "2026-05-14",
+                "close": 118.66999816894531
+              },
+              {
+                "date": "2026-05-15",
+                "close": 116.52999877929688
+              },
+              {
+                "date": "2026-05-18",
+                "close": 116.31999969482422
+              },
+              {
+                "date": "2026-05-19",
+                "close": 115.02999877929688
+              },
+              {
+                "date": "2026-05-20",
+                "close": 117.94000244140625
+              }
+            ],
+            "lookback_days_received": 60
+          },
+          "data_quality_flags": []
+        },
+        "XLP": {
+          "label": "XLP",
+          "current_price": 85.5199966430664,
+          "previous_close": 86.08999633789062,
+          "daily_change_pct": -0.6620974783028837,
+          "daily_change_abs": -0.5699996948242188,
+          "historical": {
+            "daily_closes": [
+              {
+                "date": "2026-02-25",
+                "close": 89.01000213623047
+              },
+              {
+                "date": "2026-02-26",
+                "close": 88.86000061035156
+              },
+              {
+                "date": "2026-02-27",
+                "close": 90.01000213623047
+              },
+              {
+                "date": "2026-03-02",
+                "close": 88.70999908447266
+              },
+              {
+                "date": "2026-03-03",
+                "close": 87.73999786376953
+              },
+              {
+                "date": "2026-03-04",
+                "close": 87.16000366210938
+              },
+              {
+                "date": "2026-03-05",
+                "close": 85.41000366210938
+              },
+              {
+                "date": "2026-03-06",
+                "close": 85.77999877929688
+              },
+              {
+                "date": "2026-03-09",
+                "close": 85.97000122070312
+              },
+              {
+                "date": "2026-03-10",
+                "close": 85.72000122070312
+              },
+              {
+                "date": "2026-03-11",
+                "close": 84.58999633789062
+              },
+              {
+                "date": "2026-03-12",
+                "close": 84.25
+              },
+              {
+                "date": "2026-03-13",
+                "close": 84.73999786376953
+              },
+              {
+                "date": "2026-03-16",
+                "close": 84.9800033569336
+              },
+              {
+                "date": "2026-03-17",
+                "close": 84.69999694824219
+              },
+              {
+                "date": "2026-03-18",
+                "close": 82.63999938964844
+              },
+              {
+                "date": "2026-03-19",
+                "close": 81.97000122070312
+              },
+              {
+                "date": "2026-03-20",
+                "close": 81.29000091552734
+              },
+              {
+                "date": "2026-03-23",
+                "close": 81.18000030517578
+              },
+              {
+                "date": "2026-03-24",
+                "close": 81.11000061035156
+              },
+              {
+                "date": "2026-03-25",
+                "close": 81.51000213623047
+              },
+              {
+                "date": "2026-03-26",
+                "close": 81.13999938964844
+              },
+              {
+                "date": "2026-03-27",
+                "close": 81.77999877929688
+              },
+              {
+                "date": "2026-03-30",
+                "close": 81.87999725341797
+              },
+              {
+                "date": "2026-03-31",
+                "close": 81.9800033569336
+              },
+              {
+                "date": "2026-04-01",
+                "close": 81.45999908447266
+              },
+              {
+                "date": "2026-04-02",
+                "close": 81.88999938964844
+              },
+              {
+                "date": "2026-04-06",
+                "close": 82.66000366210938
+              },
+              {
+                "date": "2026-04-07",
+                "close": 81.26000213623047
+              },
+              {
+                "date": "2026-04-08",
+                "close": 82.77999877929688
+              },
+              {
+                "date": "2026-04-09",
+                "close": 83.44999694824219
+              },
+              {
+                "date": "2026-04-10",
+                "close": 82.37000274658203
+              },
+              {
+                "date": "2026-04-13",
+                "close": 81.55000305175781
+              },
+              {
+                "date": "2026-04-14",
+                "close": 81.47000122070312
+              },
+              {
+                "date": "2026-04-15",
+                "close": 81.05999755859375
+              },
+              {
+                "date": "2026-04-16",
+                "close": 81.43000030517578
+              },
+              {
+                "date": "2026-04-17",
+                "close": 82.45999908447266
+              },
+              {
+                "date": "2026-04-20",
+                "close": 82.38999938964844
+              },
+              {
+                "date": "2026-04-21",
+                "close": 81.83999633789062
+              },
+              {
+                "date": "2026-04-22",
+                "close": 82.11000061035156
+              },
+              {
+                "date": "2026-04-23",
+                "close": 83.4800033569336
+              },
+              {
+                "date": "2026-04-24",
+                "close": 83.2300033569336
+              },
+              {
+                "date": "2026-04-27",
+                "close": 82.33999633789062
+              },
+              {
+                "date": "2026-04-28",
+                "close": 83.08000183105469
+              },
+              {
+                "date": "2026-04-29",
+                "close": 82.91999816894531
+              },
+              {
+                "date": "2026-04-30",
+                "close": 84.30999755859375
+              },
+              {
+                "date": "2026-05-01",
+                "close": 84.16999816894531
+              },
+              {
+                "date": "2026-05-04",
+                "close": 83.54000091552734
+              },
+              {
+                "date": "2026-05-05",
+                "close": 84.05999755859375
+              },
+              {
+                "date": "2026-05-06",
+                "close": 84.23999786376953
+              },
+              {
+                "date": "2026-05-07",
+                "close": 83.9800033569336
+              },
+              {
+                "date": "2026-05-08",
+                "close": 84.18000030517578
+              },
+              {
+                "date": "2026-05-11",
+                "close": 83.37000274658203
+              },
+              {
+                "date": "2026-05-12",
+                "close": 84.44000244140625
+              },
+              {
+                "date": "2026-05-13",
+                "close": 84.72000122070312
+              },
+              {
+                "date": "2026-05-14",
+                "close": 84.9800033569336
+              },
+              {
+                "date": "2026-05-15",
+                "close": 84.63999938964844
+              },
+              {
+                "date": "2026-05-18",
+                "close": 85.9000015258789
+              },
+              {
+                "date": "2026-05-19",
+                "close": 86.08999633789062
+              },
+              {
+                "date": "2026-05-20",
+                "close": 85.5199966430664
+              }
+            ],
+            "lookback_days_received": 60
+          },
+          "data_quality_flags": []
+        },
+        "XLI": {
+          "label": "XLI",
+          "current_price": 170.72999572753906,
+          "previous_close": 168.74000549316406,
+          "daily_change_pct": 1.1793233196591413,
+          "daily_change_abs": 1.989990234375,
+          "historical": {
+            "daily_closes": [
+              {
+                "date": "2026-02-25",
+                "close": 175.60000610351562
+              },
+              {
+                "date": "2026-02-26",
+                "close": 176.6999969482422
+              },
+              {
+                "date": "2026-02-27",
+                "close": 177.13999938964844
+              },
+              {
+                "date": "2026-03-02",
+                "close": 178.89999389648438
+              },
+              {
+                "date": "2026-03-03",
+                "close": 175.44000244140625
+              },
+              {
+                "date": "2026-03-04",
+                "close": 175.97000122070312
+              },
+              {
+                "date": "2026-03-05",
+                "close": 172.05999755859375
+              },
+              {
+                "date": "2026-03-06",
+                "close": 169.94000244140625
+              },
+              {
+                "date": "2026-03-09",
+                "close": 170.94000244140625
+              },
+              {
+                "date": "2026-03-10",
+                "close": 170.02000427246094
+              },
+              {
+                "date": "2026-03-11",
+                "close": 169.49000549316406
+              },
+              {
+                "date": "2026-03-12",
+                "close": 165.24000549316406
+              },
+              {
+                "date": "2026-03-13",
+                "close": 164.64999389648438
+              },
+              {
+                "date": "2026-03-16",
+                "close": 166.05999755859375
+              },
+              {
+                "date": "2026-03-17",
+                "close": 166.5
+              },
+              {
+                "date": "2026-03-18",
+                "close": 165.17999267578125
+              },
+              {
+                "date": "2026-03-19",
+                "close": 164.05999755859375
+              },
+              {
+                "date": "2026-03-20",
+                "close": 161.6699981689453
+              },
+              {
+                "date": "2026-03-23",
+                "close": 163.0500030517578
+              },
+              {
+                "date": "2026-03-24",
+                "close": 164.0
+              },
+              {
+                "date": "2026-03-25",
+                "close": 165.10000610351562
+              },
+              {
+                "date": "2026-03-26",
+                "close": 161.27000427246094
+              },
+              {
+                "date": "2026-03-27",
+                "close": 159.1999969482422
+              },
+              {
+                "date": "2026-03-30",
+                "close": 156.61000061035156
+              },
+              {
+                "date": "2026-03-31",
+                "close": 161.72999572753906
+              },
+              {
+                "date": "2026-04-01",
+                "close": 164.42999267578125
+              },
+              {
+                "date": "2026-04-02",
+                "close": 163.77000427246094
+              },
+              {
+                "date": "2026-04-06",
+                "close": 164.61000061035156
+              },
+              {
+                "date": "2026-04-07",
+                "close": 164.27999877929688
+              },
+              {
+                "date": "2026-04-08",
+                "close": 170.44000244140625
+              },
+              {
+                "date": "2026-04-09",
+                "close": 172.19000244140625
+              },
+              {
+                "date": "2026-04-10",
+                "close": 171.52000427246094
+              },
+              {
+                "date": "2026-04-13",
+                "close": 172.72999572753906
+              },
+              {
+                "date": "2026-04-14",
+                "close": 173.35000610351562
+              },
+              {
+                "date": "2026-04-15",
+                "close": 171.17999267578125
+              },
+              {
+                "date": "2026-04-16",
+                "close": 170.3300018310547
+              },
+              {
+                "date": "2026-04-17",
+                "close": 173.50999450683594
+              },
+              {
+                "date": "2026-04-20",
+                "close": 173.89999389648438
+              },
+              {
+                "date": "2026-04-21",
+                "close": 171.44000244140625
+              },
+              {
+                "date": "2026-04-22",
+                "close": 171.0399932861328
+              },
+              {
+                "date": "2026-04-23",
+                "close": 174.07000732421875
+              },
+              {
+                "date": "2026-04-24",
+                "close": 172.47000122070312
+              },
+              {
+                "date": "2026-04-27",
+                "close": 172.50999450683594
+              },
+              {
+                "date": "2026-04-28",
+                "close": 170.97999572753906
+              },
+              {
+                "date": "2026-04-29",
+                "close": 169.92999267578125
+              },
+              {
+                "date": "2026-04-30",
+                "close": 174.5800018310547
+              },
+              {
+                "date": "2026-05-01",
+                "close": 172.9600067138672
+              },
+              {
+                "date": "2026-05-04",
+                "close": 170.97999572753906
+              },
+              {
+                "date": "2026-05-05",
+                "close": 172.41000366210938
+              },
+              {
+                "date": "2026-05-06",
+                "close": 176.8699951171875
+              },
+              {
+                "date": "2026-05-07",
+                "close": 174.0
+              },
+              {
+                "date": "2026-05-08",
+                "close": 173.1999969482422
+              },
+              {
+                "date": "2026-05-11",
+                "close": 175.0399932861328
+              },
+              {
+                "date": "2026-05-12",
+                "close": 174.35000610351562
+              },
+              {
+                "date": "2026-05-13",
+                "close": 173.6199951171875
+              },
+              {
+                "date": "2026-05-14",
+                "close": 174.50999450683594
+              },
+              {
+                "date": "2026-05-15",
+                "close": 171.39999389648438
+              },
+              {
+                "date": "2026-05-18",
+                "close": 170.75
+              },
+              {
+                "date": "2026-05-19",
+                "close": 168.74000549316406
+              },
+              {
+                "date": "2026-05-20",
+                "close": 170.72999572753906
+              }
+            ],
+            "lookback_days_received": 60
+          },
+          "data_quality_flags": []
+        },
+        "XLE": {
+          "label": "XLE",
+          "current_price": 59.79999923706055,
+          "previous_close": 61.290000915527344,
+          "daily_change_pct": -2.4310681289112472,
+          "daily_change_abs": -1.4900016784667969,
+          "historical": {
+            "daily_closes": [
+              {
+                "date": "2026-02-25",
+                "close": 54.869998931884766
+              },
+              {
+                "date": "2026-02-26",
+                "close": 55.04999923706055
+              },
+              {
+                "date": "2026-02-27",
+                "close": 55.91999816894531
+              },
+              {
+                "date": "2026-03-02",
+                "close": 57.040000915527344
+              },
+              {
+                "date": "2026-03-03",
+                "close": 56.52000045776367
+              },
+              {
+                "date": "2026-03-04",
+                "close": 56.189998626708984
+              },
+              {
+                "date": "2026-03-05",
+                "close": 56.47999954223633
+              },
+              {
+                "date": "2026-03-06",
+                "close": 56.56999969482422
+              },
+              {
+                "date": "2026-03-09",
+                "close": 56.31999969482422
+              },
+              {
+                "date": "2026-03-10",
+                "close": 55.599998474121094
+              },
+              {
+                "date": "2026-03-11",
+                "close": 56.97999954223633
+              },
+              {
+                "date": "2026-03-12",
+                "close": 57.5099983215332
+              },
+              {
+                "date": "2026-03-13",
+                "close": 57.70000076293945
+              },
+              {
+                "date": "2026-03-16",
+                "close": 57.900001525878906
+              },
+              {
+                "date": "2026-03-17",
+                "close": 58.5099983215332
+              },
+              {
+                "date": "2026-03-18",
+                "close": 58.43000030517578
+              },
+              {
+                "date": "2026-03-19",
+                "close": 59.36000061035156
+              },
+              {
+                "date": "2026-03-20",
+                "close": 59.310001373291016
+              },
+              {
+                "date": "2026-03-23",
+                "close": 59.630001068115234
+              },
+              {
+                "date": "2026-03-24",
+                "close": 60.84000015258789
+              },
+              {
+                "date": "2026-03-25",
+                "close": 60.56999969482422
+              },
+              {
+                "date": "2026-03-26",
+                "close": 61.52000045776367
+              },
+              {
+                "date": "2026-03-27",
+                "close": 62.560001373291016
+              },
+              {
+                "date": "2026-03-30",
+                "close": 61.959999084472656
+              },
+              {
+                "date": "2026-03-31",
+                "close": 61.2599983215332
+              },
+              {
+                "date": "2026-04-01",
+                "close": 58.970001220703125
+              },
+              {
+                "date": "2026-04-02",
+                "close": 59.25
+              },
+              {
+                "date": "2026-04-06",
+                "close": 59.68000030517578
+              },
+              {
+                "date": "2026-04-07",
+                "close": 60.15999984741211
+              },
+              {
+                "date": "2026-04-08",
+                "close": 58.04999923706055
+              },
+              {
+                "date": "2026-04-09",
+                "close": 57.33000183105469
+              },
+              {
+                "date": "2026-04-10",
+                "close": 56.939998626708984
+              },
+              {
+                "date": "2026-04-13",
+                "close": 57.11000061035156
+              },
+              {
+                "date": "2026-04-14",
+                "close": 55.95000076293945
+              },
+              {
+                "date": "2026-04-15",
+                "close": 55.7599983215332
+              },
+              {
+                "date": "2026-04-16",
+                "close": 56.58000183105469
+              },
+              {
+                "date": "2026-04-17",
+                "close": 55.02000045776367
+              },
+              {
+                "date": "2026-04-20",
+                "close": 55.06999969482422
+              },
+              {
+                "date": "2026-04-21",
+                "close": 55.869998931884766
+              },
+              {
+                "date": "2026-04-22",
+                "close": 56.540000915527344
+              },
+              {
+                "date": "2026-04-23",
+                "close": 56.97999954223633
+              },
+              {
+                "date": "2026-04-24",
+                "close": 56.869998931884766
+              },
+              {
+                "date": "2026-04-27",
+                "close": 56.77000045776367
+              },
+              {
+                "date": "2026-04-28",
+                "close": 57.709999084472656
+              },
+              {
+                "date": "2026-04-29",
+                "close": 59.029998779296875
+              },
+              {
+                "date": "2026-04-30",
+                "close": 59.650001525878906
+              },
+              {
+                "date": "2026-05-01",
+                "close": 58.849998474121094
+              },
+              {
+                "date": "2026-05-04",
+                "close": 59.38999938964844
+              },
+              {
+                "date": "2026-05-05",
+                "close": 59.45000076293945
+              },
+              {
+                "date": "2026-05-06",
+                "close": 57.0
+              },
+              {
+                "date": "2026-05-07",
+                "close": 55.95000076293945
+              },
+              {
+                "date": "2026-05-08",
+                "close": 55.70000076293945
+              },
+              {
+                "date": "2026-05-11",
+                "close": 57.16999816894531
+              },
+              {
+                "date": "2026-05-12",
+                "close": 57.56999969482422
+              },
+              {
+                "date": "2026-05-13",
+                "close": 57.630001068115234
+              },
+              {
+                "date": "2026-05-14",
+                "close": 58.06999969482422
+              },
+              {
+                "date": "2026-05-15",
+                "close": 59.439998626708984
+              },
+              {
+                "date": "2026-05-18",
+                "close": 60.58000183105469
+              },
+              {
+                "date": "2026-05-19",
+                "close": 61.290000915527344
+              },
+              {
+                "date": "2026-05-20",
+                "close": 59.79999923706055
+              }
+            ],
+            "lookback_days_received": 60
+          },
+          "data_quality_flags": []
+        },
+        "XLB": {
+          "label": "XLB",
+          "current_price": 49.720001220703125,
+          "previous_close": 49.040000915527344,
+          "daily_change_pct": 1.3866237611763084,
+          "daily_change_abs": 0.6800003051757812,
+          "historical": {
+            "daily_closes": [
+              {
+                "date": "2026-02-25",
+                "close": 53.060001373291016
+              },
+              {
+                "date": "2026-02-26",
+                "close": 53.0
+              },
+              {
+                "date": "2026-02-27",
+                "close": 53.40999984741211
+              },
+              {
+                "date": "2026-03-02",
+                "close": 53.25
+              },
+              {
+                "date": "2026-03-03",
+                "close": 51.939998626708984
+              },
+              {
+                "date": "2026-03-04",
+                "close": 51.91999816894531
+              },
+              {
+                "date": "2026-03-05",
+                "close": 50.83000183105469
+              },
+              {
+                "date": "2026-03-06",
+                "close": 49.86000061035156
+              },
+              {
+                "date": "2026-03-09",
+                "close": 49.9900016784668
+              },
+              {
+                "date": "2026-03-10",
+                "close": 49.880001068115234
+              },
+              {
+                "date": "2026-03-11",
+                "close": 49.84000015258789
+              },
+              {
+                "date": "2026-03-12",
+                "close": 49.68000030517578
+              },
+              {
+                "date": "2026-03-13",
+                "close": 49.189998626708984
+              },
+              {
+                "date": "2026-03-16",
+                "close": 49.400001525878906
+              },
+              {
+                "date": "2026-03-17",
+                "close": 49.52000045776367
+              },
+              {
+                "date": "2026-03-18",
+                "close": 48.47999954223633
+              },
+              {
+                "date": "2026-03-19",
+                "close": 47.7400016784668
+              },
+              {
+                "date": "2026-03-20",
+                "close": 46.97999954223633
+              },
+              {
+                "date": "2026-03-23",
+                "close": 47.54999923706055
+              },
+              {
+                "date": "2026-03-24",
+                "close": 48.45000076293945
+              },
+              {
+                "date": "2026-03-25",
+                "close": 49.40999984741211
+              },
+              {
+                "date": "2026-03-26",
+                "close": 49.09000015258789
+              },
+              {
+                "date": "2026-03-27",
+                "close": 48.90999984741211
+              },
+              {
+                "date": "2026-03-30",
+                "close": 49.09000015258789
+              },
+              {
+                "date": "2026-03-31",
+                "close": 49.970001220703125
+              },
+              {
+                "date": "2026-04-01",
+                "close": 50.459999084472656
+              },
+              {
+                "date": "2026-04-02",
+                "close": 50.40999984741211
+              },
+              {
+                "date": "2026-04-06",
+                "close": 50.220001220703125
+              },
+              {
+                "date": "2026-04-07",
+                "close": 50.08000183105469
+              },
+              {
+                "date": "2026-04-08",
+                "close": 51.75
+              },
+              {
+                "date": "2026-04-09",
+                "close": 51.66999816894531
+              },
+              {
+                "date": "2026-04-10",
+                "close": 51.959999084472656
+              },
+              {
+                "date": "2026-04-13",
+                "close": 52.189998626708984
+              },
+              {
+                "date": "2026-04-14",
+                "close": 52.0099983215332
+              },
+              {
+                "date": "2026-04-15",
+                "close": 51.380001068115234
+              },
+              {
+                "date": "2026-04-16",
+                "close": 51.75
+              },
+              {
+                "date": "2026-04-17",
+                "close": 51.880001068115234
+              },
+              {
+                "date": "2026-04-20",
+                "close": 52.22999954223633
+              },
+              {
+                "date": "2026-04-21",
+                "close": 51.77000045776367
+              },
+              {
+                "date": "2026-04-22",
+                "close": 51.83000183105469
+              },
+              {
+                "date": "2026-04-23",
+                "close": 51.810001373291016
+              },
+              {
+                "date": "2026-04-24",
+                "close": 51.91999816894531
+              },
+              {
+                "date": "2026-04-27",
+                "close": 51.779998779296875
+              },
+              {
+                "date": "2026-04-28",
+                "close": 51.400001525878906
+              },
+              {
+                "date": "2026-04-29",
+                "close": 50.959999084472656
+              },
+              {
+                "date": "2026-04-30",
+                "close": 51.470001220703125
+              },
+              {
+                "date": "2026-05-01",
+                "close": 51.349998474121094
+              },
+              {
+                "date": "2026-05-04",
+                "close": 50.650001525878906
+              },
+              {
+                "date": "2026-05-05",
+                "close": 51.529998779296875
+              },
+              {
+                "date": "2026-05-06",
+                "close": 52.40999984741211
+              },
+              {
+                "date": "2026-05-07",
+                "close": 51.400001525878906
+              },
+              {
+                "date": "2026-05-08",
+                "close": 51.59000015258789
+              },
+              {
+                "date": "2026-05-11",
+                "close": 52.2599983215332
+              },
+              {
+                "date": "2026-05-12",
+                "close": 52.13999938964844
+              },
+              {
+                "date": "2026-05-13",
+                "close": 52.060001373291016
+              },
+              {
+                "date": "2026-05-14",
+                "close": 51.66999816894531
+              },
+              {
+                "date": "2026-05-15",
+                "close": 50.29999923706055
+              },
+              {
+                "date": "2026-05-18",
+                "close": 50.220001220703125
+              },
+              {
+                "date": "2026-05-19",
+                "close": 49.040000915527344
+              },
+              {
+                "date": "2026-05-20",
+                "close": 49.720001220703125
+              }
+            ],
+            "lookback_days_received": 60
+          },
+          "data_quality_flags": []
+        },
+        "XLU": {
+          "label": "XLU",
+          "current_price": 44.5099983215332,
+          "previous_close": 44.34000015258789,
+          "daily_change_pct": 0.3833968614350368,
+          "daily_change_abs": 0.1699981689453125,
+          "historical": {
+            "daily_closes": [
+              {
+                "date": "2026-02-25",
+                "close": 47.36000061035156
+              },
+              {
+                "date": "2026-02-26",
+                "close": 47.18000030517578
+              },
+              {
+                "date": "2026-02-27",
+                "close": 47.72999954223633
+              },
+              {
+                "date": "2026-03-02",
+                "close": 47.369998931884766
+              },
+              {
+                "date": "2026-03-03",
+                "close": 47.06999969482422
+              },
+              {
+                "date": "2026-03-04",
+                "close": 47.27000045776367
+              },
+              {
+                "date": "2026-03-05",
+                "close": 46.900001525878906
+              },
+              {
+                "date": "2026-03-06",
+                "close": 46.7400016784668
+              },
+              {
+                "date": "2026-03-09",
+                "close": 46.849998474121094
+              },
+              {
+                "date": "2026-03-10",
+                "close": 46.560001373291016
+              },
+              {
+                "date": "2026-03-11",
+                "close": 46.16999816894531
+              },
+              {
+                "date": "2026-03-12",
+                "close": 46.5
+              },
+              {
+                "date": "2026-03-13",
+                "close": 46.959999084472656
+              },
+              {
+                "date": "2026-03-16",
+                "close": 47.2599983215332
+              },
+              {
+                "date": "2026-03-17",
+                "close": 47.130001068115234
+              },
+              {
+                "date": "2026-03-18",
+                "close": 46.72999954223633
+              },
+              {
+                "date": "2026-03-19",
+                "close": 46.540000915527344
+              },
+              {
+                "date": "2026-03-20",
+                "close": 44.650001525878906
+              },
+              {
+                "date": "2026-03-23",
+                "close": 44.779998779296875
+              },
+              {
+                "date": "2026-03-24",
+                "close": 45.09000015258789
+              },
+              {
+                "date": "2026-03-25",
+                "close": 45.25
+              },
+              {
+                "date": "2026-03-26",
+                "close": 45.33000183105469
+              },
+              {
+                "date": "2026-03-27",
+                "close": 45.59000015258789
+              },
+              {
+                "date": "2026-03-30",
+                "close": 45.91999816894531
+              },
+              {
+                "date": "2026-03-31",
+                "close": 45.88999938964844
+              },
+              {
+                "date": "2026-04-01",
+                "close": 46.11000061035156
+              },
+              {
+                "date": "2026-04-02",
+                "close": 46.34000015258789
+              },
+              {
+                "date": "2026-04-06",
+                "close": 46.16999816894531
+              },
+              {
+                "date": "2026-04-07",
+                "close": 46.27000045776367
+              },
+              {
+                "date": "2026-04-08",
+                "close": 46.779998779296875
+              },
+              {
+                "date": "2026-04-09",
+                "close": 47.150001525878906
+              },
+              {
+                "date": "2026-04-10",
+                "close": 46.959999084472656
+              },
+              {
+                "date": "2026-04-13",
+                "close": 46.38999938964844
+              },
+              {
+                "date": "2026-04-14",
+                "close": 46.470001220703125
+              },
+              {
+                "date": "2026-04-15",
+                "close": 46.02000045776367
+              },
+              {
+                "date": "2026-04-16",
+                "close": 46.349998474121094
+              },
+              {
+                "date": "2026-04-17",
+                "close": 46.15999984741211
+              },
+              {
+                "date": "2026-04-20",
+                "close": 45.75
+              },
+              {
+                "date": "2026-04-21",
+                "close": 44.95000076293945
+              },
+              {
+                "date": "2026-04-22",
+                "close": 44.869998931884766
+              },
+              {
+                "date": "2026-04-23",
+                "close": 46.09000015258789
+              },
+              {
+                "date": "2026-04-24",
+                "close": 46.18000030517578
+              },
+              {
+                "date": "2026-04-27",
+                "close": 46.189998626708984
+              },
+              {
+                "date": "2026-04-28",
+                "close": 46.25
+              },
+              {
+                "date": "2026-04-29",
+                "close": 45.68000030517578
+              },
+              {
+                "date": "2026-04-30",
+                "close": 46.849998474121094
+              },
+              {
+                "date": "2026-05-01",
+                "close": 46.54999923706055
+              },
+              {
+                "date": "2026-05-04",
+                "close": 46.369998931884766
+              },
+              {
+                "date": "2026-05-05",
+                "close": 46.369998931884766
+              },
+              {
+                "date": "2026-05-06",
+                "close": 45.709999084472656
+              },
+              {
+                "date": "2026-05-07",
+                "close": 45.119998931884766
+              },
+              {
+                "date": "2026-05-08",
+                "close": 44.720001220703125
+              },
+              {
+                "date": "2026-05-11",
+                "close": 45.13999938964844
+              },
+              {
+                "date": "2026-05-12",
+                "close": 45.189998626708984
+              },
+              {
+                "date": "2026-05-13",
+                "close": 44.66999816894531
+              },
+              {
+                "date": "2026-05-14",
+                "close": 44.900001525878906
+              },
+              {
+                "date": "2026-05-15",
+                "close": 43.869998931884766
+              },
+              {
+                "date": "2026-05-18",
+                "close": 43.939998626708984
+              },
+              {
+                "date": "2026-05-19",
+                "close": 44.34000015258789
+              },
+              {
+                "date": "2026-05-20",
+                "close": 44.5099983215332
+              }
+            ],
+            "lookback_days_received": 60
+          },
+          "data_quality_flags": []
+        },
+        "XLRE": {
+          "label": "XLRE",
+          "current_price": 44.43000030517578,
+          "previous_close": 43.939998626708984,
+          "daily_change_pct": 1.1151608870760155,
+          "daily_change_abs": 0.4900016784667969,
+          "historical": {
+            "daily_closes": [
+              {
+                "date": "2026-02-25",
+                "close": 43.439998626708984
+              },
+              {
+                "date": "2026-02-26",
+                "close": 43.630001068115234
+              },
+              {
+                "date": "2026-02-27",
+                "close": 43.84000015258789
+              },
+              {
+                "date": "2026-03-02",
+                "close": 43.91999816894531
+              },
+              {
+                "date": "2026-03-03",
+                "close": 43.70000076293945
+              },
+              {
+                "date": "2026-03-04",
+                "close": 43.7599983215332
+              },
+              {
+                "date": "2026-03-05",
+                "close": 43.34000015258789
+              },
+              {
+                "date": "2026-03-06",
+                "close": 42.88999938964844
+              },
+              {
+                "date": "2026-03-09",
+                "close": 42.97999954223633
+              },
+              {
+                "date": "2026-03-10",
+                "close": 42.91999816894531
+              },
+              {
+                "date": "2026-03-11",
+                "close": 42.40999984741211
+              },
+              {
+                "date": "2026-03-12",
+                "close": 42.13999938964844
+              },
+              {
+                "date": "2026-03-13",
+                "close": 42.25
+              },
+              {
+                "date": "2026-03-16",
+                "close": 42.58000183105469
+              },
+              {
+                "date": "2026-03-17",
+                "close": 42.720001220703125
+              },
+              {
+                "date": "2026-03-18",
+                "close": 42.02000045776367
+              },
+              {
+                "date": "2026-03-19",
+                "close": 41.91999816894531
+              },
+              {
+                "date": "2026-03-20",
+                "close": 40.59000015258789
+              },
+              {
+                "date": "2026-03-23",
+                "close": 40.619998931884766
+              },
+              {
+                "date": "2026-03-24",
+                "close": 40.290000915527344
+              },
+              {
+                "date": "2026-03-25",
+                "close": 40.27000045776367
+              },
+              {
+                "date": "2026-03-26",
+                "close": 40.290000915527344
+              },
+              {
+                "date": "2026-03-27",
+                "close": 40.0099983215332
+              },
+              {
+                "date": "2026-03-30",
+                "close": 40.209999084472656
+              },
+              {
+                "date": "2026-03-31",
+                "close": 40.83000183105469
+              },
+              {
+                "date": "2026-04-01",
+                "close": 40.95000076293945
+              },
+              {
+                "date": "2026-04-02",
+                "close": 41.61000061035156
+              },
+              {
+                "date": "2026-04-06",
+                "close": 41.7599983215332
+              },
+              {
+                "date": "2026-04-07",
+                "close": 41.720001220703125
+              },
+              {
+                "date": "2026-04-08",
+                "close": 42.439998626708984
+              },
+              {
+                "date": "2026-04-09",
+                "close": 42.72999954223633
+              },
+              {
+                "date": "2026-04-10",
+                "close": 42.81999969482422
+              },
+              {
+                "date": "2026-04-13",
+                "close": 43.02000045776367
+              },
+              {
+                "date": "2026-04-14",
+                "close": 43.43000030517578
+              },
+              {
+                "date": "2026-04-15",
+                "close": 43.40999984741211
+              },
+              {
+                "date": "2026-04-16",
+                "close": 43.810001373291016
+              },
+              {
+                "date": "2026-04-17",
+                "close": 44.47999954223633
+              },
+              {
+                "date": "2026-04-20",
+                "close": 44.63999938964844
+              },
+              {
+                "date": "2026-04-21",
+                "close": 43.779998779296875
+              },
+              {
+                "date": "2026-04-22",
+                "close": 43.459999084472656
+              },
+              {
+                "date": "2026-04-23",
+                "close": 43.959999084472656
+              },
+              {
+                "date": "2026-04-24",
+                "close": 43.83000183105469
+              },
+              {
+                "date": "2026-04-27",
+                "close": 43.4900016784668
+              },
+              {
+                "date": "2026-04-28",
+                "close": 43.90999984741211
+              },
+              {
+                "date": "2026-04-29",
+                "close": 43.63999938964844
+              },
+              {
+                "date": "2026-04-30",
+                "close": 44.400001525878906
+              },
+              {
+                "date": "2026-05-01",
+                "close": 44.31999969482422
+              },
+              {
+                "date": "2026-05-04",
+                "close": 44.08000183105469
+              },
+              {
+                "date": "2026-05-05",
+                "close": 44.16999816894531
+              },
+              {
+                "date": "2026-05-06",
+                "close": 44.7400016784668
+              },
+              {
+                "date": "2026-05-07",
+                "close": 44.400001525878906
+              },
+              {
+                "date": "2026-05-08",
+                "close": 44.40999984741211
+              },
+              {
+                "date": "2026-05-11",
+                "close": 44.56999969482422
+              },
+              {
+                "date": "2026-05-12",
+                "close": 44.58000183105469
+              },
+              {
+                "date": "2026-05-13",
+                "close": 44.209999084472656
+              },
+              {
+                "date": "2026-05-14",
+                "close": 43.90999984741211
+              },
+              {
+                "date": "2026-05-15",
+                "close": 43.22999954223633
+              },
+              {
+                "date": "2026-05-18",
+                "close": 43.75
+              },
+              {
+                "date": "2026-05-19",
+                "close": 43.939998626708984
+              },
+              {
+                "date": "2026-05-20",
+                "close": 44.43000030517578
+              }
+            ],
+            "lookback_days_received": 60
+          },
+          "data_quality_flags": []
+        },
+        "XLC": {
+          "label": "XLC",
+          "current_price": 116.0999984741211,
+          "previous_close": 115.8499984741211,
+          "daily_change_pct": 0.2157962911461287,
+          "daily_change_abs": 0.25,
+          "historical": {
+            "daily_closes": [
+              {
+                "date": "2026-02-25",
+                "close": 116.5
+              },
+              {
+                "date": "2026-02-26",
+                "close": 116.72000122070312
+              },
+              {
+                "date": "2026-02-27",
+                "close": 118.05000305175781
+              },
+              {
+                "date": "2026-03-02",
+                "close": 117.87000274658203
+              },
+              {
+                "date": "2026-03-03",
+                "close": 117.95999908447266
+              },
+              {
+                "date": "2026-03-04",
+                "close": 118.79000091552734
+              },
+              {
+                "date": "2026-03-05",
+                "close": 118.44000244140625
+              },
+              {
+                "date": "2026-03-06",
+                "close": 117.45999908447266
+              },
+              {
+                "date": "2026-03-09",
+                "close": 117.55999755859375
+              },
+              {
+                "date": "2026-03-10",
+                "close": 117.37999725341797
+              },
+              {
+                "date": "2026-03-11",
+                "close": 117.0
+              },
+              {
+                "date": "2026-03-12",
+                "close": 115.2699966430664
+              },
+              {
+                "date": "2026-03-13",
+                "close": 114.44999694824219
+              },
+              {
+                "date": "2026-03-16",
+                "close": 115.33000183105469
+              },
+              {
+                "date": "2026-03-17",
+                "close": 115.37000274658203
+              },
+              {
+                "date": "2026-03-18",
+                "close": 113.66000366210938
+              },
+              {
+                "date": "2026-03-19",
+                "close": 113.13999938964844
+              },
+              {
+                "date": "2026-03-20",
+                "close": 112.2300033569336
+              },
+              {
+                "date": "2026-03-23",
+                "close": 112.70999908447266
+              },
+              {
+                "date": "2026-03-24",
+                "close": 111.12999725341797
+              },
+              {
+                "date": "2026-03-25",
+                "close": 111.44000244140625
+              },
+              {
+                "date": "2026-03-26",
+                "close": 108.80999755859375
+              },
+              {
+                "date": "2026-03-27",
+                "close": 107.04000091552734
+              },
+              {
+                "date": "2026-03-30",
+                "close": 107.95999908447266
+              },
+              {
+                "date": "2026-03-31",
+                "close": 110.86000061035156
+              },
+              {
+                "date": "2026-04-01",
+                "close": 111.23999786376953
+              },
+              {
+                "date": "2026-04-02",
+                "close": 111.69999694824219
+              },
+              {
+                "date": "2026-04-06",
+                "close": 111.76000213623047
+              },
+              {
+                "date": "2026-04-07",
+                "close": 111.81999969482422
+              },
+              {
+                "date": "2026-04-08",
+                "close": 113.80999755859375
+              },
+              {
+                "date": "2026-04-09",
+                "close": 114.2699966430664
+              },
+              {
+                "date": "2026-04-10",
+                "close": 113.94999694824219
+              },
+              {
+                "date": "2026-04-13",
+                "close": 114.81999969482422
+              },
+              {
+                "date": "2026-04-14",
+                "close": 116.55999755859375
+              },
+              {
+                "date": "2026-04-15",
+                "close": 117.36000061035156
+              },
+              {
+                "date": "2026-04-16",
+                "close": 118.83000183105469
+              },
+              {
+                "date": "2026-04-17",
+                "close": 119.0999984741211
+              },
+              {
+                "date": "2026-04-20",
+                "close": 118.75
+              },
+              {
+                "date": "2026-04-21",
+                "close": 117.16000366210938
+              },
+              {
+                "date": "2026-04-22",
+                "close": 117.87999725341797
+              },
+              {
+                "date": "2026-04-23",
+                "close": 117.38999938964844
+              },
+              {
+                "date": "2026-04-24",
+                "close": 115.54000091552734
+              },
+              {
+                "date": "2026-04-27",
+                "close": 115.80999755859375
+              },
+              {
+                "date": "2026-04-28",
+                "close": 115.75
+              },
+              {
+                "date": "2026-04-29",
+                "close": 115.29000091552734
+              },
+              {
+                "date": "2026-04-30",
+                "close": 116.51000213623047
+              },
+              {
+                "date": "2026-05-01",
+                "close": 116.72000122070312
+              },
+              {
+                "date": "2026-05-04",
+                "close": 116.0999984741211
+              },
+              {
+                "date": "2026-05-05",
+                "close": 115.62999725341797
+              },
+              {
+                "date": "2026-05-06",
+                "close": 117.3499984741211
+              },
+              {
+                "date": "2026-05-07",
+                "close": 117.37999725341797
+              },
+              {
+                "date": "2026-05-08",
+                "close": 116.94000244140625
+              },
+              {
+                "date": "2026-05-11",
+                "close": 115.58000183105469
+              },
+              {
+                "date": "2026-05-12",
+                "close": 115.86000061035156
+              },
+              {
+                "date": "2026-05-13",
+                "close": 116.76000213623047
+              },
+              {
+                "date": "2026-05-14",
+                "close": 117.11000061035156
+              },
+              {
+                "date": "2026-05-15",
+                "close": 116.08000183105469
+              },
+              {
+                "date": "2026-05-18",
+                "close": 116.9800033569336
+              },
+              {
+                "date": "2026-05-19",
+                "close": 115.8499984741211
+              },
+              {
+                "date": "2026-05-20",
+                "close": 116.0999984741211
+              }
+            ],
+            "lookback_days_received": 60
+          },
+          "data_quality_flags": []
+        }
+      },
+      "data_quality_flags": []
+    },
+    "cadence_window": "post_close",
+    "anchor": {},
+    "sector_etf_symbol": null
+  },
+  "call_one_result": {
+    "ticker": "ALAB",
+    "investigation": {
+      "ticker": "ALAB",
+      "investigation_summary": "On May 20, 2026, Astera Labs (ALAB) surged double-digits intraday. A MarketWatch real-time quote showed the stock up $24.14 (≈9.9%) by 9:51 a.m. EDT **(MarketWatch, May 20 2026)**, while other reports characterized the bounce as roughly 13% **(Gotrade, May 20 2026; Insider Monkey / Yahoo Finance, May 20 2026)**. Concurrently, MarketBeat flagged unusually high volume in Astera Labs call options **(MarketBeat, May 20 2026)**.\n\nMedia coverage attributed the rally to bullish sell-side commentary. A May 20 MarketWatch/Morningstar article quoted analyst Svanberg stating that Astera Labs signaled demand for its custom products exceeds its current resources **(Morningstar / MarketWatch, May 20 2026)**. Separately, Insider Monkey and Yahoo Finance reported that Evercore ISI’s bullish stance—described as a Buy rating or reiterated recommendation—helped bolster investor sentiment **(Insider Monkey / Yahoo Finance, May 20 2026)**.\n\nThe exact substance of the Evercore note, including any revised price target or estimate changes, was not visible in retrieved coverage. It also remains unclear whether the demand comment constitutes new information or a restatement of prior guidance. Because no company press release, SEC filing, or primary analyst research was directly accessed, the catalyst is partially inferred from secondary reports.",
+      "established_facts": [
+        "A MarketWatch real-time quote on May 20, 2026 showed ALAB up $24.14 (≈9.9%) at 9:51 a.m. EDT **(MarketWatch, May 20 2026)**.",
+        "Reports on May 20 described an intraday gain of roughly 13% **(Gotrade, May 20 2026; Insider Monkey / Yahoo Finance, May 20 2026)**.",
+        "MarketBeat reported high volume of Astera Labs call options on May 20 **(MarketBeat, May 20 2026)**.",
+        "A May 20 MarketWatch/Morningstar article quoted analyst Svanberg saying Astera Labs signaled demand for custom products exceeds its resources **(Morningstar / MarketWatch, May 20 2026)**.",
+        "Evercore ISI’s bullish stance was cited as supporting investor sentiment on May 20 **(Insider Monkey / Yahoo Finance, May 20 2026)**."
+      ],
+      "candidate_causes": [
+        {
+          "cause": "Bullish analyst commentary, specifically a Buy rating from Evercore ISI and a demand-exceeds-supply narrative",
+          "supporting_evidence": "Evercore ISI’s bullish stance was cited as bolstering sentiment **(Insider Monkey / Yahoo Finance, May 20 2026)**, and analyst Svanberg was quoted saying demand outstrips resources **(Morningstar / MarketWatch, May 20 2026)**.",
+          "confidence": "medium",
+          "time_horizon": "hours"
+        },
+        {
+          "cause": "Elevated call-option volume contributing momentum or gamma effects",
+          "supporting_evidence": "MarketBeat flagged unusually high call-option purchasing on May 20 **(MarketBeat, May 20 2026)**.",
+          "confidence": "low",
+          "time_horizon": "minutes"
+        }
+      ],
+      "relationship_to_existing_thesis": "The findings are largely CONSISTENT with the existing Stage 3 thesis rather than new fundamental information. The thesis already acknowledged strong near-term demand, the Scorpio ramp, and Amazon-backed revenue visibility. The May 20 analyst commentary and options activity represent market-sentiment drivers that do not materially alter the thesis’s core debates around margin compression, customer concentration, or 2027 competitive encroachment. No primary disclosure (e.g., earnings pre-release, SEC filing, or company press release) was identified.",
+      "sources_consulted": [
+        {
+          "url": "https://www.marketwatch.com/investing/stock/alab",
+          "publisher": "MarketWatch",
+          "date": "2026-05-20",
+          "credibility": "**"
+        },
+        {
+          "url": "https://www.marketwatch.com/story/heres-why-astera-labs-stock-just-staged-a-big-gain-ddb2139b",
+          "publisher": "MarketWatch",
+          "date": "2026-05-20",
+          "credibility": "**"
+        },
+        {
+          "url": "https://www.morningstar.com/news/marketwatch/20260519366/heres-why-astera-labs-stock-just-staged-a-big-gain",
+          "publisher": "Morningstar",
+          "date": "2026-05-20",
+          "credibility": "**"
+        },
+        {
+          "url": "https://finance.yahoo.com/markets/stocks/articles/astera-labs-alab-soars-13-033746775.html",
+          "publisher": "Yahoo Finance / Insider Monkey",
+          "date": "2026-05-20",
+          "credibility": "*"
+        },
+        {
+          "url": "https://www.insidermonkey.com/blog/astera-labs-alab-soars-13-on-analyst-buy-reco-1765376/?amp=1",
+          "publisher": "Insider Monkey",
+          "date": "2026-05-20",
+          "credibility": "*"
+        },
+        {
+          "url": "https://www.heygotrade.com/en/news/ai-chip-rally-alibaba-astera-labs-credo-himax-axt/",
+          "publisher": "Gotrade",
+          "date": "2026-05-20",
+          "credibility": "*"
+        },
+        {
+          "url": "https://www.marketbeat.com/instant-alerts/investors-purchase-high-volume-of-astera-labs-call-options-nasdaqalab-2026-05-20/",
+          "publisher": "MarketBeat",
+          "date": "2026-05-20",
+          "credibility": "**"
+        }
+      ],
+      "search_queries_used": [
+        "ALAB Astera Labs stock news May 20 2026",
+        "Astera Labs ALAB earnings 2026",
+        "Astera Labs ALAB press release May 2026",
+        "Astera Labs ALAB stock up today May 20 2026",
+        "ALAB Astera Labs analyst upgrade May 2026",
+        "\"Astera Labs\" \"May 20\" 2026",
+        "Why Astera Labs Shares Are Up So Much Today May 19 2026 MarketWatch",
+        "ALAB Astera Labs call options May 20 2026",
+        "Astera Labs ALAB analyst upgrade buy May 20 2026",
+        "Insider Monkey Astera Labs soars 13% analyst buy reco May 2026"
+      ],
+      "investigation_confidence": "medium",
+      "ambiguity_notes": "Retrieved coverage is fragmented and largely echoes a single Insider Monkey report. Some reports reference a 13% gain on “Tuesday” (May 19) while the trigger fired on May 20, creating slight uncertainty about whether the catalyst spilled over or accelerated. The full content of the Evercore ISI note, including any price-target or estimate revisions, was not directly accessed."
+    },
+    "raw_response": "```json\n{\n  \"ticker\": \"ALAB\",\n  \"investigation_summary\": \"On May 20, 2026, Astera Labs (ALAB) surged double-digits intraday. A MarketWatch real-time quote showed the stock up $24.14 (\\u22489.9%) by 9:51 a.m. EDT **(MarketWatch, May 20 2026)**, while other reports characterized the bounce as roughly 13% **(Gotrade, May 20 2026; Insider Monkey / Yahoo Finance, May 20 2026)**. Concurrently, MarketBeat flagged unusually high volume in Astera Labs call options **(MarketBeat, May 20 2026)**.\\n\\nMedia coverage attributed the rally to bullish sell-side commentary. A May 20 MarketWatch/Morningstar article quoted analyst Svanberg stating that Astera Labs signaled demand for its custom products exceeds its current resources **(Morningstar / MarketWatch, May 20 2026)**. Separately, Insider Monkey and Yahoo Finance reported that Evercore ISI\\u2019s bullish stance\\u2014described as a Buy rating or reiterated recommendation\\u2014helped bolster investor sentiment **(Insider Monkey / Yahoo Finance, May 20 2026)**.\\n\\nThe exact substance of the Evercore note, including any revised price target or estimate changes, was not visible in retrieved coverage. It also remains unclear whether the demand comment constitutes new information or a restatement of prior guidance. Because no company press release, SEC filing, or primary analyst research was directly accessed, the catalyst is partially inferred from secondary reports.\",\n  \"established_facts\": [\n    \"A MarketWatch real-time quote on May 20, 2026 showed ALAB up $24.14 (\\u22489.9%) at 9:51 a.m. EDT **(MarketWatch, May 20 2026)**.\",\n    \"Reports on May 20 described an intraday gain of roughly 13% **(Gotrade, May 20 2026; Insider Monkey / Yahoo Finance, May 20 2026)**.\",\n    \"MarketBeat reported high volume of Astera Labs call options on May 20 **(MarketBeat, May 20 2026)**.\",\n    \"A May 20 MarketWatch/Morningstar article quoted analyst Svanberg saying Astera Labs signaled demand for custom products exceeds its resources **(Morningstar / MarketWatch, May 20 2026)**.\",\n    \"Evercore ISI\\u2019s bullish stance was cited as supporting investor sentiment on May 20 **(Insider Monkey / Yahoo Finance, May 20 2026)**.\"\n  ],\n  \"candidate_causes\": [\n    {\n      \"cause\": \"Bullish analyst commentary, specifically a Buy rating from Evercore ISI and a demand-exceeds-supply narrative\",\n      \"supporting_evidence\": \"Evercore ISI\\u2019s bullish stance was cited as bolstering sentiment **(Insider Monkey / Yahoo Finance, May 20 2026)**, and analyst Svanberg was quoted saying demand outstrips resources **(Morningstar / MarketWatch, May 20 2026)**.\",\n      \"confidence\": \"medium\",\n      \"time_horizon\": \"hours\"\n    },\n    {\n      \"cause\": \"Elevated call-option volume contributing momentum or gamma effects\",\n      \"supporting_evidence\": \"MarketBeat flagged unusually high call-option purchasing on May 20 **(MarketBeat, May 20 2026)**.\",\n      \"confidence\": \"low\",\n      \"time_horizon\": \"minutes\"\n    }\n  ],\n  \"relationship_to_existing_thesis\": \"The findings are largely CONSISTENT with the existing Stage 3 thesis rather than new fundamental information. The thesis already acknowledged strong near-term demand, the Scorpio ramp, and Amazon-backed revenue visibility. The May 20 analyst commentary and options activity represent market-sentiment drivers that do not materially alter the thesis\\u2019s core debates around margin compression, customer concentration, or 2027 competitive encroachment. No primary disclosure (e.g., earnings pre-release, SEC filing, or company press release) was identified.\",\n  \"sources_consulted\": [\n    {\"url\": \"https://www.marketwatch.com/investing/stock/alab\", \"publisher\": \"MarketWatch\", \"date\": \"2026-05-20\", \"credibility\": \"**\"},\n    {\"url\": \"https://www.marketwatch.com/story/heres-why-astera-labs-stock-just-staged-a-big-gain-ddb2139b\", \"publisher\": \"MarketWatch\", \"date\": \"2026-05-20\", \"credibility\": \"**\"},\n    {\"url\": \"https://www.morningstar.com/news/marketwatch/20260519366/heres-why-astera-labs-stock-just-staged-a-big-gain\", \"publisher\": \"Morningstar\", \"date\": \"2026-05-20\", \"credibility\": \"**\"},\n    {\"url\": \"https://finance.yahoo.com/markets/stocks/articles/astera-labs-alab-soars-13-033746775.html\", \"publisher\": \"Yahoo Finance / Insider Monkey\", \"date\": \"2026-05-20\", \"credibility\": \"*\"},\n    {\"url\": \"https://www.insidermonkey.com/blog/astera-labs-alab-soars-13-on-analyst-buy-reco-1765376/?amp=1\", \"publisher\": \"Insider Monkey\", \"date\": \"2026-05-20\", \"credibility\": \"*\"},\n    {\"url\": \"https://www.heygotrade.com/en/news/ai-chip-rally-alibaba-astera-labs-credo-himax-axt/\", \"publisher\": \"Gotrade\", \"date\": \"2026-05-20\", \"credibility\": \"*\"},\n    {\"url\": \"https://www.marketbeat.com/instant-alerts/investors-purchase-high-volume-of-astera-labs-call-options-nasdaqalab-2026-05-20/\", \"publisher\": \"MarketBeat\", \"date\": \"2026-05-20\", \"credibility\": \"**\"}\n  ],\n  \"search_queries_used\": [\n    \"ALAB Astera Labs stock news May 20 2026\",\n    \"Astera Labs ALAB earnings 2026\",\n    \"Astera Labs ALAB press release May 2026\",\n    \"Astera Labs ALAB stock up today May 20 2026\",\n    \"ALAB Astera Labs analyst upgrade May 2026\",\n    \"\\\"Astera Labs\\\" \\\"May 20\\\" 2026\",\n    \"Why Astera Labs Shares Are Up So Much Today May 19 2026 MarketWatch\",\n    \"ALAB Astera Labs call options May 20 2026\",\n    \"Astera Labs ALAB analyst upgrade buy May 20 2026\",\n    \"Insider Monkey Astera Labs soars 13% analyst buy reco May 2026\"\n  ],\n  \"investigation_confidence\": \"medium\",\n  \"ambiguity_notes\": \"Retrieved coverage is fragmented and largely echoes a single Insider Monkey report. Some reports reference a 13% gain on \\u201cTuesday\\u201d (May 19) while the trigger fired on May 20, creating slight uncertainty about whether the catalyst spilled over or accelerated. The full content of the Evercore ISI note, including any price-target or estimate revisions, was not directly accessed.\"\n}\n```",
+    "validation_violations": [],
+    "web_search_calls_made": 10,
+    "web_search_cap_reached": true,
+    "token_usage": {
+      "input_tokens": 50712,
+      "output_tokens": 9027,
+      "total_tokens": 59739
+    },
+    "model": "kimi-k2.6",
+    "status": "ok",
+    "error": null
+  },
+  "call_two_packet": {
+    "ticker": "ALAB",
+    "investigation_result": {
+      "ticker": "ALAB",
+      "investigation": {
+        "ticker": "ALAB",
+        "investigation_summary": "On May 20, 2026, Astera Labs (ALAB) surged double-digits intraday. A MarketWatch real-time quote showed the stock up $24.14 (≈9.9%) by 9:51 a.m. EDT **(MarketWatch, May 20 2026)**, while other reports characterized the bounce as roughly 13% **(Gotrade, May 20 2026; Insider Monkey / Yahoo Finance, May 20 2026)**. Concurrently, MarketBeat flagged unusually high volume in Astera Labs call options **(MarketBeat, May 20 2026)**.\n\nMedia coverage attributed the rally to bullish sell-side commentary. A May 20 MarketWatch/Morningstar article quoted analyst Svanberg stating that Astera Labs signaled demand for its custom products exceeds its current resources **(Morningstar / MarketWatch, May 20 2026)**. Separately, Insider Monkey and Yahoo Finance reported that Evercore ISI’s bullish stance—described as a Buy rating or reiterated recommendation—helped bolster investor sentiment **(Insider Monkey / Yahoo Finance, May 20 2026)**.\n\nThe exact substance of the Evercore note, including any revised price target or estimate changes, was not visible in retrieved coverage. It also remains unclear whether the demand comment constitutes new information or a restatement of prior guidance. Because no company press release, SEC filing, or primary analyst research was directly accessed, the catalyst is partially inferred from secondary reports.",
+        "established_facts": [
+          "A MarketWatch real-time quote on May 20, 2026 showed ALAB up $24.14 (≈9.9%) at 9:51 a.m. EDT **(MarketWatch, May 20 2026)**.",
+          "Reports on May 20 described an intraday gain of roughly 13% **(Gotrade, May 20 2026; Insider Monkey / Yahoo Finance, May 20 2026)**.",
+          "MarketBeat reported high volume of Astera Labs call options on May 20 **(MarketBeat, May 20 2026)**.",
+          "A May 20 MarketWatch/Morningstar article quoted analyst Svanberg saying Astera Labs signaled demand for custom products exceeds its resources **(Morningstar / MarketWatch, May 20 2026)**.",
+          "Evercore ISI’s bullish stance was cited as supporting investor sentiment on May 20 **(Insider Monkey / Yahoo Finance, May 20 2026)**."
+        ],
+        "candidate_causes": [
+          {
+            "cause": "Bullish analyst commentary, specifically a Buy rating from Evercore ISI and a demand-exceeds-supply narrative",
+            "supporting_evidence": "Evercore ISI’s bullish stance was cited as bolstering sentiment **(Insider Monkey / Yahoo Finance, May 20 2026)**, and analyst Svanberg was quoted saying demand outstrips resources **(Morningstar / MarketWatch, May 20 2026)**.",
+            "confidence": "medium",
+            "time_horizon": "hours"
+          },
+          {
+            "cause": "Elevated call-option volume contributing momentum or gamma effects",
+            "supporting_evidence": "MarketBeat flagged unusually high call-option purchasing on May 20 **(MarketBeat, May 20 2026)**.",
+            "confidence": "low",
+            "time_horizon": "minutes"
+          }
+        ],
+        "relationship_to_existing_thesis": "The findings are largely CONSISTENT with the existing Stage 3 thesis rather than new fundamental information. The thesis already acknowledged strong near-term demand, the Scorpio ramp, and Amazon-backed revenue visibility. The May 20 analyst commentary and options activity represent market-sentiment drivers that do not materially alter the thesis’s core debates around margin compression, customer concentration, or 2027 competitive encroachment. No primary disclosure (e.g., earnings pre-release, SEC filing, or company press release) was identified.",
+        "sources_consulted": [
+          {
+            "url": "https://www.marketwatch.com/investing/stock/alab",
+            "publisher": "MarketWatch",
+            "date": "2026-05-20",
+            "credibility": "**"
+          },
+          {
+            "url": "https://www.marketwatch.com/story/heres-why-astera-labs-stock-just-staged-a-big-gain-ddb2139b",
+            "publisher": "MarketWatch",
+            "date": "2026-05-20",
+            "credibility": "**"
+          },
+          {
+            "url": "https://www.morningstar.com/news/marketwatch/20260519366/heres-why-astera-labs-stock-just-staged-a-big-gain",
+            "publisher": "Morningstar",
+            "date": "2026-05-20",
+            "credibility": "**"
+          },
+          {
+            "url": "https://finance.yahoo.com/markets/stocks/articles/astera-labs-alab-soars-13-033746775.html",
+            "publisher": "Yahoo Finance / Insider Monkey",
+            "date": "2026-05-20",
+            "credibility": "*"
+          },
+          {
+            "url": "https://www.insidermonkey.com/blog/astera-labs-alab-soars-13-on-analyst-buy-reco-1765376/?amp=1",
+            "publisher": "Insider Monkey",
+            "date": "2026-05-20",
+            "credibility": "*"
+          },
+          {
+            "url": "https://www.heygotrade.com/en/news/ai-chip-rally-alibaba-astera-labs-credo-himax-axt/",
+            "publisher": "Gotrade",
+            "date": "2026-05-20",
+            "credibility": "*"
+          },
+          {
+            "url": "https://www.marketbeat.com/instant-alerts/investors-purchase-high-volume-of-astera-labs-call-options-nasdaqalab-2026-05-20/",
+            "publisher": "MarketBeat",
+            "date": "2026-05-20",
+            "credibility": "**"
+          }
+        ],
+        "search_queries_used": [
+          "ALAB Astera Labs stock news May 20 2026",
+          "Astera Labs ALAB earnings 2026",
+          "Astera Labs ALAB press release May 2026",
+          "Astera Labs ALAB stock up today May 20 2026",
+          "ALAB Astera Labs analyst upgrade May 2026",
+          "\"Astera Labs\" \"May 20\" 2026",
+          "Why Astera Labs Shares Are Up So Much Today May 19 2026 MarketWatch",
+          "ALAB Astera Labs call options May 20 2026",
+          "Astera Labs ALAB analyst upgrade buy May 20 2026",
+          "Insider Monkey Astera Labs soars 13% analyst buy reco May 2026"
+        ],
+        "investigation_confidence": "medium",
+        "ambiguity_notes": "Retrieved coverage is fragmented and largely echoes a single Insider Monkey report. Some reports reference a 13% gain on “Tuesday” (May 19) while the trigger fired on May 20, creating slight uncertainty about whether the catalyst spilled over or accelerated. The full content of the Evercore ISI note, including any price-target or estimate revisions, was not directly accessed."
+      },
+      "raw_response": "```json\n{\n  \"ticker\": \"ALAB\",\n  \"investigation_summary\": \"On May 20, 2026, Astera Labs (ALAB) surged double-digits intraday. A MarketWatch real-time quote showed the stock up $24.14 (\\u22489.9%) by 9:51 a.m. EDT **(MarketWatch, May 20 2026)**, while other reports characterized the bounce as roughly 13% **(Gotrade, May 20 2026; Insider Monkey / Yahoo Finance, May 20 2026)**. Concurrently, MarketBeat flagged unusually high volume in Astera Labs call options **(MarketBeat, May 20 2026)**.\\n\\nMedia coverage attributed the rally to bullish sell-side commentary. A May 20 MarketWatch/Morningstar article quoted analyst Svanberg stating that Astera Labs signaled demand for its custom products exceeds its current resources **(Morningstar / MarketWatch, May 20 2026)**. Separately, Insider Monkey and Yahoo Finance reported that Evercore ISI\\u2019s bullish stance\\u2014described as a Buy rating or reiterated recommendation\\u2014helped bolster investor sentiment **(Insider Monkey / Yahoo Finance, May 20 2026)**.\\n\\nThe exact substance of the Evercore note, including any revised price target or estimate changes, was not visible in retrieved coverage. It also remains unclear whether the demand comment constitutes new information or a restatement of prior guidance. Because no company press release, SEC filing, or primary analyst research was directly accessed, the catalyst is partially inferred from secondary reports.\",\n  \"established_facts\": [\n    \"A MarketWatch real-time quote on May 20, 2026 showed ALAB up $24.14 (\\u22489.9%) at 9:51 a.m. EDT **(MarketWatch, May 20 2026)**.\",\n    \"Reports on May 20 described an intraday gain of roughly 13% **(Gotrade, May 20 2026; Insider Monkey / Yahoo Finance, May 20 2026)**.\",\n    \"MarketBeat reported high volume of Astera Labs call options on May 20 **(MarketBeat, May 20 2026)**.\",\n    \"A May 20 MarketWatch/Morningstar article quoted analyst Svanberg saying Astera Labs signaled demand for custom products exceeds its resources **(Morningstar / MarketWatch, May 20 2026)**.\",\n    \"Evercore ISI\\u2019s bullish stance was cited as supporting investor sentiment on May 20 **(Insider Monkey / Yahoo Finance, May 20 2026)**.\"\n  ],\n  \"candidate_causes\": [\n    {\n      \"cause\": \"Bullish analyst commentary, specifically a Buy rating from Evercore ISI and a demand-exceeds-supply narrative\",\n      \"supporting_evidence\": \"Evercore ISI\\u2019s bullish stance was cited as bolstering sentiment **(Insider Monkey / Yahoo Finance, May 20 2026)**, and analyst Svanberg was quoted saying demand outstrips resources **(Morningstar / MarketWatch, May 20 2026)**.\",\n      \"confidence\": \"medium\",\n      \"time_horizon\": \"hours\"\n    },\n    {\n      \"cause\": \"Elevated call-option volume contributing momentum or gamma effects\",\n      \"supporting_evidence\": \"MarketBeat flagged unusually high call-option purchasing on May 20 **(MarketBeat, May 20 2026)**.\",\n      \"confidence\": \"low\",\n      \"time_horizon\": \"minutes\"\n    }\n  ],\n  \"relationship_to_existing_thesis\": \"The findings are largely CONSISTENT with the existing Stage 3 thesis rather than new fundamental information. The thesis already acknowledged strong near-term demand, the Scorpio ramp, and Amazon-backed revenue visibility. The May 20 analyst commentary and options activity represent market-sentiment drivers that do not materially alter the thesis\\u2019s core debates around margin compression, customer concentration, or 2027 competitive encroachment. No primary disclosure (e.g., earnings pre-release, SEC filing, or company press release) was identified.\",\n  \"sources_consulted\": [\n    {\"url\": \"https://www.marketwatch.com/investing/stock/alab\", \"publisher\": \"MarketWatch\", \"date\": \"2026-05-20\", \"credibility\": \"**\"},\n    {\"url\": \"https://www.marketwatch.com/story/heres-why-astera-labs-stock-just-staged-a-big-gain-ddb2139b\", \"publisher\": \"MarketWatch\", \"date\": \"2026-05-20\", \"credibility\": \"**\"},\n    {\"url\": \"https://www.morningstar.com/news/marketwatch/20260519366/heres-why-astera-labs-stock-just-staged-a-big-gain\", \"publisher\": \"Morningstar\", \"date\": \"2026-05-20\", \"credibility\": \"**\"},\n    {\"url\": \"https://finance.yahoo.com/markets/stocks/articles/astera-labs-alab-soars-13-033746775.html\", \"publisher\": \"Yahoo Finance / Insider Monkey\", \"date\": \"2026-05-20\", \"credibility\": \"*\"},\n    {\"url\": \"https://www.insidermonkey.com/blog/astera-labs-alab-soars-13-on-analyst-buy-reco-1765376/?amp=1\", \"publisher\": \"Insider Monkey\", \"date\": \"2026-05-20\", \"credibility\": \"*\"},\n    {\"url\": \"https://www.heygotrade.com/en/news/ai-chip-rally-alibaba-astera-labs-credo-himax-axt/\", \"publisher\": \"Gotrade\", \"date\": \"2026-05-20\", \"credibility\": \"*\"},\n    {\"url\": \"https://www.marketbeat.com/instant-alerts/investors-purchase-high-volume-of-astera-labs-call-options-nasdaqalab-2026-05-20/\", \"publisher\": \"MarketBeat\", \"date\": \"2026-05-20\", \"credibility\": \"**\"}\n  ],\n  \"search_queries_used\": [\n    \"ALAB Astera Labs stock news May 20 2026\",\n    \"Astera Labs ALAB earnings 2026\",\n    \"Astera Labs ALAB press release May 2026\",\n    \"Astera Labs ALAB stock up today May 20 2026\",\n    \"ALAB Astera Labs analyst upgrade May 2026\",\n    \"\\\"Astera Labs\\\" \\\"May 20\\\" 2026\",\n    \"Why Astera Labs Shares Are Up So Much Today May 19 2026 MarketWatch\",\n    \"ALAB Astera Labs call options May 20 2026\",\n    \"Astera Labs ALAB analyst upgrade buy May 20 2026\",\n    \"Insider Monkey Astera Labs soars 13% analyst buy reco May 2026\"\n  ],\n  \"investigation_confidence\": \"medium\",\n  \"ambiguity_notes\": \"Retrieved coverage is fragmented and largely echoes a single Insider Monkey report. Some reports reference a 13% gain on \\u201cTuesday\\u201d (May 19) while the trigger fired on May 20, creating slight uncertainty about whether the catalyst spilled over or accelerated. The full content of the Evercore ISI note, including any price-target or estimate revisions, was not directly accessed.\"\n}\n```",
+      "validation_violations": [],
+      "web_search_calls_made": 10,
+      "web_search_cap_reached": true,
+      "token_usage": {
+        "input_tokens": 50712,
+        "output_tokens": 9027,
+        "total_tokens": 59739
+      },
+      "model": "kimi-k2.6",
+      "status": "ok",
+      "error": null
+    },
+    "thesis": {
+      "summary": "Astera Labs sits at a critical chokepoint in AI infrastructure, supplying PCIe Gen 6 retimers and the Scorpio family of fabric switches that stitch together GPUs, custom ASICs, and memory inside hyperscaler racks. The company is in the midst of a genuine product-transition moment: Scorpio is moving from initial to high-volume production in 2026, while the industry-wide upgrade to PCIe Gen 6 is mechanically expanding connectivity silicon content per server. Revenue is growing at roughly ninety percent year-over-year, and a massive performance-based warrant agreement with Amazon underwrites multi-year demand visibility. Yet this operational momentum is overshadowed by an extreme valuation—forward earnings near fifty times and a price-to-sales ratio above thirty-five times, exceeding the peer maximum—that prices in a flawless, perpetual platform-premium outcome. The investment case is therefore less about the business, which is executing, and more about whether the equity can survive its own expectations.\n\nThe bull case rests on four pillars. First, the Scorpio X-Series ramp and the broader PCIe Gen 6 transition are not theoretical; initial volumes are already shipping, and management has guided for Scorpio to surpass the legacy Aries retimer line by year-end, anchoring a 2026 revenue trajectory toward one-and-a-half billion dollars or more. Second, the Amazon warrant—up to six-and-a-half billion dollars in cumulative purchases through 2033—provides a strategic seal of indispensability and a backlog buffer that is difficult to replicate. Third, Astera currently holds an estimated eighteen-to-twenty-four-month production lead in PCIe Gen 6 fabric switching; Marvell’s competing Structera S only began sampling in the third quarter of 2026, meaning Astera is effectively the only merchant game in town for the current server generation. Finally, longer-dated optionality in UALink switches and optical interconnects offers a plausible path toward a much larger total addressable market, giving the narrative a second-act growth story if current products maintain dominance.\n\nAgainst these strengths, the bear case identifies structural fractures that are already visible. The most immediate is acute customer concentration: a single end customer still drives roughly sixty to seventy percent of revenue, transforming Amazon from an anchor tenant into a source of persistent pricing leverage and dual-sourcing risk. Compounding this is a durable margin squeeze: the shift from high-margin Aries retimer integrated circuits toward Scorpio switches and Taurus hardware modules mechanically dilutes gross margins, while the Amazon warrant’s contra-revenue accounting imposes a recurring two-hundred basis-point headwind that appears persistent rather than transitory. The third risk is competitive timing: Marvell and Broadcom are not standing still, and credible alternatives are expected to qualify for the next hyperscaler platform cycle in 2027, suggesting Astera’s incumbency is rented, not owned. The final, overarching risk is valuation itself; with the stock trading at a sales multiple above every semiconductor peer, there is no valuation cushion for any operational friction, deceleration, or governance concern.\n\nConviction is Medium because the near-term operational picture is genuinely robust—current-generation design wins are locked behind long qualification cycles, backlog is visible, and 2026 revenue growth is almost certainly going to remain exceptional—yet the stock’s starting price embeds a degree of perfection that is difficult to defend. Two genuinely symmetric, high-materiality debates remain unresolved: whether hyperscaler AI capex is a multi-year structural build-out or a cyclical peak approaching digestion, and whether Marvell’s 2026 sampling translates into immediate share loss at the next refresh or remains more than eighteen months behind. Conviction would rise toward High if non-GAAP gross margins were to recover and sustain above seventy-five percent, proving that mix-shift and warrant drags are transitory, or if two or more additional Tier-1 hyperscalers were to publicly adopt Scorpio at scale, diversifying revenue and validating the open-ecosystem model. It would fall toward Low if Scorpio high-volume production slips into 2027, if credible evidence emerges that Amazon is dual-sourcing retimer or switch sockets to Marvell, or if year-over-year revenue growth decelerates below forty-five percent in the second half of 2026.\n\nThe risk/reward profile is negatively asymmetric and argues for caution. The probability-weighted twelve-month expected return is approximately negative twenty percent, reflecting a forty percent base case of multiple compression toward forty-times forward earnings and a forty percent bear case of violent re-rating toward cyclical fabless multiples. The bull case, assigned only a twenty percent probability, demands not just flawless execution but further multiple expansion from a starting point that already exceeds the peer-maximum price-to-sales ratio. In practical terms, the equity offers a potential upside of roughly seventy percent in a tail scenario against a downside of nearly sixty percent if margin compression and competitive encroachment converge. A portfolio manager should treat this as a high-variance name where the median and modal outcomes are both unfavorable, and where even a “good” operational year in 2026 is likely to be punished by de-rating as investors look ahead to 2027 deceleration and share-of-socket risk.\n\nWhat distinguishes Astera from its larger semiconductor peers is its positioning as the only independent, merchant connectivity fabric vendor—truly the “Switzerland” of the AI rack—supplying open-ecosystem switching and retimer silicon across NVIDIA, AMD, and proprietary hyperscaler ASICs without the conflicts of a bundled ASIC or optical incumbent. This independence earned it a first-mover production slot in PCIe Gen 6 fabric switching that Marvell and Broadcom have yet to match in volume. However, this same independence is the source of its vulnerability: unlike Broadcom or Marvell, Astera cannot bundle switching with custom XPUs or optical transceivers, and it lacks the capital depth to endure a price war or absorb a major customer defection. In a peer group dominated by diversified giants with fortress balance sheets and bundled platforms, ALAB is both the purest exposure to open-rack interconnect and the most fragile.",
+      "source_date": "2026-05-11",
+      "error": null
+    },
+    "signal_decision": {
+      "ticker": "ALAB",
+      "computed_at": "2026-05-20T20:30:08.668462+00:00",
+      "triggered": true,
+      "trigger_path": "major",
+      "fired_signals": [
+        {
+          "signal_type": "price",
+          "tier": "major",
+          "details": {
+            "daily_move": {
+              "current_pct": 17.735197346947178,
+              "absolute_pct": 17.735197346947178,
+              "fired": false,
+              "tier": null,
+              "percentile_reached": null,
+              "threshold_p95_abs": null,
+              "threshold_p99_abs": null
+            },
+            "move_from_open": {
+              "current_pct": 14.806970444221479,
+              "absolute_pct": 14.806970444221479,
+              "fired": true,
+              "tier": "major",
+              "threshold_minor_pct": 3.0,
+              "threshold_major_pct": 5.0
+            }
+          }
+        }
+      ],
+      "signal_summary": {
+        "price_fired": true,
+        "price_tier": "major",
+        "volume_fired": false,
+        "volume_tier": null,
+        "cumulative_fired": false,
+        "major_count": 1,
+        "minor_count": 0
+      },
+      "config": {
+        "minor_signals_required_for_trigger": 2
+      },
+      "data_quality_flags": [
+        "price_signal: No baseline provided; daily move sub-signal cannot use percentile thresholds",
+        "volume_signal: No baseline provided; volume signal cannot use percentile thresholds",
+        "cumulative_signal: No evaluation anchor for this ticker; signal cannot fire. Anchor will be created on next successful pipeline rerun."
+      ]
+    },
+    "anchor": {}
+  },
+  "call_two_result": {
+    "ticker": "ALAB",
+    "decision": {
+      "ticker": "ALAB",
+      "rerun_decision": false,
+      "rationale": "Call 1 attributes the May 20 surge to bullish sell-side commentary—specifically an Evercore ISI Buy rating cited by Insider Monkey/Yahoo Finance (*) and a Morningstar/MarketWatch (**) quote from analyst Svanberg that demand for custom products exceeds Astera’s resources. No company press release, SEC filing, or primary analyst research was directly accessed. The investigation itself characterizes these findings as 'largely CONSISTENT with the existing Stage 3 thesis rather than new fundamental information,' noting that the thesis already incorporated strong near-term demand, the Scorpio ramp, and Amazon-backed revenue visibility. Consequently, the price move appears to be the market processing already-known demand dynamics rather than reacting to a material new fact.\n\nNone of the established facts challenge a structural assumption in the Stage 4 thesis. The thesis’s core debates—margin compression driven by mix shift toward Scorpio and Taurus modules, extreme customer concentration with Amazon, and competitive encroachment from Marvell and Broadcom in 2027—remain untouched by an analyst demand comment or a reiterated Buy rating. The elevated call-option volume flagged by MarketBeat (**) is a sentiment/momentum signal, not an operating event that alters the fundamental trajectory. Without evidence of a Scorpio production slip, Amazon dual-sourcing, or gross-margin inflection, there is no basis to reassess the thesis’s structural underpinnings.\n\nThe intraday move is roughly 10–13%, and Call 1 provides no indication that the cumulative drift from the May 11 anchor price exceeds the 15% threshold that would render old price-level scenarios stale. Because the move is single-day, sentiment-driven, and below that critical magnitude, and because Call 1’s confidence is only medium with explicit ambiguity about whether the demand comment is new information, the default posture of no-rerun prevails.",
+      "thesis_elements_touched": [],
+      "evidence_strength": "low",
+      "key_facts_relied_on": [
+        "MarketWatch real-time quote on May 20, 2026 showed ALAB up $24.14 (≈9.9%) at 9:51 a.m. EDT (**, MarketWatch)",
+        "Reports on May 20 described an intraday gain of roughly 13% (*, Gotrade; *, Insider Monkey / Yahoo Finance)",
+        "MarketBeat reported high volume of Astera Labs call options on May 20 (**, MarketBeat)",
+        "A May 20 MarketWatch/Morningstar article quoted analyst Svanberg saying Astera Labs signaled demand for custom products exceeds its resources (**, Morningstar / MarketWatch)",
+        "Evercore ISI’s bullish stance was cited as supporting investor sentiment on May 20 (*, Insider Monkey / Yahoo Finance)"
+      ],
+      "uncertainty_acknowledged": "The main residual uncertainty is whether the Svanberg demand comment constitutes fresh incremental guidance rather than a restatement of prior remarks. If it were new and quantifiable, it could marginally alter 2026 revenue expectations. However, Call 1 explicitly notes this is unclear, and without primary-source confirmation the decision remains a clear no-rerun.",
+      "considered_alternative": "One could argue for a rerun on the grounds that a double-digit price move coupled with a named analyst Buy rating and an 'excess demand' narrative might signal a sentiment shift or options-driven dislocation that renders the old valuation anchor stale. This view is undermined by the lack of primary sources, absence of estimate revisions, and Call 1’s own assessment that the news is consistent with the existing thesis rather than a material departure from it."
+    },
+    "raw_response": "```json\n{\n  \"ticker\": \"ALAB\",\n  \"rerun_decision\": false,\n  \"rationale\": \"Call 1 attributes the May 20 surge to bullish sell-side commentary—specifically an Evercore ISI Buy rating cited by Insider Monkey/Yahoo Finance (*) and a Morningstar/MarketWatch (**) quote from analyst Svanberg that demand for custom products exceeds Astera’s resources. No company press release, SEC filing, or primary analyst research was directly accessed. The investigation itself characterizes these findings as 'largely CONSISTENT with the existing Stage 3 thesis rather than new fundamental information,' noting that the thesis already incorporated strong near-term demand, the Scorpio ramp, and Amazon-backed revenue visibility. Consequently, the price move appears to be the market processing already-known demand dynamics rather than reacting to a material new fact.\\n\\nNone of the established facts challenge a structural assumption in the Stage 4 thesis. The thesis’s core debates—margin compression driven by mix shift toward Scorpio and Taurus modules, extreme customer concentration with Amazon, and competitive encroachment from Marvell and Broadcom in 2027—remain untouched by an analyst demand comment or a reiterated Buy rating. The elevated call-option volume flagged by MarketBeat (**) is a sentiment/momentum signal, not an operating event that alters the fundamental trajectory. Without evidence of a Scorpio production slip, Amazon dual-sourcing, or gross-margin inflection, there is no basis to reassess the thesis’s structural underpinnings.\\n\\nThe intraday move is roughly 10–13%, and Call 1 provides no indication that the cumulative drift from the May 11 anchor price exceeds the 15% threshold that would render old price-level scenarios stale. Because the move is single-day, sentiment-driven, and below that critical magnitude, and because Call 1’s confidence is only medium with explicit ambiguity about whether the demand comment is new information, the default posture of no-rerun prevails.\",\n  \"thesis_elements_touched\": [],\n  \"evidence_strength\": \"low\",\n  \"key_facts_relied_on\": [\n    \"MarketWatch real-time quote on May 20, 2026 showed ALAB up $24.14 (≈9.9%) at 9:51 a.m. EDT (**, MarketWatch)\",\n    \"Reports on May 20 described an intraday gain of roughly 13% (*, Gotrade; *, Insider Monkey / Yahoo Finance)\",\n    \"MarketBeat reported high volume of Astera Labs call options on May 20 (**, MarketBeat)\",\n    \"A May 20 MarketWatch/Morningstar article quoted analyst Svanberg saying Astera Labs signaled demand for custom products exceeds its resources (**, Morningstar / MarketWatch)\",\n    \"Evercore ISI’s bullish stance was cited as supporting investor sentiment on May 20 (*, Insider Monkey / Yahoo Finance)\"\n  ],\n  \"uncertainty_acknowledged\": \"The main residual uncertainty is whether the Svanberg demand comment constitutes fresh incremental guidance rather than a restatement of prior remarks. If it were new and quantifiable, it could marginally alter 2026 revenue expectations. However, Call 1 explicitly notes this is unclear, and without primary-source confirmation the decision remains a clear no-rerun.\",\n  \"considered_alternative\": \"One could argue for a rerun on the grounds that a double-digit price move coupled with a named analyst Buy rating and an 'excess demand' narrative might signal a sentiment shift or options-driven dislocation that renders the old valuation anchor stale. This view is undermined by the lack of primary sources, absence of estimate revisions, and Call 1’s own assessment that the news is consistent with the existing thesis rather than a material departure from it.\"\n}\n```",
+    "validation_violations": [],
+    "token_usage": {
+      "input_tokens": 4272,
+      "output_tokens": 4101,
+      "total_tokens": 8373
+    },
+    "model": "kimi-k2.6",
+    "status": "ok",
+    "error": null
+  },
+  "final_rerun_decision": false
+}
