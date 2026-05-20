@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>fluffy-spork7 — AI equity research pipeline</title>
+  <link rel="stylesheet" href="./styles.css" />
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.4/dist/chart.umd.min.js" defer></script>
+  <script src="./app.js" defer></script>
+</head>
+<body>
+  <header class="hero">
+    <div class="hero-inner">
+      <h1>fluffy-spork7</h1>
+      <p class="tagline">An automated, multi-stage equity research pipeline.<br />
+        AI-assisted analysis, quantitative portfolio construction, live brokerage execution.</p>
+    </div>
+  </header>
+
+  <main>
+    <!-- ============ How it works ============ -->
+    <section class="section">
+      <h2>How it works</h2>
+      <p class="lead">
+        The pipeline runs six sequential stages, end-to-end, every week. Each stage
+        consumes the previous stage's output and adds a new layer of analysis,
+        culminating in a 15-position portfolio executed against a brokerage account.
+      </p>
+
+      <div class="stages">
+        <div class="stage">
+          <div class="stage-num">1</div>
+          <h3>Universe &amp; ranking</h3>
+          <p>
+            Approximately one thousand listed companies are scored across financial
+            fundamentals, professional-data signals (analyst sentiment, insider
+            activity, institutional positioning) and news sentiment. The combined
+            composite is screened against recent SEC filings for disqualifying
+            events, producing a shortlist for deeper analysis.
+          </p>
+        </div>
+
+        <div class="stage">
+          <div class="stage-num">2</div>
+          <h3>Multi-agent research &amp; debate</h3>
+          <p>
+            Each shortlisted company is investigated in parallel by three research
+            agents covering financial fundamentals, news flow and competitive
+            landscape. Separate bull-case and bear-case LLM agents then debate
+            the company, issue rebuttals against each other's arguments, and a
+            synthesis agent renders a scored verdict.
+          </p>
+        </div>
+
+        <div class="stage">
+          <div class="stage-num">3</div>
+          <h3>Scenario modelling &amp; valuation</h3>
+          <p>
+            Six scenario agents construct bull, base and bear paths in a
+            three-phase debate. An independent quantitative module computes
+            valuation multiples, peer comparisons and five-year history. A
+            consolidator combines everything into price targets at multiple
+            horizons, scenario probabilities, and a probability-weighted
+            expected return.
+          </p>
+        </div>
+
+        <div class="stage">
+          <div class="stage-num">4</div>
+          <h3>Portfolio construction</h3>
+          <p>
+            Two independent tracks propose portfolios: a quant-only MILP optimiser
+            and an LLM portfolio picker that reads the qualitative work from
+            earlier stages. A selector/allocator loop consolidates the two, and a
+            stateful reconciliation step transitions the incumbent book toward
+            the new target with each name change individually adjudicated. Orders
+            route to a paper brokerage.
+          </p>
+        </div>
+
+        <div class="stage">
+          <div class="stage-num">5</div>
+          <h3>Monitor &amp; scheduler</h3>
+          <p>
+            A continuous monitor watches live signals on held positions.
+            Material moves can trigger a narrow re-evaluation of just the
+            affected names between weekly full rebuilds, with the new analysis
+            reconciled back into the standing portfolio.
+          </p>
+        </div>
+
+        <div class="stage">
+          <div class="stage-num">6</div>
+          <h3>Consolidation &amp; backups</h3>
+          <p>
+            Every run is captured as a point-in-time snapshot of all upstream
+            outputs, joined with the live brokerage state. These snapshots are
+            the source of truth for performance attribution, forecast tracking
+            and this dashboard.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ Performance vs benchmark ============ -->
+    <section class="section">
+      <h2>Performance vs benchmark</h2>
+      <p class="lead">
+        Live portfolio value tracked against the S&amp;P 500 (SPY). Values are
+        normalised to a common start date — the chart shows relative performance,
+        not dollar amounts.
+      </p>
+
+      <div id="perf-stale" class="stale-card hidden"></div>
+
+      <div id="perf-cards" class="cards"></div>
+
+      <div class="chart-wrap">
+        <canvas id="value-chart"></canvas>
+      </div>
+
+      <h3 class="subhead">Returns at common horizons</h3>
+      <div id="returns-table" class="table-wrap"></div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <span id="footer-meta"></span>
+      <a href="https://github.com/MLGTRex/fluffy-spork7">github.com/MLGTRex/fluffy-spork7</a>
+    </div>
+  </footer>
+</body>
+</html>

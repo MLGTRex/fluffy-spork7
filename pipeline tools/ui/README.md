@@ -1,31 +1,61 @@
-# Stage 6 UI
+# Stage 6 UIs
 
-Static dashboard for the JSON Stage 6 writes into `Stage 6 DRAFT/output/`.
-Vanilla HTML/CSS/JS — no build step, no npm.
+Two static UIs share this directory:
+
+```
+pipeline tools/ui/
+├── public/   → deployed to https://mlgtrex.github.io/fluffy-spork7/
+└── admin/    → deployed to https://mlgtrex.github.io/fluffy-spork7/admin/
+```
+
+## Public UI (`public/`)
+
+Shareable single-page overview of the pipeline. Two sections: a narrative
+explaining how the six stages work, and live performance vs the S&P 500 (SPY)
+benchmark. Reads **only** `data/public_summary.json` — no tickers, allocations,
+theses, prediction-log entries or sector exposure are emitted to the public
+data file.
+
+## Admin UI (`admin/`)
+
+Full operator dashboard: portfolio overview, positions table, per-ticker
+dossiers (Stage 1 scores → Stage 2 debate → Stage 3 scenarios → Stage 4
+candidate summary + status → live Alpaca position → history), forecast
+accuracy, history timeline, snapshot index. Identical to the prior
+top-level UI; only the location and the password gate changed.
+
+Access is gated by a JS prompt for the password `12345`. This is **URL-only
+obscurity, not real security** — the underlying data files at
+`/admin/data/...` are still publicly fetchable by anyone who knows the URL.
+Suitable only for low-stakes "don't show this to the wrong person at the
+first click" gating.
 
 ## Local preview
 
-The site fetches data from `./data/` relative to `index.html`. For local
-browsing, point it at Stage 6's output directory via the `dataRoot` query
-param:
+From the repo root, with Stage 6 having already produced output:
 
 ```bash
-cd /path/to/fluffy-spork7
 python3 -m http.server 8000
 ```
 
-Then open:
+Public UI:
+```
+http://localhost:8000/pipeline%20tools/ui/public/index.html?dataRoot=../../../Stage%206%20DRAFT/output
+```
 
+Admin UI:
 ```
-http://localhost:8000/pipeline%20tools/ui/index.html?dataRoot=../../Stage%206%20DRAFT/output
+http://localhost:8000/pipeline%20tools/ui/admin/index.html?dataRoot=../../../Stage%206%20DRAFT/output
 ```
+
+The `?dataRoot=…` query param overrides the default `./data/` lookup so the
+UI can be browsed in-place against the repo's Stage 6 output folder without
+the deploy assembling a `_site/`.
 
 ## Deploy
 
-`.github/workflows/pages.yml` assembles a `_site/` of `pipeline tools/ui/*` +
-`Stage 6 DRAFT/output/*` (copied under `_site/data/`) and publishes to
-GitHub Pages on every Stage 6 run, push to the UI/output paths on `main`, or
-manual dispatch. The published site lives at
-`https://mlgtrex.github.io/fluffy-spork7/`.
-
-One-time prereq: **Settings → Pages → Source: GitHub Actions**.
+`.github/workflows/pages.yml` assembles `_site/` from `public/` (at root) and
+`admin/` (under `/admin/`), copies `Stage 6 DRAFT/output/public_summary.json`
+to `_site/data/`, and the full Stage 6 output set to `_site/admin/data/`.
+Triggers on every Stage 6 workflow completion, on direct edits to the UI or
+Stage 6 output paths, and via manual `workflow_dispatch`.

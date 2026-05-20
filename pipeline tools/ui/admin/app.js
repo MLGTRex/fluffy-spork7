@@ -10,6 +10,26 @@
 (function () {
   "use strict";
 
+  // ============ Password gate (URL-obscurity, not real security) ============
+
+  const ADMIN_PASSWORD = "12345";
+  const AUTH_FLAG = "stage6-admin-unlocked";
+
+  function ensureAuth() {
+    if (sessionStorage.getItem(AUTH_FLAG) === "1") return true;
+    const pw = window.prompt("Admin password:");
+    if (pw === ADMIN_PASSWORD) {
+      sessionStorage.setItem(AUTH_FLAG, "1");
+      return true;
+    }
+    document.body.innerHTML =
+      "<div style='padding:60px;text-align:center;font:14px/1.5 -apple-system,BlinkMacSystemFont,sans-serif'>" +
+      "Access denied.</div>";
+    return false;
+  }
+
+  if (!ensureAuth()) return;
+
   // ============ Config / DOM refs ============
 
   const params = new URLSearchParams(window.location.search);

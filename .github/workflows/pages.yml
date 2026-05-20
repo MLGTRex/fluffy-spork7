@@ -34,19 +34,34 @@ jobs:
 
          - name: Assemble _site/
            run: |
-              mkdir -p _site/data/per_ticker_dossier
-              cp "pipeline tools/ui/index.html" _site/
-              cp "pipeline tools/ui/styles.css" _site/
-              cp "pipeline tools/ui/app.js"     _site/
-              cp "Stage 6 DRAFT/output/"*.json _site/data/ 2>/dev/null || true
+              mkdir -p _site/data _site/admin/data/per_ticker_dossier
+
+              # Public UI at /
+              cp "pipeline tools/ui/public/index.html" _site/
+              cp "pipeline tools/ui/public/styles.css" _site/
+              cp "pipeline tools/ui/public/app.js"     _site/
+              cp "Stage 6 DRAFT/output/public_summary.json" _site/data/ 2>/dev/null || true
+
+              # Admin UI at /admin/ (gated by JS password — URL-obscurity, not real auth)
+              cp "pipeline tools/ui/admin/index.html" _site/admin/
+              cp "pipeline tools/ui/admin/styles.css" _site/admin/
+              cp "pipeline tools/ui/admin/app.js"     _site/admin/
+              cp "Stage 6 DRAFT/output/"*.json _site/admin/data/ 2>/dev/null || true
               cp "Stage 6 DRAFT/output/per_ticker_dossier/"*.json \
-                 _site/data/per_ticker_dossier/ 2>/dev/null || true
+                 _site/admin/data/per_ticker_dossier/ 2>/dev/null || true
+              # The public site MUST NOT carry the dossier or full data files.
+              rm -f _site/data/portfolio_overview.json \
+                    _site/data/portfolio_value_history.json \
+                    _site/data/benchmark_history.json \
+                    _site/data/positions_ledger.json \
+                    _site/data/prediction_accuracy.json \
+                    _site/data/runs_index.json \
+                    _site/data/snapshots_index.json \
+                    _site/data/data_quality.json 2>/dev/null || true
+
               touch _site/.nojekyll
-              echo "Assembled _site/ contents:"
-              ls -la _site/
-              echo "Data files:"
-              ls -la _site/data/ || true
-              echo "Per-ticker dossiers: $(ls _site/data/per_ticker_dossier/ 2>/dev/null | wc -l)"
+              echo "Assembled _site/ — public ($(ls _site/data/ 2>/dev/null | wc -l) files), admin ($(ls _site/admin/data/ 2>/dev/null | wc -l) files, $(ls _site/admin/data/per_ticker_dossier/ 2>/dev/null | wc -l) dossiers)"
+              ls -la _site/ _site/admin/
 
          - name: Configure Pages
            uses: actions/configure-pages@v5
