@@ -61,6 +61,15 @@ def _benchmark_series(benchmark: Optional[dict]) -> list[dict]:
     return out
 
 
+def _first_funded_date(series: list[dict]) -> Optional[str]:
+    """First date where the portfolio had a non-zero value."""
+    for entry in series:
+        v = entry.get("value")
+        if v is not None and v > 0:
+            return entry["date"]
+    return None
+
+
 def _align_to_portfolio_dates(
     portfolio: list[dict], benchmark: list[dict]
 ) -> list[dict]:
@@ -250,6 +259,17 @@ def compute(
     """
     portfolio_series = _portfolio_series(portfolio_history)
     benchmark_series_raw = _benchmark_series(benchmark)
+
+    # Re-anchor: drop the pre-funded period from the portfolio series so the
+    # chart and the inception/return metrics start on the portfolio's first
+    # funded day, not on Alpaca's ~365-day lookback window. Benchmark stays
+    # full-history so _align_to_portfolio_dates can forward-fill SPY into the
+    # leading portfolio dates from its last pre-inception close (e.g. when
+    # inception falls on a weekend).
+    inception = _first_funded_date(portfolio_series)
+    if inception:
+        portfolio_series = [e for e in portfolio_series if e["date"] >= inception]
+
     benchmark_aligned = _align_to_portfolio_dates(portfolio_series, benchmark_series_raw)
 
     portfolio_norm = _normalise(portfolio_series)
