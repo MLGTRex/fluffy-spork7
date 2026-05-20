@@ -130,6 +130,7 @@ def _assemble_position(overview_row: dict, dossier: dict) -> dict:
         "lastday_price": overview_row.get("lastday_price"),
         "unrealized_pl": overview_row.get("unrealized_pl"),
         "unrealized_plpc": overview_row.get("unrealized_plpc"),
+        "entry_price": overview_row.get("entry_price_pipeline"),
         "conviction": overview_row.get("conviction") or s3.get("conviction"),
         "thesis_summary": overview_row.get("thesis_summary") or s3.get("thesis_summary"),
         "key_invalidation_triggers": s3.get("key_invalidation_triggers"),

@@ -295,7 +295,7 @@ td.num, th.num {
 }
 .pc-stats {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(72px, 1fr));
   gap: 8px;
   border-top: 1px solid var(--border);
   padding-top: 12px;

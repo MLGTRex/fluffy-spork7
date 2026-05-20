@@ -393,6 +393,7 @@
       el("div", { class: "pc-stats" }, [
         statBlock("Allocation", fmtPctRaw(p.target_allocation_pct)),
         statBlock("Price", fmtMoney(p.current_price)),
+        statBlock("Entry", fmtMoney(p.entry_price)),
         statBlock("Today", fmtPct(todayChange), signClass(todayChange)),
         statBlock("Unrealised P&L", fmtPct(p.unrealized_plpc), signClass(p.unrealized_plpc)),
       ]),
@@ -462,6 +463,7 @@
     wrap.appendChild(
       el("div", { class: "cards" }, [
         makeCard("Current price", fmtMoney(p.current_price)),
+        makeCard("Entry price", fmtMoney(p.entry_price)),
         makeCard(
           "Today's change",
           fmtPct(todayChangePct),
