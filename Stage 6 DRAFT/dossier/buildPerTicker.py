@@ -2,8 +2,9 @@
 Per-ticker dossier — one JSON per ticker for the UI's per-ticker page.
 
 Stitches Stage 1 (scores), Stage 3 (research + scenarios + valuation +
-consolidation), latest Stage 4 portfolio entry, Alpaca current position, and
-ledger history into a single file at output/per_ticker_dossier/{TICKER}.json.
+consolidation), Stage 4 (candidate summary + target portfolio entry), Alpaca
+current position, and ledger history into a single file at
+output/per_ticker_dossier/{TICKER}.json.
 """
 
 from __future__ import annotations
@@ -57,6 +58,28 @@ def _stage1_by_ticker(snapshot_dir: str) -> dict[str, dict]:
     return out
 
 
+def _candidate_summaries_in_snapshot(snapshot_dir: str) -> tuple[dict[str, dict], Optional[dict]]:
+    """
+    Returns (summaries_by_ticker, summary_meta).
+
+    summaries_by_ticker: {TICKER: {summary, source_date, error}}
+    summary_meta:        the top-level analysis_date / model / counts, or None
+                         when the file is missing.
+    """
+    path = os.path.join(snapshot_dir, "stage4", "candidate_summaries.json")
+    raw = _load_json(path)
+    if not raw:
+        return {}, None
+    summaries = raw.get("summaries") or {}
+    meta = {
+        "analysis_date": raw.get("analysis_date"),
+        "model": raw.get("model"),
+        "n_candidates": raw.get("n_candidates"),
+        "n_summaries": raw.get("n_summaries"),
+    }
+    return summaries, meta
+
+
 def _atomic_write_json(path: str, data) -> None:
     os.makedirs(os.path.dirname(path), exist_ok=True)
     tmp = path + ".tmp"
@@ -100,6 +123,7 @@ def build(
 
     stage3 = _stage3_by_ticker(snapshot_dir)
     stage1 = _stage1_by_ticker(snapshot_dir)
+    candidate_summaries, candidate_summary_meta = _candidate_summaries_in_snapshot(snapshot_dir)
 
     # Ticker universe: anything in current target, Alpaca, or ledger
     tickers: set[str] = set()
@@ -143,6 +167,8 @@ def build(
             alpaca=alpaca,
             overview_row=overview_row,
             ledger_entries=ledger_by_ticker.get(ticker, []),
+            candidate_summary=candidate_summaries.get(ticker),
+            candidate_summary_meta=candidate_summary_meta,
             snapshot_id=snapshot_id,
             generated_at=now,
         )
@@ -167,12 +193,15 @@ def _assemble_dossier(
     alpaca: Optional[dict],
     overview_row: Optional[dict],
     ledger_entries: list[dict],
+    candidate_summary: Optional[dict],
+    candidate_summary_meta: Optional[dict],
     snapshot_id: Optional[str],
     generated_at: str,
 ) -> dict:
     """One ticker's UI page in JSON."""
     s1 = stage1 or {}
     s3 = stage3 or {}
+    cs = candidate_summary or {}
 
     return {
         "ticker": ticker,
@@ -249,6 +278,18 @@ def _assemble_dossier(
             "base_return_12m": s3.get("base_return_12m"),
             "downside_return_12m": s3.get("downside_return_12m"),
         },
+
+        "stage4_candidate_summary": (
+            {
+                "summary": cs.get("summary"),
+                "source_date": cs.get("source_date"),
+                "error": cs.get("error"),
+                "analysis_date": (candidate_summary_meta or {}).get("analysis_date"),
+                "model": (candidate_summary_meta or {}).get("model"),
+            }
+            if candidate_summary
+            else None
+        ),
 
         "stage4_portfolio_status": (
             {

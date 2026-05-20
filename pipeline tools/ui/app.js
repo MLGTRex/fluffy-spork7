@@ -453,7 +453,7 @@
       { id: "scores", label: "Scores", render: () => renderScoresTab(dossier.stage1_scores) },
       { id: "debate", label: "Debate", render: () => renderDebateTab(dossier.stage2_debate) },
       { id: "scenarios", label: "Scenarios & valuation", render: () => renderScenariosTab(dossier.stage3_scenarios_and_valuation) },
-      { id: "status", label: "Portfolio status", render: () => renderStatusTab(dossier.stage4_portfolio_status, dossier.live_position) },
+      { id: "status", label: "Portfolio status", render: () => renderStatusTab(dossier.stage4_portfolio_status, dossier.live_position, dossier.stage4_candidate_summary) },
       { id: "history", label: "History", render: () => renderTickerHistoryTab(dossier.history) },
     ];
 
@@ -634,8 +634,29 @@
     return wrap;
   }
 
-  function renderStatusTab(status, live) {
+  function renderStatusTab(status, live, candidateSummary) {
     const wrap = el("div");
+
+    wrap.appendChild(el("h2", { class: "section-title" }, "Candidate summary (Stage 4)"));
+    if (!candidateSummary || !candidateSummary.summary) {
+      wrap.appendChild(renderEmpty("No candidate summary", "Stage 4 didn't produce a summary for this ticker."));
+    } else {
+      const metaBits = [];
+      if (candidateSummary.source_date) metaBits.push(`source ${fmtDate(candidateSummary.source_date)}`);
+      if (candidateSummary.analysis_date) metaBits.push(`analysis ${fmtDate(candidateSummary.analysis_date)}`);
+      if (candidateSummary.model) metaBits.push(candidateSummary.model);
+      const panel = el("div", { class: "panel" });
+      if (metaBits.length) {
+        panel.appendChild(el("div", { class: "sub", style: "margin-bottom:8px" }, metaBits.join("  ·  ")));
+      }
+      if (candidateSummary.error) {
+        panel.appendChild(el("div", { class: "tag warn" }, `error: ${candidateSummary.error}`));
+      }
+      const body = el("div", { style: "white-space:pre-wrap" }, candidateSummary.summary);
+      panel.appendChild(body);
+      wrap.appendChild(panel);
+    }
+
     wrap.appendChild(el("h2", { class: "section-title" }, "Stage 4 status"));
     if (!status) {
       wrap.appendChild(renderEmpty("Not in latest target portfolio", ""));
