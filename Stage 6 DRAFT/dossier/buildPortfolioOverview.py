@@ -158,6 +158,8 @@ def build(
         )
 
         qty = _safe_float(alpaca.get("qty")) or 0.0
+        alpaca_avg_entry = _safe_float(alpaca.get("avg_entry_price"))
+        entry_price_pipeline = _safe_float(target.get("entry_price"))
         row = {
             "ticker": ticker,
             "sector": target.get("sector") or stage3.get("valuation_metrics", {}).get("sector"),
@@ -172,7 +174,10 @@ def build(
             "unrealized_pl": _safe_float(alpaca.get("unrealized_pl")),
             "unrealized_plpc": _safe_float(alpaca.get("unrealized_plpc")),
             "entry_date_pipeline": target.get("entry_date"),
-            "entry_price_pipeline": _safe_float(target.get("entry_price")),
+            "entry_price_pipeline": entry_price_pipeline,
+            # Prefer Alpaca's actual fill average; fall back to the pipeline
+            # snapshot for pending buys or positions missing from Alpaca.
+            "entry_price": alpaca_avg_entry if alpaca_avg_entry is not None else entry_price_pipeline,
             "expected_return_12m": _safe_float(
                 target.get("expected_return_12m")
                 if target.get("expected_return_12m") is not None
