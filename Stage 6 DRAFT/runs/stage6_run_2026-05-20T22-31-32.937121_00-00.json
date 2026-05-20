@@ -1,0 +1,113 @@
+{
+  "started_at": "2026-05-20T22:31:30.561114+00:00",
+  "ended_at": "2026-05-20T22:31:32.937121+00:00",
+  "duration_s": 2.376,
+  "snapshot_id": null,
+  "snapshot_skipped": true,
+  "prior_snapshot_id": "2026-05-20T22-11-56Z",
+  "tracked_file_count": 1094,
+  "changes": {
+    "added": [],
+    "modified": [],
+    "removed": []
+  },
+  "log_archive": {
+    "archived": 0,
+    "skipped_unchanged": 0,
+    "failed": 0
+  },
+  "alpaca_errors": [],
+  "benchmark_errors": [],
+  "warnings": [],
+  "steps": [
+    {
+      "step": "snapshot",
+      "status": "ok",
+      "duration_s": 0.089,
+      "error": null
+    },
+    {
+      "step": "alpaca_fetch",
+      "status": "ok",
+      "duration_s": 1.175,
+      "error": null
+    },
+    {
+      "step": "benchmark_fetch",
+      "status": "ok",
+      "duration_s": 0.419,
+      "error": null
+    },
+    {
+      "step": "performance_compute",
+      "status": "ok",
+      "duration_s": 0.001,
+      "error": null
+    },
+    {
+      "step": "prediction_log_build",
+      "status": "ok",
+      "duration_s": 0.061,
+      "error": null
+    },
+    {
+      "step": "prediction_log_load",
+      "status": "ok",
+      "duration_s": 0.001,
+      "error": null
+    },
+    {
+      "step": "prediction_accuracy",
+      "status": "ok",
+      "duration_s": 0.394,
+      "error": null
+    },
+    {
+      "step": "positions_ledger",
+      "status": "ok",
+      "duration_s": 0.0,
+      "error": null
+    },
+    {
+      "step": "portfolio_overview",
+      "status": "ok",
+      "duration_s": 0.024,
+      "error": null
+    },
+    {
+      "step": "per_ticker_dossiers",
+      "status": "ok",
+      "duration_s": 0.175,
+      "error": null
+    },
+    {
+      "step": "indices",
+      "status": "ok",
+      "duration_s": 0.014,
+      "error": null
+    },
+    {
+      "step": "public_summary",
+      "status": "ok",
+      "duration_s": 0.013,
+      "error": null
+    },
+    {
+      "step": "write_outputs",
+      "status": "ok",
+      "duration_s": 0.009,
+      "error": null
+    },
+    {
+      "step": "write_data_quality",
+      "status": "ok",
+      "duration_s": 0.0,
+      "error": null
+    }
+  ],
+  "per_ticker_dossiers_written": 15,
+  "prediction_log": {
+    "entries_total": 30,
+    "entries_appended": 0
+  }
+}
