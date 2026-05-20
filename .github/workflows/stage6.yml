@@ -1,0 +1,64 @@
+name: Stage 6 Consolidation
+
+# Manual / API trigger only. Scheduling is wired up separately.
+on:
+  workflow_dispatch:
+
+# Allow the default GITHUB_TOKEN to commit Stage 6's outputs back to the repo.
+permissions:
+  contents: write
+
+# Never let two Stage 6 runs overlap (they both push to main).
+concurrency:
+  group: stage6
+  cancel-in-progress: false
+
+jobs:
+  stage6:
+    runs-on: ubuntu-latest
+    # Stage 6 itself runs in seconds, but live Alpaca lookups and the
+    # per-ticker bar fetch in prediction-accuracy can take a few minutes.
+    timeout-minutes: 60
+
+    # Stage 6 only needs Alpaca creds — no Moonshot calls.
+    env:
+      ALPACA_API_KEY: ${{ secrets.ALPACA_API_KEY }}
+      ALPACA_SECRET_KEY: ${{ secrets.ALPACA_SECRET_KEY }}
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Run Stage 6
+        run: python "Stage 6 DRAFT/main.py"
+
+      - name: Commit & push state
+        if: always()
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          if git diff --cached --quiet; then
+            echo "No Stage 6 output to commit."
+            exit 0
+          fi
+          git commit -m "stage6: output update ($(date -u +%Y-%m-%dT%H:%M:%SZ))"
+          for attempt in 1 2 3 4 5; do
+            git pull --rebase --autostash origin main \
+              && git push origin HEAD:main \
+              && { echo "Pushed on attempt $attempt."; exit 0; }
+            echo "Push attempt $attempt failed; retrying..."
+            sleep 5
+          done
+          echo "Could not push state after 5 attempts." >&2
+          exit 1
