@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>fluffy-spork7 — Portfolio Dashboard</title>
+  <link rel="stylesheet" href="./styles.css" />
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.4/dist/chart.umd.min.js" defer></script>
+  <script src="./app.js" defer></script>
+</head>
+<body>
+  <header class="topbar">
+    <div class="topbar-inner">
+      <a class="brand" href="#/">fluffy-spork7</a>
+      <nav class="nav">
+        <a href="#/" data-route="overview">Overview</a>
+        <a href="#/positions" data-route="positions">Positions</a>
+        <a href="#/forecasts" data-route="forecasts">Forecasts</a>
+        <a href="#/history" data-route="history">History</a>
+        <a href="#/snapshots" data-route="snapshots">Snapshots</a>
+      </nav>
+      <div class="header-meta" id="header-meta"></div>
+    </div>
+  </header>
+
+  <div id="quality-banner" class="banner hidden"></div>
+
+  <main id="app">
+    <div class="loading">Loading dashboard…</div>
+  </main>
+
+  <footer class="footer">
+    <span id="footer-meta">Stage 6 outputs from <a href="https://github.com/MLGTRex/fluffy-spork7">MLGTRex/fluffy-spork7</a></span>
+  </footer>
+</body>
+</html>
