@@ -1,0 +1,3459 @@
+{
+  "run_id": "20260519T064010",
+  "started_at": "2026-05-19T06:40:10.466599+00:00",
+  "dry_run": false,
+  "skip_llm": false,
+  "status": "ok",
+  "cadence_window": {
+    "name": "post_close",
+    "scope": "full",
+    "matched": true,
+    "actual_time_et": "16:30",
+    "forced": true
+  },
+  "tickers_in_scope": [
+    "BIP",
+    "ARDX",
+    "SEK.AX",
+    "DVN",
+    "NFLX",
+    "ANG.AX",
+    "RMD",
+    "META",
+    "LLY",
+    "MA",
+    "NOW",
+    "VST",
+    "AVGO",
+    "ANET",
+    "NVDA",
+    "ALL",
+    "AU",
+    "APP",
+    "ALAB",
+    "EL",
+    "FICO",
+    "GRMN",
+    "HALO",
+    "ICE",
+    "KTOS",
+    "MSFT",
+    "NEM",
+    "QXO",
+    "RDDT",
+    "TXN",
+    "CI",
+    "VOD"
+  ],
+  "summary": {
+    "tickers_in_scope": 32,
+    "tickers_triggered_by_signals": 3,
+    "gate0_skipped": 2,
+    "gate0_to_investigate": 1,
+    "llm_call_one_succeeded": 1,
+    "llm_call_two_succeeded": 1,
+    "tickers_to_rerun": 0,
+    "rerun_tickers": [],
+    "total_llm_input_tokens": 52947,
+    "total_llm_output_tokens": 13669
+  },
+  "errors": [],
+  "pending_drain": {
+    "drained": 0,
+    "remaining": 0,
+    "status": "empty"
+  },
+  "baseline_refresh": {
+    "skipped": "already_fresh_today"
+  },
+  "fetch_errors": [],
+  "signal_results": {
+    "per_ticker_signals": {
+      "BIP": {
+        "price_signal": {
+          "ticker": "BIP",
+          "signal_type": "price",
+          "computed_at": "2026-05-19T06:40:16.883147+00:00",
+          "baseline_computed_at": "2026-05-19T00:49:21.405136+00:00",
+          "fired": false,
+          "tier": null,
+          "details": {
+            "daily_move": {
+              "current_pct": 0.025895678257312735,
+              "absolute_pct": 0.025895678257312735,
+              "fired": false,
+              "tier": null,
+              "percentile_reached": 1.2058610480392187,
+              "threshold_p95_abs": 2.7506427155383046,
+              "threshold_p99_abs": 3.1511266447290365
+            },
+            "move_from_open": {
+              "current_pct": 1.6315761365388568,
+              "absolute_pct": 1.6315761365388568,
+              "fired": false,
+              "tier": null,
+              "threshold_minor_pct": 3.0,
+              "threshold_major_pct": 5.0
+            }
+          },
+          "data_quality_flags": []
+        },
+        "volume_signal": {
+          "ticker": "BIP",
+          "signal_type": "volume",
+          "computed_at": "2026-05-19T06:40:16.883182+00:00",
+          "baseline_computed_at": "2026-05-19T00:49:21.405136+00:00",
+          "fired": false,
+          "tier": null,
+          "details": {
+            "current_volume": 376323,
+            "is_partial_day": true,
+            "percentile_reached": 20.44789176266029,
+            "threshold_p95": 1588539.9999999995,
+            "threshold_p99": 1708794.0,
+            "ratio_to_median": 0.40895783525320584
+          },
+          "data_quality_flags": []
+        },
+        "cumulative_signal": {
+          "ticker": "BIP",
+          "signal_type": "cumulative",
+          "computed_at": "2026-05-19T06:40:16.883202+00:00",
+          "anchor_evaluated_at": null,
+          "anchor_price": null,
+          "current_price": 38.619998931884766,
+          "fired": false,
+          "tier": null,
+          "details": {
+            "cumulative_move_pct": null,
+            "cumulative_move_abs": null,
+            "abs_threshold_pct": 15.0,
+            "abs_threshold_fired": false,
+            "daily_sigma": null,
+            "sigma_threshold_multiple": 10.0,
+            "sigma_threshold_pct": null,
+            "sigma_threshold_fired": false,
+            "fired_via": null
+          },
+          "data_quality_flags": [
+            "No evaluation anchor for this ticker; signal cannot fire. Anchor will be created on next successful pipeline rerun."
+          ]
+        }
+      },
+      "ARDX": {
+        "price_signal": {
+          "ticker": "ARDX",
+          "signal_type": "price",
+          "computed_at": "2026-05-19T06:40:16.883257+00:00",
+          "baseline_computed_at": "2026-05-19T00:49:21.405340+00:00",
+          "fired": false,
+          "tier": null,
+          "details": {
+            "daily_move": {
+              "current_pct": -0.08183493177833956,
+              "absolute_pct": 0.08183493177833956,
+              "fired": false,
+              "tier": null,
+              "percentile_reached": 3.2050762713874943,
+              "threshold_p95_abs": 7.065398170623428,
+              "threshold_p99_abs": 11.009999288719701
+            },
+            "move_from_open": {
+              "current_pct": -1.532254727648296,
+              "absolute_pct": 1.532254727648296,
+              "fired": false,
+              "tier": null,
+              "threshold_minor_pct": 3.0,
+              "threshold_major_pct": 5.0
+            }
+          },
+          "data_quality_flags": []
+        },
+        "volume_signal": {
+          "ticker": "ARDX",
+          "signal_type": "volume",
+          "computed_at": "2026-05-19T06:40:16.883287+00:00",
+          "baseline_computed_at": "2026-05-19T00:49:21.405340+00:00",
+          "fired": false,
+          "tier": null,
+          "details": {
+            "current_volume": 2619988,
+            "is_partial_day": true,
+            "percentile_reached": 41.900754888737,
+            "threshold_p95": 8133739.999999997,
+            "threshold_p99": 9910446.000000004,
+            "ratio_to_median": 0.8380150977747399
+          },
+          "data_quality_flags": []
+        },
+        "cumulative_signal": {
+          "ticker": "ARDX",
+          "signal_type": "cumulative",
+          "computed_at": "2026-05-19T06:40:16.883302+00:00",
+          "anchor_evaluated_at": null,
+          "anchor_price": null,
+          "current_price": 6.105000019073486,
+          "fired": false,
+          "tier": null,
+          "details": {
+            "cumulative_move_pct": null,
+            "cumulative_move_abs": null,
+            "abs_threshold_pct": 15.0,
+            "abs_threshold_fired": false,
+            "daily_sigma": null,
+            "sigma_threshold_multiple": 10.0,
+            "sigma_threshold_pct": null,
+            "sigma_threshold_fired": false,
+            "fired_via": null
+          },
+          "data_quality_flags": [
+            "No evaluation anchor for this ticker; signal cannot fire. Anchor will be created on next successful pipeline rerun."
+          ]
+        }
+      },
+      "SEK.AX": {
+        "price_signal": {
+          "ticker": "SEK.AX",
+          "signal_type": "price",
+          "computed_at": "2026-05-19T06:40:16.883331+00:00",
+          "baseline_computed_at": "2026-05-19T00:49:21.405491+00:00",
+          "fired": false,
+          "tier": null,
+          "details": {
+            "daily_move": {
+              "current_pct": 3.1088088022090794,
+              "absolute_pct": 3.1088088022090794,
+              "fired": false,
+              "tier": null,
+              "percentile_reached": 81.87642908793389,
+              "threshold_p95_abs": 4.173415707979389,
+              "threshold_p99_abs": 7.35569730454095
+            },
+            "move_from_open": {
+              "current_pct": 0.795952335605038,
+              "absolute_pct": 0.795952335605038,
+              "fired": false,
+              "tier": null,
+              "threshold_minor_pct": 3.0,
+              "threshold_major_pct": 5.0
+            }
+          },
+          "data_quality_flags": []
+        },
+        "volume_signal": {
+          "ticker": "SEK.AX",
+          "signal_type": "volume",
+          "computed_at": "2026-05-19T06:40:16.883349+00:00",
+          "baseline_computed_at": "2026-05-19T00:49:21.405491+00:00",
+          "fired": false,
+          "tier": null,
+          "details": {
+            "current_volume": 1030910,
+            "is_partial_day": false,
+            "percentile_reached": 32.34207157915872,
+            "threshold_p95": 2800675.049999999,
+            "threshold_p99": 4286399.3299999945,
+            "ratio_to_median": 0.6468414315831744
+          },
+          "data_quality_flags": []
+        },
+        "cumulative_signal": {
+          "ticker": "SEK.AX",
+          "signal_type": "cumulative",
+          "computed_at": "2026-05-19T06:40:16.883359+00:00",
+          "anchor_evaluated_at": null,
+          "anchor_price": null,
+          "current_price": 13.930000305175781,
+          "fired": false,
+          "tier": null,
+          "details": {
+            "cumulative_move_pct": null,
+            "cumulative_move_abs": null,
+            "abs_threshold_pct": 15.0,
+            "abs_threshold_fired": false,
+            "daily_sigma": null,
+            "sigma_threshold_multiple": 10.0,
+            "sigma_threshold_pct": null,
+            "sigma_threshold_fired": false,
+            "fired_via": null
+          },
+          "data_quality_flags": [
+            "No evaluation anchor for this ticker; signal cannot fire. Anchor will be created on next successful pipeline rerun."
+          ]
+        }
+      },
+      "DVN": {
+        "price_signal": {
+          "ticker": "DVN",
+          "signal_type": "price",
+          "computed_at": "2026-05-19T06:40:16.883379+00:00",
+          "baseline_computed_at": "2026-05-19T00:49:21.405619+00:00",
+          "fired": false,
+          "tier": null,
+          "details": {
+            "daily_move": {
+              "current_pct": 0.02012544579666896,
+              "absolute_pct": 0.02012544579666896,
+              "fired": false,
+              "tier": null,
+              "percentile_reached": 0.7010471745584348,
+              "threshold_p95_abs": 4.1124716346006185,
+              "threshold_p99_abs": 6.416961222476463
+            },
+            "move_from_open": {
+              "current_pct": 1.3874726146991396,
+              "absolute_pct": 1.3874726146991396,
+              "fired": false,
+              "tier": null,
+              "threshold_minor_pct": 3.0,
+              "threshold_major_pct": 5.0
+            }
+          },
+          "data_quality_flags": []
+        },
+        "volume_signal": {
+          "ticker": "DVN",
+          "signal_type": "volume",
+          "computed_at": "2026-05-19T06:40:16.883391+00:00",
+          "baseline_computed_at": "2026-05-19T00:49:21.405619+00:00",
+          "fired": false,
+          "tier": null,
+          "details": {
+            "current_volume": 12388509,
+            "is_partial_day": true,
+            "percentile_reached": 44.436067490692054,
+            "threshold_p95": 26791849.999999993,
+            "threshold_p99": 47356886.00000003,
+            "ratio_to_median": 0.8887213498138411
+          },
+          "data_quality_flags": []
+        },
+        "cumulative_signal": {
+          "ticker": "DVN",
+          "signal_type": "cumulative",
+          "computed_at": "2026-05-19T06:40:16.883400+00:00",
+          "anchor_evaluated_at": null,
+          "anchor_price": null,
+          "current_price": 49.689998626708984,
+          "fired": false,
+          "tier": null,
+          "details": {
+            "cumulative_move_pct": null,
+            "cumulative_move_abs": null,
+            "abs_threshold_pct": 15.0,
+            "abs_threshold_fired": false,
+            "daily_sigma": null,
+            "sigma_threshold_multiple": 10.0,
+            "sigma_threshold_pct": null,
+            "sigma_threshold_fired": false,
+            "fired_via": null
+          },
+          "data_quality_flags": [
+            "No evaluation anchor for this ticker; signal cannot fire. Anchor will be created on next successful pipeline rerun."
+          ]
+        }
+      },
+      "NFLX": {
+        "price_signal": {
+          "ticker": "NFLX",
+          "signal_type": "price",
+          "computed_at": "2026-05-19T06:40:16.883425+00:00",
+          "baseline_computed_at": "2026-05-19T00:49:21.405758+00:00",
+          "fired": true,
+          "tier": "minor",
+          "details": {
+            "daily_move": {
+              "current_pct": 0.033462106844711396,
+              "absolute_pct": 0.033462106844711396,
+              "fired": false,
+              "tier": null,
+              "percentile_reached": 1.7006507762442606,
+              "threshold_p95_abs": 3.818675245024376,
+              "threshold_p99_abs": 11.46398457290082
+            },
+            "move_from_open": {
+              "current_pct": 3.793893499826886,
+              "absolute_pct": 3.793893499826886,
+              "fired": true,
+              "tier": "minor",
+              "threshold_minor_pct": 3.0,
+              "threshold_major_pct": 5.0
+            }
+          },
+          "data_quality_flags": []
+        },
+        "volume_signal": {
+          "ticker": "NFLX",
+          "signal_type": "volume",
+          "computed_at": "2026-05-19T06:40:16.883448+00:00",
+          "baseline_computed_at": "2026-05-19T00:49:21.405758+00:00",
+          "fired": false,
+          "tier": null,
+          "details": {
+            "current_volume": 30267692,
+            "is_partial_day": true,
+            "percentile_reached": 41.78877319129313,
+            "threshold_p95": 80488109.99999996,
+            "threshold_p99": 157378186.00000012,
+            "ratio_to_median": 0.8357754638258627
+          },
+          "data_quality_flags": []
+        },
+        "cumulative_signal": {
+          "ticker": "NFLX",
+          "signal_type": "cumulative",
+          "computed_at": "2026-05-19T06:40:16.883462+00:00",
+          "anchor_evaluated_at": null,
+          "anchor_price": null,
+          "current_price": 89.68000030517578,
+          "fired": false,
+          "tier": null,
+          "details": {
+            "cumulative_move_pct": null,
+            "cumulative_move_abs": null,
+            "abs_threshold_pct": 15.0,
+            "abs_threshold_fired": false,
+            "daily_sigma": null,
+            "sigma_threshold_multiple": 10.0,
+            "sigma_threshold_pct": null,
+            "sigma_threshold_fired": false,
+            "fired_via": null
+          },
+          "data_quality_flags": [
+            "No evaluation anchor for this ticker; signal cannot fire. Anchor will be created on next successful pipeline rerun."
+          ]
+        }
+      },
+      "ANG.AX": {
+        "price_signal": {
+          "ticker": "ANG.AX",
+          "signal_type": "price",
+          "computed_at": "2026-05-19T06:40:16.883482+00:00",
+          "baseline_computed_at": "2026-05-19T00:49:21.405917+00:00",
+          "fired": false,
+          "tier": null,
+          "details": {
+            "daily_move": {
+              "current_pct": 2.7777750183035925,
+              "absolute_pct": 2.7777750183035925,
+              "fired": false,
+              "tier": null,
+              "percentile_reached": 64.1665480355168,
+              "threshold_p95_abs": 8.177606435631441,
+              "threshold_p99_abs": 18.283458405724517
+            },
+            "move_from_open": {
+              "current_pct": 2.7777750183035925,
+              "absolute_pct": 2.7777750183035925,
+              "fired": false,
+              "tier": null,
+              "threshold_minor_pct": 3.0,
+              "threshold_major_pct": 5.0
+            }
+          },
+          "data_quality_flags": []
+        },
+        "volume_signal": {
+          "ticker": "ANG.AX",
+          "signal_type": "volume",
+          "computed_at": "2026-05-19T06:40:16.883496+00:00",
+          "baseline_computed_at": "2026-05-19T00:49:21.405917+00:00",
+          "fired": false,
+          "tier": null,
+          "details": {
+            "current_volume": 117587,
+            "is_partial_day": false,
+            "percentile_reached": 7.194109477574044,
+            "threshold_p95": 3668664.3999999994,
+            "threshold_p99": 10159438.980000023,
+            "ratio_to_median": 0.14388218955148088
+          },
+          "data_quality_flags": []
+        },
+        "cumulative_signal": {
+          "ticker": "ANG.AX",
+          "signal_type": "cumulative",
+          "computed_at": "2026-05-19T06:40:16.883506+00:00",
+          "anchor_evaluated_at": null,
+          "anchor_price": null,
+          "current_price": 0.1850000023841858,
+          "fired": false,
+          "tier": null,
+          "details": {
+            "cumulative_move_pct": null,
+            "cumulative_move_abs": null,
+            "abs_threshold_pct": 15.0,
+            "abs_threshold_fired": false,
+            "daily_sigma": null,
+            "sigma_threshold_multiple": 10.0,
+            "sigma_threshold_pct": null,
+            "sigma_threshold_fired": false,
+            "fired_via": null
+          },
+          "data_quality_flags": [
+            "No evaluation anchor for this ticker; signal cannot fire. Anchor will be created on next successful pipeline rerun."
+          ]
+        }
+      },
+      "RMD": {
+        "price_signal": {
+          "ticker": "RMD",
+          "signal_type": "price",
+          "computed_at": "2026-05-19T06:40:16.883522+00:00",
+          "baseline_computed_at": "2026-05-19T00:49:21.406044+00:00",
+          "fired": false,
+          "tier": null,
+          "details": {
+            "daily_move": {
+              "current_pct": -0.02448581653844998,
+              "absolute_pct": 0.02448581653844998,
+              "fired": false,
+              "tier": null,
+              "percentile_reached": 1.428075812835194,
+              "threshold_p95_abs": 3.266395287893726,
+              "threshold_p99_abs": 3.973238810778338
+            },
+            "move_from_open": {
+              "current_pct": 1.7752133921254025,
+              "absolute_pct": 1.7752133921254025,
+              "fired": false,
+              "tier": null,
+              "threshold_minor_pct": 3.0,
+              "threshold_major_pct": 5.0
+            }
+          },
+          "data_quality_flags": []
+        },
+        "volume_signal": {
+          "ticker": "RMD",
+          "signal_type": "volume",
+          "computed_at": "2026-05-19T06:40:16.883534+00:00",
+          "baseline_computed_at": "2026-05-19T00:49:21.406044+00:00",
+          "fired": false,
+          "tier": null,
+          "details": {
+            "current_volume": 832815,
+            "is_partial_day": true,
+            "percentile_reached": 40.178261289077575,
+            "threshold_p95": 1850970.0,
+            "threshold_p99": 2765268.000000001,
+            "ratio_to_median": 0.8035652257815515
+          },
+          "data_quality_flags": []
+        },
+        "cumulative_signal": {
+          "ticker": "RMD",
+          "signal_type": "cumulative",
+          "computed_at": "2026-05-19T06:40:16.883543+00:00",
+          "anchor_evaluated_at": null,
+          "anchor_price": null,
+          "current_price": 204.10000610351562,
+          "fired": false,
+          "tier": null,
+          "details": {
+            "cumulative_move_pct": null,
+            "cumulative_move_abs": null,
+            "abs_threshold_pct": 15.0,
+            "abs_threshold_fired": false,
+            "daily_sigma": null,
+            "sigma_threshold_multiple": 10.0,
+            "sigma_threshold_pct": null,
+            "sigma_threshold_fired": false,
+            "fired_via": null
+          },
+          "data_quality_flags": [
+            "No evaluation anchor for this ticker; signal cannot fire. Anchor will be created on next successful pipeline rerun."
+          ]
+        }
+      },
+      "META": {
+        "price_signal": {
+          "ticker": "META",
+          "signal_type": "price",
+          "computed_at": "2026-05-19T06:40:16.883565+00:00",
+          "baseline_computed_at": "2026-05-19T00:49:21.406179+00:00",
+          "fired": false,
+          "tier": null,
+          "details": {
+            "daily_move": {
+              "current_pct": 0.019632387047617526,
+              "absolute_pct": 0.019632387047617526,
+              "fired": false,
+              "tier": null,
+              "percentile_reached": 0.8591679438396477,
+              "threshold_p95_abs": 6.523537561747563,
+              "threshold_p99_abs": 8.213409432072131
+            },
+            "move_from_open": {
+              "current_pct": 0.345527775167404,
+              "absolute_pct": 0.345527775167404,
+              "fired": false,
+              "tier": null,
+              "threshold_minor_pct": 3.0,
+              "threshold_major_pct": 5.0
+            }
+          },
+          "data_quality_flags": []
+        },
+        "volume_signal": {
+          "ticker": "META",
+          "signal_type": "volume",
+          "computed_at": "2026-05-19T06:40:16.883585+00:00",
+          "baseline_computed_at": "2026-05-19T00:49:21.406179+00:00",
+          "fired": false,
+          "tier": null,
+          "details": {
+            "current_volume": 11443916,
+            "is_partial_day": true,
+            "percentile_reached": 43.19208617344897,
+            "threshold_p95": 32122769.999999996,
+            "threshold_p99": 42913758.00000003,
+            "ratio_to_median": 0.8638417234689795
+          },
+          "data_quality_flags": []
+        },
+        "cumulative_signal": {
+          "ticker": "META",
+          "signal_type": "cumulative",
+          "computed_at": "2026-05-19T06:40:16.883598+00:00",
+          "anchor_evaluated_at": null,
+          "anchor_price": null,
+          "current_price": 611.3300170898438,
+          "fired": false,
+          "tier": null,
+          "details": {
+            "cumulative_move_pct": null,
+            "cumulative_move_abs": null,
+            "abs_threshold_pct": 15.0,
+            "abs_threshold_fired": false,
+            "daily_sigma": null,
+            "sigma_threshold_multiple": 10.0,
+            "sigma_threshold_pct": null,
+            "sigma_threshold_fired": false,
+            "fired_via": null
+          },
+          "data_quality_flags": [
+            "No evaluation anchor for this ticker; signal cannot fire. Anchor will be created on next successful pipeline rerun."
+          ]
+        }
+      },
+      "LLY": {
+        "price_signal": {
+          "ticker": "LLY",
+          "signal_type": "price",
+          "computed_at": "2026-05-19T06:40:16.884025+00:00",
+          "baseline_computed_at": "2026-05-19T00:49:21.406313+00:00",
+          "fired": false,
+          "tier": null,
+          "details": {
+            "daily_move": {
+              "current_pct": 0.010118064469860676,
+              "absolute_pct": 0.010118064469860676,
+              "fired": false,
+              "tier": null,
+              "percentile_reached": 0.3621603959900123,
+              "threshold_p95_abs": 3.6812968996156212,
+              "threshold_p99_abs": 4.708435720706614
+            },
+            "move_from_open": {
+              "current_pct": -1.2412411520950903,
+              "absolute_pct": 1.2412411520950903,
+              "fired": false,
+              "tier": null,
+              "threshold_minor_pct": 3.0,
+              "threshold_major_pct": 5.0
+            }
+          },
+          "data_quality_flags": []
+        },
+        "volume_signal": {
+          "ticker": "LLY",
+          "signal_type": "volume",
+          "computed_at": "2026-05-19T06:40:16.884048+00:00",
+          "baseline_computed_at": "2026-05-19T00:49:21.406313+00:00",
+          "fired": false,
+          "tier": null,
+          "details": {
+            "current_volume": 1603435,
+            "is_partial_day": true,
+            "percentile_reached": 28.610288344871886,
+            "threshold_p95": 4772720.0,
+            "threshold_p99": 5902268.000000001,
+            "ratio_to_median": 0.5722057668974377
+          },
+          "data_quality_flags": []
+        },
+        "cumulative_signal": {
+          "ticker": "LLY",
+          "signal_type": "cumulative",
+          "computed_at": "2026-05-19T06:40:16.884060+00:00",
+          "anchor_evaluated_at": null,
+          "anchor_price": null,
+          "current_price": 988.1900024414062,
+          "fired": false,
+          "tier": null,
+          "details": {
+            "cumulative_move_pct": null,
+            "cumulative_move_abs": null,
+            "abs_threshold_pct": 15.0,
+            "abs_threshold_fired": false,
+            "daily_sigma": null,
+            "sigma_threshold_multiple": 10.0,
+            "sigma_threshold_pct": null,
+            "sigma_threshold_fired": false,
+            "fired_via": null
+          },
+          "data_quality_flags": [
+            "No evaluation anchor for this ticker; signal cannot fire. Anchor will be created on next successful pipeline rerun."
+          ]
+        }
+      },
+      "MA": {
+        "price_signal": {
+          "ticker": "MA",
+          "signal_type": "price",
+          "computed_at": "2026-05-19T06:40:16.884093+00:00",
+          "baseline_computed_at": "2026-05-19T00:49:21.406441+00:00",
+          "fired": false,
+          "tier": null,
+          "details": {
+            "daily_move": {
+              "current_pct": 0.01383515005405845,
+              "absolute_pct": 0.01383515005405845,
+              "fired": false,
+              "tier": null,
+              "percentile_reached": 0.778793151114755,
+              "threshold_p95_abs": 2.4879814912771714,
+              "threshold_p99_abs": 3.514631581610033
+            },
+            "move_from_open": {
+              "current_pct": 2.9237615012942446,
+              "absolute_pct": 2.9237615012942446,
+              "fired": false,
+              "tier": null,
+              "threshold_minor_pct": 3.0,
+              "threshold_major_pct": 5.0
+            }
+          },
+          "data_quality_flags": []
+        },
+        "volume_signal": {
+          "ticker": "MA",
+          "signal_type": "volume",
+          "computed_at": "2026-05-19T06:40:16.884115+00:00",
+          "baseline_computed_at": "2026-05-19T00:49:21.406441+00:00",
+          "fired": false,
+          "tier": null,
+          "details": {
+            "current_volume": 2412851,
+            "is_partial_day": true,
+            "percentile_reached": 35.02062469157305,
+            "threshold_p95": 5339899.999999997,
+            "threshold_p99": 6059652.0,
+            "ratio_to_median": 0.700412493831461
+          },
+          "data_quality_flags": []
+        },
+        "cumulative_signal": {
+          "ticker": "MA",
+          "signal_type": "cumulative",
+          "computed_at": "2026-05-19T06:40:16.884138+00:00",
+          "anchor_evaluated_at": null,
+          "anchor_price": null,
+          "current_price": 505.8599853515625,
+          "fired": false,
+          "tier": null,
+          "details": {
+            "cumulative_move_pct": null,
+            "cumulative_move_abs": null,
+            "abs_threshold_pct": 15.0,
+            "abs_threshold_fired": false,
+            "daily_sigma": null,
+            "sigma_threshold_multiple": 10.0,
+            "sigma_threshold_pct": null,
+            "sigma_threshold_fired": false,
+            "fired_via": null
+          },
+          "data_quality_flags": [
+            "No evaluation anchor for this ticker; signal cannot fire. Anchor will be created on next successful pipeline rerun."
+          ]
+        }
+      },
+      "NOW": {
+        "price_signal": {
+          "ticker": "NOW",
+          "signal_type": "price",
+          "computed_at": "2026-05-19T06:40:16.884159+00:00",
+          "baseline_computed_at": "2026-05-19T00:49:21.406567+00:00",
+          "fired": true,
+          "tier": "minor",
+          "details": {
+            "daily_move": {
+              "current_pct": 0.009671375369906133,
+              "absolute_pct": 0.009671375369906133,
+              "fired": false,
+              "tier": null,
+              "percentile_reached": 0.23294454729397007,
+              "threshold_p95_abs": 7.624096021846589,
+              "threshold_p99_abs": 12.636755973338811
+            },
+            "move_from_open": {
+              "current_pct": 4.622698428696649,
+              "absolute_pct": 4.622698428696649,
+              "fired": true,
+              "tier": "minor",
+              "threshold_minor_pct": 3.0,
+              "threshold_major_pct": 5.0
+            }
+          },
+          "data_quality_flags": []
+        },
+        "volume_signal": {
+          "ticker": "NOW",
+          "signal_type": "volume",
+          "computed_at": "2026-05-19T06:40:16.884171+00:00",
+          "baseline_computed_at": "2026-05-19T00:49:21.406567+00:00",
+          "fired": true,
+          "tier": "minor",
+          "details": {
+            "current_volume": 47032293,
+            "is_partial_day": true,
+            "percentile_reached": 95.61776289606667,
+            "threshold_p95": 42950803.59999995,
+            "threshold_p99": 69378350.00000004,
+            "ratio_to_median": 2.314046111381718
+          },
+          "data_quality_flags": [
+            "Signal fired on partial-day volume; full-day volume could be even higher"
+          ]
+        },
+        "cumulative_signal": {
+          "ticker": "NOW",
+          "signal_type": "cumulative",
+          "computed_at": "2026-05-19T06:40:16.884191+00:00",
+          "anchor_evaluated_at": "2026-05-19T06:14:51.064452+00:00",
+          "anchor_price": 91.18000030517578,
+          "current_price": 103.43000030517578,
+          "fired": false,
+          "tier": null,
+          "details": {
+            "cumulative_move_pct": 13.434963762886317,
+            "cumulative_move_abs": 12.25,
+            "abs_threshold_pct": 15.0,
+            "abs_threshold_fired": false,
+            "daily_sigma": 4.233958648656185,
+            "sigma_threshold_multiple": 10.0,
+            "sigma_threshold_pct": 42.33958648656185,
+            "sigma_threshold_fired": false,
+            "fired_via": null
+          },
+          "data_quality_flags": []
+        }
+      },
+      "VST": {
+        "price_signal": {
+          "ticker": "VST",
+          "signal_type": "price",
+          "computed_at": "2026-05-19T06:40:16.884223+00:00",
+          "baseline_computed_at": "2026-05-19T00:49:21.406694+00:00",
+          "fired": false,
+          "tier": null,
+          "details": {
+            "daily_move": {
+              "current_pct": 0.0,
+              "absolute_pct": 0.0,
+              "fired": false,
+              "tier": null,
+              "percentile_reached": 0.0,
+              "threshold_p95_abs": 4.846664228473092,
+              "threshold_p99_abs": 8.539832878151644
+            },
+            "move_from_open": {
+              "current_pct": -1.618705035971223,
+              "absolute_pct": 1.618705035971223,
+              "fired": false,
+              "tier": null,
+              "threshold_minor_pct": 3.0,
+              "threshold_major_pct": 5.0
+            }
+          },
+          "data_quality_flags": []
+        },
+        "volume_signal": {
+          "ticker": "VST",
+          "signal_type": "volume",
+          "computed_at": "2026-05-19T06:40:16.884243+00:00",
+          "baseline_computed_at": "2026-05-19T00:49:21.406694+00:00",
+          "fired": false,
+          "tier": null,
+          "details": {
+            "current_volume": 5586557,
+            "is_partial_day": true,
+            "percentile_reached": 80.1394475113088,
+            "threshold_p95": 7768640.0,
+            "threshold_p99": 9459521.0,
+            "ratio_to_median": 1.3369286731360608
+          },
+          "data_quality_flags": []
+        },
+        "cumulative_signal": {
+          "ticker": "VST",
+          "signal_type": "cumulative",
+          "computed_at": "2026-05-19T06:40:16.884258+00:00",
+          "anchor_evaluated_at": null,
+          "anchor_price": null,
+          "current_price": 136.75,
+          "fired": false,
+          "tier": null,
+          "details": {
+            "cumulative_move_pct": null,
+            "cumulative_move_abs": null,
+            "abs_threshold_pct": 15.0,
+            "abs_threshold_fired": false,
+            "daily_sigma": null,
+            "sigma_threshold_multiple": 10.0,
+            "sigma_threshold_pct": null,
+            "sigma_threshold_fired": false,
+            "fired_via": null
+          },
+          "data_quality_flags": [
+            "No evaluation anchor for this ticker; signal cannot fire. Anchor will be created on next successful pipeline rerun."
+          ]
+        }
+      },
+      "AVGO": {
+        "price_signal": {
+          "ticker": "AVGO",
+          "signal_type": "price",
+          "computed_at": "2026-05-19T06:40:16.884280+00:00",
+          "baseline_computed_at": "2026-05-19T00:49:21.406834+00:00",
+          "fired": false,
+          "tier": null,
+          "details": {
+            "daily_move": {
+              "current_pct": -0.004751257179022656,
+              "absolute_pct": 0.004751257179022656,
+              "fired": false,
+              "tier": null,
+              "percentile_reached": 0.14840706711510468,
+              "threshold_p95_abs": 5.151594151500429,
+              "threshold_p99_abs": 5.817670597290456
+            },
+            "move_from_open": {
+              "current_pct": -0.16256245828389201,
+              "absolute_pct": 0.16256245828389201,
+              "fired": false,
+              "tier": null,
+              "threshold_minor_pct": 3.0,
+              "threshold_major_pct": 5.0
+            }
+          },
+          "data_quality_flags": []
+        },
+        "volume_signal": {
+          "ticker": "AVGO",
+          "signal_type": "volume",
+          "computed_at": "2026-05-19T06:40:16.884291+00:00",
+          "baseline_computed_at": "2026-05-19T00:49:21.406834+00:00",
+          "fired": false,
+          "tier": null,
+          "details": {
+            "current_volume": 12747237,
+            "is_partial_day": true,
+            "percentile_reached": 29.207842229717347,
+            "threshold_p95": 39297559.99999999,
+            "threshold_p99": 49101194.00000002,
+            "ratio_to_median": 0.5841568445943469
+          },
+          "data_quality_flags": []
+        },
+        "cumulative_signal": {
+          "ticker": "AVGO",
+          "signal_type": "cumulative",
+          "computed_at": "2026-05-19T06:40:16.884305+00:00",
+          "anchor_evaluated_at": null,
+          "anchor_price": null,
+          "current_price": 420.69000244140625,
+          "fired": false,
+          "tier": null,
+          "details": {
+            "cumulative_move_pct": null,
+            "cumulative_move_abs": null,
+            "abs_threshold_pct": 15.0,
+            "abs_threshold_fired": false,
+            "daily_sigma": null,
+            "sigma_threshold_multiple": 10.0,
+            "sigma_threshold_pct": null,
+            "sigma_threshold_fired": false,
+            "fired_via": null
+          },
+          "data_quality_flags": [
+            "No evaluation anchor for this ticker; signal cannot fire. Anchor will be created on next successful pipeline rerun."
+          ]
+        }
+      },
+      "ANET": {
+        "price_signal": {
+          "ticker": "ANET",
+          "signal_type": "price",
+          "computed_at": "2026-05-19T06:40:16.884330+00:00",
+          "baseline_computed_at": "2026-05-19T00:49:21.407625+00:00",
+          "fired": false,
+          "tier": null,
+          "details": {
+            "daily_move": {
+              "current_pct": 0.007052788344098975,
+              "absolute_pct": 0.007052788344098975,
+              "fired": false,
+              "tier": null,
+              "percentile_reached": 0.13197311070765294,
+              "threshold_p95_abs": 8.26165948834068,
+              "threshold_p99_abs": 11.111043063650357
+            },
+            "move_from_open": {
+              "current_pct": -0.9089658879335758,
+              "absolute_pct": 0.9089658879335758,
+              "fired": false,
+              "tier": null,
+              "threshold_minor_pct": 3.0,
+              "threshold_major_pct": 5.0
+            }
+          },
+          "data_quality_flags": []
+        },
+        "volume_signal": {
+          "ticker": "ANET",
+          "signal_type": "volume",
+          "computed_at": "2026-05-19T06:40:16.884351+00:00",
+          "baseline_computed_at": "2026-05-19T00:49:21.407625+00:00",
+          "fired": false,
+          "tier": null,
+          "details": {
+            "current_volume": 5957044,
+            "is_partial_day": true,
+            "percentile_reached": 41.33621072499167,
+            "threshold_p95": 18282220.0,
+            "threshold_p99": 26778952.000000026,
+            "ratio_to_median": 0.8267242144998335
+          },
+          "data_quality_flags": []
+        },
+        "cumulative_signal": {
+          "ticker": "ANET",
+          "signal_type": "cumulative",
+          "computed_at": "2026-05-19T06:40:16.884363+00:00",
+          "anchor_evaluated_at": null,
+          "anchor_price": null,
+          "current_price": 141.72000122070312,
+          "fired": false,
+          "tier": null,
+          "details": {
+            "cumulative_move_pct": null,
+            "cumulative_move_abs": null,
+            "abs_threshold_pct": 15.0,
+            "abs_threshold_fired": false,
+            "daily_sigma": null,
+            "sigma_threshold_multiple": 10.0,
+            "sigma_threshold_pct": null,
+            "sigma_threshold_fired": false,
+            "fired_via": null
+          },
+          "data_quality_flags": [
+            "No evaluation anchor for this ticker; signal cannot fire. Anchor will be created on next successful pipeline rerun."
+          ]
+        }
+      },
+      "NVDA": {
+        "price_signal": {
+          "ticker": "NVDA",
+          "signal_type": "price",
+          "computed_at": "2026-05-19T06:40:16.884382+00:00",
+          "baseline_computed_at": "2026-05-19T00:49:21.406966+00:00",
+          "fired": true,
+          "tier": "minor",
+          "details": {
+            "daily_move": {
+              "current_pct": 0.0134935130931003,
+              "absolute_pct": 0.0134935130931003,
+              "fired": false,
+              "tier": null,
+              "percentile_reached": 0.4261823331449555,
+              "threshold_p95_abs": 4.7505543843534195,
+              "threshold_p99_abs": 5.664601051706424
+            },
+            "move_from_open": {
+              "current_pct": -3.2503702822377925,
+              "absolute_pct": 3.2503702822377925,
+              "fired": true,
+              "tier": "minor",
+              "threshold_minor_pct": 3.0,
+              "threshold_major_pct": 5.0
+            }
+          },
+          "data_quality_flags": []
+        },
+        "volume_signal": {
+          "ticker": "NVDA",
+          "signal_type": "volume",
+          "computed_at": "2026-05-19T06:40:16.884393+00:00",
+          "baseline_computed_at": "2026-05-19T00:49:21.406966+00:00",
+          "fired": false,
+          "tier": null,
+          "details": {
+            "current_volume": 130625763,
+            "is_partial_day": true,
+            "percentile_reached": 38.846193169652416,
+            "threshold_p95": 227695519.9999999,
+            "threshold_p99": 332288488.0000001,
+            "ratio_to_median": 0.7769238633930483
+          },
+          "data_quality_flags": []
+        },
+        "cumulative_signal": {
+          "ticker": "NVDA",
+          "signal_type": "cumulative",
+          "computed_at": "2026-05-19T06:40:16.884402+00:00",
+          "anchor_evaluated_at": null,
+          "anchor_price": null,
+          "current_price": 222.35000610351562,
+          "fired": false,
+          "tier": null,
+          "details": {
+            "cumulative_move_pct": null,
+            "cumulative_move_abs": null,
+            "abs_threshold_pct": 15.0,
+            "abs_threshold_fired": false,
+            "daily_sigma": null,
+            "sigma_threshold_multiple": 10.0,
+            "sigma_threshold_pct": null,
+            "sigma_threshold_fired": false,
+            "fired_via": null
+          },
+          "data_quality_flags": [
+            "No evaluation anchor for this ticker; signal cannot fire. Anchor will be created on next successful pipeline rerun."
+          ]
+        }
+      },
+      "ALL": {
+        "price_signal": {
+          "ticker": "ALL",
+          "signal_type": "price",
+          "computed_at": "2026-05-19T06:40:16.884424+00:00",
+          "baseline_computed_at": "2026-05-19T00:49:21.407224+00:00",
+          "fired": false,
+          "tier": null,
+          "details": {
+            "daily_move": {
+              "current_pct": 0.0,
+              "absolute_pct": 0.0,
+              "fired": false,
+              "tier": null,
+              "percentile_reached": 0.0,
+              "threshold_p95_abs": 2.1529830272633816,
+              "threshold_p99_abs": 2.280622338004595
+            },
+            "move_from_open": {
+              "current_pct": 1.6823735282773657,
+              "absolute_pct": 1.6823735282773657,
+              "fired": false,
+              "tier": null,
+              "threshold_minor_pct": 3.0,
+              "threshold_major_pct": 5.0
+            }
+          },
+          "data_quality_flags": []
+        },
+        "volume_signal": {
+          "ticker": "ALL",
+          "signal_type": "volume",
+          "computed_at": "2026-05-19T06:40:16.884447+00:00",
+          "baseline_computed_at": "2026-05-19T00:49:21.407224+00:00",
+          "fired": false,
+          "tier": null,
+          "details": {
+            "current_volume": 1295269,
+            "is_partial_day": true,
+            "percentile_reached": 46.67972466484071,
+            "threshold_p95": 2243529.9999999995,
+            "threshold_p99": 3064888.000000001,
+            "ratio_to_median": 0.9335944932968142
+          },
+          "data_quality_flags": []
+        },
+        "cumulative_signal": {
+          "ticker": "ALL",
+          "signal_type": "cumulative",
+          "computed_at": "2026-05-19T06:40:16.884458+00:00",
+          "anchor_evaluated_at": null,
+          "anchor_price": null,
+          "current_price": 221.2100067138672,
+          "fired": false,
+          "tier": null,
+          "details": {
+            "cumulative_move_pct": null,
+            "cumulative_move_abs": null,
+            "abs_threshold_pct": 15.0,
+            "abs_threshold_fired": false,
+            "daily_sigma": null,
+            "sigma_threshold_multiple": 10.0,
+            "sigma_threshold_pct": null,
+            "sigma_threshold_fired": false,
+            "fired_via": null
+          },
+          "data_quality_flags": [
+            "No evaluation anchor for this ticker; signal cannot fire. Anchor will be created on next successful pipeline rerun."
+          ]
+        }
+      },
+      "AU": {
+        "price_signal": {
+          "ticker": "AU",
+          "signal_type": "price",
+          "computed_at": "2026-05-19T06:40:16.884826+00:00",
+          "baseline_computed_at": "2026-05-19T00:49:21.407361+00:00",
+          "fired": false,
+          "tier": null,
+          "details": {
+            "daily_move": {
+              "current_pct": 0.01070090521005934,
+              "absolute_pct": 0.01070090521005934,
+              "fired": false,
+              "tier": null,
+              "percentile_reached": 0.24604040658255197,
+              "threshold_p95_abs": 8.605660864726136,
+              "threshold_p99_abs": 9.961789861141927
+            },
+            "move_from_open": {
+              "current_pct": -1.4235984899865306,
+              "absolute_pct": 1.4235984899865306,
+              "fired": false,
+              "tier": null,
+              "threshold_minor_pct": 3.0,
+              "threshold_major_pct": 5.0
+            }
+          },
+          "data_quality_flags": []
+        },
+        "volume_signal": {
+          "ticker": "AU",
+          "signal_type": "volume",
+          "computed_at": "2026-05-19T06:40:16.884845+00:00",
+          "baseline_computed_at": "2026-05-19T00:49:21.407361+00:00",
+          "fired": false,
+          "tier": null,
+          "details": {
+            "current_volume": 1634767,
+            "is_partial_day": true,
+            "percentile_reached": 31.365445126630853,
+            "threshold_p95": 5101579.999999992,
+            "threshold_p99": 6922456.0,
+            "ratio_to_median": 0.6273089025326171
+          },
+          "data_quality_flags": []
+        },
+        "cumulative_signal": {
+          "ticker": "AU",
+          "signal_type": "cumulative",
+          "computed_at": "2026-05-19T06:40:16.884856+00:00",
+          "anchor_evaluated_at": null,
+          "anchor_price": null,
+          "current_price": 93.4800033569336,
+          "fired": false,
+          "tier": null,
+          "details": {
+            "cumulative_move_pct": null,
+            "cumulative_move_abs": null,
+            "abs_threshold_pct": 15.0,
+            "abs_threshold_fired": false,
+            "daily_sigma": null,
+            "sigma_threshold_multiple": 10.0,
+            "sigma_threshold_pct": null,
+            "sigma_threshold_fired": false,
+            "fired_via": null
+          },
+          "data_quality_flags": [
+            "No evaluation anchor for this ticker; signal cannot fire. Anchor will be created on next successful pipeline rerun."
+          ]
+        }
+      },
+      "APP": {
+        "price_signal": {
+          "ticker": "APP",
+          "signal_type": "price",
+          "computed_at": "2026-05-19T06:40:16.884888+00:00",
+          "baseline_computed_at": "2026-05-19T00:49:21.407499+00:00",
+          "fired": false,
+          "tier": null,
+          "details": {
+            "daily_move": {
+              "current_pct": 0.02843010062780505,
+              "absolute_pct": 0.02843010062780505,
+              "fired": false,
+              "tier": null,
+              "percentile_reached": 0.4827978549193146,
+              "threshold_p95_abs": 7.592443093557202,
+              "threshold_p99_abs": 10.182350298288618
+            },
+            "move_from_open": {
+              "current_pct": -0.6689303884024574,
+              "absolute_pct": 0.6689303884024574,
+              "fired": false,
+              "tier": null,
+              "threshold_minor_pct": 3.0,
+              "threshold_major_pct": 5.0
+            }
+          },
+          "data_quality_flags": []
+        },
+        "volume_signal": {
+          "ticker": "APP",
+          "signal_type": "volume",
+          "computed_at": "2026-05-19T06:40:16.884928+00:00",
+          "baseline_computed_at": "2026-05-19T00:49:21.407499+00:00",
+          "fired": false,
+          "tier": null,
+          "details": {
+            "current_volume": 4159955,
+            "is_partial_day": true,
+            "percentile_reached": 45.37967710265081,
+            "threshold_p95": 7638110.0,
+            "threshold_p99": 10159618.000000007,
+            "ratio_to_median": 0.9075935420530162
+          },
+          "data_quality_flags": []
+        },
+        "cumulative_signal": {
+          "ticker": "APP",
+          "signal_type": "cumulative",
+          "computed_at": "2026-05-19T06:40:16.884940+00:00",
+          "anchor_evaluated_at": null,
+          "anchor_price": null,
+          "current_price": 492.5199890136719,
+          "fired": false,
+          "tier": null,
+          "details": {
+            "cumulative_move_pct": null,
+            "cumulative_move_abs": null,
+            "abs_threshold_pct": 15.0,
+            "abs_threshold_fired": false,
+            "daily_sigma": null,
+            "sigma_threshold_multiple": 10.0,
+            "sigma_threshold_pct": null,
+            "sigma_threshold_fired": false,
+            "fired_via": null
+          },
+          "data_quality_flags": [
+            "No evaluation anchor for this ticker; signal cannot fire. Anchor will be created on next successful pipeline rerun."
+          ]
+        }
+      },
+      "ALAB": {
+        "price_signal": {
+          "ticker": "ALAB",
+          "signal_type": "price",
+          "computed_at": "2026-05-19T06:40:16.884961+00:00",
+          "baseline_computed_at": "2026-05-19T00:49:21.407757+00:00",
+          "fired": true,
+          "tier": "major",
+          "details": {
+            "daily_move": {
+              "current_pct": 0.0,
+              "absolute_pct": 0.0,
+              "fired": false,
+              "tier": null,
+              "percentile_reached": 0.0,
+              "threshold_p95_abs": 10.268592516282563,
+              "threshold_p99_abs": 13.29287240349776
+            },
+            "move_from_open": {
+              "current_pct": -8.725713301886213,
+              "absolute_pct": 8.725713301886213,
+              "fired": true,
+              "tier": "major",
+              "threshold_minor_pct": 3.0,
+              "threshold_major_pct": 5.0
+            }
+          },
+          "data_quality_flags": []
+        },
+        "volume_signal": {
+          "ticker": "ALAB",
+          "signal_type": "volume",
+          "computed_at": "2026-05-19T06:40:16.884976+00:00",
+          "baseline_computed_at": "2026-05-19T00:49:21.407757+00:00",
+          "fired": false,
+          "tier": null,
+          "details": {
+            "current_volume": 5225034,
+            "is_partial_day": true,
+            "percentile_reached": 56.84266821223457,
+            "threshold_p95": 8828569.999999993,
+            "threshold_p99": 10891114.0,
+            "ratio_to_median": 1.0523098302217389
+          },
+          "data_quality_flags": []
+        },
+        "cumulative_signal": {
+          "ticker": "ALAB",
+          "signal_type": "cumulative",
+          "computed_at": "2026-05-19T06:40:16.884987+00:00",
+          "anchor_evaluated_at": null,
+          "anchor_price": null,
+          "current_price": 215.5800018310547,
+          "fired": false,
+          "tier": null,
+          "details": {
+            "cumulative_move_pct": null,
+            "cumulative_move_abs": null,
+            "abs_threshold_pct": 15.0,
+            "abs_threshold_fired": false,
+            "daily_sigma": null,
+            "sigma_threshold_multiple": 10.0,
+            "sigma_threshold_pct": null,
+            "sigma_threshold_fired": false,
+            "fired_via": null
+          },
+          "data_quality_flags": [
+            "No evaluation anchor for this ticker; signal cannot fire. Anchor will be created on next successful pipeline rerun."
+          ]
+        }
+      },
+      "EL": {
+        "price_signal": {
+          "ticker": "EL",
+          "signal_type": "price",
+          "computed_at": "2026-05-19T06:40:16.885012+00:00",
+          "baseline_computed_at": "2026-05-19T00:49:21.407899+00:00",
+          "fired": false,
+          "tier": null,
+          "details": {
+            "daily_move": {
+              "current_pct": 0.024992679080746188,
+              "absolute_pct": 0.024992679080746188,
+              "fired": false,
+              "tier": null,
+              "percentile_reached": 0.6149492038410895,
+              "threshold_p95_abs": 7.747011034223289,
+              "threshold_p99_abs": 9.067471456777085
+            },
+            "move_from_open": {
+              "current_pct": -0.16218173262628188,
+              "absolute_pct": 0.16218173262628188,
+              "fired": false,
+              "tier": null,
+              "threshold_minor_pct": 3.0,
+              "threshold_major_pct": 5.0
+            }
+          },
+          "data_quality_flags": []
+        },
+        "volume_signal": {
+          "ticker": "EL",
+          "signal_type": "volume",
+          "computed_at": "2026-05-19T06:40:16.885032+00:00",
+          "baseline_computed_at": "2026-05-19T00:49:21.407899+00:00",
+          "fired": false,
+          "tier": null,
+          "details": {
+            "current_volume": 1499854,
+            "is_partial_day": true,
+            "percentile_reached": 19.970892918963543,
+            "threshold_p95": 7938219.999999997,
+            "threshold_p99": 14006140.000000017,
+            "ratio_to_median": 0.39941785837927085
+          },
+          "data_quality_flags": []
+        },
+        "cumulative_signal": {
+          "ticker": "EL",
+          "signal_type": "cumulative",
+          "computed_at": "2026-05-19T06:40:16.885044+00:00",
+          "anchor_evaluated_at": null,
+          "anchor_price": null,
+          "current_price": 80.02999877929688,
+          "fired": false,
+          "tier": null,
+          "details": {
+            "cumulative_move_pct": null,
+            "cumulative_move_abs": null,
+            "abs_threshold_pct": 15.0,
+            "abs_threshold_fired": false,
+            "daily_sigma": null,
+            "sigma_threshold_multiple": 10.0,
+            "sigma_threshold_pct": null,
+            "sigma_threshold_fired": false,
+            "fired_via": null
+          },
+          "data_quality_flags": [
+            "No evaluation anchor for this ticker; signal cannot fire. Anchor will be created on next successful pipeline rerun."
+          ]
+        }
+      },
+      "FICO": {
+        "price_signal": {
+          "ticker": "FICO",
+          "signal_type": "price",
+          "computed_at": "2026-05-19T06:40:16.885063+00:00",
+          "baseline_computed_at": "2026-05-19T00:49:21.408041+00:00",
+          "fired": true,
+          "tier": "major",
+          "details": {
+            "daily_move": {
+              "current_pct": 0.006775831229744163,
+              "absolute_pct": 0.006775831229744163,
+              "fired": false,
+              "tier": null,
+              "percentile_reached": 0.14435939730202743,
+              "threshold_p95_abs": 8.637447394807465,
+              "threshold_p99_abs": 12.18585790771158
+            },
+            "move_from_open": {
+              "current_pct": 8.014007055961288,
+              "absolute_pct": 8.014007055961288,
+              "fired": true,
+              "tier": "major",
+              "threshold_minor_pct": 3.0,
+              "threshold_major_pct": 5.0
+            }
+          },
+          "data_quality_flags": []
+        },
+        "volume_signal": {
+          "ticker": "FICO",
+          "signal_type": "volume",
+          "computed_at": "2026-05-19T06:40:16.885074+00:00",
+          "baseline_computed_at": "2026-05-19T00:49:21.408041+00:00",
+          "fired": false,
+          "tier": null,
+          "details": {
+            "current_volume": 383096,
+            "is_partial_day": true,
+            "percentile_reached": 65.12496145923168,
+            "threshold_p95": 860799.9999999993,
+            "threshold_p99": 1220764.0000000005,
+            "ratio_to_median": 1.2146353836398225
+          },
+          "data_quality_flags": []
+        },
+        "cumulative_signal": {
+          "ticker": "FICO",
+          "signal_type": "cumulative",
+          "computed_at": "2026-05-19T06:40:16.885084+00:00",
+          "anchor_evaluated_at": null,
+          "anchor_price": null,
+          "current_price": 1181.9000244140625,
+          "fired": false,
+          "tier": null,
+          "details": {
+            "cumulative_move_pct": null,
+            "cumulative_move_abs": null,
+            "abs_threshold_pct": 15.0,
+            "abs_threshold_fired": false,
+            "daily_sigma": null,
+            "sigma_threshold_multiple": 10.0,
+            "sigma_threshold_pct": null,
+            "sigma_threshold_fired": false,
+            "fired_via": null
+          },
+          "data_quality_flags": [
+            "No evaluation anchor for this ticker; signal cannot fire. Anchor will be created on next successful pipeline rerun."
+          ]
+        }
+      },
+      "GRMN": {
+        "price_signal": {
+          "ticker": "GRMN",
+          "signal_type": "price",
+          "computed_at": "2026-05-19T06:40:16.885110+00:00",
+          "baseline_computed_at": "2026-05-19T00:49:21.408174+00:00",
+          "fired": false,
+          "tier": null,
+          "details": {
+            "daily_move": {
+              "current_pct": 0.05288691326647102,
+              "absolute_pct": 0.05288691326647102,
+              "fired": false,
+              "tier": null,
+              "percentile_reached": 2.3297815424017214,
+              "threshold_p95_abs": 3.6999860710640236,
+              "threshold_p99_abs": 4.551619463970535
+            },
+            "move_from_open": {
+              "current_pct": 0.5047148422954428,
+              "absolute_pct": 0.5047148422954428,
+              "fired": false,
+              "tier": null,
+              "threshold_minor_pct": 3.0,
+              "threshold_major_pct": 5.0
+            }
+          },
+          "data_quality_flags": []
+        },
+        "volume_signal": {
+          "ticker": "GRMN",
+          "signal_type": "volume",
+          "computed_at": "2026-05-19T06:40:16.885129+00:00",
+          "baseline_computed_at": "2026-05-19T00:49:21.408174+00:00",
+          "fired": false,
+          "tier": null,
+          "details": {
+            "current_volume": 575004,
+            "is_partial_day": true,
+            "percentile_reached": 36.31451307313377,
+            "threshold_p95": 1132409.9999999984,
+            "threshold_p99": 1599398.0000000005,
+            "ratio_to_median": 0.7262902614626753
+          },
+          "data_quality_flags": []
+        },
+        "cumulative_signal": {
+          "ticker": "GRMN",
+          "signal_type": "cumulative",
+          "computed_at": "2026-05-19T06:40:16.885142+00:00",
+          "anchor_evaluated_at": null,
+          "anchor_price": null,
+          "current_price": 227.00999450683594,
+          "fired": false,
+          "tier": null,
+          "details": {
+            "cumulative_move_pct": null,
+            "cumulative_move_abs": null,
+            "abs_threshold_pct": 15.0,
+            "abs_threshold_fired": false,
+            "daily_sigma": null,
+            "sigma_threshold_multiple": 10.0,
+            "sigma_threshold_pct": null,
+            "sigma_threshold_fired": false,
+            "fired_via": null
+          },
+          "data_quality_flags": [
+            "No evaluation anchor for this ticker; signal cannot fire. Anchor will be created on next successful pipeline rerun."
+          ]
+        }
+      },
+      "HALO": {
+        "price_signal": {
+          "ticker": "HALO",
+          "signal_type": "price",
+          "computed_at": "2026-05-19T06:40:16.885161+00:00",
+          "baseline_computed_at": "2026-05-19T00:49:21.408311+00:00",
+          "fired": false,
+          "tier": null,
+          "details": {
+            "daily_move": {
+              "current_pct": -0.014831162319661664,
+              "absolute_pct": 0.014831162319661664,
+              "fired": false,
+              "tier": null,
+              "percentile_reached": 0.6278191961944172,
+              "threshold_p95_abs": 3.983676239758827,
+              "threshold_p99_abs": 5.430277018212159
+            },
+            "move_from_open": {
+              "current_pct": -0.8819616123581165,
+              "absolute_pct": 0.8819616123581165,
+              "fired": false,
+              "tier": null,
+              "threshold_minor_pct": 3.0,
+              "threshold_major_pct": 5.0
+            }
+          },
+          "data_quality_flags": []
+        },
+        "volume_signal": {
+          "ticker": "HALO",
+          "signal_type": "volume",
+          "computed_at": "2026-05-19T06:40:16.885171+00:00",
+          "baseline_computed_at": "2026-05-19T00:49:21.408311+00:00",
+          "fired": false,
+          "tier": null,
+          "details": {
+            "current_volume": 1387339,
+            "is_partial_day": true,
+            "percentile_reached": 47.5116095890411,
+            "threshold_p95": 2403199.9999999986,
+            "threshold_p99": 4110352.0000000023,
+            "ratio_to_median": 0.950232191780822
+          },
+          "data_quality_flags": []
+        },
+        "cumulative_signal": {
+          "ticker": "HALO",
+          "signal_type": "cumulative",
+          "computed_at": "2026-05-19T06:40:16.885180+00:00",
+          "anchor_evaluated_at": null,
+          "anchor_price": null,
+          "current_price": 67.43000030517578,
+          "fired": false,
+          "tier": null,
+          "details": {
+            "cumulative_move_pct": null,
+            "cumulative_move_abs": null,
+            "abs_threshold_pct": 15.0,
+            "abs_threshold_fired": false,
+            "daily_sigma": null,
+            "sigma_threshold_multiple": 10.0,
+            "sigma_threshold_pct": null,
+            "sigma_threshold_fired": false,
+            "fired_via": null
+          },
+          "data_quality_flags": [
+            "No evaluation anchor for this ticker; signal cannot fire. Anchor will be created on next successful pipeline rerun."
+          ]
+        }
+      },
+      "ICE": {
+        "price_signal": {
+          "ticker": "ICE",
+          "signal_type": "price",
+          "computed_at": "2026-05-19T06:40:16.885202+00:00",
+          "baseline_computed_at": "2026-05-19T00:49:21.407095+00:00",
+          "fired": false,
+          "tier": null,
+          "details": {
+            "daily_move": {
+              "current_pct": 0.006407145640093902,
+              "absolute_pct": 0.006407145640093902,
+              "fired": false,
+              "tier": null,
+              "percentile_reached": 0.36212309739047505,
+              "threshold_p95_abs": 3.1145919504923474,
+              "threshold_p99_abs": 3.427031639074503
+            },
+            "move_from_open": {
+              "current_pct": 1.0820956062538392,
+              "absolute_pct": 1.0820956062538392,
+              "fired": false,
+              "tier": null,
+              "threshold_minor_pct": 3.0,
+              "threshold_major_pct": 5.0
+            }
+          },
+          "data_quality_flags": []
+        },
+        "volume_signal": {
+          "ticker": "ICE",
+          "signal_type": "volume",
+          "computed_at": "2026-05-19T06:40:16.885220+00:00",
+          "baseline_computed_at": "2026-05-19T00:49:21.407095+00:00",
+          "fired": false,
+          "tier": null,
+          "details": {
+            "current_volume": 2601218,
+            "is_partial_day": true,
+            "percentile_reached": 42.40793635266882,
+            "threshold_p95": 4591820.0,
+            "threshold_p99": 5433412.000000002,
+            "ratio_to_median": 0.8481587270533764
+          },
+          "data_quality_flags": []
+        },
+        "cumulative_signal": {
+          "ticker": "ICE",
+          "signal_type": "cumulative",
+          "computed_at": "2026-05-19T06:40:16.885232+00:00",
+          "anchor_evaluated_at": null,
+          "anchor_price": null,
+          "current_price": 156.0,
+          "fired": false,
+          "tier": null,
+          "details": {
+            "cumulative_move_pct": null,
+            "cumulative_move_abs": null,
+            "abs_threshold_pct": 15.0,
+            "abs_threshold_fired": false,
+            "daily_sigma": null,
+            "sigma_threshold_multiple": 10.0,
+            "sigma_threshold_pct": null,
+            "sigma_threshold_fired": false,
+            "fired_via": null
+          },
+          "data_quality_flags": [
+            "No evaluation anchor for this ticker; signal cannot fire. Anchor will be created on next successful pipeline rerun."
+          ]
+        }
+      },
+      "KTOS": {
+        "price_signal": {
+          "ticker": "KTOS",
+          "signal_type": "price",
+          "computed_at": "2026-05-19T06:40:16.885558+00:00",
+          "baseline_computed_at": "2026-05-19T00:49:21.408442+00:00",
+          "fired": true,
+          "tier": "minor",
+          "details": {
+            "daily_move": {
+              "current_pct": 0.036887601094400174,
+              "absolute_pct": 0.036887601094400174,
+              "fired": false,
+              "tier": null,
+              "percentile_reached": 0.5361629557537939,
+              "threshold_p95_abs": 8.495247815892952,
+              "threshold_p99_abs": 9.608202441049052
+            },
+            "move_from_open": {
+              "current_pct": 3.9080476737764482,
+              "absolute_pct": 3.9080476737764482,
+              "fired": true,
+              "tier": "minor",
+              "threshold_minor_pct": 3.0,
+              "threshold_major_pct": 5.0
+            }
+          },
+          "data_quality_flags": []
+        },
+        "volume_signal": {
+          "ticker": "KTOS",
+          "signal_type": "volume",
+          "computed_at": "2026-05-19T06:40:16.885576+00:00",
+          "baseline_computed_at": "2026-05-19T00:49:21.408442+00:00",
+          "fired": false,
+          "tier": null,
+          "details": {
+            "current_volume": 2996299,
+            "is_partial_day": true,
+            "percentile_reached": 38.19033355850976,
+            "threshold_p95": 8488959.999999998,
+            "threshold_p99": 15724136.999999998,
+            "ratio_to_median": 0.7638066711701952
+          },
+          "data_quality_flags": []
+        },
+        "cumulative_signal": {
+          "ticker": "KTOS",
+          "signal_type": "cumulative",
+          "computed_at": "2026-05-19T06:40:16.885586+00:00",
+          "anchor_evaluated_at": null,
+          "anchor_price": null,
+          "current_price": 54.2400016784668,
+          "fired": false,
+          "tier": null,
+          "details": {
+            "cumulative_move_pct": null,
+            "cumulative_move_abs": null,
+            "abs_threshold_pct": 15.0,
+            "abs_threshold_fired": false,
+            "daily_sigma": null,
+            "sigma_threshold_multiple": 10.0,
+            "sigma_threshold_pct": null,
+            "sigma_threshold_fired": false,
+            "fired_via": null
+          },
+          "data_quality_flags": [
+            "No evaluation anchor for this ticker; signal cannot fire. Anchor will be created on next successful pipeline rerun."
+          ]
+        }
+      },
+      "MSFT": {
+        "price_signal": {
+          "ticker": "MSFT",
+          "signal_type": "price",
+          "computed_at": "2026-05-19T06:40:16.885610+00:00",
+          "baseline_computed_at": "2026-05-19T00:49:21.408571+00:00",
+          "fired": false,
+          "tier": null,
+          "details": {
+            "daily_move": {
+              "current_pct": 0.02833147158865701,
+              "absolute_pct": 0.02833147158865701,
+              "fired": false,
+              "tier": null,
+              "percentile_reached": 1.2763814586811801,
+              "threshold_p95_abs": 3.683530721858355,
+              "threshold_p99_abs": 4.241622033899259
+            },
+            "move_from_open": {
+              "current_pct": 1.816384949427312,
+              "absolute_pct": 1.816384949427312,
+              "fired": false,
+              "tier": null,
+              "threshold_minor_pct": 3.0,
+              "threshold_major_pct": 5.0
+            }
+          },
+          "data_quality_flags": []
+        },
+        "volume_signal": {
+          "ticker": "MSFT",
+          "signal_type": "volume",
+          "computed_at": "2026-05-19T06:40:16.885622+00:00",
+          "baseline_computed_at": "2026-05-19T00:49:21.408571+00:00",
+          "fired": false,
+          "tier": null,
+          "details": {
+            "current_volume": 25457431,
+            "is_partial_day": true,
+            "percentile_reached": 40.14557155653117,
+            "threshold_p95": 50365039.99999999,
+            "threshold_p99": 59574924.00000003,
+            "ratio_to_median": 0.8029114311306235
+          },
+          "data_quality_flags": []
+        },
+        "cumulative_signal": {
+          "ticker": "MSFT",
+          "signal_type": "cumulative",
+          "computed_at": "2026-05-19T06:40:16.885631+00:00",
+          "anchor_evaluated_at": null,
+          "anchor_price": null,
+          "current_price": 423.6600036621094,
+          "fired": false,
+          "tier": null,
+          "details": {
+            "cumulative_move_pct": null,
+            "cumulative_move_abs": null,
+            "abs_threshold_pct": 15.0,
+            "abs_threshold_fired": false,
+            "daily_sigma": null,
+            "sigma_threshold_multiple": 10.0,
+            "sigma_threshold_pct": null,
+            "sigma_threshold_fired": false,
+            "fired_via": null
+          },
+          "data_quality_flags": [
+            "No evaluation anchor for this ticker; signal cannot fire. Anchor will be created on next successful pipeline rerun."
+          ]
+        }
+      },
+      "NEM": {
+        "price_signal": {
+          "ticker": "NEM",
+          "signal_type": "price",
+          "computed_at": "2026-05-19T06:40:16.885646+00:00",
+          "baseline_computed_at": "2026-05-19T00:49:21.408699+00:00",
+          "fired": false,
+          "tier": null,
+          "details": {
+            "daily_move": {
+              "current_pct": -0.018203589753455606,
+              "absolute_pct": 0.018203589753455606,
+              "fired": false,
+              "tier": null,
+              "percentile_reached": 0.41958444380387233,
+              "threshold_p95_abs": 6.3454615928274585,
+              "threshold_p99_abs": 8.25325410191816
+            },
+            "move_from_open": {
+              "current_pct": 0.9281401755770335,
+              "absolute_pct": 0.9281401755770335,
+              "fired": false,
+              "tier": null,
+              "threshold_minor_pct": 3.0,
+              "threshold_major_pct": 5.0
+            }
+          },
+          "data_quality_flags": []
+        },
+        "volume_signal": {
+          "ticker": "NEM",
+          "signal_type": "volume",
+          "computed_at": "2026-05-19T06:40:16.885656+00:00",
+          "baseline_computed_at": "2026-05-19T00:49:21.408699+00:00",
+          "fired": false,
+          "tier": null,
+          "details": {
+            "current_volume": 5401045,
+            "is_partial_day": true,
+            "percentile_reached": 32.29787832035688,
+            "threshold_p95": 15452539.999999985,
+            "threshold_p99": 27243334.000000007,
+            "ratio_to_median": 0.6459575664071376
+          },
+          "data_quality_flags": []
+        },
+        "cumulative_signal": {
+          "ticker": "NEM",
+          "signal_type": "cumulative",
+          "computed_at": "2026-05-19T06:40:16.885670+00:00",
+          "anchor_evaluated_at": null,
+          "anchor_price": null,
+          "current_price": 109.83000183105469,
+          "fired": false,
+          "tier": null,
+          "details": {
+            "cumulative_move_pct": null,
+            "cumulative_move_abs": null,
+            "abs_threshold_pct": 15.0,
+            "abs_threshold_fired": false,
+            "daily_sigma": null,
+            "sigma_threshold_multiple": 10.0,
+            "sigma_threshold_pct": null,
+            "sigma_threshold_fired": false,
+            "fired_via": null
+          },
+          "data_quality_flags": [
+            "No evaluation anchor for this ticker; signal cannot fire. Anchor will be created on next successful pipeline rerun."
+          ]
+        }
+      },
+      "QXO": {
+        "price_signal": {
+          "ticker": "QXO",
+          "signal_type": "price",
+          "computed_at": "2026-05-19T06:40:16.885686+00:00",
+          "baseline_computed_at": "2026-05-19T00:49:21.408845+00:00",
+          "fired": false,
+          "tier": null,
+          "details": {
+            "daily_move": {
+              "current_pct": 0.05987018608640632,
+              "absolute_pct": 0.05987018608640632,
+              "fired": false,
+              "tier": null,
+              "percentile_reached": 0.944864764882898,
+              "threshold_p95_abs": 7.732908151881718,
+              "threshold_p99_abs": 8.960347544355836
+            },
+            "move_from_open": {
+              "current_pct": 1.9524082168442516,
+              "absolute_pct": 1.9524082168442516,
+              "fired": false,
+              "tier": null,
+              "threshold_minor_pct": 3.0,
+              "threshold_major_pct": 5.0
+            }
+          },
+          "data_quality_flags": []
+        },
+        "volume_signal": {
+          "ticker": "QXO",
+          "signal_type": "volume",
+          "computed_at": "2026-05-19T06:40:16.885696+00:00",
+          "baseline_computed_at": "2026-05-19T00:49:21.408845+00:00",
+          "fired": false,
+          "tier": null,
+          "details": {
+            "current_volume": 16263663,
+            "is_partial_day": true,
+            "percentile_reached": 79.1521104836862,
+            "threshold_p95": 23202059.999999948,
+            "threshold_p99": 42164380.00000004,
+            "ratio_to_median": 1.8139262770466205
+          },
+          "data_quality_flags": []
+        },
+        "cumulative_signal": {
+          "ticker": "QXO",
+          "signal_type": "cumulative",
+          "computed_at": "2026-05-19T06:40:16.885707+00:00",
+          "anchor_evaluated_at": null,
+          "anchor_price": null,
+          "current_price": 16.709999084472656,
+          "fired": false,
+          "tier": null,
+          "details": {
+            "cumulative_move_pct": null,
+            "cumulative_move_abs": null,
+            "abs_threshold_pct": 15.0,
+            "abs_threshold_fired": false,
+            "daily_sigma": null,
+            "sigma_threshold_multiple": 10.0,
+            "sigma_threshold_pct": null,
+            "sigma_threshold_fired": false,
+            "fired_via": null
+          },
+          "data_quality_flags": [
+            "No evaluation anchor for this ticker; signal cannot fire. Anchor will be created on next successful pipeline rerun."
+          ]
+        }
+      },
+      "RDDT": {
+        "price_signal": {
+          "ticker": "RDDT",
+          "signal_type": "price",
+          "computed_at": "2026-05-19T06:40:16.885723+00:00",
+          "baseline_computed_at": "2026-05-19T00:49:21.408980+00:00",
+          "fired": false,
+          "tier": null,
+          "details": {
+            "daily_move": {
+              "current_pct": -0.11313426804084956,
+              "absolute_pct": 0.11313426804084956,
+              "fired": false,
+              "tier": null,
+              "percentile_reached": 2.453878959233961,
+              "threshold_p95_abs": 7.786453484254699,
+              "threshold_p99_abs": 10.671859704347856
+            },
+            "move_from_open": {
+              "current_pct": 1.229294697949841,
+              "absolute_pct": 1.229294697949841,
+              "fired": false,
+              "tier": null,
+              "threshold_minor_pct": 3.0,
+              "threshold_major_pct": 5.0
+            }
+          },
+          "data_quality_flags": []
+        },
+        "volume_signal": {
+          "ticker": "RDDT",
+          "signal_type": "volume",
+          "computed_at": "2026-05-19T06:40:16.885733+00:00",
+          "baseline_computed_at": "2026-05-19T00:49:21.408980+00:00",
+          "fired": false,
+          "tier": null,
+          "details": {
+            "current_volume": 2997538,
+            "is_partial_day": true,
+            "percentile_reached": 33.450931815645575,
+            "threshold_p95": 7260929.999999995,
+            "threshold_p99": 10740126.000000011,
+            "ratio_to_median": 0.6690186363129115
+          },
+          "data_quality_flags": []
+        },
+        "cumulative_signal": {
+          "ticker": "RDDT",
+          "signal_type": "cumulative",
+          "computed_at": "2026-05-19T06:40:16.885745+00:00",
+          "anchor_evaluated_at": null,
+          "anchor_price": null,
+          "current_price": 158.92999267578125,
+          "fired": false,
+          "tier": null,
+          "details": {
+            "cumulative_move_pct": null,
+            "cumulative_move_abs": null,
+            "abs_threshold_pct": 15.0,
+            "abs_threshold_fired": false,
+            "daily_sigma": null,
+            "sigma_threshold_multiple": 10.0,
+            "sigma_threshold_pct": null,
+            "sigma_threshold_fired": false,
+            "fired_via": null
+          },
+          "data_quality_flags": [
+            "No evaluation anchor for this ticker; signal cannot fire. Anchor will be created on next successful pipeline rerun."
+          ]
+        }
+      },
+      "TXN": {
+        "price_signal": {
+          "ticker": "TXN",
+          "signal_type": "price",
+          "computed_at": "2026-05-19T06:40:16.885761+00:00",
+          "baseline_computed_at": "2026-05-19T00:49:21.409108+00:00",
+          "fired": false,
+          "tier": null,
+          "details": {
+            "daily_move": {
+              "current_pct": -0.009979633628664839,
+              "absolute_pct": 0.009979633628664839,
+              "fired": false,
+              "tier": null,
+              "percentile_reached": 0.3339779838458846,
+              "threshold_p95_abs": 4.348820354934792,
+              "threshold_p99_abs": 10.96980116312827
+            },
+            "move_from_open": {
+              "current_pct": -2.3632002688485163,
+              "absolute_pct": 2.3632002688485163,
+              "fired": false,
+              "tier": null,
+              "threshold_minor_pct": 3.0,
+              "threshold_major_pct": 5.0
+            }
+          },
+          "data_quality_flags": []
+        },
+        "volume_signal": {
+          "ticker": "TXN",
+          "signal_type": "volume",
+          "computed_at": "2026-05-19T06:40:16.885773+00:00",
+          "baseline_computed_at": "2026-05-19T00:49:21.409108+00:00",
+          "fired": false,
+          "tier": null,
+          "details": {
+            "current_volume": 4507758,
+            "is_partial_day": true,
+            "percentile_reached": 33.59485765389775,
+            "threshold_p95": 11354389.999999985,
+            "threshold_p99": 19491438.000000015,
+            "ratio_to_median": 0.671897153077955
+          },
+          "data_quality_flags": []
+        },
+        "cumulative_signal": {
+          "ticker": "TXN",
+          "signal_type": "cumulative",
+          "computed_at": "2026-05-19T06:40:16.885782+00:00",
+          "anchor_evaluated_at": null,
+          "anchor_price": null,
+          "current_price": 300.57000732421875,
+          "fired": false,
+          "tier": null,
+          "details": {
+            "cumulative_move_pct": null,
+            "cumulative_move_abs": null,
+            "abs_threshold_pct": 15.0,
+            "abs_threshold_fired": false,
+            "daily_sigma": null,
+            "sigma_threshold_multiple": 10.0,
+            "sigma_threshold_pct": null,
+            "sigma_threshold_fired": false,
+            "fired_via": null
+          },
+          "data_quality_flags": [
+            "No evaluation anchor for this ticker; signal cannot fire. Anchor will be created on next successful pipeline rerun."
+          ]
+        }
+      },
+      "CI": {
+        "price_signal": {
+          "ticker": "CI",
+          "signal_type": "price",
+          "computed_at": "2026-05-19T06:40:16.885797+00:00",
+          "baseline_computed_at": "2026-05-19T00:49:21.409235+00:00",
+          "fired": false,
+          "tier": null,
+          "details": {
+            "daily_move": {
+              "current_pct": 0.0034914944852483293,
+              "absolute_pct": 0.0034914944852483293,
+              "fired": false,
+              "tier": null,
+              "percentile_reached": 0.1429267274697039,
+              "threshold_p95_abs": 3.287965899070387,
+              "threshold_p99_abs": 3.552946448475501
+            },
+            "move_from_open": {
+              "current_pct": 0.16071198586877442,
+              "absolute_pct": 0.16071198586877442,
+              "fired": false,
+              "tier": null,
+              "threshold_minor_pct": 3.0,
+              "threshold_major_pct": 5.0
+            }
+          },
+          "data_quality_flags": []
+        },
+        "volume_signal": {
+          "ticker": "CI",
+          "signal_type": "volume",
+          "computed_at": "2026-05-19T06:40:16.885806+00:00",
+          "baseline_computed_at": "2026-05-19T00:49:21.409235+00:00",
+          "fired": false,
+          "tier": null,
+          "details": {
+            "current_volume": 1110315,
+            "is_partial_day": true,
+            "percentile_reached": 33.63571644956074,
+            "threshold_p95": 2411609.999999999,
+            "threshold_p99": 3163504.000000002,
+            "ratio_to_median": 0.6727143289912147
+          },
+          "data_quality_flags": []
+        },
+        "cumulative_signal": {
+          "ticker": "CI",
+          "signal_type": "cumulative",
+          "computed_at": "2026-05-19T06:40:16.885814+00:00",
+          "anchor_evaluated_at": null,
+          "anchor_price": null,
+          "current_price": 286.70001220703125,
+          "fired": false,
+          "tier": null,
+          "details": {
+            "cumulative_move_pct": null,
+            "cumulative_move_abs": null,
+            "abs_threshold_pct": 15.0,
+            "abs_threshold_fired": false,
+            "daily_sigma": null,
+            "sigma_threshold_multiple": 10.0,
+            "sigma_threshold_pct": null,
+            "sigma_threshold_fired": false,
+            "fired_via": null
+          },
+          "data_quality_flags": [
+            "No evaluation anchor for this ticker; signal cannot fire. Anchor will be created on next successful pipeline rerun."
+          ]
+        }
+      },
+      "VOD": {
+        "price_signal": {
+          "ticker": "VOD",
+          "signal_type": "price",
+          "computed_at": "2026-05-19T06:40:16.885828+00:00",
+          "baseline_computed_at": "2026-05-19T00:49:21.409371+00:00",
+          "fired": false,
+          "tier": null,
+          "details": {
+            "daily_move": {
+              "current_pct": -0.03333409627278646,
+              "absolute_pct": 0.03333409627278646,
+              "fired": false,
+              "tier": null,
+              "percentile_reached": 1.6533753925972166,
+              "threshold_p95_abs": 3.0291636712179906,
+              "threshold_p99_abs": 6.137117424711979
+            },
+            "move_from_open": {
+              "current_pct": 0.7389966744092505,
+              "absolute_pct": 0.7389966744092505,
+              "fired": false,
+              "tier": null,
+              "threshold_minor_pct": 3.0,
+              "threshold_major_pct": 5.0
+            }
+          },
+          "data_quality_flags": []
+        },
+        "volume_signal": {
+          "ticker": "VOD",
+          "signal_type": "volume",
+          "computed_at": "2026-05-19T06:40:16.885837+00:00",
+          "baseline_computed_at": "2026-05-19T00:49:21.409371+00:00",
+          "fired": false,
+          "tier": null,
+          "details": {
+            "current_volume": 2872076,
+            "is_partial_day": true,
+            "percentile_reached": 36.32688269965343,
+            "threshold_p95": 6357609.999999998,
+            "threshold_p99": 10884237.999999978,
+            "ratio_to_median": 0.7265376539930687
+          },
+          "data_quality_flags": []
+        },
+        "cumulative_signal": {
+          "ticker": "VOD",
+          "signal_type": "cumulative",
+          "computed_at": "2026-05-19T06:40:16.885844+00:00",
+          "anchor_evaluated_at": null,
+          "anchor_price": null,
+          "current_price": 14.994999885559082,
+          "fired": false,
+          "tier": null,
+          "details": {
+            "cumulative_move_pct": null,
+            "cumulative_move_abs": null,
+            "abs_threshold_pct": 15.0,
+            "abs_threshold_fired": false,
+            "daily_sigma": null,
+            "sigma_threshold_multiple": 10.0,
+            "sigma_threshold_pct": null,
+            "sigma_threshold_fired": false,
+            "fired_via": null
+          },
+          "data_quality_flags": [
+            "No evaluation anchor for this ticker; signal cannot fire. Anchor will be created on next successful pipeline rerun."
+          ]
+        }
+      }
+    },
+    "aggregation": {
+      "computed_at": "2026-05-19T06:40:16.886049+00:00",
+      "decisions": {
+        "BIP": {
+          "ticker": "BIP",
+          "computed_at": "2026-05-19T06:40:16.886060+00:00",
+          "triggered": false,
+          "trigger_path": null,
+          "fired_signals": [],
+          "signal_summary": {
+            "price_fired": false,
+            "price_tier": null,
+            "volume_fired": false,
+            "volume_tier": null,
+            "cumulative_fired": false,
+            "major_count": 0,
+            "minor_count": 0
+          },
+          "config": {
+            "minor_signals_required_for_trigger": 2
+          },
+          "data_quality_flags": [
+            "cumulative_signal: No evaluation anchor for this ticker; signal cannot fire. Anchor will be created on next successful pipeline rerun."
+          ]
+        },
+        "ARDX": {
+          "ticker": "ARDX",
+          "computed_at": "2026-05-19T06:40:16.886074+00:00",
+          "triggered": false,
+          "trigger_path": null,
+          "fired_signals": [],
+          "signal_summary": {
+            "price_fired": false,
+            "price_tier": null,
+            "volume_fired": false,
+            "volume_tier": null,
+            "cumulative_fired": false,
+            "major_count": 0,
+            "minor_count": 0
+          },
+          "config": {
+            "minor_signals_required_for_trigger": 2
+          },
+          "data_quality_flags": [
+            "cumulative_signal: No evaluation anchor for this ticker; signal cannot fire. Anchor will be created on next successful pipeline rerun."
+          ]
+        },
+        "SEK.AX": {
+          "ticker": "SEK.AX",
+          "computed_at": "2026-05-19T06:40:16.886082+00:00",
+          "triggered": false,
+          "trigger_path": null,
+          "fired_signals": [],
+          "signal_summary": {
+            "price_fired": false,
+            "price_tier": null,
+            "volume_fired": false,
+            "volume_tier": null,
+            "cumulative_fired": false,
+            "major_count": 0,
+            "minor_count": 0
+          },
+          "config": {
+            "minor_signals_required_for_trigger": 2
+          },
+          "data_quality_flags": [
+            "cumulative_signal: No evaluation anchor for this ticker; signal cannot fire. Anchor will be created on next successful pipeline rerun."
+          ]
+        },
+        "DVN": {
+          "ticker": "DVN",
+          "computed_at": "2026-05-19T06:40:16.886088+00:00",
+          "triggered": false,
+          "trigger_path": null,
+          "fired_signals": [],
+          "signal_summary": {
+            "price_fired": false,
+            "price_tier": null,
+            "volume_fired": false,
+            "volume_tier": null,
+            "cumulative_fired": false,
+            "major_count": 0,
+            "minor_count": 0
+          },
+          "config": {
+            "minor_signals_required_for_trigger": 2
+          },
+          "data_quality_flags": [
+            "cumulative_signal: No evaluation anchor for this ticker; signal cannot fire. Anchor will be created on next successful pipeline rerun."
+          ]
+        },
+        "NFLX": {
+          "ticker": "NFLX",
+          "computed_at": "2026-05-19T06:40:16.886093+00:00",
+          "triggered": false,
+          "trigger_path": null,
+          "fired_signals": [
+            {
+              "signal_type": "price",
+              "tier": "minor",
+              "details": {
+                "daily_move": {
+                  "current_pct": 0.033462106844711396,
+                  "absolute_pct": 0.033462106844711396,
+                  "fired": false,
+                  "tier": null,
+                  "percentile_reached": 1.7006507762442606,
+                  "threshold_p95_abs": 3.818675245024376,
+                  "threshold_p99_abs": 11.46398457290082
+                },
+                "move_from_open": {
+                  "current_pct": 3.793893499826886,
+                  "absolute_pct": 3.793893499826886,
+                  "fired": true,
+                  "tier": "minor",
+                  "threshold_minor_pct": 3.0,
+                  "threshold_major_pct": 5.0
+                }
+              }
+            }
+          ],
+          "signal_summary": {
+            "price_fired": true,
+            "price_tier": "minor",
+            "volume_fired": false,
+            "volume_tier": null,
+            "cumulative_fired": false,
+            "major_count": 0,
+            "minor_count": 1
+          },
+          "config": {
+            "minor_signals_required_for_trigger": 2
+          },
+          "data_quality_flags": [
+            "cumulative_signal: No evaluation anchor for this ticker; signal cannot fire. Anchor will be created on next successful pipeline rerun."
+          ]
+        },
+        "ANG.AX": {
+          "ticker": "ANG.AX",
+          "computed_at": "2026-05-19T06:40:16.886100+00:00",
+          "triggered": false,
+          "trigger_path": null,
+          "fired_signals": [],
+          "signal_summary": {
+            "price_fired": false,
+            "price_tier": null,
+            "volume_fired": false,
+            "volume_tier": null,
+            "cumulative_fired": false,
+            "major_count": 0,
+            "minor_count": 0
+          },
+          "config": {
+            "minor_signals_required_for_trigger": 2
+          },
+          "data_quality_flags": [
+            "cumulative_signal: No evaluation anchor for this ticker; signal cannot fire. Anchor will be created on next successful pipeline rerun."
+          ]
+        },
+        "RMD": {
+          "ticker": "RMD",
+          "computed_at": "2026-05-19T06:40:16.886105+00:00",
+          "triggered": false,
+          "trigger_path": null,
+          "fired_signals": [],
+          "signal_summary": {
+            "price_fired": false,
+            "price_tier": null,
+            "volume_fired": false,
+            "volume_tier": null,
+            "cumulative_fired": false,
+            "major_count": 0,
+            "minor_count": 0
+          },
+          "config": {
+            "minor_signals_required_for_trigger": 2
+          },
+          "data_quality_flags": [
+            "cumulative_signal: No evaluation anchor for this ticker; signal cannot fire. Anchor will be created on next successful pipeline rerun."
+          ]
+        },
+        "META": {
+          "ticker": "META",
+          "computed_at": "2026-05-19T06:40:16.886110+00:00",
+          "triggered": false,
+          "trigger_path": null,
+          "fired_signals": [],
+          "signal_summary": {
+            "price_fired": false,
+            "price_tier": null,
+            "volume_fired": false,
+            "volume_tier": null,
+            "cumulative_fired": false,
+            "major_count": 0,
+            "minor_count": 0
+          },
+          "config": {
+            "minor_signals_required_for_trigger": 2
+          },
+          "data_quality_flags": [
+            "cumulative_signal: No evaluation anchor for this ticker; signal cannot fire. Anchor will be created on next successful pipeline rerun."
+          ]
+        },
+        "LLY": {
+          "ticker": "LLY",
+          "computed_at": "2026-05-19T06:40:16.886115+00:00",
+          "triggered": false,
+          "trigger_path": null,
+          "fired_signals": [],
+          "signal_summary": {
+            "price_fired": false,
+            "price_tier": null,
+            "volume_fired": false,
+            "volume_tier": null,
+            "cumulative_fired": false,
+            "major_count": 0,
+            "minor_count": 0
+          },
+          "config": {
+            "minor_signals_required_for_trigger": 2
+          },
+          "data_quality_flags": [
+            "cumulative_signal: No evaluation anchor for this ticker; signal cannot fire. Anchor will be created on next successful pipeline rerun."
+          ]
+        },
+        "MA": {
+          "ticker": "MA",
+          "computed_at": "2026-05-19T06:40:16.886120+00:00",
+          "triggered": false,
+          "trigger_path": null,
+          "fired_signals": [],
+          "signal_summary": {
+            "price_fired": false,
+            "price_tier": null,
+            "volume_fired": false,
+            "volume_tier": null,
+            "cumulative_fired": false,
+            "major_count": 0,
+            "minor_count": 0
+          },
+          "config": {
+            "minor_signals_required_for_trigger": 2
+          },
+          "data_quality_flags": [
+            "cumulative_signal: No evaluation anchor for this ticker; signal cannot fire. Anchor will be created on next successful pipeline rerun."
+          ]
+        },
+        "NOW": {
+          "ticker": "NOW",
+          "computed_at": "2026-05-19T06:40:16.886129+00:00",
+          "triggered": true,
+          "trigger_path": "minor_corroboration",
+          "fired_signals": [
+            {
+              "signal_type": "price",
+              "tier": "minor",
+              "details": {
+                "daily_move": {
+                  "current_pct": 0.009671375369906133,
+                  "absolute_pct": 0.009671375369906133,
+                  "fired": false,
+                  "tier": null,
+                  "percentile_reached": 0.23294454729397007,
+                  "threshold_p95_abs": 7.624096021846589,
+                  "threshold_p99_abs": 12.636755973338811
+                },
+                "move_from_open": {
+                  "current_pct": 4.622698428696649,
+                  "absolute_pct": 4.622698428696649,
+                  "fired": true,
+                  "tier": "minor",
+                  "threshold_minor_pct": 3.0,
+                  "threshold_major_pct": 5.0
+                }
+              }
+            },
+            {
+              "signal_type": "volume",
+              "tier": "minor",
+              "details": {
+                "current_volume": 47032293,
+                "is_partial_day": true,
+                "percentile_reached": 95.61776289606667,
+                "threshold_p95": 42950803.59999995,
+                "threshold_p99": 69378350.00000004,
+                "ratio_to_median": 2.314046111381718
+              }
+            }
+          ],
+          "signal_summary": {
+            "price_fired": true,
+            "price_tier": "minor",
+            "volume_fired": true,
+            "volume_tier": "minor",
+            "cumulative_fired": false,
+            "major_count": 0,
+            "minor_count": 2
+          },
+          "config": {
+            "minor_signals_required_for_trigger": 2
+          },
+          "data_quality_flags": [
+            "volume_signal: Signal fired on partial-day volume; full-day volume could be even higher"
+          ]
+        },
+        "VST": {
+          "ticker": "VST",
+          "computed_at": "2026-05-19T06:40:16.886139+00:00",
+          "triggered": false,
+          "trigger_path": null,
+          "fired_signals": [],
+          "signal_summary": {
+            "price_fired": false,
+            "price_tier": null,
+            "volume_fired": false,
+            "volume_tier": null,
+            "cumulative_fired": false,
+            "major_count": 0,
+            "minor_count": 0
+          },
+          "config": {
+            "minor_signals_required_for_trigger": 2
+          },
+          "data_quality_flags": [
+            "cumulative_signal: No evaluation anchor for this ticker; signal cannot fire. Anchor will be created on next successful pipeline rerun."
+          ]
+        },
+        "AVGO": {
+          "ticker": "AVGO",
+          "computed_at": "2026-05-19T06:40:16.886144+00:00",
+          "triggered": false,
+          "trigger_path": null,
+          "fired_signals": [],
+          "signal_summary": {
+            "price_fired": false,
+            "price_tier": null,
+            "volume_fired": false,
+            "volume_tier": null,
+            "cumulative_fired": false,
+            "major_count": 0,
+            "minor_count": 0
+          },
+          "config": {
+            "minor_signals_required_for_trigger": 2
+          },
+          "data_quality_flags": [
+            "cumulative_signal: No evaluation anchor for this ticker; signal cannot fire. Anchor will be created on next successful pipeline rerun."
+          ]
+        },
+        "ANET": {
+          "ticker": "ANET",
+          "computed_at": "2026-05-19T06:40:16.886152+00:00",
+          "triggered": false,
+          "trigger_path": null,
+          "fired_signals": [],
+          "signal_summary": {
+            "price_fired": false,
+            "price_tier": null,
+            "volume_fired": false,
+            "volume_tier": null,
+            "cumulative_fired": false,
+            "major_count": 0,
+            "minor_count": 0
+          },
+          "config": {
+            "minor_signals_required_for_trigger": 2
+          },
+          "data_quality_flags": [
+            "cumulative_signal: No evaluation anchor for this ticker; signal cannot fire. Anchor will be created on next successful pipeline rerun."
+          ]
+        },
+        "NVDA": {
+          "ticker": "NVDA",
+          "computed_at": "2026-05-19T06:40:16.886156+00:00",
+          "triggered": false,
+          "trigger_path": null,
+          "fired_signals": [
+            {
+              "signal_type": "price",
+              "tier": "minor",
+              "details": {
+                "daily_move": {
+                  "current_pct": 0.0134935130931003,
+                  "absolute_pct": 0.0134935130931003,
+                  "fired": false,
+                  "tier": null,
+                  "percentile_reached": 0.4261823331449555,
+                  "threshold_p95_abs": 4.7505543843534195,
+                  "threshold_p99_abs": 5.664601051706424
+                },
+                "move_from_open": {
+                  "current_pct": -3.2503702822377925,
+                  "absolute_pct": 3.2503702822377925,
+                  "fired": true,
+                  "tier": "minor",
+                  "threshold_minor_pct": 3.0,
+                  "threshold_major_pct": 5.0
+                }
+              }
+            }
+          ],
+          "signal_summary": {
+            "price_fired": true,
+            "price_tier": "minor",
+            "volume_fired": false,
+            "volume_tier": null,
+            "cumulative_fired": false,
+            "major_count": 0,
+            "minor_count": 1
+          },
+          "config": {
+            "minor_signals_required_for_trigger": 2
+          },
+          "data_quality_flags": [
+            "cumulative_signal: No evaluation anchor for this ticker; signal cannot fire. Anchor will be created on next successful pipeline rerun."
+          ]
+        },
+        "ALL": {
+          "ticker": "ALL",
+          "computed_at": "2026-05-19T06:40:16.886162+00:00",
+          "triggered": false,
+          "trigger_path": null,
+          "fired_signals": [],
+          "signal_summary": {
+            "price_fired": false,
+            "price_tier": null,
+            "volume_fired": false,
+            "volume_tier": null,
+            "cumulative_fired": false,
+            "major_count": 0,
+            "minor_count": 0
+          },
+          "config": {
+            "minor_signals_required_for_trigger": 2
+          },
+          "data_quality_flags": [
+            "cumulative_signal: No evaluation anchor for this ticker; signal cannot fire. Anchor will be created on next successful pipeline rerun."
+          ]
+        },
+        "AU": {
+          "ticker": "AU",
+          "computed_at": "2026-05-19T06:40:16.886166+00:00",
+          "triggered": false,
+          "trigger_path": null,
+          "fired_signals": [],
+          "signal_summary": {
+            "price_fired": false,
+            "price_tier": null,
+            "volume_fired": false,
+            "volume_tier": null,
+            "cumulative_fired": false,
+            "major_count": 0,
+            "minor_count": 0
+          },
+          "config": {
+            "minor_signals_required_for_trigger": 2
+          },
+          "data_quality_flags": [
+            "cumulative_signal: No evaluation anchor for this ticker; signal cannot fire. Anchor will be created on next successful pipeline rerun."
+          ]
+        },
+        "APP": {
+          "ticker": "APP",
+          "computed_at": "2026-05-19T06:40:16.886171+00:00",
+          "triggered": false,
+          "trigger_path": null,
+          "fired_signals": [],
+          "signal_summary": {
+            "price_fired": false,
+            "price_tier": null,
+            "volume_fired": false,
+            "volume_tier": null,
+            "cumulative_fired": false,
+            "major_count": 0,
+            "minor_count": 0
+          },
+          "config": {
+            "minor_signals_required_for_trigger": 2
+          },
+          "data_quality_flags": [
+            "cumulative_signal: No evaluation anchor for this ticker; signal cannot fire. Anchor will be created on next successful pipeline rerun."
+          ]
+        },
+        "ALAB": {
+          "ticker": "ALAB",
+          "computed_at": "2026-05-19T06:40:16.886175+00:00",
+          "triggered": true,
+          "trigger_path": "major",
+          "fired_signals": [
+            {
+              "signal_type": "price",
+              "tier": "major",
+              "details": {
+                "daily_move": {
+                  "current_pct": 0.0,
+                  "absolute_pct": 0.0,
+                  "fired": false,
+                  "tier": null,
+                  "percentile_reached": 0.0,
+                  "threshold_p95_abs": 10.268592516282563,
+                  "threshold_p99_abs": 13.29287240349776
+                },
+                "move_from_open": {
+                  "current_pct": -8.725713301886213,
+                  "absolute_pct": 8.725713301886213,
+                  "fired": true,
+                  "tier": "major",
+                  "threshold_minor_pct": 3.0,
+                  "threshold_major_pct": 5.0
+                }
+              }
+            }
+          ],
+          "signal_summary": {
+            "price_fired": true,
+            "price_tier": "major",
+            "volume_fired": false,
+            "volume_tier": null,
+            "cumulative_fired": false,
+            "major_count": 1,
+            "minor_count": 0
+          },
+          "config": {
+            "minor_signals_required_for_trigger": 2
+          },
+          "data_quality_flags": [
+            "cumulative_signal: No evaluation anchor for this ticker; signal cannot fire. Anchor will be created on next successful pipeline rerun."
+          ]
+        },
+        "EL": {
+          "ticker": "EL",
+          "computed_at": "2026-05-19T06:40:16.886182+00:00",
+          "triggered": false,
+          "trigger_path": null,
+          "fired_signals": [],
+          "signal_summary": {
+            "price_fired": false,
+            "price_tier": null,
+            "volume_fired": false,
+            "volume_tier": null,
+            "cumulative_fired": false,
+            "major_count": 0,
+            "minor_count": 0
+          },
+          "config": {
+            "minor_signals_required_for_trigger": 2
+          },
+          "data_quality_flags": [
+            "cumulative_signal: No evaluation anchor for this ticker; signal cannot fire. Anchor will be created on next successful pipeline rerun."
+          ]
+        },
+        "FICO": {
+          "ticker": "FICO",
+          "computed_at": "2026-05-19T06:40:16.886189+00:00",
+          "triggered": true,
+          "trigger_path": "major",
+          "fired_signals": [
+            {
+              "signal_type": "price",
+              "tier": "major",
+              "details": {
+                "daily_move": {
+                  "current_pct": 0.006775831229744163,
+                  "absolute_pct": 0.006775831229744163,
+                  "fired": false,
+                  "tier": null,
+                  "percentile_reached": 0.14435939730202743,
+                  "threshold_p95_abs": 8.637447394807465,
+                  "threshold_p99_abs": 12.18585790771158
+                },
+                "move_from_open": {
+                  "current_pct": 8.014007055961288,
+                  "absolute_pct": 8.014007055961288,
+                  "fired": true,
+                  "tier": "major",
+                  "threshold_minor_pct": 3.0,
+                  "threshold_major_pct": 5.0
+                }
+              }
+            }
+          ],
+          "signal_summary": {
+            "price_fired": true,
+            "price_tier": "major",
+            "volume_fired": false,
+            "volume_tier": null,
+            "cumulative_fired": false,
+            "major_count": 1,
+            "minor_count": 0
+          },
+          "config": {
+            "minor_signals_required_for_trigger": 2
+          },
+          "data_quality_flags": [
+            "cumulative_signal: No evaluation anchor for this ticker; signal cannot fire. Anchor will be created on next successful pipeline rerun."
+          ]
+        },
+        "GRMN": {
+          "ticker": "GRMN",
+          "computed_at": "2026-05-19T06:40:16.886195+00:00",
+          "triggered": false,
+          "trigger_path": null,
+          "fired_signals": [],
+          "signal_summary": {
+            "price_fired": false,
+            "price_tier": null,
+            "volume_fired": false,
+            "volume_tier": null,
+            "cumulative_fired": false,
+            "major_count": 0,
+            "minor_count": 0
+          },
+          "config": {
+            "minor_signals_required_for_trigger": 2
+          },
+          "data_quality_flags": [
+            "cumulative_signal: No evaluation anchor for this ticker; signal cannot fire. Anchor will be created on next successful pipeline rerun."
+          ]
+        },
+        "HALO": {
+          "ticker": "HALO",
+          "computed_at": "2026-05-19T06:40:16.886200+00:00",
+          "triggered": false,
+          "trigger_path": null,
+          "fired_signals": [],
+          "signal_summary": {
+            "price_fired": false,
+            "price_tier": null,
+            "volume_fired": false,
+            "volume_tier": null,
+            "cumulative_fired": false,
+            "major_count": 0,
+            "minor_count": 0
+          },
+          "config": {
+            "minor_signals_required_for_trigger": 2
+          },
+          "data_quality_flags": [
+            "cumulative_signal: No evaluation anchor for this ticker; signal cannot fire. Anchor will be created on next successful pipeline rerun."
+          ]
+        },
+        "ICE": {
+          "ticker": "ICE",
+          "computed_at": "2026-05-19T06:40:16.886204+00:00",
+          "triggered": false,
+          "trigger_path": null,
+          "fired_signals": [],
+          "signal_summary": {
+            "price_fired": false,
+            "price_tier": null,
+            "volume_fired": false,
+            "volume_tier": null,
+            "cumulative_fired": false,
+            "major_count": 0,
+            "minor_count": 0
+          },
+          "config": {
+            "minor_signals_required_for_trigger": 2
+          },
+          "data_quality_flags": [
+            "cumulative_signal: No evaluation anchor for this ticker; signal cannot fire. Anchor will be created on next successful pipeline rerun."
+          ]
+        },
+        "KTOS": {
+          "ticker": "KTOS",
+          "computed_at": "2026-05-19T06:40:16.886211+00:00",
+          "triggered": false,
+          "trigger_path": null,
+          "fired_signals": [
+            {
+              "signal_type": "price",
+              "tier": "minor",
+              "details": {
+                "daily_move": {
+                  "current_pct": 0.036887601094400174,
+                  "absolute_pct": 0.036887601094400174,
+                  "fired": false,
+                  "tier": null,
+                  "percentile_reached": 0.5361629557537939,
+                  "threshold_p95_abs": 8.495247815892952,
+                  "threshold_p99_abs": 9.608202441049052
+                },
+                "move_from_open": {
+                  "current_pct": 3.9080476737764482,
+                  "absolute_pct": 3.9080476737764482,
+                  "fired": true,
+                  "tier": "minor",
+                  "threshold_minor_pct": 3.0,
+                  "threshold_major_pct": 5.0
+                }
+              }
+            }
+          ],
+          "signal_summary": {
+            "price_fired": true,
+            "price_tier": "minor",
+            "volume_fired": false,
+            "volume_tier": null,
+            "cumulative_fired": false,
+            "major_count": 0,
+            "minor_count": 1
+          },
+          "config": {
+            "minor_signals_required_for_trigger": 2
+          },
+          "data_quality_flags": [
+            "cumulative_signal: No evaluation anchor for this ticker; signal cannot fire. Anchor will be created on next successful pipeline rerun."
+          ]
+        },
+        "MSFT": {
+          "ticker": "MSFT",
+          "computed_at": "2026-05-19T06:40:16.886216+00:00",
+          "triggered": false,
+          "trigger_path": null,
+          "fired_signals": [],
+          "signal_summary": {
+            "price_fired": false,
+            "price_tier": null,
+            "volume_fired": false,
+            "volume_tier": null,
+            "cumulative_fired": false,
+            "major_count": 0,
+            "minor_count": 0
+          },
+          "config": {
+            "minor_signals_required_for_trigger": 2
+          },
+          "data_quality_flags": [
+            "cumulative_signal: No evaluation anchor for this ticker; signal cannot fire. Anchor will be created on next successful pipeline rerun."
+          ]
+        },
+        "NEM": {
+          "ticker": "NEM",
+          "computed_at": "2026-05-19T06:40:16.886221+00:00",
+          "triggered": false,
+          "trigger_path": null,
+          "fired_signals": [],
+          "signal_summary": {
+            "price_fired": false,
+            "price_tier": null,
+            "volume_fired": false,
+            "volume_tier": null,
+            "cumulative_fired": false,
+            "major_count": 0,
+            "minor_count": 0
+          },
+          "config": {
+            "minor_signals_required_for_trigger": 2
+          },
+          "data_quality_flags": [
+            "cumulative_signal: No evaluation anchor for this ticker; signal cannot fire. Anchor will be created on next successful pipeline rerun."
+          ]
+        },
+        "QXO": {
+          "ticker": "QXO",
+          "computed_at": "2026-05-19T06:40:16.886225+00:00",
+          "triggered": false,
+          "trigger_path": null,
+          "fired_signals": [],
+          "signal_summary": {
+            "price_fired": false,
+            "price_tier": null,
+            "volume_fired": false,
+            "volume_tier": null,
+            "cumulative_fired": false,
+            "major_count": 0,
+            "minor_count": 0
+          },
+          "config": {
+            "minor_signals_required_for_trigger": 2
+          },
+          "data_quality_flags": [
+            "cumulative_signal: No evaluation anchor for this ticker; signal cannot fire. Anchor will be created on next successful pipeline rerun."
+          ]
+        },
+        "RDDT": {
+          "ticker": "RDDT",
+          "computed_at": "2026-05-19T06:40:16.886229+00:00",
+          "triggered": false,
+          "trigger_path": null,
+          "fired_signals": [],
+          "signal_summary": {
+            "price_fired": false,
+            "price_tier": null,
+            "volume_fired": false,
+            "volume_tier": null,
+            "cumulative_fired": false,
+            "major_count": 0,
+            "minor_count": 0
+          },
+          "config": {
+            "minor_signals_required_for_trigger": 2
+          },
+          "data_quality_flags": [
+            "cumulative_signal: No evaluation anchor for this ticker; signal cannot fire. Anchor will be created on next successful pipeline rerun."
+          ]
+        },
+        "TXN": {
+          "ticker": "TXN",
+          "computed_at": "2026-05-19T06:40:16.886234+00:00",
+          "triggered": false,
+          "trigger_path": null,
+          "fired_signals": [],
+          "signal_summary": {
+            "price_fired": false,
+            "price_tier": null,
+            "volume_fired": false,
+            "volume_tier": null,
+            "cumulative_fired": false,
+            "major_count": 0,
+            "minor_count": 0
+          },
+          "config": {
+            "minor_signals_required_for_trigger": 2
+          },
+          "data_quality_flags": [
+            "cumulative_signal: No evaluation anchor for this ticker; signal cannot fire. Anchor will be created on next successful pipeline rerun."
+          ]
+        },
+        "CI": {
+          "ticker": "CI",
+          "computed_at": "2026-05-19T06:40:16.886240+00:00",
+          "triggered": false,
+          "trigger_path": null,
+          "fired_signals": [],
+          "signal_summary": {
+            "price_fired": false,
+            "price_tier": null,
+            "volume_fired": false,
+            "volume_tier": null,
+            "cumulative_fired": false,
+            "major_count": 0,
+            "minor_count": 0
+          },
+          "config": {
+            "minor_signals_required_for_trigger": 2
+          },
+          "data_quality_flags": [
+            "cumulative_signal: No evaluation anchor for this ticker; signal cannot fire. Anchor will be created on next successful pipeline rerun."
+          ]
+        },
+        "VOD": {
+          "ticker": "VOD",
+          "computed_at": "2026-05-19T06:40:16.886245+00:00",
+          "triggered": false,
+          "trigger_path": null,
+          "fired_signals": [],
+          "signal_summary": {
+            "price_fired": false,
+            "price_tier": null,
+            "volume_fired": false,
+            "volume_tier": null,
+            "cumulative_fired": false,
+            "major_count": 0,
+            "minor_count": 0
+          },
+          "config": {
+            "minor_signals_required_for_trigger": 2
+          },
+          "data_quality_flags": [
+            "cumulative_signal: No evaluation anchor for this ticker; signal cannot fire. Anchor will be created on next successful pipeline rerun."
+          ]
+        }
+      },
+      "triggered_tickers": [
+        "NOW",
+        "ALAB",
+        "FICO"
+      ],
+      "summary": {
+        "tickers_total": 32,
+        "tickers_triggered": 3,
+        "tickers_by_path": {
+          "major": 2,
+          "minor_corroboration": 1,
+          "cumulative": 0
+        }
+      }
+    }
+  },
+  "gate0_results": {
+    "computed_at": "2026-05-19T06:40:16.886661+00:00",
+    "decisions": {
+      "NOW": {
+        "ticker": "NOW",
+        "computed_at": "2026-05-19T06:40:16.886677+00:00",
+        "action": "investigate",
+        "rationale": "Trigger included non-price signals (['price', 'volume']); Gate 0 only applies to pure price triggers. Escalating to Call 1.",
+        "details": {
+          "actual_move_pct": null,
+          "market_beta": null,
+          "sector_beta": null,
+          "sector_etf_symbol": null,
+          "spy_move_pct": null,
+          "sector_move_pct": null,
+          "expected_move_from_market_pct": null,
+          "expected_move_from_sector_pct": null,
+          "expected_move_pct": null,
+          "residual_move_pct": null,
+          "residual_volatility": null,
+          "skip_threshold_pct": null,
+          "sigma_multiple": 2.0
+        },
+        "data_quality_flags": []
+      },
+      "ALAB": {
+        "ticker": "ALAB",
+        "computed_at": "2026-05-19T06:40:16.886699+00:00",
+        "action": "skip",
+        "rationale": "Residual move (-8.69%) is below threshold (8.92% = 2.0σ × 4.46% residual stddev). Move appears explained by broader market/sector context.",
+        "details": {
+          "actual_move_pct": -8.725713301886213,
+          "market_beta": 2.5456846085404394,
+          "sector_beta": 1.9932674062483609,
+          "sector_etf_symbol": "XLK",
+          "spy_move_pct": -0.012188025789366787,
+          "sector_move_pct": 0.0114729710890755,
+          "expected_move_from_market_pct": -0.03102686966048497,
+          "expected_move_from_sector_pct": 0.022868699324683956,
+          "expected_move_pct": -0.03102686966048497,
+          "residual_move_pct": -8.694686432225728,
+          "residual_volatility": 4.462085944225439,
+          "skip_threshold_pct": 8.924171888450878,
+          "sigma_multiple": 2.0
+        },
+        "data_quality_flags": []
+      },
+      "FICO": {
+        "ticker": "FICO",
+        "computed_at": "2026-05-19T06:40:16.886730+00:00",
+        "action": "skip",
+        "rationale": "Residual move (+8.01%) is below threshold (8.51% = 2.0σ × 4.25% residual stddev). Move appears explained by broader market/sector context.",
+        "details": {
+          "actual_move_pct": 8.014007055961288,
+          "market_beta": 0.3748108968389962,
+          "sector_beta": 0.03476848092548745,
+          "sector_etf_symbol": "XLK",
+          "spy_move_pct": -0.012188025789366787,
+          "sector_move_pct": 0.0114729710890755,
+          "expected_move_from_market_pct": -0.0045682048768093805,
+          "expected_move_from_sector_pct": 0.0003988977764691905,
+          "expected_move_pct": 0.0045682048768093805,
+          "residual_move_pct": 8.009438851084479,
+          "residual_volatility": 4.253471089682991,
+          "skip_threshold_pct": 8.506942179365982,
+          "sigma_multiple": 2.0
+        },
+        "data_quality_flags": []
+      }
+    },
+    "summary": {
+      "tickers_evaluated": 3,
+      "tickers_skipped": 2,
+      "tickers_to_investigate": 1,
+      "tickers_bypassed_to_investigate": 1
+    }
+  },
+  "llm_results": {
+    "per_ticker_results": {
+      "NOW": {
+        "call_one": {
+          "ticker": "NOW",
+          "investigation": {
+            "ticker": "NOW",
+            "investigation_summary": "On May 18, 2026, ServiceNow shares closed at $103.42, up 4.6% from the open of $98.86, on volume of roughly 50.3 million shares—well above the 34.3 million shares traded on May 15 **(Yahoo Finance historical data, May 18 2026)**. The move was catalyzed by Bank of America analyst Tal Liani reinstating coverage with a Buy rating and a $130 price target **(Yahoo Finance, May 18 2026)** **(MarketWatch/Benzinga, May 18 2026)**. In his note, Liani argued that ServiceNow occupies a deeply embedded, mission-critical position across enterprise workflows, acting as connective tissue that makes displacement by AI agents costly and complex; he projected revenue growth of 18% to 22% through 2028 and free cash flow margins of 35% to 37% **(Motley Fool, May 18 2026)**. The rally also coincided with directionally bullish options call activity noted during the session **(TipRanks via CNN, May 18 2026)**. The stock had already begun the week on firmer footing after ServiceNow completed a $4 billion multi-tranche debt offering on May 15, issuing notes maturing between 2028 and 2056 **(The Globe and Mail press release, May 17 2026)**. The BofA endorsement directly addresses the central debate in the existing investment thesis—whether ServiceNow is the essential governance layer for enterprise AI or a disrupted legacy incumbent—by explicitly endorsing the former. However, the note does not provide new fundamental data on billings, cRPO, or margins; it is primarily a narrative and sentiment validation. Consequently, while the price action reflects fresh institutional confidence in the AI bull case, it does not resolve the thesis's unresolved questions around organic deceleration, Armis-related margin pressure, or the company's newly leveraged balance sheet.",
+            "established_facts": [
+              "ServiceNow closed at $103.42 on May 18, 2026, up from an open of $98.86, a 4.6% intraday gain **(Yahoo Finance historical data, May 18 2026)**.",
+              "Trading volume on May 18, 2026 was approximately 50.3 million shares, compared with 34.3 million on May 15, 2026 **(Yahoo Finance historical data, May 18 2026)**.",
+              "Bank of America analyst Tal Liani reinstated coverage of ServiceNow with a Buy rating and $130 price target on May 18, 2026 **(Yahoo Finance, May 18 2026)** **(MarketWatch/Benzinga, May 18 2026)**.",
+              "Liani wrote that ServiceNow's software suite occupies a deeply embedded mission-critical position within enterprise workflows, acting as connective tissue that makes displacement costly and complex **(Motley Fool, May 18 2026)**.",
+              "Liani projected ServiceNow can grow revenue 18% to 22% through 2028 while maintaining free cash flow margins of 35% to 37% **(Motley Fool, May 18 2026)**.",
+              "Directionally bullish call volume in ServiceNow was noted as above normal on May 18, 2026 **(TipRanks via CNN, May 18 2026)**.",
+              "ServiceNow completed a $4 billion multi-tranche debt offering on May 15, 2026 **(The Globe and Mail press release, May 17 2026)**."
+            ],
+            "candidate_causes": [
+              {
+                "cause": "BofA coverage reinstatement validating AI beneficiary narrative",
+                "supporting_evidence": "Tal Liani initiated coverage with Buy/$130 target on May 18, explicitly arguing ServiceNow is a survivor of AI disruption due to its embedded workflow position, projecting 18-22% revenue growth through 2028. The stock gapped up at the open and rallied to $103.42 on volume roughly 1.5x the prior session **(Yahoo Finance, Motley Fool, MarketWatch, May 18 2026)**.",
+                "confidence": "high",
+                "time_horizon": "hours"
+              },
+              {
+                "cause": "Follow-through from recent balance sheet and partnership developments",
+                "supporting_evidence": "ServiceNow completed a $4 billion debt offering on May 15, removing near-term refinancing uncertainty, and announced an Experian partnership on May 14 to scale agentic AI decision making **(The Globe and Mail, May 17 2026; TipRanks, May 14 2026)**. These events may have primed sentiment, though they alone do not explain the specific timing and magnitude of the May 18 move.",
+                "confidence": "medium",
+                "time_horizon": "days"
+              }
+            ],
+            "relationship_to_existing_thesis": "The BofA note is NEW INFORMATION that directly validates the bull-case narrative contemplated in the Stage 3 thesis—specifically, that ServiceNow could become the indispensable governance and orchestration layer for enterprise AI. The thesis identified this as the central binary debate and noted that a re-rating could occur if the market accepts this positioning. Liani's explicit endorsement that ServiceNow is 'likely a survivor' and 'beneficiary' of AI, rather than a victim, provides third-party institutional validation for this narrative. However, it does not resolve the load-bearing fundamental concerns highlighted in the thesis: the durability of organic growth, the trajectory of billings/cRPO, the margin impact from Armis integration, or the leveraged balance sheet. The $4 billion debt offering completed May 15 is consistent with the thesis's concern about leverage but provides clarity on refinancing. Overall, the signal represents a narrative catalyst rather than a fundamental data revision.",
+            "sources_consulted": [
+              {
+                "url": "https://finance.yahoo.com/quote/NOW/history/",
+                "publisher": "Yahoo Finance",
+                "date": "2026-05-18",
+                "credibility": "*"
+              },
+              {
+                "url": "https://marketchameleon.com/Overview/NOW",
+                "publisher": "Market Chameleon",
+                "date": "2026-05-18",
+                "credibility": "*"
+              },
+              {
+                "url": "https://finance.yahoo.com/markets/stocks/articles/bofa-reinstates-servicenow-buy-workflow-152516068.html",
+                "publisher": "Yahoo Finance",
+                "date": "2026-05-18",
+                "credibility": "*"
+              },
+              {
+                "url": "https://www.marketwatch.com/investing/stock/now",
+                "publisher": "MarketWatch / Benzinga",
+                "date": "2026-05-18",
+                "credibility": "**"
+              },
+              {
+                "url": "https://www.fool.com/investing/2026/05/18/why-servicenow-rallied-today-even-as-tech-stocks-f/",
+                "publisher": "Motley Fool",
+                "date": "2026-05-18",
+                "credibility": "*"
+              },
+              {
+                "url": "https://seekingalpha.com/news/4594353-servicenow-in-focus-as-bofa-restarts-coverage-with-buy-rating",
+                "publisher": "Seeking Alpha",
+                "date": "2026-05-18",
+                "credibility": "*"
+              },
+              {
+                "url": "https://www.cnn.com/markets/stocks/NOW",
+                "publisher": "CNN / TipRanks",
+                "date": "2026-05-18",
+                "credibility": "*"
+              },
+              {
+                "url": "https://www.theglobeandmail.com/investing/markets/stocks/NOW/pressreleases/1978365/servicenow-completes-4-billion-multi-tranche-debt-offering/",
+                "publisher": "The Globe and Mail (press release)",
+                "date": "2026-05-17",
+                "credibility": "***"
+              }
+            ],
+            "search_queries_used": [
+              "ServiceNow NOW stock news May 18 2026",
+              "Bank of America BofA resumes ServiceNow coverage Buy $130 May 18 2026",
+              "Tal Liani BofA ServiceNow Buy agentic AI workflow May 18 2026",
+              "ServiceNow $4 billion debt offering May 15 2026",
+              "ServiceNow NOW volume May 18 2026 47 million"
+            ],
+            "investigation_confidence": "high",
+            "ambiguity_notes": ""
+          },
+          "raw_response": "```json\n{\n  \"ticker\": \"NOW\",\n  \"investigation_summary\": \"On May 18, 2026, ServiceNow shares closed at $103.42, up 4.6% from the open of $98.86, on volume of roughly 50.3 million shares—well above the 34.3 million shares traded on May 15 **(Yahoo Finance historical data, May 18 2026)**. The move was catalyzed by Bank of America analyst Tal Liani reinstating coverage with a Buy rating and a $130 price target **(Yahoo Finance, May 18 2026)** **(MarketWatch/Benzinga, May 18 2026)**. In his note, Liani argued that ServiceNow occupies a deeply embedded, mission-critical position across enterprise workflows, acting as connective tissue that makes displacement by AI agents costly and complex; he projected revenue growth of 18% to 22% through 2028 and free cash flow margins of 35% to 37% **(Motley Fool, May 18 2026)**. The rally also coincided with directionally bullish options call activity noted during the session **(TipRanks via CNN, May 18 2026)**. The stock had already begun the week on firmer footing after ServiceNow completed a $4 billion multi-tranche debt offering on May 15, issuing notes maturing between 2028 and 2056 **(The Globe and Mail press release, May 17 2026)**. The BofA endorsement directly addresses the central debate in the existing investment thesis—whether ServiceNow is the essential governance layer for enterprise AI or a disrupted legacy incumbent—by explicitly endorsing the former. However, the note does not provide new fundamental data on billings, cRPO, or margins; it is primarily a narrative and sentiment validation. Consequently, while the price action reflects fresh institutional confidence in the AI bull case, it does not resolve the thesis's unresolved questions around organic deceleration, Armis-related margin pressure, or the company's newly leveraged balance sheet.\",\n  \"established_facts\": [\n    \"ServiceNow closed at $103.42 on May 18, 2026, up from an open of $98.86, a 4.6% intraday gain **(Yahoo Finance historical data, May 18 2026)**.\",\n    \"Trading volume on May 18, 2026 was approximately 50.3 million shares, compared with 34.3 million on May 15, 2026 **(Yahoo Finance historical data, May 18 2026)**.\",\n    \"Bank of America analyst Tal Liani reinstated coverage of ServiceNow with a Buy rating and $130 price target on May 18, 2026 **(Yahoo Finance, May 18 2026)** **(MarketWatch/Benzinga, May 18 2026)**.\",\n    \"Liani wrote that ServiceNow's software suite occupies a deeply embedded mission-critical position within enterprise workflows, acting as connective tissue that makes displacement costly and complex **(Motley Fool, May 18 2026)**.\",\n    \"Liani projected ServiceNow can grow revenue 18% to 22% through 2028 while maintaining free cash flow margins of 35% to 37% **(Motley Fool, May 18 2026)**.\",\n    \"Directionally bullish call volume in ServiceNow was noted as above normal on May 18, 2026 **(TipRanks via CNN, May 18 2026)**.\",\n    \"ServiceNow completed a $4 billion multi-tranche debt offering on May 15, 2026 **(The Globe and Mail press release, May 17 2026)**.\"\n  ],\n  \"candidate_causes\": [\n    {\n      \"cause\": \"BofA coverage reinstatement validating AI beneficiary narrative\",\n      \"supporting_evidence\": \"Tal Liani initiated coverage with Buy/$130 target on May 18, explicitly arguing ServiceNow is a survivor of AI disruption due to its embedded workflow position, projecting 18-22% revenue growth through 2028. The stock gapped up at the open and rallied to $103.42 on volume roughly 1.5x the prior session **(Yahoo Finance, Motley Fool, MarketWatch, May 18 2026)**.\",\n      \"confidence\": \"high\",\n      \"time_horizon\": \"hours\"\n    },\n    {\n      \"cause\": \"Follow-through from recent balance sheet and partnership developments\",\n      \"supporting_evidence\": \"ServiceNow completed a $4 billion debt offering on May 15, removing near-term refinancing uncertainty, and announced an Experian partnership on May 14 to scale agentic AI decision making **(The Globe and Mail, May 17 2026; TipRanks, May 14 2026)**. These events may have primed sentiment, though they alone do not explain the specific timing and magnitude of the May 18 move.\",\n      \"confidence\": \"medium\",\n      \"time_horizon\": \"days\"\n    }\n  ],\n  \"relationship_to_existing_thesis\": \"The BofA note is NEW INFORMATION that directly validates the bull-case narrative contemplated in the Stage 3 thesis—specifically, that ServiceNow could become the indispensable governance and orchestration layer for enterprise AI. The thesis identified this as the central binary debate and noted that a re-rating could occur if the market accepts this positioning. Liani's explicit endorsement that ServiceNow is 'likely a survivor' and 'beneficiary' of AI, rather than a victim, provides third-party institutional validation for this narrative. However, it does not resolve the load-bearing fundamental concerns highlighted in the thesis: the durability of organic growth, the trajectory of billings/cRPO, the margin impact from Armis integration, or the leveraged balance sheet. The $4 billion debt offering completed May 15 is consistent with the thesis's concern about leverage but provides clarity on refinancing. Overall, the signal represents a narrative catalyst rather than a fundamental data revision.\",\n  \"sources_consulted\": [\n    {\"url\": \"https://finance.yahoo.com/quote/NOW/history/\", \"publisher\": \"Yahoo Finance\", \"date\": \"2026-05-18\", \"credibility\": \"*\"},\n    {\"url\": \"https://marketchameleon.com/Overview/NOW\", \"publisher\": \"Market Chameleon\", \"date\": \"2026-05-18\", \"credibility\": \"*\"},\n    {\"url\": \"https://finance.yahoo.com/markets/stocks/articles/bofa-reinstates-servicenow-buy-workflow-152516068.html\", \"publisher\": \"Yahoo Finance\", \"date\": \"2026-05-18\", \"credibility\": \"*\"},\n    {\"url\": \"https://www.marketwatch.com/investing/stock/now\", \"publisher\": \"MarketWatch / Benzinga\", \"date\": \"2026-05-18\", \"credibility\": \"**\"},\n    {\"url\": \"https://www.fool.com/investing/2026/05/18/why-servicenow-rallied-today-even-as-tech-stocks-f/\", \"publisher\": \"Motley Fool\", \"date\": \"2026-05-18\", \"credibility\": \"*\"},\n    {\"url\": \"https://seekingalpha.com/news/4594353-servicenow-in-focus-as-bofa-restarts-coverage-with-buy-rating\", \"publisher\": \"Seeking Alpha\", \"date\": \"2026-05-18\", \"credibility\": \"*\"},\n    {\"url\": \"https://www.cnn.com/markets/stocks/NOW\", \"publisher\": \"CNN / TipRanks\", \"date\": \"2026-05-18\", \"credibility\": \"*\"},\n    {\"url\": \"https://www.theglobeandmail.com/investing/markets/stocks/NOW/pressreleases/1978365/servicenow-completes-4-billion-multi-tranche-debt-offering/\", \"publisher\": \"The Globe and Mail (press release)\", \"date\": \"2026-05-17\", \"credibility\": \"***\"}\n  ],\n  \"search_queries_used\": [\n    \"ServiceNow NOW stock news May 18 2026\",\n    \"Bank of America BofA resumes ServiceNow coverage Buy $130 May 18 2026\",\n    \"Tal Liani BofA ServiceNow Buy agentic AI workflow May 18 2026\",\n    \"ServiceNow $4 billion debt offering May 15 2026\",\n    \"ServiceNow NOW volume May 18 2026 47 million\"\n  ],\n  \"investigation_confidence\": \"high\",\n  \"ambiguity_notes\": \"\"\n}\n```",
+          "validation_violations": [],
+          "web_search_calls_made": 7,
+          "web_search_cap_reached": false,
+          "token_usage": {
+            "input_tokens": 48277,
+            "output_tokens": 7488,
+            "total_tokens": 55765
+          },
+          "model": "kimi-k2.6",
+          "status": "ok",
+          "error": null
+        },
+        "call_two": {
+          "ticker": "NOW",
+          "decision": {
+            "ticker": "NOW",
+            "rerun_decision": false,
+            "rationale": "Call 1 identifies a 4.6% intraday move to $103.42 on elevated volume, catalyzed by Bank of America reinstating coverage with a Buy rating and $130 price target (** MarketWatch/Benzinga, May 18 2026). However, the note’s substantive arguments—that ServiceNow occupies an embedded, mission-critical workflow position and is an AI survivor rather than a victim (* Motley Fool, May 18 2026)—do not constitute new material facts. They validate the central bull-case narrative explicitly contemplated in the existing May 11 thesis, which already identified the binary debate over whether ServiceNow would become the ‘indispensable governance and orchestration layer for enterprise AI’ and noted that a re-rating could occur if the market accepts this positioning. An analyst endorsement, even from a major institution, does not resolve the load-bearing fundamental uncertainties around billings, cRPO, or margin trajectory that the thesis flagged as unresolved.\n\nThe $4 billion debt offering completed on May 15 (*** The Globe and Mail press release, May 17 2026) is a post-thesis factual development, but it is consistent with the thesis’s existing framework rather than a challenge to its structural assumptions. The thesis already accounted for a leveraged balance sheet and refinancing risk; completing the offering provides clarity on near-term funding but does not alter the structural concern that free cash flow may be diverted from buybacks to deleveraging. Call 1 itself concludes that the overall signal is a ‘narrative catalyst rather than a fundamental data revision’ and that it does not resolve the bearish concerns around organic deceleration or Armis-related margin pressure.\n\nThe cumulative price move from the $91.18 anchor to the ~$103.42 level is approximately 13.4%, which remains below the 15% threshold where scenario projections would be considered stale purely on price. Given that the high-confidence investigation finds no new primary-source data on fundamentals, that the key drivers are either anticipated balance-sheet events or sentiment validation already priced into the thesis’s scenario tree, and that the sources for the most consequential claims are weak (*), the evidence does not clearly warrant the financial and operational cost of a pipeline rerun.",
+            "thesis_elements_touched": [
+              "AI governance layer narrative / positioning as essential semantic layer",
+              "Balance sheet leverage and refinancing risk"
+            ],
+            "evidence_strength": "medium",
+            "key_facts_relied_on": [
+              "Bank of America analyst Tal Liani reinstated coverage of ServiceNow with a Buy rating and $130 price target on May 18, 2026 (** MarketWatch/Benzinga, May 18 2026)",
+              "Liani wrote that ServiceNow's software suite occupies a deeply embedded mission-critical position within enterprise workflows, acting as connective tissue that makes displacement costly and complex (* Motley Fool, May 18 2026)",
+              "Liani projected ServiceNow can grow revenue 18% to 22% through 2028 while maintaining free cash flow margins of 35% to 37% (* Motley Fool, May 18 2026)",
+              "ServiceNow completed a $4 billion multi-tranche debt offering on May 15, 2026 (*** The Globe and Mail press release, May 17 2026)"
+            ],
+            "uncertainty_acknowledged": "While the BofA endorsement and $130 price target could accelerate a narrative re-rating, the existing thesis already assigned probability mass to this bull-case outcome, and the investigation provides no new fundamental data to shift those probabilities materially. The 13.4% price move is material but not yet above the stale-thesis threshold.",
+            "considered_alternative": "The case for rerun rests on the arrival of high-profile institutional validation (BofA) that could trigger the exact narrative re-rating the thesis identified as a 25% probability bull case, combined with the removal of near-term refinancing uncertainty via the completed debt offering. A rerun might capture updated sentiment and re-weight scenario probabilities toward a faster re-rating. However, because this is analyst sentiment rather than new fundamental evidence, and the thesis already explicitly contemplated this path, a rerun would likely retread existing assumptions without new load-bearing data."
+          },
+          "raw_response": "```json\n{\n  \"ticker\": \"NOW\",\n  \"rerun_decision\": false,\n  \"rationale\": \"Call 1 identifies a 4.6% intraday move to $103.42 on elevated volume, catalyzed by Bank of America reinstating coverage with a Buy rating and $130 price target (** MarketWatch/Benzinga, May 18 2026). However, the note’s substantive arguments—that ServiceNow occupies an embedded, mission-critical workflow position and is an AI survivor rather than a victim (* Motley Fool, May 18 2026)—do not constitute new material facts. They validate the central bull-case narrative explicitly contemplated in the existing May 11 thesis, which already identified the binary debate over whether ServiceNow would become the ‘indispensable governance and orchestration layer for enterprise AI’ and noted that a re-rating could occur if the market accepts this positioning. An analyst endorsement, even from a major institution, does not resolve the load-bearing fundamental uncertainties around billings, cRPO, or margin trajectory that the thesis flagged as unresolved.\\n\\nThe $4 billion debt offering completed on May 15 (*** The Globe and Mail press release, May 17 2026) is a post-thesis factual development, but it is consistent with the thesis’s existing framework rather than a challenge to its structural assumptions. The thesis already accounted for a leveraged balance sheet and refinancing risk; completing the offering provides clarity on near-term funding but does not alter the structural concern that free cash flow may be diverted from buybacks to deleveraging. Call 1 itself concludes that the overall signal is a ‘narrative catalyst rather than a fundamental data revision’ and that it does not resolve the bearish concerns around organic deceleration or Armis-related margin pressure.\\n\\nThe cumulative price move from the $91.18 anchor to the ~$103.42 level is approximately 13.4%, which remains below the 15% threshold where scenario projections would be considered stale purely on price. Given that the high-confidence investigation finds no new primary-source data on fundamentals, that the key drivers are either anticipated balance-sheet events or sentiment validation already priced into the thesis’s scenario tree, and that the sources for the most consequential claims are weak (*), the evidence does not clearly warrant the financial and operational cost of a pipeline rerun.\",\n  \"thesis_elements_touched\": [\n    \"AI governance layer narrative / positioning as essential semantic layer\",\n    \"Balance sheet leverage and refinancing risk\"\n  ],\n  \"evidence_strength\": \"medium\",\n  \"key_facts_relied_on\": [\n    \"Bank of America analyst Tal Liani reinstated coverage of ServiceNow with a Buy rating and $130 price target on May 18, 2026 (** MarketWatch/Benzinga, May 18 2026)\",\n    \"Liani wrote that ServiceNow's software suite occupies a deeply embedded mission-critical position within enterprise workflows, acting as connective tissue that makes displacement costly and complex (* Motley Fool, May 18 2026)\",\n    \"Liani projected ServiceNow can grow revenue 18% to 22% through 2028 while maintaining free cash flow margins of 35% to 37% (* Motley Fool, May 18 2026)\",\n    \"ServiceNow completed a $4 billion multi-tranche debt offering on May 15, 2026 (*** The Globe and Mail press release, May 17 2026)\"\n  ],\n  \"uncertainty_acknowledged\": \"While the BofA endorsement and $130 price target could accelerate a narrative re-rating, the existing thesis already assigned probability mass to this bull-case outcome, and the investigation provides no new fundamental data to shift those probabilities materially. The 13.4% price move is material but not yet above the stale-thesis threshold.\",\n  \"considered_alternative\": \"The case for rerun rests on the arrival of high-profile institutional validation (BofA) that could trigger the exact narrative re-rating the thesis identified as a 25% probability bull case, combined with the removal of near-term refinancing uncertainty via the completed debt offering. A rerun might capture updated sentiment and re-weight scenario probabilities toward a faster re-rating. However, because this is analyst sentiment rather than new fundamental evidence, and the thesis already explicitly contemplated this path, a rerun would likely retread existing assumptions without new load-bearing data.\"\n}\n```",
+          "validation_violations": [],
+          "token_usage": {
+            "input_tokens": 4670,
+            "output_tokens": 6181,
+            "total_tokens": 10851
+          },
+          "model": "kimi-k2.6",
+          "status": "ok",
+          "error": null
+        },
+        "rerun_decision": false
+      }
+    },
+    "summary": {
+      "tickers_to_investigate": 1,
+      "call_one_succeeded": 1,
+      "call_one_failed": 0,
+      "call_two_succeeded": 1,
+      "call_two_failed": 0,
+      "rerun_yes": 0,
+      "rerun_no": 1,
+      "skipped_no_llm": 0,
+      "total_input_tokens": 52947,
+      "total_output_tokens": 13669
+    }
+  },
+  "pipeline_invocation": {
+    "status": "no_reruns"
+  },
+  "ended_at": "2026-05-19T06:45:13.234576+00:00",
+  "duration_seconds": 302.767977
+}

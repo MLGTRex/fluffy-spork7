@@ -1,0 +1,193 @@
+{
+    "ticker": "DVA",
+    "company_name": "DaVita",
+    "universe_added_date": "2026-05-18",
+    "financial_raw_metrics": {
+        "sector": "Healthcare",
+        "industry": "Medical Care Facilities",
+        "market_cap_usd": 12820312064,
+        "profitability": {
+            "gross_margin_ttm": 0.32454,
+            "operating_margin_ttm": 0.13864,
+            "net_margin_ttm": 0.056479998,
+            "operating_margin_trend_3yr": 0.03431888758063725
+        },
+        "returns_on_capital": {
+            "roe_ttm": 0.80981004,
+            "roa_ttm": 0.07496,
+            "roic_ttm": null
+        },
+        "cash_flow": {
+            "fcf_margin_ttm": 0.07225562896663328,
+            "fcf_to_net_income_ttm": 1.3215783061172688,
+            "ocf_cagr_3yr": 0.06435687642476107
+        },
+        "balance_sheet": {
+            "debt_to_equity": 12.613309999999998,
+            "net_debt_to_ebitda": 4.495298771507375,
+            "current_ratio": 1.417,
+            "interest_coverage": 3.322404927525236,
+            "total_debt_usd": 13220841472,
+            "total_cash_usd": 666545984
+        },
+        "growth": {
+            "revenue_growth_1yr": 0.06,
+            "revenue_cagr_3yr": 0.055264367135682946,
+            "eps_growth_1yr": 0.435,
+            "eps_cagr_3yr": 0.10044745178655523,
+            "fcf_cagr_3yr": 0.10891518288924917
+        },
+        "valuation": {
+            "pe_trailing": 19.224255,
+            "pe_forward": 11.625173,
+            "ps_ratio": 0.926652,
+            "pb_ratio": -17.49803,
+            "ev_ebitda": 9.733,
+            "peg_ratio": 0.6167,
+            "fcf_yield": 0.0779749331381018
+        },
+        "data_quality_flags": [
+            "DVA: eps_cagr_3yr approximated by net income CAGR (share count changes not adjusted)"
+        ]
+    },
+    "financial_raw_metrics_date": "2026-05-18",
+    "financial_score": 57.966615764047,
+    "financial_score_date": "2026-05-18",
+    "financial_subscores": {
+        "profitability": 51.03815137732753,
+        "returns_on_capital": 71.59148975151999,
+        "cash_flow_quality": 60.66317415122286,
+        "balance_sheet": 27.85441968299147,
+        "growth": 60.72776421708819,
+        "valuation": 73.69255887054749
+    },
+    "financial_drivers": {
+        "strongest": [
+            "eps_growth_1yr (growth): score=97, value=43.5%",
+            "peg_ratio (valuation): score=92, value=61.7%",
+            "fcf_yield (valuation): score=92, value=7.8%"
+        ],
+        "weakest": [
+            "debt_to_equity (balance_sheet): score=0, value=12.61",
+            "net_debt_to_ebitda (balance_sheet): score=20, value=4.50",
+            "gross_margin_ttm (profitability): score=35, value=32.5%"
+        ]
+    },
+    "professional_raw_metrics": {
+        "sector": "Healthcare",
+        "industry": "Medical Care Facilities",
+        "market_cap_usd": 12820312064,
+        "current_price": 199.74,
+        "analyst": {
+            "recommendation_mean": 2.75,
+            "recommendation_key": "hold",
+            "target_mean_price": 193.7143,
+            "target_median_price": 201.0,
+            "target_high_price": 235.0,
+            "target_low_price": 145.0,
+            "upside_to_target": -0.030167718033443477,
+            "target_dispersion": 0.46460173564883955,
+            "num_analysts": 7
+        },
+        "rating_momentum": {
+            "upgrades_12m": 1,
+            "downgrades_12m": 0,
+            "total_actions_12m": 13
+        },
+        "institutional": {
+            "held_pct_institutions": 0.52201,
+            "held_pct_insiders": 0.50573003
+        },
+        "short_interest": {
+            "short_pct_of_float": 0.1807,
+            "short_ratio": 9.59,
+            "short_change_pct": 0.011033340530818581
+        },
+        "data_quality_flags": []
+    },
+    "professional_raw_metrics_date": "2026-05-18",
+    "professional_score": 46.1610392621204,
+    "professional_score_date": "2026-05-18",
+    "professional_subscores": {
+        "analyst_consensus": 33.98322819665565,
+        "rating_momentum": 57.34615384615385,
+        "institutional_positioning": 66.32568931705418,
+        "short_interest": 22.326324016592732
+    },
+    "professional_drivers": {
+        "strongest": [
+            "held_pct_insiders (institutional_positioning): score=100, value=50.6%",
+            "total_actions_12m (rating_momentum): score=57, value=13.00",
+            "downgrades_12m (rating_momentum): score=57, value=0.00"
+        ],
+        "weakest": [
+            "short_pct_of_float (short_interest): score=12, value=18.1%",
+            "upside_to_target (analyst_consensus): score=17, value=-3.0%",
+            "short_ratio (short_interest): score=22, value=9.59"
+        ]
+    },
+    "news_sentiment_raw_metrics": {
+        "sector": "Healthcare",
+        "industry": "Medical Care Facilities",
+        "market_cap_usd": 12820312064,
+        "current_price": 199.74,
+        "earnings": {
+            "beat_count_4q": 3,
+            "miss_count_4q": 1,
+            "total_quarters_4q": 4,
+            "avg_surprise_magnitude_4q": 0.040528939409572154,
+            "eps_estimate_revision_90d": null,
+            "trailing_eps": 10.39,
+            "forward_eps": 17.18168
+        },
+        "price_momentum": {
+            "return_1m": 0.3816143728349873,
+            "return_3m": 0.3318663624337306,
+            "return_6m": 0.6232425440573498
+        },
+        "insider_activity": {
+            "insider_purchases_count_90d": 0,
+            "insider_sales_count_90d": 4,
+            "insider_net_value_90d_usd": -197223866.0
+        },
+        "data_quality_flags": []
+    },
+    "news_sentiment_raw_metrics_date": "2026-05-18",
+    "news_sentiment_score": 69.12574825319128,
+    "news_sentiment_score_date": "2026-05-18",
+    "news_sentiment_subscores": {
+        "earnings_surprise_revisions": 72.8143706329782,
+        "price_momentum": 100.0,
+        "insider_activity": 0.0
+    },
+    "news_sentiment_drivers": {
+        "strongest": [
+            "return_6m (price_momentum): score=100, value=62.3%",
+            "return_3m (price_momentum): score=100, value=33.2%",
+            "return_1m (price_momentum): score=100, value=38.2%"
+        ],
+        "weakest": [
+            "net_insider_value_pct_mcap_90d (insider_activity): score=0, value=-1.5%",
+            "insider_count_ratio_90d (insider_activity): score=0, value=-1.00",
+            "avg_surprise_magnitude_4q (earnings_surprise_revisions): score=70, value=4.1%"
+        ]
+    },
+    "composite_score": 56.65676931129788,
+    "composite_score_date": "2026-05-18",
+    "composite_rank": 375,
+    "composite_metadata": {
+        "scores_used": [
+            "financial",
+            "professional",
+            "news_sentiment"
+        ],
+        "scores_imputed": [],
+        "imputed_values": {},
+        "imputation_r_squared": null,
+        "weights_applied": {
+            "financial": 50,
+            "professional": 30,
+            "news_sentiment": 20
+        }
+    }
+}

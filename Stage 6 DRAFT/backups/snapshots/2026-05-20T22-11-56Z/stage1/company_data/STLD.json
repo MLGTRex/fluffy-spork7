@@ -1,0 +1,195 @@
+{
+    "ticker": "STLD",
+    "company_name": "Steel Dynamics",
+    "universe_added_date": "2026-05-18",
+    "financial_raw_metrics": {
+        "sector": "Basic Materials",
+        "industry": "Steel",
+        "market_cap_usd": 33073760256,
+        "profitability": {
+            "gross_margin_ttm": 0.14038,
+            "operating_margin_ttm": 0.103369996,
+            "net_margin_ttm": 0.07216,
+            "operating_margin_trend_3yr": -0.16109590111364913
+        },
+        "returns_on_capital": {
+            "roe_ttm": 0.15247,
+            "roa_ttm": 0.06657,
+            "roic_ttm": null
+        },
+        "cash_flow": {
+            "fcf_margin_ttm": -0.001672021298989198,
+            "fcf_to_net_income_ttm": -0.023171762459539315,
+            "ocf_cagr_3yr": -0.3124808979828446
+        },
+        "balance_sheet": {
+            "debt_to_equity": 0.45994,
+            "net_debt_to_ebitda": 1.5736803082223203,
+            "current_ratio": 3.13,
+            "interest_coverage": 22.315063603786246,
+            "total_debt_usd": 4200793088,
+            "total_cash_usd": 556526976
+        },
+        "growth": {
+            "revenue_growth_1yr": 0.191,
+            "revenue_cagr_3yr": -0.06533213396467008,
+            "eps_growth_1yr": 0.931,
+            "eps_cagr_3yr": -0.32544696455957123,
+            "fcf_cagr_3yr": -0.47925841179486184
+        },
+        "valuation": {
+            "pe_trailing": 24.554604,
+            "pe_forward": 13.614124,
+            "ps_ratio": 1.7396033,
+            "pb_ratio": 3.7110631,
+            "ev_ebitda": 15.842,
+            "peg_ratio": 11.95,
+            "fcf_yield": -0.0009611509472749805
+        },
+        "data_quality_flags": [
+            "STLD: eps_cagr_3yr approximated by net income CAGR (share count changes not adjusted)"
+        ]
+    },
+    "financial_raw_metrics_date": "2026-05-18",
+    "financial_score": 41.64828025378369,
+    "financial_score_date": "2026-05-18",
+    "financial_subscores": {
+        "profitability": 33.923934859934455,
+        "returns_on_capital": 56.336535057847115,
+        "cash_flow_quality": 4.916398935050539,
+        "balance_sheet": 88.43070753422144,
+        "growth": 24.900071962119796,
+        "valuation": 39.0607300367907
+    },
+    "financial_drivers": {
+        "strongest": [
+            "eps_growth_1yr (growth): score=100, value=93.1%",
+            "interest_coverage (balance_sheet): score=100, value=22.32",
+            "current_ratio (balance_sheet): score=97, value=3.13"
+        ],
+        "weakest": [
+            "fcf_to_net_income_ttm (cash_flow_quality): score=0, value=-2.3%",
+            "ocf_cagr_3yr (cash_flow_quality): score=0, value=-31.2%",
+            "eps_cagr_3yr (growth): score=0, value=-32.5%"
+        ]
+    },
+    "professional_raw_metrics": {
+        "sector": "Basic Materials",
+        "industry": "Steel",
+        "market_cap_usd": 33073760256,
+        "current_price": 229.34,
+        "analyst": {
+            "recommendation_mean": 2.0,
+            "recommendation_key": "buy",
+            "target_mean_price": 238.81818,
+            "target_median_price": 240.0,
+            "target_high_price": 265.0,
+            "target_low_price": 210.0,
+            "upside_to_target": 0.041328071858376246,
+            "target_dispersion": 0.23030072501180604,
+            "num_analysts": 11
+        },
+        "rating_momentum": {
+            "upgrades_12m": 0,
+            "downgrades_12m": 2,
+            "total_actions_12m": 26
+        },
+        "institutional": {
+            "held_pct_institutions": 0.86831003,
+            "held_pct_insiders": 0.06572
+        },
+        "short_interest": {
+            "short_pct_of_float": 0.0321,
+            "short_ratio": 3.12,
+            "short_change_pct": -0.09425623024725843
+        },
+        "data_quality_flags": []
+    },
+    "professional_raw_metrics_date": "2026-05-18",
+    "professional_score": 60.663055954864625,
+    "professional_score_date": "2026-05-18",
+    "professional_subscores": {
+        "analyst_consensus": 59.95936862300515,
+        "rating_momentum": 47.65384615384616,
+        "institutional_positioning": 71.83309103069924,
+        "short_interest": 65.37028427117644
+    },
+    "professional_drivers": {
+        "strongest": [
+            "held_pct_insiders (institutional_positioning): score=83, value=6.6%",
+            "recommendation_mean (analyst_consensus): score=75, value=2.00",
+            "short_ratio (short_interest): score=69, value=3.12"
+        ],
+        "weakest": [
+            "upside_to_target (analyst_consensus): score=37, value=4.1%",
+            "upgrades_12m (rating_momentum): score=48, value=0.00",
+            "downgrades_12m (rating_momentum): score=48, value=2.00"
+        ]
+    },
+    "news_sentiment_raw_metrics": {
+        "sector": "Basic Materials",
+        "industry": "Steel",
+        "market_cap_usd": 33073760256,
+        "current_price": 229.34,
+        "earnings": {
+            "beat_count_4q": null,
+            "miss_count_4q": null,
+            "total_quarters_4q": null,
+            "avg_surprise_magnitude_4q": null,
+            "eps_estimate_revision_90d": null,
+            "trailing_eps": 9.34,
+            "forward_eps": 16.84574
+        },
+        "price_momentum": {
+            "return_1m": 0.18149502487699073,
+            "return_3m": 0.15307396400359471,
+            "return_6m": 0.4924917508446764
+        },
+        "insider_activity": {
+            "insider_purchases_count_90d": 0,
+            "insider_sales_count_90d": 3,
+            "insider_net_value_90d_usd": -2751239.0
+        },
+        "data_quality_flags": [
+            "STLD: earnings_dates fetch failed (['Earnings Date'])"
+        ]
+    },
+    "news_sentiment_raw_metrics_date": "2026-05-18",
+    "news_sentiment_score": 68.84249265482883,
+    "news_sentiment_score_date": "2026-05-18",
+    "news_sentiment_subscores": {
+        "earnings_surprise_revisions": null,
+        "price_momentum": 86.4916072700843,
+        "insider_activity": 33.544263424317904
+    },
+    "news_sentiment_drivers": {
+        "strongest": [
+            "return_6m (price_momentum): score=100, value=49.2%",
+            "return_1m (price_momentum): score=80, value=18.1%",
+            "return_3m (price_momentum): score=76, value=15.3%"
+        ],
+        "weakest": [
+            "insider_count_ratio_90d (insider_activity): score=0, value=-1.00",
+            "net_insider_value_pct_mcap_90d (insider_activity): score=48, value=-0.0%",
+            "return_3m (price_momentum): score=76, value=15.3%"
+        ]
+    },
+    "composite_score": 52.791555444317,
+    "composite_score_date": "2026-05-18",
+    "composite_rank": 601,
+    "composite_metadata": {
+        "scores_used": [
+            "financial",
+            "professional",
+            "news_sentiment"
+        ],
+        "scores_imputed": [],
+        "imputed_values": {},
+        "imputation_r_squared": null,
+        "weights_applied": {
+            "financial": 50,
+            "professional": 30,
+            "news_sentiment": 20
+        }
+    }
+}

@@ -1,0 +1,195 @@
+{
+    "ticker": "HUBB",
+    "company_name": "Hubbell Incorporated",
+    "universe_added_date": "2026-05-18",
+    "financial_raw_metrics": {
+        "sector": "Industrials",
+        "industry": "Electrical Equipment & Parts",
+        "market_cap_usd": 25362466816,
+        "profitability": {
+            "gross_margin_ttm": 0.35685003,
+            "operating_margin_ttm": 0.17749001,
+            "net_margin_ttm": 0.15105,
+            "operating_margin_trend_3yr": 0.0635100676883949
+        },
+        "returns_on_capital": {
+            "roe_ttm": 0.25822002,
+            "roa_ttm": 0.10195,
+            "roic_ttm": null
+        },
+        "cash_flow": {
+            "fcf_margin_ttm": 0.09030035778775632,
+            "fcf_to_net_income_ttm": 0.5987503758044763,
+            "ocf_cagr_3yr": 0.2086812658059709
+        },
+        "balance_sheet": {
+            "debt_to_equity": 0.72468,
+            "net_debt_to_ebitda": 1.5148291971946994,
+            "current_ratio": 1.579,
+            "interest_coverage": 18.458658346333852,
+            "total_debt_usd": 2738700032,
+            "total_cash_usd": 516900000
+        },
+        "growth": {
+            "revenue_growth_1yr": 0.111,
+            "revenue_cagr_3yr": 0.05708836650420146,
+            "eps_growth_1yr": 0.125,
+            "eps_cagr_3yr": 0.1756728659660607,
+            "fcf_cagr_3yr": 0.24441808658920183
+        },
+        "valuation": {
+            "pe_trailing": 28.333529,
+            "pe_forward": 22.064533,
+            "ps_ratio": 4.229827,
+            "pb_ratio": 6.7299037,
+            "ev_ebitda": 18.814,
+            "peg_ratio": 2.3838,
+            "fcf_yield": 0.021348474812332704
+        },
+        "data_quality_flags": [
+            "HUBB: eps_cagr_3yr approximated by net income CAGR (share count changes not adjusted)"
+        ]
+    },
+    "financial_raw_metrics_date": "2026-05-18",
+    "financial_score": 61.71788944436613,
+    "financial_score_date": "2026-05-18",
+    "financial_subscores": {
+        "profitability": 65.90194176572612,
+        "returns_on_capital": 56.175178675610994,
+        "cash_flow_quality": 55.75849494099289,
+        "balance_sheet": 81.97566579841745,
+        "growth": 69.90029326145269,
+        "valuation": 41.04864837312834
+    },
+    "financial_drivers": {
+        "strongest": [
+            "interest_coverage (balance_sheet): score=99, value=18.46",
+            "fcf_cagr_3yr (growth): score=88, value=24.4%",
+            "ocf_cagr_3yr (cash_flow_quality): score=88, value=20.9%"
+        ],
+        "weakest": [
+            "peg_ratio (valuation): score=23, value=2.38",
+            "fcf_yield (valuation): score=32, value=2.1%",
+            "pe_trailing (valuation): score=39, value=28.33"
+        ]
+    },
+    "professional_raw_metrics": {
+        "sector": "Industrials",
+        "industry": "Electrical Equipment & Parts",
+        "market_cap_usd": 25362466816,
+        "current_price": 479.97,
+        "analyst": {
+            "recommendation_mean": 2.13333,
+            "recommendation_key": "buy",
+            "target_mean_price": 547.1539,
+            "target_median_price": 550.0,
+            "target_high_price": 600.0,
+            "target_low_price": 479.0,
+            "upside_to_target": 0.1399752067837573,
+            "target_dispersion": 0.22114436176000937,
+            "num_analysts": 13
+        },
+        "rating_momentum": {
+            "upgrades_12m": 1,
+            "downgrades_12m": 0,
+            "total_actions_12m": 25
+        },
+        "institutional": {
+            "held_pct_institutions": 0.99575996,
+            "held_pct_insiders": 0.0034400001
+        },
+        "short_interest": {
+            "short_pct_of_float": 0.0529,
+            "short_ratio": 4.66,
+            "short_change_pct": -0.06608808461589365
+        },
+        "data_quality_flags": []
+    },
+    "professional_raw_metrics_date": "2026-05-18",
+    "professional_score": 62.14434384433042,
+    "professional_score_date": "2026-05-18",
+    "professional_subscores": {
+        "analyst_consensus": 66.79760067837573,
+        "rating_momentum": 55.02,
+        "institutional_positioning": 68.2517398706866,
+        "short_interest": 52.98165759484843
+    },
+    "professional_drivers": {
+        "strongest": [
+            "held_pct_institutions (institutional_positioning): score=75, value=99.6%",
+            "recommendation_mean (analyst_consensus): score=70, value=2.13",
+            "upside_to_target (analyst_consensus): score=62, value=14.0%"
+        ],
+        "weakest": [
+            "short_pct_of_float (short_interest): score=50, value=5.3%",
+            "short_ratio (short_interest): score=53, value=4.66",
+            "held_pct_insiders (institutional_positioning): score=53, value=0.3%"
+        ]
+    },
+    "news_sentiment_raw_metrics": {
+        "sector": "Industrials",
+        "industry": "Electrical Equipment & Parts",
+        "market_cap_usd": 25362466816,
+        "current_price": 479.97,
+        "earnings": {
+            "beat_count_4q": null,
+            "miss_count_4q": null,
+            "total_quarters_4q": null,
+            "avg_surprise_magnitude_4q": null,
+            "eps_estimate_revision_90d": null,
+            "trailing_eps": 16.94,
+            "forward_eps": 21.75301
+        },
+        "price_momentum": {
+            "return_1m": -0.08913728740233402,
+            "return_3m": -0.06733520803361646,
+            "return_6m": 0.10333379633955704
+        },
+        "insider_activity": {
+            "insider_purchases_count_90d": 0,
+            "insider_sales_count_90d": 0,
+            "insider_net_value_90d_usd": null
+        },
+        "data_quality_flags": [
+            "HUBB: earnings_dates fetch failed (['Earnings Date'])"
+        ]
+    },
+    "news_sentiment_raw_metrics_date": "2026-05-18",
+    "news_sentiment_score": 49.497985985941504,
+    "news_sentiment_score_date": "2026-05-18",
+    "news_sentiment_subscores": {
+        "earnings_surprise_revisions": null,
+        "price_momentum": 49.24697897891226,
+        "insider_activity": 50.0
+    },
+    "news_sentiment_drivers": {
+        "strongest": [
+            "return_6m (price_momentum): score=67, value=10.3%",
+            "insider_activity_summary (insider_activity): score=50, value=no activity in 90d",
+            "return_3m (price_momentum): score=39, value=-6.7%"
+        ],
+        "weakest": [
+            "return_1m (price_momentum): score=35, value=-8.9%",
+            "return_3m (price_momentum): score=39, value=-6.7%",
+            "insider_activity_summary (insider_activity): score=50, value=no activity in 90d"
+        ]
+    },
+    "composite_score": 59.4018450726705,
+    "composite_score_date": "2026-05-18",
+    "composite_rank": 251,
+    "composite_metadata": {
+        "scores_used": [
+            "financial",
+            "professional",
+            "news_sentiment"
+        ],
+        "scores_imputed": [],
+        "imputed_values": {},
+        "imputation_r_squared": null,
+        "weights_applied": {
+            "financial": 50,
+            "professional": 30,
+            "news_sentiment": 20
+        }
+    }
+}
