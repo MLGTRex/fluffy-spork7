@@ -380,6 +380,7 @@
       { key: "actual_allocation_pct", label: "Actual %", num: true, render: (v) => fmtPctRaw(v) },
       { key: "drift_pct", label: "Drift", num: true, render: (v) => fmtPctRaw(v), sign: true },
       { key: "qty", label: "Qty", num: true, render: (v) => fmtNum(v, 2) },
+      { key: "entry_price_pipeline", label: "Entry", num: true, render: (v) => fmtMoney(v, { dp: 2 }) },
       { key: "market_value", label: "MV", num: true, render: (v) => fmtMoney(v, { dp: 0 }) },
       { key: "unrealized_pl", label: "Unrealised P&L", num: true, render: (v) => fmtMoney(v, { dp: 0 }), sign: true },
       { key: "conviction", label: "Conviction", num: false },
