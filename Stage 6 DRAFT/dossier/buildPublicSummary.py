@@ -1,24 +1,36 @@
 """
 Public-facing summary file for the shareable UI.
 
-Strict subset of Stage 6's data: aggregated performance metrics + the
-normalised portfolio/benchmark value series. Explicitly excludes any
-ticker, allocation, thesis text, prediction log entry, account dollar
-amount, sector exposure or pipeline count.
+Includes:
+  - aggregated portfolio + benchmark performance,
+  - normalised portfolio/benchmark value series (no dollar amounts),
+  - a curated per-ticker positions array with thesis, candidate summary,
+    invalidation triggers and live performance numbers.
+
+Excludes operator/methodology detail (Stage 1 scores, Stage 2 debate text,
+Stage 3 scenario narratives, valuation metrics, price targets, expected
+return tables, prediction-log entries) — those stay admin-only.
 
 Output: `Stage 6 DRAFT/output/public_summary.json`.
 """
 
 from __future__ import annotations
 
+import json
+import logging
+import os
 from datetime import datetime, timezone
 from typing import Optional
+
+logger = logging.getLogger(__name__)
 
 
 def build(
     performance_block: dict,
     portfolio_value_history: dict,
     benchmark_history: dict,
+    portfolio_overview: dict,
+    dossier_dir: str,
     snapshot_id: Optional[str],
     live_stale: bool,
 ) -> dict:
@@ -27,19 +39,14 @@ def build(
         performance_block:        from computePortfolioPerf.compute()["performance"]
         portfolio_value_history:  same module's "portfolio_value_history" block
         benchmark_history:        same module's "benchmark_history" block
+        portfolio_overview:       output of buildPortfolioOverview.build()
+        dossier_dir:              dir of per-ticker dossier JSON files
         snapshot_id:              current Stage 6 snapshot id, for the footer
         live_stale:               True if Alpaca live data couldn't be refreshed
                                   this run (so the UI can show a banner)
-
-    Returns the dict to write as public_summary.json. Note: the
-    portfolio_value_history.series and benchmark_history.series already
-    contain a "normalised" field (and only that and the date are emitted).
-    Raw dollar amounts in `value` are stripped here for safety.
     """
     perf = performance_block or {}
 
-    # Extra "total" against SPY computed from the underlying series — keeps the
-    # public UI honest about excess return without recomputing on the client.
     spy_total_return_pct = _series_total_return(benchmark_history)
     portfolio_total_return_pct = perf.get("total_return_pct")
     if portfolio_total_return_pct is None:
@@ -66,6 +73,8 @@ def build(
         "spy_m12": perf.get("spy_m12"),
     }
 
+    positions = _build_positions(portfolio_overview or {}, dossier_dir)
+
     return {
         "as_of": datetime.now(timezone.utc).isoformat(),
         "snapshot_id": snapshot_id,
@@ -76,6 +85,67 @@ def build(
             benchmark_history,
             attach_symbol=(benchmark_history or {}).get("symbol") or "SPY",
         ),
+        "positions": positions,
+    }
+
+
+def _build_positions(portfolio_overview: dict, dossier_dir: str) -> list[dict]:
+    """One row per overview position, joined to its per-ticker dossier."""
+    rows = portfolio_overview.get("positions") or []
+    out: list[dict] = []
+    for p in rows:
+        ticker = p.get("ticker")
+        if not ticker:
+            continue
+        dossier = _load_dossier(dossier_dir, ticker)
+        out.append(_assemble_position(p, dossier))
+    return out
+
+
+def _load_dossier(dossier_dir: str, ticker: str) -> dict:
+    path = os.path.join(dossier_dir, f"{ticker}.json")
+    if not os.path.isfile(path):
+        logger.warning("Public summary: dossier missing for %s", ticker)
+        return {}
+    try:
+        with open(path, "r", encoding="utf-8") as f:
+            return json.load(f)
+    except Exception as e:
+        logger.warning("Public summary: could not parse dossier %s: %s", ticker, e)
+        return {}
+
+
+def _assemble_position(overview_row: dict, dossier: dict) -> dict:
+    """Curated public per-position record. Dollar amounts kept; methodology not."""
+    s3 = dossier.get("stage3_scenarios_and_valuation") or {}
+    cs = dossier.get("stage4_candidate_summary") or {}
+    return {
+        "ticker": overview_row.get("ticker"),
+        "company_name": dossier.get("company_name"),
+        "sector": overview_row.get("sector"),
+        "status": overview_row.get("status"),
+        "target_allocation_pct": overview_row.get("target_allocation_pct"),
+        "actual_allocation_pct": overview_row.get("actual_allocation_pct"),
+        "current_price": overview_row.get("current_price"),
+        "lastday_price": overview_row.get("lastday_price"),
+        "unrealized_pl": overview_row.get("unrealized_pl"),
+        "unrealized_plpc": overview_row.get("unrealized_plpc"),
+        "conviction": overview_row.get("conviction") or s3.get("conviction"),
+        "thesis_summary": overview_row.get("thesis_summary") or s3.get("thesis_summary"),
+        "key_invalidation_triggers": s3.get("key_invalidation_triggers"),
+        "candidate_summary": _candidate_summary_block(cs),
+    }
+
+
+def _candidate_summary_block(cs: dict) -> Optional[dict]:
+    if not cs or not cs.get("summary"):
+        return None
+    return {
+        "summary": cs.get("summary"),
+        "source_date": cs.get("source_date"),
+        "analysis_date": cs.get("analysis_date"),
+        "model": cs.get("model"),
+        "error": cs.get("error"),
     }
 
 

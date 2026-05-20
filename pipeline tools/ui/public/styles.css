@@ -223,6 +223,199 @@ td.num, th.num {
 }
 .hidden { display: none; }
 
+/* ============ Section title (inside per-ticker views) ============ */
+.section-title {
+  margin: 32px 0 12px;
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--text-dim);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+/* ============ Brand link in hero ============ */
+.brand-link {
+  color: inherit;
+  text-decoration: none;
+}
+.brand-link:hover { text-decoration: none; }
+
+/* ============ Position grid (overview) ============ */
+.position-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 14px;
+}
+.position-card {
+  display: block;
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 18px;
+  box-shadow: var(--shadow);
+  color: var(--text);
+  text-decoration: none;
+  transition: border-color 0.12s ease, transform 0.12s ease;
+}
+.position-card:hover {
+  border-color: var(--accent);
+  text-decoration: none;
+  transform: translateY(-1px);
+}
+.pc-head {
+  display: flex;
+  gap: 14px;
+  align-items: flex-start;
+  margin-bottom: 14px;
+}
+.pc-ticker {
+  font-family: var(--mono);
+  font-size: 26px;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+  color: var(--accent);
+  line-height: 1;
+}
+.pc-meta {
+  flex: 1;
+  min-width: 0;
+}
+.pc-company {
+  font-size: 13px;
+  color: var(--text-dim);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  margin-bottom: 4px;
+}
+.pc-tags {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+.pc-stats {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 8px;
+  border-top: 1px solid var(--border);
+  padding-top: 12px;
+}
+.pc-stat-label {
+  font-size: 10px;
+  color: var(--text-faint);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  margin-bottom: 2px;
+}
+.pc-stat-value {
+  font-family: var(--mono);
+  font-size: 13px;
+  font-weight: 600;
+}
+
+/* ============ Tag ============ */
+.tag {
+  display: inline-block;
+  padding: 2px 8px;
+  border-radius: 999px;
+  font-size: 11px;
+  font-weight: 600;
+  background: var(--panel-alt);
+  color: var(--text-dim);
+}
+.tag.accent { background: var(--accent-soft); color: var(--accent); }
+.tag.muted  { background: var(--panel-alt); color: var(--text-faint); }
+
+/* ============ Per-ticker hero ============ */
+.ticker-hero {
+  background: linear-gradient(120deg, var(--accent-grad-a), var(--accent-grad-b));
+  color: #fff;
+  border-radius: 12px;
+  padding: 24px 28px;
+  margin-bottom: 32px;
+  box-shadow: var(--shadow);
+}
+.back-link {
+  color: #ffffff;
+  opacity: 0.78;
+  font-size: 13px;
+  display: inline-block;
+  margin-bottom: 12px;
+}
+.back-link:hover { opacity: 1; text-decoration: underline; }
+.th-ticker {
+  margin: 0 0 6px;
+  font-family: var(--mono);
+  font-size: 36px;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+}
+.th-company {
+  font-size: 15px;
+  opacity: 0.92;
+}
+.th-tags {
+  margin-top: 12px;
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+.th-tags .tag {
+  background: rgba(255, 255, 255, 0.18);
+  color: #ffffff;
+}
+.th-tags .tag.accent { background: rgba(255, 255, 255, 0.3); }
+
+/* ============ Thesis / candidate-summary panel ============ */
+.thesis-panel {
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 24px 28px;
+  box-shadow: var(--shadow);
+  font-size: 16px;
+  line-height: 1.65;
+  white-space: pre-wrap;
+  color: var(--text);
+}
+.thesis-meta {
+  font-family: var(--mono);
+  color: var(--text-faint);
+  font-size: 12px;
+  margin-bottom: 12px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid var(--border);
+  white-space: normal;
+}
+.thesis-body {
+  white-space: pre-wrap;
+}
+
+/* ============ Triggers list ============ */
+ul.triggers {
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 16px 20px 16px 36px;
+  margin: 0;
+  box-shadow: var(--shadow);
+  font-size: 14px;
+  line-height: 1.55;
+  color: var(--text);
+}
+ul.triggers li { margin-bottom: 6px; }
+ul.triggers li:last-child { margin-bottom: 0; }
+
+/* ============ Loading ============ */
+.loading {
+  padding: 60px 24px;
+  text-align: center;
+  color: var(--text-faint);
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+}
+
 /* ============ Footer ============ */
 .footer {
   border-top: 1px solid var(--border);
@@ -251,4 +444,9 @@ td.num, th.num {
   main { padding: 16px; }
   .chart-wrap { height: 260px; }
   .stages { grid-template-columns: 1fr; }
+  .position-grid { grid-template-columns: 1fr; }
+  .pc-stats { grid-template-columns: repeat(2, 1fr); }
+  .ticker-hero { padding: 20px 22px; }
+  .th-ticker { font-size: 28px; }
+  .thesis-panel { padding: 18px 20px; font-size: 15px; }
 }

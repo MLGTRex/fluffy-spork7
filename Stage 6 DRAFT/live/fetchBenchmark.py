@@ -99,6 +99,7 @@ def fetch_benchmark(portfolio_history: Optional[dict]) -> dict:
     try:
         from alpaca.data.requests import StockBarsRequest
         from alpaca.data.timeframe import TimeFrame
+        from alpaca.data.enums import DataFeed
         client = _build_data_client()
     except Exception as e:
         logger.warning("Could not build market-data client: %s — using cache", e)
@@ -111,11 +112,15 @@ def fetch_benchmark(portfolio_history: Optional[dict]) -> dict:
     start, end = _resolve_range(portfolio_history)
 
     try:
+        # IEX feed: works on Alpaca's free tier. SIP requires a paid
+        # subscription and otherwise raises "subscription does not permit
+        # querying recent SIP data".
         req = StockBarsRequest(
             symbol_or_symbols=config.BENCHMARK_SYMBOL,
             timeframe=TimeFrame.Day,
             start=start,
             end=end,
+            feed=DataFeed.IEX,
         )
         bars_response = client.get_stock_bars(req)
         # bars_response.data is {symbol: [Bar, ...]}; pull our symbol
