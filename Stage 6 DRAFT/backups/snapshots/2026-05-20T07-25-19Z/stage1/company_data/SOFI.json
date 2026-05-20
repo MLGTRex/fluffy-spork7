@@ -1,0 +1,195 @@
+{
+    "ticker": "SOFI",
+    "company_name": "SoFi",
+    "universe_added_date": "2026-05-18",
+    "financial_raw_metrics": {
+        "sector": "Financial Services",
+        "industry": "Credit Services",
+        "market_cap_usd": 20023590912,
+        "profitability": {
+            "gross_margin_ttm": 0.83507,
+            "operating_margin_ttm": 0.18283,
+            "net_margin_ttm": 0.14761,
+            "operating_margin_trend_3yr": null
+        },
+        "returns_on_capital": {
+            "roe_ttm": 0.06597,
+            "roa_ttm": 0.012619999,
+            "roic_ttm": null
+        },
+        "cash_flow": {
+            "fcf_margin_ttm": null,
+            "fcf_to_net_income_ttm": null,
+            "ocf_cagr_3yr": null
+        },
+        "balance_sheet": {
+            "debt_to_equity": 0.17724,
+            "net_debt_to_ebitda": null,
+            "current_ratio": 1.116,
+            "interest_coverage": null,
+            "total_debt_usd": 1916210944,
+            "total_cash_usd": 3564402944
+        },
+        "growth": {
+            "revenue_growth_1yr": 0.425,
+            "revenue_cagr_3yr": 0.31930345986002884,
+            "eps_growth_1yr": 1.012,
+            "eps_cagr_3yr": null,
+            "fcf_cagr_3yr": null
+        },
+        "valuation": {
+            "pe_trailing": 34.68889,
+            "pe_forward": 19.948881,
+            "ps_ratio": 5.123184,
+            "pb_ratio": 1.8501836,
+            "ev_ebitda": null,
+            "peg_ratio": 0.9831,
+            "fcf_yield": null
+        },
+        "data_quality_flags": [
+            "SOFI: eps_cagr_3yr approximated by net income CAGR (share count changes not adjusted)"
+        ]
+    },
+    "financial_raw_metrics_date": "2026-05-18",
+    "financial_score": 57.193348428416584,
+    "financial_score_date": "2026-05-18",
+    "financial_subscores": {
+        "profitability": 42.562978970963805,
+        "returns_on_capital": 35.18283110246705,
+        "cash_flow_quality": null,
+        "balance_sheet": 69.2508888888889,
+        "growth": 98.02876501665484,
+        "valuation": 53.154907090909084
+    },
+    "financial_drivers": {
+        "strongest": [
+            "eps_growth_1yr (growth): score=100, value=1.01",
+            "revenue_growth_1yr (growth): score=100, value=42.5%",
+            "revenue_cagr_3yr (growth): score=96, value=31.9%"
+        ],
+        "weakest": [
+            "pe_trailing (valuation): score=29, value=34.69",
+            "operating_margin_ttm (profitability): score=30, value=18.3%",
+            "net_margin_ttm (profitability): score=32, value=14.8%"
+        ]
+    },
+    "professional_raw_metrics": {
+        "sector": "Financial Services",
+        "industry": "Credit Services",
+        "market_cap_usd": 20023590912,
+        "current_price": 15.61,
+        "analyst": {
+            "recommendation_mean": 2.70833,
+            "recommendation_key": "hold",
+            "target_mean_price": 21.1,
+            "target_median_price": 18.5,
+            "target_high_price": 31.0,
+            "target_low_price": 12.0,
+            "upside_to_target": 0.3516976297245357,
+            "target_dispersion": 0.9004739336492891,
+            "num_analysts": 20
+        },
+        "rating_momentum": {
+            "upgrades_12m": 2,
+            "downgrades_12m": 1,
+            "total_actions_12m": 50
+        },
+        "institutional": {
+            "held_pct_institutions": 0.56931996,
+            "held_pct_insiders": 0.01481
+        },
+        "short_interest": {
+            "short_pct_of_float": 0.1272,
+            "short_ratio": 2.57,
+            "short_change_pct": -0.026080000029045678
+        },
+        "data_quality_flags": []
+    },
+    "professional_raw_metrics_date": "2026-05-18",
+    "professional_score": 56.604846369221896,
+    "professional_score_date": "2026-05-18",
+    "professional_subscores": {
+        "analyst_consensus": 65.03403259449072,
+        "rating_momentum": 53.760000000000005,
+        "institutional_positioning": 51.18454458971933,
+        "short_interest": 50.71199209146869
+    },
+    "professional_drivers": {
+        "strongest": [
+            "upside_to_target (analyst_consensus): score=93, value=35.2%",
+            "short_ratio (short_interest): score=74, value=2.57",
+            "held_pct_insiders (institutional_positioning): score=62, value=1.5%"
+        ],
+        "weakest": [
+            "short_pct_of_float (short_interest): score=35, value=12.7%",
+            "held_pct_institutions (institutional_positioning): score=46, value=56.9%",
+            "recommendation_mean (analyst_consensus): score=47, value=2.71"
+        ]
+    },
+    "news_sentiment_raw_metrics": {
+        "sector": "Financial Services",
+        "industry": "Credit Services",
+        "market_cap_usd": 20023590912,
+        "current_price": 15.61,
+        "earnings": {
+            "beat_count_4q": null,
+            "miss_count_4q": null,
+            "total_quarters_4q": null,
+            "avg_surprise_magnitude_4q": null,
+            "eps_estimate_revision_90d": null,
+            "trailing_eps": 0.45,
+            "forward_eps": 0.7825
+        },
+        "price_momentum": {
+            "return_1m": -0.16923899737011253,
+            "return_3m": -0.1911916778719286,
+            "return_6m": -0.4501584946954343
+        },
+        "insider_activity": {
+            "insider_purchases_count_90d": 4,
+            "insider_sales_count_90d": 4,
+            "insider_net_value_90d_usd": -191272.0
+        },
+        "data_quality_flags": [
+            "SOFI: earnings_dates fetch failed (['Earnings Date'])"
+        ]
+    },
+    "news_sentiment_raw_metrics_date": "2026-05-18",
+    "news_sentiment_score": 24.474629549046693,
+    "news_sentiment_score_date": "2026-05-18",
+    "news_sentiment_subscores": {
+        "earnings_surprise_revisions": null,
+        "price_momentum": 11.795527233716143,
+        "insider_activity": 49.832834179707795
+    },
+    "news_sentiment_drivers": {
+        "strongest": [
+            "insider_count_ratio_90d (insider_activity): score=50, value=0.00",
+            "net_insider_value_pct_mcap_90d (insider_activity): score=50, value=-0.0%",
+            "return_1m (price_momentum): score=22, value=-16.9%"
+        ],
+        "weakest": [
+            "return_6m (price_momentum): score=0, value=-45.0%",
+            "return_3m (price_momentum): score=18, value=-19.1%",
+            "return_1m (price_momentum): score=22, value=-16.9%"
+        ]
+    },
+    "composite_score": 50.4730540347842,
+    "composite_score_date": "2026-05-18",
+    "composite_rank": 734,
+    "composite_metadata": {
+        "scores_used": [
+            "financial",
+            "professional",
+            "news_sentiment"
+        ],
+        "scores_imputed": [],
+        "imputed_values": {},
+        "imputation_r_squared": null,
+        "weights_applied": {
+            "financial": 50,
+            "professional": 30,
+            "news_sentiment": 20
+        }
+    }
+}

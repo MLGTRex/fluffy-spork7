@@ -1,0 +1,193 @@
+{
+    "ticker": "BRO",
+    "company_name": "Brown & Brown",
+    "universe_added_date": "2026-05-18",
+    "financial_raw_metrics": {
+        "sector": "Financial Services",
+        "industry": "Insurance Brokers",
+        "market_cap_usd": 19075983360,
+        "profitability": {
+            "gross_margin_ttm": 0.53372,
+            "operating_margin_ttm": 0.47180998,
+            "net_margin_ttm": 0.18360001,
+            "operating_margin_trend_3yr": -0.009649710676210232
+        },
+        "returns_on_capital": {
+            "roe_ttm": 0.11926,
+            "roa_ttm": 0.05515,
+            "roic_ttm": null
+        },
+        "cash_flow": {
+            "fcf_margin_ttm": 0.24328859046675289,
+            "fcf_to_net_income_ttm": 1.3390501791549794,
+            "ocf_cagr_3yr": 0.18067589849318022
+        },
+        "balance_sheet": {
+            "debt_to_equity": 0.6437,
+            "net_debt_to_ebitda": 2.8624294841548776,
+            "current_ratio": 1.017,
+            "interest_coverage": 5.480392156862745,
+            "total_debt_usd": 8119000064,
+            "total_cash_usd": 1003000000
+        },
+        "growth": {
+            "revenue_growth_1yr": 0.357,
+            "revenue_cagr_3yr": 0.17384548109418518,
+            "eps_growth_1yr": -0.079,
+            "eps_cagr_3yr": 0.1618688614810384,
+            "fcf_cagr_3yr": 0.18572644011896222
+        },
+        "valuation": {
+            "pe_trailing": 18.332247,
+            "pe_forward": 11.541514,
+            "ps_ratio": 3.0482557,
+            "pb_ratio": 1.497645,
+            "ev_ebitda": 10.545,
+            "peg_ratio": 1.51,
+            "fcf_yield": 0.07981239757172864
+        },
+        "data_quality_flags": [
+            "BRO: eps_cagr_3yr approximated by net income CAGR (share count changes not adjusted)"
+        ]
+    },
+    "financial_raw_metrics_date": "2026-05-18",
+    "financial_score": 65.29651169520706,
+    "financial_score_date": "2026-05-18",
+    "financial_subscores": {
+        "profitability": 56.045135092231284,
+        "returns_on_capital": 48.81910771118943,
+        "cash_flow_quality": 90.09121364299557,
+        "balance_sheet": 59.65510824440804,
+        "growth": 77.34830189901386,
+        "valuation": 68.39646377706865
+    },
+    "financial_drivers": {
+        "strongest": [
+            "revenue_growth_1yr (growth): score=100, value=35.7%",
+            "fcf_margin_ttm (cash_flow_quality): score=93, value=24.3%",
+            "fcf_yield (valuation): score=92, value=8.0%"
+        ],
+        "weakest": [
+            "eps_growth_1yr (growth): score=22, value=-7.9%",
+            "current_ratio (balance_sheet): score=31, value=1.02",
+            "roe_ttm (returns_on_capital): score=42, value=11.9%"
+        ]
+    },
+    "professional_raw_metrics": {
+        "sector": "Financial Services",
+        "industry": "Insurance Brokers",
+        "market_cap_usd": 19075983360,
+        "current_price": 56.28,
+        "analyst": {
+            "recommendation_mean": 2.61111,
+            "recommendation_key": "hold",
+            "target_mean_price": 73.8,
+            "target_median_price": 72.0,
+            "target_high_price": 90.0,
+            "target_low_price": 65.0,
+            "upside_to_target": 0.3113006396588485,
+            "target_dispersion": 0.33875338753387535,
+            "num_analysts": 15
+        },
+        "rating_momentum": {
+            "upgrades_12m": 4,
+            "downgrades_12m": 4,
+            "total_actions_12m": 61
+        },
+        "institutional": {
+            "held_pct_institutions": 0.86486,
+            "held_pct_insiders": 0.1311
+        },
+        "short_interest": {
+            "short_pct_of_float": 0.071100004,
+            "short_ratio": 6.44,
+            "short_change_pct": -0.019654857210927957
+        },
+        "data_quality_flags": []
+    },
+    "professional_raw_metrics_date": "2026-05-18",
+    "professional_score": 60.08538562878759,
+    "professional_score_date": "2026-05-18",
+    "professional_subscores": {
+        "analyst_consensus": 66.55937279317698,
+        "rating_momentum": 52.5,
+        "institutional_positioning": 70.25066647125365,
+        "short_interest": 40.67959022241486
+    },
+    "professional_drivers": {
+        "strongest": [
+            "held_pct_insiders (institutional_positioning): score=92, value=13.1%",
+            "upside_to_target (analyst_consensus): score=91, value=31.1%",
+            "held_pct_institutions (institutional_positioning): score=61, value=86.5%"
+        ],
+        "weakest": [
+            "short_pct_of_float (short_interest): score=35, value=7.1%",
+            "short_ratio (short_interest): score=41, value=6.44",
+            "recommendation_mean (analyst_consensus): score=51, value=2.61"
+        ]
+    },
+    "news_sentiment_raw_metrics": {
+        "sector": "Financial Services",
+        "industry": "Insurance Brokers",
+        "market_cap_usd": 19075983360,
+        "current_price": 56.28,
+        "earnings": {
+            "beat_count_4q": 4,
+            "miss_count_4q": 0,
+            "total_quarters_4q": 4,
+            "avg_surprise_magnitude_4q": 0.05620711383282539,
+            "eps_estimate_revision_90d": null,
+            "trailing_eps": 3.07,
+            "forward_eps": 4.87631
+        },
+        "price_momentum": {
+            "return_1m": -0.16253732815753452,
+            "return_3m": -0.18819234674304414,
+            "return_6m": -0.293346132819157
+        },
+        "insider_activity": {
+            "insider_purchases_count_90d": 1,
+            "insider_sales_count_90d": 0,
+            "insider_net_value_90d_usd": 114200.0
+        },
+        "data_quality_flags": []
+    },
+    "news_sentiment_raw_metrics_date": "2026-05-18",
+    "news_sentiment_score": 53.82667327668349,
+    "news_sentiment_score_date": "2026-05-18",
+    "news_sentiment_subscores": {
+        "earnings_surprise_revisions": 89.32098499223738,
+        "price_momentum": 12.693315578814685,
+        "insider_activity": 65.10476524131334
+    },
+    "news_sentiment_drivers": {
+        "strongest": [
+            "insider_count_ratio_90d (insider_activity): score=100, value=1.00",
+            "beat_rate_4q (earnings_surprise_revisions): score=100, value=1.00",
+            "avg_surprise_magnitude_4q (earnings_surprise_revisions): score=77, value=5.6%"
+        ],
+        "weakest": [
+            "return_6m (price_momentum): score=1, value=-29.3%",
+            "return_3m (price_momentum): score=19, value=-18.8%",
+            "return_1m (price_momentum): score=23, value=-16.3%"
+        ]
+    },
+    "composite_score": 61.4392061915765,
+    "composite_score_date": "2026-05-18",
+    "composite_rank": 163,
+    "composite_metadata": {
+        "scores_used": [
+            "financial",
+            "professional",
+            "news_sentiment"
+        ],
+        "scores_imputed": [],
+        "imputed_values": {},
+        "imputation_r_squared": null,
+        "weights_applied": {
+            "financial": 50,
+            "professional": 30,
+            "news_sentiment": 20
+        }
+    }
+}

@@ -1,0 +1,205 @@
+{
+    "ticker": "AS",
+    "company_name": "Amer Sports",
+    "universe_added_date": "2026-05-18",
+    "financial_raw_metrics": {
+        "sector": "Consumer Cyclical",
+        "industry": "Leisure",
+        "market_cap_usd": 19107035136,
+        "profitability": {
+            "gross_margin_ttm": 0.57633,
+            "operating_margin_ttm": 0.10842,
+            "net_margin_ttm": 0.06509,
+            "operating_margin_trend_3yr": 0.038247866278963774
+        },
+        "returns_on_capital": {
+            "roe_ttm": 0.08133,
+            "roa_ttm": 0.04837,
+            "roic_ttm": null
+        },
+        "cash_flow": {
+            "fcf_margin_ttm": 0.08127037245346037,
+            "fcf_to_net_income_ttm": 1.2485669255966307,
+            "ocf_cagr_3yr": null
+        },
+        "balance_sheet": {
+            "debt_to_equity": 0.30117,
+            "net_debt_to_ebitda": 1.1834014190496667,
+            "current_ratio": 1.496,
+            "interest_coverage": 7.392016376663255,
+            "total_debt_usd": 1753100032,
+            "total_cash_usd": 652300032
+        },
+        "growth": {
+            "revenue_growth_1yr": 0.285,
+            "revenue_cagr_3yr": 0.22508619109443506,
+            "eps_growth_1yr": 9.987,
+            "eps_cagr_3yr": null,
+            "fcf_cagr_3yr": null
+        },
+        "valuation": {
+            "pe_trailing": 43.210526,
+            "pe_forward": 21.90794,
+            "ps_ratio": 2.9099076,
+            "pb_ratio": 3.1564782,
+            "ev_ebitda": 20.892,
+            "peg_ratio": 0.853,
+            "fcf_yield": 0.027928849253778858
+        },
+        "data_quality_flags": [
+            "AS: eps_cagr_3yr approximated by net income CAGR (share count changes not adjusted)"
+        ]
+    },
+    "financial_raw_metrics_date": "2026-05-18",
+    "financial_score": 64.64379595908581,
+    "financial_score_date": "2026-05-18",
+    "financial_subscores": {
+        "profitability": 63.094460807066184,
+        "returns_on_capital": 44.023077637933326,
+        "cash_flow_quality": 65.1439929193112,
+        "balance_sheet": 82.91561304756588,
+        "growth": 94.63660344848405,
+        "valuation": 45.43904571854482
+    },
+    "financial_drivers": {
+        "strongest": [
+            "eps_growth_1yr (growth): score=100, value=9.99",
+            "revenue_growth_1yr (growth): score=98, value=28.5%",
+            "fcf_to_net_income_ttm (cash_flow_quality): score=93, value=1.25"
+        ],
+        "weakest": [
+            "pe_trailing (valuation): score=18, value=43.21",
+            "ev_ebitda (valuation): score=40, value=20.89",
+            "fcf_yield (valuation): score=42, value=2.8%"
+        ]
+    },
+    "professional_raw_metrics": {
+        "sector": "Consumer Cyclical",
+        "industry": "Leisure",
+        "market_cap_usd": 19107035136,
+        "current_price": 32.84,
+        "analyst": {
+            "recommendation_mean": 1.25,
+            "recommendation_key": "strong_buy",
+            "target_mean_price": 48.91957,
+            "target_median_price": 48.0,
+            "target_high_price": 60.0,
+            "target_low_price": 43.0,
+            "upside_to_target": 0.48963367844092553,
+            "target_dispersion": 0.34750918701861033,
+            "num_analysts": 23
+        },
+        "rating_momentum": {
+            "upgrades_12m": 2,
+            "downgrades_12m": 0,
+            "total_actions_12m": 29
+        },
+        "institutional": {
+            "held_pct_institutions": 0.37315,
+            "held_pct_insiders": 0.62644
+        },
+        "short_interest": {
+            "short_pct_of_float": 0.0769,
+            "short_ratio": 2.99,
+            "short_change_pct": -0.07291992759803465
+        },
+        "data_quality_flags": []
+    },
+    "professional_raw_metrics_date": "2026-05-18",
+    "professional_score": 71.95668649231456,
+    "professional_score_date": "2026-05-18",
+    "professional_subscores": {
+        "analyst_consensus": 96.79267356881851,
+        "rating_momentum": 56.844827586206904,
+        "institutional_positioning": 58.785814196964026,
+        "short_interest": 61.14393531623563
+    },
+    "professional_drivers": {
+        "strongest": [
+            "held_pct_insiders (institutional_positioning): score=100, value=62.6%",
+            "upside_to_target (analyst_consensus): score=99, value=49.0%",
+            "recommendation_mean (analyst_consensus): score=95, value=1.25"
+        ],
+        "weakest": [
+            "held_pct_institutions (institutional_positioning): score=41, value=37.3%",
+            "short_pct_of_float (short_interest): score=56, value=7.7%",
+            "upgrades_12m (rating_momentum): score=57, value=2.00"
+        ]
+    },
+    "news_sentiment_raw_metrics": {
+        "sector": "Consumer Cyclical",
+        "industry": "Leisure",
+        "market_cap_usd": 19107035136,
+        "current_price": 32.84,
+        "earnings": {
+            "beat_count_4q": 4,
+            "miss_count_4q": 0,
+            "total_quarters_4q": 4,
+            "avg_surprise_magnitude_4q": 0.7786607142857142,
+            "eps_estimate_revision_90d": null,
+            "trailing_eps": 0.76,
+            "forward_eps": 1.499
+        },
+        "price_momentum": {
+            "return_1m": -0.09804998248759533,
+            "return_3m": -0.14745587721349232,
+            "return_6m": 0.07990793044330406
+        },
+        "insider_activity": {
+            "insider_purchases_count_90d": null,
+            "insider_sales_count_90d": null,
+            "insider_net_value_90d_usd": null
+        },
+        "data_quality_flags": []
+    },
+    "news_sentiment_raw_metrics_date": "2026-05-18",
+    "news_sentiment_score": 71.32009329422505,
+    "news_sentiment_score_date": "2026-05-18",
+    "news_sentiment_subscores": {
+        "earnings_surprise_revisions": 100.00000000000001,
+        "price_momentum": 42.64018658845008,
+        "insider_activity": null
+    },
+    "news_sentiment_drivers": {
+        "strongest": [
+            "avg_surprise_magnitude_4q (earnings_surprise_revisions): score=100, value=77.9%",
+            "beat_rate_4q (earnings_surprise_revisions): score=100, value=1.00",
+            "return_6m (price_momentum): score=63, value=8.0%"
+        ],
+        "weakest": [
+            "return_3m (price_momentum): score=25, value=-14.7%",
+            "return_1m (price_momentum): score=34, value=-9.8%",
+            "return_6m (price_momentum): score=63, value=8.0%"
+        ]
+    },
+    "composite_score": 68.17292258608228,
+    "composite_score_date": "2026-05-18",
+    "composite_rank": 23,
+    "composite_metadata": {
+        "scores_used": [
+            "financial",
+            "professional",
+            "news_sentiment"
+        ],
+        "scores_imputed": [],
+        "imputed_values": {},
+        "imputation_r_squared": null,
+        "weights_applied": {
+            "financial": 50,
+            "professional": 30,
+            "news_sentiment": 20
+        }
+    },
+    "disqualifier_flags": {
+        "bankruptcy_8k": {
+            "triggered": false
+        },
+        "material_restatement_10ka": {
+            "triggered": false
+        },
+        "check_status": "ok",
+        "error_message": null
+    },
+    "disqualifier_check_date": "2026-05-18",
+    "qualified": true
+}

@@ -1,0 +1,195 @@
+{
+    "ticker": "DINO",
+    "company_name": "HF Sinclair",
+    "universe_added_date": "2026-05-18",
+    "financial_raw_metrics": {
+        "sector": "Energy",
+        "industry": "Oil & Gas Refining & Marketing",
+        "market_cap_usd": 12621083648,
+        "profitability": {
+            "gross_margin_ttm": 0.1114,
+            "operating_margin_ttm": 0.11891,
+            "net_margin_ttm": 0.04457,
+            "operating_margin_trend_3yr": -0.07161103973230129
+        },
+        "returns_on_capital": {
+            "roe_ttm": 0.13044,
+            "roa_ttm": 0.06067,
+            "roic_ttm": null
+        },
+        "cash_flow": {
+            "fcf_margin_ttm": 0.049978275867565834,
+            "fcf_to_net_income_ttm": 1.1269388082645582,
+            "ocf_cagr_3yr": -0.2965073095187325
+        },
+        "balance_sheet": {
+            "debt_to_equity": 0.3467,
+            "net_debt_to_ebitda": 0.9827738233215547,
+            "current_ratio": 1.794,
+            "interest_coverage": 4.373271889400922,
+            "total_debt_usd": 3372999936,
+            "total_cash_usd": 1148000000
+        },
+        "growth": {
+            "revenue_growth_1yr": 0.118,
+            "revenue_cagr_3yr": -0.110709267543047,
+            "eps_growth_1yr": null,
+            "eps_cagr_3yr": -0.4170697633663144,
+            "fcf_cagr_3yr": -0.37504970166723417
+        },
+        "valuation": {
+            "pe_trailing": 10.5120125,
+            "pe_forward": 10.870748,
+            "ps_ratio": 0.45692143,
+            "pb_ratio": 1.3857878,
+            "ev_ebitda": 6.586,
+            "peg_ratio": 1.1651,
+            "fcf_yield": 0.10938046260542461
+        },
+        "data_quality_flags": [
+            "DINO: eps_cagr_3yr approximated by net income CAGR (share count changes not adjusted)"
+        ]
+    },
+    "financial_raw_metrics_date": "2026-05-18",
+    "financial_score": 47.560800378799534,
+    "financial_score_date": "2026-05-18",
+    "financial_subscores": {
+        "profitability": 23.218672272314716,
+        "returns_on_capital": 44.860697907381564,
+        "cash_flow_quality": 50.74456896689146,
+        "balance_sheet": 82.35833338775355,
+        "growth": 11.733333333333334,
+        "valuation": 81.46327326442348
+    },
+    "financial_drivers": {
+        "strongest": [
+            "fcf_yield (valuation): score=100, value=10.9%",
+            "fcf_to_net_income_ttm (cash_flow_quality): score=95, value=1.13",
+            "debt_to_equity (balance_sheet): score=92, value=34.7%"
+        ],
+        "weakest": [
+            "ocf_cagr_3yr (cash_flow_quality): score=0, value=-29.7%",
+            "revenue_cagr_3yr (growth): score=0, value=-11.1%",
+            "eps_cagr_3yr (growth): score=0, value=-41.7%"
+        ]
+    },
+    "professional_raw_metrics": {
+        "sector": "Energy",
+        "industry": "Oil & Gas Refining & Marketing",
+        "market_cap_usd": 12621083648,
+        "current_price": 70.01,
+        "analyst": {
+            "recommendation_mean": 2.26667,
+            "recommendation_key": "buy",
+            "target_mean_price": 73.28571,
+            "target_median_price": 72.5,
+            "target_high_price": 85.0,
+            "target_low_price": 54.0,
+            "upside_to_target": 0.04678917297528909,
+            "target_dispersion": 0.42300197405469636,
+            "num_analysts": 14
+        },
+        "rating_momentum": {
+            "upgrades_12m": 1,
+            "downgrades_12m": 3,
+            "total_actions_12m": 41
+        },
+        "institutional": {
+            "held_pct_institutions": 0.84171,
+            "held_pct_insiders": 0.07493
+        },
+        "short_interest": {
+            "short_pct_of_float": 0.0395,
+            "short_ratio": 3.05,
+            "short_change_pct": 0.005358983265279734
+        },
+        "data_quality_flags": []
+    },
+    "professional_raw_metrics_date": "2026-05-18",
+    "professional_score": 56.70534975631693,
+    "professional_score_date": "2026-05-18",
+    "professional_subscores": {
+        "analyst_consensus": 54.214620757034695,
+        "rating_momentum": 49.42682926829269,
+        "institutional_positioning": 67.0991741189846,
+        "short_interest": 57.32487763023639
+    },
+    "professional_drivers": {
+        "strongest": [
+            "held_pct_insiders (institutional_positioning): score=85, value=7.5%",
+            "short_ratio (short_interest): score=70, value=3.05",
+            "recommendation_mean (analyst_consensus): score=64, value=2.27"
+        ],
+        "weakest": [
+            "upside_to_target (analyst_consensus): score=39, value=4.7%",
+            "short_change_pct (short_interest): score=49, value=0.5%",
+            "upgrades_12m (rating_momentum): score=49, value=1.00"
+        ]
+    },
+    "news_sentiment_raw_metrics": {
+        "sector": "Energy",
+        "industry": "Oil & Gas Refining & Marketing",
+        "market_cap_usd": 12621083648,
+        "current_price": 70.01,
+        "earnings": {
+            "beat_count_4q": null,
+            "miss_count_4q": null,
+            "total_quarters_4q": null,
+            "avg_surprise_magnitude_4q": null,
+            "eps_estimate_revision_90d": null,
+            "trailing_eps": 6.66,
+            "forward_eps": 6.44022
+        },
+        "price_momentum": {
+            "return_1m": 0.2096200559361985,
+            "return_3m": 0.2407840682167177,
+            "return_6m": 0.329786991511049
+        },
+        "insider_activity": {
+            "insider_purchases_count_90d": 0,
+            "insider_sales_count_90d": 0,
+            "insider_net_value_90d_usd": null
+        },
+        "data_quality_flags": [
+            "DINO: earnings_dates fetch failed (['Earnings Date'])"
+        ]
+    },
+    "news_sentiment_raw_metrics_date": "2026-05-18",
+    "news_sentiment_score": 78.51993753998899,
+    "news_sentiment_score_date": "2026-05-18",
+    "news_sentiment_subscores": {
+        "earnings_surprise_revisions": null,
+        "price_momentum": 92.77990630998347,
+        "insider_activity": 50.0
+    },
+    "news_sentiment_drivers": {
+        "strongest": [
+            "return_6m (price_momentum): score=100, value=33.0%",
+            "return_3m (price_momentum): score=90, value=24.1%",
+            "return_1m (price_momentum): score=85, value=21.0%"
+        ],
+        "weakest": [
+            "insider_activity_summary (insider_activity): score=50, value=no activity in 90d",
+            "return_1m (price_momentum): score=85, value=21.0%",
+            "return_3m (price_momentum): score=90, value=24.1%"
+        ]
+    },
+    "composite_score": 56.49599262429264,
+    "composite_score_date": "2026-05-18",
+    "composite_rank": 389,
+    "composite_metadata": {
+        "scores_used": [
+            "financial",
+            "professional",
+            "news_sentiment"
+        ],
+        "scores_imputed": [],
+        "imputed_values": {},
+        "imputation_r_squared": null,
+        "weights_applied": {
+            "financial": 50,
+            "professional": 30,
+            "news_sentiment": 20
+        }
+    }
+}

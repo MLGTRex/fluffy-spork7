@@ -1,0 +1,195 @@
+{
+    "ticker": "SRE",
+    "company_name": "Sempra",
+    "universe_added_date": "2026-05-18",
+    "financial_raw_metrics": {
+        "sector": "Utilities",
+        "industry": "Utilities - Diversified",
+        "market_cap_usd": 59113189376,
+        "profitability": {
+            "gross_margin_ttm": 0.42457,
+            "operating_margin_ttm": 0.30616,
+            "net_margin_ttm": 0.1443,
+            "operating_margin_trend_3yr": 0.04769487679782419
+        },
+        "returns_on_capital": {
+            "roe_ttm": 0.05689,
+            "roa_ttm": 0.01809,
+            "roic_ttm": null
+        },
+        "cash_flow": {
+            "fcf_margin_ttm": -2.083612940851631,
+            "fcf_to_net_income_ttm": -14.65665445873073,
+            "ocf_cagr_3yr": 0.5870534712581683
+        },
+        "balance_sheet": {
+            "debt_to_equity": 0.8526699999999999,
+            "net_debt_to_ebitda": 6.342587581024527,
+            "current_ratio": 1.689,
+            "interest_coverage": 1.7630548302872062,
+            "total_debt_usd": 36432998400,
+            "total_cash_usd": 794000000
+        },
+        "growth": {
+            "revenue_growth_1yr": -0.039,
+            "revenue_cagr_3yr": -0.017312084045800646,
+            "eps_growth_1yr": 0.137,
+            "eps_cagr_3yr": -0.04946935307505618,
+            "fcf_cagr_3yr": null
+        },
+        "valuation": {
+            "pe_trailing": 30.758503,
+            "pe_forward": 16.335312,
+            "ps_ratio": 4.3609877,
+            "pb_ratio": 1.8682727,
+            "ev_ebitda": 18.73,
+            "peg_ratio": 0.8184,
+            "fcf_yield": -0.47778464295595646
+        },
+        "data_quality_flags": [
+            "SRE: eps_cagr_3yr approximated by net income CAGR (share count changes not adjusted)"
+        ]
+    },
+    "financial_raw_metrics_date": "2026-05-18",
+    "financial_score": 36.68710282606667,
+    "financial_score_date": "2026-05-18",
+    "financial_subscores": {
+        "profitability": 61.810886117797196,
+        "returns_on_capital": 34.83004269258374,
+        "cash_flow_quality": 15.0,
+        "balance_sheet": 38.23372173629243,
+        "growth": 22.799426412969446,
+        "valuation": 39.69296561067469
+    },
+    "financial_drivers": {
+        "strongest": [
+            "ocf_cagr_3yr (cash_flow_quality): score=100, value=58.7%",
+            "peg_ratio (valuation): score=84, value=81.8%",
+            "debt_to_equity (balance_sheet): score=79, value=85.3%"
+        ],
+        "weakest": [
+            "fcf_margin_ttm (cash_flow_quality): score=0, value=-2.08",
+            "fcf_to_net_income_ttm (cash_flow_quality): score=0, value=-14.66",
+            "net_debt_to_ebitda (balance_sheet): score=0, value=6.34"
+        ]
+    },
+    "professional_raw_metrics": {
+        "sector": "Utilities",
+        "industry": "Utilities - Diversified",
+        "market_cap_usd": 59113189376,
+        "current_price": 90.43,
+        "analyst": {
+            "recommendation_mean": 1.68421,
+            "recommendation_key": "buy",
+            "target_mean_price": 104.23529,
+            "target_median_price": 104.0,
+            "target_high_price": 118.0,
+            "target_low_price": 93.0,
+            "upside_to_target": 0.15266272254782703,
+            "target_dispersion": 0.23984199593055286,
+            "num_analysts": 17
+        },
+        "rating_momentum": {
+            "upgrades_12m": 3,
+            "downgrades_12m": 0,
+            "total_actions_12m": 33
+        },
+        "institutional": {
+            "held_pct_institutions": 0.93584,
+            "held_pct_insiders": 0.001
+        },
+        "short_interest": {
+            "short_pct_of_float": 0.0164,
+            "short_ratio": 2.9,
+            "short_change_pct": -0.108053533861308
+        },
+        "data_quality_flags": []
+    },
+    "professional_raw_metrics_date": "2026-05-18",
+    "professional_score": 67.51479224141698,
+    "professional_score_date": "2026-05-18",
+    "professional_subscores": {
+        "analyst_consensus": 76.8617348365218,
+        "rating_momentum": 58.22727272727273,
+        "institutional_positioning": 60.73863839406343,
+        "short_interest": 72.47804845533545
+    },
+    "professional_drivers": {
+        "strongest": [
+            "recommendation_mean (analyst_consensus): score=84, value=1.68",
+            "short_pct_of_float (short_interest): score=76, value=1.6%",
+            "short_ratio (short_interest): score=71, value=2.90"
+        ],
+        "weakest": [
+            "held_pct_insiders (institutional_positioning): score=51, value=0.1%",
+            "upgrades_12m (rating_momentum): score=58, value=3.00",
+            "downgrades_12m (rating_momentum): score=58, value=0.00"
+        ]
+    },
+    "news_sentiment_raw_metrics": {
+        "sector": "Utilities",
+        "industry": "Utilities - Diversified",
+        "market_cap_usd": 59113189376,
+        "current_price": 90.43,
+        "earnings": {
+            "beat_count_4q": null,
+            "miss_count_4q": null,
+            "total_quarters_4q": null,
+            "avg_surprise_magnitude_4q": null,
+            "eps_estimate_revision_90d": null,
+            "trailing_eps": 2.94,
+            "forward_eps": 5.53586
+        },
+        "price_momentum": {
+            "return_1m": -0.05279146492364525,
+            "return_3m": -0.018639479753547874,
+            "return_6m": -0.005371221872493233
+        },
+        "insider_activity": {
+            "insider_purchases_count_90d": 3,
+            "insider_sales_count_90d": 4,
+            "insider_net_value_90d_usd": -433947.0
+        },
+        "data_quality_flags": [
+            "SRE: earnings_dates fetch failed (['Earnings Date'])"
+        ]
+    },
+    "news_sentiment_raw_metrics_date": "2026-05-18",
+    "news_sentiment_score": 46.812872863773144,
+    "news_sentiment_score_date": "2026-05-18",
+    "news_sentiment_subscores": {
+        "earnings_surprise_revisions": null,
+        "price_momentum": 46.35497118439161,
+        "insider_activity": 47.72867622253621
+    },
+    "news_sentiment_drivers": {
+        "strongest": [
+            "net_insider_value_pct_mcap_90d (insider_activity): score=50, value=-0.0%",
+            "return_6m (price_momentum): score=49, value=-0.5%",
+            "return_3m (price_momentum): score=47, value=-1.9%"
+        ],
+        "weakest": [
+            "return_1m (price_momentum): score=41, value=-5.3%",
+            "insider_count_ratio_90d (insider_activity): score=43, value=-14.3%",
+            "return_3m (price_momentum): score=47, value=-1.9%"
+        ]
+    },
+    "composite_score": 47.96056365821306,
+    "composite_score_date": "2026-05-18",
+    "composite_rank": 828,
+    "composite_metadata": {
+        "scores_used": [
+            "financial",
+            "professional",
+            "news_sentiment"
+        ],
+        "scores_imputed": [],
+        "imputed_values": {},
+        "imputation_r_squared": null,
+        "weights_applied": {
+            "financial": 50,
+            "professional": 30,
+            "news_sentiment": 20
+        }
+    }
+}

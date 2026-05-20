@@ -1,0 +1,193 @@
+{
+    "ticker": "CPRT",
+    "company_name": "Copart",
+    "universe_added_date": "2026-05-18",
+    "financial_raw_metrics": {
+        "sector": "Industrials",
+        "industry": "Specialty Business Services",
+        "market_cap_usd": 31114860544,
+        "profitability": {
+            "gross_margin_ttm": 0.47344002,
+            "operating_margin_ttm": 0.34654,
+            "net_margin_ttm": 0.33758,
+            "operating_margin_trend_3yr": -0.02762934290317287
+        },
+        "returns_on_capital": {
+            "roe_ttm": 0.17129,
+            "roa_ttm": 0.109919995,
+            "roic_ttm": null
+        },
+        "cash_flow": {
+            "fcf_margin_ttm": 0.22442131781117605,
+            "fcf_to_net_income_ttm": 0.6648038530949208,
+            "ocf_cagr_3yr": 0.15217266561526444
+        },
+        "balance_sheet": {
+            "debt_to_equity": 0.0098,
+            "net_debt_to_ebitda": -2.575016255620329,
+            "current_ratio": 10.061,
+            "interest_coverage": null,
+            "total_debt_usd": 96136000,
+            "total_cash_usd": 5101820928
+        },
+        "growth": {
+            "revenue_growth_1yr": -0.036,
+            "revenue_cagr_3yr": 0.0989943984010011,
+            "eps_growth_1yr": -0.1,
+            "eps_cagr_3yr": 0.12507036040920116,
+            "fcf_cagr_3yr": 0.13613497248033846
+        },
+        "valuation": {
+            "pe_trailing": 20.314465,
+            "pe_forward": 19.23661,
+            "ps_ratio": 6.7442822,
+            "pb_ratio": 3.1785083,
+            "ev_ebitda": 13.44,
+            "peg_ratio": 4.1275,
+            "fcf_yield": 0.03327578854277252
+        },
+        "data_quality_flags": [
+            "CPRT: eps_cagr_3yr approximated by net income CAGR (share count changes not adjusted)"
+        ]
+    },
+    "financial_raw_metrics_date": "2026-05-18",
+    "financial_score": 70.38707338827791,
+    "financial_score_date": "2026-05-18",
+    "financial_subscores": {
+        "profitability": 85.26033495958058,
+        "returns_on_capital": 57.871982183995776,
+        "cash_flow_quality": 77.07560870674489,
+        "balance_sheet": 98.5005882352941,
+        "growth": 55.47304597827068,
+        "valuation": 47.3548234767746
+    },
+    "financial_drivers": {
+        "strongest": [
+            "current_ratio (balance_sheet): score=100, value=10.06",
+            "net_debt_to_ebitda (balance_sheet): score=100, value=-2.58",
+            "net_margin_ttm (profitability): score=100, value=33.8%"
+        ],
+        "weakest": [
+            "peg_ratio (valuation): score=0, value=4.13",
+            "revenue_growth_1yr (growth): score=19, value=-3.6%",
+            "eps_growth_1yr (growth): score=20, value=-10.0%"
+        ]
+    },
+    "professional_raw_metrics": {
+        "sector": "Industrials",
+        "industry": "Specialty Business Services",
+        "market_cap_usd": 31114860544,
+        "current_price": 32.3,
+        "analyst": {
+            "recommendation_mean": 2.33333,
+            "recommendation_key": "buy",
+            "target_mean_price": 42.44444,
+            "target_median_price": 44.0,
+            "target_high_price": 55.0,
+            "target_low_price": 32.0,
+            "upside_to_target": 0.31406934984520135,
+            "target_dispersion": 0.5418848734957983,
+            "num_analysts": 9
+        },
+        "rating_momentum": {
+            "upgrades_12m": 1,
+            "downgrades_12m": 0,
+            "total_actions_12m": 12
+        },
+        "institutional": {
+            "held_pct_institutions": 0.83424,
+            "held_pct_insiders": 0.08659001
+        },
+        "short_interest": {
+            "short_pct_of_float": 0.042,
+            "short_ratio": 4.25,
+            "short_change_pct": 0.0323673478011741
+        },
+        "data_quality_flags": []
+    },
+    "professional_raw_metrics_date": "2026-05-18",
+    "professional_score": 66.03851804793965,
+    "professional_score_date": "2026-05-18",
+    "professional_subscores": {
+        "analyst_consensus": 73.28146699690403,
+        "rating_momentum": 57.75,
+        "institutional_positioning": 71.61917916548722,
+        "short_interest": 53.651398717676216
+    },
+    "professional_drivers": {
+        "strongest": [
+            "upside_to_target (analyst_consensus): score=91, value=31.4%",
+            "held_pct_insiders (institutional_positioning): score=87, value=8.7%",
+            "held_pct_institutions (institutional_positioning): score=65, value=83.4%"
+        ],
+        "weakest": [
+            "short_change_pct (short_interest): score=46, value=3.2%",
+            "short_pct_of_float (short_interest): score=54, value=4.2%",
+            "short_ratio (short_interest): score=58, value=4.25"
+        ]
+    },
+    "news_sentiment_raw_metrics": {
+        "sector": "Industrials",
+        "industry": "Specialty Business Services",
+        "market_cap_usd": 31114860544,
+        "current_price": 32.3,
+        "earnings": {
+            "beat_count_4q": 2,
+            "miss_count_4q": 1,
+            "total_quarters_4q": 4,
+            "avg_surprise_magnitude_4q": 0.028311965811965767,
+            "eps_estimate_revision_90d": null,
+            "trailing_eps": 1.59,
+            "forward_eps": 1.67909
+        },
+        "price_momentum": {
+            "return_1m": -0.031774598050296456,
+            "return_3m": -0.1203703996123803,
+            "return_6m": -0.22393078258213955
+        },
+        "insider_activity": {
+            "insider_purchases_count_90d": 0,
+            "insider_sales_count_90d": 1,
+            "insider_net_value_90d_usd": -869724.0
+        },
+        "data_quality_flags": []
+    },
+    "news_sentiment_raw_metrics_date": "2026-05-18",
+    "news_sentiment_score": 40.20587324196519,
+    "news_sentiment_score_date": "2026-05-18",
+    "news_sentiment_subscores": {
+        "earnings_surprise_revisions": 56.5335305719921,
+        "price_momentum": 26.725732931706162,
+        "insider_activity": 34.51083920242943
+    },
+    "news_sentiment_drivers": {
+        "strongest": [
+            "avg_surprise_magnitude_4q (earnings_surprise_revisions): score=64, value=2.8%",
+            "beat_rate_4q (earnings_surprise_revisions): score=50, value=50.0%",
+            "net_insider_value_pct_mcap_90d (insider_activity): score=49, value=-0.0%"
+        ],
+        "weakest": [
+            "insider_count_ratio_90d (insider_activity): score=0, value=-1.00",
+            "return_6m (price_momentum): score=13, value=-22.4%",
+            "return_3m (price_momentum): score=30, value=-12.0%"
+        ]
+    },
+    "composite_score": 63.046266756913894,
+    "composite_score_date": "2026-05-18",
+    "composite_rank": 106,
+    "composite_metadata": {
+        "scores_used": [
+            "financial",
+            "professional",
+            "news_sentiment"
+        ],
+        "scores_imputed": [],
+        "imputed_values": {},
+        "imputation_r_squared": null,
+        "weights_applied": {
+            "financial": 50,
+            "professional": 30,
+            "news_sentiment": 20
+        }
+    }
+}

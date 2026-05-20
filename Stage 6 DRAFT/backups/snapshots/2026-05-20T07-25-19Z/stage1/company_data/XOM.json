@@ -1,0 +1,195 @@
+{
+    "ticker": "XOM",
+    "company_name": "ExxonMobil",
+    "universe_added_date": "2026-05-18",
+    "financial_raw_metrics": {
+        "sector": "Energy",
+        "industry": "Oil & Gas Integrated",
+        "market_cap_usd": 654570029056,
+        "profitability": {
+            "gross_margin_ttm": 0.29768,
+            "operating_margin_ttm": 0.06355,
+            "net_margin_ttm": 0.077649996,
+            "operating_margin_trend_3yr": -0.055824358687682124
+        },
+        "returns_on_capital": {
+            "roe_ttm": 0.09873,
+            "roa_ttm": 0.04221,
+            "roic_ttm": null
+        },
+        "cash_flow": {
+            "fcf_margin_ttm": 0.03567550300407831,
+            "fcf_to_net_income_ttm": 0.4594492940006887,
+            "ocf_cagr_3yr": -0.12205059821734499
+        },
+        "balance_sheet": {
+            "debt_to_equity": 0.18261,
+            "net_debt_to_ebitda": 0.7003767172527701,
+            "current_ratio": 1.036,
+            "interest_coverage": 69.43781094527363,
+            "total_debt_usd": 47660998656,
+            "total_cash_usd": 8434999808
+        },
+        "growth": {
+            "revenue_growth_1yr": 0.026,
+            "revenue_cagr_3yr": -0.06688991546295975,
+            "eps_growth_1yr": -0.434,
+            "eps_cagr_3yr": -0.19715906600932198,
+            "fcf_cagr_3yr": -0.2605114854361147
+        },
+        "valuation": {
+            "pe_trailing": 26.585857,
+            "pe_forward": 15.207354,
+            "ps_ratio": 2.0078342,
+            "pb_ratio": 2.5442653,
+            "ev_ebitda": 12.506,
+            "peg_ratio": 1.3246,
+            "fcf_yield": 0.017768152105548028
+        },
+        "data_quality_flags": [
+            "XOM: eps_cagr_3yr approximated by net income CAGR (share count changes not adjusted)"
+        ]
+    },
+    "financial_raw_metrics_date": "2026-05-18",
+    "financial_score": 38.01232019472829,
+    "financial_score_date": "2026-05-18",
+    "financial_subscores": {
+        "profitability": 28.71062327431553,
+        "returns_on_capital": 36.690734147280935,
+        "cash_flow_quality": 28.82117246514378,
+        "balance_sheet": 81.13413250798523,
+        "growth": 7.7576284219893665,
+        "valuation": 48.50072467427492
+    },
+    "financial_drivers": {
+        "strongest": [
+            "interest_coverage (balance_sheet): score=100, value=69.44",
+            "debt_to_equity (balance_sheet): score=93, value=18.3%",
+            "net_debt_to_ebitda (balance_sheet): score=91, value=70.0%"
+        ],
+        "weakest": [
+            "eps_growth_1yr (growth): score=0, value=-43.4%",
+            "fcf_cagr_3yr (growth): score=0, value=-26.1%",
+            "eps_cagr_3yr (growth): score=0, value=-19.7%"
+        ]
+    },
+    "professional_raw_metrics": {
+        "sector": "Energy",
+        "industry": "Oil & Gas Integrated",
+        "market_cap_usd": 654570029056,
+        "current_price": 157.92,
+        "analyst": {
+            "recommendation_mean": 2.36,
+            "recommendation_key": "buy",
+            "target_mean_price": 167.86365,
+            "target_median_price": 168.0,
+            "target_high_price": 185.0,
+            "target_low_price": 130.0,
+            "upside_to_target": 0.06296637537993933,
+            "target_dispersion": 0.32764687292335176,
+            "num_analysts": 22
+        },
+        "rating_momentum": {
+            "upgrades_12m": 1,
+            "downgrades_12m": 2,
+            "total_actions_12m": 59
+        },
+        "institutional": {
+            "held_pct_institutions": 0.68935996,
+            "held_pct_insiders": 0.00086000003
+        },
+        "short_interest": {
+            "short_pct_of_float": 0.0124,
+            "short_ratio": 2.19,
+            "short_change_pct": -0.13775016616910538
+        },
+        "data_quality_flags": []
+    },
+    "professional_raw_metrics_date": "2026-05-18",
+    "professional_score": 55.06799972328654,
+    "professional_score_date": "2026-05-18",
+    "professional_subscores": {
+        "analyst_consensus": 53.656637537993944,
+        "rating_momentum": 51.43220338983051,
+        "institutional_positioning": 48.370999254959315,
+        "short_interest": 75.58250615860804
+    },
+    "professional_drivers": {
+        "strongest": [
+            "short_ratio (short_interest): score=78, value=2.19",
+            "short_pct_of_float (short_interest): score=76, value=1.2%",
+            "short_change_pct (short_interest): score=71, value=-13.8%"
+        ],
+        "weakest": [
+            "upside_to_target (analyst_consensus): score=43, value=6.3%",
+            "held_pct_institutions (institutional_positioning): score=47, value=68.9%",
+            "held_pct_insiders (institutional_positioning): score=51, value=0.1%"
+        ]
+    },
+    "news_sentiment_raw_metrics": {
+        "sector": "Energy",
+        "industry": "Oil & Gas Integrated",
+        "market_cap_usd": 654570029056,
+        "current_price": 157.92,
+        "earnings": {
+            "beat_count_4q": null,
+            "miss_count_4q": null,
+            "total_quarters_4q": null,
+            "avg_surprise_magnitude_4q": null,
+            "eps_estimate_revision_90d": null,
+            "trailing_eps": 5.94,
+            "forward_eps": 10.38445
+        },
+        "price_momentum": {
+            "return_1m": 0.06698797476164935,
+            "return_3m": 0.06044079610482791,
+            "return_6m": 0.35913398430805527
+        },
+        "insider_activity": {
+            "insider_purchases_count_90d": 0,
+            "insider_sales_count_90d": 2,
+            "insider_net_value_90d_usd": -507248.0
+        },
+        "data_quality_flags": [
+            "XOM: earnings_dates fetch failed (['Earnings Date'])"
+        ]
+    },
+    "news_sentiment_raw_metrics_date": "2026-05-18",
+    "news_sentiment_score": 62.54006537087678,
+    "news_sentiment_score_date": "2026-05-18",
+    "news_sentiment_subscores": {
+        "earnings_surprise_revisions": null,
+        "price_momentum": 76.31687872118368,
+        "insider_activity": 34.98643867026298
+    },
+    "news_sentiment_drivers": {
+        "strongest": [
+            "return_6m (price_momentum): score=100, value=35.9%",
+            "return_1m (price_momentum): score=61, value=6.7%",
+            "return_3m (price_momentum): score=60, value=6.0%"
+        ],
+        "weakest": [
+            "insider_count_ratio_90d (insider_activity): score=0, value=-1.00",
+            "net_insider_value_pct_mcap_90d (insider_activity): score=50, value=-0.0%",
+            "return_3m (price_momentum): score=60, value=6.0%"
+        ]
+    },
+    "composite_score": 48.03457308852547,
+    "composite_score_date": "2026-05-18",
+    "composite_rank": 825,
+    "composite_metadata": {
+        "scores_used": [
+            "financial",
+            "professional",
+            "news_sentiment"
+        ],
+        "scores_imputed": [],
+        "imputed_values": {},
+        "imputation_r_squared": null,
+        "weights_applied": {
+            "financial": 50,
+            "professional": 30,
+            "news_sentiment": 20
+        }
+    }
+}

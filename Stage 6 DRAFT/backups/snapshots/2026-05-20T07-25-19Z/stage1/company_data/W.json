@@ -1,0 +1,195 @@
+{
+    "ticker": "W",
+    "company_name": "Wayfair",
+    "universe_added_date": "2026-05-18",
+    "financial_raw_metrics": {
+        "sector": "Consumer Cyclical",
+        "industry": "Internet Retail",
+        "market_cap_usd": 7684836352,
+        "profitability": {
+            "gross_margin_ttm": 0.30084,
+            "operating_margin_ttm": 0.0044400003,
+            "net_margin_ttm": -0.0241,
+            "operating_margin_trend_3yr": 0.11501192519356125
+        },
+        "returns_on_capital": {
+            "roe_ttm": null,
+            "roa_ttm": 0.02962,
+            "roic_ttm": null
+        },
+        "cash_flow": {
+            "fcf_margin_ttm": 0.030751302570403437,
+            "fcf_to_net_income_ttm": -1.276229455737705,
+            "ocf_cagr_3yr": null
+        },
+        "balance_sheet": {
+            "debt_to_equity": null,
+            "net_debt_to_ebitda": 10.447999488,
+            "current_ratio": 0.763,
+            "interest_coverage": -1.5546218487394958,
+            "total_debt_usd": 3673999872,
+            "total_cash_usd": 1062000000
+        },
+        "growth": {
+            "revenue_growth_1yr": 0.074,
+            "revenue_cagr_3yr": 0.006478374366408746,
+            "eps_growth_1yr": null,
+            "eps_cagr_3yr": null,
+            "fcf_cagr_3yr": null
+        },
+        "valuation": {
+            "pe_trailing": null,
+            "pe_forward": 15.605357,
+            "ps_ratio": 0.607113,
+            "pb_ratio": -2.7276988,
+            "ev_ebitda": 41.187,
+            "peg_ratio": 23.5,
+            "fcf_yield": 0.05065169460618333
+        },
+        "data_quality_flags": [
+            "W: eps_cagr_3yr approximated by net income CAGR (share count changes not adjusted)"
+        ]
+    },
+    "financial_raw_metrics_date": "2026-05-18",
+    "financial_score": 30.09592045121288,
+    "financial_score_date": "2026-05-18",
+    "financial_subscores": {
+        "profitability": 50.07839530662918,
+        "returns_on_capital": null,
+        "cash_flow_quality": 14.926853697177483,
+        "balance_sheet": 4.208000000000001,
+        "growth": 34.99134974656349,
+        "valuation": 39.61417855388879
+    },
+    "financial_drivers": {
+        "strongest": [
+            "fcf_yield (valuation): score=73, value=5.1%",
+            "pe_forward (valuation): score=73, value=15.61",
+            "revenue_growth_1yr (growth): score=57, value=7.4%"
+        ],
+        "weakest": [
+            "fcf_to_net_income_ttm (cash_flow_quality): score=0, value=-1.28",
+            "net_debt_to_ebitda (balance_sheet): score=0, value=10.45",
+            "interest_coverage (balance_sheet): score=0, value=-1.55"
+        ]
+    },
+    "professional_raw_metrics": {
+        "sector": "Consumer Cyclical",
+        "industry": "Internet Retail",
+        "market_cap_usd": 7684836352,
+        "current_price": 58.22,
+        "analyst": {
+            "recommendation_mean": 1.96774,
+            "recommendation_key": "buy",
+            "target_mean_price": 94.67857,
+            "target_median_price": 99.5,
+            "target_high_price": 144.0,
+            "target_low_price": 60.0,
+            "upside_to_target": 0.6262207145310889,
+            "target_dispersion": 0.8872123860763846,
+            "num_analysts": 28
+        },
+        "rating_momentum": {
+            "upgrades_12m": 2,
+            "downgrades_12m": 1,
+            "total_actions_12m": 79
+        },
+        "institutional": {
+            "held_pct_institutions": 0.0112966,
+            "held_pct_insiders": 0.040120002
+        },
+        "short_interest": {
+            "short_pct_of_float": 0.2047,
+            "short_ratio": 4.34,
+            "short_change_pct": -0.09463175625208368
+        },
+        "data_quality_flags": []
+    },
+    "professional_raw_metrics_date": "2026-05-18",
+    "professional_score": 58.57345936486072,
+    "professional_score_date": "2026-05-18",
+    "professional_subscores": {
+        "analyst_consensus": 85.58068,
+        "rating_momentum": 53.29746835443038,
+        "institutional_positioning": 36.87286682816011,
+        "short_interest": 40.517583794753946
+    },
+    "professional_drivers": {
+        "strongest": [
+            "upside_to_target (analyst_consensus): score=100, value=62.6%",
+            "recommendation_mean (analyst_consensus): score=76, value=1.97",
+            "held_pct_insiders (institutional_positioning): score=75, value=4.0%"
+        ],
+        "weakest": [
+            "held_pct_institutions (institutional_positioning): score=21, value=1.1%",
+            "short_pct_of_float (short_interest): score=21, value=20.5%",
+            "upgrades_12m (rating_momentum): score=53, value=2.00"
+        ]
+    },
+    "news_sentiment_raw_metrics": {
+        "sector": "Consumer Cyclical",
+        "industry": "Internet Retail",
+        "market_cap_usd": 7684836352,
+        "current_price": 58.22,
+        "earnings": {
+            "beat_count_4q": null,
+            "miss_count_4q": null,
+            "total_quarters_4q": null,
+            "avg_surprise_magnitude_4q": null,
+            "eps_estimate_revision_90d": null,
+            "trailing_eps": -2.35,
+            "forward_eps": 3.73077
+        },
+        "price_momentum": {
+            "return_1m": -0.24310970637145712,
+            "return_3m": -0.29447403819190743,
+            "return_6m": -0.4532819873423263
+        },
+        "insider_activity": {
+            "insider_purchases_count_90d": 0,
+            "insider_sales_count_90d": 11,
+            "insider_net_value_90d_usd": -55656127.0
+        },
+        "data_quality_flags": [
+            "W: earnings_dates fetch failed (['Earnings Date'])"
+        ]
+    },
+    "news_sentiment_raw_metrics_date": "2026-05-18",
+    "news_sentiment_score": 1.7951844488853461,
+    "news_sentiment_score_date": "2026-05-18",
+    "news_sentiment_subscores": {
+        "earnings_surprise_revisions": null,
+        "price_momentum": 2.692776673328019,
+        "insider_activity": 0.0
+    },
+    "news_sentiment_drivers": {
+        "strongest": [
+            "return_1m (price_momentum): score=9, value=-24.3%",
+            "return_3m (price_momentum): score=1, value=-29.4%",
+            "insider_count_ratio_90d (insider_activity): score=0, value=-1.00"
+        ],
+        "weakest": [
+            "return_6m (price_momentum): score=0, value=-45.3%",
+            "net_insider_value_pct_mcap_90d (insider_activity): score=0, value=-0.7%",
+            "insider_count_ratio_90d (insider_activity): score=0, value=-1.00"
+        ]
+    },
+    "composite_score": 32.97903492484173,
+    "composite_score_date": "2026-05-18",
+    "composite_rank": 998,
+    "composite_metadata": {
+        "scores_used": [
+            "financial",
+            "professional",
+            "news_sentiment"
+        ],
+        "scores_imputed": [],
+        "imputed_values": {},
+        "imputation_r_squared": null,
+        "weights_applied": {
+            "financial": 50,
+            "professional": 30,
+            "news_sentiment": 20
+        }
+    }
+}
