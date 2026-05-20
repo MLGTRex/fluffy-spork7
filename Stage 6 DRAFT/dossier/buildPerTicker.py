@@ -300,6 +300,7 @@ def _assemble_dossier(
                 "drift_pct": overview_row.get("drift_pct"),
                 "entry_date_pipeline": overview_row.get("entry_date_pipeline"),
                 "entry_price_pipeline": overview_row.get("entry_price_pipeline"),
+                "entry_price": overview_row.get("entry_price"),
             }
             if overview_row
             else {"in_current_target": False, "status": "absent"}
