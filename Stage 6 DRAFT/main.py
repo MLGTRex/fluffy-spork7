@@ -48,6 +48,7 @@ from performance import (  # noqa: E402
 from dossier import (  # noqa: E402
     buildPortfolioOverview,
     buildPositionsLedger,
+    buildPublicSummary,
     buildPerTicker,
 )
 from indexing import buildIndices  # noqa: E402
@@ -203,6 +204,26 @@ def main() -> int:
         warnings,
     ) or {"snapshots_index": {"snapshots": []}, "runs_index": {"events": []}}
 
+    # 10b. Public summary (shareable, no tickers/allocations/theses)
+    live_stale = bool(
+        alpaca_bundle.get("account_stale")
+        or alpaca_bundle.get("positions_stale")
+        or alpaca_bundle.get("portfolio_history_stale")
+        or benchmark_bundle.get("stale")
+    )
+    public_summary = _step(
+        "public_summary",
+        lambda: buildPublicSummary.build(
+            perf_bundle.get("performance", {}),
+            perf_bundle.get("portfolio_value_history", {}),
+            perf_bundle.get("benchmark_history", {}),
+            snapshot_info.get("snapshot_id") or snapshot_info.get("prior_snapshot_id"),
+            live_stale,
+        ),
+        audit,
+        warnings,
+    ) or {"performance": {}, "value_history": [], "benchmark_history": [], "live_stale": True}
+
     # 11. Write all UI outputs (atomic)
     def _write_outputs():
         _atomic_write_json(
@@ -231,6 +252,10 @@ def main() -> int:
         _atomic_write_json(
             os.path.join(config.OUTPUT_DIR, "runs_index.json"),
             indices.get("runs_index", {}),
+        )
+        _atomic_write_json(
+            os.path.join(config.OUTPUT_DIR, "public_summary.json"),
+            public_summary,
         )
 
     _step("write_outputs", _write_outputs, audit, warnings)
