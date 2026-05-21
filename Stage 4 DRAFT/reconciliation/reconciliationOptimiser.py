@@ -174,8 +174,10 @@ def propose(
 
     problem = cp.Problem(objective, constraints)
 
-    # MIQP — same solver chain Track A relies on.
-    solvers_to_try = ["SCIPY", "SCIP", "GUROBI", "CBC"]
+    # MIQP — same solver chain Track A relies on. CBC is excluded: it's MILP-only
+    # and would just contribute a misleading "CBC not installed" message if it
+    # were the last solver tried after SCIP/GUROBI also fall through.
+    solvers_to_try = ["SCIPY", "SCIP", "GUROBI"]
     solve_error = None
     for solver in solvers_to_try:
         try:

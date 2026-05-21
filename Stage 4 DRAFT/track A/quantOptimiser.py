@@ -164,9 +164,9 @@ def optimize_portfolio(candidates: list) -> dict:
     problem = cp.Problem(objective, constraints)
 
     # Solve. The quadratic objective makes this a Mixed Integer Quadratic Program (MIQP).
-    # We try solvers that support MIQP: SCIP (via SCIPY/SCIPOpt), GUROBI (if licensed), CBC.
-    # ECOS_BB and GLPK_MI can't handle quadratic objectives and are excluded.
-    solvers_to_try = ["SCIPY", "SCIP", "GUROBI", "CBC"]
+    # We try solvers that support MIQP: SCIP (via pyscipopt) and GUROBI (if licensed).
+    # ECOS_BB, GLPK_MI, and CBC can't handle quadratic objectives and are excluded.
+    solvers_to_try = ["SCIPY", "SCIP", "GUROBI"]
     solve_error = None
     for solver in solvers_to_try:
         try:
