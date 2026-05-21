@@ -1,0 +1,193 @@
+{
+    "ticker": "CAR",
+    "company_name": "Avis Budget Group",
+    "universe_added_date": "2026-05-18",
+    "financial_raw_metrics": {
+        "sector": "Industrials",
+        "industry": "Rental & Leasing Services",
+        "market_cap_usd": 5302986240,
+        "profitability": {
+            "gross_margin_ttm": 0.27313998,
+            "operating_margin_ttm": 0.01818,
+            "net_margin_ttm": -0.056760002,
+            "operating_margin_trend_3yr": -0.2840408233784789
+        },
+        "returns_on_capital": {
+            "roe_ttm": null,
+            "roa_ttm": 0.029000001,
+            "roic_ttm": null
+        },
+        "cash_flow": {
+            "fcf_margin_ttm": 0.014295439697010307,
+            "fcf_to_net_income_ttm": -0.2518740629685157,
+            "ocf_cagr_3yr": -0.1119972005465435
+        },
+        "balance_sheet": {
+            "debt_to_equity": null,
+            "net_debt_to_ebitda": 17.799345345021706,
+            "current_ratio": 0.775,
+            "interest_coverage": -1.2014218009478672,
+            "total_debt_usd": 27672000512,
+            "total_cash_usd": 528000000
+        },
+        "growth": {
+            "revenue_growth_1yr": 0.041,
+            "revenue_cagr_3yr": -0.04276152515868614,
+            "eps_growth_1yr": null,
+            "eps_cagr_3yr": null,
+            "fcf_cagr_3yr": null
+        },
+        "valuation": {
+            "pe_trailing": null,
+            "pe_forward": 19.42358,
+            "ps_ratio": 0.4512412,
+            "pb_ratio": -1.5517563,
+            "ev_ebitda": 21.364,
+            "peg_ratio": 0.17,
+            "fcf_yield": 0.03168026323221235
+        },
+        "data_quality_flags": [
+            "CAR: eps_cagr_3yr approximated by net income CAGR (share count changes not adjusted)"
+        ]
+    },
+    "financial_raw_metrics_date": "2026-05-18",
+    "financial_score": 22.92287979557869,
+    "financial_score_date": "2026-05-18",
+    "financial_subscores": {
+        "profitability": 17.61430118088565,
+        "returns_on_capital": null,
+        "cash_flow_quality": 10.553922911955349,
+        "balance_sheet": 4.4,
+        "growth": 22.798463312175183,
+        "valuation": 61.01723777777495
+    },
+    "financial_drivers": {
+        "strongest": [
+            "peg_ratio (valuation): score=100, value=17.0%",
+            "pe_forward (valuation): score=62, value=19.42",
+            "ev_ebitda (valuation): score=48, value=21.36"
+        ],
+        "weakest": [
+            "fcf_to_net_income_ttm (cash_flow_quality): score=0, value=-25.2%",
+            "net_debt_to_ebitda (balance_sheet): score=0, value=17.80",
+            "interest_coverage (balance_sheet): score=0, value=-1.20"
+        ]
+    },
+    "professional_raw_metrics": {
+        "sector": "Industrials",
+        "industry": "Rental & Leasing Services",
+        "market_cap_usd": 5302986240,
+        "current_price": 150.12,
+        "analyst": {
+            "recommendation_mean": 3.5,
+            "recommendation_key": "hold",
+            "target_mean_price": 126.71429,
+            "target_median_price": 140.0,
+            "target_high_price": 160.0,
+            "target_low_price": 85.0,
+            "upside_to_target": -0.15591333599786836,
+            "target_dispersion": 0.5918827308269651,
+            "num_analysts": 7
+        },
+        "rating_momentum": {
+            "upgrades_12m": 0,
+            "downgrades_12m": 7,
+            "total_actions_12m": 18
+        },
+        "institutional": {
+            "held_pct_institutions": 0.0133507,
+            "held_pct_insiders": 0.01407
+        },
+        "short_interest": {
+            "short_pct_of_float": 0.62759995,
+            "short_ratio": 1.05,
+            "short_change_pct": -0.3247525608045679
+        },
+        "data_quality_flags": []
+    },
+    "professional_raw_metrics_date": "2026-05-18",
+    "professional_score": 26.481593269595077,
+    "professional_score_date": "2026-05-18",
+    "professional_subscores": {
+        "analyst_consensus": 13.5,
+        "rating_momentum": 28.0,
+        "institutional_positioning": 30.81835259194377,
+        "short_interest": 47.01336747739424
+    },
+    "professional_drivers": {
+        "strongest": [
+            "short_ratio (short_interest): score=90, value=1.05",
+            "short_change_pct (short_interest): score=88, value=-32.5%",
+            "held_pct_insiders (institutional_positioning): score=62, value=1.4%"
+        ],
+        "weakest": [
+            "upside_to_target (analyst_consensus): score=0, value=-15.6%",
+            "short_pct_of_float (short_interest): score=5, value=62.8%",
+            "held_pct_institutions (institutional_positioning): score=17, value=1.3%"
+        ]
+    },
+    "news_sentiment_raw_metrics": {
+        "sector": "Industrials",
+        "industry": "Rental & Leasing Services",
+        "market_cap_usd": 5302986240,
+        "current_price": 150.12,
+        "earnings": {
+            "beat_count_4q": 2,
+            "miss_count_4q": 2,
+            "total_quarters_4q": 4,
+            "avg_surprise_magnitude_4q": -2.9326450307408614,
+            "eps_estimate_revision_90d": null,
+            "trailing_eps": -18.91,
+            "forward_eps": 7.72875
+        },
+        "price_momentum": {
+            "return_1m": -0.62068877336019,
+            "return_3m": 0.2885836909871245,
+            "return_6m": 0.09138492671288642
+        },
+        "insider_activity": {
+            "insider_purchases_count_90d": 1,
+            "insider_sales_count_90d": 8,
+            "insider_net_value_90d_usd": -2314516950.0
+        },
+        "data_quality_flags": []
+    },
+    "news_sentiment_raw_metrics_date": "2026-05-18",
+    "news_sentiment_score": 35.60644827127398,
+    "news_sentiment_score_date": "2026-05-18",
+    "news_sentiment_subscores": {
+        "earnings_surprise_revisions": 26.923076923076927,
+        "price_momentum": 60.426377088441356,
+        "insider_activity": 3.333333333333333
+    },
+    "news_sentiment_drivers": {
+        "strongest": [
+            "return_3m (price_momentum): score=98, value=28.9%",
+            "return_6m (price_momentum): score=65, value=9.1%",
+            "beat_rate_4q (earnings_surprise_revisions): score=50, value=50.0%"
+        ],
+        "weakest": [
+            "avg_surprise_magnitude_4q (earnings_surprise_revisions): score=0, value=-2.93",
+            "return_1m (price_momentum): score=0, value=-62.1%",
+            "net_insider_value_pct_mcap_90d (insider_activity): score=0, value=-43.6%"
+        ]
+    },
+    "composite_score": 26.527207532922667,
+    "composite_score_date": "2026-05-18",
+    "composite_rank": 1000,
+    "composite_metadata": {
+        "scores_used": [
+            "financial",
+            "professional",
+            "news_sentiment"
+        ],
+        "scores_imputed": [],
+        "imputed_values": {},
+        "imputation_r_squared": null,
+        "weights_applied": {
+            "financial": 50,
+            "professional": 30,
+            "news_sentiment": 20
+        }
+    }
+}

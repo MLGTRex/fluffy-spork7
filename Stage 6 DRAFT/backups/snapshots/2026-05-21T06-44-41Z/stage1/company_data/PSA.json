@@ -1,0 +1,195 @@
+{
+    "ticker": "PSA",
+    "company_name": "Public Storage",
+    "universe_added_date": "2026-05-18",
+    "financial_raw_metrics": {
+        "sector": "Real Estate",
+        "industry": "REIT - Industrial",
+        "market_cap_usd": 51341864960,
+        "profitability": {
+            "gross_margin_ttm": 0.74767995,
+            "operating_margin_ttm": 0.46032003,
+            "net_margin_ttm": 0.39061,
+            "operating_margin_trend_3yr": -0.050154193638367595
+        },
+        "returns_on_capital": {
+            "roe_ttm": 0.20175,
+            "roa_ttm": 0.07206,
+            "roic_ttm": null
+        },
+        "cash_flow": {
+            "fcf_margin_ttm": 0.47979886732148386,
+            "fcf_to_net_income_ttm": 1.3715586080026188,
+            "ocf_cagr_3yr": 0.00735723075666761
+        },
+        "balance_sheet": {
+            "debt_to_equity": 1.07646,
+            "net_debt_to_ebitda": 2.8814384732134903,
+            "current_ratio": 0.188,
+            "interest_coverage": 6.8779421665380385,
+            "total_debt_usd": 10032266240,
+            "total_cash_usd": 134608992
+        },
+        "growth": {
+            "revenue_growth_1yr": 0.032,
+            "revenue_cagr_3yr": 0.048750479098311095,
+            "eps_growth_1yr": 0.328,
+            "eps_cagr_3yr": -0.2569378203660425,
+            "fcf_cagr_3yr": 0.029206402695491906
+        },
+        "valuation": {
+            "pe_trailing": 30.213842,
+            "pe_forward": 28.835999,
+            "ps_ratio": 10.5392685,
+            "pb_ratio": 10.47904,
+            "ev_ebitda": 19.122,
+            "peg_ratio": 4.5291,
+            "fcf_yield": 0.04552487467724429
+        },
+        "data_quality_flags": [
+            "PSA: eps_cagr_3yr approximated by net income CAGR (share count changes not adjusted)"
+        ]
+    },
+    "financial_raw_metrics_date": "2026-05-18",
+    "financial_score": 63.729717743748644,
+    "financial_score_date": "2026-05-18",
+    "financial_subscores": {
+        "profitability": 62.428333206828995,
+        "returns_on_capital": 96.14253656098825,
+        "cash_flow_quality": 85.18915820535423,
+        "balance_sheet": 51.129073839195605,
+        "growth": 37.28153442638043,
+        "valuation": 39.83719213030439
+    },
+    "financial_drivers": {
+        "strongest": [
+            "fcf_margin_ttm (cash_flow_quality): score=100, value=48.0%",
+            "roa_ttm (returns_on_capital): score=99, value=7.2%",
+            "roe_ttm (returns_on_capital): score=94, value=20.2%"
+        ],
+        "weakest": [
+            "current_ratio (balance_sheet): score=0, value=18.8%",
+            "eps_cagr_3yr (growth): score=0, value=-25.7%",
+            "peg_ratio (valuation): score=0, value=4.53"
+        ]
+    },
+    "professional_raw_metrics": {
+        "sector": "Real Estate",
+        "industry": "REIT - Industrial",
+        "market_cap_usd": 51341864960,
+        "current_price": 292.47,
+        "analyst": {
+            "recommendation_mean": 2.42105,
+            "recommendation_key": "buy",
+            "target_mean_price": 314.6875,
+            "target_median_price": 309.0,
+            "target_high_price": 350.0,
+            "target_low_price": 276.0,
+            "upside_to_target": 0.07596505624508487,
+            "target_dispersion": 0.23515392254220457,
+            "num_analysts": 16
+        },
+        "rating_momentum": {
+            "upgrades_12m": 0,
+            "downgrades_12m": 4,
+            "total_actions_12m": 32
+        },
+        "institutional": {
+            "held_pct_institutions": 0.87255996,
+            "held_pct_insiders": 0.101739995
+        },
+        "short_interest": {
+            "short_pct_of_float": 0.0508,
+            "short_ratio": 6.11,
+            "short_change_pct": -0.008120344538622084
+        },
+        "data_quality_flags": []
+    },
+    "professional_raw_metrics_date": "2026-05-18",
+    "professional_score": 57.14061883053969,
+    "professional_score_date": "2026-05-18",
+    "professional_subscores": {
+        "analyst_consensus": 53.491305624508485,
+        "rating_momentum": 44.625,
+        "institutional_positioning": 80.66692365442455,
+        "short_interest": 47.30453965570387
+    },
+    "professional_drivers": {
+        "strongest": [
+            "held_pct_insiders (institutional_positioning): score=90, value=10.2%",
+            "held_pct_institutions (institutional_positioning): score=77, value=87.3%",
+            "recommendation_mean (analyst_consensus): score=58, value=2.42"
+        ],
+        "weakest": [
+            "short_ratio (short_interest): score=43, value=6.11",
+            "upgrades_12m (rating_momentum): score=45, value=0.00",
+            "downgrades_12m (rating_momentum): score=45, value=4.00"
+        ]
+    },
+    "news_sentiment_raw_metrics": {
+        "sector": "Real Estate",
+        "industry": "REIT - Industrial",
+        "market_cap_usd": 51341864960,
+        "current_price": 292.47,
+        "earnings": {
+            "beat_count_4q": null,
+            "miss_count_4q": null,
+            "total_quarters_4q": null,
+            "avg_surprise_magnitude_4q": null,
+            "eps_estimate_revision_90d": null,
+            "trailing_eps": 9.68,
+            "forward_eps": 10.14253
+        },
+        "price_momentum": {
+            "return_1m": -0.0245471997527895,
+            "return_3m": 0.01052463226141564,
+            "return_6m": 0.0890551449356556
+        },
+        "insider_activity": {
+            "insider_purchases_count_90d": 0,
+            "insider_sales_count_90d": 0,
+            "insider_net_value_90d_usd": null
+        },
+        "data_quality_flags": [
+            "PSA: earnings_dates fetch failed (['Earnings Date'])"
+        ]
+    },
+    "news_sentiment_raw_metrics_date": "2026-05-18",
+    "news_sentiment_score": 53.68543103639559,
+    "news_sentiment_score_date": "2026-05-18",
+    "news_sentiment_subscores": {
+        "earnings_surprise_revisions": null,
+        "price_momentum": 55.52814655459339,
+        "insider_activity": 50.0
+    },
+    "news_sentiment_drivers": {
+        "strongest": [
+            "return_6m (price_momentum): score=65, value=8.9%",
+            "return_3m (price_momentum): score=52, value=1.1%",
+            "insider_activity_summary (insider_activity): score=50, value=no activity in 90d"
+        ],
+        "weakest": [
+            "return_1m (price_momentum): score=46, value=-2.5%",
+            "insider_activity_summary (insider_activity): score=50, value=no activity in 90d",
+            "return_3m (price_momentum): score=52, value=1.1%"
+        ]
+    },
+    "composite_score": 59.74413072831535,
+    "composite_score_date": "2026-05-18",
+    "composite_rank": 236,
+    "composite_metadata": {
+        "scores_used": [
+            "financial",
+            "professional",
+            "news_sentiment"
+        ],
+        "scores_imputed": [],
+        "imputed_values": {},
+        "imputation_r_squared": null,
+        "weights_applied": {
+            "financial": 50,
+            "professional": 30,
+            "news_sentiment": 20
+        }
+    }
+}

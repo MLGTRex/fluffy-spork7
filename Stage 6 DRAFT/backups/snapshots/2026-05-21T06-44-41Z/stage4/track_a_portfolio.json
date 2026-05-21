@@ -1,0 +1,82 @@
+{
+    "track": "A",
+    "method": "Quant MILP with quadratic concentration penalty",
+    "constraints": {
+        "portfolio_size": 15,
+        "min_position_weight": 0.03,
+        "max_position_weight": 0.2,
+        "sector_cap": 0.35,
+        "base_return_filter": "base_return_12m > 0",
+        "lambda_concentration_penalty": 2.0
+    },
+    "n_input_candidates": 33,
+    "n_eligible": 18,
+    "n_filtered_out": 15,
+    "filtered_out": [
+        {
+            "ticker": "ALL",
+            "reason": "base_return_12m=-0.1020 <= 0"
+        },
+        {
+            "ticker": "AU",
+            "reason": "base_return_12m=-0.2062 <= 0"
+        },
+        {
+            "ticker": "APP",
+            "reason": "base_return_12m=-0.0803 <= 0"
+        },
+        {
+            "ticker": "ALAB",
+            "reason": "base_return_12m=-0.2525 <= 0"
+        },
+        {
+            "ticker": "AVG.AX",
+            "reason": "base_return_12m=-0.4000 <= 0"
+        },
+        {
+            "ticker": "EL",
+            "reason": "base_return_12m=-0.0255 <= 0"
+        },
+        {
+            "ticker": "FICO",
+            "reason": "base_return_12m=-0.1300 <= 0"
+        },
+        {
+            "ticker": "GRMN",
+            "reason": "base_return_12m=-0.1006 <= 0"
+        },
+        {
+            "ticker": "KTOS",
+            "reason": "base_return_12m=-0.1363 <= 0"
+        },
+        {
+            "ticker": "MSFT",
+            "reason": "base_return_12m=-0.1328 <= 0"
+        },
+        {
+            "ticker": "NEM",
+            "reason": "base_return_12m=-0.1050 <= 0"
+        },
+        {
+            "ticker": "QXO",
+            "reason": "base_return_12m=-0.1738 <= 0"
+        },
+        {
+            "ticker": "RDDT",
+            "reason": "base_return_12m=-0.0051 <= 0"
+        },
+        {
+            "ticker": "TXN",
+            "reason": "base_return_12m=-0.1035 <= 0"
+        },
+        {
+            "ticker": "VOD",
+            "reason": "base_return_12m=-0.2000 <= 0"
+        }
+    ],
+    "status": "error",
+    "objective_value": null,
+    "positions": [],
+    "error_message": "cvxpy could not find an optimal solution: status=None, last_error=The solver CBC is not installed.",
+    "analysis_date": "2026-05-21"
+}

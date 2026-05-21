@@ -1,0 +1,195 @@
+{
+    "ticker": "HOG",
+    "company_name": "Harley-Davidson",
+    "universe_added_date": "2026-05-18",
+    "financial_raw_metrics": {
+        "sector": "Consumer Cyclical",
+        "industry": "Recreational Vehicles",
+        "market_cap_usd": 2651708672,
+        "profitability": {
+            "gross_margin_ttm": 0.28904,
+            "operating_margin_ttm": 0.03121,
+            "net_margin_ttm": 0.053379998,
+            "operating_margin_trend_3yr": -0.07156021355833983
+        },
+        "returns_on_capital": {
+            "roe_ttm": 0.07115,
+            "roa_ttm": 0.01968,
+            "roic_ttm": null
+        },
+        "cash_flow": {
+            "fcf_margin_ttm": 0.039017431972688255,
+            "fcf_to_net_income_ttm": 0.7309613777025393,
+            "ocf_cagr_3yr": 0.012283890750996784
+        },
+        "balance_sheet": {
+            "debt_to_equity": 0.71433,
+            "net_debt_to_ebitda": 2.3068069062896894,
+            "current_ratio": 1.914,
+            "interest_coverage": 14.716391579954552,
+            "total_debt_usd": 2200221952,
+            "total_cash_usd": 1084227968
+        },
+        "growth": {
+            "revenue_growth_1yr": -0.118,
+            "revenue_cagr_3yr": -0.08056665484914971,
+            "eps_growth_1yr": -0.794,
+            "eps_cagr_3yr": -0.22980230059391693,
+            "fcf_cagr_3yr": 0.015265910569861374
+        },
+        "valuation": {
+            "pe_trailing": 13.051814,
+            "pe_forward": 13.109005,
+            "ps_ratio": 0.6143196,
+            "pb_ratio": 0.8653979,
+            "ev_ebitda": 7.821,
+            "peg_ratio": 5.7578,
+            "fcf_yield": 0.06351324554554988
+        },
+        "data_quality_flags": [
+            "HOG: eps_cagr_3yr approximated by net income CAGR (share count changes not adjusted)"
+        ]
+    },
+    "financial_raw_metrics_date": "2026-05-18",
+    "financial_score": 45.51813975149153,
+    "financial_score_date": "2026-05-18",
+    "financial_subscores": {
+        "profitability": 42.35673588618604,
+        "returns_on_capital": 40.034885581064145,
+        "cash_flow_quality": 43.422314361085554,
+        "balance_sheet": 77.11179911817908,
+        "growth": 8.034614448941314,
+        "valuation": 65.0300417920707
+    },
+    "financial_drivers": {
+        "strongest": [
+            "interest_coverage (balance_sheet): score=97, value=14.72",
+            "fcf_yield (valuation): score=86, value=6.4%",
+            "debt_to_equity (balance_sheet): score=84, value=71.4%"
+        ],
+        "weakest": [
+            "eps_cagr_3yr (growth): score=0, value=-23.0%",
+            "eps_growth_1yr (growth): score=0, value=-79.4%",
+            "peg_ratio (valuation): score=0, value=5.76"
+        ]
+    },
+    "professional_raw_metrics": {
+        "sector": "Consumer Cyclical",
+        "industry": "Recreational Vehicles",
+        "market_cap_usd": 2651708672,
+        "current_price": 25.19,
+        "analyst": {
+            "recommendation_mean": 2.625,
+            "recommendation_key": "hold",
+            "target_mean_price": 25.18182,
+            "target_median_price": 26.0,
+            "target_high_price": 32.0,
+            "target_low_price": 12.0,
+            "upside_to_target": -0.00032473203652254713,
+            "target_dispersion": 0.794223769370125,
+            "num_analysts": 11
+        },
+        "rating_momentum": {
+            "upgrades_12m": 0,
+            "downgrades_12m": 1,
+            "total_actions_12m": 14
+        },
+        "institutional": {
+            "held_pct_institutions": 0.010624199999999999,
+            "held_pct_insiders": 0.01084
+        },
+        "short_interest": {
+            "short_pct_of_float": 0.1766,
+            "short_ratio": 4.31,
+            "short_change_pct": -0.2840253902379509
+        },
+        "data_quality_flags": []
+    },
+    "professional_raw_metrics_date": "2026-05-18",
+    "professional_score": 41.352033380157394,
+    "professional_score_date": "2026-05-18",
+    "professional_subscores": {
+        "analyst_consensus": 39.96752679634775,
+        "rating_momentum": 48.0,
+        "institutional_positioning": 32.45824506621089,
+        "short_interest": 48.32558489921971
+    },
+    "professional_drivers": {
+        "strongest": [
+            "short_change_pct (short_interest): score=86, value=-28.4%",
+            "held_pct_insiders (institutional_positioning): score=60, value=1.1%",
+            "short_ratio (short_interest): score=57, value=4.31"
+        ],
+        "weakest": [
+            "held_pct_institutions (institutional_positioning): score=20, value=1.1%",
+            "upside_to_target (analyst_consensus): score=25, value=-0.0%",
+            "short_pct_of_float (short_interest): score=28, value=17.7%"
+        ]
+    },
+    "news_sentiment_raw_metrics": {
+        "sector": "Consumer Cyclical",
+        "industry": "Recreational Vehicles",
+        "market_cap_usd": 2651708672,
+        "current_price": 25.19,
+        "earnings": {
+            "beat_count_4q": null,
+            "miss_count_4q": null,
+            "total_quarters_4q": null,
+            "avg_surprise_magnitude_4q": null,
+            "eps_estimate_revision_90d": null,
+            "trailing_eps": 1.93,
+            "forward_eps": 1.92158
+        },
+        "price_momentum": {
+            "return_1m": 0.10192472998418725,
+            "return_3m": 0.29217619436982123,
+            "return_6m": 0.03430351481736738
+        },
+        "insider_activity": {
+            "insider_purchases_count_90d": 3,
+            "insider_sales_count_90d": 3,
+            "insider_net_value_90d_usd": 173811.0
+        },
+        "data_quality_flags": [
+            "HOG: earnings_dates fetch failed (['Earnings Date'])"
+        ]
+    },
+    "news_sentiment_raw_metrics_date": "2026-05-18",
+    "news_sentiment_score": 66.10060701071295,
+    "news_sentiment_score_date": "2026-05-18",
+    "news_sentiment_subscores": {
+        "earnings_surprise_revisions": null,
+        "price_momentum": 73.5773760754052,
+        "insider_activity": 51.14706888132845
+    },
+    "news_sentiment_drivers": {
+        "strongest": [
+            "return_3m (price_momentum): score=99, value=29.2%",
+            "return_1m (price_momentum): score=67, value=10.2%",
+            "return_6m (price_momentum): score=56, value=3.4%"
+        ],
+        "weakest": [
+            "insider_count_ratio_90d (insider_activity): score=50, value=0.00",
+            "net_insider_value_pct_mcap_90d (insider_activity): score=52, value=0.0%",
+            "return_6m (price_momentum): score=56, value=3.4%"
+        ]
+    },
+    "composite_score": 48.384801291935574,
+    "composite_score_date": "2026-05-18",
+    "composite_rank": 809,
+    "composite_metadata": {
+        "scores_used": [
+            "financial",
+            "professional",
+            "news_sentiment"
+        ],
+        "scores_imputed": [],
+        "imputed_values": {},
+        "imputation_r_squared": null,
+        "weights_applied": {
+            "financial": 50,
+            "professional": 30,
+            "news_sentiment": 20
+        }
+    }
+}

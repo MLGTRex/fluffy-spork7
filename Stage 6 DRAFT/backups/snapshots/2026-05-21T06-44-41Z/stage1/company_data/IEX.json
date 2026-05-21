@@ -1,0 +1,195 @@
+{
+    "ticker": "IEX",
+    "company_name": "IDEX Corporation",
+    "universe_added_date": "2026-05-18",
+    "financial_raw_metrics": {
+        "sector": "Industrials",
+        "industry": "Specialty Industrial Machinery",
+        "market_cap_usd": 15372187648,
+        "profitability": {
+            "gross_margin_ttm": 0.44435,
+            "operating_margin_ttm": 0.1989,
+            "net_margin_ttm": 0.14382,
+            "operating_margin_trend_3yr": -0.03507079325242515
+        },
+        "returns_on_capital": {
+            "roe_ttm": 0.12748,
+            "roa_ttm": 0.06757,
+            "roic_ttm": null
+        },
+        "cash_flow": {
+            "fcf_margin_ttm": 0.1487280804394489,
+            "fcf_to_net_income_ttm": 1.0341244672050423,
+            "ocf_cagr_3yr": 0.06872453614735052
+        },
+        "balance_sheet": {
+            "debt_to_equity": 0.46915,
+            "net_debt_to_ebitda": 1.3798864733081126,
+            "current_ratio": 3.393,
+            "interest_coverage": 10.822981366459627,
+            "total_debt_usd": 1899299968,
+            "total_cash_usd": 586200000
+        },
+        "growth": {
+            "revenue_growth_1yr": 0.089,
+            "revenue_cagr_3yr": 0.028075999700655663,
+            "eps_growth_1yr": 0.278,
+            "eps_cagr_3yr": -0.0627525402081549,
+            "fcf_cagr_3yr": 0.0801733711336221
+        },
+        "valuation": {
+            "pe_trailing": 30.768888,
+            "pe_forward": 22.50943,
+            "ps_ratio": 4.3546042,
+            "pb_ratio": 3.8104062,
+            "ev_ebitda": 17.532,
+            "peg_ratio": 1.8557,
+            "fcf_yield": 0.034154214352718267
+        },
+        "data_quality_flags": [
+            "IEX: eps_cagr_3yr approximated by net income CAGR (share count changes not adjusted)"
+        ]
+    },
+    "financial_raw_metrics_date": "2026-05-18",
+    "financial_score": 58.077147052999464,
+    "financial_score_date": "2026-05-18",
+    "financial_subscores": {
+        "profitability": 57.36407092367534,
+        "returns_on_capital": 40.831137529441975,
+        "cash_flow_quality": 76.37001820353433,
+        "balance_sheet": 89.12478741150787,
+        "growth": 43.46400242026769,
+        "valuation": 47.29522771386346
+    },
+    "financial_drivers": {
+        "strongest": [
+            "current_ratio (balance_sheet): score=98, value=3.39",
+            "interest_coverage (balance_sheet): score=95, value=10.82",
+            "fcf_to_net_income_ttm (cash_flow_quality): score=95, value=1.03"
+        ],
+        "weakest": [
+            "eps_cagr_3yr (growth): score=14, value=-6.3%",
+            "pe_trailing (valuation): score=34, value=30.77",
+            "revenue_cagr_3yr (growth): score=37, value=2.8%"
+        ]
+    },
+    "professional_raw_metrics": {
+        "sector": "Industrials",
+        "industry": "Specialty Industrial Machinery",
+        "market_cap_usd": 15372187648,
+        "current_price": 207.69,
+        "analyst": {
+            "recommendation_mean": 2.0,
+            "recommendation_key": "buy",
+            "target_mean_price": 237.7143,
+            "target_median_price": 238.5,
+            "target_high_price": 260.0,
+            "target_low_price": 210.0,
+            "upside_to_target": 0.14456305070056338,
+            "target_dispersion": 0.21033652582112225,
+            "num_analysts": 14
+        },
+        "rating_momentum": {
+            "upgrades_12m": 1,
+            "downgrades_12m": 0,
+            "total_actions_12m": 21
+        },
+        "institutional": {
+            "held_pct_institutions": 0.010560799999999999,
+            "held_pct_insiders": 0.00221
+        },
+        "short_interest": {
+            "short_pct_of_float": 0.030299999,
+            "short_ratio": 2.66,
+            "short_change_pct": -0.11938632367178392
+        },
+        "data_quality_flags": []
+    },
+    "professional_raw_metrics_date": "2026-05-18",
+    "professional_score": 54.9534141709267,
+    "professional_score_date": "2026-05-18",
+    "professional_subscores": {
+        "analyst_consensus": 70.45630507005635,
+        "rating_momentum": 55.5,
+        "institutional_positioning": 26.749589895055188,
+        "short_interest": 64.87539948428784
+    },
+    "professional_drivers": {
+        "strongest": [
+            "recommendation_mean (analyst_consensus): score=75, value=2.00",
+            "short_ratio (short_interest): score=73, value=2.66",
+            "short_change_pct (short_interest): score=68, value=-11.9%"
+        ],
+        "weakest": [
+            "held_pct_institutions (institutional_positioning): score=16, value=1.1%",
+            "held_pct_insiders (institutional_positioning): score=52, value=0.2%",
+            "upgrades_12m (rating_momentum): score=56, value=1.00"
+        ]
+    },
+    "news_sentiment_raw_metrics": {
+        "sector": "Industrials",
+        "industry": "Specialty Industrial Machinery",
+        "market_cap_usd": 15372187648,
+        "current_price": 207.69,
+        "earnings": {
+            "beat_count_4q": null,
+            "miss_count_4q": null,
+            "total_quarters_4q": null,
+            "avg_surprise_magnitude_4q": null,
+            "eps_estimate_revision_90d": null,
+            "trailing_eps": 6.75,
+            "forward_eps": 9.2268
+        },
+        "price_momentum": {
+            "return_1m": 0.04094825357151787,
+            "return_3m": 0.012430538256500725,
+            "return_6m": 0.24774209658727456
+        },
+        "insider_activity": {
+            "insider_purchases_count_90d": 0,
+            "insider_sales_count_90d": 1,
+            "insider_net_value_90d_usd": -3311195.0
+        },
+        "data_quality_flags": [
+            "IEX: earnings_dates fetch failed (['Earnings Date'])"
+        ]
+    },
+    "news_sentiment_raw_metrics_date": "2026-05-18",
+    "news_sentiment_score": 56.37511137445235,
+    "news_sentiment_score_date": "2026-05-18",
+    "news_sentiment_subscores": {
+        "earnings_surprise_revisions": null,
+        "price_momentum": 68.94743173626077,
+        "insider_activity": 31.2304706508355
+    },
+    "news_sentiment_drivers": {
+        "strongest": [
+            "return_6m (price_momentum): score=91, value=24.8%",
+            "return_1m (price_momentum): score=57, value=4.1%",
+            "return_3m (price_momentum): score=52, value=1.2%"
+        ],
+        "weakest": [
+            "insider_count_ratio_90d (insider_activity): score=0, value=-1.00",
+            "net_insider_value_pct_mcap_90d (insider_activity): score=45, value=-0.0%",
+            "return_3m (price_momentum): score=52, value=1.2%"
+        ]
+    },
+    "composite_score": 56.79962005266822,
+    "composite_score_date": "2026-05-18",
+    "composite_rank": 373,
+    "composite_metadata": {
+        "scores_used": [
+            "financial",
+            "professional",
+            "news_sentiment"
+        ],
+        "scores_imputed": [],
+        "imputed_values": {},
+        "imputation_r_squared": null,
+        "weights_applied": {
+            "financial": 50,
+            "professional": 30,
+            "news_sentiment": 20
+        }
+    }
+}

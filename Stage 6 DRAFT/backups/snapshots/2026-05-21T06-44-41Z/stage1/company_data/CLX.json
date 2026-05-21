@@ -1,0 +1,193 @@
+{
+    "ticker": "CLX",
+    "company_name": "Clorox",
+    "universe_added_date": "2026-05-18",
+    "financial_raw_metrics": {
+        "sector": "Consumer Defensive",
+        "industry": "Household & Personal Products",
+        "market_cap_usd": 10937335808,
+        "profitability": {
+            "gross_margin_ttm": 0.43846,
+            "operating_margin_ttm": 0.17006001,
+            "net_margin_ttm": 0.111829996,
+            "operating_margin_trend_3yr": 0.06451344363569987
+        },
+        "returns_on_capital": {
+            "roe_ttm": 5.46099,
+            "roa_ttm": 0.110369995,
+            "roic_ttm": null
+        },
+        "cash_flow": {
+            "fcf_margin_ttm": 0.009282544378698224,
+            "fcf_to_net_income_ttm": 0.08300264550264551,
+            "ocf_cagr_3yr": 0.07666886358455605
+        },
+        "balance_sheet": {
+            "debt_to_equity": 48.760870000000004,
+            "net_debt_to_ebitda": 2.585557400313972,
+            "current_ratio": 0.84,
+            "interest_coverage": 13.25,
+            "total_debt_usd": 4486000128,
+            "total_cash_usd": 1192000000
+        },
+        "growth": {
+            "revenue_growth_1yr": 0.001,
+            "revenue_cagr_3yr": -0.00014072614877613798,
+            "eps_growth_1yr": 0.027,
+            "eps_cagr_3yr": 0.20581592284093397,
+            "fcf_cagr_3yr": 0.12463162432326258
+        },
+        "valuation": {
+            "pe_trailing": 14.707316,
+            "pe_forward": 14.368637,
+            "ps_ratio": 1.6179491,
+            "pb_ratio": -163.26714,
+            "ev_ebitda": 11.295,
+            "peg_ratio": 1.9361,
+            "fcf_yield": 0.005737228983506401
+        },
+        "data_quality_flags": [
+            "CLX: eps_cagr_3yr approximated by net income CAGR (share count changes not adjusted)"
+        ]
+    },
+    "financial_raw_metrics_date": "2026-05-18",
+    "financial_score": 53.186103416286876,
+    "financial_score_date": "2026-05-18",
+    "financial_subscores": {
+        "profitability": 55.52907750525164,
+        "returns_on_capital": 86.22890152570292,
+        "cash_flow_quality": 21.263790511535134,
+        "balance_sheet": 41.88929079748823,
+        "growth": 48.217186200504074,
+        "valuation": 54.19311655777902
+    },
+    "financial_drivers": {
+        "strongest": [
+            "roe_ttm (returns_on_capital): score=98, value=5.46",
+            "interest_coverage (balance_sheet): score=97, value=13.25",
+            "eps_cagr_3yr (growth): score=85, value=20.6%"
+        ],
+        "weakest": [
+            "debt_to_equity (balance_sheet): score=0, value=48.76",
+            "fcf_margin_ttm (cash_flow_quality): score=15, value=0.9%",
+            "fcf_to_net_income_ttm (cash_flow_quality): score=15, value=8.3%"
+        ]
+    },
+    "professional_raw_metrics": {
+        "sector": "Consumer Defensive",
+        "industry": "Household & Personal Products",
+        "market_cap_usd": 10937335808,
+        "current_price": 90.45,
+        "analyst": {
+            "recommendation_mean": 3.10526,
+            "recommendation_key": "hold",
+            "target_mean_price": 105.58824,
+            "target_median_price": 97.0,
+            "target_high_price": 163.0,
+            "target_low_price": 83.0,
+            "upside_to_target": 0.16736583747927028,
+            "target_dispersion": 0.7576601333633367,
+            "num_analysts": 17
+        },
+        "rating_momentum": {
+            "upgrades_12m": 0,
+            "downgrades_12m": 1,
+            "total_actions_12m": 47
+        },
+        "institutional": {
+            "held_pct_institutions": 0.86093,
+            "held_pct_insiders": 0.00612
+        },
+        "short_interest": {
+            "short_pct_of_float": 0.0958,
+            "short_ratio": 4.02,
+            "short_change_pct": 0.3403037965363022
+        },
+        "data_quality_flags": []
+    },
+    "professional_raw_metrics_date": "2026-05-18",
+    "professional_score": 49.72284022330766,
+    "professional_score_date": "2026-05-18",
+    "professional_subscores": {
+        "analyst_consensus": 46.578822498618024,
+        "rating_momentum": 51.15957446808511,
+        "institutional_positioning": 57.527192957481816,
+        "short_interest": 41.657069949330804
+    },
+    "professional_drivers": {
+        "strongest": [
+            "upside_to_target (analyst_consensus): score=68, value=16.7%",
+            "short_ratio (short_interest): score=60, value=4.02",
+            "held_pct_institutions (institutional_positioning): score=58, value=86.1%"
+        ],
+        "weakest": [
+            "short_change_pct (short_interest): score=13, value=34.0%",
+            "recommendation_mean (analyst_consensus): score=32, value=3.11",
+            "short_pct_of_float (short_interest): score=42, value=9.6%"
+        ]
+    },
+    "news_sentiment_raw_metrics": {
+        "sector": "Consumer Defensive",
+        "industry": "Household & Personal Products",
+        "market_cap_usd": 10937335808,
+        "current_price": 90.45,
+        "earnings": {
+            "beat_count_4q": 3,
+            "miss_count_4q": 1,
+            "total_quarters_4q": 4,
+            "avg_surprise_magnitude_4q": 0.10633729016081954,
+            "eps_estimate_revision_90d": null,
+            "trailing_eps": 6.15,
+            "forward_eps": 6.29496
+        },
+        "price_momentum": {
+            "return_1m": -0.11008389130761144,
+            "return_3m": -0.265162329878233,
+            "return_6m": -0.11187633845428459
+        },
+        "insider_activity": {
+            "insider_purchases_count_90d": 1,
+            "insider_sales_count_90d": 0,
+            "insider_net_value_90d_usd": 429124.0
+        },
+        "data_quality_flags": []
+    },
+    "news_sentiment_raw_metrics_date": "2026-05-18",
+    "news_sentiment_score": 55.01832705899547,
+    "news_sentiment_score_date": "2026-05-18",
+    "news_sentiment_subscores": {
+        "earnings_surprise_revisions": 82.21556723819168,
+        "price_momentum": 22.48694605566696,
+        "insider_activity": 65.68660870726005
+    },
+    "news_sentiment_drivers": {
+        "strongest": [
+            "insider_count_ratio_90d (insider_activity): score=100, value=1.00",
+            "avg_surprise_magnitude_4q (earnings_surprise_revisions): score=91, value=10.6%",
+            "beat_rate_4q (earnings_surprise_revisions): score=75, value=75.0%"
+        ],
+        "weakest": [
+            "return_3m (price_momentum): score=6, value=-26.5%",
+            "return_6m (price_momentum): score=31, value=-11.2%",
+            "return_1m (price_momentum): score=32, value=-11.0%"
+        ]
+    },
+    "composite_score": 52.51356918693483,
+    "composite_score_date": "2026-05-18",
+    "composite_rank": 623,
+    "composite_metadata": {
+        "scores_used": [
+            "financial",
+            "professional",
+            "news_sentiment"
+        ],
+        "scores_imputed": [],
+        "imputed_values": {},
+        "imputation_r_squared": null,
+        "weights_applied": {
+            "financial": 50,
+            "professional": 30,
+            "news_sentiment": 20
+        }
+    }
+}

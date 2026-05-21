@@ -1,0 +1,193 @@
+{
+    "ticker": "BAH",
+    "company_name": "Booz Allen Hamilton",
+    "universe_added_date": "2026-05-18",
+    "financial_raw_metrics": {
+        "sector": "Industrials",
+        "industry": "Consulting Services",
+        "market_cap_usd": 8763594752,
+        "profitability": {
+            "gross_margin_ttm": 0.22368,
+            "operating_margin_ttm": 0.09733,
+            "net_margin_ttm": 0.07354,
+            "operating_margin_trend_3yr": 0.03243407021474848
+        },
+        "returns_on_capital": {
+            "roe_ttm": 0.75081,
+            "roa_ttm": 0.09912,
+            "roic_ttm": null
+        },
+        "cash_flow": {
+            "fcf_margin_ttm": 0.07092041162482739,
+            "fcf_to_net_income_ttm": 0.9713457478991596,
+            "ocf_cagr_3yr": 0.11062563793916413
+        },
+        "balance_sheet": {
+            "debt_to_equity": 4.0361,
+            "net_debt_to_ebitda": 2.5771969683764007,
+            "current_ratio": 1.807,
+            "interest_coverage": 7.41578947368421,
+            "total_debt_usd": 4136999936,
+            "total_cash_usd": 882000000
+        },
+        "growth": {
+            "revenue_growth_1yr": -0.102,
+            "revenue_cagr_3yr": 0.12724795773024367,
+            "eps_growth_1yr": 0.124,
+            "eps_cagr_3yr": 0.2606045287352041,
+            "fcf_cagr_3yr": 0.11535780627314485
+        },
+        "valuation": {
+            "pe_trailing": 10.781899,
+            "pe_forward": 11.61798,
+            "ps_ratio": 0.76812994,
+            "pb_ratio": 8.568564,
+            "ev_ebitda": 9.516,
+            "peg_ratio": 1.09,
+            "fcf_yield": 0.092328665450367
+        },
+        "data_quality_flags": [
+            "BAH: eps_cagr_3yr approximated by net income CAGR (share count changes not adjusted)"
+        ]
+    },
+    "financial_raw_metrics_date": "2026-05-18",
+    "financial_score": 59.215773155755585,
+    "financial_score_date": "2026-05-18",
+    "financial_subscores": {
+        "profitability": 43.19682531241506,
+        "returns_on_capital": 56.58758741108904,
+        "cash_flow_quality": 63.63632691807776,
+        "balance_sheet": 54.24145385825196,
+        "growth": 65.66874635345356,
+        "valuation": 78.1794102772485
+    },
+    "financial_drivers": {
+        "strongest": [
+            "fcf_yield (valuation): score=97, value=9.2%",
+            "fcf_to_net_income_ttm (cash_flow_quality): score=92, value=97.1%",
+            "eps_cagr_3yr (growth): score=90, value=26.1%"
+        ],
+        "weakest": [
+            "revenue_growth_1yr (growth): score=8, value=-10.2%",
+            "debt_to_equity (balance_sheet): score=12, value=4.04",
+            "gross_margin_ttm (profitability): score=31, value=22.4%"
+        ]
+    },
+    "professional_raw_metrics": {
+        "sector": "Industrials",
+        "industry": "Consulting Services",
+        "market_cap_usd": 8763594752,
+        "current_price": 72.67,
+        "analyst": {
+            "recommendation_mean": 3.0,
+            "recommendation_key": "hold",
+            "target_mean_price": 95.75,
+            "target_median_price": 87.0,
+            "target_high_price": 160.0,
+            "target_low_price": 72.0,
+            "upside_to_target": 0.31760011008669325,
+            "target_dispersion": 0.9190600522193212,
+            "num_analysts": 12
+        },
+        "rating_momentum": {
+            "upgrades_12m": 1,
+            "downgrades_12m": 2,
+            "total_actions_12m": 19
+        },
+        "institutional": {
+            "held_pct_institutions": 0.0100353,
+            "held_pct_insiders": 0.01021
+        },
+        "short_interest": {
+            "short_pct_of_float": 0.075100005,
+            "short_ratio": 5.72,
+            "short_change_pct": -0.024488653234565585
+        },
+        "data_quality_flags": []
+    },
+    "professional_raw_metrics_date": "2026-05-18",
+    "professional_score": 46.632089402951635,
+    "professional_score_date": "2026-05-18",
+    "professional_subscores": {
+        "analyst_consensus": 57.35200220173387,
+        "rating_momentum": 49.18421052631579,
+        "institutional_positioning": 30.127756080841138,
+        "short_interest": 44.872646537036985
+    },
+    "professional_drivers": {
+        "strongest": [
+            "upside_to_target (analyst_consensus): score=91, value=31.8%",
+            "held_pct_insiders (institutional_positioning): score=60, value=1.0%",
+            "short_change_pct (short_interest): score=54, value=-2.4%"
+        ],
+        "weakest": [
+            "held_pct_institutions (institutional_positioning): score=17, value=1.0%",
+            "recommendation_mean (analyst_consensus): score=35, value=3.00",
+            "short_pct_of_float (short_interest): score=41, value=7.5%"
+        ]
+    },
+    "news_sentiment_raw_metrics": {
+        "sector": "Industrials",
+        "industry": "Consulting Services",
+        "market_cap_usd": 8763594752,
+        "current_price": 72.67,
+        "earnings": {
+            "beat_count_4q": 2,
+            "miss_count_4q": 1,
+            "total_quarters_4q": 4,
+            "avg_surprise_magnitude_4q": 0.24572703512979277,
+            "eps_estimate_revision_90d": null,
+            "trailing_eps": 6.74,
+            "forward_eps": 6.25496
+        },
+        "price_momentum": {
+            "return_1m": -0.11701096834348328,
+            "return_3m": -0.06038268113548754,
+            "return_6m": -0.12473845629078119
+        },
+        "insider_activity": {
+            "insider_purchases_count_90d": 0,
+            "insider_sales_count_90d": 1,
+            "insider_net_value_90d_usd": -27506.0
+        },
+        "data_quality_flags": []
+    },
+    "news_sentiment_raw_metrics_date": "2026-05-18",
+    "news_sentiment_score": 49.53431303188526,
+    "news_sentiment_score_date": "2026-05-18",
+    "news_sentiment_subscores": {
+        "earnings_surprise_revisions": 73.07692307692308,
+        "price_momentum": 33.286322833399346,
+        "insider_activity": 34.94507333878143
+    },
+    "news_sentiment_drivers": {
+        "strongest": [
+            "avg_surprise_magnitude_4q (earnings_surprise_revisions): score=100, value=24.6%",
+            "beat_rate_4q (earnings_surprise_revisions): score=50, value=50.0%",
+            "net_insider_value_pct_mcap_90d (insider_activity): score=50, value=-0.0%"
+        ],
+        "weakest": [
+            "insider_count_ratio_90d (insider_activity): score=0, value=-1.00",
+            "return_6m (price_momentum): score=29, value=-12.5%",
+            "return_1m (price_momentum): score=30, value=-11.7%"
+        ]
+    },
+    "composite_score": 53.50437600514034,
+    "composite_score_date": "2026-05-18",
+    "composite_rank": 567,
+    "composite_metadata": {
+        "scores_used": [
+            "financial",
+            "professional",
+            "news_sentiment"
+        ],
+        "scores_imputed": [],
+        "imputed_values": {},
+        "imputation_r_squared": null,
+        "weights_applied": {
+            "financial": 50,
+            "professional": 30,
+            "news_sentiment": 20
+        }
+    }
+}

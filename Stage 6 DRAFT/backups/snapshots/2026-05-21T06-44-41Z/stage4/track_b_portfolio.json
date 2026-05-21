@@ -1,0 +1,123 @@
+{
+    "track": "B",
+    "method": "Pure LLM (Kimi K2.6)",
+    "analysis_date": "2026-05-21",
+    "model": "kimi-k2.6",
+    "n_input_candidates": 33,
+    "constraints": {
+        "portfolio_size": 15,
+        "min_position_weight": 3.0,
+        "max_position_weight": 20.0,
+        "sector_cap": 35.0,
+        "base_return_filter": "base_return_12m > 0"
+    },
+    "constraint_violations": [],
+    "portfolio": {
+        "positions": [
+            {
+                "ticker": "AVGO",
+                "allocation_pct": 8.0,
+                "rationale": "Dominant custom-silicon AI backlog and best-in-class margins at a forward earnings discount to peers, though regulatory risk warrants measured sizing."
+            },
+            {
+                "ticker": "NVDA",
+                "allocation_pct": 7.0,
+                "rationale": "Unmatched near-term AI infrastructure execution and fortress balance sheet, but kept below maximum to respect cyclical left-tail risks."
+            },
+            {
+                "ticker": "NOW",
+                "allocation_pct": 7.0,
+                "rationale": "Mission-critical enterprise workflows and durable RPO provide a software-quality anchor while the AI pivot offers re-acceleration optionality."
+            },
+            {
+                "ticker": "ANET",
+                "allocation_pct": 6.0,
+                "rationale": "Supply-capped hardware compounder with exceptional profitability but limited near-term catalysts; sized modestly given modest expected return."
+            },
+            {
+                "ticker": "RMD",
+                "allocation_pct": 9.0,
+                "rationale": "World's dominant sleep-apnea franchise trades at a GLP-1-driven discount despite accelerating resupply and a locked-out competitor."
+            },
+            {
+                "ticker": "ARDX",
+                "allocation_pct": 7.5,
+                "rationale": "Fast-growing IBSRELA franchise and recent refinancing create a high-conviction profitability inflection with significant upside asymmetry."
+            },
+            {
+                "ticker": "LLY",
+                "allocation_pct": 7.5,
+                "rationale": "Unmatched metabolic volume growth and Medicare expansion support earnings compounding, balanced by premium valuation and capital intensity."
+            },
+            {
+                "ticker": "SEK.AX",
+                "allocation_pct": 8.0,
+                "rationale": "Hyper-dominant ANZ employment marketplace trading at a distressed valuation with widening placement share and a clear deleveraging path."
+            },
+            {
+                "ticker": "NFLX",
+                "allocation_pct": 6.5,
+                "rationale": "Global streaming utility generating best-in-class margins and free cash flow at a modest forward multiple, with buybacks providing a valuation floor."
+            },
+            {
+                "ticker": "META",
+                "allocation_pct": 7.0,
+                "rationale": "Core advertising engine is structurally strong and the stock discounts peak-capex fears, offering re-rating as free cash flow inflects."
+            },
+            {
+                "ticker": "BIP",
+                "allocation_pct": 7.0,
+                "rationale": "Infrastructure vehicle offers rare income-plus-growth asymmetry at a discounted entry, with accelerating Data FFO and defensive legacy cash flows."
+            },
+            {
+                "ticker": "VST",
+                "allocation_pct": 5.0,
+                "rationale": "Contracted nuclear and retail base provides near-term visibility into AI-power scarcity, but regulatory and leverage risks keep it smaller."
+            },
+            {
+                "ticker": "DVN",
+                "allocation_pct": 6.0,
+                "rationale": "Imminent Coterra merger closure and pre-committed capital returns create a catalyst-rich E&P setup with a wide valuation discount."
+            },
+            {
+                "ticker": "MA",
+                "allocation_pct": 5.0,
+                "rationale": "Payment-network duopoly with resilient cross-border recovery and aggressive buybacks, priced at a modest discount to Visa."
+            },
+            {
+                "ticker": "ANG.AX",
+                "allocation_pct": 3.5,
+                "rationale": "Deeply discounted mining-services turnaround with a new CEO and discrete operational levers, treated as a high-variance event bet."
+            }
+        ],
+        "notable_rejections": [
+            {
+                "ticker": "CI",
+                "rationale": "Eligible but excluded due to negative probability-weighted expected return and structural PBM rebate erosion that threatens to overwhelm buyback support."
+            },
+            {
+                "ticker": "HALO",
+                "rationale": "Eligible but excluded because near-term royalty inflection is offset by a 2027 patent cliff and extreme partner concentration that creates severe left-tail risk."
+            },
+            {
+                "ticker": "ICE",
+                "rationale": "Eligible but excluded as record quarterly results likely reflect cyclical energy-volatility peaks rather than a durable step-up, while CEO selling undermines confidence."
+            },
+            {
+                "ticker": "MSFT",
+                "rationale": "Ineligible due to non-positive base return; otherwise a quality mega-cap, but OpenAI concentration and unprecedented capex produce a negatively skewed risk/reward."
+            },
+            {
+                "ticker": "APP",
+                "rationale": "Ineligible due to non-positive base return; stellar margins are overshadowed by regulatory binary risk and working-capital deterioration that make the setup negatively convex."
+            }
+        ],
+        "portfolio_thesis": "The portfolio targets a barbell of high-conviction compounders and asymmetric inflections, emphasizing durable cash-flow generation in healthcare and communication services alongside event-driven energy and utilities catalysts, while capping correlated technology exposure at 28% and avoiding names with negative expected returns or existential duration risk.",
+        "key_risks": [
+            "A synchronized drawdown in AI-exposed technology names could pressure the 28% tech allocation despite individual stock quality.",
+            "ANG.AX is a binary turnaround where operational or governance failure could produce severe impairment.",
+            "Healthcare regulatory scrutiny and GLP-1 substitution fears may simultaneously weigh on RMD and LLY.",
+            "Commodity and interest-rate volatility represent latent macro sensitivities through DVN, BIP, and VST."
+        ]
+    }
+}
