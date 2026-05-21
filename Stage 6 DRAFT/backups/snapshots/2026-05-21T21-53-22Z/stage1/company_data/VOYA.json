@@ -1,0 +1,195 @@
+{
+    "ticker": "VOYA",
+    "company_name": "Voya Financial",
+    "universe_added_date": "2026-05-18",
+    "financial_raw_metrics": {
+        "sector": "Financial Services",
+        "industry": "Financial Conglomerates",
+        "market_cap_usd": 7383864832,
+        "profitability": {
+            "gross_margin_ttm": 0.56404996,
+            "operating_margin_ttm": 0.14328,
+            "net_margin_ttm": 0.08241,
+            "operating_margin_trend_3yr": null
+        },
+        "returns_on_capital": {
+            "roe_ttm": 0.11893,
+            "roa_ttm": 0.00421,
+            "roic_ttm": null
+        },
+        "cash_flow": {
+            "fcf_margin_ttm": 0.1765543553385573,
+            "fcf_to_net_income_ttm": 2.2797338841940533,
+            "ocf_cagr_3yr": 0.3867225487012693
+        },
+        "balance_sheet": {
+            "debt_to_equity": 0.73442,
+            "net_debt_to_ebitda": 2.86070868921095,
+            "current_ratio": 5.02,
+            "interest_coverage": 4.388663967611336,
+            "total_debt_usd": 4925000192,
+            "total_cash_usd": 1372000000
+        },
+        "growth": {
+            "revenue_growth_1yr": 0.031,
+            "revenue_cagr_3yr": 0.11178128619740835,
+            "eps_growth_1yr": 0.232,
+            "eps_cagr_3yr": 0.08643193783085579,
+            "fcf_cagr_3yr": null
+        },
+        "valuation": {
+            "pe_trailing": 12.302115,
+            "pe_forward": 7.339913,
+            "ps_ratio": 0.89490545,
+            "pb_ratio": 1.5430088,
+            "ev_ebitda": 10.455,
+            "peg_ratio": null,
+            "fcf_yield": 0.1972882745207869
+        },
+        "data_quality_flags": [
+            "VOYA: eps_cagr_3yr approximated by net income CAGR (share count changes not adjusted)"
+        ]
+    },
+    "financial_raw_metrics_date": "2026-05-18",
+    "financial_score": 59.37825689250002,
+    "financial_score_date": "2026-05-18",
+    "financial_subscores": {
+        "profitability": 41.19406882662941,
+        "returns_on_capital": 37.1590344202251,
+        "cash_flow_quality": 77.68053629108074,
+        "balance_sheet": 71.13350842153507,
+        "growth": 62.47202163029559,
+        "valuation": 80.0981752779494
+    },
+    "financial_drivers": {
+        "strongest": [
+            "fcf_yield (valuation): score=100, value=19.7%",
+            "current_ratio (balance_sheet): score=100, value=5.02",
+            "ocf_cagr_3yr (cash_flow_quality): score=100, value=38.7%"
+        ],
+        "weakest": [
+            "net_margin_ttm (profitability): score=24, value=8.2%",
+            "roa_ttm (returns_on_capital): score=30, value=0.4%",
+            "operating_margin_ttm (profitability): score=39, value=14.3%"
+        ]
+    },
+    "professional_raw_metrics": {
+        "sector": "Financial Services",
+        "industry": "Financial Conglomerates",
+        "market_cap_usd": 7383864832,
+        "current_price": 81.44,
+        "analyst": {
+            "recommendation_mean": 2.25,
+            "recommendation_key": "buy",
+            "target_mean_price": 88.09091,
+            "target_median_price": 89.0,
+            "target_high_price": 100.0,
+            "target_low_price": 74.0,
+            "upside_to_target": 0.08166638015717088,
+            "target_dispersion": 0.29514963575696973,
+            "num_analysts": 11
+        },
+        "rating_momentum": {
+            "upgrades_12m": 1,
+            "downgrades_12m": 0,
+            "total_actions_12m": 33
+        },
+        "institutional": {
+            "held_pct_institutions": 0.011187899999999999,
+            "held_pct_insiders": 0.0032300001
+        },
+        "short_interest": {
+            "short_pct_of_float": 0.0002,
+            "short_ratio": 0.01,
+            "short_change_pct": 0.23190286402817684
+        },
+        "data_quality_flags": []
+    },
+    "professional_raw_metrics_date": "2026-05-18",
+    "professional_score": 49.324234549521094,
+    "professional_score_date": "2026-05-18",
+    "professional_subscores": {
+        "analyst_consensus": 58.16663801571709,
+        "rating_momentum": 54.409090909090914,
+        "institutional_positioning": 18.518947090943964,
+        "short_interest": 71.55934496007596
+    },
+    "professional_drivers": {
+        "strongest": [
+            "short_ratio (short_interest): score=100, value=1.0%",
+            "short_pct_of_float (short_interest): score=74, value=0.0%",
+            "recommendation_mean (analyst_consensus): score=65, value=2.25"
+        ],
+        "weakest": [
+            "held_pct_institutions (institutional_positioning): score=4, value=1.1%",
+            "short_change_pct (short_interest): score=22, value=23.2%",
+            "upside_to_target (analyst_consensus): score=48, value=8.2%"
+        ]
+    },
+    "news_sentiment_raw_metrics": {
+        "sector": "Financial Services",
+        "industry": "Financial Conglomerates",
+        "market_cap_usd": 7383864832,
+        "current_price": 81.44,
+        "earnings": {
+            "beat_count_4q": null,
+            "miss_count_4q": null,
+            "total_quarters_4q": null,
+            "avg_surprise_magnitude_4q": null,
+            "eps_estimate_revision_90d": null,
+            "trailing_eps": 6.62,
+            "forward_eps": 11.0955
+        },
+        "price_momentum": {
+            "return_1m": 0.10893242500878873,
+            "return_3m": 0.10651350356500498,
+            "return_6m": 0.15700297691468504
+        },
+        "insider_activity": {
+            "insider_purchases_count_90d": 0,
+            "insider_sales_count_90d": 3,
+            "insider_net_value_90d_usd": -999210.0
+        },
+        "data_quality_flags": [
+            "VOYA: earnings_dates fetch failed (['Earnings Date'])"
+        ]
+    },
+    "news_sentiment_raw_metrics_date": "2026-05-18",
+    "news_sentiment_score": 58.35661584351138,
+    "news_sentiment_score_date": "2026-05-18",
+    "news_sentiment_subscores": {
+        "earnings_surprise_revisions": null,
+        "price_momentum": 71.21900387763715,
+        "insider_activity": 32.63183977525985
+    },
+    "news_sentiment_drivers": {
+        "strongest": [
+            "return_6m (price_momentum): score=76, value=15.7%",
+            "return_1m (price_momentum): score=68, value=10.9%",
+            "return_3m (price_momentum): score=68, value=10.7%"
+        ],
+        "weakest": [
+            "insider_count_ratio_90d (insider_activity): score=0, value=-1.00",
+            "net_insider_value_pct_mcap_90d (insider_activity): score=47, value=-0.0%",
+            "return_3m (price_momentum): score=68, value=10.7%"
+        ]
+    },
+    "composite_score": 56.15772197980861,
+    "composite_score_date": "2026-05-18",
+    "composite_rank": 410,
+    "composite_metadata": {
+        "scores_used": [
+            "financial",
+            "professional",
+            "news_sentiment"
+        ],
+        "scores_imputed": [],
+        "imputed_values": {},
+        "imputation_r_squared": null,
+        "weights_applied": {
+            "financial": 50,
+            "professional": 30,
+            "news_sentiment": 20
+        }
+    }
+}

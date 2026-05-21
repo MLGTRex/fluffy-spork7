@@ -1,0 +1,193 @@
+{
+    "ticker": "ABT",
+    "company_name": "Abbott Laboratories",
+    "universe_added_date": "2026-05-18",
+    "financial_raw_metrics": {
+        "sector": "Healthcare",
+        "industry": "Medical Devices",
+        "market_cap_usd": 147130957824,
+        "profitability": {
+            "gross_margin_ttm": 0.56503,
+            "operating_margin_ttm": 0.13472,
+            "net_margin_ttm": 0.13904999,
+            "operating_margin_trend_3yr": -0.009887664494803605
+        },
+        "returns_on_capital": {
+            "roe_ttm": 0.123339996,
+            "roa_ttm": 0.0559,
+            "roic_ttm": null
+        },
+        "cash_flow": {
+            "fcf_margin_ttm": 0.14049552669864343,
+            "fcf_to_net_income_ttm": 1.0142554159230028,
+            "ocf_cagr_3yr": -0.000522138774958214
+        },
+        "balance_sheet": {
+            "debt_to_equity": 0.6477299999999999,
+            "net_debt_to_ebitda": 2.28550753133515,
+            "current_ratio": 1.388,
+            "interest_coverage": 18.17241379310345,
+            "total_debt_usd": 34136000512,
+            "total_cash_usd": 7295000064
+        },
+        "growth": {
+            "revenue_growth_1yr": 0.078,
+            "revenue_cagr_3yr": 0.005127944169646348,
+            "eps_growth_1yr": -0.197,
+            "eps_cagr_3yr": -0.020064290219131475,
+            "fcf_cagr_3yr": -0.017784072013788288
+        },
+        "valuation": {
+            "pe_trailing": 23.661066,
+            "pe_forward": 13.929864,
+            "ps_ratio": 3.2598696,
+            "pb_ratio": 2.8261235,
+            "ev_ebitda": 14.868,
+            "peg_ratio": 1.2521,
+            "fcf_yield": 0.04309851042759701
+        },
+        "data_quality_flags": [
+            "ABT: eps_cagr_3yr approximated by net income CAGR (share count changes not adjusted)"
+        ]
+    },
+    "financial_raw_metrics_date": "2026-05-18",
+    "financial_score": 52.999615162290276,
+    "financial_score_date": "2026-05-18",
+    "financial_subscores": {
+        "profitability": 46.07389957636358,
+        "returns_on_capital": 43.7935668808543,
+        "cash_flow_quality": 71.07496904982604,
+        "balance_sheet": 74.17889578380156,
+        "growth": 25.855741254782288,
+        "valuation": 62.39787305056812
+    },
+    "financial_drivers": {
+        "strongest": [
+            "interest_coverage (balance_sheet): score=99, value=18.17",
+            "fcf_to_net_income_ttm (cash_flow_quality): score=95, value=1.01",
+            "debt_to_equity (balance_sheet): score=86, value=64.8%"
+        ],
+        "weakest": [
+            "eps_growth_1yr (growth): score=10, value=-19.7%",
+            "eps_cagr_3yr (growth): score=18, value=-2.0%",
+            "revenue_cagr_3yr (growth): score=23, value=0.5%"
+        ]
+    },
+    "professional_raw_metrics": {
+        "sector": "Healthcare",
+        "industry": "Medical Devices",
+        "market_cap_usd": 147130957824,
+        "current_price": 84.47,
+        "analyst": {
+            "recommendation_mean": 1.67857,
+            "recommendation_key": "buy",
+            "target_mean_price": 118.64,
+            "target_median_price": 120.0,
+            "target_high_price": 143.0,
+            "target_low_price": 92.0,
+            "upside_to_target": 0.4045223156150113,
+            "target_dispersion": 0.42987188132164533,
+            "num_analysts": 25
+        },
+        "rating_momentum": {
+            "upgrades_12m": 2,
+            "downgrades_12m": 0,
+            "total_actions_12m": 50
+        },
+        "institutional": {
+            "held_pct_institutions": 0.82754,
+            "held_pct_insiders": 0.00494
+        },
+        "short_interest": {
+            "short_pct_of_float": 0.0145000005,
+            "short_ratio": 1.82,
+            "short_change_pct": -0.054112012027325906
+        },
+        "data_quality_flags": []
+    },
+    "professional_raw_metrics_date": "2026-05-18",
+    "professional_score": 71.29458789147427,
+    "professional_score_date": "2026-05-18",
+    "professional_subscores": {
+        "analyst_consensus": 88.87618631230022,
+        "rating_momentum": 55.02,
+        "institutional_positioning": 63.64398836249123,
+        "short_interest": 70.14617061030921
+    },
+    "professional_drivers": {
+        "strongest": [
+            "upside_to_target (analyst_consensus): score=95, value=40.5%",
+            "recommendation_mean (analyst_consensus): score=85, value=1.68",
+            "short_ratio (short_interest): score=82, value=1.82"
+        ],
+        "weakest": [
+            "held_pct_insiders (institutional_positioning): score=55, value=0.5%",
+            "upgrades_12m (rating_momentum): score=55, value=2.00",
+            "downgrades_12m (rating_momentum): score=55, value=0.00"
+        ]
+    },
+    "news_sentiment_raw_metrics": {
+        "sector": "Healthcare",
+        "industry": "Medical Devices",
+        "market_cap_usd": 147130957824,
+        "current_price": 84.47,
+        "earnings": {
+            "beat_count_4q": 1,
+            "miss_count_4q": 0,
+            "total_quarters_4q": 4,
+            "avg_surprise_magnitude_4q": 0.00167785234899329,
+            "eps_estimate_revision_90d": null,
+            "trailing_eps": 3.57,
+            "forward_eps": 6.06395
+        },
+        "price_momentum": {
+            "return_1m": -0.16827489138854984,
+            "return_3m": -0.23746359965690295,
+            "return_6m": -0.3390800806190063
+        },
+        "insider_activity": {
+            "insider_purchases_count_90d": 2,
+            "insider_sales_count_90d": 6,
+            "insider_net_value_90d_usd": 642516.0
+        },
+        "data_quality_flags": []
+    },
+    "news_sentiment_raw_metrics_date": "2026-05-18",
+    "news_sentiment_score": 26.94014882889103,
+    "news_sentiment_score_date": "2026-05-18",
+    "news_sentiment_subscores": {
+        "earnings_surprise_revisions": 36.925658234383064,
+        "price_momentum": 9.136502878824418,
+        "insider_activity": 42.57642191804018
+    },
+    "news_sentiment_drivers": {
+        "strongest": [
+            "avg_surprise_magnitude_4q (earnings_surprise_revisions): score=51, value=0.2%",
+            "net_insider_value_pct_mcap_90d (insider_activity): score=50, value=0.0%",
+            "insider_count_ratio_90d (insider_activity): score=25, value=-50.0%"
+        ],
+        "weakest": [
+            "return_6m (price_momentum): score=0, value=-33.9%",
+            "return_3m (price_momentum): score=10, value=-23.7%",
+            "return_1m (price_momentum): score=22, value=-16.8%"
+        ]
+    },
+    "composite_score": 53.276213714365625,
+    "composite_score_date": "2026-05-18",
+    "composite_rank": 579,
+    "composite_metadata": {
+        "scores_used": [
+            "financial",
+            "professional",
+            "news_sentiment"
+        ],
+        "scores_imputed": [],
+        "imputed_values": {},
+        "imputation_r_squared": null,
+        "weights_applied": {
+            "financial": 50,
+            "professional": 30,
+            "news_sentiment": 20
+        }
+    }
+}

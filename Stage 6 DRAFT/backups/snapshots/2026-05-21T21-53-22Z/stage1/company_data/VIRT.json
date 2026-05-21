@@ -1,0 +1,195 @@
+{
+    "ticker": "VIRT",
+    "company_name": "Virtu Financial",
+    "universe_added_date": "2026-05-18",
+    "financial_raw_metrics": {
+        "sector": "Financial Services",
+        "industry": "Capital Markets",
+        "market_cap_usd": 11725054976,
+        "profitability": {
+            "gross_margin_ttm": 0.65641,
+            "operating_margin_ttm": 0.46762002,
+            "net_margin_ttm": 0.18067,
+            "operating_margin_trend_3yr": 0.1282338034483177
+        },
+        "returns_on_capital": {
+            "roe_ttm": 0.56901,
+            "roa_ttm": 0.05012,
+            "roic_ttm": null
+        },
+        "cash_flow": {
+            "fcf_margin_ttm": null,
+            "fcf_to_net_income_ttm": null,
+            "ocf_cagr_3yr": -0.09818325865887378
+        },
+        "balance_sheet": {
+            "debt_to_equity": 4.11748,
+            "net_debt_to_ebitda": null,
+            "current_ratio": 1.113,
+            "interest_coverage": 2.402433913831351,
+            "total_debt_usd": 9044183040,
+            "total_cash_usd": 18732924928
+        },
+        "growth": {
+            "revenue_growth_1yr": 0.303,
+            "revenue_cagr_3yr": 0.1537749606934582,
+            "eps_growth_1yr": 0.843,
+            "eps_cagr_3yr": 0.2090123789374161,
+            "fcf_cagr_3yr": -0.10847102904099415
+        },
+        "valuation": {
+            "pe_trailing": 9.021523,
+            "pe_forward": 9.300221,
+            "ps_ratio": 3.8446193,
+            "pb_ratio": 2.9243817,
+            "ev_ebitda": null,
+            "peg_ratio": null,
+            "fcf_yield": null
+        },
+        "data_quality_flags": [
+            "VIRT: eps_cagr_3yr approximated by net income CAGR (share count changes not adjusted)"
+        ]
+    },
+    "financial_raw_metrics_date": "2026-05-18",
+    "financial_score": 65.56706777550575,
+    "financial_score_date": "2026-05-18",
+    "financial_subscores": {
+        "profitability": 56.34241283980296,
+        "returns_on_capital": 78.73920027355204,
+        "cash_flow_quality": null,
+        "balance_sheet": 26.451238046104507,
+        "growth": 73.30840586395473,
+        "valuation": 91.678256
+    },
+    "financial_drivers": {
+        "strongest": [
+            "eps_growth_1yr (growth): score=100, value=84.3%",
+            "revenue_growth_1yr (growth): score=100, value=30.3%",
+            "roe_ttm (returns_on_capital): score=100, value=56.9%"
+        ],
+        "weakest": [
+            "debt_to_equity (balance_sheet): score=11, value=4.12",
+            "fcf_cagr_3yr (growth): score=14, value=-10.8%",
+            "ocf_cagr_3yr (cash_flow_quality): score=15, value=-9.8%"
+        ]
+    },
+    "professional_raw_metrics": {
+        "sector": "Financial Services",
+        "industry": "Capital Markets",
+        "market_cap_usd": 11725054976,
+        "current_price": 54.49,
+        "analyst": {
+            "recommendation_mean": 2.57143,
+            "recommendation_key": "hold",
+            "target_mean_price": 51.71429,
+            "target_median_price": 51.0,
+            "target_high_price": 62.0,
+            "target_low_price": 39.0,
+            "upside_to_target": -0.05093980546889344,
+            "target_dispersion": 0.4447513443576234,
+            "num_analysts": 7
+        },
+        "rating_momentum": {
+            "upgrades_12m": 0,
+            "downgrades_12m": 0,
+            "total_actions_12m": 11
+        },
+        "institutional": {
+            "held_pct_institutions": 0.91095,
+            "held_pct_insiders": 0.05276
+        },
+        "short_interest": {
+            "short_pct_of_float": 0.044,
+            "short_ratio": 2.65,
+            "short_change_pct": 0.014795744311043624
+        },
+        "data_quality_flags": []
+    },
+    "professional_raw_metrics_date": "2026-05-18",
+    "professional_score": 52.00942010840413,
+    "professional_score_date": "2026-05-18",
+    "professional_subscores": {
+        "analyst_consensus": 36.19169945311066,
+        "rating_momentum": 52.5,
+        "institutional_positioning": 72.81842363149552,
+        "short_interest": 53.41812927961013
+    },
+    "professional_drivers": {
+        "strongest": [
+            "held_pct_insiders (institutional_positioning): score=81, value=5.3%",
+            "short_ratio (short_interest): score=74, value=2.65",
+            "held_pct_institutions (institutional_positioning): score=70, value=91.1%"
+        ],
+        "weakest": [
+            "upside_to_target (analyst_consensus): score=12, value=-5.1%",
+            "short_pct_of_float (short_interest): score=43, value=4.4%",
+            "short_change_pct (short_interest): score=48, value=1.5%"
+        ]
+    },
+    "news_sentiment_raw_metrics": {
+        "sector": "Financial Services",
+        "industry": "Capital Markets",
+        "market_cap_usd": 11725054976,
+        "current_price": 54.49,
+        "earnings": {
+            "beat_count_4q": null,
+            "miss_count_4q": null,
+            "total_quarters_4q": null,
+            "avg_surprise_magnitude_4q": null,
+            "eps_estimate_revision_90d": null,
+            "trailing_eps": 6.04,
+            "forward_eps": 5.859
+        },
+        "price_momentum": {
+            "return_1m": 0.07709033080942994,
+            "return_3m": 0.4579707663329637,
+            "return_6m": 0.5503071869121593
+        },
+        "insider_activity": {
+            "insider_purchases_count_90d": 0,
+            "insider_sales_count_90d": 3,
+            "insider_net_value_90d_usd": -9478274.0
+        },
+        "data_quality_flags": [
+            "VIRT: earnings_dates fetch failed (['Earnings Date'])"
+        ]
+    },
+    "news_sentiment_raw_metrics_date": "2026-05-18",
+    "news_sentiment_score": 67.42586098419756,
+    "news_sentiment_score_date": "2026-05-18",
+    "news_sentiment_subscores": {
+        "earnings_surprise_revisions": null,
+        "price_momentum": 90.71209711705959,
+        "insider_activity": 20.853388718473504
+    },
+    "news_sentiment_drivers": {
+        "strongest": [
+            "return_6m (price_momentum): score=100, value=55.0%",
+            "return_3m (price_momentum): score=100, value=45.8%",
+            "return_1m (price_momentum): score=63, value=7.7%"
+        ],
+        "weakest": [
+            "insider_count_ratio_90d (insider_activity): score=0, value=-1.00",
+            "net_insider_value_pct_mcap_90d (insider_activity): score=30, value=-0.1%",
+            "return_1m (price_momentum): score=63, value=7.7%"
+        ]
+    },
+    "composite_score": 61.87153211711362,
+    "composite_score_date": "2026-05-18",
+    "composite_rank": 143,
+    "composite_metadata": {
+        "scores_used": [
+            "financial",
+            "professional",
+            "news_sentiment"
+        ],
+        "scores_imputed": [],
+        "imputed_values": {},
+        "imputation_r_squared": null,
+        "weights_applied": {
+            "financial": 50,
+            "professional": 30,
+            "news_sentiment": 20
+        }
+    }
+}

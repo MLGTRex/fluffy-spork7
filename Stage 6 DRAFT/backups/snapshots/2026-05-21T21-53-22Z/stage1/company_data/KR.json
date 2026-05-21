@@ -1,0 +1,195 @@
+{
+    "ticker": "KR",
+    "company_name": "Kroger",
+    "universe_added_date": "2026-05-18",
+    "financial_raw_metrics": {
+        "sector": "Consumer Defensive",
+        "industry": "Grocery Stores",
+        "market_cap_usd": 40705335296,
+        "profitability": {
+            "gross_margin_ttm": 0.241,
+            "operating_margin_ttm": 0.034360003,
+            "net_margin_ttm": 0.0068800002,
+            "operating_margin_trend_3yr": -0.015028628734913311
+        },
+        "returns_on_capital": {
+            "roe_ttm": 0.14405,
+            "roa_ttm": 0.05763,
+            "roic_ttm": null
+        },
+        "cash_flow": {
+            "fcf_margin_ttm": 0.02302105570328895,
+            "fcf_to_net_income_ttm": 3.3685578592666006,
+            "ocf_cagr_3yr": 0.1757611635033478
+        },
+        "balance_sheet": {
+            "debt_to_equity": 4.1597,
+            "net_debt_to_ebitda": 2.6397232909191537,
+            "current_ratio": 0.801,
+            "interest_coverage": 2.8779342723004695,
+            "total_debt_usd": 24692000768,
+            "total_cash_usd": 3334000128
+        },
+        "growth": {
+            "revenue_growth_1yr": 0.012,
+            "revenue_cagr_3yr": -0.0013868956327633963,
+            "eps_growth_1yr": 0.509,
+            "eps_cagr_3yr": -0.232125430012445,
+            "fcf_cagr_3yr": 0.3451223737416764
+        },
+        "valuation": {
+            "pe_trailing": 42.87013,
+            "pe_forward": 11.73547,
+            "ps_ratio": 0.27570292,
+            "pb_ratio": 7.135754,
+            "ev_ebitda": 9.148,
+            "peg_ratio": 0.6343,
+            "fcf_yield": 0.08349949350089245
+        },
+        "data_quality_flags": [
+            "KR: eps_cagr_3yr approximated by net income CAGR (share count changes not adjusted)"
+        ]
+    },
+    "financial_raw_metrics_date": "2026-05-18",
+    "financial_score": 43.13926932857989,
+    "financial_score_date": "2026-05-18",
+    "financial_subscores": {
+        "profitability": 31.602331348650125,
+        "returns_on_capital": 43.00027564346527,
+        "cash_flow_quality": 44.270487195889196,
+        "balance_sheet": 35.37601971724771,
+        "growth": 39.743621868159345,
+        "valuation": 68.7348574197492
+    },
+    "financial_drivers": {
+        "strongest": [
+            "eps_growth_1yr (growth): score=100, value=50.9%",
+            "fcf_cagr_3yr (growth): score=96, value=34.5%",
+            "fcf_yield (valuation): score=94, value=8.3%"
+        ],
+        "weakest": [
+            "eps_cagr_3yr (growth): score=0, value=-23.2%",
+            "debt_to_equity (balance_sheet): score=11, value=4.16",
+            "current_ratio (balance_sheet): score=18, value=80.1%"
+        ]
+    },
+    "professional_raw_metrics": {
+        "sector": "Consumer Defensive",
+        "industry": "Grocery Stores",
+        "market_cap_usd": 40705335296,
+        "current_price": 66.02,
+        "analyst": {
+            "recommendation_mean": 2.08333,
+            "recommendation_key": "buy",
+            "target_mean_price": 75.54545,
+            "target_median_price": 75.5,
+            "target_high_price": 86.0,
+            "target_low_price": 61.0,
+            "upside_to_target": 0.1442812784004848,
+            "target_dispersion": 0.33092661437584925,
+            "num_analysts": 22
+        },
+        "rating_momentum": {
+            "upgrades_12m": 1,
+            "downgrades_12m": 2,
+            "total_actions_12m": 36
+        },
+        "institutional": {
+            "held_pct_institutions": 0.80689,
+            "held_pct_insiders": 0.0844
+        },
+        "short_interest": {
+            "short_pct_of_float": 0.049000002,
+            "short_ratio": 5.3,
+            "short_change_pct": 0.018498170552336764
+        },
+        "data_quality_flags": []
+    },
+    "professional_raw_metrics_date": "2026-05-18",
+    "professional_score": 62.71327715937829,
+    "professional_score_date": "2026-05-18",
+    "professional_subscores": {
+        "analyst_consensus": 68.42820784004847,
+        "rating_momentum": 50.75,
+        "institutional_positioning": 71.71223346197507,
+        "short_interest": 54.318973665783744
+    },
+    "professional_drivers": {
+        "strongest": [
+            "held_pct_insiders (institutional_positioning): score=87, value=8.4%",
+            "recommendation_mean (analyst_consensus): score=72, value=2.08",
+            "held_pct_institutions (institutional_positioning): score=65, value=80.7%"
+        ],
+        "weakest": [
+            "short_change_pct (short_interest): score=48, value=1.8%",
+            "short_ratio (short_interest): score=48, value=5.30",
+            "upgrades_12m (rating_momentum): score=51, value=1.00"
+        ]
+    },
+    "news_sentiment_raw_metrics": {
+        "sector": "Consumer Defensive",
+        "industry": "Grocery Stores",
+        "market_cap_usd": 40705335296,
+        "current_price": 66.02,
+        "earnings": {
+            "beat_count_4q": null,
+            "miss_count_4q": null,
+            "total_quarters_4q": null,
+            "avg_surprise_magnitude_4q": null,
+            "eps_estimate_revision_90d": null,
+            "trailing_eps": 1.54,
+            "forward_eps": 5.62568
+        },
+        "price_momentum": {
+            "return_1m": -0.003935345727604652,
+            "return_3m": -0.04903584660345281,
+            "return_6m": 0.016467930487541665
+        },
+        "insider_activity": {
+            "insider_purchases_count_90d": 0,
+            "insider_sales_count_90d": 0,
+            "insider_net_value_90d_usd": null
+        },
+        "data_quality_flags": [
+            "KR: earnings_dates fetch failed (['Earnings Date'])"
+        ]
+    },
+    "news_sentiment_raw_metrics_date": "2026-05-18",
+    "news_sentiment_score": 48.715643272434114,
+    "news_sentiment_score_date": "2026-05-18",
+    "news_sentiment_subscores": {
+        "earnings_surprise_revisions": null,
+        "price_momentum": 48.07346490865117,
+        "insider_activity": 50.0
+    },
+    "news_sentiment_drivers": {
+        "strongest": [
+            "return_6m (price_momentum): score=53, value=1.6%",
+            "insider_activity_summary (insider_activity): score=50, value=no activity in 90d",
+            "return_1m (price_momentum): score=49, value=-0.4%"
+        ],
+        "weakest": [
+            "return_3m (price_momentum): score=42, value=-4.9%",
+            "return_1m (price_momentum): score=49, value=-0.4%",
+            "insider_activity_summary (insider_activity): score=50, value=no activity in 90d"
+        ]
+    },
+    "composite_score": 50.126746466590255,
+    "composite_score_date": "2026-05-18",
+    "composite_rank": 750,
+    "composite_metadata": {
+        "scores_used": [
+            "financial",
+            "professional",
+            "news_sentiment"
+        ],
+        "scores_imputed": [],
+        "imputed_values": {},
+        "imputation_r_squared": null,
+        "weights_applied": {
+            "financial": 50,
+            "professional": 30,
+            "news_sentiment": 20
+        }
+    }
+}
