@@ -1,59 +1,43 @@
 {
-    "consolidation_date": "2026-05-19",
+    "consolidation_date": "2026-05-21",
     "method": "LLM selector (from union of A+B) + Quant allocator (MIQP-equivalent, LAMBDA=2.0)",
     "status": "optimal",
     "iterations_run": 1,
     "max_iterations": 5,
-    "track_a_tickers": [
-        "BIP",
-        "ARDX",
-        "SEK.AX",
-        "DVN",
-        "NFLX",
-        "ANG.AX",
-        "RMD",
-        "META",
-        "LLY",
-        "MA",
-        "NOW",
-        "VST",
-        "AVGO",
-        "ANET",
-        "NVDA"
-    ],
+    "track_a_tickers": [],
     "track_b_tickers": [
-        "BIP",
-        "DVN",
-        "NFLX",
-        "RMD",
-        "LLY",
-        "MA",
-        "SEK.AX",
-        "ARDX",
-        "META",
-        "NOW",
-        "VST",
         "AVGO",
-        "ANG.AX",
         "NVDA",
-        "ANET"
+        "NOW",
+        "ANET",
+        "RMD",
+        "ARDX",
+        "LLY",
+        "SEK.AX",
+        "NFLX",
+        "META",
+        "BIP",
+        "VST",
+        "DVN",
+        "MA",
+        "ANG.AX"
     ],
     "union_tickers": [
-        "BIP",
-        "ARDX",
-        "SEK.AX",
-        "DVN",
-        "NFLX",
-        "ANG.AX",
-        "RMD",
-        "META",
-        "LLY",
-        "MA",
-        "NOW",
-        "VST",
         "AVGO",
+        "NVDA",
+        "NOW",
         "ANET",
-        "NVDA"
+        "RMD",
+        "ARDX",
+        "LLY",
+        "SEK.AX",
+        "NFLX",
+        "META",
+        "BIP",
+        "VST",
+        "DVN",
+        "MA",
+        "ANG.AX"
     ],
     "iterations": [
         {
@@ -61,188 +45,188 @@
             "llm_selection_violations": [],
             "llm_parsed": {
                 "selected_tickers": [
-                    "BIP",
-                    "ARDX",
-                    "SEK.AX",
-                    "DVN",
-                    "NFLX",
-                    "ANG.AX",
-                    "RMD",
-                    "META",
-                    "LLY",
-                    "MA",
-                    "NOW",
-                    "VST",
                     "AVGO",
+                    "NVDA",
+                    "NOW",
                     "ANET",
-                    "NVDA"
+                    "RMD",
+                    "ARDX",
+                    "LLY",
+                    "SEK.AX",
+                    "NFLX",
+                    "META",
+                    "BIP",
+                    "VST",
+                    "DVN",
+                    "MA",
+                    "ANG.AX"
                 ],
                 "per_pick_rationale": [
                     {
-                        "ticker": "BIP",
-                        "rationale": "Brookfield Infrastructure offers a 5%+ distribution yield and accelerating digital infrastructure FFO; the units trade at a discount that limits downside while providing optionality on capital recycling and corporate simplification."
-                    },
-                    {
-                        "ticker": "ARDX",
-                        "rationale": "Ardelyx's IBSRELA franchise is demonstrating durable prescription momentum and recently refinanced debt removes near-term existential risk; the stock embeds a wide risk/reward skew that is favorable if enterprise profitability inflects."
-                    },
-                    {
-                        "ticker": "SEK.AX",
-                        "rationale": "SEEK's dominant ~5x placement share in ANZ and 44% EBITDA margins are mispriced after a 55% drawdown, with yield expansion and a prospective Employment Hero divestment offering a clear path to closing the narrative discount."
-                    },
-                    {
-                        "ticker": "DVN",
-                        "rationale": "Devon's imminent Coterra merger close, pre-committed 31% dividend hike and $5B+ buyback create a catalyst-rich setup; sub-9x forward earnings provides a cushion if integration executes and oil holds mid-cycle ranges."
-                    },
-                    {
-                        "ticker": "NFLX",
-                        "rationale": "Netflix combines 32% operating margins and a $25B buyback authorization with a reset 23x forward multiple; international expansion and ad-tier scaling support a high-quality compounder thesis without requiring heroic growth reacceleration."
-                    },
-                    {
-                        "ticker": "ANG.AX",
-                        "rationale": "Austin Engineering trades below tangible book after an 86% earnings collapse, but new CEO-led operational fixes and the exit of a loss-making Chilean contract offer a binary second-half FY26 recovery with stark upside asymmetry."
-                    },
-                    {
-                        "ticker": "RMD",
-                        "rationale": "ResMed is a high-quality medtech compounder trading at a GLP-1 fear discount despite robust mask resupply growth and 62% gross margins; Philips' regulatory exile preserves pricing power through at least 2028, supporting a grinding re-rating."
-                    },
-                    {
-                        "ticker": "META",
-                        "rationale": "Meta's core advertising business is generating record segment margins and pricing power, while the 16.5x forward multiple already embeds peak-capex panic; the balance sheet can absorb AI investment intensity without distress, creating asymmetric upside."
-                    },
-                    {
-                        "ticker": "LLY",
-                        "rationale": "Eli Lilly sits at the center of the largest pharmaceutical profit-pool expansion in history, with tirzepatide volume surging and Medicare obesity coverage expanding; execution on manufacturing and oral formulation adoption can sustain premium compounding."
-                    },
-                    {
-                        "ticker": "MA",
-                        "rationale": "Mastercard is a payment-network compounder with mid-teens Value-Added Services growth and aggressive share buybacks; temporary cross-border and regulatory fears have created a modest valuation discount to Visa that should close as headwinds abate."
-                    },
-                    {
-                        "ticker": "NOW",
-                        "rationale": "ServiceNow retains a deeply embedded enterprise footprint with 97% renewal rates and a $27B backlog, while Now Assist offers AI monetization optionality; recent billings volatility and margin compression from acquisitions create a transitional execution story with recovery potential."
-                    },
-                    {
-                        "ticker": "VST",
-                        "rationale": "Vistra's contracted nuclear PPAs and scarcity positioning in ERCOT/PJM provide a 2026 earnings floor, while the integrated retail book hedges merchant exposure; leverage and regulatory ceiling risks are real but appear adequately discounted at 13x forward earnings."
-                    },
-                    {
                         "ticker": "AVGO",
-                        "rationale": "Broadcom's $73B AI semiconductor backlog and 68% EBITDA margins underpin best-in-class profitability, and the stock trades at a forward earnings discount to semiconductor peers; VMware antitrust and hyperscaler concentration are manageable risks given the cash-generation profile."
-                    },
-                    {
-                        "ticker": "ANET",
-                        "rationale": "Arista's $6.2B deferred revenue and dominant AI Ethernet switching position are supported by a debt-free balance sheet; supply constraints and customer concentration justify caution on multiple expansion, but the core franchise remains durably embedded in hyperscaler buildouts."
+                        "rationale": "Dominant custom-silicon and networking partner to hyperscalers with a $73B AI backlog and best-in-class ~45% operating margins; trades at a forward earnings discount to peers, creating a compelling execution-driven compounding story."
                     },
                     {
                         "ticker": "NVDA",
-                        "rationale": "NVIDIA remains the indispensable AI infrastructure architect with six-month visibility to record revenues and 75% gross margins; the low forward P/E relative to history provides a valuation buffer against cyclical apex fears, though geopolitical and customer-concentration risks demand monitoring."
+                        "rationale": "Unmatched near-term AI infrastructure execution with the fastest Blackwell ramp in history and ~75% gross margins; fortress balance sheet and CUDA moat provide downside defense despite forward demand debates."
+                    },
+                    {
+                        "ticker": "NOW",
+                        "rationale": "Mission-critical enterprise workflow platform with $27.7B in remaining performance obligations and 97% renewal rates; AI pivot toward non-seat pricing and orchestration offers a path to reaccelerate cRPO growth."
+                    },
+                    {
+                        "ticker": "ANET",
+                        "rationale": "Entrenched leader in AI data-center Ethernet switching with $6.2B in deferred revenue and software-like ~42% operating margins; supply-constrained premium is offset by prohibitive customer switching costs."
+                    },
+                    {
+                        "ticker": "RMD",
+                        "rationale": "Global sleep-apnea leader trading at a GLP-1 fear discount despite accelerating mask resupply and a locked-out primary competitor; best-in-class free cash flow conversion and durable pricing power support a rerating."
+                    },
+                    {
+                        "ticker": "ARDX",
+                        "rationale": "Fast-growing IBSRELA franchise with formulation protection to 2042 and recent refinancing that pushed maturities to 2030; profitability inflection and working-capital normalization could drive significant upside asymmetry."
+                    },
+                    {
+                        "ticker": "LLY",
+                        "rationale": "Center of the largest pharma profit-pool expansion in history with tirzepatide volume surging 40–50% and Medicare obesity coverage opening in mid-2026; vertical integration protects best-in-class margins despite premium valuation."
+                    },
+                    {
+                        "ticker": "SEK.AX",
+                        "rationale": "Hyper-dominant ANZ employment marketplace with 4.9x placement share trading at distressed valuations; Platform Unification yield expansion and an anticipated Employment Hero divestment offer balance-sheet de-risking and rerating potential."
+                    },
+                    {
+                        "ticker": "NFLX",
+                        "rationale": "Global streaming utility generating ~32% operating margins and $12.5B free cash flow at a forward earnings discount to peers; scaling ad tier and aggressive buybacks provide a mechanical valuation floor."
+                    },
+                    {
+                        "ticker": "META",
+                        "rationale": "Core advertising monopoly reaching 3.56B daily users with AI-augmented pricing power and segment margins near 50%; stock discounts peak-capex fears, offering re-rating as operating income proves resilient above $83B."
+                    },
+                    {
+                        "ticker": "BIP",
+                        "rationale": "Hybrid defensive-yield and digital-infrastructure compounder with 46% Data FFO growth and inflation-linked legacy cash flows; discounted entry and ~5% distribution yield create rare income-plus-growth asymmetry."
+                    },
+                    {
+                        "ticker": "VST",
+                        "rationale": "Contracted nuclear and retail base providing near-term EBITDA visibility; scarce, NRC-licensed assets offer direct exposure to AI-driven power scarcity, balanced by active FERC/PJM regulatory risks."
+                    },
+                    {
+                        "ticker": "DVN",
+                        "rationale": "Imminent Coterra merger close with a pre-committed 31% dividend increase and >$5B buyback authorization; pro forma breakeven below $50 WTI and $1B synergy target create a catalyst-rich, discounted E&P setup."
+                    },
+                    {
+                        "ticker": "MA",
+                        "rationale": "Payment-network duopoly with resilient cross-border recovery and mid-teens Value-Added Services growth; aggressive share repurchases and a modest valuation discount to Visa support steady earnings compounding."
+                    },
+                    {
+                        "ticker": "ANG.AX",
+                        "rationale": "World's largest mining truck-body fabricator trading below tangible book after self-inflicted operational wounds; new CEO, Chile contract exit, and North American labor fixes offer a discrete, catalyst-driven recovery path."
                     }
                 ],
-                "comparison_notes": "Track A's pure quant optimizer maximized probability-weighted expected return subject to concentration penalties, producing heavy top weights in BIP, ARDX, SEK.AX, and DVN while compressing NVDA, ANET, and AVGO toward the 3% floor. Track B's LLM approach applied qualitative conviction, balance-sheet quality, and catalyst-visibility screens, leading to more balanced weights and deliberate underweights in high-dispersion turnarounds like ANG.AX and ARDX despite their high expected returns. We view the complete overlap in stock selection across the two independent methodologies as a powerful validation of the 15-name universe, and we retain all names in the final portfolio; we effectively side with Track A on expected-return maximization for the overall book but endorse Track B's qualitative risk framing by relying on the allocator's hard constraints to prevent excessive concentration in the most binary names.",
+                "comparison_notes": "The union of Track A and Track B comprises exactly 15 unique tickers, indicating that the quant optimizer and the LLM analyst fully converged on the same underlying names. Track A’s MILP approach likely emphasized the probability-weighted expected returns, correlation-aware diversification, and sector feasibility, while Track B expressed qualitative conviction through active position sizing and detailed fundamental rationales. I side with this consensus: every candidate satisfies the hard feasibility constraints, carries a positive base return, and contributes a distinct risk/reward profile. The portfolio intentionally balances high-factor-similarity technology exposure (AVGO, NVDA, ANET, NOW) with defensive healthcare compounders (LLY, RMD, ARDX), cash-generative communication services (META, NFLX, SEK.AX), yield-plus-growth infrastructure (BIP, VST), a capital-return energy catalyst (DVN), a quality financial compounder (MA), and a deep-value industrial event bet (ANG.AX). By retaining all 15, the final list preserves both the quant engine’s return maximization and the LLM’s thematic diversification.",
                 "notable_rejections": [],
-                "portfolio_thesis": "The consolidated portfolio is built around three interconnected pillars: high-quality global compounders trading at narrative dislocations (NFLX, RMD, META, LLY, MA), event-driven cyclical and capital-return recoveries with asymmetric payoff profiles (DVN, BIP, VST, SEK.AX, ARDX, ANG.AX), and a tactical cluster of AI infrastructure enablers (NVDA, AVGO, ANET, NOW) where near-term execution is visible but forward returns are contested. By spanning defensive cash-flow generation, scarce AI-linked assets, and deep-value recovery optionality across six sectors, the book seeks to capture a mid-teens probability-weighted return while limiting drawdowns from any single macro factor, regulatory shock, or capex cycle.",
+                "portfolio_thesis": "The consolidated portfolio is a high-conviction, 15-name barbell that pairs durable cash-flow compounders in healthcare and communication services with event-driven inflections in energy, utilities, and industrials, while maintaining core AI-technology exposure. The blend offers sector and geographic diversification, multiple valuation backstops, and a mix of defensive yield, operational execution, and asymmetric turnaround narratives designed to compound through a range of macro outcomes.",
                 "key_risks": [
-                    "A synchronized de-rating in AI-exposed technology names (NVDA, AVGO, ANET, NOW, META) could occur if hyperscaler capex growth stalls or custom ASIC inference displacement accelerates.",
-                    "Sustained WTI below $60/bbl would impair DVN's post-merger free cash flow and jeopardize its pre-committed dividend hike and buyback authorization.",
-                    "Adverse regulatory or reimbursement shifts in healthcare—such as LLY pricing erosion, ARDX XPHOZAH CMS policy changes, or RMD GLP-1 substitution—could simultaneously pressure three of the portfolio's highest-conviction positions.",
-                    "Elevated leverage and regulatory overhangs at BIP and VST could constrain distributions or merchant power economics if interest rates spike or FERC imposes stricter price collars.",
-                    "ANG.AX is a binary, small-cap turnaround where a missed FY26 guidance band or further control failures could trigger severe multiple compression and liquidity strain."
+                    "Technology cluster factor similarity (AVGO, NVDA, ANET, NOW) creates correlated drawdown risk if AI capital expenditure cycles disappoint or credit conditions tighten sharply.",
+                    "Regulatory and legislative headwinds could simultaneously impair VST (FERC/PJM rulemaking), BIP (complexity discount and rate exposure), and MA (interchange fee caps).",
+                    "Healthcare valuation sensitivity means GLP-1 substitution fears or reimbursement shocks could pressure LLY, RMD, and ARDX concurrently.",
+                    "ANG.AX remains a binary turnaround where governance or operational execution failure could produce severe impairment.",
+                    "Commodity price volatility and leveraged balance sheets in DVN, BIP, and VST amplify downside if energy prices or interest rates shift abruptly."
                 ]
             },
             "allocator_result": {
                 "status": "optimal",
-                "objective_value": 0.161759,
+                "objective_value": 0.159632,
                 "allocations": [
                     {
                         "ticker": "BIP",
-                        "allocation_pct": 11.5785,
+                        "allocation_pct": 11.6791,
                         "sector": "Utilities",
                         "expected_return_12m": 0.4713
                     },
                     {
                         "ticker": "ARDX",
-                        "allocation_pct": 10.9684,
+                        "allocation_pct": 11.0689,
                         "sector": "Healthcare",
                         "expected_return_12m": 0.4469
                     },
                     {
                         "ticker": "SEK.AX",
-                        "allocation_pct": 9.9927,
+                        "allocation_pct": 10.0932,
                         "sector": "Communication Services",
                         "expected_return_12m": 0.4079
                     },
                     {
                         "ticker": "DVN",
-                        "allocation_pct": 9.0263,
+                        "allocation_pct": 9.1268,
                         "sector": "Energy",
                         "expected_return_12m": 0.3692
                     },
                     {
                         "ticker": "NFLX",
-                        "allocation_pct": 8.5875,
+                        "allocation_pct": 8.688,
                         "sector": "Communication Services",
                         "expected_return_12m": 0.3517
                     },
                     {
                         "ticker": "ANG.AX",
-                        "allocation_pct": 7.153,
+                        "allocation_pct": 7.2535,
                         "sector": "Industrials",
                         "expected_return_12m": 0.2943
                     },
                     {
                         "ticker": "RMD",
-                        "allocation_pct": 7.115,
+                        "allocation_pct": 7.2155,
                         "sector": "Healthcare",
                         "expected_return_12m": 0.2928
                     },
                     {
                         "ticker": "META",
-                        "allocation_pct": 6.3349,
+                        "allocation_pct": 6.4354,
                         "sector": "Communication Services",
                         "expected_return_12m": 0.2616
                     },
                     {
                         "ticker": "LLY",
-                        "allocation_pct": 5.8004,
+                        "allocation_pct": 5.9009,
                         "sector": "Healthcare",
                         "expected_return_12m": 0.2402
                     },
                     {
                         "ticker": "MA",
-                        "allocation_pct": 5.4732,
+                        "allocation_pct": 5.5737,
                         "sector": "Financial Services",
                         "expected_return_12m": 0.2271
                     },
                     {
-                        "ticker": "NOW",
-                        "allocation_pct": 4.6818,
-                        "sector": "Technology",
-                        "expected_return_12m": 0.1954
-                    },
-                    {
                         "ticker": "VST",
-                        "allocation_pct": 4.2857,
+                        "allocation_pct": 4.3863,
                         "sector": "Utilities",
                         "expected_return_12m": 0.1796
                     },
                     {
-                        "ticker": "AVGO",
-                        "allocation_pct": 3.0026,
+                        "ticker": "NOW",
+                        "allocation_pct": 3.4788,
                         "sector": "Technology",
-                        "expected_return_12m": 0.1281
+                        "expected_return_12m": 0.1433
                     },
                     {
-                        "ticker": "ANET",
-                        "allocation_pct": 3.0,
+                        "ticker": "AVGO",
+                        "allocation_pct": 3.0998,
                         "sector": "Technology",
-                        "expected_return_12m": 0.0471
+                        "expected_return_12m": 0.1281
                     },
                     {
                         "ticker": "NVDA",
                         "allocation_pct": 3.0,
                         "sector": "Technology",
                         "expected_return_12m": 0.1141
+                    },
+                    {
+                        "ticker": "ANET",
+                        "allocation_pct": 3.0,
+                        "sector": "Technology",
+                        "expected_return_12m": 0.0471
                     }
                 ],
                 "infeasibility_reason": null,
@@ -256,7 +240,7 @@
             }
         }
     ],
-    "objective_value": 0.161759,
+    "objective_value": 0.159632,
     "constraints": {
         "portfolio_size": 15,
         "min_position_weight": 0.03,
@@ -268,155 +252,119 @@
         "positions": [
             {
                 "ticker": "BIP",
-                "allocation_pct": 11.5785,
+                "allocation_pct": 11.6791,
                 "sector": "Utilities",
                 "expected_return_12m": 0.4713,
-                "rationale": "Brookfield Infrastructure offers a 5%+ distribution yield and accelerating digital infrastructure FFO; the units trade at a discount that limits downside while providing optionality on capital recycling and corporate simplification.",
-                "entry_date": "2026-05-19",
-                "entry_price": 38.61
+                "rationale": "Hybrid defensive-yield and digital-infrastructure compounder with 46% Data FFO growth and inflation-linked legacy cash flows; discounted entry and ~5% distribution yield create rare income-plus-growth asymmetry."
             },
             {
                 "ticker": "ARDX",
-                "allocation_pct": 10.9684,
+                "allocation_pct": 11.0689,
                 "sector": "Healthcare",
                 "expected_return_12m": 0.4469,
-                "rationale": "Ardelyx's IBSRELA franchise is demonstrating durable prescription momentum and recently refinanced debt removes near-term existential risk; the stock embeds a wide risk/reward skew that is favorable if enterprise profitability inflects.",
-                "entry_date": "2026-05-19",
-                "entry_price": 6.11
+                "rationale": "Fast-growing IBSRELA franchise with formulation protection to 2042 and recent refinancing that pushed maturities to 2030; profitability inflection and working-capital normalization could drive significant upside asymmetry."
             },
             {
                 "ticker": "SEK.AX",
-                "allocation_pct": 9.9927,
+                "allocation_pct": 10.0932,
                 "sector": "Communication Services",
                 "expected_return_12m": 0.4079,
-                "rationale": "SEEK's dominant ~5x placement share in ANZ and 44% EBITDA margins are mispriced after a 55% drawdown, with yield expansion and a prospective Employment Hero divestment offering a clear path to closing the narrative discount.",
-                "entry_date": "2026-05-19",
-                "entry_price": 13.915
+                "rationale": "Hyper-dominant ANZ employment marketplace with 4.9x placement share trading at distressed valuations; Platform Unification yield expansion and an anticipated Employment Hero divestment offer balance-sheet de-risking and rerating potential."
             },
             {
                 "ticker": "DVN",
-                "allocation_pct": 9.0263,
+                "allocation_pct": 9.1268,
                 "sector": "Energy",
                 "expected_return_12m": 0.3692,
-                "rationale": "Devon's imminent Coterra merger close, pre-committed 31% dividend hike and $5B+ buyback create a catalyst-rich setup; sub-9x forward earnings provides a cushion if integration executes and oil holds mid-cycle ranges.",
-                "entry_date": "2026-05-19",
-                "entry_price": 49.68
+                "rationale": "Imminent Coterra merger close with a pre-committed 31% dividend increase and >$5B buyback authorization; pro forma breakeven below $50 WTI and $1B synergy target create a catalyst-rich, discounted E&P setup."
             },
             {
                 "ticker": "NFLX",
-                "allocation_pct": 8.5875,
+                "allocation_pct": 8.688,
                 "sector": "Communication Services",
                 "expected_return_12m": 0.3517,
-                "rationale": "Netflix combines 32% operating margins and a $25B buyback authorization with a reset 23x forward multiple; international expansion and ad-tier scaling support a high-quality compounder thesis without requiring heroic growth reacceleration.",
-                "entry_date": "2026-05-19",
-                "entry_price": 89.65
+                "rationale": "Global streaming utility generating ~32% operating margins and $12.5B free cash flow at a forward earnings discount to peers; scaling ad tier and aggressive buybacks provide a mechanical valuation floor."
             },
             {
                 "ticker": "ANG.AX",
-                "allocation_pct": 7.153,
+                "allocation_pct": 7.2535,
                 "sector": "Industrials",
                 "expected_return_12m": 0.2943,
-                "rationale": "Austin Engineering trades below tangible book after an 86% earnings collapse, but new CEO-led operational fixes and the exit of a loss-making Chilean contract offer a binary second-half FY26 recovery with stark upside asymmetry.",
-                "entry_date": "2026-05-19",
-                "entry_price": 0.185
+                "rationale": "World's largest mining truck-body fabricator trading below tangible book after self-inflicted operational wounds; new CEO, Chile contract exit, and North American labor fixes offer a discrete, catalyst-driven recovery path."
             },
             {
                 "ticker": "RMD",
-                "allocation_pct": 7.115,
+                "allocation_pct": 7.2155,
                 "sector": "Healthcare",
                 "expected_return_12m": 0.2928,
-                "rationale": "ResMed is a high-quality medtech compounder trading at a GLP-1 fear discount despite robust mask resupply growth and 62% gross margins; Philips' regulatory exile preserves pricing power through at least 2028, supporting a grinding re-rating.",
-                "entry_date": "2026-05-19",
-                "entry_price": 204.15
+                "rationale": "Global sleep-apnea leader trading at a GLP-1 fear discount despite accelerating mask resupply and a locked-out primary competitor; best-in-class free cash flow conversion and durable pricing power support a rerating."
             },
             {
                 "ticker": "META",
-                "allocation_pct": 6.3349,
+                "allocation_pct": 6.4354,
                 "sector": "Communication Services",
                 "expected_return_12m": 0.2616,
-                "rationale": "Meta's core advertising business is generating record segment margins and pricing power, while the 16.5x forward multiple already embeds peak-capex panic; the balance sheet can absorb AI investment intensity without distress, creating asymmetric upside.",
-                "entry_date": "2026-05-19",
-                "entry_price": 611.21
+                "rationale": "Core advertising monopoly reaching 3.56B daily users with AI-augmented pricing power and segment margins near 50%; stock discounts peak-capex fears, offering re-rating as operating income proves resilient above $83B."
             },
             {
                 "ticker": "LLY",
-                "allocation_pct": 5.8004,
+                "allocation_pct": 5.9009,
                 "sector": "Healthcare",
                 "expected_return_12m": 0.2402,
-                "rationale": "Eli Lilly sits at the center of the largest pharmaceutical profit-pool expansion in history, with tirzepatide volume surging and Medicare obesity coverage expanding; execution on manufacturing and oral formulation adoption can sustain premium compounding.",
-                "entry_date": "2026-05-19",
-                "entry_price": 988.09
+                "rationale": "Center of the largest pharma profit-pool expansion in history with tirzepatide volume surging 40–50% and Medicare obesity coverage opening in mid-2026; vertical integration protects best-in-class margins despite premium valuation."
             },
             {
                 "ticker": "MA",
-                "allocation_pct": 5.4732,
+                "allocation_pct": 5.5737,
                 "sector": "Financial Services",
                 "expected_return_12m": 0.2271,
-                "rationale": "Mastercard is a payment-network compounder with mid-teens Value-Added Services growth and aggressive share buybacks; temporary cross-border and regulatory fears have created a modest valuation discount to Visa that should close as headwinds abate.",
-                "entry_date": "2026-05-19",
-                "entry_price": 505.79
-            },
-            {
-                "ticker": "NOW",
-                "allocation_pct": 4.6818,
-                "sector": "Technology",
-                "expected_return_12m": 0.1954,
-                "rationale": "ServiceNow retains a deeply embedded enterprise footprint with 97% renewal rates and a $27B backlog, while Now Assist offers AI monetization optionality; recent billings volatility and margin compression from acquisitions create a transitional execution story with recovery potential.",
-                "entry_date": "2026-05-19",
-                "entry_price": 103.42
+                "rationale": "Payment-network duopoly with resilient cross-border recovery and mid-teens Value-Added Services growth; aggressive share repurchases and a modest valuation discount to Visa support steady earnings compounding."
             },
             {
                 "ticker": "VST",
-                "allocation_pct": 4.2857,
+                "allocation_pct": 4.3863,
                 "sector": "Utilities",
                 "expected_return_12m": 0.1796,
-                "rationale": "Vistra's contracted nuclear PPAs and scarcity positioning in ERCOT/PJM provide a 2026 earnings floor, while the integrated retail book hedges merchant exposure; leverage and regulatory ceiling risks are real but appear adequately discounted at 13x forward earnings.",
-                "entry_date": "2026-05-19",
-                "entry_price": 136.75
+                "rationale": "Contracted nuclear and retail base providing near-term EBITDA visibility; scarce, NRC-licensed assets offer direct exposure to AI-driven power scarcity, balanced by active FERC/PJM regulatory risks."
+            },
+            {
+                "ticker": "NOW",
+                "allocation_pct": 3.4788,
+                "sector": "Technology",
+                "expected_return_12m": 0.1433,
+                "rationale": "Mission-critical enterprise workflow platform with $27.7B in remaining performance obligations and 97% renewal rates; AI pivot toward non-seat pricing and orchestration offers a path to reaccelerate cRPO growth."
             },
             {
                 "ticker": "AVGO",
-                "allocation_pct": 3.0026,
+                "allocation_pct": 3.0998,
                 "sector": "Technology",
                 "expected_return_12m": 0.1281,
-                "rationale": "Broadcom's $73B AI semiconductor backlog and 68% EBITDA margins underpin best-in-class profitability, and the stock trades at a forward earnings discount to semiconductor peers; VMware antitrust and hyperscaler concentration are manageable risks given the cash-generation profile.",
-                "entry_date": "2026-05-19",
-                "entry_price": 420.71
-            },
-            {
-                "ticker": "ANET",
-                "allocation_pct": 3.0,
-                "sector": "Technology",
-                "expected_return_12m": 0.0471,
-                "rationale": "Arista's $6.2B deferred revenue and dominant AI Ethernet switching position are supported by a debt-free balance sheet; supply constraints and customer concentration justify caution on multiple expansion, but the core franchise remains durably embedded in hyperscaler buildouts.",
-                "entry_date": "2026-05-19",
-                "entry_price": 141.71
+                "rationale": "Dominant custom-silicon and networking partner to hyperscalers with a $73B AI backlog and best-in-class ~45% operating margins; trades at a forward earnings discount to peers, creating a compelling execution-driven compounding story."
             },
             {
                 "ticker": "NVDA",
                 "allocation_pct": 3.0,
                 "sector": "Technology",
                 "expected_return_12m": 0.1141,
-                "rationale": "NVIDIA remains the indispensable AI infrastructure architect with six-month visibility to record revenues and 75% gross margins; the low forward P/E relative to history provides a valuation buffer against cyclical apex fears, though geopolitical and customer-concentration risks demand monitoring.",
-                "entry_date": "2026-05-19",
-                "entry_price": 222.32
+                "rationale": "Unmatched near-term AI infrastructure execution with the fastest Blackwell ramp in history and ~75% gross margins; fortress balance sheet and CUDA moat provide downside defense despite forward demand debates."
+            },
+            {
+                "ticker": "ANET",
+                "allocation_pct": 3.0,
+                "sector": "Technology",
+                "expected_return_12m": 0.0471,
+                "rationale": "Entrenched leader in AI data-center Ethernet switching with $6.2B in deferred revenue and software-like ~42% operating margins; supply-constrained premium is offset by prohibitive customer switching costs."
             }
         ],
-        "comparison_notes": "Track A's pure quant optimizer maximized probability-weighted expected return subject to concentration penalties, producing heavy top weights in BIP, ARDX, SEK.AX, and DVN while compressing NVDA, ANET, and AVGO toward the 3% floor. Track B's LLM approach applied qualitative conviction, balance-sheet quality, and catalyst-visibility screens, leading to more balanced weights and deliberate underweights in high-dispersion turnarounds like ANG.AX and ARDX despite their high expected returns. We view the complete overlap in stock selection across the two independent methodologies as a powerful validation of the 15-name universe, and we retain all names in the final portfolio; we effectively side with Track A on expected-return maximization for the overall book but endorse Track B's qualitative risk framing by relying on the allocator's hard constraints to prevent excessive concentration in the most binary names.",
+        "comparison_notes": "The union of Track A and Track B comprises exactly 15 unique tickers, indicating that the quant optimizer and the LLM analyst fully converged on the same underlying names. Track A’s MILP approach likely emphasized the probability-weighted expected returns, correlation-aware diversification, and sector feasibility, while Track B expressed qualitative conviction through active position sizing and detailed fundamental rationales. I side with this consensus: every candidate satisfies the hard feasibility constraints, carries a positive base return, and contributes a distinct risk/reward profile. The portfolio intentionally balances high-factor-similarity technology exposure (AVGO, NVDA, ANET, NOW) with defensive healthcare compounders (LLY, RMD, ARDX), cash-generative communication services (META, NFLX, SEK.AX), yield-plus-growth infrastructure (BIP, VST), a capital-return energy catalyst (DVN), a quality financial compounder (MA), and a deep-value industrial event bet (ANG.AX). By retaining all 15, the final list preserves both the quant engine’s return maximization and the LLM’s thematic diversification.",
         "notable_rejections": [],
-        "portfolio_thesis": "The consolidated portfolio is built around three interconnected pillars: high-quality global compounders trading at narrative dislocations (NFLX, RMD, META, LLY, MA), event-driven cyclical and capital-return recoveries with asymmetric payoff profiles (DVN, BIP, VST, SEK.AX, ARDX, ANG.AX), and a tactical cluster of AI infrastructure enablers (NVDA, AVGO, ANET, NOW) where near-term execution is visible but forward returns are contested. By spanning defensive cash-flow generation, scarce AI-linked assets, and deep-value recovery optionality across six sectors, the book seeks to capture a mid-teens probability-weighted return while limiting drawdowns from any single macro factor, regulatory shock, or capex cycle.",
+        "portfolio_thesis": "The consolidated portfolio is a high-conviction, 15-name barbell that pairs durable cash-flow compounders in healthcare and communication services with event-driven inflections in energy, utilities, and industrials, while maintaining core AI-technology exposure. The blend offers sector and geographic diversification, multiple valuation backstops, and a mix of defensive yield, operational execution, and asymmetric turnaround narratives designed to compound through a range of macro outcomes.",
         "key_risks": [
-            "A synchronized de-rating in AI-exposed technology names (NVDA, AVGO, ANET, NOW, META) could occur if hyperscaler capex growth stalls or custom ASIC inference displacement accelerates.",
-            "Sustained WTI below $60/bbl would impair DVN's post-merger free cash flow and jeopardize its pre-committed dividend hike and buyback authorization.",
-            "Adverse regulatory or reimbursement shifts in healthcare—such as LLY pricing erosion, ARDX XPHOZAH CMS policy changes, or RMD GLP-1 substitution—could simultaneously pressure three of the portfolio's highest-conviction positions.",
-            "Elevated leverage and regulatory overhangs at BIP and VST could constrain distributions or merchant power economics if interest rates spike or FERC imposes stricter price collars.",
-            "ANG.AX is a binary, small-cap turnaround where a missed FY26 guidance band or further control failures could trigger severe multiple compression and liquidity strain."
+            "Technology cluster factor similarity (AVGO, NVDA, ANET, NOW) creates correlated drawdown risk if AI capital expenditure cycles disappoint or credit conditions tighten sharply.",
+            "Regulatory and legislative headwinds could simultaneously impair VST (FERC/PJM rulemaking), BIP (complexity discount and rate exposure), and MA (interchange fee caps).",
+            "Healthcare valuation sensitivity means GLP-1 substitution fears or reimbursement shocks could pressure LLY, RMD, and ARDX concurrently.",
+            "ANG.AX remains a binary turnaround where governance or operational execution failure could produce severe impairment.",
+            "Commodity price volatility and leveraged balance sheets in DVN, BIP, and VST amplify downside if energy prices or interest rates shift abruptly."
         ]
-    },
-    "reconciled_date": "2026-05-19",
-    "reconciliation": {
-        "status": "first_run_no_incumbent",
-        "note": "No prior portfolio existed; the candidate was adopted as-is and entry data was seeded for future reconciliations.",
-        "incumbent_file": null
     }
 }
