@@ -5,7 +5,7 @@ import os
 import sys
 from debateRebuttals import run_debate_rebuttal
 
-sys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__)), ".."))
+sys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "..", "pipeline tools"))
 from pipeline_git import commit_company_progress
 
 COMPANY_CONCURRENCY = 5
