@@ -7,6 +7,9 @@ from datetime import datetime
 from openai import AsyncOpenAI
 from dotenv import load_dotenv
 
+sys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "..", "pipeline tools"))
+from moonshot_cache import extract_cache_stats, log_cache_stats
+
 PROMPTS_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "prompts")
 
 def _load_prompt(name: str) -> str:
@@ -151,7 +154,9 @@ After your full markdown synthesis output, append a JSON block in the following 
         
         content = response.choices[0].message.content
         logger.info(f"Synthesis generated for {company_name}.")
-        
+
+        log_cache_stats(logger, "debate_synthesis", company_name, extract_cache_stats(response))
+
         structured = extract_structured_fields(content)
         
         return {
