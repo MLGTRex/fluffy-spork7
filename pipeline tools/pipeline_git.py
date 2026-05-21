@@ -1,10 +1,10 @@
 """Helper for per-company commits from inside the stage scripts.
 
-Used by runDeepResearch.py, runDebate.py, runDebateRebuttal.py, and
-runDebateSynthesis.py to push a single company's *_research.json file
-to the dispatching branch as soon as that company finishes a stage.
-No-ops when not running inside GitHub Actions, so local runs are
-unaffected.
+Imported by Stage 2 and Stage 3 per-substage runners (deep research,
+debate, scenarios, valuation metrics, consolidation, etc.) to push a
+single company's *_research.json file to the dispatching branch as soon
+as that company finishes a substage. No-ops when not running inside
+GitHub Actions, so local runs are unaffected.
 
 A single module-level asyncio.Lock serialises git operations so the
 COMPANY_CONCURRENCY=5 in-flight companies don't race on the working

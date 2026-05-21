@@ -2,7 +2,11 @@ import asyncio
 import json
 import datetime
 import os
+import sys
 from consolidation import run_consolidation
+
+sys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "..", "pipeline tools"))
+from pipeline_git import commit_company_progress
 
 COMPANY_CONCURRENCY = 5
 
@@ -177,6 +181,8 @@ async def process_target_company(target_company: str, today_str: str, output_dir
         )
     else:
         print(f"[{target_company}] consolidation saved (WARNING: structured field parsing or return computation incomplete).")
+
+    await commit_company_progress(file_name, "consolidation", target_company)
 
 
 async def main():

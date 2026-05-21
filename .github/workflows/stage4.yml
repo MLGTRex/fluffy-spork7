@@ -1,27 +1,23 @@
-name: Test pipeline (manual)
+name: Stage 4 (manual)
 
-# Test-only manual dispatch — runs Stages 2-4 against arbitrary tickers
-# entered at dispatch time. Restores Stage 1's target_company_list.json
-# before exit so production state is untouched.
+# Manual dispatch only — runs Stage 4's main.py in isolation against the
+# current Stage 3 outputs. Useful for debugging Stage 4 (candidate
+# summaries, Track A/B, consolidation, reconciliation, execution) without
+# re-running Stages 1-3.
 on:
   workflow_dispatch:
-    inputs:
-      tickers:
-        description: 'Comma-separated. Bare (MSFT,NVDA) or full ("Microsoft Corp (MSFT),Nvidia (NVDA)").'
-        required: true
-        type: string
 
-# Allow the default GITHUB_TOKEN to commit any new Stage 2-4 outputs back.
 permissions:
   contents: write
 
-# Share the `pipeline` group so a test can never race with a real pipeline run.
+# Share the `pipeline` group so a stage-isolated run can't race with the
+# full pipeline or another single-stage run.
 concurrency:
   group: pipeline
   cancel-in-progress: false
 
 jobs:
-  test_pipeline:
+  stage4:
     runs-on: ubuntu-latest
     timeout-minutes: 360
 
@@ -49,8 +45,8 @@ jobs:
       - name: Install dependencies
         run: pip install -r requirements.txt
 
-      - name: Run test pipeline
-        run: python "pipeline tools/runTestPipeline.py" --tickers "${{ inputs.tickers }}"
+      - name: Run Stage 4
+        run: python "Stage 4 DRAFT/main.py"
 
       - name: Commit & push state
         if: always()
@@ -62,7 +58,7 @@ jobs:
             echo "No state changes to commit."
             exit 0
           fi
-          git commit -m "test pipeline: ${{ inputs.tickers }} ($(date -u +%Y-%m-%dT%H:%M:%SZ))"
+          git commit -m "stage 4: manual run ($(date -u +%Y-%m-%dT%H:%M:%SZ))"
           for attempt in 1 2 3 4 5; do
             git pull --rebase --autostash origin main \
               && git push origin HEAD:main \

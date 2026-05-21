@@ -1,27 +1,21 @@
-name: Test pipeline (manual)
+name: Stage 1 (manual)
 
-# Test-only manual dispatch — runs Stages 2-4 against arbitrary tickers
-# entered at dispatch time. Restores Stage 1's target_company_list.json
-# before exit so production state is untouched.
+# Manual dispatch only — runs Stage 1's main.py in isolation. Useful for
+# debugging Stage 1 changes without re-running every downstream stage.
 on:
   workflow_dispatch:
-    inputs:
-      tickers:
-        description: 'Comma-separated. Bare (MSFT,NVDA) or full ("Microsoft Corp (MSFT),Nvidia (NVDA)").'
-        required: true
-        type: string
 
-# Allow the default GITHUB_TOKEN to commit any new Stage 2-4 outputs back.
 permissions:
   contents: write
 
-# Share the `pipeline` group so a test can never race with a real pipeline run.
+# Share the `pipeline` group so a stage-isolated run can't race with the
+# full pipeline or another single-stage run.
 concurrency:
   group: pipeline
   cancel-in-progress: false
 
 jobs:
-  test_pipeline:
+  stage1:
     runs-on: ubuntu-latest
     timeout-minutes: 360
 
@@ -41,16 +35,11 @@ jobs:
         with:
           python-version: '3.11'
 
-      - name: Install CBC solver (native)
-        run: |
-          sudo apt-get update
-          sudo apt-get install -y coinor-cbc coinor-libcbc-dev
-
       - name: Install dependencies
         run: pip install -r requirements.txt
 
-      - name: Run test pipeline
-        run: python "pipeline tools/runTestPipeline.py" --tickers "${{ inputs.tickers }}"
+      - name: Run Stage 1
+        run: python "Stage 1 DRAFT/main.py"
 
       - name: Commit & push state
         if: always()
@@ -62,7 +51,7 @@ jobs:
             echo "No state changes to commit."
             exit 0
           fi
-          git commit -m "test pipeline: ${{ inputs.tickers }} ($(date -u +%Y-%m-%dT%H:%M:%SZ))"
+          git commit -m "stage 1: manual run ($(date -u +%Y-%m-%dT%H:%M:%SZ))"
           for attempt in 1 2 3 4 5; do
             git pull --rebase --autostash origin main \
               && git push origin HEAD:main \

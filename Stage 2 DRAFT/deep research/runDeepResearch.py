@@ -5,7 +5,7 @@ import os
 import sys
 from deepResearch import run_deep_research
 
-sys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__)), ".."))
+sys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "..", "pipeline tools"))
 from pipeline_git import commit_company_progress
 
 REPORT_TYPES = ["FINANCE", "NEWS", "ENVIRONMENT"]

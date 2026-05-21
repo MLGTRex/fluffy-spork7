@@ -3,7 +3,11 @@ import json
 import datetime
 import os
 import re
+import sys
 from valuationMetrics import run_valuation_metrics
+
+sys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "..", "pipeline tools"))
+from pipeline_git import commit_company_progress
 
 COMPANY_CONCURRENCY = 5
 
@@ -121,6 +125,8 @@ async def process_target_company(target_company: str, today_str: str, output_dir
         f"[{target_company}] valuation metrics saved: "
         f"{peer_count} peers, {flag_count} data quality flag(s)."
     )
+
+    await commit_company_progress(file_name, "valuation metrics", target_company)
 
 
 async def main():

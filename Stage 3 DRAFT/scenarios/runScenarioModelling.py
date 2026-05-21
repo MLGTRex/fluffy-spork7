@@ -3,7 +3,11 @@ import json
 import datetime
 import os
 import shutil
+import sys
 from scenarioModelling import run_scenario_agent
+
+sys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "..", "pipeline tools"))
+from pipeline_git import commit_company_progress
 
 COMPANY_CONCURRENCY = 5
 
@@ -407,6 +411,8 @@ async def process_target_company(target_company: str, today_str: str, stage2_dir
         print(f"[{target_company}] Skipping base arbitration: already current.")
 
     print(f"[{target_company}] Stage 3b processing complete.")
+
+    await commit_company_progress(stage3_path, "scenarios", target_company)
 
 
 async def main():
