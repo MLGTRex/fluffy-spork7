@@ -5,7 +5,7 @@
     "financial_raw_metrics": {
         "sector": "Consumer Cyclical",
         "industry": "Internet Retail",
-        "market_cap_usd": 7684836352,
+        "market_cap_usd": 8756646912,
         "profitability": {
             "gross_margin_ttm": 0.30084,
             "operating_margin_ttm": 0.0044400003,
@@ -39,32 +39,32 @@
         },
         "valuation": {
             "pe_trailing": null,
-            "pe_forward": 15.605357,
-            "ps_ratio": 0.607113,
-            "pb_ratio": -2.7276988,
-            "ev_ebitda": 41.187,
+            "pe_forward": 17.799982,
+            "ps_ratio": 0.69178754,
+            "pb_ratio": -3.1081333,
+            "ev_ebitda": 45.475,
             "peg_ratio": 23.5,
-            "fcf_yield": 0.05065169460618333
+            "fcf_yield": 0.044451944666922295
         },
         "data_quality_flags": [
             "W: eps_cagr_3yr approximated by net income CAGR (share count changes not adjusted)"
         ]
     },
-    "financial_raw_metrics_date": "2026-05-18",
-    "financial_score": 30.09592045121288,
-    "financial_score_date": "2026-05-18",
+    "financial_raw_metrics_date": "2026-05-21",
+    "financial_score": 28.950416491915444,
+    "financial_score_date": "2026-05-21",
     "financial_subscores": {
-        "profitability": 50.07839530662918,
+        "profitability": 50.07976081514237,
         "returns_on_capital": null,
         "cash_flow_quality": 14.926853697177483,
-        "balance_sheet": 4.208000000000001,
+        "balance_sheet": 4.208,
         "growth": 34.99134974656349,
-        "valuation": 39.61417855388879
+        "valuation": 33.50300342628491
     },
     "financial_drivers": {
         "strongest": [
-            "fcf_yield (valuation): score=73, value=5.1%",
-            "pe_forward (valuation): score=73, value=15.61",
+            "pe_forward (valuation): score=67, value=17.80",
+            "fcf_yield (valuation): score=66, value=4.4%",
             "revenue_growth_1yr (growth): score=57, value=7.4%"
         ],
         "weakest": [
@@ -74,63 +74,59 @@
         ]
     },
     "professional_raw_metrics": {
-        "sector": "Consumer Cyclical",
-        "industry": "Internet Retail",
-        "market_cap_usd": 7684836352,
-        "current_price": 58.22,
+        "sector": null,
+        "industry": null,
+        "market_cap_usd": null,
+        "current_price": null,
         "analyst": {
-            "recommendation_mean": 1.96774,
-            "recommendation_key": "buy",
-            "target_mean_price": 94.67857,
-            "target_median_price": 99.5,
-            "target_high_price": 144.0,
-            "target_low_price": 60.0,
-            "upside_to_target": 0.6262207145310889,
-            "target_dispersion": 0.8872123860763846,
-            "num_analysts": 28
+            "recommendation_mean": null,
+            "recommendation_key": null,
+            "target_mean_price": null,
+            "target_median_price": null,
+            "target_high_price": null,
+            "target_low_price": null,
+            "upside_to_target": null,
+            "target_dispersion": null,
+            "num_analysts": null
         },
         "rating_momentum": {
-            "upgrades_12m": 2,
-            "downgrades_12m": 1,
-            "total_actions_12m": 79
+            "upgrades_12m": 0,
+            "downgrades_12m": 0,
+            "total_actions_12m": 0
         },
         "institutional": {
-            "held_pct_institutions": 0.0112966,
-            "held_pct_insiders": 0.040120002
+            "held_pct_institutions": null,
+            "held_pct_insiders": null
         },
         "short_interest": {
-            "short_pct_of_float": 0.2047,
-            "short_ratio": 4.34,
-            "short_change_pct": -0.09463175625208368
+            "short_pct_of_float": null,
+            "short_ratio": null,
+            "short_change_pct": null
         },
-        "data_quality_flags": []
+        "data_quality_flags": [
+            "W: failed to fetch .info (Too Many Requests. Rate limited. Try after a while.)",
+            "W: sector classification unavailable",
+            "W: upgrades/downgrades fetch failed (Too Many Requests. Rate limited. Try after a while.)"
+        ]
     },
-    "professional_raw_metrics_date": "2026-05-18",
-    "professional_score": 58.57345936486072,
-    "professional_score_date": "2026-05-18",
+    "professional_raw_metrics_date": "2026-05-21",
+    "professional_score": null,
+    "professional_score_date": "2026-05-21",
     "professional_subscores": {
-        "analyst_consensus": 85.58068,
-        "rating_momentum": 53.29746835443038,
-        "institutional_positioning": 36.87286682816011,
-        "short_interest": 40.517583794753946
+        "analyst_consensus": null,
+        "rating_momentum": 50.0,
+        "institutional_positioning": null,
+        "short_interest": null
     },
     "professional_drivers": {
-        "strongest": [
-            "upside_to_target (analyst_consensus): score=100, value=62.6%",
-            "recommendation_mean (analyst_consensus): score=76, value=1.97",
-            "held_pct_insiders (institutional_positioning): score=75, value=4.0%"
-        ],
-        "weakest": [
-            "held_pct_institutions (institutional_positioning): score=21, value=1.1%",
-            "short_pct_of_float (short_interest): score=21, value=20.5%",
-            "upgrades_12m (rating_momentum): score=53, value=2.00"
-        ]
+        "strongest": [],
+        "weakest": []
     },
     "news_sentiment_raw_metrics": {
         "sector": "Consumer Cyclical",
         "industry": "Internet Retail",
-        "market_cap_usd": 7684836352,
-        "current_price": 58.22,
+        "market_cap_usd": 8756646912,
+        "current_price": 66.34,
         "earnings": {
             "beat_count_4q": null,
             "miss_count_4q": null,
@@ -138,12 +134,12 @@
             "avg_surprise_magnitude_4q": null,
             "eps_estimate_revision_90d": null,
             "trailing_eps": -2.35,
-            "forward_eps": 3.73077
+            "forward_eps": 3.72697
         },
         "price_momentum": {
-            "return_1m": -0.24310970637145712,
-            "return_3m": -0.29447403819190743,
-            "return_6m": -0.4532819873423263
+            "return_1m": -0.17147495625270662,
+            "return_3m": -0.27481419364233267,
+            "return_6m": -0.322646535161272
         },
         "insider_activity": {
             "insider_purchases_count_90d": 0,
@@ -154,38 +150,41 @@
             "W: earnings_dates fetch failed (['Earnings Date'])"
         ]
     },
-    "news_sentiment_raw_metrics_date": "2026-05-18",
-    "news_sentiment_score": 1.7951844488853461,
-    "news_sentiment_score_date": "2026-05-18",
+    "news_sentiment_raw_metrics_date": "2026-05-21",
+    "news_sentiment_score": 4.5495881291118785,
+    "news_sentiment_score_date": "2026-05-21",
     "news_sentiment_subscores": {
         "earnings_surprise_revisions": null,
-        "price_momentum": 2.692776673328019,
+        "price_momentum": 6.824382193667817,
         "insider_activity": 0.0
     },
     "news_sentiment_drivers": {
         "strongest": [
-            "return_1m (price_momentum): score=9, value=-24.3%",
-            "return_3m (price_momentum): score=1, value=-29.4%",
+            "return_1m (price_momentum): score=21, value=-17.1%",
+            "return_3m (price_momentum): score=4, value=-27.5%",
             "insider_count_ratio_90d (insider_activity): score=0, value=-1.00"
         ],
         "weakest": [
-            "return_6m (price_momentum): score=0, value=-45.3%",
-            "net_insider_value_pct_mcap_90d (insider_activity): score=0, value=-0.7%",
+            "return_6m (price_momentum): score=0, value=-32.3%",
+            "net_insider_value_pct_mcap_90d (insider_activity): score=0, value=-0.6%",
             "insider_count_ratio_90d (insider_activity): score=0, value=-1.00"
         ]
     },
-    "composite_score": 32.97903492484173,
-    "composite_score_date": "2026-05-18",
-    "composite_rank": 998,
+    "composite_score": 33.4925871901522,
+    "composite_score_date": "2026-05-21",
+    "composite_rank": 938,
     "composite_metadata": {
         "scores_used": [
             "financial",
-            "professional",
             "news_sentiment"
         ],
-        "scores_imputed": [],
-        "imputed_values": {},
-        "imputation_r_squared": null,
+        "scores_imputed": [
+            "professional"
+        ],
+        "imputed_values": {
+            "professional": 60.35820439457369
+        },
+        "imputation_r_squared": 0.04516719672877956,
         "weights_applied": {
             "financial": 50,
             "professional": 30,

@@ -5,7 +5,7 @@
     "financial_raw_metrics": {
         "sector": "Communication Services",
         "industry": "Entertainment",
-        "market_cap_usd": 14168235008,
+        "market_cap_usd": 14343148544,
         "profitability": {
             "gross_margin_ttm": 0.5717,
             "operating_margin_ttm": 0.10114,
@@ -38,32 +38,32 @@
             "fcf_cagr_3yr": -0.12590896795592
         },
         "valuation": {
-            "pe_trailing": 32.810127,
-            "pe_forward": 20.282326,
-            "ps_ratio": 1.6100267,
-            "pb_ratio": 1.661432,
-            "ev_ebitda": 12.491,
+            "pe_trailing": 33.240505,
+            "pe_forward": 20.548374,
+            "ps_ratio": 1.6299032,
+            "pb_ratio": 1.6832255,
+            "ev_ebitda": 12.64,
             "peg_ratio": 3.07,
-            "fcf_yield": 0.12309225524670235
+            "fcf_yield": 0.12159115515327679
         },
         "data_quality_flags": [
             "NWSA: eps_cagr_3yr approximated by net income CAGR (share count changes not adjusted)"
         ]
     },
-    "financial_raw_metrics_date": "2026-05-18",
-    "financial_score": 58.091692023624475,
-    "financial_score_date": "2026-05-18",
+    "financial_raw_metrics_date": "2026-05-21",
+    "financial_score": 58.05540113775029,
+    "financial_score_date": "2026-05-21",
     "financial_subscores": {
         "profitability": 64.68580513451055,
         "returns_on_capital": 45.991887463794384,
         "cash_flow_quality": 64.21053911309755,
         "balance_sheet": 87.96190249326567,
         "growth": 37.61967162573972,
-        "valuation": 49.915576794320295
+        "valuation": 49.67363755515906
     },
     "financial_drivers": {
         "strongest": [
-            "fcf_yield (valuation): score=100, value=12.3%",
+            "fcf_yield (valuation): score=100, value=12.2%",
             "net_debt_to_ebitda (balance_sheet): score=92, value=60.1%",
             "debt_to_equity (balance_sheet): score=92, value=31.6%"
         ],
@@ -74,63 +74,59 @@
         ]
     },
     "professional_raw_metrics": {
-        "sector": "Communication Services",
-        "industry": "Entertainment",
-        "market_cap_usd": 14168235008,
-        "current_price": 25.92,
+        "sector": null,
+        "industry": null,
+        "market_cap_usd": null,
+        "current_price": null,
         "analyst": {
-            "recommendation_mean": 1.5,
-            "recommendation_key": "strong_buy",
-            "target_mean_price": 35.05,
-            "target_median_price": 34.5,
-            "target_high_price": 43.0,
-            "target_low_price": 29.4,
-            "upside_to_target": 0.35223765432098747,
-            "target_dispersion": 0.38801711840228253,
-            "num_analysts": 8
+            "recommendation_mean": null,
+            "recommendation_key": null,
+            "target_mean_price": null,
+            "target_median_price": null,
+            "target_high_price": null,
+            "target_low_price": null,
+            "upside_to_target": null,
+            "target_dispersion": null,
+            "num_analysts": null
         },
         "rating_momentum": {
-            "upgrades_12m": 1,
-            "downgrades_12m": 1,
-            "total_actions_12m": 7
+            "upgrades_12m": 0,
+            "downgrades_12m": 0,
+            "total_actions_12m": 0
         },
         "institutional": {
-            "held_pct_institutions": 0.0110797,
-            "held_pct_insiders": 0.0007
+            "held_pct_institutions": null,
+            "held_pct_insiders": null
         },
         "short_interest": {
-            "short_pct_of_float": 0.0404,
-            "short_ratio": 3.16,
-            "short_change_pct": 0.26157774157430835
+            "short_pct_of_float": null,
+            "short_ratio": null,
+            "short_change_pct": null
         },
-        "data_quality_flags": []
+        "data_quality_flags": [
+            "NWSA: failed to fetch .info (Too Many Requests. Rate limited. Try after a while.)",
+            "NWSA: sector classification unavailable",
+            "NWSA: upgrades/downgrades fetch failed (Too Many Requests. Rate limited. Try after a while.)"
+        ]
     },
-    "professional_raw_metrics_date": "2026-05-18",
-    "professional_score": 58.851539255762745,
-    "professional_score_date": "2026-05-18",
+    "professional_raw_metrics_date": "2026-05-21",
+    "professional_score": null,
+    "professional_score_date": "2026-05-21",
     "professional_subscores": {
-        "analyst_consensus": 91.04475308641975,
+        "analyst_consensus": null,
         "rating_momentum": 50.0,
-        "institutional_positioning": 23.95943860860708,
-        "short_interest": 56.64010682242712
+        "institutional_positioning": null,
+        "short_interest": null
     },
     "professional_drivers": {
-        "strongest": [
-            "upside_to_target (analyst_consensus): score=93, value=35.2%",
-            "recommendation_mean (analyst_consensus): score=90, value=1.50",
-            "short_ratio (short_interest): score=68, value=3.16"
-        ],
-        "weakest": [
-            "held_pct_institutions (institutional_positioning): score=12, value=1.1%",
-            "short_change_pct (short_interest): score=20, value=26.2%",
-            "upgrades_12m (rating_momentum): score=50, value=1.00"
-        ]
+        "strongest": [],
+        "weakest": []
     },
     "news_sentiment_raw_metrics": {
         "sector": "Communication Services",
         "industry": "Entertainment",
-        "market_cap_usd": 14168235008,
-        "current_price": 25.92,
+        "market_cap_usd": 14343148544,
+        "current_price": 26.26,
         "earnings": {
             "beat_count_4q": null,
             "miss_count_4q": null,
@@ -141,47 +137,40 @@
             "forward_eps": 1.27796
         },
         "price_momentum": {
-            "return_1m": 0.02329254157406344,
-            "return_3m": 0.16197846326067042,
-            "return_6m": -0.00920002362251219
+            "return_1m": null,
+            "return_3m": null,
+            "return_6m": null
         },
         "insider_activity": {
-            "insider_purchases_count_90d": 0,
-            "insider_sales_count_90d": 0,
+            "insider_purchases_count_90d": null,
+            "insider_sales_count_90d": null,
             "insider_net_value_90d_usd": null
         },
         "data_quality_flags": [
-            "NWSA: earnings_dates fetch failed (['Earnings Date'])"
+            "NWSA: earnings_dates fetch failed (['Earnings Date'])",
+            "NWSA: eps_revisions fetch failed (Too Many Requests. Rate limited. Try after a while.)",
+            "NWSA: price momentum fetch failed (Too Many Requests. Rate limited. Try after a while.)",
+            "NWSA: insider_transactions fetch failed (Too Many Requests. Rate limited. Try after a while.)"
         ]
     },
-    "news_sentiment_raw_metrics_date": "2026-05-18",
-    "news_sentiment_score": 56.53728756508284,
-    "news_sentiment_score_date": "2026-05-18",
+    "news_sentiment_raw_metrics_date": "2026-05-21",
+    "news_sentiment_score": null,
+    "news_sentiment_score_date": "2026-05-21",
     "news_sentiment_subscores": {
         "earnings_surprise_revisions": null,
-        "price_momentum": 59.805931347624266,
-        "insider_activity": 50.0
+        "price_momentum": null,
+        "insider_activity": null
     },
     "news_sentiment_drivers": {
-        "strongest": [
-            "return_3m (price_momentum): score=77, value=16.2%",
-            "return_1m (price_momentum): score=54, value=2.3%",
-            "insider_activity_summary (insider_activity): score=50, value=no activity in 90d"
-        ],
-        "weakest": [
-            "return_6m (price_momentum): score=48, value=-0.9%",
-            "insider_activity_summary (insider_activity): score=50, value=no activity in 90d",
-            "return_1m (price_momentum): score=54, value=2.3%"
-        ]
+        "strongest": [],
+        "weakest": []
     },
-    "composite_score": 58.00876530155763,
-    "composite_score_date": "2026-05-18",
-    "composite_rank": 307,
+    "composite_score": null,
+    "composite_score_date": "2026-05-21",
+    "composite_rank": null,
     "composite_metadata": {
         "scores_used": [
-            "financial",
-            "professional",
-            "news_sentiment"
+            "financial"
         ],
         "scores_imputed": [],
         "imputed_values": {},
@@ -190,6 +179,7 @@
             "financial": 50,
             "professional": 30,
             "news_sentiment": 20
-        }
+        },
+        "skip_reason": "Only 1 of 3 scores populated; need at least 2"
     }
 }

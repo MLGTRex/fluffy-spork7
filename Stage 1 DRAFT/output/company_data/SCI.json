@@ -5,7 +5,7 @@
     "financial_raw_metrics": {
         "sector": "Consumer Cyclical",
         "industry": "Personal Services",
-        "market_cap_usd": 10725864448,
+        "market_cap_usd": 10586514432,
         "profitability": {
             "gross_margin_ttm": 0.26206,
             "operating_margin_ttm": 0.2212,
@@ -38,34 +38,34 @@
             "fcf_cagr_3yr": 0.06718710193435862
         },
         "valuation": {
-            "pe_trailing": 20.511873,
-            "pe_forward": 17.071007,
-            "ps_ratio": 2.4762352,
-            "pb_ratio": 6.628016,
-            "ev_ebitda": 11.858,
-            "peg_ratio": 1.5275,
-            "fcf_yield": 0.034444649360536095
+            "pe_trailing": 20.245384,
+            "pe_forward": 16.849222,
+            "ps_ratio": 2.444064,
+            "pb_ratio": 6.541905,
+            "ev_ebitda": 11.837,
+            "peg_ratio": 1.524,
+            "fcf_yield": 0.03489804339030254
         },
         "data_quality_flags": [
             "SCI: eps_cagr_3yr approximated by net income CAGR (share count changes not adjusted)"
         ]
     },
-    "financial_raw_metrics_date": "2026-05-18",
-    "financial_score": 44.4476072865417,
-    "financial_score_date": "2026-05-18",
+    "financial_raw_metrics_date": "2026-05-21",
+    "financial_score": 44.52240328132668,
+    "financial_score_date": "2026-05-21",
     "financial_subscores": {
-        "profitability": 48.90405689738861,
-        "returns_on_capital": 46.003599269080325,
+        "profitability": 48.90592736996402,
+        "returns_on_capital": 46.002959937315744,
         "cash_flow_quality": 52.64015060358526,
-        "balance_sheet": 28.686619976892157,
+        "balance_sheet": 28.686619976892153,
         "growth": 31.471161341675376,
-        "valuation": 56.97590843283325
+        "valuation": 57.47290687698542
     },
     "financial_drivers": {
         "strongest": [
-            "pe_forward (valuation): score=69, value=17.07",
+            "pe_forward (valuation): score=69, value=16.85",
             "fcf_to_net_income_ttm (cash_flow_quality): score=62, value=69.0%",
-            "pe_trailing (valuation): score=59, value=20.51"
+            "pe_trailing (valuation): score=59, value=20.25"
         ],
         "weakest": [
             "current_ratio (balance_sheet): score=4, value=56.6%",
@@ -74,63 +74,59 @@
         ]
     },
     "professional_raw_metrics": {
-        "sector": "Consumer Cyclical",
-        "industry": "Personal Services",
-        "market_cap_usd": 10725864448,
-        "current_price": 77.74,
+        "sector": null,
+        "industry": null,
+        "market_cap_usd": null,
+        "current_price": null,
         "analyst": {
-            "recommendation_mean": 1.33333,
-            "recommendation_key": "strong_buy",
-            "target_mean_price": 96.33333,
-            "target_median_price": 97.5,
-            "target_high_price": 100.0,
-            "target_low_price": 90.0,
-            "upside_to_target": 0.2391732698739389,
-            "target_dispersion": 0.10380623196561356,
-            "num_analysts": 6
+            "recommendation_mean": null,
+            "recommendation_key": null,
+            "target_mean_price": null,
+            "target_median_price": null,
+            "target_high_price": null,
+            "target_low_price": null,
+            "upside_to_target": null,
+            "target_dispersion": null,
+            "num_analysts": null
         },
         "rating_momentum": {
             "upgrades_12m": 0,
             "downgrades_12m": 0,
-            "total_actions_12m": 7
+            "total_actions_12m": 0
         },
         "institutional": {
-            "held_pct_institutions": 0.96740997,
-            "held_pct_insiders": 0.02987
+            "held_pct_institutions": null,
+            "held_pct_insiders": null
         },
         "short_interest": {
-            "short_pct_of_float": 0.0525,
-            "short_ratio": 5.33,
-            "short_change_pct": -0.12388138968921275
+            "short_pct_of_float": null,
+            "short_ratio": null,
+            "short_change_pct": null
         },
-        "data_quality_flags": []
+        "data_quality_flags": [
+            "SCI: failed to fetch .info (Too Many Requests. Rate limited. Try after a while.)",
+            "SCI: sector classification unavailable",
+            "SCI: upgrades/downgrades fetch failed (Too Many Requests. Rate limited. Try after a while.)"
+        ]
     },
-    "professional_raw_metrics_date": "2026-05-18",
-    "professional_score": 70.81975298114732,
-    "professional_score_date": "2026-05-18",
+    "professional_raw_metrics_date": "2026-05-21",
+    "professional_score": null,
+    "professional_score_date": "2026-05-21",
     "professional_subscores": {
-        "analyst_consensus": 87.9449246582626,
+        "analyst_consensus": null,
         "rating_momentum": 50.0,
-        "institutional_positioning": 74.50175888181252,
-        "short_interest": 59.423930868681836
+        "institutional_positioning": null,
+        "short_interest": null
     },
     "professional_drivers": {
-        "strongest": [
-            "recommendation_mean (analyst_consensus): score=93, value=1.33",
-            "upside_to_target (analyst_consensus): score=80, value=23.9%",
-            "held_pct_institutions (institutional_positioning): score=76, value=96.7%"
-        ],
-        "weakest": [
-            "short_ratio (short_interest): score=48, value=5.33",
-            "upgrades_12m (rating_momentum): score=50, value=0.00",
-            "downgrades_12m (rating_momentum): score=50, value=0.00"
-        ]
+        "strongest": [],
+        "weakest": []
     },
     "news_sentiment_raw_metrics": {
         "sector": "Consumer Cyclical",
         "industry": "Personal Services",
-        "market_cap_usd": 10725864448,
-        "current_price": 77.74,
+        "market_cap_usd": 10586514432,
+        "current_price": 76.73,
         "earnings": {
             "beat_count_4q": null,
             "miss_count_4q": null,
@@ -141,9 +137,9 @@
             "forward_eps": 4.55392
         },
         "price_momentum": {
-            "return_1m": -0.03524449946041309,
-            "return_3m": -0.008283662050158664,
-            "return_6m": -0.01795808504888465
+            "return_1m": -0.08338309832531549,
+            "return_3m": -0.038389851243863765,
+            "return_6m": -0.020659744037480148
         },
         "insider_activity": {
             "insider_purchases_count_90d": 0,
@@ -154,38 +150,41 @@
             "SCI: earnings_dates fetch failed (['Earnings Date'])"
         ]
     },
-    "news_sentiment_raw_metrics_date": "2026-05-18",
-    "news_sentiment_score": 42.566250495938455,
-    "news_sentiment_score_date": "2026-05-18",
+    "news_sentiment_raw_metrics_date": "2026-05-21",
+    "news_sentiment_score": 39.93379477783234,
+    "news_sentiment_score_date": "2026-05-21",
     "news_sentiment_subscores": {
         "earnings_surprise_revisions": null,
-        "price_momentum": 46.851059899631224,
-        "insider_activity": 33.99663168855292
+        "price_momentum": 42.90897997805446,
+        "insider_activity": 33.98342437738812
     },
     "news_sentiment_drivers": {
         "strongest": [
-            "return_3m (price_momentum): score=49, value=-0.8%",
             "net_insider_value_pct_mcap_90d (insider_activity): score=49, value=-0.0%",
-            "return_6m (price_momentum): score=47, value=-1.8%"
+            "return_6m (price_momentum): score=47, value=-2.1%",
+            "return_3m (price_momentum): score=44, value=-3.8%"
         ],
         "weakest": [
             "insider_count_ratio_90d (insider_activity): score=0, value=-1.00",
-            "return_1m (price_momentum): score=44, value=-3.5%",
-            "return_6m (price_momentum): score=47, value=-1.8%"
+            "return_1m (price_momentum): score=36, value=-8.3%",
+            "return_3m (price_momentum): score=44, value=-3.8%"
         ]
     },
-    "composite_score": 51.98297963680274,
-    "composite_score_date": "2026-05-18",
-    "composite_rank": 658,
+    "composite_score": 47.65193340590316,
+    "composite_score_date": "2026-05-21",
+    "composite_rank": 798,
     "composite_metadata": {
         "scores_used": [
             "financial",
-            "professional",
             "news_sentiment"
         ],
-        "scores_imputed": [],
-        "imputed_values": {},
-        "imputation_r_squared": null,
+        "scores_imputed": [
+            "professional"
+        ],
+        "imputed_values": {
+            "professional": 58.01324269891118
+        },
+        "imputation_r_squared": 0.04516719672877956,
         "weights_applied": {
             "financial": 50,
             "professional": 30,

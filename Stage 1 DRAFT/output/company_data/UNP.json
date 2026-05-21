@@ -5,7 +5,7 @@
     "financial_raw_metrics": {
         "sector": "Industrials",
         "industry": "Railroads",
-        "market_cap_usd": 160635043840,
+        "market_cap_usd": 157595238400,
         "profitability": {
             "gross_margin_ttm": 0.56526,
             "operating_margin_ttm": 0.40357,
@@ -38,28 +38,28 @@
             "fcf_cagr_3yr": -0.014310393573741975
         },
         "valuation": {
-            "pe_trailing": 22.268312,
-            "pe_forward": 19.769758,
-            "ps_ratio": 6.5034432,
-            "pb_ratio": 8.691574,
-            "ev_ebitda": 15.184,
-            "peg_ratio": 3.2314,
-            "fcf_yield": 0.02511516052511198
+            "pe_trailing": 21.846914,
+            "pe_forward": 19.395641,
+            "ps_ratio": 6.380374,
+            "pb_ratio": 8.527097,
+            "ev_ebitda": 14.959,
+            "peg_ratio": 3.2454,
+            "fcf_yield": 0.025599599029509763
         },
         "data_quality_flags": [
             "UNP: eps_cagr_3yr approximated by net income CAGR (share count changes not adjusted)"
         ]
     },
-    "financial_raw_metrics_date": "2026-05-18",
-    "financial_score": 58.02569110955914,
-    "financial_score_date": "2026-05-18",
+    "financial_raw_metrics_date": "2026-05-21",
+    "financial_score": 58.113716418292846,
+    "financial_score_date": "2026-05-21",
     "financial_subscores": {
         "profitability": 96.05903839208246,
         "returns_on_capital": 53.998143949098164,
         "cash_flow_quality": 57.531279711125165,
         "balance_sheet": 57.23579292809305,
         "growth": 27.0913365779157,
-        "valuation": 44.90328839168615
+        "valuation": 45.49012378324418
     },
     "financial_drivers": {
         "strongest": [
@@ -68,69 +68,65 @@
             "gross_margin_ttm (profitability): score=88, value=56.5%"
         ],
         "weakest": [
-            "peg_ratio (valuation): score=10, value=3.23",
+            "peg_ratio (valuation): score=10, value=3.25",
             "revenue_cagr_3yr (growth): score=19, value=-0.5%",
             "eps_cagr_3yr (growth): score=23, value=0.7%"
         ]
     },
     "professional_raw_metrics": {
-        "sector": "Industrials",
-        "industry": "Railroads",
-        "market_cap_usd": 160635043840,
-        "current_price": 270.56,
+        "sector": null,
+        "industry": null,
+        "market_cap_usd": null,
+        "current_price": null,
         "analyst": {
-            "recommendation_mean": 1.82609,
-            "recommendation_key": "buy",
-            "target_mean_price": 291.04544,
-            "target_median_price": 294.5,
-            "target_high_price": 330.0,
-            "target_low_price": 239.0,
-            "upside_to_target": 0.07571496156120633,
-            "target_dispersion": 0.3126659534676097,
-            "num_analysts": 22
+            "recommendation_mean": null,
+            "recommendation_key": null,
+            "target_mean_price": null,
+            "target_median_price": null,
+            "target_high_price": null,
+            "target_low_price": null,
+            "upside_to_target": null,
+            "target_dispersion": null,
+            "num_analysts": null
         },
         "rating_momentum": {
-            "upgrades_12m": 6,
-            "downgrades_12m": 5,
-            "total_actions_12m": 47
+            "upgrades_12m": 0,
+            "downgrades_12m": 0,
+            "total_actions_12m": 0
         },
         "institutional": {
-            "held_pct_institutions": 0.90241,
-            "held_pct_insiders": 0.00074
+            "held_pct_institutions": null,
+            "held_pct_insiders": null
         },
         "short_interest": {
-            "short_pct_of_float": 0.055,
-            "short_ratio": 9.31,
-            "short_change_pct": 0.04124131366529207
+            "short_pct_of_float": null,
+            "short_ratio": null,
+            "short_change_pct": null
         },
-        "data_quality_flags": []
+        "data_quality_flags": [
+            "UNP: failed to fetch .info (Too Many Requests. Rate limited. Try after a while.)",
+            "UNP: sector classification unavailable",
+            "UNP: upgrades/downgrades fetch failed (Too Many Requests. Rate limited. Try after a while.)"
+        ]
     },
-    "professional_raw_metrics_date": "2026-05-18",
-    "professional_score": 58.798278894624055,
-    "professional_score_date": "2026-05-18",
+    "professional_raw_metrics_date": "2026-05-21",
+    "professional_score": null,
+    "professional_score_date": "2026-05-21",
     "professional_subscores": {
-        "analyst_consensus": 66.70187615612063,
-        "rating_momentum": 53.840425531914896,
-        "institutional_positioning": 63.514035096323056,
-        "short_interest": 40.76004721948232
+        "analyst_consensus": null,
+        "rating_momentum": 50.0,
+        "institutional_positioning": null,
+        "short_interest": null
     },
     "professional_drivers": {
-        "strongest": [
-            "recommendation_mean (analyst_consensus): score=80, value=1.83",
-            "held_pct_institutions (institutional_positioning): score=69, value=90.2%",
-            "total_actions_12m (rating_momentum): score=54, value=47.00"
-        ],
-        "weakest": [
-            "short_ratio (short_interest): score=24, value=9.31",
-            "short_change_pct (short_interest): score=45, value=4.1%",
-            "upside_to_target (analyst_consensus): score=46, value=7.6%"
-        ]
+        "strongest": [],
+        "weakest": []
     },
     "news_sentiment_raw_metrics": {
         "sector": "Industrials",
         "industry": "Railroads",
-        "market_cap_usd": 160635043840,
-        "current_price": 270.56,
+        "market_cap_usd": 157595238400,
+        "current_price": 265.44,
         "earnings": {
             "beat_count_4q": null,
             "miss_count_4q": null,
@@ -141,9 +137,9 @@
             "forward_eps": 13.68555
         },
         "price_momentum": {
-            "return_1m": 0.09083579136228143,
-            "return_3m": 0.038980514200841296,
-            "return_6m": 0.23516743398113013
+            "return_1m": 0.056477611940298496,
+            "return_3m": 0.006894920191605428,
+            "return_6m": 0.2134919729402473
         },
         "insider_activity": {
             "insider_purchases_count_90d": 0,
@@ -154,38 +150,41 @@
             "UNP: earnings_dates fetch failed (['Earnings Date'])"
         ]
     },
-    "news_sentiment_raw_metrics_date": "2026-05-18",
-    "news_sentiment_score": 59.18373080805165,
-    "news_sentiment_score_date": "2026-05-18",
+    "news_sentiment_raw_metrics_date": "2026-05-21",
+    "news_sentiment_score": 56.01228297380894,
+    "news_sentiment_score_date": "2026-05-21",
     "news_sentiment_subscores": {
         "earnings_surprise_revisions": null,
-        "price_momentum": 71.73651690055281,
-        "insider_activity": 34.07815862304931
+        "price_momentum": 66.98823570470591,
+        "insider_activity": 34.06037751201498
     },
     "news_sentiment_drivers": {
         "strongest": [
-            "return_6m (price_momentum): score=89, value=23.5%",
-            "return_1m (price_momentum): score=65, value=9.1%",
-            "return_3m (price_momentum): score=56, value=3.9%"
+            "return_6m (price_momentum): score=86, value=21.3%",
+            "return_1m (price_momentum): score=59, value=5.6%",
+            "return_3m (price_momentum): score=51, value=0.7%"
         ],
         "weakest": [
             "insider_count_ratio_90d (insider_activity): score=0, value=-1.00",
             "net_insider_value_pct_mcap_90d (insider_activity): score=49, value=-0.0%",
-            "return_3m (price_momentum): score=56, value=3.9%"
+            "return_3m (price_momentum): score=51, value=0.7%"
         ]
     },
-    "composite_score": 58.48907538477712,
-    "composite_score_date": "2026-05-18",
-    "composite_rank": 288,
+    "composite_score": 57.465993338349996,
+    "composite_score_date": "2026-05-21",
+    "composite_rank": 301,
     "composite_metadata": {
         "scores_used": [
             "financial",
-            "professional",
             "news_sentiment"
         ],
-        "scores_imputed": [],
-        "imputed_values": {},
-        "imputation_r_squared": null,
+        "scores_imputed": [
+            "professional"
+        ],
+        "imputed_values": {
+            "professional": 57.35559511480595
+        },
+        "imputation_r_squared": 0.04516719672877956,
         "weights_applied": {
             "financial": 50,
             "professional": 30,

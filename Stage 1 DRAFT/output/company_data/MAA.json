@@ -5,7 +5,7 @@
     "financial_raw_metrics": {
         "sector": "Real Estate",
         "industry": "REIT - Residential",
-        "market_cap_usd": 15000551424,
+        "market_cap_usd": 15513656320,
         "profitability": {
             "gross_margin_ttm": 0.58497,
             "operating_margin_ttm": 0.26567,
@@ -38,34 +38,34 @@
             "fcf_cagr_3yr": -0.019789006491844785
         },
         "valuation": {
-            "pe_trailing": 37.97885,
-            "pe_forward": 32.316193,
-            "ps_ratio": 6.7766757,
-            "pb_ratio": 2.6399126,
-            "ev_ebitda": 16.448,
+            "pe_trailing": 39.39697,
+            "pe_forward": 33.421593,
+            "ps_ratio": 7.008477,
+            "pb_ratio": 2.7302127,
+            "ev_ebitda": 16.875,
             "peg_ratio": 7.03,
-            "fcf_yield": 0.060603271860094524
+            "fcf_yield": 0.0585988549216488
         },
         "data_quality_flags": [
             "MAA: eps_cagr_3yr approximated by net income CAGR (share count changes not adjusted)"
         ]
     },
-    "financial_raw_metrics_date": "2026-05-18",
-    "financial_score": 43.067860706873134,
-    "financial_score_date": "2026-05-18",
+    "financial_raw_metrics_date": "2026-05-21",
+    "financial_score": 42.92271784447091,
+    "financial_score_date": "2026-05-21",
     "financial_subscores": {
         "profitability": 31.75379301218188,
         "returns_on_capital": 44.945590593252106,
         "cash_flow_quality": 78.87054626351157,
         "balance_sheet": 34.08832080676447,
         "growth": 22.61845656094517,
-        "valuation": 49.27590294068768
+        "valuation": 48.30828385800622
     },
     "financial_drivers": {
         "strongest": [
             "fcf_margin_ttm (cash_flow_quality): score=100, value=41.1%",
-            "fcf_yield (valuation): score=85, value=6.1%",
-            "ev_ebitda (valuation): score=83, value=16.45"
+            "ev_ebitda (valuation): score=83, value=16.88",
+            "fcf_yield (valuation): score=83, value=5.9%"
         ],
         "weakest": [
             "current_ratio (balance_sheet): score=0, value=7.6%",
@@ -74,76 +74,72 @@
         ]
     },
     "professional_raw_metrics": {
-        "sector": "Real Estate",
-        "industry": "REIT - Residential",
-        "market_cap_usd": 15000551424,
-        "current_price": 125.71,
+        "sector": null,
+        "industry": null,
+        "market_cap_usd": null,
+        "current_price": null,
         "analyst": {
-            "recommendation_mean": 2.44,
-            "recommendation_key": "buy",
-            "target_mean_price": 140.70833,
-            "target_median_price": 140.0,
-            "target_high_price": 162.0,
-            "target_low_price": 120.0,
-            "upside_to_target": 0.11930896507835492,
-            "target_dispersion": 0.29848979090292665,
-            "num_analysts": 24
+            "recommendation_mean": null,
+            "recommendation_key": null,
+            "target_mean_price": null,
+            "target_median_price": null,
+            "target_high_price": null,
+            "target_low_price": null,
+            "upside_to_target": null,
+            "target_dispersion": null,
+            "num_analysts": null
         },
         "rating_momentum": {
-            "upgrades_12m": 3,
-            "downgrades_12m": 2,
-            "total_actions_12m": 56
+            "upgrades_12m": 0,
+            "downgrades_12m": 0,
+            "total_actions_12m": 0
         },
         "institutional": {
-            "held_pct_institutions": 0.97047997,
-            "held_pct_insiders": 0.00459
+            "held_pct_institutions": null,
+            "held_pct_insiders": null
         },
         "short_interest": {
-            "short_pct_of_float": 0.025899999,
-            "short_ratio": 3.06,
-            "short_change_pct": -0.09206789819810957
+            "short_pct_of_float": null,
+            "short_ratio": null,
+            "short_change_pct": null
         },
-        "data_quality_flags": []
+        "data_quality_flags": [
+            "MAA: failed to fetch .info (Too Many Requests. Rate limited. Try after a while.)",
+            "MAA: sector classification unavailable",
+            "MAA: upgrades/downgrades fetch failed (Too Many Requests. Rate limited. Try after a while.)"
+        ]
     },
-    "professional_raw_metrics_date": "2026-05-18",
-    "professional_score": 61.68235486342451,
-    "professional_score_date": "2026-05-18",
+    "professional_raw_metrics_date": "2026-05-21",
+    "professional_score": null,
+    "professional_score_date": "2026-05-21",
     "professional_subscores": {
-        "analyst_consensus": 57.370896507835496,
-        "rating_momentum": 53.625,
-        "institutional_positioning": 69.7490244760657,
-        "short_interest": 71.72689977777104
+        "analyst_consensus": null,
+        "rating_momentum": 50.0,
+        "institutional_positioning": null,
+        "short_interest": null
     },
     "professional_drivers": {
-        "strongest": [
-            "short_pct_of_float (short_interest): score=76, value=2.6%",
-            "held_pct_institutions (institutional_positioning): score=76, value=97.0%",
-            "short_ratio (short_interest): score=69, value=3.06"
-        ],
-        "weakest": [
-            "upgrades_12m (rating_momentum): score=54, value=3.00",
-            "downgrades_12m (rating_momentum): score=54, value=2.00",
-            "total_actions_12m (rating_momentum): score=54, value=56.00"
-        ]
+        "strongest": [],
+        "weakest": []
     },
     "news_sentiment_raw_metrics": {
         "sector": "Real Estate",
         "industry": "REIT - Residential",
-        "market_cap_usd": 15000551424,
-        "current_price": 125.71,
+        "market_cap_usd": 15513656320,
+        "current_price": 130.01,
         "earnings": {
             "beat_count_4q": null,
             "miss_count_4q": null,
             "total_quarters_4q": null,
             "avg_surprise_magnitude_4q": null,
             "eps_estimate_revision_90d": null,
-            "trailing_eps": 3.31,
+            "trailing_eps": 3.3,
             "forward_eps": 3.89
         },
         "price_momentum": {
-            "return_1m": 0.012239290834307614,
-            "return_3m": -0.046380169318546084,
-            "return_6m": -0.01420155228726892
+            "return_1m": 0.03395898050560417,
+            "return_3m": -0.026023205798454706,
+            "return_6m": 0.025172450802081574
         },
         "insider_activity": {
             "insider_purchases_count_90d": 0,
@@ -154,38 +150,41 @@
             "MAA: earnings_dates fetch failed (['Earnings Date'])"
         ]
     },
-    "news_sentiment_raw_metrics_date": "2026-05-18",
-    "news_sentiment_score": 42.8192599379618,
-    "news_sentiment_score_date": "2026-05-18",
+    "news_sentiment_raw_metrics_date": "2026-05-21",
+    "news_sentiment_score": 45.967040036317364,
+    "news_sentiment_score_date": "2026-05-21",
     "news_sentiment_subscores": {
         "earnings_surprise_revisions": null,
-        "price_momentum": 46.857690422029705,
-        "insider_activity": 34.74239896982603
+        "price_momentum": 51.575100569629086,
+        "insider_activity": 34.75091896969392
     },
     "news_sentiment_drivers": {
         "strongest": [
-            "return_1m (price_momentum): score=52, value=1.2%",
-            "net_insider_value_pct_mcap_90d (insider_activity): score=50, value=-0.0%",
-            "return_6m (price_momentum): score=48, value=-1.4%"
+            "return_1m (price_momentum): score=56, value=3.4%",
+            "return_6m (price_momentum): score=54, value=2.5%",
+            "net_insider_value_pct_mcap_90d (insider_activity): score=50, value=-0.0%"
         ],
         "weakest": [
             "insider_count_ratio_90d (insider_activity): score=0, value=-1.00",
-            "return_3m (price_momentum): score=42, value=-4.6%",
-            "return_6m (price_momentum): score=48, value=-1.4%"
+            "return_3m (price_momentum): score=46, value=-2.6%",
+            "net_insider_value_pct_mcap_90d (insider_activity): score=50, value=-0.0%"
         ]
     },
-    "composite_score": 48.60248880005628,
-    "composite_score_date": "2026-05-18",
-    "composite_rank": 801,
+    "composite_score": 47.858878956198495,
+    "composite_score_date": "2026-05-21",
+    "composite_rank": 790,
     "composite_metadata": {
         "scores_used": [
             "financial",
-            "professional",
             "news_sentiment"
         ],
-        "scores_imputed": [],
-        "imputed_values": {},
-        "imputation_r_squared": null,
+        "scores_imputed": [
+            "professional"
+        ],
+        "imputed_values": {
+            "professional": 57.34704008899857
+        },
+        "imputation_r_squared": 0.04516719672877956,
         "weights_applied": {
             "financial": 50,
             "professional": 30,

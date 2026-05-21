@@ -5,7 +5,7 @@
     "financial_raw_metrics": {
         "sector": "Consumer Defensive",
         "industry": "Packaged Foods",
-        "market_cap_usd": 6425411072,
+        "market_cap_usd": 6401488896,
         "profitability": {
             "gross_margin_ttm": 0.24274999,
             "operating_margin_ttm": 0.105670005,
@@ -39,33 +39,33 @@
         },
         "valuation": {
             "pe_trailing": null,
-            "pe_forward": 7.9375873,
-            "ps_ratio": 0.5746569,
-            "pb_ratio": 0.7870371,
-            "ev_ebitda": 7.923,
+            "pe_forward": 7.9524517,
+            "ps_ratio": 0.5725174,
+            "pb_ratio": 0.7841069,
+            "ev_ebitda": 8.015,
             "peg_ratio": 10.8594,
-            "fcf_yield": 0.10188842405007764
+            "fcf_yield": 0.10226917809840719
         },
         "data_quality_flags": [
             "CAG: eps_cagr_3yr approximated by net income CAGR (share count changes not adjusted)"
         ]
     },
-    "financial_raw_metrics_date": "2026-05-18",
-    "financial_score": 43.31284738502713,
-    "financial_score_date": "2026-05-18",
+    "financial_raw_metrics_date": "2026-05-21",
+    "financial_score": 43.278667210147205,
+    "financial_score_date": "2026-05-21",
     "financial_subscores": {
         "profitability": 41.76313805456289,
         "returns_on_capital": 33.078581211499476,
         "cash_flow_quality": 30.02823688943298,
         "balance_sheet": 42.67831734113928,
         "growth": 50.64012417406001,
-        "valuation": 65.61667847413213
+        "valuation": 65.38881064159926
     },
     "financial_drivers": {
         "strongest": [
             "fcf_yield (valuation): score=100, value=10.2%",
             "eps_growth_1yr (growth): score=96, value=39.0%",
-            "pe_forward (valuation): score=94, value=7.94"
+            "pe_forward (valuation): score=94, value=7.95"
         ],
         "weakest": [
             "fcf_to_net_income_ttm (cash_flow_quality): score=0, value=-15.12",
@@ -76,26 +76,26 @@
     "professional_raw_metrics": {
         "sector": "Consumer Defensive",
         "industry": "Packaged Foods",
-        "market_cap_usd": 6425411072,
-        "current_price": 13.43,
+        "market_cap_usd": 6401488896,
+        "current_price": 13.38,
         "analyst": {
             "recommendation_mean": 3.22222,
             "recommendation_key": "hold",
-            "target_mean_price": 16.00588,
+            "target_mean_price": 15.94706,
             "target_median_price": 15.0,
             "target_high_price": 23.0,
-            "target_low_price": 14.0,
-            "upside_to_target": 0.19180044676098298,
-            "target_dispersion": 0.5622933571912322,
+            "target_low_price": 13.0,
+            "upside_to_target": 0.19185799701046335,
+            "target_dispersion": 0.6270748338565227,
             "num_analysts": 17
         },
         "rating_momentum": {
             "upgrades_12m": 0,
             "downgrades_12m": 4,
-            "total_actions_12m": 50
+            "total_actions_12m": 51
         },
         "institutional": {
-            "held_pct_institutions": 0.89518,
+            "held_pct_institutions": 0.89359003,
             "held_pct_insiders": 0.0064999997
         },
         "short_interest": {
@@ -105,85 +105,92 @@
         },
         "data_quality_flags": []
     },
-    "professional_raw_metrics_date": "2026-05-18",
-    "professional_score": 52.68106978131378,
-    "professional_score_date": "2026-05-18",
+    "professional_raw_metrics_date": "2026-05-21",
+    "professional_score": 52.32300485284613,
+    "professional_score_date": "2026-05-21",
     "professional_subscores": {
-        "analyst_consensus": 46.4533964507322,
-        "rating_momentum": 47.46000000000001,
-        "institutional_positioning": 67.96232627074913,
-        "short_interest": 50.44532970580154
+        "analyst_consensus": 46.45723313403089,
+        "rating_momentum": 47.55882352941177,
+        "institutional_positioning": 65.25003289024916,
+        "short_interest": 52.4050610068006
     },
     "professional_drivers": {
         "strongest": [
-            "held_pct_institutions (institutional_positioning): score=73, value=89.5%",
             "upside_to_target (analyst_consensus): score=72, value=19.2%",
-            "short_ratio (short_interest): score=70, value=2.97"
+            "short_ratio (short_interest): score=70, value=2.97",
+            "held_pct_institutions (institutional_positioning): score=69, value=89.4%"
         ],
         "weakest": [
             "recommendation_mean (analyst_consensus): score=29, value=3.22",
             "short_change_pct (short_interest): score=41, value=6.9%",
-            "short_pct_of_float (short_interest): score=42, value=12.4%"
+            "short_pct_of_float (short_interest): score=46, value=12.4%"
         ]
     },
     "news_sentiment_raw_metrics": {
-        "sector": "Consumer Defensive",
-        "industry": "Packaged Foods",
-        "market_cap_usd": 6425411072,
-        "current_price": 13.43,
+        "sector": null,
+        "industry": null,
+        "market_cap_usd": null,
+        "current_price": null,
         "earnings": {
             "beat_count_4q": 2,
             "miss_count_4q": 2,
             "total_quarters_4q": 4,
             "avg_surprise_magnitude_4q": 0.03626567398119125,
             "eps_estimate_revision_90d": null,
-            "trailing_eps": -0.1,
-            "forward_eps": 1.69195
+            "trailing_eps": null,
+            "forward_eps": null
         },
         "price_momentum": {
-            "return_1m": -0.022806765227643123,
-            "return_3m": -0.309495885623168,
-            "return_6m": -0.19447504935582033
+            "return_1m": null,
+            "return_3m": null,
+            "return_6m": null
         },
         "insider_activity": {
-            "insider_purchases_count_90d": 1,
-            "insider_sales_count_90d": 0,
-            "insider_net_value_90d_usd": 250402.0
+            "insider_purchases_count_90d": null,
+            "insider_sales_count_90d": null,
+            "insider_net_value_90d_usd": null
         },
-        "data_quality_flags": []
+        "data_quality_flags": [
+            "CAG: failed to fetch .info (Too Many Requests. Rate limited. Try after a while.)",
+            "CAG: sector classification unavailable",
+            "CAG: eps_revisions fetch failed (Too Many Requests. Rate limited. Try after a while.)",
+            "CAG: price momentum fetch failed (Too Many Requests. Rate limited. Try after a while.)",
+            "CAG: insider_transactions fetch failed (Too Many Requests. Rate limited. Try after a while.)"
+        ]
     },
-    "news_sentiment_raw_metrics_date": "2026-05-18",
-    "news_sentiment_score": 43.91788363729977,
-    "news_sentiment_score_date": "2026-05-18",
+    "news_sentiment_raw_metrics_date": "2026-05-21",
+    "news_sentiment_score": null,
+    "news_sentiment_score_date": "2026-05-21",
     "news_sentiment_subscores": {
         "earnings_surprise_revisions": 58.36900168796722,
-        "price_momentum": 18.58471482512685,
-        "insider_activity": 65.68198516031069
+        "price_momentum": null,
+        "insider_activity": null
     },
     "news_sentiment_drivers": {
         "strongest": [
-            "insider_count_ratio_90d (insider_activity): score=100, value=1.00",
             "avg_surprise_magnitude_4q (earnings_surprise_revisions): score=68, value=3.6%",
-            "net_insider_value_pct_mcap_90d (insider_activity): score=51, value=0.0%"
+            "beat_rate_4q (earnings_surprise_revisions): score=50, value=50.0%"
         ],
         "weakest": [
-            "return_3m (price_momentum): score=0, value=-30.9%",
-            "return_6m (price_momentum): score=18, value=-19.4%",
-            "return_1m (price_momentum): score=46, value=-2.3%"
+            "beat_rate_4q (earnings_surprise_revisions): score=50, value=50.0%",
+            "avg_surprise_magnitude_4q (earnings_surprise_revisions): score=68, value=3.6%"
         ]
     },
-    "composite_score": 46.244321354367656,
-    "composite_score_date": "2026-05-18",
-    "composite_rank": 875,
+    "composite_score": 48.20606339121416,
+    "composite_score_date": "2026-05-21",
+    "composite_rank": 783,
     "composite_metadata": {
         "scores_used": [
             "financial",
-            "professional",
+            "professional"
+        ],
+        "scores_imputed": [
             "news_sentiment"
         ],
-        "scores_imputed": [],
-        "imputed_values": {},
-        "imputation_r_squared": null,
+        "imputed_values": {
+            "news_sentiment": 54.3491416514336
+        },
+        "imputation_r_squared": 0.05693184104207816,
         "weights_applied": {
             "financial": 50,
             "professional": 30,

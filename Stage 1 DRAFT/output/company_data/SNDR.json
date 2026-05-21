@@ -5,7 +5,7 @@
     "financial_raw_metrics": {
         "sector": "Industrials",
         "industry": "Trucking",
-        "market_cap_usd": 5593470464,
+        "market_cap_usd": 5838644224,
         "profitability": {
             "gross_margin_ttm": 0.16279,
             "operating_margin_ttm": 0.02388,
@@ -38,28 +38,28 @@
             "fcf_cagr_3yr": 0.03937898169957821
         },
         "valuation": {
-            "pe_trailing": 57.035713,
-            "pe_forward": 21.181776,
-            "ps_ratio": 0.9863288,
-            "pb_ratio": 1.8519163,
-            "ev_ebitda": 9.94,
+            "pe_trailing": 59.535713,
+            "pe_forward": 21.973677,
+            "ps_ratio": 1.0295616,
+            "pb_ratio": 1.9330899,
+            "ev_ebitda": 10.444,
             "peg_ratio": 4.51,
-            "fcf_yield": 0.032752474725501655
+            "fcf_yield": 0.031377147325906324
         },
         "data_quality_flags": [
             "SNDR: eps_cagr_3yr approximated by net income CAGR (share count changes not adjusted)"
         ]
     },
-    "financial_raw_metrics_date": "2026-05-18",
-    "financial_score": 38.31978481253773,
-    "financial_score_date": "2026-05-18",
+    "financial_raw_metrics_date": "2026-05-21",
+    "financial_score": 38.16304584900962,
+    "financial_score_date": "2026-05-21",
     "financial_subscores": {
         "profitability": 18.104183582492652,
         "returns_on_capital": 36.727776073194114,
-        "cash_flow_quality": 41.73394598284702,
+        "cash_flow_quality": 41.73394598284701,
         "balance_sheet": 88.9794969136018,
         "growth": 15.316271516959251,
-        "valuation": 36.326238129261135
+        "valuation": 35.28131170574038
     },
     "financial_drivers": {
         "strongest": [
@@ -70,67 +70,63 @@
         "weakest": [
             "eps_cagr_3yr (growth): score=0, value=-39.1%",
             "peg_ratio (valuation): score=0, value=4.51",
-            "pe_trailing (valuation): score=8, value=57.04"
+            "pe_trailing (valuation): score=7, value=59.54"
         ]
     },
     "professional_raw_metrics": {
-        "sector": "Industrials",
-        "industry": "Trucking",
-        "market_cap_usd": 5593470464,
-        "current_price": 31.94,
+        "sector": null,
+        "industry": null,
+        "market_cap_usd": null,
+        "current_price": null,
         "analyst": {
-            "recommendation_mean": 2.3125,
-            "recommendation_key": "buy",
-            "target_mean_price": 32.42857,
-            "target_median_price": 33.0,
-            "target_high_price": 38.0,
-            "target_low_price": 27.0,
-            "upside_to_target": 0.015296493425172175,
-            "target_dispersion": 0.3392070634011922,
-            "num_analysts": 14
+            "recommendation_mean": null,
+            "recommendation_key": null,
+            "target_mean_price": null,
+            "target_median_price": null,
+            "target_high_price": null,
+            "target_low_price": null,
+            "upside_to_target": null,
+            "target_dispersion": null,
+            "num_analysts": null
         },
         "rating_momentum": {
-            "upgrades_12m": 3,
-            "downgrades_12m": 4,
-            "total_actions_12m": 36
+            "upgrades_12m": 0,
+            "downgrades_12m": 0,
+            "total_actions_12m": 0
         },
         "institutional": {
-            "held_pct_institutions": 0.77844,
-            "held_pct_insiders": 0.50388
+            "held_pct_institutions": null,
+            "held_pct_insiders": null
         },
         "short_interest": {
-            "short_pct_of_float": 0.1016,
-            "short_ratio": 4.97,
-            "short_change_pct": -0.04490312900930224
+            "short_pct_of_float": null,
+            "short_ratio": null,
+            "short_change_pct": null
         },
-        "data_quality_flags": []
+        "data_quality_flags": [
+            "SNDR: failed to fetch .info (Too Many Requests. Rate limited. Try after a while.)",
+            "SNDR: sector classification unavailable",
+            "SNDR: upgrades/downgrades fetch failed (Too Many Requests. Rate limited. Try after a while.)"
+        ]
     },
-    "professional_raw_metrics_date": "2026-05-18",
-    "professional_score": 54.440807089889525,
-    "professional_score_date": "2026-05-18",
+    "professional_raw_metrics_date": "2026-05-21",
+    "professional_score": null,
+    "professional_score_date": "2026-05-21",
     "professional_subscores": {
-        "analyst_consensus": 49.33557921102066,
-        "rating_momentum": 50.75,
-        "institutional_positioning": 73.07599047071474,
-        "short_interest": 41.44571165569074
+        "analyst_consensus": null,
+        "rating_momentum": 50.0,
+        "institutional_positioning": null,
+        "short_interest": null
     },
     "professional_drivers": {
-        "strongest": [
-            "held_pct_insiders (institutional_positioning): score=100, value=50.4%",
-            "recommendation_mean (analyst_consensus): score=62, value=2.31",
-            "held_pct_institutions (institutional_positioning): score=62, value=77.8%"
-        ],
-        "weakest": [
-            "upside_to_target (analyst_consensus): score=30, value=1.5%",
-            "short_pct_of_float (short_interest): score=30, value=10.2%",
-            "short_ratio (short_interest): score=50, value=4.97"
-        ]
+        "strongest": [],
+        "weakest": []
     },
     "news_sentiment_raw_metrics": {
         "sector": "Industrials",
         "industry": "Trucking",
-        "market_cap_usd": 5593470464,
-        "current_price": 31.94,
+        "market_cap_usd": 5838644224,
+        "current_price": 33.34,
         "earnings": {
             "beat_count_4q": null,
             "miss_count_4q": null,
@@ -138,54 +134,57 @@
             "avg_surprise_magnitude_4q": null,
             "eps_estimate_revision_90d": null,
             "trailing_eps": 0.56,
-            "forward_eps": 1.5079
+            "forward_eps": 1.51727
         },
         "price_momentum": {
-            "return_1m": 0.1682516394198591,
-            "return_3m": 0.12268298953883859,
-            "return_6m": 0.479870494884449
+            "return_1m": 0.10251323585797807,
+            "return_3m": 0.16374601629599508,
+            "return_6m": 0.6176223588808863
         },
         "insider_activity": {
             "insider_purchases_count_90d": 0,
-            "insider_sales_count_90d": 3,
-            "insider_net_value_90d_usd": -675256.0
+            "insider_sales_count_90d": 2,
+            "insider_net_value_90d_usd": -501916.0
         },
         "data_quality_flags": [
             "SNDR: earnings_dates fetch failed (['Earnings Date'])"
         ]
     },
-    "news_sentiment_raw_metrics_date": "2026-05-18",
-    "news_sentiment_score": 67.07378236190841,
-    "news_sentiment_score_date": "2026-05-18",
+    "news_sentiment_raw_metrics_date": "2026-05-21",
+    "news_sentiment_score": 67.0473643999515,
+    "news_sentiment_score_date": "2026-05-21",
     "news_sentiment_subscores": {
         "earnings_surprise_revisions": null,
-        "price_momentum": 84.16699269892638,
-        "insider_activity": 32.8873616878725
+        "price_momentum": 83.82323577801546,
+        "insider_activity": 33.4956216438236
     },
     "news_sentiment_drivers": {
         "strongest": [
-            "return_6m (price_momentum): score=100, value=48.0%",
-            "return_1m (price_momentum): score=78, value=16.8%",
-            "return_3m (price_momentum): score=70, value=12.3%"
+            "return_6m (price_momentum): score=100, value=61.8%",
+            "return_3m (price_momentum): score=77, value=16.4%",
+            "return_1m (price_momentum): score=67, value=10.3%"
         ],
         "weakest": [
             "insider_count_ratio_90d (insider_activity): score=0, value=-1.00",
-            "net_insider_value_pct_mcap_90d (insider_activity): score=47, value=-0.0%",
-            "return_3m (price_momentum): score=70, value=12.3%"
+            "net_insider_value_pct_mcap_90d (insider_activity): score=48, value=-0.0%",
+            "return_1m (price_momentum): score=67, value=10.3%"
         ]
     },
-    "composite_score": 48.90689100561741,
-    "composite_score_date": "2026-05-18",
-    "composite_rank": 786,
+    "composite_score": 49.01237117178107,
+    "composite_score_date": "2026-05-21",
+    "composite_rank": 750,
     "composite_metadata": {
         "scores_used": [
             "financial",
-            "professional",
             "news_sentiment"
         ],
-        "scores_imputed": [],
-        "imputed_values": {},
-        "imputation_r_squared": null,
+        "scores_imputed": [
+            "professional"
+        ],
+        "imputed_values": {
+            "professional": 55.07125122428654
+        },
+        "imputation_r_squared": 0.04516719672877956,
         "weights_applied": {
             "financial": 50,
             "professional": 30,

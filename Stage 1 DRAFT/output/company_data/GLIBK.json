@@ -5,7 +5,7 @@
     "financial_raw_metrics": {
         "sector": "Communication Services",
         "industry": "Telecom Services",
-        "market_cap_usd": 1008000128,
+        "market_cap_usd": 1029548736,
         "profitability": {
             "gross_margin_ttm": 0.49517,
             "operating_margin_ttm": 0.12891,
@@ -40,28 +40,28 @@
         "valuation": {
             "pe_trailing": null,
             "pe_forward": null,
-            "ps_ratio": 0.9729731,
-            "pb_ratio": 0.58878374,
-            "ev_ebitda": 4.492,
+            "ps_ratio": 0.9937729,
+            "pb_ratio": 0.6013705,
+            "ev_ebitda": 4.551,
             "peg_ratio": null,
-            "fcf_yield": 0.11483133462459243
+            "fcf_yield": 0.11242789773091422
         },
         "data_quality_flags": []
     },
-    "financial_raw_metrics_date": "2026-05-18",
-    "financial_score": 47.467212739889,
-    "financial_score_date": "2026-05-18",
+    "financial_raw_metrics_date": "2026-05-21",
+    "financial_score": 47.37338495259113,
+    "financial_score_date": "2026-05-21",
     "financial_subscores": {
-        "profitability": 44.491161712635545,
-        "returns_on_capital": 39.75594863676697,
+        "profitability": 44.35127393489565,
+        "returns_on_capital": 39.712640663763224,
         "cash_flow_quality": 33.296899841017485,
         "balance_sheet": 71.87669294871795,
         "growth": 11.200000000000001,
-        "valuation": 87.74501167698787
+        "valuation": 87.36375409599363
     },
     "financial_drivers": {
         "strongest": [
-            "fcf_yield (valuation): score=100, value=11.5%",
+            "fcf_yield (valuation): score=100, value=11.2%",
             "current_ratio (balance_sheet): score=98, value=3.31",
             "debt_to_equity (balance_sheet): score=87, value=60.3%"
         ],
@@ -74,8 +74,8 @@
     "professional_raw_metrics": {
         "sector": "Communication Services",
         "industry": "Telecom Services",
-        "market_cap_usd": 1008000128,
-        "current_price": 25.26,
+        "market_cap_usd": 1029548736,
+        "current_price": 25.8,
         "analyst": {
             "recommendation_mean": null,
             "recommendation_key": "none",
@@ -93,7 +93,7 @@
             "total_actions_12m": 1
         },
         "institutional": {
-            "held_pct_institutions": 0.96878,
+            "held_pct_institutions": 0.96895,
             "held_pct_insiders": 0.06663
         },
         "short_interest": {
@@ -103,20 +103,20 @@
         },
         "data_quality_flags": []
     },
-    "professional_raw_metrics_date": "2026-05-18",
-    "professional_score": 59.37379528785235,
-    "professional_score_date": "2026-05-18",
+    "professional_raw_metrics_date": "2026-05-21",
+    "professional_score": 58.07105001150495,
+    "professional_score_date": "2026-05-21",
     "professional_subscores": {
         "analyst_consensus": null,
         "rating_momentum": 50.0,
-        "institutional_positioning": 77.00735256320495,
-        "short_interest": 45.60752530868527
+        "institutional_positioning": 72.98215334041211,
+        "short_interest": 46.67096114916794
     },
     "professional_drivers": {
         "strongest": [
             "held_pct_insiders (institutional_positioning): score=83, value=6.7%",
-            "held_pct_institutions (institutional_positioning): score=74, value=96.9%",
-            "short_pct_of_float (short_interest): score=52, value=5.9%"
+            "held_pct_institutions (institutional_positioning): score=69, value=96.9%",
+            "short_pct_of_float (short_interest): score=54, value=5.9%"
         ],
         "weakest": [
             "short_change_pct (short_interest): score=26, value=18.9%",
@@ -127,8 +127,8 @@
     "news_sentiment_raw_metrics": {
         "sector": "Communication Services",
         "industry": "Telecom Services",
-        "market_cap_usd": 1008000128,
-        "current_price": 25.26,
+        "market_cap_usd": 1029548736,
+        "current_price": 25.8,
         "earnings": {
             "beat_count_4q": null,
             "miss_count_4q": null,
@@ -139,51 +139,54 @@
             "forward_eps": null
         },
         "price_momentum": {
-            "return_1m": -0.3165584246290733,
-            "return_3m": -0.3299734883604684,
-            "return_6m": -0.2393857062221263
+            "return_1m": -0.2882758620689655,
+            "return_3m": -0.3530591948597625,
+            "return_6m": -0.2413995509177987
         },
         "insider_activity": {
-            "insider_purchases_count_90d": 0,
-            "insider_sales_count_90d": 0,
+            "insider_purchases_count_90d": null,
+            "insider_sales_count_90d": null,
             "insider_net_value_90d_usd": null
         },
         "data_quality_flags": [
             "GLIBK: earnings_dates fetch failed (['Earnings Date'])"
         ]
     },
-    "news_sentiment_raw_metrics_date": "2026-05-18",
-    "news_sentiment_score": 19.36063527901661,
-    "news_sentiment_score_date": "2026-05-18",
+    "news_sentiment_raw_metrics_date": "2026-05-21",
+    "news_sentiment_score": null,
+    "news_sentiment_score_date": "2026-05-21",
     "news_sentiment_subscores": {
         "earnings_surprise_revisions": null,
-        "price_momentum": 4.040952918524914,
-        "insider_activity": 50.0
+        "price_momentum": 4.395202352606525,
+        "insider_activity": null
     },
     "news_sentiment_drivers": {
         "strongest": [
-            "insider_activity_summary (insider_activity): score=50, value=no activity in 90d",
-            "return_6m (price_momentum): score=10, value=-23.9%",
-            "return_3m (price_momentum): score=0, value=-33.0%"
+            "return_6m (price_momentum): score=10, value=-24.1%",
+            "return_1m (price_momentum): score=2, value=-28.8%",
+            "return_3m (price_momentum): score=0, value=-35.3%"
         ],
         "weakest": [
-            "return_1m (price_momentum): score=0, value=-31.7%",
-            "return_3m (price_momentum): score=0, value=-33.0%",
-            "return_6m (price_momentum): score=10, value=-23.9%"
+            "return_3m (price_momentum): score=0, value=-35.3%",
+            "return_1m (price_momentum): score=2, value=-28.8%",
+            "return_6m (price_momentum): score=10, value=-24.1%"
         ]
     },
-    "composite_score": 45.41787201210352,
-    "composite_score_date": "2026-05-18",
-    "composite_rank": 893,
+    "composite_score": 51.43280710152344,
+    "composite_score_date": "2026-05-21",
+    "composite_rank": 644,
     "composite_metadata": {
         "scores_used": [
             "financial",
-            "professional",
+            "professional"
+        ],
+        "scores_imputed": [
             "news_sentiment"
         ],
-        "scores_imputed": [],
-        "imputed_values": {},
-        "imputation_r_squared": null,
+        "imputed_values": {
+            "news_sentiment": 51.62399810888196
+        },
+        "imputation_r_squared": 0.05693184104207816,
         "weights_applied": {
             "financial": 50,
             "professional": 30,

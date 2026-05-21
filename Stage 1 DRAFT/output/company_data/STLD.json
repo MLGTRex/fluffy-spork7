@@ -5,7 +5,7 @@
     "financial_raw_metrics": {
         "sector": "Basic Materials",
         "industry": "Steel",
-        "market_cap_usd": 33073760256,
+        "market_cap_usd": 33434292224,
         "profitability": {
             "gross_margin_ttm": 0.14038,
             "operating_margin_ttm": 0.103369996,
@@ -38,28 +38,28 @@
             "fcf_cagr_3yr": -0.47925841179486184
         },
         "valuation": {
-            "pe_trailing": 24.554604,
-            "pe_forward": 13.614124,
-            "ps_ratio": 1.7396033,
-            "pb_ratio": 3.7110631,
-            "ev_ebitda": 15.842,
+            "pe_trailing": 24.82227,
+            "pe_forward": 13.76253,
+            "ps_ratio": 1.7585664,
+            "pb_ratio": 3.751517,
+            "ev_ebitda": 15.777,
             "peg_ratio": 11.95,
-            "fcf_yield": -0.0009611509472749805
+            "fcf_yield": -0.0009507865692811383
         },
         "data_quality_flags": [
             "STLD: eps_cagr_3yr approximated by net income CAGR (share count changes not adjusted)"
         ]
     },
-    "financial_raw_metrics_date": "2026-05-18",
-    "financial_score": 41.64828025378369,
-    "financial_score_date": "2026-05-18",
+    "financial_raw_metrics_date": "2026-05-21",
+    "financial_score": 41.63338784225739,
+    "financial_score_date": "2026-05-21",
     "financial_subscores": {
-        "profitability": 33.923934859934455,
-        "returns_on_capital": 56.336535057847115,
+        "profitability": 33.99801293299431,
+        "returns_on_capital": 56.35564561348589,
         "cash_flow_quality": 4.916398935050539,
         "balance_sheet": 88.43070753422144,
         "growth": 24.900071962119796,
-        "valuation": 39.0607300367907
+        "valuation": 38.83719578835057
     },
     "financial_drivers": {
         "strongest": [
@@ -74,63 +74,59 @@
         ]
     },
     "professional_raw_metrics": {
-        "sector": "Basic Materials",
-        "industry": "Steel",
-        "market_cap_usd": 33073760256,
-        "current_price": 229.34,
+        "sector": null,
+        "industry": null,
+        "market_cap_usd": null,
+        "current_price": null,
         "analyst": {
-            "recommendation_mean": 2.0,
-            "recommendation_key": "buy",
-            "target_mean_price": 238.81818,
-            "target_median_price": 240.0,
-            "target_high_price": 265.0,
-            "target_low_price": 210.0,
-            "upside_to_target": 0.041328071858376246,
-            "target_dispersion": 0.23030072501180604,
-            "num_analysts": 11
+            "recommendation_mean": null,
+            "recommendation_key": null,
+            "target_mean_price": null,
+            "target_median_price": null,
+            "target_high_price": null,
+            "target_low_price": null,
+            "upside_to_target": null,
+            "target_dispersion": null,
+            "num_analysts": null
         },
         "rating_momentum": {
             "upgrades_12m": 0,
-            "downgrades_12m": 2,
-            "total_actions_12m": 26
+            "downgrades_12m": 0,
+            "total_actions_12m": 0
         },
         "institutional": {
-            "held_pct_institutions": 0.86831003,
-            "held_pct_insiders": 0.06572
+            "held_pct_institutions": null,
+            "held_pct_insiders": null
         },
         "short_interest": {
-            "short_pct_of_float": 0.0321,
-            "short_ratio": 3.12,
-            "short_change_pct": -0.09425623024725843
+            "short_pct_of_float": null,
+            "short_ratio": null,
+            "short_change_pct": null
         },
-        "data_quality_flags": []
+        "data_quality_flags": [
+            "STLD: failed to fetch .info (Too Many Requests. Rate limited. Try after a while.)",
+            "STLD: sector classification unavailable",
+            "STLD: upgrades/downgrades fetch failed (Too Many Requests. Rate limited. Try after a while.)"
+        ]
     },
-    "professional_raw_metrics_date": "2026-05-18",
-    "professional_score": 60.663055954864625,
-    "professional_score_date": "2026-05-18",
+    "professional_raw_metrics_date": "2026-05-21",
+    "professional_score": null,
+    "professional_score_date": "2026-05-21",
     "professional_subscores": {
-        "analyst_consensus": 59.95936862300515,
-        "rating_momentum": 47.65384615384616,
-        "institutional_positioning": 71.83309103069924,
-        "short_interest": 65.37028427117644
+        "analyst_consensus": null,
+        "rating_momentum": 50.0,
+        "institutional_positioning": null,
+        "short_interest": null
     },
     "professional_drivers": {
-        "strongest": [
-            "held_pct_insiders (institutional_positioning): score=83, value=6.6%",
-            "recommendation_mean (analyst_consensus): score=75, value=2.00",
-            "short_ratio (short_interest): score=69, value=3.12"
-        ],
-        "weakest": [
-            "upside_to_target (analyst_consensus): score=37, value=4.1%",
-            "upgrades_12m (rating_momentum): score=48, value=0.00",
-            "downgrades_12m (rating_momentum): score=48, value=2.00"
-        ]
+        "strongest": [],
+        "weakest": []
     },
     "news_sentiment_raw_metrics": {
         "sector": "Basic Materials",
         "industry": "Steel",
-        "market_cap_usd": 33073760256,
-        "current_price": 229.34,
+        "market_cap_usd": 33434292224,
+        "current_price": 231.84,
         "earnings": {
             "beat_count_4q": null,
             "miss_count_4q": null,
@@ -141,51 +137,54 @@
             "forward_eps": 16.84574
         },
         "price_momentum": {
-            "return_1m": 0.18149502487699073,
-            "return_3m": 0.15307396400359471,
-            "return_6m": 0.4924917508446764
+            "return_1m": 0.05281319164230535,
+            "return_3m": 0.20658663926609283,
+            "return_6m": 0.500317587463341
         },
         "insider_activity": {
             "insider_purchases_count_90d": 0,
-            "insider_sales_count_90d": 3,
-            "insider_net_value_90d_usd": -2751239.0
+            "insider_sales_count_90d": 4,
+            "insider_net_value_90d_usd": -4882529.0
         },
         "data_quality_flags": [
             "STLD: earnings_dates fetch failed (['Earnings Date'])"
         ]
     },
-    "news_sentiment_raw_metrics_date": "2026-05-18",
-    "news_sentiment_score": 68.84249265482883,
-    "news_sentiment_score_date": "2026-05-18",
+    "news_sentiment_raw_metrics_date": "2026-05-21",
+    "news_sentiment_score": 66.98242881259284,
+    "news_sentiment_score_date": "2026-05-21",
     "news_sentiment_subscores": {
         "earnings_surprise_revisions": null,
-        "price_momentum": 86.4916072700843,
-        "insider_activity": 33.544263424317904
+        "price_momentum": 84.25143694228481,
+        "insider_activity": 32.444412553208885
     },
     "news_sentiment_drivers": {
         "strongest": [
-            "return_6m (price_momentum): score=100, value=49.2%",
-            "return_1m (price_momentum): score=80, value=18.1%",
-            "return_3m (price_momentum): score=76, value=15.3%"
+            "return_6m (price_momentum): score=100, value=50.0%",
+            "return_3m (price_momentum): score=84, value=20.7%",
+            "return_1m (price_momentum): score=59, value=5.3%"
         ],
         "weakest": [
             "insider_count_ratio_90d (insider_activity): score=0, value=-1.00",
-            "net_insider_value_pct_mcap_90d (insider_activity): score=48, value=-0.0%",
-            "return_3m (price_momentum): score=76, value=15.3%"
+            "net_insider_value_pct_mcap_90d (insider_activity): score=46, value=-0.0%",
+            "return_1m (price_momentum): score=59, value=5.3%"
         ]
     },
-    "composite_score": 52.791555444317,
-    "composite_score_date": "2026-05-18",
-    "composite_rank": 601,
+    "composite_score": 50.80156057682759,
+    "composite_score_date": "2026-05-21",
+    "composite_rank": 674,
     "composite_metadata": {
         "scores_used": [
             "financial",
-            "professional",
             "news_sentiment"
         ],
-        "scores_imputed": [],
-        "imputed_values": {},
-        "imputation_r_squared": null,
+        "scores_imputed": [
+            "professional"
+        ],
+        "imputed_values": {
+            "professional": 55.294602977267736
+        },
+        "imputation_r_squared": 0.04516719672877956,
         "weights_applied": {
             "financial": 50,
             "professional": 30,

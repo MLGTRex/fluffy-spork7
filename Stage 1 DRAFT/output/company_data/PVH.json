@@ -5,7 +5,7 @@
     "financial_raw_metrics": {
         "sector": "Consumer Cyclical",
         "industry": "Apparel Manufacturing",
-        "market_cap_usd": 3660582912,
+        "market_cap_usd": 3995080704,
         "profitability": {
             "gross_margin_ttm": 0.57525,
             "operating_margin_ttm": 0.102749996,
@@ -38,99 +38,95 @@
             "fcf_cagr_3yr": null
         },
         "valuation": {
-            "pe_trailing": 152.78847,
-            "pe_forward": 5.7932906,
-            "ps_ratio": 0.40899453,
-            "pb_ratio": 0.75942224,
-            "ev_ebitda": 7.104,
-            "peg_ratio": 0.067,
-            "fcf_yield": 0.13817129680137674
+            "pe_trailing": 166.75,
+            "pe_forward": 6.3226714,
+            "ps_ratio": 0.44636774,
+            "pb_ratio": 0.8288169,
+            "ev_ebitda": 7.338,
+            "peg_ratio": 0.0634,
+            "fcf_yield": 0.12660257088013008
         },
         "data_quality_flags": [
             "PVH: eps_cagr_3yr approximated by net income CAGR (share count changes not adjusted)"
         ]
     },
-    "financial_raw_metrics_date": "2026-05-18",
-    "financial_score": 49.51501751877752,
-    "financial_score_date": "2026-05-18",
+    "financial_raw_metrics_date": "2026-05-21",
+    "financial_score": 49.492732068913746,
+    "financial_score_date": "2026-05-21",
     "financial_subscores": {
-        "profitability": 55.891184648530576,
-        "returns_on_capital": 42.000745893968826,
+        "profitability": 55.89075113174846,
+        "returns_on_capital": 42.00796004055881,
         "cash_flow_quality": 54.639478138518356,
         "balance_sheet": 55.05422775253063,
         "growth": 19.436494576568276,
-        "valuation": 70.44734226756705
+        "valuation": 70.28973176206469
     },
     "financial_drivers": {
         "strongest": [
-            "peg_ratio (valuation): score=100, value=6.7%",
-            "fcf_yield (valuation): score=100, value=13.8%",
+            "peg_ratio (valuation): score=100, value=6.3%",
+            "fcf_yield (valuation): score=100, value=12.7%",
             "ocf_cagr_3yr (cash_flow_quality): score=100, value=1.59"
         ],
         "weakest": [
             "eps_cagr_3yr (growth): score=0, value=-49.8%",
-            "pe_trailing (valuation): score=0, value=152.79",
+            "pe_trailing (valuation): score=0, value=166.75",
             "revenue_cagr_3yr (growth): score=19, value=-0.3%"
         ]
     },
     "professional_raw_metrics": {
-        "sector": "Consumer Cyclical",
-        "industry": "Apparel Manufacturing",
-        "market_cap_usd": 3660582912,
-        "current_price": 79.45,
+        "sector": null,
+        "industry": null,
+        "market_cap_usd": null,
+        "current_price": null,
         "analyst": {
-            "recommendation_mean": 2.07692,
-            "recommendation_key": "buy",
-            "target_mean_price": 98.83333,
-            "target_median_price": 97.5,
-            "target_high_price": 135.0,
-            "target_low_price": 79.0,
-            "upside_to_target": 0.24396891126494652,
-            "target_dispersion": 0.5666104744219385,
-            "num_analysts": 12
+            "recommendation_mean": null,
+            "recommendation_key": null,
+            "target_mean_price": null,
+            "target_median_price": null,
+            "target_high_price": null,
+            "target_low_price": null,
+            "upside_to_target": null,
+            "target_dispersion": null,
+            "num_analysts": null
         },
         "rating_momentum": {
             "upgrades_12m": 0,
-            "downgrades_12m": 2,
-            "total_actions_12m": 47
+            "downgrades_12m": 0,
+            "total_actions_12m": 0
         },
         "institutional": {
-            "held_pct_institutions": 0.011146499999999998,
-            "held_pct_insiders": 0.00969
+            "held_pct_institutions": null,
+            "held_pct_insiders": null
         },
         "short_interest": {
-            "short_pct_of_float": 0.1245,
-            "short_ratio": 2.86,
-            "short_change_pct": -0.09099033452041658
+            "short_pct_of_float": null,
+            "short_ratio": null,
+            "short_change_pct": null
         },
-        "data_quality_flags": []
+        "data_quality_flags": [
+            "PVH: failed to fetch .info (Too Many Requests. Rate limited. Try after a while.)",
+            "PVH: sector classification unavailable",
+            "PVH: upgrades/downgrades fetch failed (Too Many Requests. Rate limited. Try after a while.)"
+        ]
     },
-    "professional_raw_metrics_date": "2026-05-18",
-    "professional_score": 55.23923162879436,
-    "professional_score_date": "2026-05-18",
+    "professional_raw_metrics_date": "2026-05-21",
+    "professional_score": null,
+    "professional_score_date": "2026-05-21",
     "professional_subscores": {
-        "analyst_consensus": 75.41851408432979,
-        "rating_momentum": 49.819148936170215,
-        "institutional_positioning": 32.25681673423004,
-        "short_interest": 55.49173521119244
+        "analyst_consensus": null,
+        "rating_momentum": 50.0,
+        "institutional_positioning": null,
+        "short_interest": null
     },
     "professional_drivers": {
-        "strongest": [
-            "upside_to_target (analyst_consensus): score=81, value=24.4%",
-            "recommendation_mean (analyst_consensus): score=72, value=2.08",
-            "short_ratio (short_interest): score=71, value=2.86"
-        ],
-        "weakest": [
-            "held_pct_institutions (institutional_positioning): score=20, value=1.1%",
-            "short_pct_of_float (short_interest): score=43, value=12.4%",
-            "upgrades_12m (rating_momentum): score=50, value=0.00"
-        ]
+        "strongest": [],
+        "weakest": []
     },
     "news_sentiment_raw_metrics": {
         "sector": "Consumer Cyclical",
         "industry": "Apparel Manufacturing",
-        "market_cap_usd": 3660582912,
-        "current_price": 79.45,
+        "market_cap_usd": 3995080704,
+        "current_price": 86.71,
         "earnings": {
             "beat_count_4q": null,
             "miss_count_4q": null,
@@ -141,9 +137,9 @@
             "forward_eps": 13.71414
         },
         "price_momentum": {
-            "return_1m": -0.08877167364007946,
-            "return_3m": 0.16647667975326014,
-            "return_6m": 0.015348134835947968
+            "return_1m": -0.12245721948751723,
+            "return_3m": 0.2512191953997553,
+            "return_6m": 0.19132220192529723
         },
         "insider_activity": {
             "insider_purchases_count_90d": 0,
@@ -154,38 +150,41 @@
             "PVH: earnings_dates fetch failed (['Earnings Date'])"
         ]
     },
-    "news_sentiment_raw_metrics_date": "2026-05-18",
-    "news_sentiment_score": 48.6664947223586,
-    "news_sentiment_score_date": "2026-05-18",
+    "news_sentiment_raw_metrics_date": "2026-05-21",
+    "news_sentiment_score": 58.93312201587754,
+    "news_sentiment_score_date": "2026-05-21",
     "news_sentiment_subscores": {
         "earnings_surprise_revisions": null,
-        "price_momentum": 57.0355289063334,
-        "insider_activity": 31.928426354408984
+        "price_momentum": 72.306882381359,
+        "insider_activity": 32.18560128491462
     },
     "news_sentiment_drivers": {
         "strongest": [
-            "return_3m (price_momentum): score=78, value=16.6%",
-            "return_6m (price_momentum): score=53, value=1.5%",
+            "return_3m (price_momentum): score=92, value=25.1%",
+            "return_6m (price_momentum): score=82, value=19.1%",
             "net_insider_value_pct_mcap_90d (insider_activity): score=46, value=-0.0%"
         ],
         "weakest": [
             "insider_count_ratio_90d (insider_activity): score=0, value=-1.00",
-            "return_1m (price_momentum): score=35, value=-8.9%",
+            "return_1m (price_momentum): score=30, value=-12.2%",
             "net_insider_value_pct_mcap_90d (insider_activity): score=46, value=-0.0%"
         ]
     },
-    "composite_score": 51.062577192498786,
-    "composite_score_date": "2026-05-18",
-    "composite_rank": 701,
+    "composite_score": 53.49554278007543,
+    "composite_score_date": "2026-05-21",
+    "composite_rank": 521,
     "composite_metadata": {
         "scores_used": [
             "financial",
-            "professional",
             "news_sentiment"
         ],
-        "scores_imputed": [],
-        "imputed_values": {},
-        "imputation_r_squared": null,
+        "scores_imputed": [
+            "professional"
+        ],
+        "imputed_values": {
+            "professional": 56.541841141476816
+        },
+        "imputation_r_squared": 0.04516719672877956,
         "weights_applied": {
             "financial": 50,
             "professional": 30,

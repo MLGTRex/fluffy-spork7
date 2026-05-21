@@ -5,7 +5,7 @@
     "financial_raw_metrics": {
         "sector": "Consumer Defensive",
         "industry": "Beverages - Non-Alcoholic",
-        "market_cap_usd": 11333903360,
+        "market_cap_usd": 11737948160,
         "profitability": {
             "gross_margin_ttm": 0.39659,
             "operating_margin_ttm": 0.07417,
@@ -38,32 +38,32 @@
             "fcf_cagr_3yr": 0.4011421688531067
         },
         "valuation": {
-            "pe_trailing": 23.356653,
-            "pe_forward": 4.372625,
-            "ps_ratio": 1.5122465,
-            "pb_ratio": 3.5607185,
-            "ev_ebitda": 2.19,
+            "pe_trailing": 24.156164,
+            "pe_forward": 4.5285053,
+            "ps_ratio": 1.5661569,
+            "pb_ratio": 3.6876554,
+            "ev_ebitda": 2.236,
             "peg_ratio": 3.04,
-            "fcf_yield": 0.04685636423143103
+            "fcf_yield": 0.04524346987744747
         },
         "data_quality_flags": [
             "COKE: eps_cagr_3yr approximated by net income CAGR (share count changes not adjusted)"
         ]
     },
-    "financial_raw_metrics_date": "2026-05-18",
-    "financial_score": 66.73741605451112,
-    "financial_score_date": "2026-05-18",
+    "financial_raw_metrics_date": "2026-05-21",
+    "financial_score": 66.66250756812224,
+    "financial_score_date": "2026-05-21",
     "financial_subscores": {
-        "profitability": 52.07409411280179,
-        "returns_on_capital": 77.2863389406887,
-        "cash_flow_quality": 64.30739657042452,
-        "balance_sheet": 72.64437952082145,
+        "profitability": 52.08446240160894,
+        "returns_on_capital": 77.2935537093241,
+        "cash_flow_quality": 64.30739657042453,
+        "balance_sheet": 72.64437952082146,
         "growth": 69.11833525766403,
-        "valuation": 66.36541827651013
+        "valuation": 65.84258429066087
     },
     "financial_drivers": {
         "strongest": [
-            "pe_forward (valuation): score=100, value=4.37",
+            "pe_forward (valuation): score=100, value=4.53",
             "fcf_cagr_3yr (growth): score=100, value=40.1%",
             "eps_growth_1yr (growth): score=100, value=2.66"
         ],
@@ -76,8 +76,8 @@
     "professional_raw_metrics": {
         "sector": "Consumer Defensive",
         "industry": "Beverages - Non-Alcoholic",
-        "market_cap_usd": 11333903360,
-        "current_price": 170.27,
+        "market_cap_usd": 11737948160,
+        "current_price": 176.34,
         "analyst": {
             "recommendation_mean": null,
             "recommendation_key": "none",
@@ -95,7 +95,7 @@
             "total_actions_12m": 0
         },
         "institutional": {
-            "held_pct_institutions": 0.69558996,
+            "held_pct_institutions": 0.69437,
             "held_pct_insiders": 2.0000001e-05
         },
         "short_interest": {
@@ -105,19 +105,19 @@
         },
         "data_quality_flags": []
     },
-    "professional_raw_metrics_date": "2026-05-18",
-    "professional_score": 51.68362568636704,
-    "professional_score_date": "2026-05-18",
+    "professional_raw_metrics_date": "2026-05-21",
+    "professional_score": 51.56991537801911,
+    "professional_score_date": "2026-05-21",
     "professional_subscores": {
         "analyst_consensus": null,
         "rating_momentum": 50.0,
-        "institutional_positioning": 55.69890094048183,
-        "short_interest": 47.79754307345412
+        "institutional_positioning": 54.501913767627705,
+        "short_interest": 49.29977702537
     },
     "professional_drivers": {
         "strongest": [
-            "short_pct_of_float (short_interest): score=62, value=4.6%",
-            "held_pct_institutions (institutional_positioning): score=58, value=69.6%",
+            "short_pct_of_float (short_interest): score=65, value=4.6%",
+            "held_pct_institutions (institutional_positioning): score=56, value=69.4%",
             "short_ratio (short_interest): score=54, value=4.56"
         ],
         "weakest": [
@@ -127,63 +127,70 @@
         ]
     },
     "news_sentiment_raw_metrics": {
-        "sector": "Consumer Defensive",
-        "industry": "Beverages - Non-Alcoholic",
-        "market_cap_usd": 11333903360,
-        "current_price": 170.27,
+        "sector": null,
+        "industry": null,
+        "market_cap_usd": null,
+        "current_price": null,
         "earnings": {
             "beat_count_4q": 3,
             "miss_count_4q": 1,
             "total_quarters_4q": 4,
             "avg_surprise_magnitude_4q": 0.1694362544353395,
             "eps_estimate_revision_90d": null,
-            "trailing_eps": 7.29,
-            "forward_eps": 38.94
+            "trailing_eps": null,
+            "forward_eps": null
         },
         "price_momentum": {
-            "return_1m": -0.09051949078678252,
-            "return_3m": 0.04148574949625848,
-            "return_6m": 0.057633171202556246
+            "return_1m": null,
+            "return_3m": null,
+            "return_6m": null
         },
         "insider_activity": {
             "insider_purchases_count_90d": null,
             "insider_sales_count_90d": null,
             "insider_net_value_90d_usd": null
         },
-        "data_quality_flags": []
+        "data_quality_flags": [
+            "COKE: failed to fetch .info (Too Many Requests. Rate limited. Try after a while.)",
+            "COKE: sector classification unavailable",
+            "COKE: eps_revisions fetch failed (Too Many Requests. Rate limited. Try after a while.)",
+            "COKE: price momentum fetch failed (Too Many Requests. Rate limited. Try after a while.)",
+            "COKE: insider_transactions fetch failed (Too Many Requests. Rate limited. Try after a while.)"
+        ]
     },
-    "news_sentiment_raw_metrics_date": "2026-05-18",
-    "news_sentiment_score": 68.80919757289391,
-    "news_sentiment_score_date": "2026-05-18",
+    "news_sentiment_raw_metrics_date": "2026-05-21",
+    "news_sentiment_score": null,
+    "news_sentiment_score_date": "2026-05-21",
     "news_sentiment_subscores": {
         "earnings_surprise_revisions": 85.12782712778491,
-        "price_momentum": 52.49056801800289,
+        "price_momentum": null,
         "insider_activity": null
     },
     "news_sentiment_drivers": {
         "strongest": [
             "avg_surprise_magnitude_4q (earnings_surprise_revisions): score=97, value=16.9%",
-            "beat_rate_4q (earnings_surprise_revisions): score=75, value=75.0%",
-            "return_6m (price_momentum): score=60, value=5.8%"
+            "beat_rate_4q (earnings_surprise_revisions): score=75, value=75.0%"
         ],
         "weakest": [
-            "return_1m (price_momentum): score=35, value=-9.1%",
-            "return_3m (price_momentum): score=57, value=4.1%",
-            "return_6m (price_momentum): score=60, value=5.8%"
+            "beat_rate_4q (earnings_surprise_revisions): score=75, value=75.0%",
+            "avg_surprise_magnitude_4q (earnings_surprise_revisions): score=97, value=16.9%"
         ]
     },
-    "composite_score": 62.635635247744446,
-    "composite_score_date": "2026-05-18",
-    "composite_rank": 124,
+    "composite_score": 58.836170973996786,
+    "composite_score_date": "2026-05-21",
+    "composite_rank": 236,
     "composite_metadata": {
         "scores_used": [
             "financial",
-            "professional",
+            "professional"
+        ],
+        "scores_imputed": [
             "news_sentiment"
         ],
-        "scores_imputed": [],
-        "imputed_values": {},
-        "imputation_r_squared": null,
+        "imputed_values": {
+            "news_sentiment": 50.16971288264968
+        },
+        "imputation_r_squared": 0.05693184104207816,
         "weights_applied": {
             "financial": 50,
             "professional": 30,

@@ -5,7 +5,7 @@
     "financial_raw_metrics": {
         "sector": "Industrials",
         "industry": "Specialty Industrial Machinery",
-        "market_cap_usd": 9925328896,
+        "market_cap_usd": 10128592896,
         "profitability": {
             "gross_margin_ttm": 0.41595,
             "operating_margin_ttm": 0.14302,
@@ -38,28 +38,28 @@
             "fcf_cagr_3yr": null
         },
         "valuation": {
-            "pe_trailing": 31.422306,
-            "pe_forward": 22.649288,
-            "ps_ratio": 4.0614324,
-            "pb_ratio": 4.733161,
-            "ev_ebitda": 22.7,
-            "peg_ratio": 2.4644,
-            "fcf_yield": 0.01950816885050859
+            "pe_trailing": 32.124542,
+            "pe_forward": 23.11313,
+            "ps_ratio": 4.144608,
+            "pb_ratio": 4.830093,
+            "ev_ebitda": 22.886,
+            "peg_ratio": 2.3569,
+            "fcf_yield": 0.019116672373757533
         },
         "data_quality_flags": [
             "CR: eps_cagr_3yr approximated by net income CAGR (share count changes not adjusted)"
         ]
     },
-    "financial_raw_metrics_date": "2026-05-18",
-    "financial_score": 52.959974173482394,
-    "financial_score_date": "2026-05-18",
+    "financial_raw_metrics_date": "2026-05-21",
+    "financial_score": 52.923264957910966,
+    "financial_score_date": "2026-05-21",
     "financial_subscores": {
         "profitability": 54.72647659657071,
         "returns_on_capital": 46.295973875115834,
         "cash_flow_quality": 48.07951569276266,
         "balance_sheet": 85.67175356902356,
-        "growth": 46.99630066694361,
-        "valuation": 37.622323932237435
+        "growth": 46.99630066694362,
+        "valuation": 37.37759582842793
     },
     "financial_drivers": {
         "strongest": [
@@ -70,14 +70,14 @@
         "weakest": [
             "eps_growth_1yr (growth): score=0, value=-37.8%",
             "eps_cagr_3yr (growth): score=17, value=-3.0%",
-            "peg_ratio (valuation): score=21, value=2.46"
+            "peg_ratio (valuation): score=24, value=2.36"
         ]
     },
     "professional_raw_metrics": {
         "sector": "Industrials",
         "industry": "Specialty Industrial Machinery",
-        "market_cap_usd": 9925328896,
-        "current_price": 171.88,
+        "market_cap_usd": 10128592896,
+        "current_price": 175.4,
         "analyst": {
             "recommendation_mean": null,
             "recommendation_key": "none",
@@ -85,7 +85,7 @@
             "target_median_price": 225.0,
             "target_high_price": 235.0,
             "target_low_price": 185.0,
-            "upside_to_target": 0.2780234465906447,
+            "upside_to_target": 0.2523755416191562,
             "target_dispersion": 0.22761759897393627,
             "num_analysts": 9
         },
@@ -95,7 +95,7 @@
             "total_actions_12m": 18
         },
         "institutional": {
-            "held_pct_institutions": 0.78154,
+            "held_pct_institutions": 0.78011,
             "held_pct_insiders": 0.14474
         },
         "short_interest": {
@@ -105,20 +105,20 @@
         },
         "data_quality_flags": []
     },
-    "professional_raw_metrics_date": "2026-05-18",
-    "professional_score": 70.58825482782427,
-    "professional_score_date": "2026-05-18",
+    "professional_raw_metrics_date": "2026-05-21",
+    "professional_score": 69.2372836304069,
+    "professional_score_date": "2026-05-21",
     "professional_subscores": {
-        "analyst_consensus": 86.33724109844078,
+        "analyst_consensus": 82.06259026985937,
         "rating_momentum": 56.00000000000001,
-        "institutional_positioning": 69.38877134211386,
-        "short_interest": 60.153517385610215
+        "institutional_positioning": 70.36666479349591,
+        "short_interest": 59.491405583880976
     },
     "professional_drivers": {
         "strongest": [
             "held_pct_insiders (institutional_positioning): score=93, value=14.5%",
-            "upside_to_target (analyst_consensus): score=86, value=27.8%",
-            "short_ratio (short_interest): score=83, value=1.69"
+            "short_ratio (short_interest): score=83, value=1.69",
+            "upside_to_target (analyst_consensus): score=82, value=25.2%"
         ],
         "weakest": [
             "short_change_pct (short_interest): score=8, value=40.2%",
@@ -127,63 +127,70 @@
         ]
     },
     "news_sentiment_raw_metrics": {
-        "sector": "Industrials",
-        "industry": "Specialty Industrial Machinery",
-        "market_cap_usd": 9925328896,
-        "current_price": 171.88,
+        "sector": null,
+        "industry": null,
+        "market_cap_usd": null,
+        "current_price": null,
         "earnings": {
             "beat_count_4q": 3,
             "miss_count_4q": 0,
             "total_quarters_4q": 4,
             "avg_surprise_magnitude_4q": 0.10790285280035979,
             "eps_estimate_revision_90d": null,
-            "trailing_eps": 5.47,
-            "forward_eps": 7.58876
+            "trailing_eps": null,
+            "forward_eps": null
         },
         "price_momentum": {
-            "return_1m": -0.09688948410350451,
-            "return_3m": -0.13952545720547024,
-            "return_6m": -0.07214629613124929
+            "return_1m": null,
+            "return_3m": null,
+            "return_6m": null
         },
         "insider_activity": {
             "insider_purchases_count_90d": null,
             "insider_sales_count_90d": null,
             "insider_net_value_90d_usd": null
         },
-        "data_quality_flags": []
+        "data_quality_flags": [
+            "CR: failed to fetch .info (Too Many Requests. Rate limited. Try after a while.)",
+            "CR: sector classification unavailable",
+            "CR: eps_revisions fetch failed (Too Many Requests. Rate limited. Try after a while.)",
+            "CR: price momentum fetch failed (Too Many Requests. Rate limited. Try after a while.)",
+            "CR: insider_transactions fetch failed (Too Many Requests. Rate limited. Try after a while.)"
+        ]
     },
-    "news_sentiment_raw_metrics_date": "2026-05-18",
-    "news_sentiment_score": 57.65101202934308,
-    "news_sentiment_score_date": "2026-05-18",
+    "news_sentiment_raw_metrics_date": "2026-05-21",
+    "news_sentiment_score": null,
+    "news_sentiment_score_date": "2026-05-21",
     "news_sentiment_subscores": {
         "earnings_surprise_revisions": 82.28782397540122,
-        "price_momentum": 33.014200083284926,
+        "price_momentum": null,
         "insider_activity": null
     },
     "news_sentiment_drivers": {
         "strongest": [
             "avg_surprise_magnitude_4q (earnings_surprise_revisions): score=91, value=10.8%",
-            "beat_rate_4q (earnings_surprise_revisions): score=75, value=75.0%",
-            "return_6m (price_momentum): score=38, value=-7.2%"
+            "beat_rate_4q (earnings_surprise_revisions): score=75, value=75.0%"
         ],
         "weakest": [
-            "return_3m (price_momentum): score=27, value=-14.0%",
-            "return_1m (price_momentum): score=34, value=-9.7%",
-            "return_6m (price_momentum): score=38, value=-7.2%"
+            "beat_rate_4q (earnings_surprise_revisions): score=75, value=75.0%",
+            "avg_surprise_magnitude_4q (earnings_surprise_revisions): score=91, value=10.8%"
         ]
     },
-    "composite_score": 59.18666594095709,
-    "composite_score_date": "2026-05-18",
-    "composite_rank": 262,
+    "composite_score": 56.59004191126435,
+    "composite_score_date": "2026-05-21",
+    "composite_rank": 342,
     "composite_metadata": {
         "scores_used": [
             "financial",
-            "professional",
+            "professional"
+        ],
+        "scores_imputed": [
             "news_sentiment"
         ],
-        "scores_imputed": [],
-        "imputed_values": {},
-        "imputation_r_squared": null,
+        "imputed_values": {
+            "news_sentiment": 46.78612171593401
+        },
+        "imputation_r_squared": 0.05693184104207816,
         "weights_applied": {
             "financial": 50,
             "professional": 30,

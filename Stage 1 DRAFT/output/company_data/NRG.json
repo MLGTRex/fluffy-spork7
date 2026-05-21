@@ -5,7 +5,7 @@
     "financial_raw_metrics": {
         "sector": "Utilities",
         "industry": "Utilities - Independent Power Producers",
-        "market_cap_usd": 26966179840,
+        "market_cap_usd": 28888266752,
         "profitability": {
             "gross_margin_ttm": 0.16445999,
             "operating_margin_ttm": 0.03637,
@@ -38,150 +38,148 @@
             "fcf_cagr_3yr": null
         },
         "valuation": {
-            "pe_trailing": 140.45055,
-            "pe_forward": 11.198446,
-            "ps_ratio": 0.8327007,
-            "pb_ratio": 23.598597,
-            "ev_ebitda": 22.496,
-            "peg_ratio": 1.234,
-            "fcf_yield": 0.01600616010725233
+            "pe_trailing": 150.46153,
+            "pe_forward": 11.996646,
+            "ps_ratio": 0.89205366,
+            "pb_ratio": 25.28065,
+            "ev_ebitda": 23.073,
+            "peg_ratio": 1.1914,
+            "fcf_yield": 0.01494118687373716
         },
         "data_quality_flags": [
             "NRG: eps_cagr_3yr approximated by net income CAGR (share count changes not adjusted)"
         ]
     },
-    "financial_raw_metrics_date": "2026-05-18",
-    "financial_score": 28.50123612199632,
-    "financial_score_date": "2026-05-18",
+    "financial_raw_metrics_date": "2026-05-21",
+    "financial_score": 28.3937435896906,
+    "financial_score_date": "2026-05-21",
     "financial_subscores": {
         "profitability": 15.481211757625282,
         "returns_on_capital": 39.81314607300028,
         "cash_flow_quality": 46.6213296303735,
         "balance_sheet": 10.26557249493927,
-        "growth": 25.80858776829709,
-        "valuation": 33.58694047886486
+        "growth": 25.808587768297095,
+        "valuation": 32.870323596826694
     },
     "financial_drivers": {
         "strongest": [
             "ocf_cagr_3yr (cash_flow_quality): score=100, value=74.5%",
-            "pe_forward (valuation): score=86, value=11.20",
-            "revenue_growth_1yr (growth): score=86, value=19.5%"
+            "revenue_growth_1yr (growth): score=86, value=19.5%",
+            "pe_forward (valuation): score=84, value=12.00"
         ],
         "weakest": [
             "net_debt_to_ebitda (balance_sheet): score=0, value=10.27",
             "eps_growth_1yr (growth): score=0, value=-85.6%",
-            "pe_trailing (valuation): score=0, value=140.45"
+            "pe_trailing (valuation): score=0, value=150.46"
         ]
     },
     "professional_raw_metrics": {
-        "sector": "Utilities",
-        "industry": "Utilities - Independent Power Producers",
-        "market_cap_usd": 26966179840,
-        "current_price": 127.81,
+        "sector": null,
+        "industry": null,
+        "market_cap_usd": null,
+        "current_price": null,
         "analyst": {
-            "recommendation_mean": 1.58824,
-            "recommendation_key": "buy",
-            "target_mean_price": 200.4706,
-            "target_median_price": 200.0,
-            "target_high_price": 290.0,
-            "target_low_price": 96.0,
-            "upside_to_target": 0.5685048118300602,
-            "target_dispersion": 0.9677229479035829,
-            "num_analysts": 17
+            "recommendation_mean": null,
+            "recommendation_key": null,
+            "target_mean_price": null,
+            "target_median_price": null,
+            "target_high_price": null,
+            "target_low_price": null,
+            "upside_to_target": null,
+            "target_dispersion": null,
+            "num_analysts": null
         },
         "rating_momentum": {
-            "upgrades_12m": 1,
+            "upgrades_12m": 0,
             "downgrades_12m": 0,
-            "total_actions_12m": 18
+            "total_actions_12m": 0
         },
         "institutional": {
-            "held_pct_institutions": 0.948,
-            "held_pct_insiders": 0.04453
+            "held_pct_institutions": null,
+            "held_pct_insiders": null
         },
         "short_interest": {
-            "short_pct_of_float": 0.0297,
-            "short_ratio": 1.82,
-            "short_change_pct": 0.10545988390623642
+            "short_pct_of_float": null,
+            "short_ratio": null,
+            "short_change_pct": null
         },
-        "data_quality_flags": []
-    },
-    "professional_raw_metrics_date": "2026-05-18",
-    "professional_score": 73.20577705815576,
-    "professional_score_date": "2026-05-18",
-    "professional_subscores": {
-        "analyst_consensus": 92.41167999999999,
-        "rating_momentum": 56.00000000000001,
-        "institutional_positioning": 69.27849956491285,
-        "short_interest": 63.613761112850284
-    },
-    "professional_drivers": {
-        "strongest": [
-            "upside_to_target (analyst_consensus): score=100, value=56.9%",
-            "recommendation_mean (analyst_consensus): score=87, value=1.59",
-            "short_ratio (short_interest): score=82, value=1.82"
-        ],
-        "weakest": [
-            "short_change_pct (short_interest): score=37, value=10.5%",
-            "upgrades_12m (rating_momentum): score=56, value=1.00",
-            "downgrades_12m (rating_momentum): score=56, value=0.00"
+        "data_quality_flags": [
+            "NRG: failed to fetch .info (Too Many Requests. Rate limited. Try after a while.)",
+            "NRG: sector classification unavailable",
+            "NRG: upgrades/downgrades fetch failed (Too Many Requests. Rate limited. Try after a while.)"
         ]
     },
+    "professional_raw_metrics_date": "2026-05-21",
+    "professional_score": null,
+    "professional_score_date": "2026-05-21",
+    "professional_subscores": {
+        "analyst_consensus": null,
+        "rating_momentum": 50.0,
+        "institutional_positioning": null,
+        "short_interest": null
+    },
+    "professional_drivers": {
+        "strongest": [],
+        "weakest": []
+    },
     "news_sentiment_raw_metrics": {
-        "sector": "Utilities",
-        "industry": "Utilities - Independent Power Producers",
-        "market_cap_usd": 26966179840,
-        "current_price": 127.81,
+        "sector": null,
+        "industry": null,
+        "market_cap_usd": null,
+        "current_price": null,
         "earnings": {
             "beat_count_4q": null,
             "miss_count_4q": null,
             "total_quarters_4q": null,
             "avg_surprise_magnitude_4q": null,
             "eps_estimate_revision_90d": null,
-            "trailing_eps": 0.91,
-            "forward_eps": 11.41319
+            "trailing_eps": null,
+            "forward_eps": null
         },
         "price_momentum": {
-            "return_1m": -0.23893496858711763,
-            "return_3m": -0.20765508968532023,
-            "return_6m": -0.2259908320064566
+            "return_1m": -0.0835492746577553,
+            "return_3m": -0.19712784867990574,
+            "return_6m": -0.1838385611557905
         },
         "insider_activity": {
-            "insider_purchases_count_90d": 0,
-            "insider_sales_count_90d": 3,
-            "insider_net_value_90d_usd": -5291183482.0
+            "insider_purchases_count_90d": null,
+            "insider_sales_count_90d": null,
+            "insider_net_value_90d_usd": null
         },
         "data_quality_flags": [
-            "NRG: earnings_dates fetch failed (['Earnings Date'])"
+            "NRG: failed to fetch .info (Too Many Requests. Rate limited. Try after a while.)",
+            "NRG: sector classification unavailable",
+            "NRG: earnings_dates fetch failed (['Earnings Date'])",
+            "NRG: eps_revisions fetch failed (Too Many Requests. Rate limited. Try after a while.)",
+            "NRG: insider_transactions fetch failed (Too Many Requests. Rate limited. Try after a while.)"
         ]
     },
-    "news_sentiment_raw_metrics_date": "2026-05-18",
-    "news_sentiment_score": 8.576738184530653,
-    "news_sentiment_score_date": "2026-05-18",
+    "news_sentiment_raw_metrics_date": "2026-05-21",
+    "news_sentiment_score": null,
+    "news_sentiment_score_date": "2026-05-21",
     "news_sentiment_subscores": {
         "earnings_surprise_revisions": null,
-        "price_momentum": 12.865107276795978,
-        "insider_activity": 0.0
+        "price_momentum": 22.763751639212995,
+        "insider_activity": null
     },
     "news_sentiment_drivers": {
         "strongest": [
-            "return_3m (price_momentum): score=15, value=-20.8%",
-            "return_6m (price_momentum): score=12, value=-22.6%",
-            "return_1m (price_momentum): score=10, value=-23.9%"
+            "return_1m (price_momentum): score=36, value=-8.4%",
+            "return_6m (price_momentum): score=19, value=-18.4%",
+            "return_3m (price_momentum): score=17, value=-19.7%"
         ],
         "weakest": [
-            "net_insider_value_pct_mcap_90d (insider_activity): score=0, value=-19.6%",
-            "insider_count_ratio_90d (insider_activity): score=0, value=-1.00",
-            "return_1m (price_momentum): score=10, value=-23.9%"
+            "return_3m (price_momentum): score=17, value=-19.7%",
+            "return_6m (price_momentum): score=19, value=-18.4%",
+            "return_1m (price_momentum): score=36, value=-8.4%"
         ]
     },
-    "composite_score": 37.92769881535102,
-    "composite_score_date": "2026-05-18",
-    "composite_rank": 983,
+    "composite_score": null,
+    "composite_score_date": "2026-05-21",
+    "composite_rank": null,
     "composite_metadata": {
         "scores_used": [
-            "financial",
-            "professional",
-            "news_sentiment"
+            "financial"
         ],
         "scores_imputed": [],
         "imputed_values": {},
@@ -190,6 +188,7 @@
             "financial": 50,
             "professional": 30,
             "news_sentiment": 20
-        }
+        },
+        "skip_reason": "Only 1 of 3 scores populated; need at least 2"
     }
 }

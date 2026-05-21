@@ -5,7 +5,7 @@
     "financial_raw_metrics": {
         "sector": "Real Estate",
         "industry": "REIT - Healthcare Facilities",
-        "market_cap_usd": 150882156544,
+        "market_cap_usd": 152484577280,
         "profitability": {
             "gross_margin_ttm": 0.39870998,
             "operating_margin_ttm": 0.18039,
@@ -38,28 +38,28 @@
             "fcf_cagr_3yr": 0.2993456483498427
         },
         "valuation": {
-            "pe_trailing": 103.25604,
-            "pe_forward": 64.18619,
-            "ps_ratio": 12.822621,
-            "pb_ratio": 3.533652,
-            "ev_ebitda": 55.977,
+            "pe_trailing": 103.85096,
+            "pe_forward": 64.86787,
+            "ps_ratio": 12.958802,
+            "pb_ratio": 3.5711806,
+            "ev_ebitda": 57.127,
             "peg_ratio": 3.66,
-            "fcf_yield": 0.017233401189104363
+            "fcf_yield": 0.01705229986128601
         },
         "data_quality_flags": [
             "WELL: eps_cagr_3yr approximated by net income CAGR (share count changes not adjusted)"
         ]
     },
-    "financial_raw_metrics_date": "2026-05-18",
-    "financial_score": 46.21383167723038,
-    "financial_score_date": "2026-05-18",
+    "financial_raw_metrics_date": "2026-05-21",
+    "financial_score": 46.20158183739582,
+    "financial_score_date": "2026-05-21",
     "financial_subscores": {
-        "profitability": 25.566498457041373,
+        "profitability": 25.566498457041376,
         "returns_on_capital": 31.810835337378766,
         "cash_flow_quality": 85.13955165748042,
         "balance_sheet": 42.09510268920819,
         "growth": 95.92351087113286,
-        "valuation": 8.430934237820873
+        "valuation": 8.349268638923869
     },
     "financial_drivers": {
         "strongest": [
@@ -69,25 +69,25 @@
         ],
         "weakest": [
             "interest_coverage (balance_sheet): score=0, value=26.4%",
-            "pe_trailing (valuation): score=0, value=103.26",
+            "pe_trailing (valuation): score=0, value=103.85",
             "peg_ratio (valuation): score=5, value=3.66"
         ]
     },
     "professional_raw_metrics": {
-        "sector": "Real Estate",
-        "industry": "REIT - Healthcare Facilities",
-        "market_cap_usd": 150882156544,
-        "current_price": 213.74,
+        "sector": null,
+        "industry": null,
+        "market_cap_usd": null,
+        "current_price": null,
         "analyst": {
-            "recommendation_mean": 1.65,
-            "recommendation_key": "buy",
-            "target_mean_price": 233.5,
-            "target_median_price": 235.5,
-            "target_high_price": 260.0,
-            "target_low_price": 192.0,
-            "upside_to_target": 0.09244876953307753,
-            "target_dispersion": 0.291220556745182,
-            "num_analysts": 20
+            "recommendation_mean": null,
+            "recommendation_key": null,
+            "target_mean_price": null,
+            "target_median_price": null,
+            "target_high_price": null,
+            "target_low_price": null,
+            "upside_to_target": null,
+            "target_dispersion": null,
+            "num_analysts": null
         },
         "rating_momentum": {
             "upgrades_12m": 0,
@@ -95,55 +95,51 @@
             "total_actions_12m": 0
         },
         "institutional": {
-            "held_pct_institutions": 0.010239499999999999,
-            "held_pct_insiders": 0.00062
+            "held_pct_institutions": null,
+            "held_pct_insiders": null
         },
         "short_interest": {
-            "short_pct_of_float": 0.026300002,
-            "short_ratio": 6.02,
-            "short_change_pct": -0.03520899246584542
+            "short_pct_of_float": null,
+            "short_ratio": null,
+            "short_change_pct": null
         },
-        "data_quality_flags": []
+        "data_quality_flags": [
+            "WELL: failed to fetch .info (Too Many Requests. Rate limited. Try after a while.)",
+            "WELL: sector classification unavailable",
+            "WELL: upgrades/downgrades fetch failed (Too Many Requests. Rate limited. Try after a while.)"
+        ]
     },
-    "professional_raw_metrics_date": "2026-05-18",
-    "professional_score": 54.45591427017118,
-    "professional_score_date": "2026-05-18",
+    "professional_raw_metrics_date": "2026-05-21",
+    "professional_score": null,
+    "professional_score_date": "2026-05-21",
     "professional_subscores": {
-        "analyst_consensus": 71.54487695330775,
+        "analyst_consensus": null,
         "rating_momentum": 50.0,
-        "institutional_positioning": 33.875204784463904,
-        "short_interest": 56.30937426931659
+        "institutional_positioning": null,
+        "short_interest": null
     },
     "professional_drivers": {
-        "strongest": [
-            "recommendation_mean (analyst_consensus): score=86, value=1.65",
-            "short_pct_of_float (short_interest): score=64, value=2.6%",
-            "short_change_pct (short_interest): score=55, value=-3.5%"
-        ],
-        "weakest": [
-            "held_pct_institutions (institutional_positioning): score=27, value=1.0%",
-            "short_ratio (short_interest): score=44, value=6.02",
-            "upside_to_target (analyst_consensus): score=51, value=9.2%"
-        ]
+        "strongest": [],
+        "weakest": []
     },
     "news_sentiment_raw_metrics": {
         "sector": "Real Estate",
         "industry": "REIT - Healthcare Facilities",
-        "market_cap_usd": 150882156544,
-        "current_price": 213.74,
+        "market_cap_usd": 152484577280,
+        "current_price": 216.01,
         "earnings": {
             "beat_count_4q": null,
             "miss_count_4q": null,
             "total_quarters_4q": null,
             "avg_surprise_magnitude_4q": null,
             "eps_estimate_revision_90d": null,
-            "trailing_eps": 2.07,
+            "trailing_eps": 2.08,
             "forward_eps": 3.33
         },
         "price_momentum": {
-            "return_1m": 0.014856810331849067,
-            "return_3m": 0.034066747919525756,
-            "return_6m": 0.1264491691715777
+            "return_1m": 0.05018379585215259,
+            "return_3m": 0.042794397574390894,
+            "return_6m": 0.10470536300318997
         },
         "insider_activity": {
             "insider_purchases_count_90d": 0,
@@ -154,38 +150,41 @@
             "WELL: earnings_dates fetch failed (['Earnings Date'])"
         ]
     },
-    "news_sentiment_raw_metrics_date": "2026-05-18",
-    "news_sentiment_score": 57.35747022482526,
-    "news_sentiment_score_date": "2026-05-18",
+    "news_sentiment_raw_metrics_date": "2026-05-21",
+    "news_sentiment_score": 57.71179259059455,
+    "news_sentiment_score_date": "2026-05-21",
     "news_sentiment_subscores": {
         "earnings_surprise_revisions": null,
-        "price_momentum": 61.03620533723789,
+        "price_momentum": 61.567688885891826,
         "insider_activity": 50.0
     },
     "news_sentiment_drivers": {
         "strongest": [
-            "return_6m (price_momentum): score=71, value=12.6%",
-            "return_3m (price_momentum): score=56, value=3.4%",
-            "return_1m (price_momentum): score=52, value=1.5%"
+            "return_6m (price_momentum): score=67, value=10.5%",
+            "return_1m (price_momentum): score=58, value=5.0%",
+            "return_3m (price_momentum): score=57, value=4.3%"
         ],
         "weakest": [
             "insider_activity_summary (insider_activity): score=50, value=no activity in 90d",
-            "return_1m (price_momentum): score=52, value=1.5%",
-            "return_3m (price_momentum): score=56, value=3.4%"
+            "return_3m (price_momentum): score=57, value=4.3%",
+            "return_1m (price_momentum): score=58, value=5.0%"
         ]
     },
-    "composite_score": 50.91518416463159,
-    "composite_score_date": "2026-05-18",
-    "composite_rank": 713,
+    "composite_score": 51.57826595285249,
+    "composite_score_date": "2026-05-21",
+    "composite_rank": 637,
     "composite_metadata": {
         "scores_used": [
             "financial",
-            "professional",
             "news_sentiment"
         ],
-        "scores_imputed": [],
-        "imputed_values": {},
-        "imputation_r_squared": null,
+        "scores_imputed": [
+            "professional"
+        ],
+        "imputed_values": {
+            "professional": 56.45038838678557
+        },
+        "imputation_r_squared": 0.04516719672877956,
         "weights_applied": {
             "financial": 50,
             "professional": 30,

@@ -5,7 +5,7 @@
     "financial_raw_metrics": {
         "sector": "Basic Materials",
         "industry": "Lumber & Wood Production",
-        "market_cap_usd": 7348127232,
+        "market_cap_usd": 7598248448,
         "profitability": {
             "gross_margin_ttm": 0.45549,
             "operating_margin_ttm": 0.19599001,
@@ -38,28 +38,28 @@
             "fcf_cagr_3yr": -0.041016208318731096
         },
         "valuation": {
-            "pe_trailing": 20.964787,
-            "pe_forward": 18.127882,
-            "ps_ratio": 3.0850153,
-            "pb_ratio": 3.6304877,
-            "ev_ebitda": 13.567,
+            "pe_trailing": 21.65299,
+            "pe_forward": 18.744932,
+            "ps_ratio": 3.1900256,
+            "pb_ratio": 3.754065,
+            "ev_ebitda": 14.042,
             "peg_ratio": 3.8,
-            "fcf_yield": 0.04626641282413767
+            "fcf_yield": 0.04474340242052585
         },
         "data_quality_flags": [
             "SSD: eps_cagr_3yr approximated by net income CAGR (share count changes not adjusted)"
         ]
     },
-    "financial_raw_metrics_date": "2026-05-18",
-    "financial_score": 62.62380287303451,
-    "financial_score_date": "2026-05-18",
+    "financial_raw_metrics_date": "2026-05-21",
+    "financial_score": 62.4808347169077,
+    "financial_score_date": "2026-05-21",
     "financial_subscores": {
-        "profitability": 56.38994985881189,
-        "returns_on_capital": 63.74477296598003,
+        "profitability": 56.4766477583759,
+        "returns_on_capital": 63.76994890809489,
         "cash_flow_quality": 72.76698112582025,
         "balance_sheet": 95.77164472119372,
         "growth": 38.58560713132512,
-        "valuation": 50.18815574216841
+        "valuation": 49.08586957908452
     },
     "financial_drivers": {
         "strongest": [
@@ -74,76 +74,72 @@
         ]
     },
     "professional_raw_metrics": {
-        "sector": "Basic Materials",
-        "industry": "Lumber & Wood Production",
-        "market_cap_usd": 7348127232,
-        "current_price": 178.62,
+        "sector": null,
+        "industry": null,
+        "market_cap_usd": null,
+        "current_price": null,
         "analyst": {
-            "recommendation_mean": 2.0,
-            "recommendation_key": "buy",
-            "target_mean_price": 217.8,
-            "target_median_price": 217.0,
-            "target_high_price": 230.0,
-            "target_low_price": 210.0,
-            "upside_to_target": 0.2193483372522674,
-            "target_dispersion": 0.09182736455463728,
-            "num_analysts": 5
+            "recommendation_mean": null,
+            "recommendation_key": null,
+            "target_mean_price": null,
+            "target_median_price": null,
+            "target_high_price": null,
+            "target_low_price": null,
+            "upside_to_target": null,
+            "target_dispersion": null,
+            "num_analysts": null
         },
         "rating_momentum": {
             "upgrades_12m": 0,
             "downgrades_12m": 0,
-            "total_actions_12m": 11
+            "total_actions_12m": 0
         },
         "institutional": {
-            "held_pct_institutions": 0.010224599999999999,
-            "held_pct_insiders": 0.00366
+            "held_pct_institutions": null,
+            "held_pct_insiders": null
         },
         "short_interest": {
-            "short_pct_of_float": 0.0345,
-            "short_ratio": 4.22,
-            "short_change_pct": 0.008203378301059137
+            "short_pct_of_float": null,
+            "short_ratio": null,
+            "short_change_pct": null
         },
-        "data_quality_flags": []
+        "data_quality_flags": [
+            "SSD: failed to fetch .info (Too Many Requests. Rate limited. Try after a while.)",
+            "SSD: sector classification unavailable",
+            "SSD: upgrades/downgrades fetch failed (Too Many Requests. Rate limited. Try after a while.)"
+        ]
     },
-    "professional_raw_metrics_date": "2026-05-18",
-    "professional_score": 54.86147316202806,
-    "professional_score_date": "2026-05-18",
+    "professional_raw_metrics_date": "2026-05-21",
+    "professional_score": null,
+    "professional_score_date": "2026-05-21",
     "professional_subscores": {
-        "analyst_consensus": 75.6232224834845,
-        "rating_momentum": 52.5,
-        "institutional_positioning": 26.05232461257763,
-        "short_interest": 58.36842759776054
+        "analyst_consensus": null,
+        "rating_momentum": 50.0,
+        "institutional_positioning": null,
+        "short_interest": null
     },
     "professional_drivers": {
-        "strongest": [
-            "upside_to_target (analyst_consensus): score=77, value=21.9%",
-            "recommendation_mean (analyst_consensus): score=75, value=2.00",
-            "short_pct_of_float (short_interest): score=62, value=3.5%"
-        ],
-        "weakest": [
-            "held_pct_institutions (institutional_positioning): score=14, value=1.0%",
-            "short_change_pct (short_interest): score=49, value=0.8%",
-            "upgrades_12m (rating_momentum): score=52, value=0.00"
-        ]
+        "strongest": [],
+        "weakest": []
     },
     "news_sentiment_raw_metrics": {
         "sector": "Basic Materials",
         "industry": "Lumber & Wood Production",
-        "market_cap_usd": 7348127232,
-        "current_price": 178.62,
+        "market_cap_usd": 7598248448,
+        "current_price": 184.7,
         "earnings": {
             "beat_count_4q": null,
             "miss_count_4q": null,
             "total_quarters_4q": null,
             "avg_surprise_magnitude_4q": null,
             "eps_estimate_revision_90d": null,
-            "trailing_eps": 8.52,
+            "trailing_eps": 8.53,
             "forward_eps": 9.85333
         },
         "price_momentum": {
-            "return_1m": 0.03493831502437749,
-            "return_3m": -0.14476680181145743,
-            "return_6m": 0.0777132340722294
+            "return_1m": 0.014389269236587007,
+            "return_3m": -0.09017130892671707,
+            "return_6m": 0.16482253981081646
         },
         "insider_activity": {
             "insider_purchases_count_90d": 0,
@@ -154,38 +150,41 @@
             "SSD: earnings_dates fetch failed (['Earnings Date'])"
         ]
     },
-    "news_sentiment_raw_metrics_date": "2026-05-18",
-    "news_sentiment_score": 48.79461019455289,
-    "news_sentiment_score_date": "2026-05-18",
+    "news_sentiment_raw_metrics_date": "2026-05-21",
+    "news_sentiment_score": 54.21848612323582,
+    "news_sentiment_score_date": "2026-05-21",
     "news_sentiment_subscores": {
         "earnings_surprise_revisions": null,
-        "price_momentum": 48.19191529182934,
+        "price_momentum": 56.32772918485373,
         "insider_activity": 50.0
     },
     "news_sentiment_drivers": {
         "strongest": [
-            "return_6m (price_momentum): score=63, value=7.8%",
-            "return_1m (price_momentum): score=56, value=3.5%",
+            "return_6m (price_momentum): score=77, value=16.5%",
+            "return_1m (price_momentum): score=52, value=1.4%",
             "insider_activity_summary (insider_activity): score=50, value=no activity in 90d"
         ],
         "weakest": [
-            "return_3m (price_momentum): score=26, value=-14.5%",
+            "return_3m (price_momentum): score=35, value=-9.0%",
             "insider_activity_summary (insider_activity): score=50, value=no activity in 90d",
-            "return_1m (price_momentum): score=56, value=3.5%"
+            "return_1m (price_momentum): score=52, value=1.4%"
         ]
     },
-    "composite_score": 57.529265424036254,
-    "composite_score_date": "2026-05-18",
-    "composite_rank": 333,
+    "composite_score": 59.423303231865155,
+    "composite_score_date": "2026-05-21",
+    "composite_rank": 205,
     "composite_metadata": {
         "scores_used": [
             "financial",
-            "professional",
             "news_sentiment"
         ],
-        "scores_imputed": [],
-        "imputed_values": {},
-        "imputation_r_squared": null,
+        "scores_imputed": [
+            "professional"
+        ],
+        "imputed_values": {
+            "professional": 57.797295495880476
+        },
+        "imputation_r_squared": 0.04516719672877956,
         "weights_applied": {
             "financial": 50,
             "professional": 30,

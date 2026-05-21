@@ -5,7 +5,7 @@
     "financial_raw_metrics": {
         "sector": "Energy",
         "industry": "Oil & Gas Equipment & Services",
-        "market_cap_usd": 7310558720,
+        "market_cap_usd": 7486413824,
         "profitability": {
             "gross_margin_ttm": 0.20649,
             "operating_margin_ttm": 0.0229,
@@ -38,112 +38,108 @@
             "fcf_cagr_3yr": null
         },
         "valuation": {
-            "pe_trailing": 81.48,
-            "pe_forward": 15.541432,
-            "ps_ratio": 0.84097075,
-            "pb_ratio": 1.181349,
-            "ev_ebitda": 8.993,
-            "peg_ratio": 1.197,
-            "fcf_yield": 0.10621622747871177
+            "pe_trailing": 83.44,
+            "pe_forward": 15.915281,
+            "ps_ratio": 0.8612002,
+            "pb_ratio": 1.2097663,
+            "ev_ebitda": 9.182,
+            "peg_ratio": 1.3151,
+            "fcf_yield": 0.10372121903155965
         },
         "data_quality_flags": [
             "NOV: eps_cagr_3yr approximated by net income CAGR (share count changes not adjusted)"
         ]
     },
-    "financial_raw_metrics_date": "2026-05-18",
-    "financial_score": 45.37744601348654,
-    "financial_score_date": "2026-05-18",
+    "financial_raw_metrics_date": "2026-05-21",
+    "financial_score": 45.18936208384288,
+    "financial_score_date": "2026-05-21",
     "financial_subscores": {
         "profitability": 30.176032278450094,
         "returns_on_capital": 25.18265594104558,
         "cash_flow_quality": 53.39038731618933,
         "balance_sheet": 86.64553463623331,
-        "growth": 30.270641008201444,
-        "valuation": 58.39815950329199
+        "growth": 30.270641008201448,
+        "valuation": 57.14426663900086
     },
     "financial_drivers": {
         "strongest": [
-            "fcf_yield (valuation): score=100, value=10.6%",
+            "fcf_yield (valuation): score=100, value=10.4%",
             "current_ratio (balance_sheet): score=94, value=2.47",
             "debt_to_equity (balance_sheet): score=91, value=37.3%"
         ],
         "weakest": [
             "eps_growth_1yr (growth): score=0, value=-73.7%",
-            "pe_trailing (valuation): score=0, value=81.48",
+            "pe_trailing (valuation): score=0, value=83.44",
             "eps_cagr_3yr (growth): score=18, value=-2.2%"
         ]
     },
     "professional_raw_metrics": {
-        "sector": "Energy",
-        "industry": "Oil & Gas Equipment & Services",
-        "market_cap_usd": 7310558720,
-        "current_price": 20.37,
+        "sector": null,
+        "industry": null,
+        "market_cap_usd": null,
+        "current_price": null,
         "analyst": {
-            "recommendation_mean": 2.61905,
-            "recommendation_key": "hold",
-            "target_mean_price": 21.15,
-            "target_median_price": 21.0,
-            "target_high_price": 25.0,
-            "target_low_price": 17.0,
-            "upside_to_target": 0.03829160530191446,
-            "target_dispersion": 0.3782505910165485,
-            "num_analysts": 20
+            "recommendation_mean": null,
+            "recommendation_key": null,
+            "target_mean_price": null,
+            "target_median_price": null,
+            "target_high_price": null,
+            "target_low_price": null,
+            "upside_to_target": null,
+            "target_dispersion": null,
+            "num_analysts": null
         },
         "rating_momentum": {
-            "upgrades_12m": 1,
-            "downgrades_12m": 3,
-            "total_actions_12m": 35
+            "upgrades_12m": 0,
+            "downgrades_12m": 0,
+            "total_actions_12m": 0
         },
         "institutional": {
-            "held_pct_institutions": 0.0106516,
-            "held_pct_insiders": 0.0069700005
+            "held_pct_institutions": null,
+            "held_pct_insiders": null
         },
         "short_interest": {
-            "short_pct_of_float": 0.139,
-            "short_ratio": 5.37,
-            "short_change_pct": 0.06325584709863129
+            "short_pct_of_float": null,
+            "short_ratio": null,
+            "short_change_pct": null
         },
-        "data_quality_flags": []
-    },
-    "professional_raw_metrics_date": "2026-05-18",
-    "professional_score": 36.414968432493374,
-    "professional_score_date": "2026-05-18",
-    "professional_subscores": {
-        "analyst_consensus": 44.73779263622973,
-        "rating_momentum": 48.9,
-        "institutional_positioning": 18.97540174573135,
-        "short_interest": 25.25260382253422
-    },
-    "professional_drivers": {
-        "strongest": [
-            "held_pct_insiders (institutional_positioning): score=57, value=0.7%",
-            "recommendation_mean (analyst_consensus): score=50, value=2.62",
-            "total_actions_12m (rating_momentum): score=49, value=35.00"
-        ],
-        "weakest": [
-            "held_pct_institutions (institutional_positioning): score=3, value=1.1%",
-            "short_pct_of_float (short_interest): score=5, value=13.9%",
-            "upside_to_target (analyst_consensus): score=36, value=3.8%"
+        "data_quality_flags": [
+            "NOV: failed to fetch .info (Too Many Requests. Rate limited. Try after a while.)",
+            "NOV: sector classification unavailable",
+            "NOV: upgrades/downgrades fetch failed (Too Many Requests. Rate limited. Try after a while.)"
         ]
     },
+    "professional_raw_metrics_date": "2026-05-21",
+    "professional_score": null,
+    "professional_score_date": "2026-05-21",
+    "professional_subscores": {
+        "analyst_consensus": null,
+        "rating_momentum": 50.0,
+        "institutional_positioning": null,
+        "short_interest": null
+    },
+    "professional_drivers": {
+        "strongest": [],
+        "weakest": []
+    },
     "news_sentiment_raw_metrics": {
-        "sector": "Energy",
-        "industry": "Oil & Gas Equipment & Services",
-        "market_cap_usd": 7310558720,
-        "current_price": 20.37,
+        "sector": null,
+        "industry": null,
+        "market_cap_usd": null,
+        "current_price": null,
         "earnings": {
             "beat_count_4q": null,
             "miss_count_4q": null,
             "total_quarters_4q": null,
             "avg_surprise_magnitude_4q": null,
             "eps_estimate_revision_90d": null,
-            "trailing_eps": 0.25,
-            "forward_eps": 1.31069
+            "trailing_eps": null,
+            "forward_eps": null
         },
         "price_momentum": {
-            "return_1m": 0.07097789220532222,
-            "return_3m": 0.0772845490730897,
-            "return_6m": 0.34662877859384417
+            "return_1m": 0.06482901724714389,
+            "return_3m": 0.04856296134372247,
+            "return_6m": 0.38355227632162625
         },
         "insider_activity": {
             "insider_purchases_count_90d": null,
@@ -151,48 +147,48 @@
             "insider_net_value_90d_usd": null
         },
         "data_quality_flags": [
-            "NOV: earnings_dates fetch failed (['Earnings Date'])"
+            "NOV: failed to fetch .info (argument of type 'NoneType' is not iterable)",
+            "NOV: sector classification unavailable",
+            "NOV: earnings_dates fetch failed (['Earnings Date'])",
+            "NOV: eps_revisions fetch failed (Too Many Requests. Rate limited. Try after a while.)",
+            "NOV: insider_transactions fetch failed (Too Many Requests. Rate limited. Try after a while.)"
         ]
     },
-    "news_sentiment_raw_metrics_date": "2026-05-18",
+    "news_sentiment_raw_metrics_date": "2026-05-21",
     "news_sentiment_score": null,
-    "news_sentiment_score_date": "2026-05-18",
+    "news_sentiment_score_date": "2026-05-21",
     "news_sentiment_subscores": {
         "earnings_surprise_revisions": null,
-        "price_momentum": 77.46567753781866,
+        "price_momentum": 75.53404846368147,
         "insider_activity": null
     },
     "news_sentiment_drivers": {
         "strongest": [
-            "return_6m (price_momentum): score=100, value=34.7%",
-            "return_3m (price_momentum): score=63, value=7.7%",
-            "return_1m (price_momentum): score=62, value=7.1%"
+            "return_6m (price_momentum): score=100, value=38.4%",
+            "return_1m (price_momentum): score=61, value=6.5%",
+            "return_3m (price_momentum): score=58, value=4.9%"
         ],
         "weakest": [
-            "return_1m (price_momentum): score=62, value=7.1%",
-            "return_3m (price_momentum): score=63, value=7.7%",
-            "return_6m (price_momentum): score=100, value=34.7%"
+            "return_3m (price_momentum): score=58, value=4.9%",
+            "return_1m (price_momentum): score=61, value=6.5%",
+            "return_6m (price_momentum): score=100, value=38.4%"
         ]
     },
-    "composite_score": 45.010186104138754,
-    "composite_score_date": "2026-05-18",
-    "composite_rank": 905,
+    "composite_score": null,
+    "composite_score_date": "2026-05-21",
+    "composite_rank": null,
     "composite_metadata": {
         "scores_used": [
-            "financial",
-            "professional"
+            "financial"
         ],
-        "scores_imputed": [
-            "news_sentiment"
-        ],
-        "imputed_values": {
-            "news_sentiment": 56.98486283823737
-        },
-        "imputation_r_squared": 0.03588005347831702,
+        "scores_imputed": [],
+        "imputed_values": {},
+        "imputation_r_squared": null,
         "weights_applied": {
             "financial": 50,
             "professional": 30,
             "news_sentiment": 20
-        }
+        },
+        "skip_reason": "Only 1 of 3 scores populated; need at least 2"
     }
 }

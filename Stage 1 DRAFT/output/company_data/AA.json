@@ -5,7 +5,7 @@
     "financial_raw_metrics": {
         "sector": "Basic Materials",
         "industry": "Aluminum",
-        "market_cap_usd": 16501032960,
+        "market_cap_usd": 17487980544,
         "profitability": {
             "gross_margin_ttm": 0.16254,
             "operating_margin_ttm": 0.13937001,
@@ -38,34 +38,34 @@
             "fcf_cagr_3yr": 0.1835473870063109
         },
         "valuation": {
-            "pe_trailing": 16.033333,
-            "pe_forward": 9.337588,
-            "ps_ratio": 1.3039142,
-            "pb_ratio": 2.4173656,
-            "ev_ebitda": 10.474,
+            "pe_trailing": 16.992306,
+            "pe_forward": 9.896081,
+            "ps_ratio": 1.3819029,
+            "pb_ratio": 2.5619514,
+            "ev_ebitda": 11.056,
             "peg_ratio": 8.36,
-            "fcf_yield": 0.06589738828083645
+            "fcf_yield": 0.062178418672421874
         },
         "data_quality_flags": [
             "AA: eps_cagr_3yr approximated by net income CAGR (share count changes not adjusted)"
         ]
     },
-    "financial_raw_metrics_date": "2026-05-18",
-    "financial_score": 55.544350972015444,
-    "financial_score_date": "2026-05-18",
+    "financial_raw_metrics_date": "2026-05-21",
+    "financial_score": 55.400541725172154,
+    "financial_score_date": "2026-05-21",
     "financial_subscores": {
-        "profitability": 37.05616858188244,
-        "returns_on_capital": 52.10286152602049,
+        "profitability": 37.1351150278203,
+        "returns_on_capital": 52.116775726276046,
         "cash_flow_quality": 68.1216219094921,
         "balance_sheet": 85.3518619113924,
         "growth": 36.22697090488877,
-        "valuation": 61.71651161045913
+        "valuation": 60.633969103245875
     },
     "financial_drivers": {
         "strongest": [
             "fcf_to_net_income_ttm (cash_flow_quality): score=95, value=1.06",
-            "pe_forward (valuation): score=91, value=9.34",
-            "debt_to_equity (balance_sheet): score=91, value=37.0%"
+            "debt_to_equity (balance_sheet): score=91, value=37.0%",
+            "net_debt_to_ebitda (balance_sheet): score=91, value=70.6%"
         ],
         "weakest": [
             "peg_ratio (valuation): score=0, value=8.36",
@@ -76,8 +76,8 @@
     "professional_raw_metrics": {
         "sector": "Basic Materials",
         "industry": "Aluminum",
-        "market_cap_usd": 16501032960,
-        "current_price": 62.53,
+        "market_cap_usd": 17487980544,
+        "current_price": 66.27,
         "analyst": {
             "recommendation_mean": 1.92857,
             "recommendation_key": "buy",
@@ -85,7 +85,7 @@
             "target_median_price": 76.0,
             "target_high_price": 92.0,
             "target_low_price": 52.0,
-            "upside_to_target": 0.20348392771469692,
+            "upside_to_target": 0.13556435792968166,
             "target_dispersion": 0.5315342670175679,
             "num_analysts": 13
         },
@@ -95,7 +95,7 @@
             "total_actions_12m": 36
         },
         "institutional": {
-            "held_pct_institutions": 0.84547997,
+            "held_pct_institutions": 0.84260005,
             "held_pct_insiders": 0.00545
         },
         "short_interest": {
@@ -105,20 +105,20 @@
         },
         "data_quality_flags": []
     },
-    "professional_raw_metrics_date": "2026-05-18",
-    "professional_score": 66.8723787908185,
-    "professional_score_date": "2026-05-18",
+    "professional_raw_metrics_date": "2026-05-21",
+    "professional_score": 65.30683366853872,
+    "professional_score_date": "2026-05-21",
     "professional_subscores": {
-        "analyst_consensus": 75.85133518097979,
+        "analyst_consensus": 70.84217579296816,
         "rating_momentum": 54.25,
-        "institutional_positioning": 62.49200057255622,
-        "short_interest": 74.25940889557683
+        "institutional_positioning": 63.77274599503362,
+        "short_interest": 73.37590428160968
     },
     "professional_drivers": {
         "strongest": [
             "short_ratio (short_interest): score=89, value=1.14",
             "recommendation_mean (analyst_consensus): score=77, value=1.93",
-            "upside_to_target (analyst_consensus): score=74, value=20.3%"
+            "held_pct_institutions (institutional_positioning): score=67, value=84.3%"
         ],
         "weakest": [
             "upgrades_12m (rating_momentum): score=54, value=4.00",
@@ -127,63 +127,70 @@
         ]
     },
     "news_sentiment_raw_metrics": {
-        "sector": "Basic Materials",
-        "industry": "Aluminum",
-        "market_cap_usd": 16501032960,
-        "current_price": 62.53,
+        "sector": null,
+        "industry": null,
+        "market_cap_usd": null,
+        "current_price": null,
         "earnings": {
             "beat_count_4q": 2,
             "miss_count_4q": 1,
             "total_quarters_4q": 4,
             "avg_surprise_magnitude_4q": 0.1876876397317151,
             "eps_estimate_revision_90d": null,
-            "trailing_eps": 3.9,
-            "forward_eps": 6.69659
+            "trailing_eps": null,
+            "forward_eps": null
         },
         "price_momentum": {
-            "return_1m": -0.11153733389832914,
-            "return_3m": 0.03507535962883478,
-            "return_6m": 0.6400212027922213
+            "return_1m": null,
+            "return_3m": null,
+            "return_6m": null
         },
         "insider_activity": {
-            "insider_purchases_count_90d": 0,
-            "insider_sales_count_90d": 0,
+            "insider_purchases_count_90d": null,
+            "insider_sales_count_90d": null,
             "insider_net_value_90d_usd": null
         },
-        "data_quality_flags": []
+        "data_quality_flags": [
+            "AA: failed to fetch .info (Too Many Requests. Rate limited. Try after a while.)",
+            "AA: sector classification unavailable",
+            "AA: eps_revisions fetch failed (Too Many Requests. Rate limited. Try after a while.)",
+            "AA: price momentum fetch failed (Too Many Requests. Rate limited. Try after a while.)",
+            "AA: insider_transactions fetch failed (Too Many Requests. Rate limited. Try after a while.)"
+        ]
     },
-    "news_sentiment_raw_metrics_date": "2026-05-18",
-    "news_sentiment_score": 65.96293361115796,
-    "news_sentiment_score_date": "2026-05-18",
+    "news_sentiment_raw_metrics_date": "2026-05-21",
+    "news_sentiment_score": null,
+    "news_sentiment_score_date": "2026-05-21",
     "news_sentiment_subscores": {
         "earnings_surprise_revisions": 72.50866029530994,
-        "price_momentum": 67.39867373258498,
-        "insider_activity": 50.0
+        "price_momentum": null,
+        "insider_activity": null
     },
     "news_sentiment_drivers": {
         "strongest": [
-            "return_6m (price_momentum): score=100, value=64.0%",
             "avg_surprise_magnitude_4q (earnings_surprise_revisions): score=99, value=18.8%",
-            "return_3m (price_momentum): score=56, value=3.5%"
+            "beat_rate_4q (earnings_surprise_revisions): score=50, value=50.0%"
         ],
         "weakest": [
-            "return_1m (price_momentum): score=31, value=-11.2%",
             "beat_rate_4q (earnings_surprise_revisions): score=50, value=50.0%",
-            "insider_activity_summary (insider_activity): score=50, value=no activity in 90d"
+            "avg_surprise_magnitude_4q (earnings_surprise_revisions): score=99, value=18.8%"
         ]
     },
-    "composite_score": 61.02647584548487,
-    "composite_score_date": "2026-05-18",
-    "composite_rank": 181,
+    "composite_score": 56.82206663913621,
+    "composite_score_date": "2026-05-21",
+    "composite_rank": 336,
     "composite_metadata": {
         "scores_used": [
             "financial",
-            "professional",
+            "professional"
+        ],
+        "scores_imputed": [
             "news_sentiment"
         ],
-        "scores_imputed": [],
-        "imputed_values": {},
-        "imputation_r_squared": null,
+        "imputed_values": {
+            "news_sentiment": 47.6487283799426
+        },
+        "imputation_r_squared": 0.05693184104207816,
         "weights_applied": {
             "financial": 50,
             "professional": 30,
