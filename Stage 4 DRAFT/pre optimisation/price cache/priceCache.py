@@ -20,7 +20,7 @@ import logging
 import os
 import time
 import random
-from datetime import datetime, timedelta
+from datetime import datetime, timedelta, timezone
 import pandas as pd
 import yfinance as yf
 
@@ -79,7 +79,13 @@ def _fetch_history_with_retry(ticker: str, start_date: str = None, period: str =
         try:
             t = yf.Ticker(ticker)
             if start_date:
-                hist = t.history(start=start_date, interval="1d", auto_adjust=True)
+                # Explicit future end so Yahoo's period1 (midnight in the
+                # ticker's exchange tz) is always < period2. Without this,
+                # runs in the 00:00–04:00 UTC window fail with
+                # "start date cannot be after end date" because yfinance
+                # defaults end to now-UTC, which can be before midnight ET.
+                end_date = (datetime.now(timezone.utc).date() + timedelta(days=1)).strftime("%Y-%m-%d")
+                hist = t.history(start=start_date, end=end_date, interval="1d", auto_adjust=True)
             else:
                 hist = t.history(period=period, interval="1d", auto_adjust=True)
 
