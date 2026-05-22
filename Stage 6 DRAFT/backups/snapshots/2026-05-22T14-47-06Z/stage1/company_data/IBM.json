@@ -1,0 +1,195 @@
+{
+    "ticker": "IBM",
+    "company_name": "IBM",
+    "universe_added_date": "2026-05-18",
+    "financial_raw_metrics": {
+        "sector": "Technology",
+        "industry": "Information Technology Services",
+        "market_cap_usd": 237762789376,
+        "profitability": {
+            "gross_margin_ttm": 0.58358,
+            "operating_margin_ttm": 0.13809,
+            "net_margin_ttm": 0.15606,
+            "operating_margin_trend_3yr": 0.04992754126044391
+        },
+        "returns_on_capital": {
+            "roe_ttm": 0.35772,
+            "roa_ttm": 0.05369,
+            "roic_ttm": null
+        },
+        "cash_flow": {
+            "fcf_margin_ttm": 0.189820936480287,
+            "fcf_to_net_income_ttm": 1.2187413090466057,
+            "ocf_cagr_3yr": 0.0813103742093555
+        },
+        "balance_sheet": {
+            "debt_to_equity": 2.1116900000000003,
+            "net_debt_to_ebitda": 3.4928059239240326,
+            "current_ratio": 0.796,
+            "interest_coverage": 6.337467700258398,
+            "total_debt_usd": 69802000384,
+            "total_cash_usd": 11783000064
+        },
+        "growth": {
+            "revenue_growth_1yr": 0.095,
+            "revenue_cagr_3yr": 0.03718179905928398,
+            "eps_growth_1yr": 0.142,
+            "eps_cagr_3yr": 0.8623374418634304,
+            "fcf_cagr_3yr": 0.10617435101575201
+        },
+        "valuation": {
+            "pe_trailing": 22.386724,
+            "pe_forward": 18.801622,
+            "ps_ratio": 3.450288,
+            "pb_ratio": 7.2106147,
+            "ev_ebitda": 16.229,
+            "peg_ratio": 2.1071,
+            "fcf_yield": 0.05501596828641674
+        },
+        "data_quality_flags": [
+            "IBM: eps_cagr_3yr approximated by net income CAGR (share count changes not adjusted)"
+        ]
+    },
+    "financial_raw_metrics_date": "2026-05-21",
+    "financial_score": 62.34585775597849,
+    "financial_score_date": "2026-05-21",
+    "financial_subscores": {
+        "profitability": 79.0106873806682,
+        "returns_on_capital": 54.91329216059264,
+        "cash_flow_quality": 81.80861099114128,
+        "balance_sheet": 42.91459088380154,
+        "growth": 66.36644138145873,
+        "valuation": 45.98410239510727
+    },
+    "financial_drivers": {
+        "strongest": [
+            "eps_cagr_3yr (growth): score=100, value=86.2%",
+            "fcf_to_net_income_ttm (cash_flow_quality): score=94, value=1.22",
+            "gross_margin_ttm (profitability): score=86, value=58.4%"
+        ],
+        "weakest": [
+            "ev_ebitda (valuation): score=8, value=16.23",
+            "current_ratio (balance_sheet): score=18, value=79.6%",
+            "peg_ratio (valuation): score=32, value=2.11"
+        ]
+    },
+    "professional_raw_metrics": {
+        "sector": "Technology",
+        "industry": "Information Technology Services",
+        "market_cap_usd": 237762789376,
+        "current_price": 252.97,
+        "analyst": {
+            "recommendation_mean": 1.90476,
+            "recommendation_key": "buy",
+            "target_mean_price": 277.68,
+            "target_median_price": 282.5,
+            "target_high_price": 335.0,
+            "target_low_price": 195.0,
+            "upside_to_target": 0.09767956674704513,
+            "target_dispersion": 0.5041774704696053,
+            "num_analysts": 20
+        },
+        "rating_momentum": {
+            "upgrades_12m": 3,
+            "downgrades_12m": 0,
+            "total_actions_12m": 52
+        },
+        "institutional": {
+            "held_pct_institutions": 0.65688,
+            "held_pct_insiders": 0.00117
+        },
+        "short_interest": {
+            "short_pct_of_float": 0.026600001,
+            "short_ratio": 3.64,
+            "short_change_pct": -0.03498715478553213
+        },
+        "data_quality_flags": []
+    },
+    "professional_raw_metrics_date": "2026-05-21",
+    "professional_score": 63.49451741728226,
+    "professional_score_date": "2026-05-21",
+    "professional_subscores": {
+        "analyst_consensus": 67.48227667470451,
+        "rating_momentum": 56.13461538461539,
+        "institutional_positioning": 61.47028842854824,
+        "short_interest": 69.82996418563187
+    },
+    "professional_drivers": {
+        "strongest": [
+            "short_pct_of_float (short_interest): score=79, value=2.7%",
+            "recommendation_mean (analyst_consensus): score=78, value=1.90",
+            "held_pct_institutions (institutional_positioning): score=66, value=65.7%"
+        ],
+        "weakest": [
+            "held_pct_insiders (institutional_positioning): score=51, value=0.1%",
+            "upside_to_target (analyst_consensus): score=52, value=9.8%",
+            "short_change_pct (short_interest): score=55, value=-3.5%"
+        ]
+    },
+    "news_sentiment_raw_metrics": {
+        "sector": "Technology",
+        "industry": "Information Technology Services",
+        "market_cap_usd": 237762789376,
+        "current_price": 252.97,
+        "earnings": {
+            "beat_count_4q": null,
+            "miss_count_4q": null,
+            "total_quarters_4q": null,
+            "avg_surprise_magnitude_4q": null,
+            "eps_estimate_revision_90d": null,
+            "trailing_eps": 11.3,
+            "forward_eps": 13.45469
+        },
+        "price_momentum": {
+            "return_1m": -0.0033171624628114613,
+            "return_3m": -0.022846522115478357,
+            "return_6m": -0.11175689162739254
+        },
+        "insider_activity": {
+            "insider_purchases_count_90d": 2,
+            "insider_sales_count_90d": 0,
+            "insider_net_value_90d_usd": 113155.0
+        },
+        "data_quality_flags": [
+            "IBM: earnings_dates fetch failed (['Earnings Date'])"
+        ]
+    },
+    "news_sentiment_raw_metrics_date": "2026-05-21",
+    "news_sentiment_score": 49.055183950820236,
+    "news_sentiment_score_date": "2026-05-21",
+    "news_sentiment_subscores": {
+        "earnings_surprise_revisions": null,
+        "price_momentum": 41.07861166548712,
+        "insider_activity": 65.00832852148646
+    },
+    "news_sentiment_drivers": {
+        "strongest": [
+            "insider_count_ratio_90d (insider_activity): score=100, value=1.00",
+            "net_insider_value_pct_mcap_90d (insider_activity): score=50, value=0.0%",
+            "return_1m (price_momentum): score=49, value=-0.3%"
+        ],
+        "weakest": [
+            "return_6m (price_momentum): score=31, value=-11.2%",
+            "return_3m (price_momentum): score=46, value=-2.3%",
+            "return_1m (price_momentum): score=49, value=-0.3%"
+        ]
+    },
+    "composite_score": 60.032320893337975,
+    "composite_score_date": "2026-05-21",
+    "composite_rank": 180,
+    "composite_metadata": {
+        "scores_used": [
+            "financial",
+            "professional",
+            "news_sentiment"
+        ],
+        "scores_imputed": [],
+        "imputed_values": {},
+        "imputation_r_squared": null,
+        "weights_applied": {
+            "financial": 50,
+            "professional": 30,
+            "news_sentiment": 20
+        }
+    }
+}

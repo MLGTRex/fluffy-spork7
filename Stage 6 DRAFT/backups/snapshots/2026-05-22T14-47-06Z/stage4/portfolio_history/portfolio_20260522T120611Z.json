@@ -1,0 +1,1004 @@
+{
+    "consolidation_date": "2026-05-22",
+    "method": "LLM selector (from union of A+B) + Quant allocator (MIQP-equivalent, LAMBDA=2.0)",
+    "status": "optimal",
+    "iterations_run": 1,
+    "max_iterations": 5,
+    "track_a_tickers": [
+        "ARDX",
+        "APP",
+        "RDDT",
+        "VST",
+        "KTOS",
+        "NVDA",
+        "NOW",
+        "RMD",
+        "ICE",
+        "META",
+        "NFLX",
+        "HALO",
+        "AVGO",
+        "MSFT",
+        "ANET"
+    ],
+    "track_b_tickers": [
+        "ARDX",
+        "RMD",
+        "HALO",
+        "APP",
+        "RDDT",
+        "META",
+        "NFLX",
+        "NVDA",
+        "NOW",
+        "AVGO",
+        "MSFT",
+        "ICE",
+        "MA",
+        "KTOS",
+        "VST"
+    ],
+    "union_tickers": [
+        "ARDX",
+        "APP",
+        "RDDT",
+        "VST",
+        "KTOS",
+        "NVDA",
+        "NOW",
+        "RMD",
+        "ICE",
+        "META",
+        "NFLX",
+        "HALO",
+        "AVGO",
+        "MSFT",
+        "ANET",
+        "MA"
+    ],
+    "iterations": [
+        {
+            "iteration": 1,
+            "llm_selection_violations": [],
+            "llm_parsed": {
+                "selected_tickers": [
+                    "ARDX",
+                    "APP",
+                    "RDDT",
+                    "VST",
+                    "KTOS",
+                    "NVDA",
+                    "NOW",
+                    "RMD",
+                    "ICE",
+                    "META",
+                    "NFLX",
+                    "HALO",
+                    "AVGO",
+                    "MSFT",
+                    "MA"
+                ],
+                "per_pick_rationale": [
+                    {
+                        "ticker": "ARDX",
+                        "rationale": "Highest probability-weighted expected return in the universe at ~53% driven by IBSRELA blockbuster momentum; consensus pick from both tracks offers rare commercial-stage biotech asymmetry despite balance-sheet tension."
+                    },
+                    {
+                        "ticker": "APP",
+                        "rationale": "Dominant AI-powered mobile ad platform generating 84% EBITDA margins and ~$5B annual free cash flow; consensus holding where regulatory dread appears over-discounted relative to the operational fortress."
+                    },
+                    {
+                        "ticker": "RDDT",
+                        "rationale": "Rare capital-light social-media compounder with fortress net cash, 40% EBITDA margins, and accelerating advertiser adoption; both tracks agree the post-IPO deceleration is mechanical rather than structural."
+                    },
+                    {
+                        "ticker": "VST",
+                        "rationale": "Integrated power producer with irreplaceable nuclear scarcity, near-term hedge visibility, and data-center load growth; consensus defensive-growth hybrid with a de-risked 12-month earnings path."
+                    },
+                    {
+                        "ticker": "KTOS",
+                        "rationale": "Non-correlated defense exposure with a record $2B backlog and prime-contractor momentum in hypersonics and unmanned systems; consensus pick diversifies macro factor exposure away from tech."
+                    },
+                    {
+                        "ticker": "NVDA",
+                        "rationale": "Indispensable AI infrastructure backbone with supply-constrained demand, $50B quarterly free cash flow, and guided revenue visibility; consensus compounder where cycle-maturation fears are partially priced in."
+                    },
+                    {
+                        "ticker": "NOW",
+                        "rationale": "Durable $27.7B RPO underwrites 20%+ subscription growth, and enterprise AI monetization is scaling toward $1.5B ACV; consensus name with re-rating potential if FY2027 margins recover as guided."
+                    },
+                    {
+                        "ticker": "RMD",
+                        "rationale": "Dominant sleep-apnea franchise with near-monopoly U.S. flow-generator share, 35% operating margins, and relentless buyback-supported EPS growth; consensus defensive compounder with a valuation floor."
+                    },
+                    {
+                        "ticker": "ICE",
+                        "rationale": "Best-in-class exchange and data franchise trading at a forward-earnings discount to peers despite record margins; consensus pick providing recurring-revenue ballast and ~3% annual share reduction via buybacks."
+                    },
+                    {
+                        "ticker": "META",
+                        "rationale": "Core advertising engine growing 33% YoY with Family of Apps margins above 48% and a fortress balance sheet; consensus name where the forward multiple embeds excessive AI-capex governance dread."
+                    },
+                    {
+                        "ticker": "NFLX",
+                        "rationale": "Dominant streaming platform transitioning to capital-light compounding with a ~7% free cash flow yield and aggressive buybacks; consensus holding where the post-drawdown valuation already prices in maturation risks."
+                    },
+                    {
+                        "ticker": "HALO",
+                        "rationale": "Asset-light ENHANZE royalty platform generating ~60% EBITDA margins with contractually visible near-term cash; consensus tactical position funding share repurchases and 2027 convertible retirement."
+                    },
+                    {
+                        "ticker": "AVGO",
+                        "rationale": "Hybrid custom-silicon and infrastructure-software compounder with a $73B AI backlog and best-in-class margins; consensus pick despite VMware renewal cliffs and extreme customer concentration."
+                    },
+                    {
+                        "ticker": "MSFT",
+                        "rationale": "Unmatched $627B commercial RPO and entrenched enterprise-cloud ecosystem provide revenue visibility rare at this scale; consensus pick balancing AI optionality against a contested profitability reset."
+                    },
+                    {
+                        "ticker": "MA",
+                        "rationale": "Defensive payments network with 61% operating margins and $12–15B annual buyback capacity; selected over ANET to improve Financial Services diversification and reduce hyperscaler-concentrated tech correlation."
+                    }
+                ],
+                "comparison_notes": "Track A and Track B agreed on 14 of 15 names, diverging only on ANET (Track A) versus MA (Track B). Track A’s quant optimizer included ANET at a near-minimum 3.5% weight based on its standalone expected-return rank, but the position adds a fifth Technology name with high pairwise correlation to NVDA, AVGO, and MSFT. Track B’s LLM construction explicitly rejected ANET in favor of MA to reduce AI-hardware concentration and introduce defensive payments exposure with uncorrelated cash-generation mechanics. I sided with Track B on this single disagreement: the portfolio already captures AI infrastructure through four Technology names, and adding ANET stacks hyperscaler-dependent hardware risk without sufficient incremental return. MA, while offering a lower probability-weighted expected return, improves sector balance—lifting Financial Services from one to two names—and lowers overall portfolio correlation to the AI capex cycle. All consensus names were retained, producing a barbell that blends high-conviction healthcare and communications growth with durable technology compounders and defensive financials/utilities.",
+                "notable_rejections": [
+                    {
+                        "ticker": "ANET",
+                        "rationale": "Excluded due to acute hyperscaler concentration (~40% revenue from two customers), persistent supply constraints capping shipments and pressuring margins, and extreme macro-factor correlation with the already-represented NVDA/AVGO/MSFT cluster; the marginal diversification benefit is poor compared with adding a Financial Services compounder."
+                    }
+                ],
+                "portfolio_thesis": "The consolidated portfolio blends high-conviction growth asymmetry in healthcare and communications with durable technology compounders and defensive non-correlated exposure in utilities, defense, and financials. By substituting MA for ANET, the portfolio avoids over-concentration in hyperscaler-dependent AI hardware and instead uses the payments network’s elite margins and capital returns as a correlation dampener. The resulting 15-name lineup preserves the highest expected-return consensus ideas while respecting sector diversification and factor-exposure limits, capturing idiosyncratic inflections alongside buyback-supported quality compounders.",
+                "key_risks": [
+                    "A synchronized drawdown in AI-exposed Technology names could drag portfolio returns despite moderate individual position sizes.",
+                    "Regulatory contagion—whether in healthcare reimbursement, financial interchange, or communications platform rules—may simultaneously impair multiple growth positions.",
+                    "Elevated pairwise correlations among software and semiconductor names reduce effective diversification if macro liquidity tightens or AI capex cycles peak."
+                ]
+            },
+            "allocator_result": {
+                "status": "optimal",
+                "objective_value": 0.078358,
+                "allocations": [
+                    {
+                        "ticker": "ARDX",
+                        "allocation_pct": 15.1431,
+                        "sector": "Healthcare",
+                        "expected_return_12m": 0.5256
+                    },
+                    {
+                        "ticker": "APP",
+                        "allocation_pct": 9.4695,
+                        "sector": "Communication Services",
+                        "expected_return_12m": 0.2986
+                    },
+                    {
+                        "ticker": "RDDT",
+                        "allocation_pct": 8.8448,
+                        "sector": "Communication Services",
+                        "expected_return_12m": 0.2737
+                    },
+                    {
+                        "ticker": "VST",
+                        "allocation_pct": 8.3623,
+                        "sector": "Utilities",
+                        "expected_return_12m": 0.2544
+                    },
+                    {
+                        "ticker": "KTOS",
+                        "allocation_pct": 7.6417,
+                        "sector": "Industrials",
+                        "expected_return_12m": 0.2255
+                    },
+                    {
+                        "ticker": "NOW",
+                        "allocation_pct": 6.595,
+                        "sector": "Technology",
+                        "expected_return_12m": 0.1837
+                    },
+                    {
+                        "ticker": "NVDA",
+                        "allocation_pct": 6.5919,
+                        "sector": "Technology",
+                        "expected_return_12m": 0.1835
+                    },
+                    {
+                        "ticker": "RMD",
+                        "allocation_pct": 5.8817,
+                        "sector": "Healthcare",
+                        "expected_return_12m": 0.1551
+                    },
+                    {
+                        "ticker": "ICE",
+                        "allocation_pct": 5.289,
+                        "sector": "Financial Services",
+                        "expected_return_12m": 0.1314
+                    },
+                    {
+                        "ticker": "META",
+                        "allocation_pct": 5.2702,
+                        "sector": "Communication Services",
+                        "expected_return_12m": 0.1307
+                    },
+                    {
+                        "ticker": "NFLX",
+                        "allocation_pct": 4.842,
+                        "sector": "Communication Services",
+                        "expected_return_12m": 0.1135
+                    },
+                    {
+                        "ticker": "HALO",
+                        "allocation_pct": 4.7324,
+                        "sector": "Healthcare",
+                        "expected_return_12m": 0.1092
+                    },
+                    {
+                        "ticker": "AVGO",
+                        "allocation_pct": 4.4112,
+                        "sector": "Technology",
+                        "expected_return_12m": 0.0963
+                    },
+                    {
+                        "ticker": "MSFT",
+                        "allocation_pct": 3.877,
+                        "sector": "Technology",
+                        "expected_return_12m": 0.0749
+                    },
+                    {
+                        "ticker": "MA",
+                        "allocation_pct": 3.0482,
+                        "sector": "Financial Services",
+                        "expected_return_12m": 0.0418
+                    }
+                ],
+                "infeasibility_reason": null,
+                "constraints": {
+                    "portfolio_size": 15,
+                    "min_position_weight": 0.03,
+                    "max_position_weight": 0.2,
+                    "sector_cap": 0.35,
+                    "lambda_concentration_penalty": 2.0
+                }
+            }
+        }
+    ],
+    "objective_value": 0.078358,
+    "constraints": {
+        "portfolio_size": 15,
+        "min_position_weight": 0.03,
+        "max_position_weight": 0.2,
+        "sector_cap": 0.35,
+        "lambda_concentration_penalty": 2.0
+    },
+    "portfolio": {
+        "positions": [
+            {
+                "ticker": "ARDX",
+                "allocation_pct": 14.5505,
+                "sector": "Healthcare",
+                "expected_return_12m": 0.5256,
+                "rationale": "Highest probability-weighted expected return in the universe at ~53% driven by IBSRELA blockbuster momentum; consensus pick from both tracks offers rare commercial-stage biotech asymmetry despite balance-sheet tension.",
+                "entry_date": "2026-05-19",
+                "entry_price": 6.11
+            },
+            {
+                "ticker": "SEK.AX",
+                "allocation_pct": 11.6095,
+                "sector": "Communication Services",
+                "expected_return_12m": 0.4079,
+                "rationale": "Hyper-dominant ANZ employment marketplace trading at a distressed valuation with widening placement share and a deleveraging catalyst via the Employment Hero divestment.",
+                "entry_date": "2026-05-19",
+                "entry_price": 13.915
+            },
+            {
+                "ticker": "ANG.AX",
+                "allocation_pct": 8.7732,
+                "sector": "Industrials",
+                "expected_return_12m": 0.2943,
+                "rationale": "Deeply discounted mining-services turnaround under new CEO with discrete operational levers to fix Chile and North America; binary outcome but valuation asymmetry is extreme if execution stabilizes.",
+                "entry_date": "2026-05-19",
+                "entry_price": 0.185
+            },
+            {
+                "ticker": "VST",
+                "allocation_pct": 7.7771,
+                "sector": "Utilities",
+                "expected_return_12m": 0.2544,
+                "rationale": "Integrated power producer with irreplaceable nuclear scarcity, near-term hedge visibility, and data-center load growth; consensus defensive-growth hybrid with a de-risked 12-month earnings path.",
+                "entry_date": "2026-05-19",
+                "entry_price": 136.75
+            },
+            {
+                "ticker": "LLY",
+                "allocation_pct": 7.4235,
+                "sector": "Healthcare",
+                "expected_return_12m": 0.2402,
+                "rationale": "Unmatched metabolic volume growth and Medicare expansion support sustained earnings compounding; premium valuation demands execution but the vertical integration and pipeline optionality are best-in-class.",
+                "entry_date": "2026-05-19",
+                "entry_price": 988.09
+            },
+            {
+                "ticker": "RMD",
+                "allocation_pct": 7.115,
+                "sector": "Healthcare",
+                "expected_return_12m": 0.1551,
+                "rationale": "Dominant sleep-apnea franchise with near-monopoly U.S. flow-generator share, 35% operating margins, and relentless buyback-supported EPS growth; consensus defensive compounder with a valuation floor.",
+                "entry_date": "2026-05-19",
+                "entry_price": 204.15
+            },
+            {
+                "ticker": "NFLX",
+                "allocation_pct": 6.7635,
+                "sector": "Communication Services",
+                "expected_return_12m": 0.1135,
+                "rationale": "Dominant streaming platform transitioning to capital-light compounding with a ~7% free cash flow yield and aggressive buybacks; consensus holding where the post-drawdown valuation already prices in maturation risks.",
+                "entry_date": "2026-05-19",
+                "entry_price": 89.65
+            },
+            {
+                "ticker": "META",
+                "allocation_pct": 6.3349,
+                "sector": "Communication Services",
+                "expected_return_12m": 0.1307,
+                "rationale": "Core advertising engine growing 33% YoY with Family of Apps margins above 48% and a fortress balance sheet; consensus name where the forward multiple embeds excessive AI-capex governance dread.",
+                "entry_date": "2026-05-19",
+                "entry_price": 611.21
+            },
+            {
+                "ticker": "NOW",
+                "allocation_pct": 6.005,
+                "sector": "Technology",
+                "expected_return_12m": 0.1837,
+                "rationale": "Durable $27.7B RPO underwrites 20%+ subscription growth, and enterprise AI monetization is scaling toward $1.5B ACV; consensus name with re-rating potential if FY2027 margins recover as guided.",
+                "entry_date": "2026-05-19",
+                "entry_price": 103.42
+            },
+            {
+                "ticker": "MA",
+                "allocation_pct": 4.9539,
+                "sector": "Financial Services",
+                "expected_return_12m": 0.0418,
+                "rationale": "Defensive payments network with 61% operating margins and $12–15B annual buyback capacity; selected over ANET to improve Financial Services diversification and reduce hyperscaler-concentrated tech correlation.",
+                "entry_date": "2026-05-19",
+                "entry_price": 505.79
+            },
+            {
+                "ticker": "BIP",
+                "allocation_pct": 4.7337,
+                "sector": "Utilities",
+                "expected_return_12m": 0.0327,
+                "rationale": "Globally diversified infrastructure vehicle offers a rare combination of current income and capital appreciation at a discounted entry, with accelerating Data FFO and defensive legacy cash flows.",
+                "entry_date": "2026-05-19",
+                "entry_price": 38.61
+            },
+            {
+                "ticker": "HALO",
+                "allocation_pct": 4.1446,
+                "sector": "Healthcare",
+                "expected_return_12m": 0.1092,
+                "rationale": "Asset-light ENHANZE royalty platform generating ~60% EBITDA margins with contractually visible near-term cash; consensus tactical position funding share repurchases and 2027 convertible retirement.",
+                "entry_date": "2026-05-22",
+                "entry_price": 68.52
+            },
+            {
+                "ticker": "AVGO",
+                "allocation_pct": 3.8156,
+                "sector": "Technology",
+                "expected_return_12m": 0.0963,
+                "rationale": "Hybrid custom-silicon and infrastructure-software compounder with a $73B AI backlog and best-in-class margins; consensus pick despite VMware renewal cliffs and extreme customer concentration.",
+                "entry_date": "2026-05-19",
+                "entry_price": 420.71
+            },
+            {
+                "ticker": "DVN",
+                "allocation_pct": 3.0,
+                "sector": "Energy",
+                "expected_return_12m": -0.0459,
+                "rationale": "Imminent Coterra merger closure and pre-committed capital returns create a catalyst-rich E&P setup with a wide valuation discount and a pro forma breakeven below $50 WTI.",
+                "entry_date": "2026-05-19",
+                "entry_price": 49.68
+            },
+            {
+                "ticker": "ANET",
+                "allocation_pct": 3.0,
+                "sector": "Technology",
+                "expected_return_12m": 0.062,
+                "rationale": "Entrenched AI networking leader with software-like profitability and strong deferred revenue; supply constraints cap near-term growth but also deepen customer switching costs and backlog visibility.",
+                "entry_date": "2026-05-19",
+                "entry_price": 141.71
+            }
+        ],
+        "comparison_notes": "Track A and Track B agreed on 14 of 15 names, diverging only on ANET (Track A) versus MA (Track B). Track A’s quant optimizer included ANET at a near-minimum 3.5% weight based on its standalone expected-return rank, but the position adds a fifth Technology name with high pairwise correlation to NVDA, AVGO, and MSFT. Track B’s LLM construction explicitly rejected ANET in favor of MA to reduce AI-hardware concentration and introduce defensive payments exposure with uncorrelated cash-generation mechanics. I sided with Track B on this single disagreement: the portfolio already captures AI infrastructure through four Technology names, and adding ANET stacks hyperscaler-dependent hardware risk without sufficient incremental return. MA, while offering a lower probability-weighted expected return, improves sector balance—lifting Financial Services from one to two names—and lowers overall portfolio correlation to the AI capex cycle. All consensus names were retained, producing a barbell that blends high-conviction healthcare and communications growth with durable technology compounders and defensive financials/utilities.",
+        "notable_rejections": [
+            {
+                "ticker": "ANET",
+                "rationale": "Excluded due to acute hyperscaler concentration (~40% revenue from two customers), persistent supply constraints capping shipments and pressuring margins, and extreme macro-factor correlation with the already-represented NVDA/AVGO/MSFT cluster; the marginal diversification benefit is poor compared with adding a Financial Services compounder."
+            }
+        ],
+        "portfolio_thesis": "The consolidated portfolio blends high-conviction growth asymmetry in healthcare and communications with durable technology compounders and defensive non-correlated exposure in utilities, defense, and financials. By substituting MA for ANET, the portfolio avoids over-concentration in hyperscaler-dependent AI hardware and instead uses the payments network’s elite margins and capital returns as a correlation dampener. The resulting 15-name lineup preserves the highest expected-return consensus ideas while respecting sector diversification and factor-exposure limits, capturing idiosyncratic inflections alongside buyback-supported quality compounders.",
+        "key_risks": [
+            "A synchronized drawdown in AI-exposed Technology names could drag portfolio returns despite moderate individual position sizes.",
+            "Regulatory contagion—whether in healthcare reimbursement, financial interchange, or communications platform rules—may simultaneously impair multiple growth positions.",
+            "Elevated pairwise correlations among software and semiconductor names reduce effective diversification if macro liquidity tightens or AI capex cycles peak."
+        ]
+    },
+    "reconciled_date": "2026-05-22",
+    "reconciliation": {
+        "status": "reconciled",
+        "incumbent_file": "portfolio_20260521T064046Z.json",
+        "incumbent_date": "2026-05-21",
+        "candidate_consolidation_date": "2026-05-22",
+        "iterations_run": 16,
+        "max_iterations": 40,
+        "debates_run": 16,
+        "turnover_summary": {
+            "added": [
+                "HALO"
+            ],
+            "dropped": [
+                "NVDA"
+            ],
+            "kept": [
+                "ANET",
+                "ANG.AX",
+                "ARDX",
+                "AVGO",
+                "BIP",
+                "DVN",
+                "LLY",
+                "MA",
+                "META",
+                "NFLX",
+                "NOW",
+                "RMD",
+                "SEK.AX",
+                "VST"
+            ],
+            "total_abs_weight_change": 0.364288
+        },
+        "iterations": [
+            {
+                "iteration": 1,
+                "proposal_tickers": [
+                    "APP",
+                    "ARDX",
+                    "AVGO",
+                    "HALO",
+                    "ICE",
+                    "KTOS",
+                    "MA",
+                    "META",
+                    "MSFT",
+                    "NFLX",
+                    "NOW",
+                    "NVDA",
+                    "RDDT",
+                    "RMD",
+                    "VST"
+                ],
+                "change_debated": {
+                    "kind": "drop_incumbent",
+                    "ticker": "BIP",
+                    "impact_weight": 0.1158
+                },
+                "verdict": {
+                    "score": 30,
+                    "categorical": "Keep",
+                    "score_confidence": "Medium",
+                    "resist_change": true
+                },
+                "lock_applied": {
+                    "must_hold": "BIP"
+                }
+            },
+            {
+                "iteration": 2,
+                "proposal_tickers": [
+                    "APP",
+                    "ARDX",
+                    "AVGO",
+                    "BIP",
+                    "HALO",
+                    "ICE",
+                    "KTOS",
+                    "MA",
+                    "META",
+                    "NFLX",
+                    "NOW",
+                    "NVDA",
+                    "RDDT",
+                    "RMD",
+                    "VST"
+                ],
+                "change_debated": {
+                    "kind": "drop_incumbent",
+                    "ticker": "SEK.AX",
+                    "impact_weight": 0.0999
+                },
+                "verdict": {
+                    "score": 40,
+                    "categorical": "Keep",
+                    "score_confidence": "Medium",
+                    "resist_change": true
+                },
+                "lock_applied": {
+                    "must_hold": "SEK.AX"
+                }
+            },
+            {
+                "iteration": 3,
+                "proposal_tickers": [
+                    "APP",
+                    "ARDX",
+                    "AVGO",
+                    "BIP",
+                    "ICE",
+                    "KTOS",
+                    "MA",
+                    "META",
+                    "NFLX",
+                    "NOW",
+                    "NVDA",
+                    "RDDT",
+                    "RMD",
+                    "SEK.AX",
+                    "VST"
+                ],
+                "change_debated": {
+                    "kind": "drop_incumbent",
+                    "ticker": "DVN",
+                    "impact_weight": 0.0903
+                },
+                "verdict": {
+                    "score": 30,
+                    "categorical": "Keep",
+                    "score_confidence": "Medium",
+                    "resist_change": true
+                },
+                "lock_applied": {
+                    "must_hold": "DVN"
+                }
+            },
+            {
+                "iteration": 4,
+                "proposal_tickers": [
+                    "APP",
+                    "ARDX",
+                    "AVGO",
+                    "BIP",
+                    "DVN",
+                    "KTOS",
+                    "MA",
+                    "META",
+                    "NFLX",
+                    "NOW",
+                    "NVDA",
+                    "RDDT",
+                    "RMD",
+                    "SEK.AX",
+                    "VST"
+                ],
+                "change_debated": {
+                    "kind": "add_name",
+                    "ticker": "APP",
+                    "impact_weight": 0.0735
+                },
+                "verdict": {
+                    "score": 55,
+                    "categorical": "Keep",
+                    "score_confidence": "Medium",
+                    "resist_change": true
+                },
+                "lock_applied": {
+                    "must_drop": "APP"
+                }
+            },
+            {
+                "iteration": 5,
+                "proposal_tickers": [
+                    "ARDX",
+                    "AVGO",
+                    "BIP",
+                    "DVN",
+                    "ICE",
+                    "KTOS",
+                    "MA",
+                    "META",
+                    "NFLX",
+                    "NOW",
+                    "NVDA",
+                    "RDDT",
+                    "RMD",
+                    "SEK.AX",
+                    "VST"
+                ],
+                "change_debated": {
+                    "kind": "add_name",
+                    "ticker": "RDDT",
+                    "impact_weight": 0.0803
+                },
+                "verdict": {
+                    "score": 45,
+                    "categorical": "Keep",
+                    "score_confidence": "Medium",
+                    "resist_change": true
+                },
+                "lock_applied": {
+                    "must_drop": "RDDT"
+                }
+            },
+            {
+                "iteration": 6,
+                "proposal_tickers": [
+                    "ARDX",
+                    "AVGO",
+                    "BIP",
+                    "DVN",
+                    "HALO",
+                    "ICE",
+                    "KTOS",
+                    "MA",
+                    "META",
+                    "NFLX",
+                    "NOW",
+                    "NVDA",
+                    "RMD",
+                    "SEK.AX",
+                    "VST"
+                ],
+                "change_debated": {
+                    "kind": "add_name",
+                    "ticker": "KTOS",
+                    "impact_weight": 0.0718
+                },
+                "verdict": {
+                    "score": 50,
+                    "categorical": "Keep",
+                    "score_confidence": "Medium",
+                    "resist_change": true
+                },
+                "lock_applied": {
+                    "must_drop": "KTOS"
+                }
+            },
+            {
+                "iteration": 7,
+                "proposal_tickers": [
+                    "ARDX",
+                    "AVGO",
+                    "BIP",
+                    "DVN",
+                    "HALO",
+                    "ICE",
+                    "MA",
+                    "META",
+                    "MSFT",
+                    "NFLX",
+                    "NOW",
+                    "NVDA",
+                    "RMD",
+                    "SEK.AX",
+                    "VST"
+                ],
+                "change_debated": {
+                    "kind": "drop_incumbent",
+                    "ticker": "ANG.AX",
+                    "impact_weight": 0.0715
+                },
+                "verdict": {
+                    "score": 45,
+                    "categorical": "Keep",
+                    "score_confidence": "Medium",
+                    "resist_change": true
+                },
+                "lock_applied": {
+                    "must_hold": "ANG.AX"
+                }
+            },
+            {
+                "iteration": 8,
+                "proposal_tickers": [
+                    "ANG.AX",
+                    "ARDX",
+                    "AVGO",
+                    "BIP",
+                    "DVN",
+                    "HALO",
+                    "ICE",
+                    "MA",
+                    "META",
+                    "NFLX",
+                    "NOW",
+                    "NVDA",
+                    "RMD",
+                    "SEK.AX",
+                    "VST"
+                ],
+                "change_debated": {
+                    "kind": "drop_incumbent",
+                    "ticker": "LLY",
+                    "impact_weight": 0.058
+                },
+                "verdict": {
+                    "score": 40,
+                    "categorical": "Keep",
+                    "score_confidence": "High",
+                    "resist_change": true
+                },
+                "lock_applied": {
+                    "must_hold": "LLY"
+                }
+            },
+            {
+                "iteration": 9,
+                "proposal_tickers": [
+                    "ANG.AX",
+                    "ARDX",
+                    "AVGO",
+                    "BIP",
+                    "DVN",
+                    "ICE",
+                    "LLY",
+                    "MA",
+                    "META",
+                    "NFLX",
+                    "NOW",
+                    "NVDA",
+                    "RMD",
+                    "SEK.AX",
+                    "VST"
+                ],
+                "change_debated": {
+                    "kind": "add_name",
+                    "ticker": "ICE",
+                    "impact_weight": 0.0439
+                },
+                "verdict": {
+                    "score": 40,
+                    "categorical": "Keep",
+                    "score_confidence": "Medium",
+                    "resist_change": true
+                },
+                "lock_applied": {
+                    "must_drop": "ICE"
+                }
+            },
+            {
+                "iteration": 10,
+                "proposal_tickers": [
+                    "ANG.AX",
+                    "ARDX",
+                    "AVGO",
+                    "BIP",
+                    "DVN",
+                    "HALO",
+                    "LLY",
+                    "MA",
+                    "META",
+                    "NFLX",
+                    "NOW",
+                    "NVDA",
+                    "RMD",
+                    "SEK.AX",
+                    "VST"
+                ],
+                "change_debated": {
+                    "kind": "add_name",
+                    "ticker": "HALO",
+                    "impact_weight": 0.0389
+                },
+                "verdict": {
+                    "score": -45,
+                    "categorical": "Change",
+                    "score_confidence": "Medium",
+                    "resist_change": false
+                },
+                "lock_applied": {
+                    "must_hold": "HALO"
+                }
+            },
+            {
+                "iteration": 11,
+                "proposal_tickers": [
+                    "ANG.AX",
+                    "ARDX",
+                    "AVGO",
+                    "BIP",
+                    "DVN",
+                    "HALO",
+                    "LLY",
+                    "MA",
+                    "META",
+                    "NFLX",
+                    "NOW",
+                    "NVDA",
+                    "RMD",
+                    "SEK.AX",
+                    "VST"
+                ],
+                "change_debated": {
+                    "kind": "drop_incumbent",
+                    "ticker": "ANET",
+                    "impact_weight": 0.03
+                },
+                "verdict": {
+                    "score": 45,
+                    "categorical": "Keep",
+                    "score_confidence": "Medium",
+                    "resist_change": true
+                },
+                "lock_applied": {
+                    "must_hold": "ANET"
+                }
+            },
+            {
+                "iteration": 12,
+                "proposal_tickers": [
+                    "ANET",
+                    "ANG.AX",
+                    "ARDX",
+                    "AVGO",
+                    "BIP",
+                    "DVN",
+                    "HALO",
+                    "LLY",
+                    "META",
+                    "NFLX",
+                    "NOW",
+                    "NVDA",
+                    "RMD",
+                    "SEK.AX",
+                    "VST"
+                ],
+                "change_debated": {
+                    "kind": "drop_incumbent",
+                    "ticker": "MA",
+                    "impact_weight": 0.0547
+                },
+                "verdict": {
+                    "score": 60,
+                    "categorical": "Keep",
+                    "score_confidence": "High",
+                    "resist_change": true
+                },
+                "lock_applied": {
+                    "must_hold": "MA"
+                }
+            },
+            {
+                "iteration": 13,
+                "proposal_tickers": [
+                    "ANET",
+                    "ANG.AX",
+                    "ARDX",
+                    "BIP",
+                    "DVN",
+                    "HALO",
+                    "LLY",
+                    "MA",
+                    "META",
+                    "NFLX",
+                    "NOW",
+                    "NVDA",
+                    "RMD",
+                    "SEK.AX",
+                    "VST"
+                ],
+                "change_debated": {
+                    "kind": "drop_incumbent",
+                    "ticker": "AVGO",
+                    "impact_weight": 0.03
+                },
+                "verdict": {
+                    "score": 55,
+                    "categorical": "Keep",
+                    "score_confidence": "High",
+                    "resist_change": true
+                },
+                "lock_applied": {
+                    "must_hold": "AVGO"
+                }
+            },
+            {
+                "iteration": 14,
+                "proposal_tickers": [
+                    "ANET",
+                    "ANG.AX",
+                    "ARDX",
+                    "AVGO",
+                    "BIP",
+                    "DVN",
+                    "HALO",
+                    "LLY",
+                    "MA",
+                    "META",
+                    "NOW",
+                    "NVDA",
+                    "RMD",
+                    "SEK.AX",
+                    "VST"
+                ],
+                "change_debated": {
+                    "kind": "drop_incumbent",
+                    "ticker": "NFLX",
+                    "impact_weight": 0.0859
+                },
+                "verdict": {
+                    "score": 70,
+                    "categorical": "Keep",
+                    "score_confidence": "High",
+                    "resist_change": true
+                },
+                "lock_applied": {
+                    "must_hold": "NFLX"
+                }
+            },
+            {
+                "iteration": 15,
+                "proposal_tickers": [
+                    "ANET",
+                    "ANG.AX",
+                    "ARDX",
+                    "AVGO",
+                    "BIP",
+                    "DVN",
+                    "HALO",
+                    "LLY",
+                    "MA",
+                    "NFLX",
+                    "NOW",
+                    "NVDA",
+                    "RMD",
+                    "SEK.AX",
+                    "VST"
+                ],
+                "change_debated": {
+                    "kind": "drop_incumbent",
+                    "ticker": "META",
+                    "impact_weight": 0.0633
+                },
+                "verdict": {
+                    "score": 45,
+                    "categorical": "Keep",
+                    "score_confidence": "Medium",
+                    "resist_change": true
+                },
+                "lock_applied": {
+                    "must_hold": "META"
+                }
+            },
+            {
+                "iteration": 16,
+                "proposal_tickers": [
+                    "ANET",
+                    "ANG.AX",
+                    "ARDX",
+                    "AVGO",
+                    "BIP",
+                    "DVN",
+                    "HALO",
+                    "LLY",
+                    "MA",
+                    "META",
+                    "NFLX",
+                    "NOW",
+                    "RMD",
+                    "SEK.AX",
+                    "VST"
+                ],
+                "change_debated": {
+                    "kind": "drop_incumbent",
+                    "ticker": "NVDA",
+                    "impact_weight": 0.03
+                },
+                "verdict": {
+                    "score": -40,
+                    "categorical": "Change",
+                    "score_confidence": "Medium",
+                    "resist_change": false
+                },
+                "lock_applied": {
+                    "must_drop": "NVDA"
+                }
+            }
+        ]
+    }
+}

@@ -1,0 +1,194 @@
+{
+    "ticker": "SLM",
+    "company_name": "Sallie Mae",
+    "universe_added_date": "2026-05-18",
+    "financial_raw_metrics": {
+        "sector": "Financial Services",
+        "industry": "Credit Services",
+        "market_cap_usd": 4139616256,
+        "profitability": {
+            "gross_margin_ttm": 1.0,
+            "operating_margin_ttm": 0.70058995,
+            "net_margin_ttm": 0.44929,
+            "operating_margin_trend_3yr": null
+        },
+        "returns_on_capital": {
+            "roe_ttm": 0.3093,
+            "roa_ttm": 0.02567,
+            "roic_ttm": null
+        },
+        "cash_flow": {
+            "fcf_margin_ttm": null,
+            "fcf_to_net_income_ttm": null,
+            "ocf_cagr_3yr": null
+        },
+        "balance_sheet": {
+            "debt_to_equity": 2.53081,
+            "net_debt_to_ebitda": null,
+            "current_ratio": 1.301,
+            "interest_coverage": null,
+            "total_debt_usd": 6169181184,
+            "total_cash_usd": 5203270144
+        },
+        "growth": {
+            "revenue_growth_1yr": 0.025,
+            "revenue_cagr_3yr": 0.028601303113311882,
+            "eps_growth_1yr": 0.1,
+            "eps_cagr_3yr": 0.16670328888171682,
+            "fcf_cagr_3yr": null
+        },
+        "valuation": {
+            "pe_trailing": 6.097223,
+            "pe_forward": 6.5110736,
+            "ps_ratio": 2.485611,
+            "pb_ratio": 1.9878646,
+            "ev_ebitda": null,
+            "peg_ratio": 0.51,
+            "fcf_yield": null
+        },
+        "data_quality_flags": [
+            "SLM: eps_cagr_3yr approximated by net income CAGR (share count changes not adjusted)"
+        ]
+    },
+    "financial_raw_metrics_date": "2026-05-21",
+    "financial_score": 63.316129421502474,
+    "financial_score_date": "2026-05-21",
+    "financial_subscores": {
+        "profitability": 80.88908834966647,
+        "returns_on_capital": 43.04950016449516,
+        "cash_flow_quality": null,
+        "balance_sheet": 44.44097222222222,
+        "growth": 52.4277376443793,
+        "valuation": 96.67123883636363
+    },
+    "financial_drivers": {
+        "strongest": [
+            "pe_trailing (valuation): score=98, value=6.10",
+            "pe_forward (valuation): score=97, value=6.51",
+            "peg_ratio (valuation): score=95, value=51.0%"
+        ],
+        "weakest": [
+            "debt_to_equity (balance_sheet): score=37, value=2.53",
+            "revenue_cagr_3yr (growth): score=37, value=2.9%",
+            "revenue_growth_1yr (growth): score=38, value=2.5%"
+        ]
+    },
+    "professional_raw_metrics": {
+        "sector": null,
+        "industry": null,
+        "market_cap_usd": null,
+        "current_price": null,
+        "analyst": {
+            "recommendation_mean": null,
+            "recommendation_key": null,
+            "target_mean_price": null,
+            "target_median_price": null,
+            "target_high_price": null,
+            "target_low_price": null,
+            "upside_to_target": null,
+            "target_dispersion": null,
+            "num_analysts": null
+        },
+        "rating_momentum": {
+            "upgrades_12m": 0,
+            "downgrades_12m": 0,
+            "total_actions_12m": 0
+        },
+        "institutional": {
+            "held_pct_institutions": null,
+            "held_pct_insiders": null
+        },
+        "short_interest": {
+            "short_pct_of_float": null,
+            "short_ratio": null,
+            "short_change_pct": null
+        },
+        "data_quality_flags": [
+            "SLM: failed to fetch .info (Too Many Requests. Rate limited. Try after a while.)",
+            "SLM: sector classification unavailable",
+            "SLM: upgrades/downgrades fetch failed (Too Many Requests. Rate limited. Try after a while.)"
+        ]
+    },
+    "professional_raw_metrics_date": "2026-05-21",
+    "professional_score": null,
+    "professional_score_date": "2026-05-21",
+    "professional_subscores": {
+        "analyst_consensus": null,
+        "rating_momentum": 50.0,
+        "institutional_positioning": null,
+        "short_interest": null
+    },
+    "professional_drivers": {
+        "strongest": [],
+        "weakest": []
+    },
+    "news_sentiment_raw_metrics": {
+        "sector": "Financial Services",
+        "industry": "Credit Services",
+        "market_cap_usd": 4139616256,
+        "current_price": 21.95,
+        "earnings": {
+            "beat_count_4q": null,
+            "miss_count_4q": null,
+            "total_quarters_4q": null,
+            "avg_surprise_magnitude_4q": null,
+            "eps_estimate_revision_90d": null,
+            "trailing_eps": 3.6,
+            "forward_eps": 3.37118
+        },
+        "price_momentum": {
+            "return_1m": -0.03685830986320991,
+            "return_3m": -0.07547035390601617,
+            "return_6m": -0.18291216739416633
+        },
+        "insider_activity": {
+            "insider_purchases_count_90d": 0,
+            "insider_sales_count_90d": 0,
+            "insider_net_value_90d_usd": null
+        },
+        "data_quality_flags": [
+            "SLM: earnings_dates fetch failed (['Earnings Date'])"
+        ]
+    },
+    "news_sentiment_raw_metrics_date": "2026-05-21",
+    "news_sentiment_score": 37.91177018993615,
+    "news_sentiment_score_date": "2026-05-21",
+    "news_sentiment_subscores": {
+        "earnings_surprise_revisions": null,
+        "price_momentum": 31.86765528490422,
+        "insider_activity": 50.0
+    },
+    "news_sentiment_drivers": {
+        "strongest": [
+            "insider_activity_summary (insider_activity): score=50, value=no activity in 90d",
+            "return_1m (price_momentum): score=44, value=-3.7%",
+            "return_3m (price_momentum): score=37, value=-7.5%"
+        ],
+        "weakest": [
+            "return_6m (price_momentum): score=20, value=-18.3%",
+            "return_3m (price_momentum): score=37, value=-7.5%",
+            "return_1m (price_momentum): score=44, value=-3.7%"
+        ]
+    },
+    "composite_score": 57.05427709606718,
+    "composite_score_date": "2026-05-21",
+    "composite_rank": 322,
+    "composite_metadata": {
+        "scores_used": [
+            "financial",
+            "news_sentiment"
+        ],
+        "scores_imputed": [
+            "professional"
+        ],
+        "imputed_values": {
+            "professional": 59.379527824429054
+        },
+        "imputation_r_squared": 0.04516719672877956,
+        "weights_applied": {
+            "financial": 50,
+            "professional": 30,
+            "news_sentiment": 20
+        }
+    }
+}

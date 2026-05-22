@@ -1,0 +1,190 @@
+{
+    "ticker": "WSO",
+    "company_name": "Watsco",
+    "universe_added_date": "2026-05-18",
+    "financial_raw_metrics": {
+        "sector": "Industrials",
+        "industry": "Industrial Distribution",
+        "market_cap_usd": 15383184384,
+        "profitability": {
+            "gross_margin_ttm": 0.28012,
+            "operating_margin_ttm": 0.06846,
+            "net_margin_ttm": 0.0685,
+            "operating_margin_trend_3yr": -0.015530113513125665
+        },
+        "returns_on_capital": {
+            "roe_ttm": 0.18595,
+            "roa_ttm": 0.095,
+            "roic_ttm": null
+        },
+        "cash_flow": {
+            "fcf_margin_ttm": 0.07232435493158593,
+            "fcf_to_net_income_ttm": 1.1327632970419579,
+            "ocf_cagr_3yr": -0.001372014414834588
+        },
+        "balance_sheet": {
+            "debt_to_equity": 0.15124,
+            "net_debt_to_ebitda": -0.14465646793598982,
+            "current_ratio": 3.342,
+            "interest_coverage": null,
+            "total_debt_usd": 486227008,
+            "total_cash_usd": 592678976
+        },
+        "growth": {
+            "revenue_growth_1yr": 0.001,
+            "revenue_cagr_3yr": -0.0016088716694803162,
+            "eps_growth_1yr": -0.031,
+            "eps_cagr_3yr": -0.061461690804641145,
+            "fcf_cagr_3yr": -0.0007768928297371414
+        },
+        "valuation": {
+            "pe_trailing": 31.064037,
+            "pe_forward": 27.237408,
+            "ps_ratio": 2.124393,
+            "pb_ratio": 5.5693593,
+            "ev_ebitda": 21.828,
+            "peg_ratio": 1.5276,
+            "fcf_yield": 0.03404471499052663
+        },
+        "data_quality_flags": [
+            "WSO: eps_cagr_3yr approximated by net income CAGR (share count changes not adjusted)"
+        ]
+    },
+    "financial_raw_metrics_date": "2026-05-21",
+    "financial_score": 51.817638981014724,
+    "financial_score_date": "2026-05-21",
+    "financial_subscores": {
+        "profitability": 46.905134592553146,
+        "returns_on_capital": 47.50417217846197,
+        "cash_flow_quality": 59.125891788693764,
+        "balance_sheet": 97.56850980392156,
+        "growth": 20.86638757312041,
+        "valuation": 42.01106167967559
+    },
+    "financial_drivers": {
+        "strongest": [
+            "net_debt_to_ebitda (balance_sheet): score=100, value=-14.5%",
+            "current_ratio (balance_sheet): score=98, value=3.34",
+            "fcf_to_net_income_ttm (cash_flow_quality): score=95, value=1.13"
+        ],
+        "weakest": [
+            "eps_cagr_3yr (growth): score=14, value=-6.1%",
+            "revenue_cagr_3yr (growth): score=20, value=-0.2%",
+            "fcf_cagr_3yr (growth): score=25, value=-0.1%"
+        ]
+    },
+    "professional_raw_metrics": {
+        "sector": null,
+        "industry": null,
+        "market_cap_usd": null,
+        "current_price": null,
+        "analyst": {
+            "recommendation_mean": null,
+            "recommendation_key": null,
+            "target_mean_price": null,
+            "target_median_price": null,
+            "target_high_price": null,
+            "target_low_price": null,
+            "upside_to_target": null,
+            "target_dispersion": null,
+            "num_analysts": null
+        },
+        "rating_momentum": {
+            "upgrades_12m": 0,
+            "downgrades_12m": 0,
+            "total_actions_12m": 0
+        },
+        "institutional": {
+            "held_pct_institutions": null,
+            "held_pct_insiders": null
+        },
+        "short_interest": {
+            "short_pct_of_float": null,
+            "short_ratio": null,
+            "short_change_pct": null
+        },
+        "data_quality_flags": [
+            "WSO: failed to fetch .info (Too Many Requests. Rate limited. Try after a while.)",
+            "WSO: sector classification unavailable",
+            "WSO: upgrades/downgrades fetch failed (Too Many Requests. Rate limited. Try after a while.)"
+        ]
+    },
+    "professional_raw_metrics_date": "2026-05-21",
+    "professional_score": null,
+    "professional_score_date": "2026-05-21",
+    "professional_subscores": {
+        "analyst_consensus": null,
+        "rating_momentum": 50.0,
+        "institutional_positioning": null,
+        "short_interest": null
+    },
+    "professional_drivers": {
+        "strongest": [],
+        "weakest": []
+    },
+    "news_sentiment_raw_metrics": {
+        "sector": "Industrials",
+        "industry": "Industrial Distribution",
+        "market_cap_usd": 15383184384,
+        "current_price": 378.36,
+        "earnings": {
+            "beat_count_4q": null,
+            "miss_count_4q": null,
+            "total_quarters_4q": null,
+            "avg_surprise_magnitude_4q": null,
+            "eps_estimate_revision_90d": null,
+            "trailing_eps": 12.18,
+            "forward_eps": 13.89119
+        },
+        "price_momentum": {
+            "return_1m": -0.14087192269822513,
+            "return_3m": -0.090466423788886,
+            "return_6m": 0.1446513997861575
+        },
+        "insider_activity": {
+            "insider_purchases_count_90d": null,
+            "insider_sales_count_90d": null,
+            "insider_net_value_90d_usd": null
+        },
+        "data_quality_flags": [
+            "WSO: earnings_dates fetch failed (['Earnings Date'])"
+        ]
+    },
+    "news_sentiment_raw_metrics_date": "2026-05-21",
+    "news_sentiment_score": null,
+    "news_sentiment_score_date": "2026-05-21",
+    "news_sentiment_subscores": {
+        "earnings_surprise_revisions": null,
+        "price_momentum": 48.496555152299436,
+        "insider_activity": null
+    },
+    "news_sentiment_drivers": {
+        "strongest": [
+            "return_6m (price_momentum): score=74, value=14.5%",
+            "return_3m (price_momentum): score=35, value=-9.0%",
+            "return_1m (price_momentum): score=27, value=-14.1%"
+        ],
+        "weakest": [
+            "return_1m (price_momentum): score=27, value=-14.1%",
+            "return_3m (price_momentum): score=35, value=-9.0%",
+            "return_6m (price_momentum): score=74, value=14.5%"
+        ]
+    },
+    "composite_score": null,
+    "composite_score_date": "2026-05-21",
+    "composite_rank": null,
+    "composite_metadata": {
+        "scores_used": [
+            "financial"
+        ],
+        "scores_imputed": [],
+        "imputed_values": {},
+        "imputation_r_squared": null,
+        "weights_applied": {
+            "financial": 50,
+            "professional": 30,
+            "news_sentiment": 20
+        },
+        "skip_reason": "Only 1 of 3 scores populated; need at least 2"
+    }
+}

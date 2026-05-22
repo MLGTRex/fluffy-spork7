@@ -1,0 +1,200 @@
+{
+    "ticker": "CNA",
+    "company_name": "CNA Financial",
+    "universe_added_date": "2026-05-18",
+    "financial_raw_metrics": {
+        "sector": "Financial Services",
+        "industry": "Insurance - Property & Casualty",
+        "market_cap_usd": 11992658944,
+        "profitability": {
+            "gross_margin_ttm": 0.30574,
+            "operating_margin_ttm": 0.07517,
+            "net_margin_ttm": 0.07914,
+            "operating_margin_trend_3yr": null
+        },
+        "returns_on_capital": {
+            "roe_ttm": 0.11497,
+            "roa_ttm": 0.0154,
+            "roic_ttm": null
+        },
+        "cash_flow": {
+            "fcf_margin_ttm": 0.11432619392411102,
+            "fcf_to_net_income_ttm": 1.4446501691706908,
+            "ocf_cagr_3yr": -0.0016012837642527256
+        },
+        "balance_sheet": {
+            "debt_to_equity": 0.27374,
+            "net_debt_to_ebitda": 0.5443617797142793,
+            "current_ratio": 0.356,
+            "interest_coverage": 13.0,
+            "total_debt_usd": 2972000000,
+            "total_cash_usd": 2020999936
+        },
+        "growth": {
+            "revenue_growth_1yr": 0.1,
+            "revenue_cagr_3yr": 0.0735632060518876,
+            "eps_growth_1yr": -0.222,
+            "eps_cagr_3yr": 0.23286491356949757,
+            "fcf_cagr_3yr": -0.006298086015765536
+        },
+        "valuation": {
+            "pe_trailing": 9.917227,
+            "pe_forward": 9.235416,
+            "ps_ratio": 0.78112805,
+            "pb_ratio": 1.1045773,
+            "ev_ebitda": 7.425,
+            "peg_ratio": 0.92,
+            "fcf_yield": 0.1463603739751277
+        },
+        "data_quality_flags": [
+            "CNA: eps_cagr_3yr approximated by net income CAGR (share count changes not adjusted)"
+        ]
+    },
+    "financial_raw_metrics_date": "2026-05-21",
+    "financial_score": 53.94933803680832,
+    "financial_score_date": "2026-05-21",
+    "financial_subscores": {
+        "profitability": 36.54196509408055,
+        "returns_on_capital": 26.806080983762186,
+        "cash_flow_quality": 62.189677091536645,
+        "balance_sheet": 74.63738717485718,
+        "growth": 54.79488462895787,
+        "valuation": 83.5762432462468
+    },
+    "financial_drivers": {
+        "strongest": [
+            "fcf_yield (valuation): score=100, value=14.6%",
+            "interest_coverage (balance_sheet): score=96, value=13.00",
+            "net_debt_to_ebitda (balance_sheet): score=93, value=54.4%"
+        ],
+        "weakest": [
+            "current_ratio (balance_sheet): score=0, value=35.6%",
+            "eps_growth_1yr (growth): score=8, value=-22.2%",
+            "roa_ttm (returns_on_capital): score=23, value=1.5%"
+        ]
+    },
+    "professional_raw_metrics": {
+        "sector": "Financial Services",
+        "industry": "Insurance - Property & Casualty",
+        "market_cap_usd": 11992658944,
+        "current_price": 44.33,
+        "analyst": {
+            "recommendation_mean": null,
+            "recommendation_key": "none",
+            "target_mean_price": 42.0,
+            "target_median_price": 42.0,
+            "target_high_price": 42.0,
+            "target_low_price": 42.0,
+            "upside_to_target": -0.052560342882923494,
+            "target_dispersion": 0.0,
+            "num_analysts": 1
+        },
+        "rating_momentum": {
+            "upgrades_12m": 0,
+            "downgrades_12m": 0,
+            "total_actions_12m": 0
+        },
+        "institutional": {
+            "held_pct_institutions": 0.010013399999999999,
+            "held_pct_insiders": 0.00491
+        },
+        "short_interest": {
+            "short_pct_of_float": 0.1073,
+            "short_ratio": 6.95,
+            "short_change_pct": 0.07357420275390514
+        },
+        "data_quality_flags": []
+    },
+    "professional_raw_metrics_date": "2026-05-21",
+    "professional_score": 23.891542964950187,
+    "professional_score_date": "2026-05-21",
+    "professional_subscores": {
+        "analyst_consensus": 8.301939995488388,
+        "rating_momentum": 50.0,
+        "institutional_positioning": 19.973,
+        "short_interest": 23.284093110195005
+    },
+    "professional_drivers": {
+        "strongest": [
+            "held_pct_insiders (institutional_positioning): score=55, value=0.5%",
+            "short_change_pct (short_interest): score=41, value=7.4%",
+            "short_ratio (short_interest): score=38, value=6.95"
+        ],
+        "weakest": [
+            "held_pct_institutions (institutional_positioning): score=5, value=1.0%",
+            "short_pct_of_float (short_interest): score=7, value=10.7%",
+            "upside_to_target (analyst_consensus): score=12, value=-5.3%"
+        ]
+    },
+    "news_sentiment_raw_metrics": {
+        "sector": null,
+        "industry": null,
+        "market_cap_usd": null,
+        "current_price": null,
+        "earnings": {
+            "beat_count_4q": 2,
+            "miss_count_4q": 2,
+            "total_quarters_4q": 4,
+            "avg_surprise_magnitude_4q": 0.017279347397907763,
+            "eps_estimate_revision_90d": null,
+            "trailing_eps": null,
+            "forward_eps": null
+        },
+        "price_momentum": {
+            "return_1m": null,
+            "return_3m": null,
+            "return_6m": null
+        },
+        "insider_activity": {
+            "insider_purchases_count_90d": null,
+            "insider_sales_count_90d": null,
+            "insider_net_value_90d_usd": null
+        },
+        "data_quality_flags": [
+            "CNA: failed to fetch .info (Too Many Requests. Rate limited. Try after a while.)",
+            "CNA: sector classification unavailable",
+            "CNA: eps_revisions fetch failed (Too Many Requests. Rate limited. Try after a while.)",
+            "CNA: price momentum fetch failed (Too Many Requests. Rate limited. Try after a while.)",
+            "CNA: insider_transactions fetch failed (Too Many Requests. Rate limited. Try after a while.)"
+        ]
+    },
+    "news_sentiment_raw_metrics_date": "2026-05-21",
+    "news_sentiment_score": null,
+    "news_sentiment_score_date": "2026-05-21",
+    "news_sentiment_subscores": {
+        "earnings_surprise_revisions": 53.98754170720948,
+        "price_momentum": null,
+        "insider_activity": null
+    },
+    "news_sentiment_drivers": {
+        "strongest": [
+            "avg_surprise_magnitude_4q (earnings_surprise_revisions): score=59, value=1.7%",
+            "beat_rate_4q (earnings_surprise_revisions): score=50, value=50.0%"
+        ],
+        "weakest": [
+            "beat_rate_4q (earnings_surprise_revisions): score=50, value=50.0%",
+            "avg_surprise_magnitude_4q (earnings_surprise_revisions): score=59, value=1.7%"
+        ]
+    },
+    "composite_score": 46.53487310569898,
+    "composite_score_date": "2026-05-21",
+    "composite_rank": 828,
+    "composite_metadata": {
+        "scores_used": [
+            "financial",
+            "professional"
+        ],
+        "scores_imputed": [
+            "news_sentiment"
+        ],
+        "imputed_values": {
+            "news_sentiment": 61.963705989048826
+        },
+        "imputation_r_squared": 0.05693184104207816,
+        "weights_applied": {
+            "financial": 50,
+            "professional": 30,
+            "news_sentiment": 20
+        }
+    }
+}

@@ -1,0 +1,178 @@
+{
+    "ticker": "BILL",
+    "company_name": "Bill.com",
+    "universe_added_date": "2026-05-18",
+    "financial_raw_metrics": {
+        "sector": "Technology",
+        "industry": "Software - Application",
+        "market_cap_usd": 3630300928,
+        "profitability": {
+            "gross_margin_ttm": 0.83681,
+            "operating_margin_ttm": 0.01143,
+            "net_margin_ttm": 0.0001,
+            "operating_margin_trend_3yr": 0.4384076578845707
+        },
+        "returns_on_capital": {
+            "roe_ttm": 4.0000003e-05,
+            "roa_ttm": -0.00299,
+            "roic_ttm": null
+        },
+        "cash_flow": {
+            "fcf_margin_ttm": 0.10473402048530525,
+            "fcf_to_net_income_ttm": 1028.271509202454,
+            "ocf_cagr_3yr": null
+        },
+        "balance_sheet": {
+            "debt_to_equity": 0.49591999999999997,
+            "net_debt_to_ebitda": -8.594137032165492,
+            "current_ratio": 1.661,
+            "interest_coverage": 3.1997974537037037,
+            "total_debt_usd": 1885853952,
+            "total_cash_usd": 2173345024
+        },
+        "growth": {
+            "revenue_growth_1yr": 0.135,
+            "revenue_cagr_3yr": 0.3158401173697225,
+            "eps_growth_1yr": null,
+            "eps_cagr_3yr": null,
+            "fcf_cagr_3yr": null
+        },
+        "valuation": {
+            "pe_trailing": "Infinity",
+            "pe_forward": 10.996935,
+            "ps_ratio": 2.2684803,
+            "pb_ratio": 0.9545133,
+            "ev_ebitda": 99.929,
+            "peg_ratio": 0.3804,
+            "fcf_yield": 0.04616924583503839
+        },
+        "data_quality_flags": [
+            "BILL: eps_cagr_3yr approximated by net income CAGR (share count changes not adjusted)"
+        ]
+    },
+    "financial_raw_metrics_date": "2026-05-21",
+    "financial_score": null,
+    "financial_score_date": "",
+    "financial_subscores": null,
+    "financial_drivers": null,
+    "professional_raw_metrics": {
+        "sector": "Technology",
+        "industry": "Software - Application",
+        "market_cap_usd": 3630300928,
+        "current_price": 36.45,
+        "analyst": {
+            "recommendation_mean": 1.91304,
+            "recommendation_key": "buy",
+            "target_mean_price": 55.09524,
+            "target_median_price": 55.0,
+            "target_high_price": 77.0,
+            "target_low_price": 42.0,
+            "upside_to_target": 0.5115292181069957,
+            "target_dispersion": 0.6352635908292622,
+            "num_analysts": 21
+        },
+        "rating_momentum": {
+            "upgrades_12m": 2,
+            "downgrades_12m": 2,
+            "total_actions_12m": 46
+        },
+        "institutional": {
+            "held_pct_institutions": 0.010476000000000001,
+            "held_pct_insiders": 0.12283
+        },
+        "short_interest": {
+            "short_pct_of_float": 0.1729,
+            "short_ratio": 8.11,
+            "short_change_pct": 0.02673230140039332
+        },
+        "data_quality_flags": []
+    },
+    "professional_raw_metrics_date": "2026-05-21",
+    "professional_score": 57.57475056424495,
+    "professional_score_date": "2026-05-21",
+    "professional_subscores": {
+        "analyst_consensus": 86.56528,
+        "rating_momentum": 52.5,
+        "institutional_positioning": 40.757114067350386,
+        "short_interest": 26.417493649382415
+    },
+    "professional_drivers": {
+        "strongest": [
+            "upside_to_target (analyst_consensus): score=100, value=51.2%",
+            "held_pct_insiders (institutional_positioning): score=92, value=12.3%",
+            "recommendation_mean (analyst_consensus): score=78, value=1.91"
+        ],
+        "weakest": [
+            "short_pct_of_float (short_interest): score=15, value=17.3%",
+            "held_pct_institutions (institutional_positioning): score=19, value=1.0%",
+            "short_ratio (short_interest): score=31, value=8.11"
+        ]
+    },
+    "news_sentiment_raw_metrics": {
+        "sector": null,
+        "industry": null,
+        "market_cap_usd": null,
+        "current_price": null,
+        "earnings": {
+            "beat_count_4q": 4,
+            "miss_count_4q": 0,
+            "total_quarters_4q": 4,
+            "avg_surprise_magnitude_4q": 0.65790462526474,
+            "eps_estimate_revision_90d": null,
+            "trailing_eps": null,
+            "forward_eps": null
+        },
+        "price_momentum": {
+            "return_1m": null,
+            "return_3m": null,
+            "return_6m": null
+        },
+        "insider_activity": {
+            "insider_purchases_count_90d": null,
+            "insider_sales_count_90d": null,
+            "insider_net_value_90d_usd": null
+        },
+        "data_quality_flags": [
+            "BILL: failed to fetch .info (Too Many Requests. Rate limited. Try after a while.)",
+            "BILL: sector classification unavailable",
+            "BILL: eps_revisions fetch failed (Too Many Requests. Rate limited. Try after a while.)",
+            "BILL: price momentum fetch failed (Too Many Requests. Rate limited. Try after a while.)",
+            "BILL: insider_transactions fetch failed (Too Many Requests. Rate limited. Try after a while.)"
+        ]
+    },
+    "news_sentiment_raw_metrics_date": "2026-05-21",
+    "news_sentiment_score": null,
+    "news_sentiment_score_date": "2026-05-21",
+    "news_sentiment_subscores": {
+        "earnings_surprise_revisions": 100.00000000000001,
+        "price_momentum": null,
+        "insider_activity": null
+    },
+    "news_sentiment_drivers": {
+        "strongest": [
+            "avg_surprise_magnitude_4q (earnings_surprise_revisions): score=100, value=65.8%",
+            "beat_rate_4q (earnings_surprise_revisions): score=100, value=1.00"
+        ],
+        "weakest": [
+            "beat_rate_4q (earnings_surprise_revisions): score=100, value=1.00",
+            "avg_surprise_magnitude_4q (earnings_surprise_revisions): score=100, value=65.8%"
+        ]
+    },
+    "composite_score": null,
+    "composite_score_date": "2026-05-21",
+    "composite_rank": null,
+    "composite_metadata": {
+        "scores_used": [
+            "professional"
+        ],
+        "scores_imputed": [],
+        "imputed_values": {},
+        "imputation_r_squared": null,
+        "weights_applied": {
+            "financial": 50,
+            "professional": 30,
+            "news_sentiment": 20
+        },
+        "skip_reason": "Only 1 of 3 scores populated; need at least 2"
+    }
+}

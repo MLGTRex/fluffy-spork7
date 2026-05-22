@@ -1,0 +1,118 @@
+{
+    "track": "B",
+    "method": "Pure LLM (Kimi K2.6)",
+    "analysis_date": "2026-05-22",
+    "model": "kimi-k2.6",
+    "n_input_candidates": 25,
+    "constraints": {
+        "portfolio_size": 15,
+        "min_position_weight": 3.0,
+        "max_position_weight": 20.0,
+        "sector_cap": 35.0,
+        "base_return_filter": "base_return_12m > 0"
+    },
+    "constraint_violations": [],
+    "portfolio": {
+        "positions": [
+            {
+                "ticker": "ARDX",
+                "allocation_pct": 10.0,
+                "rationale": "Highest probability-weighted expected return in the universe at roughly +53%, driven by fast-growing IBSRELA franchise revenue; sized larger as a call option on commercial execution while accepting biotech volatility."
+            },
+            {
+                "ticker": "RMD",
+                "allocation_pct": 6.0,
+                "rationale": "Dominant sleep-apnea franchise with near-monopoly U.S. flow-generator share and best-in-class margins; temporary reimbursement and GLP-1 overhangs create a discounted entry point."
+            },
+            {
+                "ticker": "HALO",
+                "allocation_pct": 4.0,
+                "rationale": "Asset-light ENHANZE royalty platform generates high-margin, contractually visible cash; treated as a tactical cash-extraction trade with a hard duration ceiling and buyback support."
+            },
+            {
+                "ticker": "APP",
+                "allocation_pct": 8.0,
+                "rationale": "AI-powered mobile advertising platform with unmatched 84% EBITDA margins and a self-serve product launch that could re-rate the stock as horizontal AI infrastructure."
+            },
+            {
+                "ticker": "RDDT",
+                "allocation_pct": 9.0,
+                "rationale": "Early monetization inflection with rare capital-light unit economics and fortress net cash; search-disintermediation risk is contained by strong logged-in advertiser momentum."
+            },
+            {
+                "ticker": "META",
+                "allocation_pct": 6.0,
+                "rationale": "Core advertising engine remains exceptionally profitable and self-funding at a discounted forward multiple; governance opacity and unbounded AI capex keep sizing moderate."
+            },
+            {
+                "ticker": "NFLX",
+                "allocation_pct": 5.5,
+                "rationale": "Transition from hyper-growth to capital-light compounder is mispriced after a sharp drawdown; free cash flow yield and mechanical buybacks support a valuation floor."
+            },
+            {
+                "ticker": "NVDA",
+                "allocation_pct": 7.0,
+                "rationale": "Indispensable AI infrastructure backbone with supply-constrained demand and contracted visibility through 2026; positioned for base-case earnings compounding amid cycle skepticism."
+            },
+            {
+                "ticker": "NOW",
+                "allocation_pct": 7.5,
+                "rationale": "Durable $27.7 billion backlog underwrites 20%+ subscription growth while the market overstates Armis-driven margin impairment; re-rating potential on FY2027 leverage recovery."
+            },
+            {
+                "ticker": "AVGO",
+                "allocation_pct": 5.5,
+                "rationale": "Custom silicon backlog and infrastructure software create a hybrid compounder at a forward earnings discount to peers; VMware renewal cliffs and antitrust risk cap the weight."
+            },
+            {
+                "ticker": "MSFT",
+                "allocation_pct": 4.5,
+                "rationale": "Unmatched $627 billion commercial RPO provides revenue visibility, but structural capex intensity and high correlation to the AI hardware cluster warrant a smaller position."
+            },
+            {
+                "ticker": "ICE",
+                "allocation_pct": 8.0,
+                "rationale": "Best-in-class exchange and data franchise trading at a discount to peers; recurring revenue floor and aggressive buybacks provide defensive ballast."
+            },
+            {
+                "ticker": "MA",
+                "allocation_pct": 3.5,
+                "rationale": "Defensive payments network with elite margins and strong capital returns, but core yield compression and regulatory overhang relegate it to a minimum-weight anchor."
+            },
+            {
+                "ticker": "KTOS",
+                "allocation_pct": 7.5,
+                "rationale": "Non-correlated defense exposure with record backlog and prime-contractor momentum; high-beta execution risk is offset by secular budget tailwinds in hypersonics and space."
+            },
+            {
+                "ticker": "VST",
+                "allocation_pct": 8.0,
+                "rationale": "Integrated power producer with irreplaceable nuclear assets and near-term hedge visibility; scarcity pricing and data-center load growth drive asymmetric upside."
+            }
+        ],
+        "notable_rejections": [
+            {
+                "ticker": "ANET",
+                "rationale": "Excluded due to acute hyperscaler concentration, persistent supply constraints, and high return correlation to the AVGO/NVDA cluster where we preferred purer AI plays."
+            },
+            {
+                "ticker": "BIP",
+                "rationale": "Premium utility valuation and deeply negative free cash flow yield offered poor risk/reward versus VST within the same infrastructure sector."
+            },
+            {
+                "ticker": "CI",
+                "rationale": "Flat expected return and secular PBM margin compression made the optically cheap multiple a value trap rather than a genuine margin of safety."
+            },
+            {
+                "ticker": "QXO",
+                "rationale": "Rollup model shows operating deleverage, regulatory binary risk, and a near-zero expected return; fundamentally broken near-term story with no clear floor."
+            }
+        ],
+        "portfolio_thesis": "The portfolio blends high-conviction growth asymmetry in healthcare and communications with durable compounding in technology infrastructure and defensive non-correlated exposure in utilities, financials, and defense. We sized the highest expected-return names (ARDX, RDDT, VST, APP) alongside lower-correlation defensive compounders (ICE, RMD, KTOS) to build a barbell that captures upside from idiosyncratic inflections while using share-buyback-supported quality (META, NFLX, NOW) to dampen volatility. Sector limits and tech-capital-intensity constraints were actively managed to avoid concentrating in the highly correlated AI-hardware cluster.",
+        "key_risks": [
+            "A synchronized drawdown in AI-exposed technology names could drag portfolio returns despite moderate individual position sizes.",
+            "Regulatory contagion in communications or healthcare reimbursement may simultaneously impair multiple growth positions.",
+            "Narrow market leadership and elevated pairwise correlations among software and semiconductor names reduce effective diversification if macro liquidity tightens."
+        ]
+    }
+}

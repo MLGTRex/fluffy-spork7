@@ -1,0 +1,193 @@
+{
+    "ticker": "DKS",
+    "company_name": "Dick's Sporting Goods",
+    "universe_added_date": "2026-05-18",
+    "financial_raw_metrics": {
+        "sector": "Consumer Cyclical",
+        "industry": "Specialty Retail",
+        "market_cap_usd": 19833505792,
+        "profitability": {
+            "gross_margin_ttm": 0.34186,
+            "operating_margin_ttm": 0.06962,
+            "net_margin_ttm": 0.04933,
+            "operating_margin_trend_3yr": -0.042836756676076865
+        },
+        "returns_on_capital": {
+            "roe_ttm": 0.19437,
+            "roa_ttm": 0.06689,
+            "roic_ttm": null
+        },
+        "cash_flow": {
+            "fcf_margin_ttm": -0.03387534618871211,
+            "fcf_to_net_income_ttm": -0.6866949639391021,
+            "ocf_cagr_3yr": 0.18585604056835003
+        },
+        "balance_sheet": {
+            "debt_to_equity": 1.39828,
+            "net_debt_to_ebitda": 3.2289070376544653,
+            "current_ratio": 1.53,
+            "interest_coverage": 18.770303284938457,
+            "total_debt_usd": 7746642944,
+            "total_cash_usd": 1353225984
+        },
+        "growth": {
+            "revenue_growth_1yr": 0.599,
+            "revenue_cagr_3yr": 0.11652351737170918,
+            "eps_growth_1yr": -0.61,
+            "eps_cagr_3yr": -0.06625263781947277,
+            "fcf_cagr_3yr": -0.10480146387362721
+        },
+        "valuation": {
+            "pe_trailing": 22.239717,
+            "pe_forward": 13.7197275,
+            "ps_ratio": 1.1520981,
+            "pb_ratio": 3.5557585,
+            "ev_ebitda": 13.083,
+            "peg_ratio": 1.528,
+            "fcf_yield": -0.02940317935295259
+        },
+        "data_quality_flags": [
+            "DKS: eps_cagr_3yr approximated by net income CAGR (share count changes not adjusted)"
+        ]
+    },
+    "financial_raw_metrics_date": "2026-05-21",
+    "financial_score": 41.18521100361437,
+    "financial_score_date": "2026-05-21",
+    "financial_subscores": {
+        "profitability": 35.02022267859267,
+        "returns_on_capital": 42.91022910776074,
+        "cash_flow_quality": 16.023353501931396,
+        "balance_sheet": 63.48726644513466,
+        "growth": 43.375174495438046,
+        "valuation": 47.775009866453814
+    },
+    "financial_drivers": {
+        "strongest": [
+            "revenue_growth_1yr (growth): score=100, value=59.9%",
+            "interest_coverage (balance_sheet): score=99, value=18.77",
+            "ocf_cagr_3yr (cash_flow_quality): score=85, value=18.6%"
+        ],
+        "weakest": [
+            "fcf_to_net_income_ttm (cash_flow_quality): score=0, value=-68.7%",
+            "eps_growth_1yr (growth): score=0, value=-61.0%",
+            "fcf_yield (valuation): score=4, value=-2.9%"
+        ]
+    },
+    "professional_raw_metrics": {
+        "sector": "Consumer Cyclical",
+        "industry": "Specialty Retail",
+        "market_cap_usd": 19833505792,
+        "current_price": 221.73,
+        "analyst": {
+            "recommendation_mean": 2.03846,
+            "recommendation_key": "buy",
+            "target_mean_price": 239.45454,
+            "target_median_price": 250.0,
+            "target_high_price": 300.0,
+            "target_low_price": 167.0,
+            "upside_to_target": 0.07993749154376954,
+            "target_dispersion": 0.5554290179672517,
+            "num_analysts": 22
+        },
+        "rating_momentum": {
+            "upgrades_12m": 1,
+            "downgrades_12m": 0,
+            "total_actions_12m": 40
+        },
+        "institutional": {
+            "held_pct_institutions": 0.0102926,
+            "held_pct_insiders": 0.03635
+        },
+        "short_interest": {
+            "short_pct_of_float": 0.1148,
+            "short_ratio": 5.03,
+            "short_change_pct": -0.01218870416383419
+        },
+        "data_quality_flags": []
+    },
+    "professional_raw_metrics_date": "2026-05-21",
+    "professional_score": 51.568553317183316,
+    "professional_score_date": "2026-05-21",
+    "professional_subscores": {
+        "analyst_consensus": 63.07070915437694,
+        "rating_momentum": 54.075,
+        "institutional_positioning": 35.572654856574445,
+        "short_interest": 47.21260932671851
+    },
+    "professional_drivers": {
+        "strongest": [
+            "recommendation_mean (analyst_consensus): score=73, value=2.04",
+            "held_pct_insiders (institutional_positioning): score=73, value=3.6%",
+            "total_actions_12m (rating_momentum): score=54, value=40.00"
+        ],
+        "weakest": [
+            "held_pct_institutions (institutional_positioning): score=19, value=1.0%",
+            "short_pct_of_float (short_interest): score=44, value=11.5%",
+            "upside_to_target (analyst_consensus): score=47, value=8.0%"
+        ]
+    },
+    "news_sentiment_raw_metrics": {
+        "sector": "Consumer Cyclical",
+        "industry": "Specialty Retail",
+        "market_cap_usd": 19833505792,
+        "current_price": 221.73,
+        "earnings": {
+            "beat_count_4q": 4,
+            "miss_count_4q": 0,
+            "total_quarters_4q": 4,
+            "avg_surprise_magnitude_4q": 0.06594266791230678,
+            "eps_estimate_revision_90d": null,
+            "trailing_eps": 9.97,
+            "forward_eps": 16.1614
+        },
+        "price_momentum": {
+            "return_1m": -0.03094269321330993,
+            "return_3m": 0.10044102162699874,
+            "return_6m": 0.08402634553108441
+        },
+        "insider_activity": {
+            "insider_purchases_count_90d": 0,
+            "insider_sales_count_90d": 1,
+            "insider_net_value_90d_usd": -925523.0
+        },
+        "data_quality_flags": []
+    },
+    "news_sentiment_raw_metrics_date": "2026-05-21",
+    "news_sentiment_score": 67.17288257899712,
+    "news_sentiment_score_date": "2026-05-21",
+    "news_sentiment_subscores": {
+        "earnings_surprise_revisions": 90.66898478785787,
+        "price_momentum": 60.171537079759304,
+        "insider_activity": 34.183369159751216
+    },
+    "news_sentiment_drivers": {
+        "strongest": [
+            "beat_rate_4q (earnings_surprise_revisions): score=100, value=1.00",
+            "avg_surprise_magnitude_4q (earnings_surprise_revisions): score=80, value=6.6%",
+            "return_3m (price_momentum): score=67, value=10.0%"
+        ],
+        "weakest": [
+            "insider_count_ratio_90d (insider_activity): score=0, value=-1.00",
+            "return_1m (price_momentum): score=45, value=-3.1%",
+            "net_insider_value_pct_mcap_90d (insider_activity): score=49, value=-0.0%"
+        ]
+    },
+    "composite_score": 49.497748012761605,
+    "composite_score_date": "2026-05-21",
+    "composite_rank": 730,
+    "composite_metadata": {
+        "scores_used": [
+            "financial",
+            "professional",
+            "news_sentiment"
+        ],
+        "scores_imputed": [],
+        "imputed_values": {},
+        "imputation_r_squared": null,
+        "weights_applied": {
+            "financial": 50,
+            "professional": 30,
+            "news_sentiment": 20
+        }
+    }
+}

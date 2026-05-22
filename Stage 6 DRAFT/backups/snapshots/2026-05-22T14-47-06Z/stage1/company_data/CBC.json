@@ -1,0 +1,200 @@
+{
+    "ticker": "CBC",
+    "company_name": "Central Bancompany",
+    "universe_added_date": "2026-05-18",
+    "financial_raw_metrics": {
+        "sector": "Financial Services",
+        "industry": "Banks - Regional",
+        "market_cap_usd": 6841123328,
+        "profitability": {
+            "gross_margin_ttm": 0.0,
+            "operating_margin_ttm": 0.53202,
+            "net_margin_ttm": 0.39244,
+            "operating_margin_trend_3yr": null
+        },
+        "returns_on_capital": {
+            "roe_ttm": 0.11563,
+            "roa_ttm": 0.02034,
+            "roic_ttm": null
+        },
+        "cash_flow": {
+            "fcf_margin_ttm": null,
+            "fcf_to_net_income_ttm": null,
+            "ocf_cagr_3yr": -0.06634857452803244
+        },
+        "balance_sheet": {
+            "debt_to_equity": null,
+            "net_debt_to_ebitda": null,
+            "current_ratio": null,
+            "interest_coverage": null,
+            "total_debt_usd": 1066923008,
+            "total_cash_usd": 1378236032
+        },
+        "growth": {
+            "revenue_growth_1yr": 0.104,
+            "revenue_cagr_3yr": 0.10830774048342784,
+            "eps_growth_1yr": 0.07,
+            "eps_cagr_3yr": 0.1481743951250447,
+            "fcf_cagr_3yr": -0.06911846253248721
+        },
+        "valuation": {
+            "pe_trailing": 713.25006,
+            "pe_forward": 13.999019,
+            "ps_ratio": 6.59407,
+            "pb_ratio": 1.8011364,
+            "ev_ebitda": null,
+            "peg_ratio": null,
+            "fcf_yield": null
+        },
+        "data_quality_flags": [
+            "CBC: eps_cagr_3yr approximated by net income CAGR (share count changes not adjusted)"
+        ]
+    },
+    "financial_raw_metrics_date": "2026-05-21",
+    "financial_score": 57.515015346639366,
+    "financial_score_date": "2026-05-21",
+    "financial_subscores": {
+        "profitability": 68.75029801270408,
+        "returns_on_capital": 59.871810810330544,
+        "cash_flow_quality": null,
+        "balance_sheet": null,
+        "growth": 57.905788353604244,
+        "valuation": 39.0014715
+    },
+    "financial_drivers": {
+        "strongest": [
+            "net_margin_ttm (profitability): score=79, value=39.2%",
+            "pe_forward (valuation): score=78, value=14.00",
+            "operating_margin_ttm (profitability): score=78, value=53.2%"
+        ],
+        "weakest": [
+            "pe_trailing (valuation): score=0, value=713.25",
+            "fcf_cagr_3yr (growth): score=18, value=-6.9%",
+            "ocf_cagr_3yr (cash_flow_quality): score=20, value=-6.6%"
+        ]
+    },
+    "professional_raw_metrics": {
+        "sector": "Financial Services",
+        "industry": "Banks - Regional",
+        "market_cap_usd": 6841123328,
+        "current_price": 28.53,
+        "analyst": {
+            "recommendation_mean": null,
+            "recommendation_key": "none",
+            "target_mean_price": 29.5,
+            "target_median_price": 29.5,
+            "target_high_price": 31.0,
+            "target_low_price": 28.0,
+            "upside_to_target": 0.03399929898352607,
+            "target_dispersion": 0.1016949152542373,
+            "num_analysts": 5
+        },
+        "rating_momentum": {
+            "upgrades_12m": 0,
+            "downgrades_12m": 0,
+            "total_actions_12m": 8
+        },
+        "institutional": {
+            "held_pct_institutions": 0.32432997,
+            "held_pct_insiders": 0.66853994
+        },
+        "short_interest": {
+            "short_pct_of_float": 0.0356,
+            "short_ratio": 3.59,
+            "short_change_pct": 0.4143611330127257
+        },
+        "data_quality_flags": []
+    },
+    "professional_raw_metrics_date": "2026-05-21",
+    "professional_score": 42.11282648758137,
+    "professional_score_date": "2026-05-21",
+    "professional_subscores": {
+        "analyst_consensus": 35.19978969505782,
+        "rating_momentum": 50.0,
+        "institutional_positioning": 39.613698700900535,
+        "short_interest": 49.26316946057333
+    },
+    "professional_drivers": {
+        "strongest": [
+            "held_pct_insiders (institutional_positioning): score=100, value=66.9%",
+            "short_ratio (short_interest): score=64, value=3.59",
+            "short_pct_of_float (short_interest): score=57, value=3.6%"
+        ],
+        "weakest": [
+            "short_change_pct (short_interest): score=7, value=41.4%",
+            "held_pct_institutions (institutional_positioning): score=14, value=32.4%",
+            "upside_to_target (analyst_consensus): score=35, value=3.4%"
+        ]
+    },
+    "news_sentiment_raw_metrics": {
+        "sector": null,
+        "industry": null,
+        "market_cap_usd": null,
+        "current_price": null,
+        "earnings": {
+            "beat_count_4q": 2,
+            "miss_count_4q": 0,
+            "total_quarters_4q": 2,
+            "avg_surprise_magnitude_4q": 0.044949494949494934,
+            "eps_estimate_revision_90d": null,
+            "trailing_eps": null,
+            "forward_eps": null
+        },
+        "price_momentum": {
+            "return_1m": null,
+            "return_3m": null,
+            "return_6m": null
+        },
+        "insider_activity": {
+            "insider_purchases_count_90d": null,
+            "insider_sales_count_90d": null,
+            "insider_net_value_90d_usd": null
+        },
+        "data_quality_flags": [
+            "CBC: failed to fetch .info (Too Many Requests. Rate limited. Try after a while.)",
+            "CBC: sector classification unavailable",
+            "CBC: eps_revisions fetch failed (Too Many Requests. Rate limited. Try after a while.)",
+            "CBC: price momentum fetch failed (Too Many Requests. Rate limited. Try after a while.)",
+            "CBC: insider_transactions fetch failed (Too Many Requests. Rate limited. Try after a while.)"
+        ]
+    },
+    "news_sentiment_raw_metrics_date": "2026-05-21",
+    "news_sentiment_score": null,
+    "news_sentiment_score_date": "2026-05-21",
+    "news_sentiment_subscores": {
+        "earnings_surprise_revisions": 87.2960372960373,
+        "price_momentum": null,
+        "insider_activity": null
+    },
+    "news_sentiment_drivers": {
+        "strongest": [
+            "beat_rate_4q (earnings_surprise_revisions): score=100, value=1.00",
+            "avg_surprise_magnitude_4q (earnings_surprise_revisions): score=72, value=4.5%"
+        ],
+        "weakest": [
+            "avg_surprise_magnitude_4q (earnings_surprise_revisions): score=72, value=4.5%",
+            "beat_rate_4q (earnings_surprise_revisions): score=100, value=1.00"
+        ]
+    },
+    "composite_score": 52.41345049816482,
+    "composite_score_date": "2026-05-21",
+    "composite_rank": 592,
+    "composite_metadata": {
+        "scores_used": [
+            "financial",
+            "professional"
+        ],
+        "scores_imputed": [
+            "news_sentiment"
+        ],
+        "imputed_values": {
+            "news_sentiment": 55.11047439285362
+        },
+        "imputation_r_squared": 0.05693184104207816,
+        "weights_applied": {
+            "financial": 50,
+            "professional": 30,
+            "news_sentiment": 20
+        }
+    }
+}

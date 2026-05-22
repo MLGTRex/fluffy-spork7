@@ -1,0 +1,195 @@
+{
+    "ticker": "HUM",
+    "company_name": "Humana",
+    "universe_added_date": "2026-05-18",
+    "financial_raw_metrics": {
+        "sector": "Healthcare",
+        "industry": "Healthcare Plans",
+        "market_cap_usd": 36460277760,
+        "profitability": {
+            "gross_margin_ttm": 0.14006,
+            "operating_margin_ttm": 0.04671,
+            "net_margin_ttm": 0.00824,
+            "operating_margin_trend_3yr": null
+        },
+        "returns_on_capital": {
+            "roe_ttm": 0.062800005,
+            "roa_ttm": 0.036429998,
+            "roic_ttm": null
+        },
+        "cash_flow": {
+            "fcf_margin_ttm": 0.010432762137877928,
+            "fcf_to_net_income_ttm": 1.2667035185840707,
+            "ocf_cagr_3yr": -0.4144325017205538
+        },
+        "balance_sheet": {
+            "debt_to_equity": 0.7707299999999999,
+            "net_debt_to_ebitda": -2.258774739180002,
+            "current_ratio": 1.771,
+            "interest_coverage": 3.464342313787639,
+            "total_debt_usd": 14371000320,
+            "total_cash_usd": 21965000704
+        },
+        "growth": {
+            "revenue_growth_1yr": 0.235,
+            "revenue_cagr_3yr": 0.11767273447695548,
+            "eps_growth_1yr": -0.046,
+            "eps_cagr_3yr": -0.2491101083252254,
+            "fcf_cagr_3yr": -0.5227593913804323
+        },
+        "valuation": {
+            "pe_trailing": 32.409817,
+            "pe_forward": 19.642403,
+            "ps_ratio": 0.26574546,
+            "pb_ratio": 1.9623402,
+            "ev_ebitda": 8.606,
+            "peg_ratio": 1.7226,
+            "fcf_yield": 0.039258477003988684
+        },
+        "data_quality_flags": [
+            "HUM: eps_cagr_3yr approximated by net income CAGR (share count changes not adjusted)"
+        ]
+    },
+    "financial_raw_metrics_date": "2026-05-21",
+    "financial_score": 49.3299948930015,
+    "financial_score_date": "2026-05-21",
+    "financial_subscores": {
+        "profitability": 39.31537990116152,
+        "returns_on_capital": 49.485429873363884,
+        "cash_flow_quality": 39.69087895924824,
+        "balance_sheet": 83.25320962757529,
+        "growth": 38.490650122530944,
+        "valuation": 49.030814211288245
+    },
+    "financial_drivers": {
+        "strongest": [
+            "net_debt_to_ebitda (balance_sheet): score=100, value=-2.26",
+            "fcf_to_net_income_ttm (cash_flow_quality): score=92, value=1.27",
+            "revenue_growth_1yr (growth): score=91, value=23.5%"
+        ],
+        "weakest": [
+            "ocf_cagr_3yr (cash_flow_quality): score=0, value=-41.4%",
+            "eps_cagr_3yr (growth): score=0, value=-24.9%",
+            "fcf_cagr_3yr (growth): score=0, value=-52.3%"
+        ]
+    },
+    "professional_raw_metrics": {
+        "sector": "Healthcare",
+        "industry": "Healthcare Plans",
+        "market_cap_usd": 36460277760,
+        "current_price": 303.68,
+        "analyst": {
+            "recommendation_mean": 2.57692,
+            "recommendation_key": "hold",
+            "target_mean_price": 260.125,
+            "target_median_price": 257.5,
+            "target_high_price": 441.0,
+            "target_low_price": 180.0,
+            "upside_to_target": -0.14342399894625923,
+            "target_dispersion": 1.00336376741951,
+            "num_analysts": 24
+        },
+        "rating_momentum": {
+            "upgrades_12m": 2,
+            "downgrades_12m": 3,
+            "total_actions_12m": 54
+        },
+        "institutional": {
+            "held_pct_institutions": 0.0100069,
+            "held_pct_insiders": 0.00208
+        },
+        "short_interest": {
+            "short_pct_of_float": 0.0594,
+            "short_ratio": 3.25,
+            "short_change_pct": 0.05695776974619672
+        },
+        "data_quality_flags": []
+    },
+    "professional_raw_metrics_date": "2026-05-21",
+    "professional_score": 40.33810133387326,
+    "professional_score_date": "2026-05-21",
+    "professional_subscores": {
+        "analyst_consensus": 31.153920000000003,
+        "rating_momentum": 51.333333333333336,
+        "institutional_positioning": 33.48151295900058,
+        "short_interest": 54.870118405265174
+    },
+    "professional_drivers": {
+        "strongest": [
+            "short_ratio (short_interest): score=68, value=3.25",
+            "short_pct_of_float (short_interest): score=52, value=5.9%",
+            "held_pct_insiders (institutional_positioning): score=52, value=0.2%"
+        ],
+        "weakest": [
+            "upside_to_target (analyst_consensus): score=0, value=-14.3%",
+            "held_pct_institutions (institutional_positioning): score=26, value=1.0%",
+            "short_change_pct (short_interest): score=43, value=5.7%"
+        ]
+    },
+    "news_sentiment_raw_metrics": {
+        "sector": "Healthcare",
+        "industry": "Healthcare Plans",
+        "market_cap_usd": 36460277760,
+        "current_price": 303.68,
+        "earnings": {
+            "beat_count_4q": null,
+            "miss_count_4q": null,
+            "total_quarters_4q": null,
+            "avg_surprise_magnitude_4q": null,
+            "eps_estimate_revision_90d": null,
+            "trailing_eps": 9.37,
+            "forward_eps": 15.46043
+        },
+        "price_momentum": {
+            "return_1m": 0.397129182679702,
+            "return_3m": 0.6311582706813443,
+            "return_6m": 0.33799837129970034
+        },
+        "insider_activity": {
+            "insider_purchases_count_90d": 1,
+            "insider_sales_count_90d": 0,
+            "insider_net_value_90d_usd": 150016.0
+        },
+        "data_quality_flags": [
+            "HUM: earnings_dates fetch failed (['Earnings Date'])"
+        ]
+    },
+    "news_sentiment_raw_metrics_date": "2026-05-21",
+    "news_sentiment_score": 88.35733461327678,
+    "news_sentiment_score_date": "2026-05-21",
+    "news_sentiment_subscores": {
+        "earnings_surprise_revisions": null,
+        "price_momentum": 100.0,
+        "insider_activity": 65.07200383983032
+    },
+    "news_sentiment_drivers": {
+        "strongest": [
+            "insider_count_ratio_90d (insider_activity): score=100, value=1.00",
+            "return_6m (price_momentum): score=100, value=33.8%",
+            "return_3m (price_momentum): score=100, value=63.1%"
+        ],
+        "weakest": [
+            "net_insider_value_pct_mcap_90d (insider_activity): score=50, value=0.0%",
+            "return_1m (price_momentum): score=100, value=39.7%",
+            "return_3m (price_momentum): score=100, value=63.1%"
+        ]
+    },
+    "composite_score": 54.437894769318085,
+    "composite_score_date": "2026-05-21",
+    "composite_rank": 475,
+    "composite_metadata": {
+        "scores_used": [
+            "financial",
+            "professional",
+            "news_sentiment"
+        ],
+        "scores_imputed": [],
+        "imputed_values": {},
+        "imputation_r_squared": null,
+        "weights_applied": {
+            "financial": 50,
+            "professional": 30,
+            "news_sentiment": 20
+        }
+    }
+}

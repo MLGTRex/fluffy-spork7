@@ -1,0 +1,194 @@
+{
+    "ticker": "SMG",
+    "company_name": "Scotts Miracle-Gro Company",
+    "universe_added_date": "2026-05-18",
+    "financial_raw_metrics": {
+        "sector": "Basic Materials",
+        "industry": "Agricultural Inputs",
+        "market_cap_usd": 3451934464,
+        "profitability": {
+            "gross_margin_ttm": 0.32491,
+            "operating_margin_ttm": 0.27681,
+            "net_margin_ttm": 0.03192,
+            "operating_margin_trend_3yr": 0.057613385535465286
+        },
+        "returns_on_capital": {
+            "roe_ttm": null,
+            "roa_ttm": 0.088199995,
+            "roic_ttm": null
+        },
+        "cash_flow": {
+            "fcf_margin_ttm": 0.11860018415950892,
+            "fcf_to_net_income_ttm": 1.997270761766133,
+            "ocf_cagr_3yr": null
+        },
+        "balance_sheet": {
+            "debt_to_equity": null,
+            "net_debt_to_ebitda": 4.732870348012367,
+            "current_ratio": 1.271,
+            "interest_coverage": 2.7212732919254656,
+            "total_debt_usd": 2665600000,
+            "total_cash_usd": 6200000
+        },
+        "growth": {
+            "revenue_growth_1yr": 0.05,
+            "revenue_cagr_3yr": -0.045440548356154964,
+            "eps_growth_1yr": 0.085,
+            "eps_cagr_3yr": null,
+            "fcf_cagr_3yr": null
+        },
+        "valuation": {
+            "pe_trailing": 17.048851,
+            "pe_forward": 12.516456,
+            "ps_ratio": 0.99456453,
+            "pb_ratio": -6.874059,
+            "ev_ebitda": 10.774,
+            "peg_ratio": 0.7673,
+            "fcf_yield": 0.11924835430479366
+        },
+        "data_quality_flags": [
+            "SMG: eps_cagr_3yr approximated by net income CAGR (share count changes not adjusted)"
+        ]
+    },
+    "financial_raw_metrics_date": "2026-05-21",
+    "financial_score": 52.3781655327668,
+    "financial_score_date": "2026-05-21",
+    "financial_subscores": {
+        "profitability": 59.36057266344081,
+        "returns_on_capital": null,
+        "cash_flow_quality": 64.9228651054966,
+        "balance_sheet": 30.71542852593552,
+        "growth": 29.679212906601283,
+        "valuation": 74.88527941880179
+    },
+    "financial_drivers": {
+        "strongest": [
+            "fcf_yield (valuation): score=100, value=11.9%",
+            "peg_ratio (valuation): score=87, value=76.7%",
+            "pe_forward (valuation): score=82, value=12.52"
+        ],
+        "weakest": [
+            "revenue_cagr_3yr (growth): score=11, value=-4.5%",
+            "net_debt_to_ebitda (balance_sheet): score=17, value=4.73",
+            "interest_coverage (balance_sheet): score=40, value=2.72"
+        ]
+    },
+    "professional_raw_metrics": {
+        "sector": null,
+        "industry": null,
+        "market_cap_usd": null,
+        "current_price": null,
+        "analyst": {
+            "recommendation_mean": null,
+            "recommendation_key": null,
+            "target_mean_price": null,
+            "target_median_price": null,
+            "target_high_price": null,
+            "target_low_price": null,
+            "upside_to_target": null,
+            "target_dispersion": null,
+            "num_analysts": null
+        },
+        "rating_momentum": {
+            "upgrades_12m": 0,
+            "downgrades_12m": 0,
+            "total_actions_12m": 0
+        },
+        "institutional": {
+            "held_pct_institutions": null,
+            "held_pct_insiders": null
+        },
+        "short_interest": {
+            "short_pct_of_float": null,
+            "short_ratio": null,
+            "short_change_pct": null
+        },
+        "data_quality_flags": [
+            "SMG: failed to fetch .info (Too Many Requests. Rate limited. Try after a while.)",
+            "SMG: sector classification unavailable",
+            "SMG: upgrades/downgrades fetch failed (Too Many Requests. Rate limited. Try after a while.)"
+        ]
+    },
+    "professional_raw_metrics_date": "2026-05-21",
+    "professional_score": null,
+    "professional_score_date": "2026-05-21",
+    "professional_subscores": {
+        "analyst_consensus": null,
+        "rating_momentum": 50.0,
+        "institutional_positioning": null,
+        "short_interest": null
+    },
+    "professional_drivers": {
+        "strongest": [],
+        "weakest": []
+    },
+    "news_sentiment_raw_metrics": {
+        "sector": "Basic Materials",
+        "industry": "Agricultural Inputs",
+        "market_cap_usd": 3451934464,
+        "current_price": 59.33,
+        "earnings": {
+            "beat_count_4q": null,
+            "miss_count_4q": null,
+            "total_quarters_4q": null,
+            "avg_surprise_magnitude_4q": null,
+            "eps_estimate_revision_90d": null,
+            "trailing_eps": 3.48,
+            "forward_eps": 4.74016
+        },
+        "price_momentum": {
+            "return_1m": -0.07829738281081013,
+            "return_3m": -0.14262415932755027,
+            "return_6m": 0.13862581446355343
+        },
+        "insider_activity": {
+            "insider_purchases_count_90d": 1,
+            "insider_sales_count_90d": 0,
+            "insider_net_value_90d_usd": 49504.0
+        },
+        "data_quality_flags": [
+            "SMG: earnings_dates fetch failed (['Earnings Date'])"
+        ]
+    },
+    "news_sentiment_raw_metrics_date": "2026-05-21",
+    "news_sentiment_score": 53.5233804328578,
+    "news_sentiment_score_date": "2026-05-21",
+    "news_sentiment_subscores": {
+        "earnings_surprise_revisions": null,
+        "price_momentum": 47.65958738634605,
+        "insider_activity": 65.2509665258813
+    },
+    "news_sentiment_drivers": {
+        "strongest": [
+            "insider_count_ratio_90d (insider_activity): score=100, value=1.00",
+            "return_6m (price_momentum): score=73, value=13.9%",
+            "net_insider_value_pct_mcap_90d (insider_activity): score=50, value=0.0%"
+        ],
+        "weakest": [
+            "return_3m (price_momentum): score=26, value=-14.3%",
+            "return_1m (price_momentum): score=37, value=-7.8%",
+            "net_insider_value_pct_mcap_90d (insider_activity): score=50, value=0.0%"
+        ]
+    },
+    "composite_score": 54.062770468161915,
+    "composite_score_date": "2026-05-21",
+    "composite_rank": 497,
+    "composite_metadata": {
+        "scores_used": [
+            "financial",
+            "news_sentiment"
+        ],
+        "scores_imputed": [
+            "professional"
+        ],
+        "imputed_values": {
+            "professional": 57.23003871735651
+        },
+        "imputation_r_squared": 0.04516719672877956,
+        "weights_applied": {
+            "financial": 50,
+            "professional": 30,
+            "news_sentiment": 20
+        }
+    }
+}

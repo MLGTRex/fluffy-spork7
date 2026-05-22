@@ -1,0 +1,200 @@
+{
+    "ticker": "ED",
+    "company_name": "Consolidated Edison",
+    "universe_added_date": "2026-05-18",
+    "financial_raw_metrics": {
+        "sector": "Utilities",
+        "industry": "Utilities - Regulated Electric",
+        "market_cap_usd": 39580090368,
+        "profitability": {
+            "gross_margin_ttm": 0.53192,
+            "operating_margin_ttm": 0.25613,
+            "net_margin_ttm": 0.12524,
+            "operating_margin_trend_3yr": 0.009872191801997277
+        },
+        "returns_on_capital": {
+            "roe_ttm": 0.08732,
+            "roa_ttm": 0.0317,
+            "roic_ttm": null
+        },
+        "cash_flow": {
+            "fcf_margin_ttm": -0.04840255336161076,
+            "fcf_to_net_income_ttm": -0.38647958441558444,
+            "ocf_cagr_3yr": 0.06847779278082311
+        },
+        "balance_sheet": {
+            "debt_to_equity": 1.06177,
+            "net_debt_to_ebitda": 4.492272103623968,
+            "current_ratio": 1.189,
+            "interest_coverage": 3.106244931062449,
+            "total_debt_usd": 27177000960,
+            "total_cash_usd": 147000000
+        },
+        "growth": {
+            "revenue_growth_1yr": 0.062,
+            "revenue_cagr_3yr": 0.02587238970223038,
+            "eps_growth_1yr": 0.129,
+            "eps_cagr_3yr": 0.06814267090496018,
+            "fcf_cagr_3yr": null
+        },
+        "valuation": {
+            "pe_trailing": 18.1113,
+            "pe_forward": 16.54999,
+            "ps_ratio": 2.2991629,
+            "pb_ratio": 1.544124,
+            "ev_ebitda": 11.003,
+            "peg_ratio": 2.5255,
+            "fcf_yield": -0.02105225067079867
+        },
+        "data_quality_flags": [
+            "ED: eps_cagr_3yr approximated by net income CAGR (share count changes not adjusted)"
+        ]
+    },
+    "financial_raw_metrics_date": "2026-05-21",
+    "financial_score": 41.91886105272646,
+    "financial_score_date": "2026-05-21",
+    "financial_subscores": {
+        "profitability": 56.667949806807826,
+        "returns_on_capital": 41.228481579711826,
+        "cash_flow_quality": 10.911373007056502,
+        "balance_sheet": 42.162250533133154,
+        "growth": 46.36412154612186,
+        "valuation": 49.4927534165053
+    },
+    "financial_drivers": {
+        "strongest": [
+            "debt_to_equity (balance_sheet): score=73, value=1.06",
+            "ev_ebitda (valuation): score=73, value=11.00",
+            "pe_forward (valuation): score=70, value=16.55"
+        ],
+        "weakest": [
+            "fcf_to_net_income_ttm (cash_flow_quality): score=0, value=-38.6%",
+            "fcf_margin_ttm (cash_flow_quality): score=5, value=-4.8%",
+            "fcf_yield (valuation): score=6, value=-2.1%"
+        ]
+    },
+    "professional_raw_metrics": {
+        "sector": "Utilities",
+        "industry": "Utilities - Regulated Electric",
+        "market_cap_usd": 39580090368,
+        "current_price": 107.4,
+        "analyst": {
+            "recommendation_mean": 3.16667,
+            "recommendation_key": "hold",
+            "target_mean_price": 111.1875,
+            "target_median_price": 110.5,
+            "target_high_price": 130.0,
+            "target_low_price": 97.0,
+            "upside_to_target": 0.035265363128491566,
+            "target_dispersion": 0.29679595278246207,
+            "num_analysts": 16
+        },
+        "rating_momentum": {
+            "upgrades_12m": 1,
+            "downgrades_12m": 1,
+            "total_actions_12m": 33
+        },
+        "institutional": {
+            "held_pct_institutions": 0.75001997,
+            "held_pct_insiders": 0.00183
+        },
+        "short_interest": {
+            "short_pct_of_float": 0.0296,
+            "short_ratio": 4.79,
+            "short_change_pct": -0.01912064419582413
+        },
+        "data_quality_flags": []
+    },
+    "professional_raw_metrics_date": "2026-05-21",
+    "professional_score": 46.46508080598146,
+    "professional_score_date": "2026-05-21",
+    "professional_subscores": {
+        "analyst_consensus": 32.73179357541899,
+        "rating_momentum": 52.5,
+        "institutional_positioning": 52.36394496057065,
+        "short_interest": 58.61977876294768
+    },
+    "professional_drivers": {
+        "strongest": [
+            "short_pct_of_float (short_interest): score=65, value=3.0%",
+            "short_change_pct (short_interest): score=53, value=-1.9%",
+            "held_pct_institutions (institutional_positioning): score=53, value=75.0%"
+        ],
+        "weakest": [
+            "recommendation_mean (analyst_consensus): score=31, value=3.17",
+            "upside_to_target (analyst_consensus): score=36, value=3.5%",
+            "held_pct_insiders (institutional_positioning): score=52, value=0.2%"
+        ]
+    },
+    "news_sentiment_raw_metrics": {
+        "sector": null,
+        "industry": null,
+        "market_cap_usd": null,
+        "current_price": null,
+        "earnings": {
+            "beat_count_4q": 3,
+            "miss_count_4q": 1,
+            "total_quarters_4q": 4,
+            "avg_surprise_magnitude_4q": 0.024025486175880614,
+            "eps_estimate_revision_90d": null,
+            "trailing_eps": null,
+            "forward_eps": null
+        },
+        "price_momentum": {
+            "return_1m": null,
+            "return_3m": null,
+            "return_6m": null
+        },
+        "insider_activity": {
+            "insider_purchases_count_90d": null,
+            "insider_sales_count_90d": null,
+            "insider_net_value_90d_usd": null
+        },
+        "data_quality_flags": [
+            "ED: failed to fetch .info (Too Many Requests. Rate limited. Try after a while.)",
+            "ED: sector classification unavailable",
+            "ED: eps_revisions fetch failed (Too Many Requests. Rate limited. Try after a while.)",
+            "ED: price momentum fetch failed (Too Many Requests. Rate limited. Try after a while.)",
+            "ED: insider_transactions fetch failed (Too Many Requests. Rate limited. Try after a while.)"
+        ]
+    },
+    "news_sentiment_raw_metrics_date": "2026-05-21",
+    "news_sentiment_score": null,
+    "news_sentiment_score_date": "2026-05-21",
+    "news_sentiment_subscores": {
+        "earnings_surprise_revisions": 69.00588142520323,
+        "price_momentum": null,
+        "insider_activity": null
+    },
+    "news_sentiment_drivers": {
+        "strongest": [
+            "beat_rate_4q (earnings_surprise_revisions): score=75, value=75.0%",
+            "avg_surprise_magnitude_4q (earnings_surprise_revisions): score=62, value=2.4%"
+        ],
+        "weakest": [
+            "avg_surprise_magnitude_4q (earnings_surprise_revisions): score=62, value=2.4%",
+            "beat_rate_4q (earnings_surprise_revisions): score=75, value=75.0%"
+        ]
+    },
+    "composite_score": 46.217526846128415,
+    "composite_score_date": "2026-05-21",
+    "composite_rank": 833,
+    "composite_metadata": {
+        "scores_used": [
+            "financial",
+            "professional"
+        ],
+        "scores_imputed": [
+            "news_sentiment"
+        ],
+        "imputed_values": {
+            "news_sentiment": 56.59286038985371
+        },
+        "imputation_r_squared": 0.05693184104207816,
+        "weights_applied": {
+            "financial": 50,
+            "professional": 30,
+            "news_sentiment": 20
+        }
+    }
+}

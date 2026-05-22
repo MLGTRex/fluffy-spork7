@@ -1,0 +1,200 @@
+{
+    "ticker": "AGNC",
+    "company_name": "AGNC Investment",
+    "universe_added_date": "2026-05-18",
+    "financial_raw_metrics": {
+        "sector": "Real Estate",
+        "industry": "REIT - Mortgage",
+        "market_cap_usd": 11777754112,
+        "profitability": {
+            "gross_margin_ttm": 1.0,
+            "operating_margin_ttm": 1.29825,
+            "net_margin_ttm": 0.91713,
+            "operating_margin_trend_3yr": null
+        },
+        "returns_on_capital": {
+            "roe_ttm": 0.13248,
+            "roa_ttm": 0.013710001,
+            "roic_ttm": null
+        },
+        "cash_flow": {
+            "fcf_margin_ttm": null,
+            "fcf_to_net_income_ttm": null,
+            "ocf_cagr_3yr": -0.1361574768451541
+        },
+        "balance_sheet": {
+            "debt_to_equity": 7.22896,
+            "net_debt_to_ebitda": null,
+            "current_ratio": 0.19,
+            "interest_coverage": null,
+            "total_debt_usd": 88055996416,
+            "total_cash_usd": 18314999808
+        },
+        "growth": {
+            "revenue_growth_1yr": null,
+            "revenue_cagr_3yr": null,
+            "eps_growth_1yr": null,
+            "eps_cagr_3yr": null,
+            "fcf_cagr_3yr": null
+        },
+        "valuation": {
+            "pe_trailing": 8.015625,
+            "pe_forward": 6.77881,
+            "ps_ratio": 7.338165,
+            "pb_ratio": 1.1530682,
+            "ev_ebitda": null,
+            "peg_ratio": 3.48,
+            "fcf_yield": null
+        },
+        "data_quality_flags": [
+            "AGNC: eps_cagr_3yr approximated by net income CAGR (share count changes not adjusted)"
+        ]
+    },
+    "financial_raw_metrics_date": "2026-05-21",
+    "financial_score": 54.943863730721766,
+    "financial_score_date": "2026-05-21",
+    "financial_subscores": {
+        "profitability": 95.1342549006781,
+        "returns_on_capital": 43.82077815684805,
+        "cash_flow_quality": null,
+        "balance_sheet": 0.0,
+        "growth": null,
+        "valuation": 71.13132
+    },
+    "financial_drivers": {
+        "strongest": [
+            "net_margin_ttm (profitability): score=100, value=91.7%",
+            "operating_margin_ttm (profitability): score=100, value=1.30",
+            "pe_forward (valuation): score=96, value=6.78"
+        ],
+        "weakest": [
+            "debt_to_equity (balance_sheet): score=0, value=7.23",
+            "current_ratio (balance_sheet): score=0, value=19.0%",
+            "peg_ratio (valuation): score=7, value=3.48"
+        ]
+    },
+    "professional_raw_metrics": {
+        "sector": "Real Estate",
+        "industry": "REIT - Mortgage",
+        "market_cap_usd": 11777754112,
+        "current_price": 10.26,
+        "analyst": {
+            "recommendation_mean": null,
+            "recommendation_key": "none",
+            "target_mean_price": 11.44444,
+            "target_median_price": 11.5,
+            "target_high_price": 12.5,
+            "target_low_price": 10.0,
+            "upside_to_target": 0.1154424951267057,
+            "target_dispersion": 0.21844668677541235,
+            "num_analysts": 9
+        },
+        "rating_momentum": {
+            "upgrades_12m": 0,
+            "downgrades_12m": 3,
+            "total_actions_12m": 21
+        },
+        "institutional": {
+            "held_pct_institutions": 0.4121,
+            "held_pct_insiders": 0.00399
+        },
+        "short_interest": {
+            "short_pct_of_float": 0.091800004,
+            "short_ratio": 6.65,
+            "short_change_pct": 0.09560262535219677
+        },
+        "data_quality_flags": []
+    },
+    "professional_raw_metrics_date": "2026-05-21",
+    "professional_score": 50.36163470729006,
+    "professional_score_date": "2026-05-21",
+    "professional_subscores": {
+        "analyst_consensus": 56.36062378167642,
+        "rating_momentum": 43.50000000000001,
+        "institutional_positioning": 56.413352590278706,
+        "short_interest": 37.71385490755754
+    },
+    "professional_drivers": {
+        "strongest": [
+            "held_pct_institutions (institutional_positioning): score=57, value=41.2%",
+            "upside_to_target (analyst_consensus): score=56, value=11.5%",
+            "held_pct_insiders (institutional_positioning): score=54, value=0.4%"
+        ],
+        "weakest": [
+            "short_pct_of_float (short_interest): score=36, value=9.2%",
+            "short_change_pct (short_interest): score=38, value=9.6%",
+            "short_ratio (short_interest): score=40, value=6.65"
+        ]
+    },
+    "news_sentiment_raw_metrics": {
+        "sector": null,
+        "industry": null,
+        "market_cap_usd": null,
+        "current_price": null,
+        "earnings": {
+            "beat_count_4q": 0,
+            "miss_count_4q": 4,
+            "total_quarters_4q": 4,
+            "avg_surprise_magnitude_4q": -0.6616138887480352,
+            "eps_estimate_revision_90d": null,
+            "trailing_eps": null,
+            "forward_eps": null
+        },
+        "price_momentum": {
+            "return_1m": null,
+            "return_3m": null,
+            "return_6m": null
+        },
+        "insider_activity": {
+            "insider_purchases_count_90d": null,
+            "insider_sales_count_90d": null,
+            "insider_net_value_90d_usd": null
+        },
+        "data_quality_flags": [
+            "AGNC: failed to fetch .info (Too Many Requests. Rate limited. Try after a while.)",
+            "AGNC: sector classification unavailable",
+            "AGNC: eps_revisions fetch failed (Too Many Requests. Rate limited. Try after a while.)",
+            "AGNC: price momentum fetch failed (Too Many Requests. Rate limited. Try after a while.)",
+            "AGNC: insider_transactions fetch failed (Too Many Requests. Rate limited. Try after a while.)"
+        ]
+    },
+    "news_sentiment_raw_metrics_date": "2026-05-21",
+    "news_sentiment_score": null,
+    "news_sentiment_score_date": "2026-05-21",
+    "news_sentiment_subscores": {
+        "earnings_surprise_revisions": 0.0,
+        "price_momentum": null,
+        "insider_activity": null
+    },
+    "news_sentiment_drivers": {
+        "strongest": [
+            "avg_surprise_magnitude_4q (earnings_surprise_revisions): score=0, value=-66.2%",
+            "beat_rate_4q (earnings_surprise_revisions): score=0, value=0.00"
+        ],
+        "weakest": [
+            "beat_rate_4q (earnings_surprise_revisions): score=0, value=0.00",
+            "avg_surprise_magnitude_4q (earnings_surprise_revisions): score=0, value=-66.2%"
+        ]
+    },
+    "composite_score": 53.140772322354,
+    "composite_score_date": "2026-05-21",
+    "composite_rank": 540,
+    "composite_metadata": {
+        "scores_used": [
+            "financial",
+            "professional"
+        ],
+        "scores_imputed": [
+            "news_sentiment"
+        ],
+        "imputed_values": {
+            "news_sentiment": 52.8017502240305
+        },
+        "imputation_r_squared": 0.05693184104207816,
+        "weights_applied": {
+            "financial": 50,
+            "professional": 30,
+            "news_sentiment": 20
+        }
+    }
+}

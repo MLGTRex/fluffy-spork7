@@ -1,0 +1,190 @@
+{
+    "ticker": "SMMT",
+    "company_name": "Summit Therapeutics",
+    "universe_added_date": "2026-05-18",
+    "financial_raw_metrics": {
+        "sector": "Healthcare",
+        "industry": "Biotechnology",
+        "market_cap_usd": 13559560192,
+        "profitability": {
+            "gross_margin_ttm": 0.0,
+            "operating_margin_ttm": 0.0,
+            "net_margin_ttm": 0.0,
+            "operating_margin_trend_3yr": null
+        },
+        "returns_on_capital": {
+            "roe_ttm": -2.70953,
+            "roa_ttm": -1.48155,
+            "roic_ttm": null
+        },
+        "cash_flow": {
+            "fcf_margin_ttm": null,
+            "fcf_to_net_income_ttm": -0.057940094875816556,
+            "ocf_cagr_3yr": null
+        },
+        "balance_sheet": {
+            "debt_to_equity": 0.036699999999999997,
+            "net_debt_to_ebitda": 0.4733220402526498,
+            "current_ratio": 7.405,
+            "interest_coverage": null,
+            "total_debt_usd": 20038000,
+            "total_cash_usd": 598731008
+        },
+        "growth": {
+            "revenue_growth_1yr": null,
+            "revenue_cagr_3yr": null,
+            "eps_growth_1yr": null,
+            "eps_cagr_3yr": null,
+            "fcf_cagr_3yr": null
+        },
+        "valuation": {
+            "pe_trailing": null,
+            "pe_forward": -15.155457,
+            "ps_ratio": null,
+            "pb_ratio": 24.81534,
+            "ev_ebitda": -10.884,
+            "peg_ratio": null,
+            "fcf_yield": 0.005153660960274308
+        },
+        "data_quality_flags": [
+            "SMMT: eps_cagr_3yr approximated by net income CAGR (share count changes not adjusted)"
+        ]
+    },
+    "financial_raw_metrics_date": "2026-05-21",
+    "financial_score": 44.290551999950736,
+    "financial_score_date": "2026-05-21",
+    "financial_subscores": {
+        "profitability": 45.28829868151368,
+        "returns_on_capital": 4.922014213657444,
+        "cash_flow_quality": null,
+        "balance_sheet": 95.45160680625787,
+        "growth": null,
+        "valuation": null
+    },
+    "financial_drivers": {
+        "strongest": [
+            "current_ratio (balance_sheet): score=100, value=7.41",
+            "debt_to_equity (balance_sheet): score=95, value=3.7%",
+            "net_debt_to_ebitda (balance_sheet): score=94, value=47.3%"
+        ],
+        "weakest": [
+            "fcf_to_net_income_ttm (cash_flow_quality): score=0, value=-5.8%",
+            "roe_ttm (returns_on_capital): score=5, value=-2.71",
+            "roa_ttm (returns_on_capital): score=5, value=-1.48"
+        ]
+    },
+    "professional_raw_metrics": {
+        "sector": null,
+        "industry": null,
+        "market_cap_usd": null,
+        "current_price": null,
+        "analyst": {
+            "recommendation_mean": null,
+            "recommendation_key": null,
+            "target_mean_price": null,
+            "target_median_price": null,
+            "target_high_price": null,
+            "target_low_price": null,
+            "upside_to_target": null,
+            "target_dispersion": null,
+            "num_analysts": null
+        },
+        "rating_momentum": {
+            "upgrades_12m": 0,
+            "downgrades_12m": 0,
+            "total_actions_12m": 0
+        },
+        "institutional": {
+            "held_pct_institutions": null,
+            "held_pct_insiders": null
+        },
+        "short_interest": {
+            "short_pct_of_float": null,
+            "short_ratio": null,
+            "short_change_pct": null
+        },
+        "data_quality_flags": [
+            "SMMT: failed to fetch .info (Too Many Requests. Rate limited. Try after a while.)",
+            "SMMT: sector classification unavailable",
+            "SMMT: upgrades/downgrades fetch failed (Too Many Requests. Rate limited. Try after a while.)"
+        ]
+    },
+    "professional_raw_metrics_date": "2026-05-21",
+    "professional_score": null,
+    "professional_score_date": "2026-05-21",
+    "professional_subscores": {
+        "analyst_consensus": null,
+        "rating_momentum": 50.0,
+        "institutional_positioning": null,
+        "short_interest": null
+    },
+    "professional_drivers": {
+        "strongest": [],
+        "weakest": []
+    },
+    "news_sentiment_raw_metrics": {
+        "sector": "Healthcare",
+        "industry": "Biotechnology",
+        "market_cap_usd": 13559560192,
+        "current_price": 17.47,
+        "earnings": {
+            "beat_count_4q": null,
+            "miss_count_4q": null,
+            "total_quarters_4q": null,
+            "avg_surprise_magnitude_4q": null,
+            "eps_estimate_revision_90d": null,
+            "trailing_eps": -1.59,
+            "forward_eps": -1.1527201
+        },
+        "price_momentum": {
+            "return_1m": -0.33775585459524626,
+            "return_3m": 0.1001259366562076,
+            "return_6m": 0.0549517248432973
+        },
+        "insider_activity": {
+            "insider_purchases_count_90d": null,
+            "insider_sales_count_90d": null,
+            "insider_net_value_90d_usd": null
+        },
+        "data_quality_flags": [
+            "SMMT: earnings_dates fetch failed (['Earnings Date'])"
+        ]
+    },
+    "news_sentiment_raw_metrics_date": "2026-05-21",
+    "news_sentiment_score": null,
+    "news_sentiment_score_date": "2026-05-21",
+    "news_sentiment_subscores": {
+        "earnings_surprise_revisions": null,
+        "price_momentum": 47.00412796116527,
+        "insider_activity": null
+    },
+    "news_sentiment_drivers": {
+        "strongest": [
+            "return_3m (price_momentum): score=67, value=10.0%",
+            "return_6m (price_momentum): score=59, value=5.5%",
+            "return_1m (price_momentum): score=0, value=-33.8%"
+        ],
+        "weakest": [
+            "return_1m (price_momentum): score=0, value=-33.8%",
+            "return_6m (price_momentum): score=59, value=5.5%",
+            "return_3m (price_momentum): score=67, value=10.0%"
+        ]
+    },
+    "composite_score": null,
+    "composite_score_date": "2026-05-21",
+    "composite_rank": null,
+    "composite_metadata": {
+        "scores_used": [
+            "financial"
+        ],
+        "scores_imputed": [],
+        "imputed_values": {},
+        "imputation_r_squared": null,
+        "weights_applied": {
+            "financial": 50,
+            "professional": 30,
+            "news_sentiment": 20
+        },
+        "skip_reason": "Only 1 of 3 scores populated; need at least 2"
+    }
+}

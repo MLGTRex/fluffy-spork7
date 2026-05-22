@@ -1,0 +1,212 @@
+{
+    "ticker": "AAPL",
+    "company_name": "Apple Inc.",
+    "universe_added_date": "2026-05-18",
+    "financial_raw_metrics": {
+        "sector": "Technology",
+        "industry": "Consumer Electronics",
+        "market_cap_usd": 4479496749056,
+        "profitability": {
+            "gross_margin_ttm": 0.47862,
+            "operating_margin_ttm": 0.32275,
+            "net_margin_ttm": 0.27152002,
+            "operating_margin_trend_3yr": 0.0168205536706329
+        },
+        "returns_on_capital": {
+            "roe_ttm": 1.4147099,
+            "roa_ttm": 0.26229,
+            "roic_ttm": null
+        },
+        "cash_flow": {
+            "fcf_margin_ttm": 0.2239285284218523,
+            "fcf_to_net_income_ttm": 0.8247256239804277,
+            "ocf_cagr_3yr": -0.030005567454642
+        },
+        "balance_sheet": {
+            "debt_to_equity": 0.79548,
+            "net_debt_to_ebitda": 0.10129017754727493,
+            "current_ratio": 1.07,
+            "interest_coverage": null,
+            "total_debt_usd": 84710998016,
+            "total_cash_usd": 68507000832
+        },
+        "growth": {
+            "revenue_growth_1yr": 0.166,
+            "revenue_cagr_3yr": 0.01812535743479393,
+            "eps_growth_1yr": 0.218,
+            "eps_cagr_3yr": 0.039212592033254,
+            "fcf_cagr_3yr": -0.039450634871626145
+        },
+        "valuation": {
+            "pe_trailing": 36.968483,
+            "pe_forward": 31.75712,
+            "ps_ratio": 9.92264,
+            "pb_ratio": 42.00964,
+            "ev_ebitda": 27.851,
+            "peg_ratio": 2.6301,
+            "fcf_yield": 0.022567433805885374
+        },
+        "data_quality_flags": [
+            "AAPL: eps_cagr_3yr approximated by net income CAGR (share count changes not adjusted)"
+        ]
+    },
+    "financial_raw_metrics_date": "2026-05-21",
+    "financial_score": 65.31623027773622,
+    "financial_score_date": "2026-05-21",
+    "financial_subscores": {
+        "profitability": 55.36830357333292,
+        "returns_on_capital": 98.57638888204715,
+        "cash_flow_quality": 75.18133762431707,
+        "balance_sheet": 78.6631596702916,
+        "growth": 43.07481084415578,
+        "valuation": 33.262637105637026
+    },
+    "financial_drivers": {
+        "strongest": [
+            "roe_ttm (returns_on_capital): score=100, value=1.41",
+            "net_debt_to_ebitda (balance_sheet): score=99, value=10.1%",
+            "roa_ttm (returns_on_capital): score=96, value=26.2%"
+        ],
+        "weakest": [
+            "peg_ratio (valuation): score=18, value=2.63",
+            "fcf_cagr_3yr (growth): score=21, value=-3.9%",
+            "ocf_cagr_3yr (cash_flow_quality): score=25, value=-3.0%"
+        ]
+    },
+    "professional_raw_metrics": {
+        "sector": "Technology",
+        "industry": "Consumer Electronics",
+        "market_cap_usd": 4479496749056,
+        "current_price": 304.99,
+        "analyst": {
+            "recommendation_mean": 1.95833,
+            "recommendation_key": "buy",
+            "target_mean_price": 308.6465,
+            "target_median_price": 310.0,
+            "target_high_price": 400.0,
+            "target_low_price": 215.0,
+            "upside_to_target": 0.011988917669431765,
+            "target_dispersion": 0.5993912129248186,
+            "num_analysts": 43
+        },
+        "rating_momentum": {
+            "upgrades_12m": 6,
+            "downgrades_12m": 4,
+            "total_actions_12m": 119
+        },
+        "institutional": {
+            "held_pct_institutions": 0.65803003,
+            "held_pct_insiders": 0.01633
+        },
+        "short_interest": {
+            "short_pct_of_float": 0.0092,
+            "short_ratio": 3.11,
+            "short_change_pct": 0.062348425846976516
+        },
+        "data_quality_flags": []
+    },
+    "professional_raw_metrics_date": "2026-05-21",
+    "professional_score": 58.60420630744771,
+    "professional_score_date": "2026-05-21",
+    "professional_subscores": {
+        "analyst_consensus": 57.18873012033181,
+        "rating_momentum": 53.55882352941176,
+        "institutional_positioning": 60.07844317047567,
+        "short_interest": 67.85889393573147
+    },
+    "professional_drivers": {
+        "strongest": [
+            "short_pct_of_float (short_interest): score=77, value=0.9%",
+            "recommendation_mean (analyst_consensus): score=76, value=1.96",
+            "short_ratio (short_interest): score=69, value=3.11"
+        ],
+        "weakest": [
+            "upside_to_target (analyst_consensus): score=29, value=1.2%",
+            "short_change_pct (short_interest): score=42, value=6.2%",
+            "upgrades_12m (rating_momentum): score=54, value=6.00"
+        ]
+    },
+    "news_sentiment_raw_metrics": {
+        "sector": null,
+        "industry": null,
+        "market_cap_usd": null,
+        "current_price": null,
+        "earnings": {
+            "beat_count_4q": 4,
+            "miss_count_4q": 0,
+            "total_quarters_4q": 4,
+            "avg_surprise_magnitude_4q": 0.06071318105672878,
+            "eps_estimate_revision_90d": null,
+            "trailing_eps": null,
+            "forward_eps": null
+        },
+        "price_momentum": {
+            "return_1m": null,
+            "return_3m": null,
+            "return_6m": null
+        },
+        "insider_activity": {
+            "insider_purchases_count_90d": null,
+            "insider_sales_count_90d": null,
+            "insider_net_value_90d_usd": null
+        },
+        "data_quality_flags": [
+            "AAPL: failed to fetch .info (Too Many Requests. Rate limited. Try after a while.)",
+            "AAPL: sector classification unavailable",
+            "AAPL: eps_revisions fetch failed (Too Many Requests. Rate limited. Try after a while.)",
+            "AAPL: price momentum fetch failed (Too Many Requests. Rate limited. Try after a while.)",
+            "AAPL: insider_transactions fetch failed (Too Many Requests. Rate limited. Try after a while.)"
+        ]
+    },
+    "news_sentiment_raw_metrics_date": "2026-05-21",
+    "news_sentiment_score": null,
+    "news_sentiment_score_date": "2026-05-21",
+    "news_sentiment_subscores": {
+        "earnings_surprise_revisions": 89.94490199247015,
+        "price_momentum": null,
+        "insider_activity": null
+    },
+    "news_sentiment_drivers": {
+        "strongest": [
+            "beat_rate_4q (earnings_surprise_revisions): score=100, value=1.00",
+            "avg_surprise_magnitude_4q (earnings_surprise_revisions): score=78, value=6.1%"
+        ],
+        "weakest": [
+            "avg_surprise_magnitude_4q (earnings_surprise_revisions): score=78, value=6.1%",
+            "beat_rate_4q (earnings_surprise_revisions): score=100, value=1.00"
+        ]
+    },
+    "composite_score": 59.84745961968235,
+    "composite_score_date": "2026-05-21",
+    "composite_rank": 186,
+    "composite_metadata": {
+        "scores_used": [
+            "financial",
+            "professional"
+        ],
+        "scores_imputed": [
+            "news_sentiment"
+        ],
+        "imputed_values": {
+            "news_sentiment": 48.04041294289966
+        },
+        "imputation_r_squared": 0.05693184104207816,
+        "weights_applied": {
+            "financial": 50,
+            "professional": 30,
+            "news_sentiment": 20
+        }
+    },
+    "disqualifier_flags": {
+        "bankruptcy_8k": {
+            "triggered": false
+        },
+        "material_restatement_10ka": {
+            "triggered": false
+        },
+        "check_status": "ok",
+        "error_message": null
+    },
+    "disqualifier_check_date": "2026-05-18",
+    "qualified": true
+}

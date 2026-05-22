@@ -1,0 +1,193 @@
+{
+    "ticker": "NIQ",
+    "company_name": "NIQ Global Intelligence",
+    "universe_added_date": "2026-05-18",
+    "financial_raw_metrics": {
+        "sector": null,
+        "industry": null,
+        "market_cap_usd": 2493902080,
+        "profitability": {
+            "gross_margin_ttm": null,
+            "operating_margin_ttm": null,
+            "net_margin_ttm": null,
+            "operating_margin_trend_3yr": 0.06646928756311142
+        },
+        "returns_on_capital": {
+            "roe_ttm": null,
+            "roa_ttm": null,
+            "roic_ttm": null
+        },
+        "cash_flow": {
+            "fcf_margin_ttm": null,
+            "fcf_to_net_income_ttm": null,
+            "ocf_cagr_3yr": 0.6944247398178987
+        },
+        "balance_sheet": {
+            "debt_to_equity": null,
+            "net_debt_to_ebitda": null,
+            "current_ratio": null,
+            "interest_coverage": 0.3630843958712811,
+            "total_debt_usd": null,
+            "total_cash_usd": null
+        },
+        "growth": {
+            "revenue_growth_1yr": null,
+            "revenue_cagr_3yr": 0.14642799835797127,
+            "eps_growth_1yr": null,
+            "eps_cagr_3yr": null,
+            "fcf_cagr_3yr": null
+        },
+        "valuation": {
+            "pe_trailing": null,
+            "pe_forward": 7.0279036,
+            "ps_ratio": null,
+            "pb_ratio": 2.7222936,
+            "ev_ebitda": null,
+            "peg_ratio": null,
+            "fcf_yield": null
+        },
+        "data_quality_flags": [
+            "NIQ: sector classification unavailable",
+            "NIQ: industry classification unavailable",
+            "NIQ: eps_cagr_3yr approximated by net income CAGR (share count changes not adjusted)"
+        ]
+    },
+    "financial_raw_metrics_date": "2026-05-21",
+    "financial_score": null,
+    "financial_score_date": "2026-05-21",
+    "financial_subscores": {
+        "profitability": null,
+        "returns_on_capital": null,
+        "cash_flow_quality": null,
+        "balance_sheet": null,
+        "growth": null,
+        "valuation": null
+    },
+    "financial_drivers": {
+        "strongest": [
+            "ocf_cagr_3yr (cash_flow_quality): score=100, value=69.4%",
+            "pe_forward (valuation): score=96, value=7.03",
+            "revenue_cagr_3yr (growth): score=79, value=14.6%"
+        ],
+        "weakest": [
+            "interest_coverage (balance_sheet): score=0, value=36.3%",
+            "revenue_cagr_3yr (growth): score=79, value=14.6%",
+            "pe_forward (valuation): score=96, value=7.03"
+        ]
+    },
+    "professional_raw_metrics": {
+        "sector": null,
+        "industry": null,
+        "market_cap_usd": null,
+        "current_price": null,
+        "analyst": {
+            "recommendation_mean": null,
+            "recommendation_key": null,
+            "target_mean_price": null,
+            "target_median_price": null,
+            "target_high_price": null,
+            "target_low_price": null,
+            "upside_to_target": null,
+            "target_dispersion": null,
+            "num_analysts": null
+        },
+        "rating_momentum": {
+            "upgrades_12m": 0,
+            "downgrades_12m": 0,
+            "total_actions_12m": 0
+        },
+        "institutional": {
+            "held_pct_institutions": null,
+            "held_pct_insiders": null
+        },
+        "short_interest": {
+            "short_pct_of_float": null,
+            "short_ratio": null,
+            "short_change_pct": null
+        },
+        "data_quality_flags": [
+            "NIQ: failed to fetch .info (Too Many Requests. Rate limited. Try after a while.)",
+            "NIQ: sector classification unavailable",
+            "NIQ: upgrades/downgrades fetch failed (Too Many Requests. Rate limited. Try after a while.)"
+        ]
+    },
+    "professional_raw_metrics_date": "2026-05-21",
+    "professional_score": null,
+    "professional_score_date": "2026-05-21",
+    "professional_subscores": {
+        "analyst_consensus": null,
+        "rating_momentum": 50.0,
+        "institutional_positioning": null,
+        "short_interest": null
+    },
+    "professional_drivers": {
+        "strongest": [],
+        "weakest": []
+    },
+    "news_sentiment_raw_metrics": {
+        "sector": null,
+        "industry": null,
+        "market_cap_usd": null,
+        "current_price": null,
+        "earnings": {
+            "beat_count_4q": null,
+            "miss_count_4q": null,
+            "total_quarters_4q": null,
+            "avg_surprise_magnitude_4q": null,
+            "eps_estimate_revision_90d": null,
+            "trailing_eps": null,
+            "forward_eps": null
+        },
+        "price_momentum": {
+            "return_1m": -0.27343080600895175,
+            "return_3m": -0.25812119801920425,
+            "return_6m": -0.43591454823211184
+        },
+        "insider_activity": {
+            "insider_purchases_count_90d": null,
+            "insider_sales_count_90d": null,
+            "insider_net_value_90d_usd": null
+        },
+        "data_quality_flags": [
+            "NIQ: failed to fetch .info (Too Many Requests. Rate limited. Try after a while.)",
+            "NIQ: sector classification unavailable",
+            "NIQ: earnings_dates fetch failed (['Earnings Date'])",
+            "NIQ: eps_revisions fetch failed (Too Many Requests. Rate limited. Try after a while.)"
+        ]
+    },
+    "news_sentiment_raw_metrics_date": "2026-05-21",
+    "news_sentiment_score": null,
+    "news_sentiment_score_date": "2026-05-21",
+    "news_sentiment_subscores": {
+        "earnings_surprise_revisions": null,
+        "price_momentum": 3.549979865173428,
+        "insider_activity": null
+    },
+    "news_sentiment_drivers": {
+        "strongest": [
+            "return_3m (price_momentum): score=7, value=-25.8%",
+            "return_1m (price_momentum): score=4, value=-27.3%",
+            "return_6m (price_momentum): score=0, value=-43.6%"
+        ],
+        "weakest": [
+            "return_6m (price_momentum): score=0, value=-43.6%",
+            "return_1m (price_momentum): score=4, value=-27.3%",
+            "return_3m (price_momentum): score=7, value=-25.8%"
+        ]
+    },
+    "composite_score": null,
+    "composite_score_date": "2026-05-21",
+    "composite_rank": null,
+    "composite_metadata": {
+        "scores_used": [],
+        "scores_imputed": [],
+        "imputed_values": {},
+        "imputation_r_squared": null,
+        "weights_applied": {
+            "financial": 50,
+            "professional": 30,
+            "news_sentiment": 20
+        },
+        "skip_reason": "Only 0 of 3 scores populated; need at least 2"
+    }
+}

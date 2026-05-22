@@ -1,0 +1,190 @@
+{
+    "ticker": "TSN",
+    "company_name": "Tyson Foods",
+    "universe_added_date": "2026-05-18",
+    "financial_raw_metrics": {
+        "sector": "Consumer Defensive",
+        "industry": "Farm Products",
+        "market_cap_usd": 23406043136,
+        "profitability": {
+            "gross_margin_ttm": 0.06385,
+            "operating_margin_ttm": 0.0364,
+            "net_margin_ttm": 0.00813,
+            "operating_margin_trend_3yr": -0.05629814188524339
+        },
+        "returns_on_capital": {
+            "roe_ttm": 0.02619,
+            "roa_ttm": 0.0247,
+            "roic_ttm": null
+        },
+        "cash_flow": {
+            "fcf_margin_ttm": 0.01847065188565256,
+            "fcf_to_net_income_ttm": 2.271523178807947,
+            "ocf_cagr_3yr": -0.07090554239728686
+        },
+        "balance_sheet": {
+            "debt_to_equity": 0.44409999999999994,
+            "net_debt_to_ebitda": 2.798154778537339,
+            "current_ratio": 1.83,
+            "interest_coverage": 2.712694877505568,
+            "total_debt_usd": 8082999808,
+            "total_cash_usd": 500000000
+        },
+        "growth": {
+            "revenue_growth_1yr": 0.044,
+            "revenue_cagr_3yr": 0.00719878201118096,
+            "eps_growth_1yr": 36.022,
+            "eps_cagr_3yr": -0.4729718260412674,
+            "fcf_cagr_3yr": 0.13735356163421808
+        },
+        "valuation": {
+            "pe_trailing": 52.338585,
+            "pe_forward": 14.476908,
+            "ps_ratio": 0.4201408,
+            "pb_ratio": 1.2984959,
+            "ev_ebitda": 11.48,
+            "peg_ratio": 1.0438,
+            "fcf_yield": 0.0439630053666496
+        },
+        "data_quality_flags": [
+            "TSN: eps_cagr_3yr approximated by net income CAGR (share count changes not adjusted)"
+        ]
+    },
+    "financial_raw_metrics_date": "2026-05-21",
+    "financial_score": 40.2196182465003,
+    "financial_score_date": "2026-05-21",
+    "financial_subscores": {
+        "profitability": 19.942337220694498,
+        "returns_on_capital": 34.33268891675117,
+        "cash_flow_quality": 36.921846766370436,
+        "balance_sheet": 65.82990152671242,
+        "growth": 38.21345884372348,
+        "valuation": 54.79887965660147
+    },
+    "financial_drivers": {
+        "strongest": [
+            "eps_growth_1yr (growth): score=100, value=36.02",
+            "debt_to_equity (balance_sheet): score=91, value=44.4%",
+            "current_ratio (balance_sheet): score=78, value=1.83"
+        ],
+        "weakest": [
+            "eps_cagr_3yr (growth): score=0, value=-47.3%",
+            "pe_trailing (valuation): score=9, value=52.34",
+            "gross_margin_ttm (profitability): score=11, value=6.4%"
+        ]
+    },
+    "professional_raw_metrics": {
+        "sector": null,
+        "industry": null,
+        "market_cap_usd": null,
+        "current_price": null,
+        "analyst": {
+            "recommendation_mean": null,
+            "recommendation_key": null,
+            "target_mean_price": null,
+            "target_median_price": null,
+            "target_high_price": null,
+            "target_low_price": null,
+            "upside_to_target": null,
+            "target_dispersion": null,
+            "num_analysts": null
+        },
+        "rating_momentum": {
+            "upgrades_12m": 0,
+            "downgrades_12m": 0,
+            "total_actions_12m": 0
+        },
+        "institutional": {
+            "held_pct_institutions": null,
+            "held_pct_insiders": null
+        },
+        "short_interest": {
+            "short_pct_of_float": null,
+            "short_ratio": null,
+            "short_change_pct": null
+        },
+        "data_quality_flags": [
+            "TSN: failed to fetch .info (Too Many Requests. Rate limited. Try after a while.)",
+            "TSN: sector classification unavailable",
+            "TSN: upgrades/downgrades fetch failed (Too Many Requests. Rate limited. Try after a while.)"
+        ]
+    },
+    "professional_raw_metrics_date": "2026-05-21",
+    "professional_score": null,
+    "professional_score_date": "2026-05-21",
+    "professional_subscores": {
+        "analyst_consensus": null,
+        "rating_momentum": 50.0,
+        "institutional_positioning": null,
+        "short_interest": null
+    },
+    "professional_drivers": {
+        "strongest": [],
+        "weakest": []
+    },
+    "news_sentiment_raw_metrics": {
+        "sector": "Consumer Defensive",
+        "industry": "Farm Products",
+        "market_cap_usd": 23406043136,
+        "current_price": 66.47,
+        "earnings": {
+            "beat_count_4q": null,
+            "miss_count_4q": null,
+            "total_quarters_4q": null,
+            "avg_surprise_magnitude_4q": null,
+            "eps_estimate_revision_90d": null,
+            "trailing_eps": 1.27,
+            "forward_eps": 4.59145
+        },
+        "price_momentum": {
+            "return_1m": 0.029425434631496206,
+            "return_3m": 0.047642877554945624,
+            "return_6m": 0.27429122127897515
+        },
+        "insider_activity": {
+            "insider_purchases_count_90d": null,
+            "insider_sales_count_90d": null,
+            "insider_net_value_90d_usd": null
+        },
+        "data_quality_flags": [
+            "TSN: earnings_dates fetch failed (['Earnings Date'])"
+        ]
+    },
+    "news_sentiment_raw_metrics_date": "2026-05-21",
+    "news_sentiment_score": null,
+    "news_sentiment_score_date": "2026-05-21",
+    "news_sentiment_subscores": {
+        "earnings_surprise_revisions": null,
+        "price_momentum": 72.29130905228251,
+        "insider_activity": null
+    },
+    "news_sentiment_drivers": {
+        "strongest": [
+            "return_6m (price_momentum): score=96, value=27.4%",
+            "return_3m (price_momentum): score=58, value=4.8%",
+            "return_1m (price_momentum): score=55, value=2.9%"
+        ],
+        "weakest": [
+            "return_1m (price_momentum): score=55, value=2.9%",
+            "return_3m (price_momentum): score=58, value=4.8%",
+            "return_6m (price_momentum): score=96, value=27.4%"
+        ]
+    },
+    "composite_score": null,
+    "composite_score_date": "2026-05-21",
+    "composite_rank": null,
+    "composite_metadata": {
+        "scores_used": [
+            "financial"
+        ],
+        "scores_imputed": [],
+        "imputed_values": {},
+        "imputation_r_squared": null,
+        "weights_applied": {
+            "financial": 50,
+            "professional": 30,
+            "news_sentiment": 20
+        },
+        "skip_reason": "Only 1 of 3 scores populated; need at least 2"
+    }
+}
