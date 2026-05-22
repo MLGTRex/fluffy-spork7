@@ -1,0 +1,68 @@
+name: Stage 5 Pruner
+
+on:
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: "Dry run? When true, the pruner computes the plan but does NOT move/delete files."
+        type: boolean
+        required: true
+        default: true
+
+permissions:
+  contents: write
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ github.ref_name }}
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Run pruner (dry-run)
+        if: ${{ inputs.dry_run }}
+        run: python -u "Stage 5 DRAFT/pruner/runPrune.py" --dry-run
+
+      - name: Run pruner (execute)
+        if: ${{ !inputs.dry_run }}
+        run: python -u "Stage 5 DRAFT/pruner/runPrune.py" --execute
+
+      - name: Upload pruner log
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: stage-5-pruner-logs-${{ github.run_id }}
+          path: |
+            Stage 5 DRAFT/logs/pruner_*.log
+          if-no-files-found: ignore
+
+      - name: Commit pruner moves and backups
+        if: ${{ always() && !inputs.dry_run }}
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          # The pruner MOVES files, so both deletions and additions need to be staged.
+          git add -A "Stage 2 DRAFT/output" 2>/dev/null || true
+          git add -A "Stage 3 DRAFT/output" 2>/dev/null || true
+          git add -A "Stage 4 DRAFT/output" 2>/dev/null || true
+          git add -A "Stage 4 DRAFT/cache" 2>/dev/null || true
+          git add -A "Stage 5 DRAFT/backups/pruned" 2>/dev/null || true
+          if git diff --cached --quiet; then
+            echo "No pruner changes to commit."
+          else
+            git commit -m "Stage 5 pruner — move stale outputs to backup (run ${{ github.run_id }})"
+            git push origin HEAD:${{ github.ref_name }}
+          fi
