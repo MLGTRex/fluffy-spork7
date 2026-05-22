@@ -1,0 +1,194 @@
+{
+    "ticker": "VRSK",
+    "company_name": "Verisk Analytics",
+    "universe_added_date": "2026-05-18",
+    "financial_raw_metrics": {
+        "sector": "Industrials",
+        "industry": "Consulting Services",
+        "market_cap_usd": 22483349504,
+        "profitability": {
+            "gross_margin_ttm": 0.6998,
+            "operating_margin_ttm": 0.45004,
+            "net_margin_ttm": 0.2934,
+            "operating_margin_trend_3yr": -0.1259081438292879
+        },
+        "returns_on_capital": {
+            "roe_ttm": null,
+            "roa_ttm": 0.17999001,
+            "roic_ttm": null
+        },
+        "cash_flow": {
+            "fcf_margin_ttm": 0.30440722213296373,
+            "fcf_to_net_income_ttm": 1.0375329553944188,
+            "ocf_cagr_3yr": 0.10684334948803809
+        },
+        "balance_sheet": {
+            "debt_to_equity": null,
+            "net_debt_to_ebitda": 2.718652751804846,
+            "current_ratio": 1.018,
+            "interest_coverage": 7.853715623171445,
+            "total_debt_usd": 4625200128,
+            "total_cash_usd": 525200000
+        },
+        "growth": {
+            "revenue_growth_1yr": 0.039,
+            "revenue_cagr_3yr": 0.07160288137517012,
+            "eps_growth_1yr": 0.048,
+            "eps_cagr_3yr": -0.016332936191974512,
+            "fcf_cagr_3yr": 0.14970353914127865
+        },
+        "valuation": {
+            "pe_trailing": 26.198473,
+            "pe_forward": 19.821331,
+            "ps_ratio": 7.2473164,
+            "pb_ratio": 76.84729,
+            "ev_ebitda": 17.546,
+            "peg_ratio": 1.6546,
+            "fcf_yield": 0.04200274944940873
+        },
+        "data_quality_flags": [
+            "VRSK: eps_cagr_3yr approximated by net income CAGR (share count changes not adjusted)"
+        ]
+    },
+    "financial_raw_metrics_date": "2026-05-21",
+    "financial_score": 70.05146268725832,
+    "financial_score_date": "2026-05-21",
+    "financial_subscores": {
+        "profitability": 95.0,
+        "returns_on_capital": null,
+        "cash_flow_quality": 91.7147377625111,
+        "balance_sheet": 54.90541960391975,
+        "growth": 47.506447985318516,
+        "valuation": 52.81452898029508
+    },
+    "financial_drivers": {
+        "strongest": [
+            "roa_ttm (returns_on_capital): score=100, value=18.0%",
+            "net_margin_ttm (profitability): score=100, value=29.3%",
+            "operating_margin_ttm (profitability): score=100, value=45.0%"
+        ],
+        "weakest": [
+            "eps_cagr_3yr (growth): score=18, value=-1.6%",
+            "current_ratio (balance_sheet): score=31, value=1.02",
+            "eps_growth_1yr (growth): score=44, value=4.8%"
+        ]
+    },
+    "professional_raw_metrics": {
+        "sector": null,
+        "industry": null,
+        "market_cap_usd": null,
+        "current_price": null,
+        "analyst": {
+            "recommendation_mean": null,
+            "recommendation_key": null,
+            "target_mean_price": null,
+            "target_median_price": null,
+            "target_high_price": null,
+            "target_low_price": null,
+            "upside_to_target": null,
+            "target_dispersion": null,
+            "num_analysts": null
+        },
+        "rating_momentum": {
+            "upgrades_12m": 0,
+            "downgrades_12m": 0,
+            "total_actions_12m": 0
+        },
+        "institutional": {
+            "held_pct_institutions": null,
+            "held_pct_insiders": null
+        },
+        "short_interest": {
+            "short_pct_of_float": null,
+            "short_ratio": null,
+            "short_change_pct": null
+        },
+        "data_quality_flags": [
+            "VRSK: failed to fetch .info (Too Many Requests. Rate limited. Try after a while.)",
+            "VRSK: sector classification unavailable",
+            "VRSK: upgrades/downgrades fetch failed (Too Many Requests. Rate limited. Try after a while.)"
+        ]
+    },
+    "professional_raw_metrics_date": "2026-05-21",
+    "professional_score": null,
+    "professional_score_date": "2026-05-21",
+    "professional_subscores": {
+        "analyst_consensus": null,
+        "rating_momentum": 50.0,
+        "institutional_positioning": null,
+        "short_interest": null
+    },
+    "professional_drivers": {
+        "strongest": [],
+        "weakest": []
+    },
+    "news_sentiment_raw_metrics": {
+        "sector": "Industrials",
+        "industry": "Consulting Services",
+        "market_cap_usd": 22483349504,
+        "current_price": 171.6,
+        "earnings": {
+            "beat_count_4q": null,
+            "miss_count_4q": null,
+            "total_quarters_4q": null,
+            "avg_surprise_magnitude_4q": null,
+            "eps_estimate_revision_90d": null,
+            "trailing_eps": 6.55,
+            "forward_eps": 8.65734
+        },
+        "price_momentum": {
+            "return_1m": -0.05760885577934297,
+            "return_3m": -0.0653863836348049,
+            "return_6m": -0.23337214198608822
+        },
+        "insider_activity": {
+            "insider_purchases_count_90d": 0,
+            "insider_sales_count_90d": 3,
+            "insider_net_value_90d_usd": -214200.0
+        },
+        "data_quality_flags": [
+            "VRSK: earnings_dates fetch failed (['Earnings Date'])"
+        ]
+    },
+    "news_sentiment_raw_metrics_date": "2026-05-21",
+    "news_sentiment_score": 30.42928053906888,
+    "news_sentiment_score_date": "2026-05-21",
+    "news_sentiment_subscores": {
+        "earnings_surprise_revisions": null,
+        "price_momentum": 28.227282498091206,
+        "insider_activity": 34.83327662102423
+    },
+    "news_sentiment_drivers": {
+        "strongest": [
+            "net_insider_value_pct_mcap_90d (insider_activity): score=50, value=-0.0%",
+            "return_1m (price_momentum): score=40, value=-5.8%",
+            "return_3m (price_momentum): score=39, value=-6.5%"
+        ],
+        "weakest": [
+            "insider_count_ratio_90d (insider_activity): score=0, value=-1.00",
+            "return_6m (price_momentum): score=11, value=-23.3%",
+            "return_3m (price_momentum): score=39, value=-6.5%"
+        ]
+    },
+    "composite_score": 59.262552692272,
+    "composite_score_date": "2026-05-21",
+    "composite_rank": 211,
+    "composite_metadata": {
+        "scores_used": [
+            "financial",
+            "news_sentiment"
+        ],
+        "scores_imputed": [
+            "professional"
+        ],
+        "imputed_values": {
+            "professional": 60.50321746943021
+        },
+        "imputation_r_squared": 0.04516719672877956,
+        "weights_applied": {
+            "financial": 50,
+            "professional": 30,
+            "news_sentiment": 20
+        }
+    }
+}

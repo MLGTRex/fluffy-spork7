@@ -1,0 +1,190 @@
+{
+    "ticker": "XP",
+    "company_name": "XP Inc.",
+    "universe_added_date": "2026-05-18",
+    "financial_raw_metrics": {
+        "sector": "Financial Services",
+        "industry": "Capital Markets",
+        "market_cap_usd": 9258859520,
+        "profitability": {
+            "gross_margin_ttm": 0.6907,
+            "operating_margin_ttm": 0.29952,
+            "net_margin_ttm": 0.28849,
+            "operating_margin_trend_3yr": 0.03282734438439039
+        },
+        "returns_on_capital": {
+            "roe_ttm": 0.22944,
+            "roa_ttm": 0.013739999,
+            "roic_ttm": null
+        },
+        "cash_flow": {
+            "fcf_margin_ttm": null,
+            "fcf_to_net_income_ttm": null,
+            "ocf_cagr_3yr": 0.8830588564255004
+        },
+        "balance_sheet": {
+            "debt_to_equity": 6.77346,
+            "net_debt_to_ebitda": null,
+            "current_ratio": 1.39,
+            "interest_coverage": 9.712113847137832,
+            "total_debt_usd": 167479836672,
+            "total_cash_usd": 290114437120
+        },
+        "growth": {
+            "revenue_growth_1yr": 0.097,
+            "revenue_cagr_3yr": 0.10277478218841907,
+            "eps_growth_1yr": 0.089,
+            "eps_cagr_3yr": 0.1304073209506702,
+            "fcf_cagr_3yr": 0.9029321776126065
+        },
+        "valuation": {
+            "pe_trailing": 9.005025,
+            "pe_forward": 7.3484654,
+            "ps_ratio": 0.50936383,
+            "pb_ratio": 1.9728903,
+            "ev_ebitda": null,
+            "peg_ratio": null,
+            "fcf_yield": null
+        },
+        "data_quality_flags": [
+            "XP: eps_cagr_3yr approximated by net income CAGR (share count changes not adjusted)"
+        ]
+    },
+    "financial_raw_metrics_date": "2026-05-21",
+    "financial_score": 60.419845197282214,
+    "financial_score_date": "2026-05-21",
+    "financial_subscores": {
+        "profitability": 56.46692112177376,
+        "returns_on_capital": 42.610008153851865,
+        "cash_flow_quality": null,
+        "balance_sheet": 43.79014230892229,
+        "growth": 72.83989850817608,
+        "valuation": 93.64650959999999
+    },
+    "financial_drivers": {
+        "strongest": [
+            "fcf_cagr_3yr (growth): score=100, value=90.3%",
+            "ocf_cagr_3yr (cash_flow_quality): score=100, value=88.3%",
+            "pe_forward (valuation): score=95, value=7.35"
+        ],
+        "weakest": [
+            "debt_to_equity (balance_sheet): score=0, value=6.77",
+            "roa_ttm (returns_on_capital): score=31, value=1.4%",
+            "gross_margin_ttm (profitability): score=46, value=69.1%"
+        ]
+    },
+    "professional_raw_metrics": {
+        "sector": null,
+        "industry": null,
+        "market_cap_usd": null,
+        "current_price": null,
+        "analyst": {
+            "recommendation_mean": null,
+            "recommendation_key": null,
+            "target_mean_price": null,
+            "target_median_price": null,
+            "target_high_price": null,
+            "target_low_price": null,
+            "upside_to_target": null,
+            "target_dispersion": null,
+            "num_analysts": null
+        },
+        "rating_momentum": {
+            "upgrades_12m": 0,
+            "downgrades_12m": 0,
+            "total_actions_12m": 0
+        },
+        "institutional": {
+            "held_pct_institutions": null,
+            "held_pct_insiders": null
+        },
+        "short_interest": {
+            "short_pct_of_float": null,
+            "short_ratio": null,
+            "short_change_pct": null
+        },
+        "data_quality_flags": [
+            "XP: failed to fetch .info (Too Many Requests. Rate limited. Try after a while.)",
+            "XP: sector classification unavailable",
+            "XP: upgrades/downgrades fetch failed (Too Many Requests. Rate limited. Try after a while.)"
+        ]
+    },
+    "professional_raw_metrics_date": "2026-05-21",
+    "professional_score": null,
+    "professional_score_date": "2026-05-21",
+    "professional_subscores": {
+        "analyst_consensus": null,
+        "rating_momentum": 50.0,
+        "institutional_positioning": null,
+        "short_interest": null
+    },
+    "professional_drivers": {
+        "strongest": [],
+        "weakest": []
+    },
+    "news_sentiment_raw_metrics": {
+        "sector": "Financial Services",
+        "industry": "Capital Markets",
+        "market_cap_usd": 9258859520,
+        "current_price": 17.92,
+        "earnings": {
+            "beat_count_4q": null,
+            "miss_count_4q": null,
+            "total_quarters_4q": null,
+            "avg_surprise_magnitude_4q": null,
+            "eps_estimate_revision_90d": null,
+            "trailing_eps": 1.99,
+            "forward_eps": 2.4386044
+        },
+        "price_momentum": {
+            "return_1m": -0.11724134613342826,
+            "return_3m": -0.11111110438324984,
+            "return_6m": 0.005577893308941878
+        },
+        "insider_activity": {
+            "insider_purchases_count_90d": null,
+            "insider_sales_count_90d": null,
+            "insider_net_value_90d_usd": null
+        },
+        "data_quality_flags": [
+            "XP: earnings_dates fetch failed (['Earnings Date'])"
+        ]
+    },
+    "news_sentiment_raw_metrics_date": "2026-05-21",
+    "news_sentiment_score": null,
+    "news_sentiment_score_date": "2026-05-21",
+    "news_sentiment_subscores": {
+        "earnings_surprise_revisions": null,
+        "price_momentum": 39.00532237601371,
+        "insider_activity": null
+    },
+    "news_sentiment_drivers": {
+        "strongest": [
+            "return_6m (price_momentum): score=51, value=0.6%",
+            "return_3m (price_momentum): score=31, value=-11.1%",
+            "return_1m (price_momentum): score=30, value=-11.7%"
+        ],
+        "weakest": [
+            "return_1m (price_momentum): score=30, value=-11.7%",
+            "return_3m (price_momentum): score=31, value=-11.1%",
+            "return_6m (price_momentum): score=51, value=0.6%"
+        ]
+    },
+    "composite_score": null,
+    "composite_score_date": "2026-05-21",
+    "composite_rank": null,
+    "composite_metadata": {
+        "scores_used": [
+            "financial"
+        ],
+        "scores_imputed": [],
+        "imputed_values": {},
+        "imputation_r_squared": null,
+        "weights_applied": {
+            "financial": 50,
+            "professional": 30,
+            "news_sentiment": 20
+        },
+        "skip_reason": "Only 1 of 3 scores populated; need at least 2"
+    }
+}

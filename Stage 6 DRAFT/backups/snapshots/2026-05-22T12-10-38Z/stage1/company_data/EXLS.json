@@ -1,0 +1,205 @@
+{
+    "ticker": "EXLS",
+    "company_name": "EXL Service",
+    "universe_added_date": "2026-05-18",
+    "financial_raw_metrics": {
+        "sector": "Technology",
+        "industry": "Information Technology Services",
+        "market_cap_usd": 4465844736,
+        "profitability": {
+            "gross_margin_ttm": 0.38472,
+            "operating_margin_ttm": 0.15985,
+            "net_margin_ttm": 0.116610005,
+            "operating_margin_trend_3yr": 0.014198687062477927
+        },
+        "returns_on_capital": {
+            "roe_ttm": 0.28094,
+            "roa_ttm": 0.12165,
+            "roic_ttm": null
+        },
+        "cash_flow": {
+            "fcf_margin_ttm": 0.13679212561287774,
+            "fcf_to_net_income_ttm": 1.1730272546832974,
+            "ocf_cagr_3yr": 0.2828030951980467
+        },
+        "balance_sheet": {
+            "debt_to_equity": 0.66857,
+            "net_debt_to_ebitda": 0.7157866202231479,
+            "current_ratio": 2.662,
+            "interest_coverage": 18.889500880131735,
+            "total_debt_usd": 520687008,
+            "total_cash_usd": 253763008
+        },
+        "growth": {
+            "revenue_growth_1yr": 0.138,
+            "revenue_cagr_3yr": 0.13921360876866395,
+            "eps_growth_1yr": 0.075,
+            "eps_cagr_3yr": 0.20639422926731843,
+            "fcf_cagr_3yr": 0.34949201098826
+        },
+        "valuation": {
+            "pe_trailing": 18.617834,
+            "pe_forward": 11.647599,
+            "ps_ratio": 2.0703857,
+            "pb_ratio": 5.7426324,
+            "ev_ebitda": 12.773,
+            "peg_ratio": 0.9423,
+            "fcf_yield": 0.06607083977224953
+        },
+        "data_quality_flags": [
+            "EXLS: eps_cagr_3yr approximated by net income CAGR (share count changes not adjusted)"
+        ]
+    },
+    "financial_raw_metrics_date": "2026-05-21",
+    "financial_score": 74.12862182520087,
+    "financial_score_date": "2026-05-21",
+    "financial_subscores": {
+        "profitability": 63.37394286133431,
+        "returns_on_capital": 68.53217975358123,
+        "cash_flow_quality": 80.59468388621454,
+        "balance_sheet": 91.44290892481976,
+        "growth": 80.70905390675523,
+        "valuation": 65.56933529699552
+    },
+    "financial_drivers": {
+        "strongest": [
+            "interest_coverage (balance_sheet): score=99, value=18.89",
+            "ocf_cagr_3yr (cash_flow_quality): score=98, value=28.3%",
+            "fcf_cagr_3yr (growth): score=96, value=34.9%"
+        ],
+        "weakest": [
+            "ev_ebitda (valuation): score=26, value=12.77",
+            "eps_growth_1yr (growth): score=52, value=7.5%",
+            "gross_margin_ttm (profitability): score=58, value=38.5%"
+        ]
+    },
+    "professional_raw_metrics": {
+        "sector": "Technology",
+        "industry": "Information Technology Services",
+        "market_cap_usd": 4465844736,
+        "current_price": 29.23,
+        "analyst": {
+            "recommendation_mean": 1.55556,
+            "recommendation_key": "buy",
+            "target_mean_price": 41.75,
+            "target_median_price": 41.5,
+            "target_high_price": 46.0,
+            "target_low_price": 35.0,
+            "upside_to_target": 0.4283270612384536,
+            "target_dispersion": 0.2634730538922156,
+            "num_analysts": 8
+        },
+        "rating_momentum": {
+            "upgrades_12m": 1,
+            "downgrades_12m": 0,
+            "total_actions_12m": 8
+        },
+        "institutional": {
+            "held_pct_institutions": 0.010254399999999999,
+            "held_pct_insiders": 0.03326
+        },
+        "short_interest": {
+            "short_pct_of_float": 0.0875,
+            "short_ratio": 5.32,
+            "short_change_pct": 0.1263457893992305
+        },
+        "data_quality_flags": []
+    },
+    "professional_raw_metrics_date": "2026-05-21",
+    "professional_score": 64.53439355297137,
+    "professional_score_date": "2026-05-21",
+    "professional_subscores": {
+        "analyst_consensus": 91.56646122476909,
+        "rating_momentum": 57.5,
+        "institutional_positioning": 42.13056077460334,
+        "short_interest": 50.523279537675684
+    },
+    "professional_drivers": {
+        "strongest": [
+            "upside_to_target (analyst_consensus): score=96, value=42.8%",
+            "recommendation_mean (analyst_consensus): score=88, value=1.56",
+            "held_pct_insiders (institutional_positioning): score=72, value=3.3%"
+        ],
+        "weakest": [
+            "held_pct_institutions (institutional_positioning): score=29, value=1.0%",
+            "short_change_pct (short_interest): score=34, value=12.6%",
+            "short_ratio (short_interest): score=48, value=5.32"
+        ]
+    },
+    "news_sentiment_raw_metrics": {
+        "sector": "Technology",
+        "industry": "Information Technology Services",
+        "market_cap_usd": 4465844736,
+        "current_price": 29.23,
+        "earnings": {
+            "beat_count_4q": 4,
+            "miss_count_4q": 0,
+            "total_quarters_4q": 4,
+            "avg_surprise_magnitude_4q": 0.06201733648542157,
+            "eps_estimate_revision_90d": null,
+            "trailing_eps": 1.57,
+            "forward_eps": 2.50953
+        },
+        "price_momentum": {
+            "return_1m": -0.08283654752790087,
+            "return_3m": -0.0540452957652724,
+            "return_6m": -0.24839289126396055
+        },
+        "insider_activity": {
+            "insider_purchases_count_90d": 0,
+            "insider_sales_count_90d": 2,
+            "insider_net_value_90d_usd": -86684.0
+        },
+        "data_quality_flags": []
+    },
+    "news_sentiment_raw_metrics_date": "2026-05-21",
+    "news_sentiment_score": 53.71677795230175,
+    "news_sentiment_score_date": "2026-05-21",
+    "news_sentiment_subscores": {
+        "earnings_surprise_revisions": 90.1254773595199,
+        "price_momentum": 26.836308849099204,
+        "insider_activity": 34.66031734427052
+    },
+    "news_sentiment_drivers": {
+        "strongest": [
+            "beat_rate_4q (earnings_surprise_revisions): score=100, value=1.00",
+            "avg_surprise_magnitude_4q (earnings_surprise_revisions): score=79, value=6.2%",
+            "net_insider_value_pct_mcap_90d (insider_activity): score=50, value=-0.0%"
+        ],
+        "weakest": [
+            "insider_count_ratio_90d (insider_activity): score=0, value=-1.00",
+            "return_6m (price_momentum): score=9, value=-24.8%",
+            "return_1m (price_momentum): score=36, value=-8.3%"
+        ]
+    },
+    "composite_score": 67.16798456895219,
+    "composite_score_date": "2026-05-21",
+    "composite_rank": 18,
+    "composite_metadata": {
+        "scores_used": [
+            "financial",
+            "professional",
+            "news_sentiment"
+        ],
+        "scores_imputed": [],
+        "imputed_values": {},
+        "imputation_r_squared": null,
+        "weights_applied": {
+            "financial": 50,
+            "professional": 30,
+            "news_sentiment": 20
+        }
+    },
+    "disqualifier_flags": {
+        "bankruptcy_8k": {
+            "triggered": false
+        },
+        "material_restatement_10ka": {
+            "triggered": false
+        },
+        "check_status": "ok",
+        "error_message": null
+    },
+    "disqualifier_check_date": "2026-05-21",
+    "qualified": true
+}

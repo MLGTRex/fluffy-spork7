@@ -1,0 +1,152 @@
+{
+    "track": "A",
+    "method": "Quant MILP with quadratic concentration penalty",
+    "constraints": {
+        "portfolio_size": 15,
+        "min_position_weight": 0.03,
+        "max_position_weight": 0.2,
+        "sector_cap": 0.35,
+        "base_return_filter": "base_return_12m > 0",
+        "lambda_concentration_penalty": 2.0
+    },
+    "n_input_candidates": 25,
+    "n_eligible": 19,
+    "n_filtered_out": 6,
+    "filtered_out": [
+        {
+            "ticker": "ALL",
+            "reason": "base_return_12m=-0.0440 <= 0"
+        },
+        {
+            "ticker": "AU",
+            "reason": "base_return_12m=-0.0746 <= 0"
+        },
+        {
+            "ticker": "ALAB",
+            "reason": "base_return_12m=-0.2110 <= 0"
+        },
+        {
+            "ticker": "DVN",
+            "reason": "base_return_12m=-0.1509 <= 0"
+        },
+        {
+            "ticker": "FICO",
+            "reason": "base_return_12m=-0.1206 <= 0"
+        },
+        {
+            "ticker": "GRMN",
+            "reason": "base_return_12m=-0.0908 <= 0"
+        }
+    ],
+    "status": "optimal",
+    "objective_value": 0.079021,
+    "positions": [
+        {
+            "ticker": "ARDX",
+            "allocation_pct": 15.1115,
+            "sector": "Healthcare",
+            "expected_return_12m": 0.5256,
+            "base_return_12m": 0.4961
+        },
+        {
+            "ticker": "APP",
+            "allocation_pct": 9.4456,
+            "sector": "Communication Services",
+            "expected_return_12m": 0.2986,
+            "base_return_12m": 0.4407
+        },
+        {
+            "ticker": "RDDT",
+            "allocation_pct": 8.823,
+            "sector": "Communication Services",
+            "expected_return_12m": 0.2737,
+            "base_return_12m": 0.3863
+        },
+        {
+            "ticker": "VST",
+            "allocation_pct": 8.3338,
+            "sector": "Utilities",
+            "expected_return_12m": 0.2544,
+            "base_return_12m": 0.2611
+        },
+        {
+            "ticker": "KTOS",
+            "allocation_pct": 7.6107,
+            "sector": "Industrials",
+            "expected_return_12m": 0.2255,
+            "base_return_12m": 0.189
+        },
+        {
+            "ticker": "NVDA",
+            "allocation_pct": 6.5569,
+            "sector": "Technology",
+            "expected_return_12m": 0.1835,
+            "base_return_12m": 0.23
+        },
+        {
+            "ticker": "NOW",
+            "allocation_pct": 6.5569,
+            "sector": "Technology",
+            "expected_return_12m": 0.1837,
+            "base_return_12m": 0.2539
+        },
+        {
+            "ticker": "RMD",
+            "allocation_pct": 5.8452,
+            "sector": "Healthcare",
+            "expected_return_12m": 0.1551,
+            "base_return_12m": 0.2441
+        },
+        {
+            "ticker": "ICE",
+            "allocation_pct": 5.2549,
+            "sector": "Financial Services",
+            "expected_return_12m": 0.1314,
+            "base_return_12m": 0.1882
+        },
+        {
+            "ticker": "META",
+            "allocation_pct": 5.2337,
+            "sector": "Communication Services",
+            "expected_return_12m": 0.1307,
+            "base_return_12m": 0.1772
+        },
+        {
+            "ticker": "NFLX",
+            "allocation_pct": 4.7933,
+            "sector": "Communication Services",
+            "expected_return_12m": 0.1135,
+            "base_return_12m": 0.1758
+        },
+        {
+            "ticker": "HALO",
+            "allocation_pct": 4.6973,
+            "sector": "Healthcare",
+            "expected_return_12m": 0.1092,
+            "base_return_12m": 0.1092
+        },
+        {
+            "ticker": "AVGO",
+            "allocation_pct": 4.3752,
+            "sector": "Technology",
+            "expected_return_12m": 0.0963,
+            "base_return_12m": 0.1819
+        },
+        {
+            "ticker": "MSFT",
+            "allocation_pct": 3.8419,
+            "sector": "Technology",
+            "expected_return_12m": 0.0749,
+            "base_return_12m": 0.0738
+        },
+        {
+            "ticker": "ANET",
+            "allocation_pct": 3.52,
+            "sector": "Technology",
+            "expected_return_12m": 0.062,
+            "base_return_12m": 0.0229
+        }
+    ],
+    "error_message": null,
+    "analysis_date": "2026-05-22"
+}

@@ -1,0 +1,200 @@
+{
+    "ticker": "ATI",
+    "company_name": "ATI Inc.",
+    "universe_added_date": "2026-05-18",
+    "financial_raw_metrics": {
+        "sector": "Industrials",
+        "industry": "Metal Fabrication",
+        "market_cap_usd": 21891221504,
+        "profitability": {
+            "gross_margin_ttm": 0.23199,
+            "operating_margin_ttm": 0.16143999,
+            "net_margin_ttm": 0.092609994,
+            "operating_margin_trend_3yr": 0.03129797591744135
+        },
+        "returns_on_capital": {
+            "roe_ttm": 0.22674999,
+            "roa_ttm": 0.082959995,
+            "roic_ttm": null
+        },
+        "cash_flow": {
+            "fcf_margin_ttm": 0.07417564324282039,
+            "fcf_to_net_income_ttm": 0.8009400705052879,
+            "ocf_cagr_3yr": 0.39786002888829586
+        },
+        "balance_sheet": {
+            "debt_to_equity": 0.96904,
+            "net_debt_to_ebitda": 1.6794630617051343,
+            "current_ratio": 2.672,
+            "interest_coverage": 5.718157181571816,
+            "total_debt_usd": 1827900032,
+            "total_cash_usd": 401700000
+        },
+        "growth": {
+            "revenue_growth_1yr": 0.006,
+            "revenue_cagr_3yr": 0.06144135419561647,
+            "eps_growth_1yr": 0.269,
+            "eps_cagr_3yr": 0.07715074322617044,
+            "fcf_cagr_3yr": 0.5254903019002986
+        },
+        "valuation": {
+            "pe_trailing": 52.940598,
+            "pe_forward": 29.672695,
+            "ps_ratio": 4.764658,
+            "pb_ratio": 12.363959,
+            "ev_ebitda": 26.521,
+            "peg_ratio": 1.33,
+            "fcf_yield": 0.015567884137380295
+        },
+        "data_quality_flags": [
+            "ATI: eps_cagr_3yr approximated by net income CAGR (share count changes not adjusted)"
+        ]
+    },
+    "financial_raw_metrics_date": "2026-05-21",
+    "financial_score": 56.36907550347915,
+    "financial_score_date": "2026-05-21",
+    "financial_subscores": {
+        "profitability": 50.959027735682405,
+        "returns_on_capital": 51.6077664356841,
+        "cash_flow_quality": 63.01364003517864,
+        "balance_sheet": 79.69978005920447,
+        "growth": 62.216933700718805,
+        "valuation": 34.10775733293709
+    },
+    "financial_drivers": {
+        "strongest": [
+            "fcf_cagr_3yr (growth): score=100, value=52.5%",
+            "ocf_cagr_3yr (cash_flow_quality): score=100, value=39.8%",
+            "current_ratio (balance_sheet): score=96, value=2.67"
+        ],
+        "weakest": [
+            "pe_trailing (valuation): score=9, value=52.94",
+            "fcf_yield (valuation): score=26, value=1.6%",
+            "revenue_growth_1yr (growth): score=28, value=0.6%"
+        ]
+    },
+    "professional_raw_metrics": {
+        "sector": "Industrials",
+        "industry": "Metal Fabrication",
+        "market_cap_usd": 21891221504,
+        "current_price": 160.41,
+        "analyst": {
+            "recommendation_mean": 1.11111,
+            "recommendation_key": "strong_buy",
+            "target_mean_price": 179.55556,
+            "target_median_price": 175.0,
+            "target_high_price": 194.0,
+            "target_low_price": 170.0,
+            "upside_to_target": 0.11935390561685691,
+            "target_dispersion": 0.13366336302813456,
+            "num_analysts": 9
+        },
+        "rating_momentum": {
+            "upgrades_12m": 1,
+            "downgrades_12m": 0,
+            "total_actions_12m": 20
+        },
+        "institutional": {
+            "held_pct_institutions": 0.96616995,
+            "held_pct_insiders": 0.01
+        },
+        "short_interest": {
+            "short_pct_of_float": 0.0425,
+            "short_ratio": 2.02,
+            "short_change_pct": 0.013890204761625958
+        },
+        "data_quality_flags": []
+    },
+    "professional_raw_metrics_date": "2026-05-21",
+    "professional_score": 68.66504919773924,
+    "professional_score_date": "2026-05-21",
+    "professional_subscores": {
+        "analyst_consensus": 81.6020705616857,
+        "rating_momentum": 55.650000000000006,
+        "institutional_positioning": 68.48928784519273,
+        "short_interest": 60.463350265673675
+    },
+    "professional_drivers": {
+        "strongest": [
+            "recommendation_mean (analyst_consensus): score=98, value=1.11",
+            "short_ratio (short_interest): score=80, value=2.02",
+            "held_pct_institutions (institutional_positioning): score=72, value=96.6%"
+        ],
+        "weakest": [
+            "short_change_pct (short_interest): score=48, value=1.4%",
+            "short_pct_of_float (short_interest): score=54, value=4.2%",
+            "upgrades_12m (rating_momentum): score=56, value=1.00"
+        ]
+    },
+    "news_sentiment_raw_metrics": {
+        "sector": null,
+        "industry": null,
+        "market_cap_usd": null,
+        "current_price": null,
+        "earnings": {
+            "beat_count_4q": 4,
+            "miss_count_4q": 0,
+            "total_quarters_4q": 4,
+            "avg_surprise_magnitude_4q": 0.10216528874406375,
+            "eps_estimate_revision_90d": null,
+            "trailing_eps": null,
+            "forward_eps": null
+        },
+        "price_momentum": {
+            "return_1m": null,
+            "return_3m": null,
+            "return_6m": null
+        },
+        "insider_activity": {
+            "insider_purchases_count_90d": null,
+            "insider_sales_count_90d": null,
+            "insider_net_value_90d_usd": null
+        },
+        "data_quality_flags": [
+            "ATI: failed to fetch .info (Too Many Requests. Rate limited. Try after a while.)",
+            "ATI: sector classification unavailable",
+            "ATI: eps_revisions fetch failed (Too Many Requests. Rate limited. Try after a while.)",
+            "ATI: price momentum fetch failed (Too Many Requests. Rate limited. Try after a while.)",
+            "ATI: insider_transactions fetch failed (Too Many Requests. Rate limited. Try after a while.)"
+        ]
+    },
+    "news_sentiment_raw_metrics_date": "2026-05-21",
+    "news_sentiment_score": null,
+    "news_sentiment_score_date": "2026-05-21",
+    "news_sentiment_subscores": {
+        "earnings_surprise_revisions": 95.48455178818757,
+        "price_momentum": null,
+        "insider_activity": null
+    },
+    "news_sentiment_drivers": {
+        "strongest": [
+            "beat_rate_4q (earnings_surprise_revisions): score=100, value=1.00",
+            "avg_surprise_magnitude_4q (earnings_surprise_revisions): score=90, value=10.2%"
+        ],
+        "weakest": [
+            "avg_surprise_magnitude_4q (earnings_surprise_revisions): score=90, value=10.2%",
+            "beat_rate_4q (earnings_surprise_revisions): score=100, value=1.00"
+        ]
+    },
+    "composite_score": 58.04937526453413,
+    "composite_score_date": "2026-05-21",
+    "composite_rank": 268,
+    "composite_metadata": {
+        "scores_used": [
+            "financial",
+            "professional"
+        ],
+        "scores_imputed": [
+            "news_sentiment"
+        ],
+        "imputed_values": {
+            "news_sentiment": 46.32661376736391
+        },
+        "imputation_r_squared": 0.05693184104207816,
+        "weights_applied": {
+            "financial": 50,
+            "professional": 30,
+            "news_sentiment": 20
+        }
+    }
+}

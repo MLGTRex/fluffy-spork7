@@ -1,0 +1,212 @@
+{
+    "ticker": "AON",
+    "company_name": "Aon plc",
+    "universe_added_date": "2026-05-18",
+    "financial_raw_metrics": {
+        "sector": "Financial Services",
+        "industry": "Insurance Brokers",
+        "market_cap_usd": 69245919232,
+        "profitability": {
+            "gross_margin_ttm": 0.47341,
+            "operating_margin_ttm": 0.35836,
+            "net_margin_ttm": 0.22544001,
+            "operating_margin_trend_3yr": -0.019932108840238216
+        },
+        "returns_on_capital": {
+            "roe_ttm": 0.46447,
+            "roa_ttm": 0.060510002,
+            "roic_ttm": null
+        },
+        "cash_flow": {
+            "fcf_margin_ttm": 0.19110288593954194,
+            "fcf_to_net_income_ttm": 0.8476978639002216,
+            "ocf_cagr_3yr": 0.02642608921443368
+        },
+        "balance_sheet": {
+            "debt_to_equity": 1.5505000000000002,
+            "net_debt_to_ebitda": 2.435147233298715,
+            "current_ratio": 1.066,
+            "interest_coverage": 6.839263803680981,
+            "total_debt_usd": 15473999872,
+            "total_cash_usd": 1243000064
+        },
+        "growth": {
+            "revenue_growth_1yr": 0.065,
+            "revenue_cagr_3yr": 0.11247318365137482,
+            "eps_growth_1yr": 0.271,
+            "eps_cagr_3yr": 0.1258852531146426,
+            "fcf_cagr_3yr": 0.021055378916823964
+        },
+        "valuation": {
+            "pe_trailing": 17.804504,
+            "pe_forward": 15.144473,
+            "ps_ratio": 3.9600778,
+            "pb_ratio": 7.04229,
+            "ev_ebitda": 14.197,
+            "peg_ratio": 2.5529,
+            "fcf_yield": 0.048257357618494354
+        },
+        "data_quality_flags": [
+            "AON: eps_cagr_3yr approximated by net income CAGR (share count changes not adjusted)"
+        ]
+    },
+    "financial_raw_metrics_date": "2026-05-21",
+    "financial_score": 63.13194166809662,
+    "financial_score_date": "2026-05-21",
+    "financial_subscores": {
+        "profitability": 53.96956241481348,
+        "returns_on_capital": 72.91765514846985,
+        "cash_flow_quality": 74.14285133181652,
+        "balance_sheet": 58.76364498637102,
+        "growth": 62.044260235061564,
+        "valuation": 56.74589781635065
+    },
+    "financial_drivers": {
+        "strongest": [
+            "eps_growth_1yr (growth): score=91, value=27.1%",
+            "fcf_margin_ttm (cash_flow_quality): score=80, value=19.1%",
+            "roe_ttm (returns_on_capital): score=80, value=46.4%"
+        ],
+        "weakest": [
+            "peg_ratio (valuation): score=19, value=2.55",
+            "fcf_cagr_3yr (growth): score=32, value=2.1%",
+            "current_ratio (balance_sheet): score=35, value=1.07"
+        ]
+    },
+    "professional_raw_metrics": {
+        "sector": "Financial Services",
+        "industry": "Insurance Brokers",
+        "market_cap_usd": 69245919232,
+        "current_price": 324.22,
+        "analyst": {
+            "recommendation_mean": 2.0,
+            "recommendation_key": "buy",
+            "target_mean_price": 387.3158,
+            "target_median_price": 390.0,
+            "target_high_price": 436.0,
+            "target_low_price": 298.0,
+            "upside_to_target": 0.19460798223428533,
+            "target_dispersion": 0.35629840042673183,
+            "num_analysts": 19
+        },
+        "rating_momentum": {
+            "upgrades_12m": 4,
+            "downgrades_12m": 1,
+            "total_actions_12m": 38
+        },
+        "institutional": {
+            "held_pct_institutions": 0.91801,
+            "held_pct_insiders": 0.01165
+        },
+        "short_interest": {
+            "short_pct_of_float": 0.0112,
+            "short_ratio": 1.82,
+            "short_change_pct": -0.045751305341239126
+        },
+        "data_quality_flags": []
+    },
+    "professional_raw_metrics_date": "2026-05-21",
+    "professional_score": 66.8787668038374,
+    "professional_score_date": "2026-05-21",
+    "professional_subscores": {
+        "analyst_consensus": 73.97386548228569,
+        "rating_momentum": 57.473684210526315,
+        "institutional_positioning": 64.6391148801581,
+        "short_interest": 69.73142741577533
+    },
+    "professional_drivers": {
+        "strongest": [
+            "short_ratio (short_interest): score=82, value=1.82",
+            "recommendation_mean (analyst_consensus): score=75, value=2.00",
+            "upside_to_target (analyst_consensus): score=72, value=19.5%"
+        ],
+        "weakest": [
+            "short_change_pct (short_interest): score=57, value=-4.6%",
+            "upgrades_12m (rating_momentum): score=57, value=4.00",
+            "downgrades_12m (rating_momentum): score=57, value=1.00"
+        ]
+    },
+    "news_sentiment_raw_metrics": {
+        "sector": null,
+        "industry": null,
+        "market_cap_usd": null,
+        "current_price": null,
+        "earnings": {
+            "beat_count_4q": 4,
+            "miss_count_4q": 0,
+            "total_quarters_4q": 4,
+            "avg_surprise_magnitude_4q": 0.2374276030896586,
+            "eps_estimate_revision_90d": null,
+            "trailing_eps": null,
+            "forward_eps": null
+        },
+        "price_momentum": {
+            "return_1m": null,
+            "return_3m": null,
+            "return_6m": null
+        },
+        "insider_activity": {
+            "insider_purchases_count_90d": null,
+            "insider_sales_count_90d": null,
+            "insider_net_value_90d_usd": null
+        },
+        "data_quality_flags": [
+            "AON: failed to fetch .info (Too Many Requests. Rate limited. Try after a while.)",
+            "AON: sector classification unavailable",
+            "AON: eps_revisions fetch failed (Too Many Requests. Rate limited. Try after a while.)",
+            "AON: price momentum fetch failed (Too Many Requests. Rate limited. Try after a while.)",
+            "AON: insider_transactions fetch failed (Too Many Requests. Rate limited. Try after a while.)"
+        ]
+    },
+    "news_sentiment_raw_metrics_date": "2026-05-21",
+    "news_sentiment_score": null,
+    "news_sentiment_score_date": "2026-05-21",
+    "news_sentiment_subscores": {
+        "earnings_surprise_revisions": 100.00000000000001,
+        "price_momentum": null,
+        "insider_activity": null
+    },
+    "news_sentiment_drivers": {
+        "strongest": [
+            "avg_surprise_magnitude_4q (earnings_surprise_revisions): score=100, value=23.7%",
+            "beat_rate_4q (earnings_surprise_revisions): score=100, value=1.00"
+        ],
+        "weakest": [
+            "beat_rate_4q (earnings_surprise_revisions): score=100, value=1.00",
+            "avg_surprise_magnitude_4q (earnings_surprise_revisions): score=100, value=23.7%"
+        ]
+    },
+    "composite_score": 60.759518980138324,
+    "composite_score_date": "2026-05-21",
+    "composite_rank": 154,
+    "composite_metadata": {
+        "scores_used": [
+            "financial",
+            "professional"
+        ],
+        "scores_imputed": [
+            "news_sentiment"
+        ],
+        "imputed_values": {
+            "news_sentiment": 45.64959052469399
+        },
+        "imputation_r_squared": 0.05693184104207816,
+        "weights_applied": {
+            "financial": 50,
+            "professional": 30,
+            "news_sentiment": 20
+        }
+    },
+    "disqualifier_flags": {
+        "bankruptcy_8k": {
+            "triggered": false
+        },
+        "material_restatement_10ka": {
+            "triggered": false
+        },
+        "check_status": "ok",
+        "error_message": null
+    },
+    "disqualifier_check_date": "2026-05-18",
+    "qualified": true
+}

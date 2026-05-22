@@ -1,0 +1,194 @@
+{
+    "ticker": "TOL",
+    "company_name": "Toll Brothers",
+    "universe_added_date": "2026-05-18",
+    "financial_raw_metrics": {
+        "sector": "Consumer Cyclical",
+        "industry": "Residential Construction",
+        "market_cap_usd": 12595515392,
+        "profitability": {
+            "gross_margin_ttm": 0.25203,
+            "operating_margin_ttm": 0.15068,
+            "net_margin_ttm": 0.1166,
+            "operating_margin_trend_3yr": 0.010077145969482143
+        },
+        "returns_on_capital": {
+            "roe_ttm": 0.15657,
+            "roa_ttm": 0.07531,
+            "roic_ttm": null
+        },
+        "cash_flow": {
+            "fcf_margin_ttm": null,
+            "fcf_to_net_income_ttm": null,
+            "ocf_cagr_3yr": 0.04074187906376814
+        },
+        "balance_sheet": {
+            "debt_to_equity": 0.32803,
+            "net_debt_to_ebitda": 0.9284357224420426,
+            "current_ratio": 4.538,
+            "interest_coverage": null,
+            "total_debt_usd": 2783692032,
+            "total_cash_usd": 1105511040
+        },
+        "growth": {
+            "revenue_growth_1yr": -0.076,
+            "revenue_cagr_3yr": 0.021936285412006873,
+            "eps_growth_1yr": -0.223,
+            "eps_cagr_3yr": 0.0153069301820008,
+            "fcf_cagr_3yr": 0.038942847028253125
+        },
+        "valuation": {
+            "pe_trailing": 10.228897,
+            "pe_forward": 9.54791,
+            "ps_ratio": 1.1403433,
+            "pb_ratio": 1.5158788,
+            "ev_ebitda": 7.903,
+            "peg_ratio": 0.9963,
+            "fcf_yield": null
+        },
+        "data_quality_flags": [
+            "TOL: eps_cagr_3yr approximated by net income CAGR (share count changes not adjusted)"
+        ]
+    },
+    "financial_raw_metrics_date": "2026-05-21",
+    "financial_score": 57.631092703279286,
+    "financial_score_date": "2026-05-21",
+    "financial_subscores": {
+        "profitability": 48.274198203498315,
+        "returns_on_capital": 48.77341415259117,
+        "cash_flow_quality": null,
+        "balance_sheet": 91.73913860428522,
+        "growth": 26.825223684339033,
+        "valuation": 78.615013221839
+    },
+    "financial_drivers": {
+        "strongest": [
+            "current_ratio (balance_sheet): score=100, value=4.54",
+            "debt_to_equity (balance_sheet): score=92, value=32.8%",
+            "pe_forward (valuation): score=91, value=9.55"
+        ],
+        "weakest": [
+            "eps_growth_1yr (growth): score=8, value=-22.3%",
+            "revenue_growth_1yr (growth): score=12, value=-7.6%",
+            "eps_cagr_3yr (growth): score=26, value=1.5%"
+        ]
+    },
+    "professional_raw_metrics": {
+        "sector": null,
+        "industry": null,
+        "market_cap_usd": null,
+        "current_price": null,
+        "analyst": {
+            "recommendation_mean": null,
+            "recommendation_key": null,
+            "target_mean_price": null,
+            "target_median_price": null,
+            "target_high_price": null,
+            "target_low_price": null,
+            "upside_to_target": null,
+            "target_dispersion": null,
+            "num_analysts": null
+        },
+        "rating_momentum": {
+            "upgrades_12m": 0,
+            "downgrades_12m": 0,
+            "total_actions_12m": 0
+        },
+        "institutional": {
+            "held_pct_institutions": null,
+            "held_pct_insiders": null
+        },
+        "short_interest": {
+            "short_pct_of_float": null,
+            "short_ratio": null,
+            "short_change_pct": null
+        },
+        "data_quality_flags": [
+            "TOL: failed to fetch .info (Too Many Requests. Rate limited. Try after a while.)",
+            "TOL: sector classification unavailable",
+            "TOL: upgrades/downgrades fetch failed (Too Many Requests. Rate limited. Try after a while.)"
+        ]
+    },
+    "professional_raw_metrics_date": "2026-05-21",
+    "professional_score": null,
+    "professional_score_date": "2026-05-21",
+    "professional_subscores": {
+        "analyst_consensus": null,
+        "rating_momentum": 50.0,
+        "institutional_positioning": null,
+        "short_interest": null
+    },
+    "professional_drivers": {
+        "strongest": [],
+        "weakest": []
+    },
+    "news_sentiment_raw_metrics": {
+        "sector": "Consumer Cyclical",
+        "industry": "Residential Construction",
+        "market_cap_usd": 12595515392,
+        "current_price": 134.51,
+        "earnings": {
+            "beat_count_4q": null,
+            "miss_count_4q": null,
+            "total_quarters_4q": null,
+            "avg_surprise_magnitude_4q": null,
+            "eps_estimate_revision_90d": null,
+            "trailing_eps": 13.15,
+            "forward_eps": 14.0879
+        },
+        "price_momentum": {
+            "return_1m": -0.09310953777146802,
+            "return_3m": -0.15775085756041432,
+            "return_6m": 0.06853063281663067
+        },
+        "insider_activity": {
+            "insider_purchases_count_90d": 0,
+            "insider_sales_count_90d": 4,
+            "insider_net_value_90d_usd": -12031506.0
+        },
+        "data_quality_flags": [
+            "TOL: earnings_dates fetch failed (['Earnings Date'])"
+        ]
+    },
+    "news_sentiment_raw_metrics_date": "2026-05-21",
+    "news_sentiment_score": 33.75254937752166,
+    "news_sentiment_score_date": "2026-05-21",
+    "news_sentiment_subscores": {
+        "earnings_surprise_revisions": null,
+        "price_momentum": 41.48701142294004,
+        "insider_activity": 18.28362528668489
+    },
+    "news_sentiment_drivers": {
+        "strongest": [
+            "return_6m (price_momentum): score=61, value=6.9%",
+            "return_1m (price_momentum): score=34, value=-9.3%",
+            "net_insider_value_pct_mcap_90d (insider_activity): score=26, value=-0.1%"
+        ],
+        "weakest": [
+            "insider_count_ratio_90d (insider_activity): score=0, value=-1.00",
+            "return_3m (price_momentum): score=24, value=-15.8%",
+            "net_insider_value_pct_mcap_90d (insider_activity): score=26, value=-0.1%"
+        ]
+    },
+    "composite_score": 53.390210479012374,
+    "composite_score_date": "2026-05-21",
+    "composite_rank": 527,
+    "composite_metadata": {
+        "scores_used": [
+            "financial",
+            "news_sentiment"
+        ],
+        "scores_imputed": [
+            "professional"
+        ],
+        "imputed_values": {
+            "professional": 59.413847506227995
+        },
+        "imputation_r_squared": 0.04516719672877956,
+        "weights_applied": {
+            "financial": 50,
+            "professional": 30,
+            "news_sentiment": 20
+        }
+    }
+}

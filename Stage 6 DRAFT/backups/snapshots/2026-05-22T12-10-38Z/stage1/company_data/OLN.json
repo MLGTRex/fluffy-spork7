@@ -1,0 +1,193 @@
+{
+    "ticker": "OLN",
+    "company_name": "Olin Corporation",
+    "universe_added_date": "2026-05-18",
+    "financial_raw_metrics": {
+        "sector": "Basic Materials",
+        "industry": "Chemicals",
+        "market_cap_usd": 2963620096,
+        "profitability": {
+            "gross_margin_ttm": 0.06363,
+            "operating_margin_ttm": -0.041500002,
+            "net_margin_ttm": -0.027520001,
+            "operating_margin_trend_3yr": -0.18672674393508998
+        },
+        "returns_on_capital": {
+            "roe_ttm": -0.09823,
+            "roa_ttm": 0.00118,
+            "roic_ttm": null
+        },
+        "cash_flow": {
+            "fcf_margin_ttm": 0.07268289640701668,
+            "fcf_to_net_income_ttm": -2.6414277988101675,
+            "ocf_cagr_3yr": -0.3727939277486991
+        },
+        "balance_sheet": {
+            "debt_to_equity": 1.90863,
+            "net_debt_to_ebitda": 5.988287188940093,
+            "current_ratio": 1.358,
+            "interest_coverage": 0.14445034519383962,
+            "total_debt_usd": 3310899968,
+            "total_cash_usd": 192200000
+        },
+        "growth": {
+            "revenue_growth_1yr": -0.037,
+            "revenue_cagr_3yr": -0.102396182778002,
+            "eps_growth_1yr": null,
+            "eps_cagr_3yr": null,
+            "fcf_cagr_3yr": -0.47209123367042494
+        },
+        "valuation": {
+            "pe_trailing": null,
+            "pe_forward": 27.927444,
+            "ps_ratio": 0.44104114,
+            "pb_ratio": 1.6073636,
+            "ev_ebitda": 11.68,
+            "peg_ratio": 7.05,
+            "fcf_yield": 0.16479845060410875
+        },
+        "data_quality_flags": [
+            "OLN: eps_cagr_3yr approximated by net income CAGR (share count changes not adjusted)"
+        ]
+    },
+    "financial_raw_metrics_date": "2026-05-21",
+    "financial_score": 24.68922892155117,
+    "financial_score_date": "2026-05-21",
+    "financial_subscores": {
+        "profitability": 20.29560679121127,
+        "returns_on_capital": 27.970733080088518,
+        "cash_flow_quality": 21.469506871227917,
+        "balance_sheet": 24.861530825652842,
+        "growth": 4.346153846153847,
+        "valuation": 49.56254810557347
+    },
+    "financial_drivers": {
+        "strongest": [
+            "fcf_yield (valuation): score=100, value=16.5%",
+            "current_ratio (balance_sheet): score=59, value=1.36",
+            "debt_to_equity (balance_sheet): score=52, value=1.91"
+        ],
+        "weakest": [
+            "fcf_to_net_income_ttm (cash_flow_quality): score=0, value=-2.64",
+            "ocf_cagr_3yr (cash_flow_quality): score=0, value=-37.3%",
+            "interest_coverage (balance_sheet): score=0, value=14.4%"
+        ]
+    },
+    "professional_raw_metrics": {
+        "sector": null,
+        "industry": null,
+        "market_cap_usd": null,
+        "current_price": null,
+        "analyst": {
+            "recommendation_mean": null,
+            "recommendation_key": null,
+            "target_mean_price": null,
+            "target_median_price": null,
+            "target_high_price": null,
+            "target_low_price": null,
+            "upside_to_target": null,
+            "target_dispersion": null,
+            "num_analysts": null
+        },
+        "rating_momentum": {
+            "upgrades_12m": 0,
+            "downgrades_12m": 0,
+            "total_actions_12m": 0
+        },
+        "institutional": {
+            "held_pct_institutions": null,
+            "held_pct_insiders": null
+        },
+        "short_interest": {
+            "short_pct_of_float": null,
+            "short_ratio": null,
+            "short_change_pct": null
+        },
+        "data_quality_flags": [
+            "OLN: failed to fetch .info (Too Many Requests. Rate limited. Try after a while.)",
+            "OLN: sector classification unavailable",
+            "OLN: upgrades/downgrades fetch failed (Too Many Requests. Rate limited. Try after a while.)"
+        ]
+    },
+    "professional_raw_metrics_date": "2026-05-21",
+    "professional_score": null,
+    "professional_score_date": "2026-05-21",
+    "professional_subscores": {
+        "analyst_consensus": null,
+        "rating_momentum": 50.0,
+        "institutional_positioning": null,
+        "short_interest": null
+    },
+    "professional_drivers": {
+        "strongest": [],
+        "weakest": []
+    },
+    "news_sentiment_raw_metrics": {
+        "sector": null,
+        "industry": null,
+        "market_cap_usd": null,
+        "current_price": null,
+        "earnings": {
+            "beat_count_4q": null,
+            "miss_count_4q": null,
+            "total_quarters_4q": null,
+            "avg_surprise_magnitude_4q": null,
+            "eps_estimate_revision_90d": null,
+            "trailing_eps": null,
+            "forward_eps": null
+        },
+        "price_momentum": {
+            "return_1m": -0.035531628323638084,
+            "return_3m": 0.059891439002323424,
+            "return_6m": 0.416319810232302
+        },
+        "insider_activity": {
+            "insider_purchases_count_90d": null,
+            "insider_sales_count_90d": null,
+            "insider_net_value_90d_usd": null
+        },
+        "data_quality_flags": [
+            "OLN: failed to fetch .info (Too Many Requests. Rate limited. Try after a while.)",
+            "OLN: sector classification unavailable",
+            "OLN: earnings_dates fetch failed (['Earnings Date'])",
+            "OLN: eps_revisions fetch failed (Too Many Requests. Rate limited. Try after a while.)"
+        ]
+    },
+    "news_sentiment_raw_metrics_date": "2026-05-21",
+    "news_sentiment_score": null,
+    "news_sentiment_score_date": "2026-05-21",
+    "news_sentiment_subscores": {
+        "earnings_surprise_revisions": null,
+        "price_momentum": 72.01318276165061,
+        "insider_activity": null
+    },
+    "news_sentiment_drivers": {
+        "strongest": [
+            "return_6m (price_momentum): score=100, value=41.6%",
+            "return_3m (price_momentum): score=60, value=6.0%",
+            "return_1m (price_momentum): score=44, value=-3.6%"
+        ],
+        "weakest": [
+            "return_1m (price_momentum): score=44, value=-3.6%",
+            "return_3m (price_momentum): score=60, value=6.0%",
+            "return_6m (price_momentum): score=100, value=41.6%"
+        ]
+    },
+    "composite_score": null,
+    "composite_score_date": "2026-05-21",
+    "composite_rank": null,
+    "composite_metadata": {
+        "scores_used": [
+            "financial"
+        ],
+        "scores_imputed": [],
+        "imputed_values": {},
+        "imputation_r_squared": null,
+        "weights_applied": {
+            "financial": 50,
+            "professional": 30,
+            "news_sentiment": 20
+        },
+        "skip_reason": "Only 1 of 3 scores populated; need at least 2"
+    }
+}

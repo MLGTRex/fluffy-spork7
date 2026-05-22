@@ -1,0 +1,200 @@
+{
+    "ticker": "AIG",
+    "company_name": "American International Group",
+    "universe_added_date": "2026-05-18",
+    "financial_raw_metrics": {
+        "sector": "Financial Services",
+        "industry": "Insurance - Diversified",
+        "market_cap_usd": 41684811776,
+        "profitability": {
+            "gross_margin_ttm": 0.35534,
+            "operating_margin_ttm": 0.18620001,
+            "net_margin_ttm": 0.118389994,
+            "operating_margin_trend_3yr": null
+        },
+        "returns_on_capital": {
+            "roe_ttm": 0.07723,
+            "roa_ttm": 0.01885,
+            "roic_ttm": null
+        },
+        "cash_flow": {
+            "fcf_margin_ttm": 0.35643793434956345,
+            "fcf_to_net_income_ttm": 3.0108350929115617,
+            "ocf_cagr_3yr": -0.07104642460865984
+        },
+        "balance_sheet": {
+            "debt_to_equity": 0.22646999999999998,
+            "net_debt_to_ebitda": -0.05254932401964563,
+            "current_ratio": 0.611,
+            "interest_coverage": 10.795454545454545,
+            "total_debt_usd": 9155999744,
+            "total_cash_usd": 9592999936
+        },
+        "growth": {
+            "revenue_growth_1yr": 0.014,
+            "revenue_cagr_3yr": -0.036944411466962035,
+            "eps_growth_1yr": 0.216,
+            "eps_cagr_3yr": -0.3285439900997924,
+            "fcf_cagr_3yr": null
+        },
+        "valuation": {
+            "pe_trailing": 13.84155,
+            "pe_forward": 8.839568,
+            "ps_ratio": 1.5611703,
+            "pb_ratio": 1.0369296,
+            "ev_ebitda": 4.963,
+            "peg_ratio": 0.6377,
+            "fcf_yield": 0.2283145618395127
+        },
+        "data_quality_flags": [
+            "AIG: eps_cagr_3yr approximated by net income CAGR (share count changes not adjusted)"
+        ]
+    },
+    "financial_raw_metrics_date": "2026-05-21",
+    "financial_score": 53.65870812170943,
+    "financial_score_date": "2026-05-21",
+    "financial_subscores": {
+        "profitability": 39.60886705272461,
+        "returns_on_capital": 37.65328289719899,
+        "cash_flow_quality": 73.17542101879788,
+        "balance_sheet": 78.82548409090909,
+        "growth": 21.12916913997785,
+        "valuation": 81.57844662847988
+    },
+    "financial_drivers": {
+        "strongest": [
+            "fcf_yield (valuation): score=100, value=22.8%",
+            "net_debt_to_ebitda (balance_sheet): score=100, value=-5.3%",
+            "fcf_margin_ttm (cash_flow_quality): score=99, value=35.6%"
+        ],
+        "weakest": [
+            "eps_cagr_3yr (growth): score=0, value=-32.9%",
+            "current_ratio (balance_sheet): score=7, value=61.1%",
+            "revenue_cagr_3yr (growth): score=13, value=-3.7%"
+        ]
+    },
+    "professional_raw_metrics": {
+        "sector": "Financial Services",
+        "industry": "Insurance - Diversified",
+        "market_cap_usd": 41684811776,
+        "current_price": 78.62,
+        "analyst": {
+            "recommendation_mean": 2.36364,
+            "recommendation_key": "buy",
+            "target_mean_price": 88.05,
+            "target_median_price": 87.0,
+            "target_high_price": 101.0,
+            "target_low_price": 80.0,
+            "upside_to_target": 0.1199440345967946,
+            "target_dispersion": 0.2385008517887564,
+            "num_analysts": 20
+        },
+        "rating_momentum": {
+            "upgrades_12m": 0,
+            "downgrades_12m": 1,
+            "total_actions_12m": 36
+        },
+        "institutional": {
+            "held_pct_institutions": 0.97468,
+            "held_pct_insiders": 0.00592
+        },
+        "short_interest": {
+            "short_pct_of_float": 0.0149,
+            "short_ratio": 1.66,
+            "short_change_pct": -0.13053801695847833
+        },
+        "data_quality_flags": []
+    },
+    "professional_raw_metrics_date": "2026-05-21",
+    "professional_score": 60.76517753262388,
+    "professional_score_date": "2026-05-21",
+    "professional_subscores": {
+        "analyst_consensus": 59.267043459679456,
+        "rating_momentum": 50.75,
+        "institutional_positioning": 66.26501473740893,
+        "short_interest": 71.78639091589231
+    },
+    "professional_drivers": {
+        "strongest": [
+            "short_ratio (short_interest): score=83, value=1.66",
+            "held_pct_institutions (institutional_positioning): score=71, value=97.5%",
+            "short_change_pct (short_interest): score=70, value=-13.1%"
+        ],
+        "weakest": [
+            "upgrades_12m (rating_momentum): score=51, value=0.00",
+            "downgrades_12m (rating_momentum): score=51, value=1.00",
+            "total_actions_12m (rating_momentum): score=51, value=36.00"
+        ]
+    },
+    "news_sentiment_raw_metrics": {
+        "sector": null,
+        "industry": null,
+        "market_cap_usd": null,
+        "current_price": null,
+        "earnings": {
+            "beat_count_4q": 4,
+            "miss_count_4q": 0,
+            "total_quarters_4q": 4,
+            "avg_surprise_magnitude_4q": 0.14292977012566882,
+            "eps_estimate_revision_90d": null,
+            "trailing_eps": null,
+            "forward_eps": null
+        },
+        "price_momentum": {
+            "return_1m": null,
+            "return_3m": null,
+            "return_6m": null
+        },
+        "insider_activity": {
+            "insider_purchases_count_90d": null,
+            "insider_sales_count_90d": null,
+            "insider_net_value_90d_usd": null
+        },
+        "data_quality_flags": [
+            "AIG: failed to fetch .info (Too Many Requests. Rate limited. Try after a while.)",
+            "AIG: sector classification unavailable",
+            "AIG: eps_revisions fetch failed (Too Many Requests. Rate limited. Try after a while.)",
+            "AIG: price momentum fetch failed (Too Many Requests. Rate limited. Try after a while.)",
+            "AIG: insider_transactions fetch failed (Too Many Requests. Rate limited. Try after a while.)"
+        ]
+    },
+    "news_sentiment_raw_metrics_date": "2026-05-21",
+    "news_sentiment_score": null,
+    "news_sentiment_score_date": "2026-05-21",
+    "news_sentiment_subscores": {
+        "earnings_surprise_revisions": 97.36598939041549,
+        "price_momentum": null,
+        "insider_activity": null
+    },
+    "news_sentiment_drivers": {
+        "strongest": [
+            "beat_rate_4q (earnings_surprise_revisions): score=100, value=1.00",
+            "avg_surprise_magnitude_4q (earnings_surprise_revisions): score=94, value=14.3%"
+        ],
+        "weakest": [
+            "avg_surprise_magnitude_4q (earnings_surprise_revisions): score=94, value=14.3%",
+            "beat_rate_4q (earnings_surprise_revisions): score=100, value=1.00"
+        ]
+    },
+    "composite_score": 54.9626441787258,
+    "composite_score_date": "2026-05-21",
+    "composite_rank": 440,
+    "composite_metadata": {
+        "scores_used": [
+            "financial",
+            "professional"
+        ],
+        "scores_imputed": [
+            "news_sentiment"
+        ],
+        "imputed_values": {
+            "news_sentiment": 49.51868429041962
+        },
+        "imputation_r_squared": 0.05693184104207816,
+        "weights_applied": {
+            "financial": 50,
+            "professional": 30,
+            "news_sentiment": 20
+        }
+    }
+}

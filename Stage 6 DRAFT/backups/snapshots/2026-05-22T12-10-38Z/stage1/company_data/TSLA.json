@@ -1,0 +1,194 @@
+{
+    "ticker": "TSLA",
+    "company_name": "Tesla, Inc.",
+    "universe_added_date": "2026-05-18",
+    "financial_raw_metrics": {
+        "sector": "Consumer Cyclical",
+        "industry": "Auto Manufacturers",
+        "market_cap_usd": 1569329250304,
+        "profitability": {
+            "gross_margin_ttm": 0.19065,
+            "operating_margin_ttm": 0.04203,
+            "net_margin_ttm": 0.03946,
+            "operating_margin_trend_3yr": -0.11866173534644749
+        },
+        "returns_on_capital": {
+            "roe_ttm": 0.04901,
+            "roa_ttm": 0.022330001,
+            "roic_ttm": null
+        },
+        "cash_flow": {
+            "fcf_margin_ttm": 0.05365808595829302,
+            "fcf_to_net_income_ttm": 1.359917030018286,
+            "ocf_cagr_3yr": 0.0005204209560305539
+        },
+        "balance_sheet": {
+            "debt_to_equity": 0.18738,
+            "net_debt_to_ebitda": -2.600775301126529,
+            "current_ratio": 2.043,
+            "interest_coverage": 16.615384615384617,
+            "total_debt_usd": 15889999872,
+            "total_cash_usd": 44743000064
+        },
+        "growth": {
+            "revenue_growth_1yr": 0.158,
+            "revenue_cagr_3yr": 0.051943257367141005,
+            "eps_growth_1yr": 0.083,
+            "eps_cagr_3yr": -0.32943989733298273,
+            "fcf_cagr_3yr": -0.062633415093298
+        },
+        "valuation": {
+            "pe_trailing": 386.89813,
+            "pe_forward": 166.49466,
+            "ps_ratio": 16.03336,
+            "pb_ratio": 19.082523,
+            "ev_ebitda": 138.719,
+            "peg_ratio": 5.7454,
+            "fcf_yield": 0.0033466525542569336
+        },
+        "data_quality_flags": [
+            "TSLA: eps_cagr_3yr approximated by net income CAGR (share count changes not adjusted)"
+        ]
+    },
+    "financial_raw_metrics_date": "2026-05-21",
+    "financial_score": 43.941176449092055,
+    "financial_score_date": "2026-05-21",
+    "financial_subscores": {
+        "profitability": 38.35197838759242,
+        "returns_on_capital": 40.061093000596564,
+        "cash_flow_quality": 53.1228422747431,
+        "balance_sheet": 94.74270384615384,
+        "growth": 36.60553784461343,
+        "valuation": 3.919330510851387
+    },
+    "financial_drivers": {
+        "strongest": [
+            "net_debt_to_ebitda (balance_sheet): score=100, value=-2.60",
+            "interest_coverage (balance_sheet): score=98, value=16.62",
+            "debt_to_equity (balance_sheet): score=93, value=18.7%"
+        ],
+        "weakest": [
+            "eps_cagr_3yr (growth): score=0, value=-32.9%",
+            "pe_trailing (valuation): score=0, value=386.90",
+            "pe_forward (valuation): score=0, value=166.49"
+        ]
+    },
+    "professional_raw_metrics": {
+        "sector": null,
+        "industry": null,
+        "market_cap_usd": null,
+        "current_price": null,
+        "analyst": {
+            "recommendation_mean": null,
+            "recommendation_key": null,
+            "target_mean_price": null,
+            "target_median_price": null,
+            "target_high_price": null,
+            "target_low_price": null,
+            "upside_to_target": null,
+            "target_dispersion": null,
+            "num_analysts": null
+        },
+        "rating_momentum": {
+            "upgrades_12m": 0,
+            "downgrades_12m": 0,
+            "total_actions_12m": 0
+        },
+        "institutional": {
+            "held_pct_institutions": null,
+            "held_pct_insiders": null
+        },
+        "short_interest": {
+            "short_pct_of_float": null,
+            "short_ratio": null,
+            "short_change_pct": null
+        },
+        "data_quality_flags": [
+            "TSLA: failed to fetch .info (Too Many Requests. Rate limited. Try after a while.)",
+            "TSLA: sector classification unavailable",
+            "TSLA: upgrades/downgrades fetch failed (Too Many Requests. Rate limited. Try after a while.)"
+        ]
+    },
+    "professional_raw_metrics_date": "2026-05-21",
+    "professional_score": null,
+    "professional_score_date": "2026-05-21",
+    "professional_subscores": {
+        "analyst_consensus": null,
+        "rating_momentum": 50.0,
+        "institutional_positioning": null,
+        "short_interest": null
+    },
+    "professional_drivers": {
+        "strongest": [],
+        "weakest": []
+    },
+    "news_sentiment_raw_metrics": {
+        "sector": "Consumer Cyclical",
+        "industry": "Auto Manufacturers",
+        "market_cap_usd": 1569329250304,
+        "current_price": 417.85,
+        "earnings": {
+            "beat_count_4q": null,
+            "miss_count_4q": null,
+            "total_quarters_4q": null,
+            "avg_surprise_magnitude_4q": null,
+            "eps_estimate_revision_90d": null,
+            "trailing_eps": 1.08,
+            "forward_eps": 2.50969
+        },
+        "price_momentum": {
+            "return_1m": 0.08133633217769004,
+            "return_3m": 0.01587569911383881,
+            "return_6m": 0.034307804897799894
+        },
+        "insider_activity": {
+            "insider_purchases_count_90d": 0,
+            "insider_sales_count_90d": 5,
+            "insider_net_value_90d_usd": -32201169.0
+        },
+        "data_quality_flags": [
+            "TSLA: earnings_dates fetch failed (['Earnings Date'])"
+        ]
+    },
+    "news_sentiment_raw_metrics_date": "2026-05-21",
+    "news_sentiment_score": 49.2818276419244,
+    "news_sentiment_score_date": "2026-05-21",
+    "news_sentiment_subscores": {
+        "earnings_surprise_revisions": null,
+        "price_momentum": 56.602283282231014,
+        "insider_activity": 34.640916361311156
+    },
+    "news_sentiment_drivers": {
+        "strongest": [
+            "return_1m (price_momentum): score=64, value=8.1%",
+            "return_6m (price_momentum): score=56, value=3.4%",
+            "return_3m (price_momentum): score=53, value=1.6%"
+        ],
+        "weakest": [
+            "insider_count_ratio_90d (insider_activity): score=0, value=-1.00",
+            "net_insider_value_pct_mcap_90d (insider_activity): score=49, value=-0.0%",
+            "return_3m (price_momentum): score=53, value=1.6%"
+        ]
+    },
+    "composite_score": 48.95689320173914,
+    "composite_score_date": "2026-05-21",
+    "composite_rank": 753,
+    "composite_metadata": {
+        "scores_used": [
+            "financial",
+            "news_sentiment"
+        ],
+        "scores_imputed": [
+            "professional"
+        ],
+        "imputed_values": {
+            "professional": 57.09979816269412
+        },
+        "imputation_r_squared": 0.04516719672877956,
+        "weights_applied": {
+            "financial": 50,
+            "professional": 30,
+            "news_sentiment": 20
+        }
+    }
+}

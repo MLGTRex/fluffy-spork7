@@ -1,0 +1,200 @@
+{
+    "ticker": "CVX",
+    "company_name": "Chevron Corporation",
+    "universe_added_date": "2026-05-18",
+    "financial_raw_metrics": {
+        "sector": "Energy",
+        "industry": "Oil & Gas Integrated",
+        "market_cap_usd": 380415049728,
+        "profitability": {
+            "gross_margin_ttm": 0.42421,
+            "operating_margin_ttm": 0.07312,
+            "net_margin_ttm": 0.059270002,
+            "operating_margin_trend_3yr": -0.07907559227438657
+        },
+        "returns_on_capital": {
+            "roe_ttm": 0.06638,
+            "roa_ttm": 0.0346,
+            "roic_ttm": null
+        },
+        "cash_flow": {
+            "fcf_margin_ttm": 0.06340314219254861,
+            "fcf_to_net_income_ttm": 1.069715617473649,
+            "ocf_cagr_3yr": -0.11881596946818207
+        },
+        "balance_sheet": {
+            "debt_to_equity": 0.23989000000000002,
+            "net_debt_to_ebitda": 1.0579063110014215,
+            "current_ratio": 1.094,
+            "interest_coverage": 17.222678718159408,
+            "total_debt_usd": 45427998720,
+            "total_cash_usd": 5327000064
+        },
+        "growth": {
+            "revenue_growth_1yr": 0.023,
+            "revenue_cagr_3yr": -0.07852874895364959,
+            "eps_growth_1yr": -0.445,
+            "eps_cagr_3yr": -0.29742944275942107,
+            "fcf_cagr_3yr": -0.23886352505659136
+        },
+        "valuation": {
+            "pe_trailing": 33.277004,
+            "pe_forward": 15.654272,
+            "ps_ratio": 2.0481052,
+            "pb_ratio": 2.055949,
+            "ev_ebitda": 11.188,
+            "peg_ratio": 0.8374,
+            "fcf_yield": 0.030956976387817196
+        },
+        "data_quality_flags": [
+            "CVX: eps_cagr_3yr approximated by net income CAGR (share count changes not adjusted)"
+        ]
+    },
+    "financial_raw_metrics_date": "2026-05-21",
+    "financial_score": 42.0715571035834,
+    "financial_score_date": "2026-05-21",
+    "financial_subscores": {
+        "profitability": 32.02294479028824,
+        "returns_on_capital": 31.190310112147017,
+        "cash_flow_quality": 54.92219057066191,
+        "balance_sheet": 79.80380891185438,
+        "growth": 6.986004561649198,
+        "valuation": 54.48070344314352
+    },
+    "financial_drivers": {
+        "strongest": [
+            "interest_coverage (balance_sheet): score=99, value=17.22",
+            "fcf_to_net_income_ttm (cash_flow_quality): score=95, value=1.07",
+            "debt_to_equity (balance_sheet): score=93, value=24.0%"
+        ],
+        "weakest": [
+            "eps_cagr_3yr (growth): score=0, value=-29.7%",
+            "eps_growth_1yr (growth): score=0, value=-44.5%",
+            "fcf_cagr_3yr (growth): score=1, value=-23.9%"
+        ]
+    },
+    "professional_raw_metrics": {
+        "sector": "Energy",
+        "industry": "Oil & Gas Integrated",
+        "market_cap_usd": 380415049728,
+        "current_price": 191.01,
+        "analyst": {
+            "recommendation_mean": 1.84,
+            "recommendation_key": "buy",
+            "target_mean_price": 214.86957,
+            "target_median_price": 220.0,
+            "target_high_price": 236.0,
+            "target_low_price": 170.0,
+            "upside_to_target": 0.12491267472907189,
+            "target_dispersion": 0.30716308502874556,
+            "num_analysts": 23
+        },
+        "rating_momentum": {
+            "upgrades_12m": 2,
+            "downgrades_12m": 2,
+            "total_actions_12m": 49
+        },
+        "institutional": {
+            "held_pct_institutions": 0.70585,
+            "held_pct_insiders": 0.047280002
+        },
+        "short_interest": {
+            "short_pct_of_float": 0.0094,
+            "short_ratio": 1.61,
+            "short_change_pct": -0.11595779548486802
+        },
+        "data_quality_flags": []
+    },
+    "professional_raw_metrics_date": "2026-05-21",
+    "professional_score": 64.18842195751272,
+    "professional_score_date": "2026-05-21",
+    "professional_subscores": {
+        "analyst_consensus": 71.37126747290719,
+        "rating_momentum": 52.5,
+        "institutional_positioning": 56.43292812194446,
+        "short_interest": 79.83497541006047
+    },
+    "professional_drivers": {
+        "strongest": [
+            "short_ratio (short_interest): score=84, value=1.61",
+            "short_pct_of_float (short_interest): score=82, value=0.9%",
+            "recommendation_mean (analyst_consensus): score=80, value=1.84"
+        ],
+        "weakest": [
+            "held_pct_institutions (institutional_positioning): score=47, value=70.6%",
+            "upgrades_12m (rating_momentum): score=52, value=2.00",
+            "downgrades_12m (rating_momentum): score=52, value=2.00"
+        ]
+    },
+    "news_sentiment_raw_metrics": {
+        "sector": null,
+        "industry": null,
+        "market_cap_usd": null,
+        "current_price": null,
+        "earnings": {
+            "beat_count_4q": 4,
+            "miss_count_4q": 0,
+            "total_quarters_4q": 4,
+            "avg_surprise_magnitude_4q": 0.15206913182945517,
+            "eps_estimate_revision_90d": null,
+            "trailing_eps": null,
+            "forward_eps": null
+        },
+        "price_momentum": {
+            "return_1m": null,
+            "return_3m": null,
+            "return_6m": null
+        },
+        "insider_activity": {
+            "insider_purchases_count_90d": null,
+            "insider_sales_count_90d": null,
+            "insider_net_value_90d_usd": null
+        },
+        "data_quality_flags": [
+            "CVX: failed to fetch .info (Too Many Requests. Rate limited. Try after a while.)",
+            "CVX: sector classification unavailable",
+            "CVX: eps_revisions fetch failed (Too Many Requests. Rate limited. Try after a while.)",
+            "CVX: price momentum fetch failed (Too Many Requests. Rate limited. Try after a while.)",
+            "CVX: insider_transactions fetch failed (Too Many Requests. Rate limited. Try after a while.)"
+        ]
+    },
+    "news_sentiment_raw_metrics_date": "2026-05-21",
+    "news_sentiment_score": null,
+    "news_sentiment_score_date": "2026-05-21",
+    "news_sentiment_subscores": {
+        "earnings_surprise_revisions": 97.78780608443641,
+        "price_momentum": null,
+        "insider_activity": null
+    },
+    "news_sentiment_drivers": {
+        "strongest": [
+            "beat_rate_4q (earnings_surprise_revisions): score=100, value=1.00",
+            "avg_surprise_magnitude_4q (earnings_surprise_revisions): score=95, value=15.2%"
+        ],
+        "weakest": [
+            "avg_surprise_magnitude_4q (earnings_surprise_revisions): score=95, value=15.2%",
+            "beat_rate_4q (earnings_surprise_revisions): score=100, value=1.00"
+        ]
+    },
+    "composite_score": 50.40344513370399,
+    "composite_score_date": "2026-05-21",
+    "composite_rank": 696,
+    "composite_metadata": {
+        "scores_used": [
+            "financial",
+            "professional"
+        ],
+        "scores_imputed": [
+            "news_sentiment"
+        ],
+        "imputed_values": {
+            "news_sentiment": 50.55569997329239
+        },
+        "imputation_r_squared": 0.05693184104207816,
+        "weights_applied": {
+            "financial": 50,
+            "professional": 30,
+            "news_sentiment": 20
+        }
+    }
+}

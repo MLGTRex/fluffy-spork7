@@ -1,0 +1,194 @@
+{
+    "ticker": "PSX",
+    "company_name": "Phillips 66",
+    "universe_added_date": "2026-05-18",
+    "financial_raw_metrics": {
+        "sector": "Energy",
+        "industry": "Oil & Gas Refining & Marketing",
+        "market_cap_usd": 69782740992,
+        "profitability": {
+            "gross_margin_ttm": 0.1252,
+            "operating_margin_ttm": 0.0063899998,
+            "net_margin_ttm": 0.03066,
+            "operating_margin_trend_3yr": -0.031050680665814585
+        },
+        "returns_on_capital": {
+            "roe_ttm": 0.14547,
+            "roa_ttm": 0.038,
+            "roic_ttm": null
+        },
+        "cash_flow": {
+            "fcf_margin_ttm": -0.008435822102221463,
+            "fcf_to_net_income_ttm": -0.2757656789737499,
+            "ocf_cagr_3yr": -0.2286759866320336
+        },
+        "balance_sheet": {
+            "debt_to_equity": 0.91385,
+            "net_debt_to_ebitda": 3.121306909090909,
+            "current_ratio": 1.132,
+            "interest_coverage": 5.990791896869245,
+            "total_debt_usd": 27124000768,
+            "total_cash_usd": 5150000128
+        },
+        "growth": {
+            "revenue_growth_1yr": 0.069,
+            "revenue_cagr_3yr": -0.0799841840778086,
+            "eps_growth_1yr": -0.568,
+            "eps_cagr_3yr": -0.26356148493606135,
+            "fcf_cagr_3yr": -0.32630223957560045
+        },
+        "valuation": {
+            "pe_trailing": 17.21563,
+            "pe_forward": 10.6881895,
+            "ps_ratio": 0.5188848,
+            "pb_ratio": 2.3998291,
+            "ev_ebitda": 13.499,
+            "peg_ratio": 1.0176,
+            "fcf_yield": -0.016257601118449344
+        },
+        "data_quality_flags": [
+            "PSX: eps_cagr_3yr approximated by net income CAGR (share count changes not adjusted)"
+        ]
+    },
+    "financial_raw_metrics_date": "2026-05-21",
+    "financial_score": 30.69901771330269,
+    "financial_score_date": "2026-05-21",
+    "financial_subscores": {
+        "profitability": 18.63171004197984,
+        "returns_on_capital": 40.797589295868036,
+        "cash_flow_quality": 4.578208894888927,
+        "balance_sheet": 57.780763649924666,
+        "growth": 9.555948955331484,
+        "valuation": 53.506130804742355
+    },
+    "financial_drivers": {
+        "strongest": [
+            "pe_forward (valuation): score=88, value=10.69",
+            "debt_to_equity (balance_sheet): score=78, value=91.4%",
+            "interest_coverage (balance_sheet): score=75, value=5.99"
+        ],
+        "weakest": [
+            "fcf_to_net_income_ttm (cash_flow_quality): score=0, value=-27.6%",
+            "ocf_cagr_3yr (cash_flow_quality): score=0, value=-22.9%",
+            "eps_cagr_3yr (growth): score=0, value=-26.4%"
+        ]
+    },
+    "professional_raw_metrics": {
+        "sector": null,
+        "industry": null,
+        "market_cap_usd": null,
+        "current_price": null,
+        "analyst": {
+            "recommendation_mean": null,
+            "recommendation_key": null,
+            "target_mean_price": null,
+            "target_median_price": null,
+            "target_high_price": null,
+            "target_low_price": null,
+            "upside_to_target": null,
+            "target_dispersion": null,
+            "num_analysts": null
+        },
+        "rating_momentum": {
+            "upgrades_12m": 0,
+            "downgrades_12m": 0,
+            "total_actions_12m": 0
+        },
+        "institutional": {
+            "held_pct_institutions": null,
+            "held_pct_insiders": null
+        },
+        "short_interest": {
+            "short_pct_of_float": null,
+            "short_ratio": null,
+            "short_change_pct": null
+        },
+        "data_quality_flags": [
+            "PSX: failed to fetch .info (Too Many Requests. Rate limited. Try after a while.)",
+            "PSX: sector classification unavailable",
+            "PSX: upgrades/downgrades fetch failed (Too Many Requests. Rate limited. Try after a while.)"
+        ]
+    },
+    "professional_raw_metrics_date": "2026-05-21",
+    "professional_score": null,
+    "professional_score_date": "2026-05-21",
+    "professional_subscores": {
+        "analyst_consensus": null,
+        "rating_momentum": 50.0,
+        "institutional_positioning": null,
+        "short_interest": null
+    },
+    "professional_drivers": {
+        "strongest": [],
+        "weakest": []
+    },
+    "news_sentiment_raw_metrics": {
+        "sector": "Energy",
+        "industry": "Oil & Gas Refining & Marketing",
+        "market_cap_usd": 69782740992,
+        "current_price": 174.05,
+        "earnings": {
+            "beat_count_4q": null,
+            "miss_count_4q": null,
+            "total_quarters_4q": null,
+            "avg_surprise_magnitude_4q": null,
+            "eps_estimate_revision_90d": null,
+            "trailing_eps": 10.11,
+            "forward_eps": 16.28433
+        },
+        "price_momentum": {
+            "return_1m": 0.09997237180929362,
+            "return_3m": 0.12296623877308521,
+            "return_6m": 0.31426038566171427
+        },
+        "insider_activity": {
+            "insider_purchases_count_90d": 2,
+            "insider_sales_count_90d": 5,
+            "insider_net_value_90d_usd": -19580863.0
+        },
+        "data_quality_flags": [
+            "PSX: earnings_dates fetch failed (['Earnings Date'])"
+        ]
+    },
+    "news_sentiment_raw_metrics_date": "2026-05-21",
+    "news_sentiment_score": 67.11268813728165,
+    "news_sentiment_score_date": "2026-05-21",
+    "news_sentiment_subscores": {
+        "earnings_surprise_revisions": null,
+        "price_momentum": 81.33854608715053,
+        "insider_activity": 38.660972237543895
+    },
+    "news_sentiment_drivers": {
+        "strongest": [
+            "return_6m (price_momentum): score=100, value=31.4%",
+            "return_3m (price_momentum): score=70, value=12.3%",
+            "return_1m (price_momentum): score=67, value=10.0%"
+        ],
+        "weakest": [
+            "insider_count_ratio_90d (insider_activity): score=29, value=-42.9%",
+            "net_insider_value_pct_mcap_90d (insider_activity): score=43, value=-0.0%",
+            "return_1m (price_momentum): score=67, value=10.0%"
+        ]
+    },
+    "composite_score": 45.151398479593354,
+    "composite_score_date": "2026-05-21",
+    "composite_rank": 862,
+    "composite_metadata": {
+        "scores_used": [
+            "financial",
+            "news_sentiment"
+        ],
+        "scores_imputed": [
+            "professional"
+        ],
+        "imputed_values": {
+            "professional": 54.59783998495226
+        },
+        "imputation_r_squared": 0.04516719672877956,
+        "weights_applied": {
+            "financial": 50,
+            "professional": 30,
+            "news_sentiment": 20
+        }
+    }
+}

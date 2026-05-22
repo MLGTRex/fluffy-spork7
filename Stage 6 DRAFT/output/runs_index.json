@@ -1,5 +1,5 @@
 {
-  "as_of": "2026-05-21T21:53:25.466149+00:00",
+  "as_of": "2026-05-22T12:10:41.249541+00:00",
   "events": [
     {
       "date": "2026-05-12",
@@ -16,12 +16,6 @@
       "dry_run": false,
       "orders_submitted": 13,
       "execution_timestamp": "2026-05-12T10:52:26.302901+00:00"
-    },
-    {
-      "date": "2026-05-18",
-      "type": "stage1_universe",
-      "company_count": 1002,
-      "source": "Wikipedia"
     },
     {
       "date": "2026-05-18",
@@ -209,10 +203,9 @@
     },
     {
       "date": "2026-05-21",
-      "type": "stage4_consolidation",
-      "status": "optimal",
-      "positions_count": 15,
-      "source": "current_target"
+      "type": "stage1_universe",
+      "company_count": 1002,
+      "source": "Wikipedia"
     },
     {
       "date": "2026-05-21",
@@ -234,12 +227,6 @@
       "date": "2026-05-21",
       "type": "stage4_reconciliation",
       "status": "reconciled",
-      "source": "current_target"
-    },
-    {
-      "date": "2026-05-21",
-      "type": "stage4_reconciliation",
-      "status": "reconciled",
       "source": "history",
       "archive_id": "portfolio_20260521T064046Z"
     },
@@ -256,6 +243,42 @@
       "run_id": "20260521T140001",
       "status": "ok",
       "tickers_to_rerun": 0
+    },
+    {
+      "date": "2026-05-22",
+      "type": "stage4_consolidation",
+      "status": "optimal",
+      "positions_count": 15,
+      "source": "current_target"
+    },
+    {
+      "date": "2026-05-22",
+      "type": "stage4_consolidation",
+      "status": "optimal",
+      "positions_count": 15,
+      "source": "history",
+      "archive_id": "portfolio_20260522T120611Z"
+    },
+    {
+      "date": "2026-05-22",
+      "type": "stage4_execution",
+      "status": "success",
+      "dry_run": false,
+      "orders_submitted": 10,
+      "execution_timestamp": "2026-05-22T12:06:11.421890+00:00"
+    },
+    {
+      "date": "2026-05-22",
+      "type": "stage4_reconciliation",
+      "status": "reconciled",
+      "source": "current_target"
+    },
+    {
+      "date": "2026-05-22",
+      "type": "stage4_reconciliation",
+      "status": "reconciled",
+      "source": "history",
+      "archive_id": "portfolio_20260522T120611Z"
     }
   ]
 }

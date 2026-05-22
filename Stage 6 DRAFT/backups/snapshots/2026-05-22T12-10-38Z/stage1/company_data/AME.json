@@ -1,0 +1,200 @@
+{
+    "ticker": "AME",
+    "company_name": "Ametek",
+    "universe_added_date": "2026-05-18",
+    "financial_raw_metrics": {
+        "sector": "Industrials",
+        "industry": "Specialty Industrial Machinery",
+        "market_cap_usd": 51151233024,
+        "profitability": {
+            "gross_margin_ttm": 0.36681,
+            "operating_margin_ttm": 0.26299,
+            "net_margin_ttm": 0.20108,
+            "operating_margin_trend_3yr": 0.01411808763271985
+        },
+        "returns_on_capital": {
+            "roe_ttm": 0.14626999,
+            "roa_ttm": 0.0801,
+            "roic_ttm": null
+        },
+        "cash_flow": {
+            "fcf_margin_ttm": 0.18234177348690045,
+            "fcf_to_net_income_ttm": 0.9068006247257651,
+            "ocf_cagr_3yr": 0.16165961423757524
+        },
+        "balance_sheet": {
+            "debt_to_equity": 0.22489,
+            "net_debt_to_ebitda": 0.8157650833414603,
+            "current_ratio": 1.138,
+            "interest_coverage": 23.1323134861053,
+            "total_debt_usd": 2455633920,
+            "total_cash_usd": 481249984
+        },
+        "growth": {
+            "revenue_growth_1yr": 0.113,
+            "revenue_cagr_3yr": 0.06364055992660522,
+            "eps_growth_1yr": 0.145,
+            "eps_cagr_3yr": 0.08477324733231018,
+            "fcf_cagr_3yr": 0.1827062679565401
+        },
+        "valuation": {
+            "pe_trailing": 33.660633,
+            "pe_forward": 25.327587,
+            "ps_ratio": 6.732568,
+            "pb_ratio": 4.684509,
+            "ev_ebitda": 21.95,
+            "peg_ratio": 2.9102,
+            "fcf_yield": 0.027083541531638056
+        },
+        "data_quality_flags": [
+            "AME: eps_cagr_3yr approximated by net income CAGR (share count changes not adjusted)"
+        ]
+    },
+    "financial_raw_metrics_date": "2026-05-21",
+    "financial_score": 62.501635198835366,
+    "financial_score_date": "2026-05-21",
+    "financial_subscores": {
+        "profitability": 68.79656073345699,
+        "returns_on_capital": 45.87354814954816,
+        "cash_flow_quality": 81.26393583601585,
+        "balance_sheet": 82.04502788884554,
+        "growth": 63.30912669462287,
+        "valuation": 37.16599906207802
+    },
+    "financial_drivers": {
+        "strongest": [
+            "interest_coverage (balance_sheet): score=100, value=23.13",
+            "debt_to_equity (balance_sheet): score=93, value=22.5%",
+            "net_debt_to_ebitda (balance_sheet): score=89, value=81.6%"
+        ],
+        "weakest": [
+            "peg_ratio (valuation): score=15, value=2.91",
+            "pe_trailing (valuation): score=30, value=33.66",
+            "gross_margin_ttm (profitability): score=40, value=36.7%"
+        ]
+    },
+    "professional_raw_metrics": {
+        "sector": "Industrials",
+        "industry": "Specialty Industrial Machinery",
+        "market_cap_usd": 51151233024,
+        "current_price": 223.17,
+        "analyst": {
+            "recommendation_mean": 1.7,
+            "recommendation_key": "buy",
+            "target_mean_price": 259.1579,
+            "target_median_price": 262.0,
+            "target_high_price": 280.0,
+            "target_low_price": 217.0,
+            "upside_to_target": 0.16125778554465206,
+            "target_dispersion": 0.24309503974218036,
+            "num_analysts": 19
+        },
+        "rating_momentum": {
+            "upgrades_12m": 2,
+            "downgrades_12m": 1,
+            "total_actions_12m": 32
+        },
+        "institutional": {
+            "held_pct_institutions": 0.92190003,
+            "held_pct_insiders": 0.00404
+        },
+        "short_interest": {
+            "short_pct_of_float": 0.0171,
+            "short_ratio": 3.04,
+            "short_change_pct": 0.0758338846458284
+        },
+        "data_quality_flags": []
+    },
+    "professional_raw_metrics_date": "2026-05-21",
+    "professional_score": 66.16447716474933,
+    "professional_score_date": "2026-05-21",
+    "professional_subscores": {
+        "analyst_consensus": 77.15051903631014,
+        "rating_momentum": 54.46875,
+        "institutional_positioning": 64.46271727146873,
+        "short_interest": 62.859524561157336
+    },
+    "professional_drivers": {
+        "strongest": [
+            "recommendation_mean (analyst_consensus): score=84, value=1.70",
+            "short_ratio (short_interest): score=70, value=3.04",
+            "held_pct_institutions (institutional_positioning): score=69, value=92.2%"
+        ],
+        "weakest": [
+            "short_change_pct (short_interest): score=41, value=7.6%",
+            "held_pct_insiders (institutional_positioning): score=54, value=0.4%",
+            "upgrades_12m (rating_momentum): score=54, value=2.00"
+        ]
+    },
+    "news_sentiment_raw_metrics": {
+        "sector": null,
+        "industry": null,
+        "market_cap_usd": null,
+        "current_price": null,
+        "earnings": {
+            "beat_count_4q": 4,
+            "miss_count_4q": 0,
+            "total_quarters_4q": 4,
+            "avg_surprise_magnitude_4q": 0.042443533246247216,
+            "eps_estimate_revision_90d": null,
+            "trailing_eps": null,
+            "forward_eps": null
+        },
+        "price_momentum": {
+            "return_1m": null,
+            "return_3m": null,
+            "return_6m": null
+        },
+        "insider_activity": {
+            "insider_purchases_count_90d": null,
+            "insider_sales_count_90d": null,
+            "insider_net_value_90d_usd": null
+        },
+        "data_quality_flags": [
+            "AME: failed to fetch .info (Too Many Requests. Rate limited. Try after a while.)",
+            "AME: sector classification unavailable",
+            "AME: eps_revisions fetch failed (Too Many Requests. Rate limited. Try after a while.)",
+            "AME: price momentum fetch failed (Too Many Requests. Rate limited. Try after a while.)",
+            "AME: insider_transactions fetch failed (Too Many Requests. Rate limited. Try after a while.)"
+        ]
+    },
+    "news_sentiment_raw_metrics_date": "2026-05-21",
+    "news_sentiment_score": null,
+    "news_sentiment_score_date": "2026-05-21",
+    "news_sentiment_subscores": {
+        "earnings_surprise_revisions": 86.71773844144168,
+        "price_momentum": null,
+        "insider_activity": null
+    },
+    "news_sentiment_drivers": {
+        "strongest": [
+            "beat_rate_4q (earnings_surprise_revisions): score=100, value=1.00",
+            "avg_surprise_magnitude_4q (earnings_surprise_revisions): score=71, value=4.2%"
+        ],
+        "weakest": [
+            "avg_surprise_magnitude_4q (earnings_surprise_revisions): score=71, value=4.2%",
+            "beat_rate_4q (earnings_surprise_revisions): score=100, value=1.00"
+        ]
+    },
+    "composite_score": 60.30241502161009,
+    "composite_score_date": "2026-05-21",
+    "composite_rank": 170,
+    "composite_metadata": {
+        "scores_used": [
+            "financial",
+            "professional"
+        ],
+        "scores_imputed": [
+            "news_sentiment"
+        ],
+        "imputed_values": {
+            "news_sentiment": 46.01127136383803
+        },
+        "imputation_r_squared": 0.05693184104207816,
+        "weights_applied": {
+            "financial": 50,
+            "professional": 30,
+            "news_sentiment": 20
+        }
+    }
+}
