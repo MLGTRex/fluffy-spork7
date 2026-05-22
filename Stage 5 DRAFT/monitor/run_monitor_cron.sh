@@ -27,6 +27,19 @@ if [ -f "$PROJECT_ROOT/.env" ]; then
 fi
 
 echo "=== monitor cron run started: $(date) ==="
+
+# Pull the latest remote state before running, so the monitor reads the
+# current pipeline output (and not a stale local working tree). Uses the same
+# keychain-independent credential helper as the end-of-run push. Best-effort:
+# if the pull fails, log a warning and continue against the existing local
+# state — the end-of-run push will retry the sync.
+cred='!f(){ echo username=x-access-token; echo "password=$GITHUB_TOKEN"; }; f'
+echo "=== pulling latest state from origin: $(date) ==="
+if ! git -c credential.helper= -c credential.helper="$cred" pull --rebase --autostash origin main; then
+  echo "WARNING: pre-run pull failed; continuing against existing local state." >&2
+  git rebase --abort 2>/dev/null
+fi
+
 /usr/bin/python3 "$MONITOR" "$@"
 status=$?
 echo "=== monitor run finished: $(date) (exit $status) ==="
