@@ -1,0 +1,3017 @@
+{
+  "run_id": "20260522T203001",
+  "started_at": "2026-05-22T20:30:01.611473+00:00",
+  "dry_run": false,
+  "skip_llm": false,
+  "status": "ok",
+  "cadence_window": {
+    "name": "post_close",
+    "scope": "full",
+    "matched": true,
+    "actual_time_et": "16:30",
+    "forced": false
+  },
+  "tickers_in_scope": [
+    "ARDX",
+    "SEK.AX",
+    "ANG.AX",
+    "VST",
+    "LLY",
+    "RMD",
+    "NFLX",
+    "META",
+    "NOW",
+    "MA",
+    "BIP",
+    "HALO",
+    "AVGO",
+    "DVN",
+    "ANET",
+    "ALL",
+    "AU",
+    "APP",
+    "ALAB",
+    "FICO",
+    "GRMN",
+    "ICE",
+    "KTOS",
+    "MSFT",
+    "NVDA",
+    "QXO",
+    "RDDT",
+    "CI"
+  ],
+  "summary": {
+    "tickers_in_scope": 28,
+    "tickers_triggered_by_signals": 1,
+    "gate0_skipped": 0,
+    "gate0_to_investigate": 1,
+    "novelty_suppressed": 0,
+    "llm_call_one_succeeded": 1,
+    "llm_call_two_succeeded": 1,
+    "tickers_to_rerun": 0,
+    "rerun_tickers": [],
+    "total_llm_input_tokens": 116789,
+    "total_llm_output_tokens": 11066
+  },
+  "errors": [],
+  "pending_drain": {
+    "drained": 0,
+    "remaining": 0,
+    "status": "empty"
+  },
+  "baseline_refresh": {
+    "skipped": "already_fresh_today"
+  },
+  "fetch_errors": [],
+  "signal_results": {
+    "per_ticker_signals": {
+      "ARDX": {
+        "price_signal": {
+          "ticker": "ARDX",
+          "signal_type": "price",
+          "computed_at": "2026-05-22T20:30:08.626910+00:00",
+          "baseline_computed_at": "2026-05-22T14:00:18.079844+00:00",
+          "fired": true,
+          "tier": "minor",
+          "details": {
+            "daily_move": {
+              "current_pct": -3.8582659722615937,
+              "absolute_pct": 3.8582659722615937,
+              "fired": false,
+              "tier": null,
+              "percentile_reached": 80.52006342191957,
+              "threshold_p95_abs": 6.225932607539301,
+              "threshold_p99_abs": 8.255092729973672
+            },
+            "move_from_open": {
+              "current_pct": -3.8582659722615937,
+              "absolute_pct": 3.8582659722615937,
+              "fired": true,
+              "tier": "minor",
+              "threshold_minor_pct": 3.0,
+              "threshold_major_pct": 5.0
+            }
+          },
+          "data_quality_flags": []
+        },
+        "volume_signal": {
+          "ticker": "ARDX",
+          "signal_type": "volume",
+          "computed_at": "2026-05-22T20:30:08.626952+00:00",
+          "baseline_computed_at": "2026-05-22T14:00:18.079844+00:00",
+          "fired": false,
+          "tier": null,
+          "details": {
+            "current_volume": 2283434,
+            "is_partial_day": false,
+            "percentile_reached": 38.529866360691145,
+            "threshold_p95": 7322359.999999995,
+            "threshold_p99": 9794852.000000004,
+            "ratio_to_median": 0.7705973272138229
+          },
+          "data_quality_flags": []
+        },
+        "cumulative_signal": {
+          "ticker": "ARDX",
+          "signal_type": "cumulative",
+          "computed_at": "2026-05-22T20:30:08.626980+00:00",
+          "anchor_evaluated_at": "2026-05-22T20:30:04.954553+00:00",
+          "anchor_price": 6.538131,
+          "current_price": 6.105000019073486,
+          "fired": false,
+          "tier": null,
+          "details": {
+            "cumulative_move_pct": -6.624691076494392,
+            "cumulative_move_abs": -0.4331309809265136,
+            "abs_threshold_pct": 15.0,
+            "abs_threshold_fired": false,
+            "daily_sigma": 3.0513495253527747,
+            "sigma_threshold_multiple": 10.0,
+            "sigma_threshold_pct": 30.513495253527747,
+            "sigma_threshold_fired": false,
+            "fired_via": null
+          },
+          "data_quality_flags": []
+        }
+      },
+      "SEK.AX": {
+        "price_signal": {
+          "ticker": "SEK.AX",
+          "signal_type": "price",
+          "computed_at": "2026-05-22T20:30:08.627032+00:00",
+          "baseline_computed_at": "2026-05-22T14:00:18.080266+00:00",
+          "fired": true,
+          "tier": "major",
+          "details": {
+            "daily_move": {
+              "current_pct": -5.851851569281684,
+              "absolute_pct": 5.851851569281684,
+              "fired": true,
+              "tier": "minor",
+              "percentile_reached": 96.90130508453075,
+              "threshold_p95_abs": 4.489447952766032,
+              "threshold_p99_abs": 7.35569730454095
+            },
+            "move_from_open": {
+              "current_pct": -5.361133660967439,
+              "absolute_pct": 5.361133660967439,
+              "fired": true,
+              "tier": "major",
+              "threshold_minor_pct": 3.0,
+              "threshold_major_pct": 5.0
+            }
+          },
+          "data_quality_flags": []
+        },
+        "volume_signal": {
+          "ticker": "SEK.AX",
+          "signal_type": "volume",
+          "computed_at": "2026-05-22T20:30:08.627058+00:00",
+          "baseline_computed_at": "2026-05-22T14:00:18.080266+00:00",
+          "fired": false,
+          "tier": null,
+          "details": {
+            "current_volume": 1320440,
+            "is_partial_day": false,
+            "percentile_reached": 42.84814032892512,
+            "threshold_p95": 2800675.049999999,
+            "threshold_p99": 4286399.3299999945,
+            "ratio_to_median": 0.8569628065785024
+          },
+          "data_quality_flags": []
+        },
+        "cumulative_signal": {
+          "ticker": "SEK.AX",
+          "signal_type": "cumulative",
+          "computed_at": "2026-05-22T20:30:08.627075+00:00",
+          "anchor_evaluated_at": null,
+          "anchor_price": null,
+          "current_price": 12.710000038146973,
+          "fired": false,
+          "tier": null,
+          "details": {
+            "cumulative_move_pct": null,
+            "cumulative_move_abs": null,
+            "abs_threshold_pct": 15.0,
+            "abs_threshold_fired": false,
+            "daily_sigma": null,
+            "sigma_threshold_multiple": 10.0,
+            "sigma_threshold_pct": null,
+            "sigma_threshold_fired": false,
+            "fired_via": null
+          },
+          "data_quality_flags": [
+            "No evaluation anchor for this ticker; signal cannot fire. Anchor will be created on next successful pipeline rerun."
+          ]
+        }
+      },
+      "ANG.AX": {
+        "price_signal": {
+          "ticker": "ANG.AX",
+          "signal_type": "price",
+          "computed_at": "2026-05-22T20:30:08.627111+00:00",
+          "baseline_computed_at": "2026-05-22T14:00:18.080594+00:00",
+          "fired": false,
+          "tier": null,
+          "details": {
+            "daily_move": {
+              "current_pct": 1.4285700905079517,
+              "absolute_pct": 1.4285700905079517,
+              "fired": false,
+              "tier": null,
+              "percentile_reached": 27.857142309753257,
+              "threshold_p95_abs": 6.265350868521808,
+              "threshold_p99_abs": 8.878407628701904
+            },
+            "move_from_open": {
+              "current_pct": -1.3888957875743526,
+              "absolute_pct": 1.3888957875743526,
+              "fired": false,
+              "tier": null,
+              "threshold_minor_pct": 3.0,
+              "threshold_major_pct": 5.0
+            }
+          },
+          "data_quality_flags": []
+        },
+        "volume_signal": {
+          "ticker": "ANG.AX",
+          "signal_type": "volume",
+          "computed_at": "2026-05-22T20:30:08.627129+00:00",
+          "baseline_computed_at": "2026-05-22T14:00:18.080594+00:00",
+          "fired": false,
+          "tier": null,
+          "details": {
+            "current_volume": 120430,
+            "is_partial_day": false,
+            "percentile_reached": 8.805583279408916,
+            "threshold_p95": 3661314.6999999993,
+            "threshold_p99": 10034073.789999958,
+            "ratio_to_median": 0.1761116655881783
+          },
+          "data_quality_flags": []
+        },
+        "cumulative_signal": {
+          "ticker": "ANG.AX",
+          "signal_type": "cumulative",
+          "computed_at": "2026-05-22T20:30:08.627146+00:00",
+          "anchor_evaluated_at": null,
+          "anchor_price": null,
+          "current_price": 0.17749999463558197,
+          "fired": false,
+          "tier": null,
+          "details": {
+            "cumulative_move_pct": null,
+            "cumulative_move_abs": null,
+            "abs_threshold_pct": 15.0,
+            "abs_threshold_fired": false,
+            "daily_sigma": null,
+            "sigma_threshold_multiple": 10.0,
+            "sigma_threshold_pct": null,
+            "sigma_threshold_fired": false,
+            "fired_via": null
+          },
+          "data_quality_flags": [
+            "No evaluation anchor for this ticker; signal cannot fire. Anchor will be created on next successful pipeline rerun."
+          ]
+        }
+      },
+      "VST": {
+        "price_signal": {
+          "ticker": "VST",
+          "signal_type": "price",
+          "computed_at": "2026-05-22T20:30:08.627175+00:00",
+          "baseline_computed_at": "2026-05-22T14:00:18.080905+00:00",
+          "fired": true,
+          "tier": "minor",
+          "details": {
+            "daily_move": {
+              "current_pct": 4.822915450158325,
+              "absolute_pct": 4.822915450158325,
+              "fired": false,
+              "tier": null,
+              "percentile_reached": 92.39667974041852,
+              "threshold_p95_abs": 5.12480288380327,
+              "threshold_p99_abs": 9.416036002379373
+            },
+            "move_from_open": {
+              "current_pct": 3.469513034176334,
+              "absolute_pct": 3.469513034176334,
+              "fired": true,
+              "tier": "minor",
+              "threshold_minor_pct": 3.0,
+              "threshold_major_pct": 5.0
+            }
+          },
+          "data_quality_flags": []
+        },
+        "volume_signal": {
+          "ticker": "VST",
+          "signal_type": "volume",
+          "computed_at": "2026-05-22T20:30:08.627194+00:00",
+          "baseline_computed_at": "2026-05-22T14:00:18.080905+00:00",
+          "fired": false,
+          "tier": null,
+          "details": {
+            "current_volume": 5828563,
+            "is_partial_day": false,
+            "percentile_reached": 82.55288951495811,
+            "threshold_p95": 7896670.0,
+            "threshold_p99": 9459521.0,
+            "ratio_to_median": 1.3948435499503429
+          },
+          "data_quality_flags": []
+        },
+        "cumulative_signal": {
+          "ticker": "VST",
+          "signal_type": "cumulative",
+          "computed_at": "2026-05-22T20:30:08.627209+00:00",
+          "anchor_evaluated_at": "2026-05-22T20:30:04.954553+00:00",
+          "anchor_price": 150.196812,
+          "current_price": 156.27000427246094,
+          "fired": false,
+          "tier": null,
+          "details": {
+            "cumulative_move_pct": 4.043489466647896,
+            "cumulative_move_abs": 6.073192272460943,
+            "abs_threshold_pct": 15.0,
+            "abs_threshold_fired": false,
+            "daily_sigma": 3.157662890612793,
+            "sigma_threshold_multiple": 10.0,
+            "sigma_threshold_pct": 31.57662890612793,
+            "sigma_threshold_fired": false,
+            "fired_via": null
+          },
+          "data_quality_flags": []
+        }
+      },
+      "LLY": {
+        "price_signal": {
+          "ticker": "LLY",
+          "signal_type": "price",
+          "computed_at": "2026-05-22T20:30:08.627243+00:00",
+          "baseline_computed_at": "2026-05-22T14:00:18.081249+00:00",
+          "fired": false,
+          "tier": null,
+          "details": {
+            "daily_move": {
+              "current_pct": 2.304036810588107,
+              "absolute_pct": 2.304036810588107,
+              "fired": false,
+              "tier": null,
+              "percentile_reached": 76.43204059142835,
+              "threshold_p95_abs": 3.6812968996156212,
+              "threshold_p99_abs": 4.708435720706614
+            },
+            "move_from_open": {
+              "current_pct": 1.5088411175570728,
+              "absolute_pct": 1.5088411175570728,
+              "fired": false,
+              "tier": null,
+              "threshold_minor_pct": 3.0,
+              "threshold_major_pct": 5.0
+            }
+          },
+          "data_quality_flags": []
+        },
+        "volume_signal": {
+          "ticker": "LLY",
+          "signal_type": "volume",
+          "computed_at": "2026-05-22T20:30:08.627261+00:00",
+          "baseline_computed_at": "2026-05-22T14:00:18.081249+00:00",
+          "fired": false,
+          "tier": null,
+          "details": {
+            "current_volume": 2749877,
+            "is_partial_day": false,
+            "percentile_reached": 49.06639426165156,
+            "threshold_p95": 4499209.999999998,
+            "threshold_p99": 5902268.000000001,
+            "ratio_to_median": 0.9813278852330312
+          },
+          "data_quality_flags": []
+        },
+        "cumulative_signal": {
+          "ticker": "LLY",
+          "signal_type": "cumulative",
+          "computed_at": "2026-05-22T20:30:08.627283+00:00",
+          "anchor_evaluated_at": "2026-05-22T20:30:04.954553+00:00",
+          "anchor_price": 989.968222,
+          "current_price": 1065.6500244140625,
+          "fired": false,
+          "tier": null,
+          "details": {
+            "cumulative_move_pct": 7.644871899136832,
+            "cumulative_move_abs": 75.68180241406253,
+            "abs_threshold_pct": 15.0,
+            "abs_threshold_fired": false,
+            "daily_sigma": 1.9831448528320155,
+            "sigma_threshold_multiple": 10.0,
+            "sigma_threshold_pct": 19.831448528320156,
+            "sigma_threshold_fired": false,
+            "fired_via": null
+          },
+          "data_quality_flags": []
+        }
+      },
+      "RMD": {
+        "price_signal": {
+          "ticker": "RMD",
+          "signal_type": "price",
+          "computed_at": "2026-05-22T20:30:08.627314+00:00",
+          "baseline_computed_at": "2026-05-22T14:00:18.081605+00:00",
+          "fired": false,
+          "tier": null,
+          "details": {
+            "daily_move": {
+              "current_pct": -0.4258777911014928,
+              "absolute_pct": 0.4258777911014928,
+              "fired": false,
+              "tier": null,
+              "percentile_reached": 24.838288392003985,
+              "threshold_p95_abs": 2.8775250638413357,
+              "threshold_p99_abs": 3.973238810778338
+            },
+            "move_from_open": {
+              "current_pct": -0.4258777911014928,
+              "absolute_pct": 0.4258777911014928,
+              "fired": false,
+              "tier": null,
+              "threshold_minor_pct": 3.0,
+              "threshold_major_pct": 5.0
+            }
+          },
+          "data_quality_flags": []
+        },
+        "volume_signal": {
+          "ticker": "RMD",
+          "signal_type": "volume",
+          "computed_at": "2026-05-22T20:30:08.627330+00:00",
+          "baseline_computed_at": "2026-05-22T14:00:18.081605+00:00",
+          "fired": false,
+          "tier": null,
+          "details": {
+            "current_volume": 912685,
+            "is_partial_day": false,
+            "percentile_reached": 42.68473482368347,
+            "threshold_p95": 1850970.0,
+            "threshold_p99": 2765268.000000001,
+            "ratio_to_median": 0.8536946964736695
+          },
+          "data_quality_flags": []
+        },
+        "cumulative_signal": {
+          "ticker": "RMD",
+          "signal_type": "cumulative",
+          "computed_at": "2026-05-22T20:30:08.627345+00:00",
+          "anchor_evaluated_at": "2026-05-22T20:30:04.954553+00:00",
+          "anchor_price": 201.78,
+          "current_price": 208.08999633789062,
+          "fired": false,
+          "tier": null,
+          "details": {
+            "cumulative_move_pct": 3.1271663880912994,
+            "cumulative_move_abs": 6.309996337890624,
+            "abs_threshold_pct": 15.0,
+            "abs_threshold_fired": false,
+            "daily_sigma": 1.460241785794125,
+            "sigma_threshold_multiple": 10.0,
+            "sigma_threshold_pct": 14.60241785794125,
+            "sigma_threshold_fired": false,
+            "fired_via": null
+          },
+          "data_quality_flags": []
+        }
+      },
+      "NFLX": {
+        "price_signal": {
+          "ticker": "NFLX",
+          "signal_type": "price",
+          "computed_at": "2026-05-22T20:30:08.627375+00:00",
+          "baseline_computed_at": "2026-05-22T14:00:18.081970+00:00",
+          "fired": false,
+          "tier": null,
+          "details": {
+            "daily_move": {
+              "current_pct": -0.7838796794116566,
+              "absolute_pct": 0.7838796794116566,
+              "fired": false,
+              "tier": null,
+              "percentile_reached": 42.977709507615614,
+              "threshold_p95_abs": 3.2796835669911033,
+              "threshold_p99_abs": 6.140840084994502
+            },
+            "move_from_open": {
+              "current_pct": -0.47180204985777807,
+              "absolute_pct": 0.47180204985777807,
+              "fired": false,
+              "tier": null,
+              "threshold_minor_pct": 3.0,
+              "threshold_major_pct": 5.0
+            }
+          },
+          "data_quality_flags": []
+        },
+        "volume_signal": {
+          "ticker": "NFLX",
+          "signal_type": "volume",
+          "computed_at": "2026-05-22T20:30:08.627392+00:00",
+          "baseline_computed_at": "2026-05-22T14:00:18.081970+00:00",
+          "fired": false,
+          "tier": null,
+          "details": {
+            "current_volume": 22165395,
+            "is_partial_day": false,
+            "percentile_reached": 31.72667168597095,
+            "threshold_p95": 64960009.9999999,
+            "threshold_p99": 157378186.00000012,
+            "ratio_to_median": 0.634533433719419
+          },
+          "data_quality_flags": []
+        },
+        "cumulative_signal": {
+          "ticker": "NFLX",
+          "signal_type": "cumulative",
+          "computed_at": "2026-05-22T20:30:08.627407+00:00",
+          "anchor_evaluated_at": "2026-05-22T20:30:04.954553+00:00",
+          "anchor_price": 86.03023,
+          "current_price": 88.5999984741211,
+          "fired": false,
+          "tier": null,
+          "details": {
+            "cumulative_move_pct": 2.9870528930599054,
+            "cumulative_move_abs": 2.5697684741210907,
+            "abs_threshold_pct": 15.0,
+            "abs_threshold_fired": false,
+            "daily_sigma": 2.016894449984982,
+            "sigma_threshold_multiple": 10.0,
+            "sigma_threshold_pct": 20.168944499849818,
+            "sigma_threshold_fired": false,
+            "fired_via": null
+          },
+          "data_quality_flags": []
+        }
+      },
+      "META": {
+        "price_signal": {
+          "ticker": "META",
+          "signal_type": "price",
+          "computed_at": "2026-05-22T20:30:08.627437+00:00",
+          "baseline_computed_at": "2026-05-22T14:00:18.082322+00:00",
+          "fired": false,
+          "tier": null,
+          "details": {
+            "daily_move": {
+              "current_pct": 0.49227669833350646,
+              "absolute_pct": 0.49227669833350646,
+              "fired": false,
+              "tier": null,
+              "percentile_reached": 22.439916678409304,
+              "threshold_p95_abs": 6.523537561747563,
+              "threshold_p99_abs": 8.213409432072131
+            },
+            "move_from_open": {
+              "current_pct": 0.4740826892804223,
+              "absolute_pct": 0.4740826892804223,
+              "fired": false,
+              "tier": null,
+              "threshold_minor_pct": 3.0,
+              "threshold_major_pct": 5.0
+            }
+          },
+          "data_quality_flags": []
+        },
+        "volume_signal": {
+          "ticker": "META",
+          "signal_type": "volume",
+          "computed_at": "2026-05-22T20:30:08.627453+00:00",
+          "baseline_computed_at": "2026-05-22T14:00:18.082322+00:00",
+          "fired": false,
+          "tier": null,
+          "details": {
+            "current_volume": 10268638,
+            "is_partial_day": false,
+            "percentile_reached": 38.61900141408671,
+            "threshold_p95": 32122769.999999996,
+            "threshold_p99": 42913758.00000003,
+            "ratio_to_median": 0.7723800282817342
+          },
+          "data_quality_flags": []
+        },
+        "cumulative_signal": {
+          "ticker": "META",
+          "signal_type": "cumulative",
+          "computed_at": "2026-05-22T20:30:08.627468+00:00",
+          "anchor_evaluated_at": "2026-05-22T20:30:04.954553+00:00",
+          "anchor_price": 594.863765,
+          "current_price": 610.3699951171875,
+          "fired": false,
+          "tier": null,
+          "details": {
+            "cumulative_move_pct": 2.6066859387859265,
+            "cumulative_move_abs": 15.506230117187556,
+            "abs_threshold_pct": 15.0,
+            "abs_threshold_fired": false,
+            "daily_sigma": 2.5406558570075273,
+            "sigma_threshold_multiple": 10.0,
+            "sigma_threshold_pct": 25.406558570075273,
+            "sigma_threshold_fired": false,
+            "fired_via": null
+          },
+          "data_quality_flags": []
+        }
+      },
+      "NOW": {
+        "price_signal": {
+          "ticker": "NOW",
+          "signal_type": "price",
+          "computed_at": "2026-05-22T20:30:08.628181+00:00",
+          "baseline_computed_at": "2026-05-22T14:00:18.082668+00:00",
+          "fired": false,
+          "tier": null,
+          "details": {
+            "daily_move": {
+              "current_pct": 2.4425694643000364,
+              "absolute_pct": 2.4425694643000364,
+              "fired": false,
+              "tier": null,
+              "percentile_reached": 53.075012710792585,
+              "threshold_p95_abs": 7.624096021846589,
+              "threshold_p99_abs": 12.636755973338811
+            },
+            "move_from_open": {
+              "current_pct": -0.05382687904826253,
+              "absolute_pct": 0.05382687904826253,
+              "fired": false,
+              "tier": null,
+              "threshold_minor_pct": 3.0,
+              "threshold_major_pct": 5.0
+            }
+          },
+          "data_quality_flags": []
+        },
+        "volume_signal": {
+          "ticker": "NOW",
+          "signal_type": "volume",
+          "computed_at": "2026-05-22T20:30:08.628216+00:00",
+          "baseline_computed_at": "2026-05-22T14:00:18.082668+00:00",
+          "fired": false,
+          "tier": null,
+          "details": {
+            "current_volume": 21832090,
+            "is_partial_day": false,
+            "percentile_reached": 54.46444104979526,
+            "threshold_p95": 51661069.99999997,
+            "threshold_p99": 69378350.00000004,
+            "ratio_to_median": 1.0400988070737098
+          },
+          "data_quality_flags": []
+        },
+        "cumulative_signal": {
+          "ticker": "NOW",
+          "signal_type": "cumulative",
+          "computed_at": "2026-05-22T20:30:08.628236+00:00",
+          "anchor_evaluated_at": "2026-05-19T06:14:51.064452+00:00",
+          "anchor_price": 91.18000030517578,
+          "current_price": 102.125,
+          "fired": false,
+          "tier": null,
+          "details": {
+            "cumulative_move_pct": 12.003728513042056,
+            "cumulative_move_abs": 10.944999694824219,
+            "abs_threshold_pct": 15.0,
+            "abs_threshold_fired": false,
+            "daily_sigma": 4.225056020759028,
+            "sigma_threshold_multiple": 10.0,
+            "sigma_threshold_pct": 42.250560207590276,
+            "sigma_threshold_fired": false,
+            "fired_via": null
+          },
+          "data_quality_flags": []
+        }
+      },
+      "MA": {
+        "price_signal": {
+          "ticker": "MA",
+          "signal_type": "price",
+          "computed_at": "2026-05-22T20:30:08.628284+00:00",
+          "baseline_computed_at": "2026-05-22T14:00:18.083012+00:00",
+          "fired": false,
+          "tier": null,
+          "details": {
+            "daily_move": {
+              "current_pct": -0.2181650751657693,
+              "absolute_pct": 0.2181650751657693,
+              "fired": false,
+              "tier": null,
+              "percentile_reached": 12.438228718752882,
+              "threshold_p95_abs": 2.4879814912771714,
+              "threshold_p99_abs": 3.514631581610033
+            },
+            "move_from_open": {
+              "current_pct": -0.11620416126459476,
+              "absolute_pct": 0.11620416126459476,
+              "fired": false,
+              "tier": null,
+              "threshold_minor_pct": 3.0,
+              "threshold_major_pct": 5.0
+            }
+          },
+          "data_quality_flags": []
+        },
+        "volume_signal": {
+          "ticker": "MA",
+          "signal_type": "volume",
+          "computed_at": "2026-05-22T20:30:08.628305+00:00",
+          "baseline_computed_at": "2026-05-22T14:00:18.083012+00:00",
+          "fired": false,
+          "tier": null,
+          "details": {
+            "current_volume": 1355808,
+            "is_partial_day": false,
+            "percentile_reached": 20.06642394103543,
+            "threshold_p95": 4979799.999999999,
+            "threshold_p99": 5810696.0,
+            "ratio_to_median": 0.40132847882070866
+          },
+          "data_quality_flags": []
+        },
+        "cumulative_signal": {
+          "ticker": "MA",
+          "signal_type": "cumulative",
+          "computed_at": "2026-05-22T20:30:08.628322+00:00",
+          "anchor_evaluated_at": "2026-05-22T20:30:04.954553+00:00",
+          "anchor_price": 503.11,
+          "current_price": 498.5299987792969,
+          "fired": false,
+          "tier": null,
+          "details": {
+            "cumulative_move_pct": -0.9103379421405137,
+            "cumulative_move_abs": -4.580001220703139,
+            "abs_threshold_pct": 15.0,
+            "abs_threshold_fired": false,
+            "daily_sigma": 1.3535105346754703,
+            "sigma_threshold_multiple": 10.0,
+            "sigma_threshold_pct": 13.535105346754703,
+            "sigma_threshold_fired": false,
+            "fired_via": null
+          },
+          "data_quality_flags": []
+        }
+      },
+      "BIP": {
+        "price_signal": {
+          "ticker": "BIP",
+          "signal_type": "price",
+          "computed_at": "2026-05-22T20:30:08.628381+00:00",
+          "baseline_computed_at": "2026-05-22T14:00:18.083352+00:00",
+          "fired": false,
+          "tier": null,
+          "details": {
+            "daily_move": {
+              "current_pct": -0.2767310952240566,
+              "absolute_pct": 0.2767310952240566,
+              "fired": false,
+              "tier": null,
+              "percentile_reached": 13.350380985905083,
+              "threshold_p95_abs": 2.7506427155383046,
+              "threshold_p99_abs": 3.1511266447290365
+            },
+            "move_from_open": {
+              "current_pct": -0.9495278954738647,
+              "absolute_pct": 0.9495278954738647,
+              "fired": false,
+              "tier": null,
+              "threshold_minor_pct": 3.0,
+              "threshold_major_pct": 5.0
+            }
+          },
+          "data_quality_flags": []
+        },
+        "volume_signal": {
+          "ticker": "BIP",
+          "signal_type": "volume",
+          "computed_at": "2026-05-22T20:30:08.628397+00:00",
+          "baseline_computed_at": "2026-05-22T14:00:18.083352+00:00",
+          "fired": false,
+          "tier": null,
+          "details": {
+            "current_volume": 445076,
+            "is_partial_day": false,
+            "percentile_reached": 25.148378347835916,
+            "threshold_p95": 1588539.9999999995,
+            "threshold_p99": 1708794.0,
+            "ratio_to_median": 0.5029675669567183
+          },
+          "data_quality_flags": []
+        },
+        "cumulative_signal": {
+          "ticker": "BIP",
+          "signal_type": "cumulative",
+          "computed_at": "2026-05-22T20:30:08.628413+00:00",
+          "anchor_evaluated_at": "2026-05-22T20:30:04.954553+00:00",
+          "anchor_price": 37.587731,
+          "current_price": 39.63999938964844,
+          "fired": false,
+          "tier": null,
+          "details": {
+            "cumulative_move_pct": 5.459942207334727,
+            "cumulative_move_abs": 2.0522683896484395,
+            "abs_threshold_pct": 15.0,
+            "abs_threshold_fired": false,
+            "daily_sigma": 1.5607968843385167,
+            "sigma_threshold_multiple": 10.0,
+            "sigma_threshold_pct": 15.607968843385168,
+            "sigma_threshold_fired": false,
+            "fired_via": null
+          },
+          "data_quality_flags": []
+        }
+      },
+      "HALO": {
+        "price_signal": {
+          "ticker": "HALO",
+          "signal_type": "price",
+          "computed_at": "2026-05-22T20:30:08.628444+00:00",
+          "baseline_computed_at": "2026-05-22T14:00:18.083710+00:00",
+          "fired": false,
+          "tier": null,
+          "details": {
+            "daily_move": {
+              "current_pct": -0.3356621990762108,
+              "absolute_pct": 0.3356621990762108,
+              "fired": false,
+              "tier": null,
+              "percentile_reached": 14.20894515715101,
+              "threshold_p95_abs": 3.983676239758827,
+              "threshold_p99_abs": 5.430277018212159
+            },
+            "move_from_open": {
+              "current_pct": -0.5099045414238114,
+              "absolute_pct": 0.5099045414238114,
+              "fired": false,
+              "tier": null,
+              "threshold_minor_pct": 3.0,
+              "threshold_major_pct": 5.0
+            }
+          },
+          "data_quality_flags": []
+        },
+        "volume_signal": {
+          "ticker": "HALO",
+          "signal_type": "volume",
+          "computed_at": "2026-05-22T20:30:08.628464+00:00",
+          "baseline_computed_at": "2026-05-22T14:00:18.083710+00:00",
+          "fired": false,
+          "tier": null,
+          "details": {
+            "current_volume": 1083153,
+            "is_partial_day": false,
+            "percentile_reached": 37.094280821917806,
+            "threshold_p95": 2403199.9999999986,
+            "threshold_p99": 4110352.0000000023,
+            "ratio_to_median": 0.7418856164383562
+          },
+          "data_quality_flags": []
+        },
+        "cumulative_signal": {
+          "ticker": "HALO",
+          "signal_type": "cumulative",
+          "computed_at": "2026-05-22T20:30:08.628478+00:00",
+          "anchor_evaluated_at": "2026-05-22T20:30:04.954553+00:00",
+          "anchor_price": 68.842544,
+          "current_price": 68.29000091552734,
+          "fired": false,
+          "tier": null,
+          "details": {
+            "cumulative_move_pct": -0.802618631398427,
+            "cumulative_move_abs": -0.55254308447266,
+            "abs_threshold_pct": 15.0,
+            "abs_threshold_fired": false,
+            "daily_sigma": 1.961184668551474,
+            "sigma_threshold_multiple": 10.0,
+            "sigma_threshold_pct": 19.61184668551474,
+            "sigma_threshold_fired": false,
+            "fired_via": null
+          },
+          "data_quality_flags": []
+        }
+      },
+      "AVGO": {
+        "price_signal": {
+          "ticker": "AVGO",
+          "signal_type": "price",
+          "computed_at": "2026-05-22T20:30:08.628508+00:00",
+          "baseline_computed_at": "2026-05-22T14:00:18.084060+00:00",
+          "fired": false,
+          "tier": null,
+          "details": {
+            "daily_move": {
+              "current_pct": -0.10854914708755409,
+              "absolute_pct": 0.10854914708755409,
+              "fired": false,
+              "tier": null,
+              "percentile_reached": 3.4033558347261628,
+              "threshold_p95_abs": 5.151594151500429,
+              "threshold_p99_abs": 5.817670597290456
+            },
+            "move_from_open": {
+              "current_pct": -0.8072038123107134,
+              "absolute_pct": 0.8072038123107134,
+              "fired": false,
+              "tier": null,
+              "threshold_minor_pct": 3.0,
+              "threshold_major_pct": 5.0
+            }
+          },
+          "data_quality_flags": []
+        },
+        "volume_signal": {
+          "ticker": "AVGO",
+          "signal_type": "volume",
+          "computed_at": "2026-05-22T20:30:08.628525+00:00",
+          "baseline_computed_at": "2026-05-22T14:00:18.084060+00:00",
+          "fired": false,
+          "tier": null,
+          "details": {
+            "current_volume": 13570177,
+            "is_partial_day": false,
+            "percentile_reached": 32.579580048208506,
+            "threshold_p95": 39297559.99999999,
+            "threshold_p99": 49101194.00000002,
+            "ratio_to_median": 0.6515916009641701
+          },
+          "data_quality_flags": []
+        },
+        "cumulative_signal": {
+          "ticker": "AVGO",
+          "signal_type": "cumulative",
+          "computed_at": "2026-05-22T20:30:08.628540+00:00",
+          "anchor_evaluated_at": "2026-05-22T20:30:04.954553+00:00",
+          "anchor_price": 420.796917,
+          "current_price": 414.1199951171875,
+          "fired": false,
+          "tier": null,
+          "details": {
+            "cumulative_move_pct": -1.5867326049854371,
+            "cumulative_move_abs": -6.676921882812508,
+            "abs_threshold_pct": 15.0,
+            "abs_threshold_fired": false,
+            "daily_sigma": 2.67646315478622,
+            "sigma_threshold_multiple": 10.0,
+            "sigma_threshold_pct": 26.764631547862198,
+            "sigma_threshold_fired": false,
+            "fired_via": null
+          },
+          "data_quality_flags": []
+        }
+      },
+      "DVN": {
+        "price_signal": {
+          "ticker": "DVN",
+          "signal_type": "price",
+          "computed_at": "2026-05-22T20:30:08.628569+00:00",
+          "baseline_computed_at": "2026-05-22T14:00:18.084411+00:00",
+          "fired": false,
+          "tier": null,
+          "details": {
+            "daily_move": {
+              "current_pct": 0.23349736558354423,
+              "absolute_pct": 0.23349736558354423,
+              "fired": false,
+              "tier": null,
+              "percentile_reached": 8.133617017133355,
+              "threshold_p95_abs": 4.1124716346006185,
+              "threshold_p99_abs": 6.416961222476463
+            },
+            "move_from_open": {
+              "current_pct": 0.3826537025350382,
+              "absolute_pct": 0.3826537025350382,
+              "fired": false,
+              "tier": null,
+              "threshold_minor_pct": 3.0,
+              "threshold_major_pct": 5.0
+            }
+          },
+          "data_quality_flags": []
+        },
+        "volume_signal": {
+          "ticker": "DVN",
+          "signal_type": "volume",
+          "computed_at": "2026-05-22T20:30:08.628588+00:00",
+          "baseline_computed_at": "2026-05-22T14:00:18.084411+00:00",
+          "fired": false,
+          "tier": null,
+          "details": {
+            "current_volume": 6666334,
+            "is_partial_day": false,
+            "percentile_reached": 23.8733052091764,
+            "threshold_p95": 26791849.999999993,
+            "threshold_p99": 47356886.00000003,
+            "ratio_to_median": 0.47746610418352803
+          },
+          "data_quality_flags": []
+        },
+        "cumulative_signal": {
+          "ticker": "DVN",
+          "signal_type": "cumulative",
+          "computed_at": "2026-05-22T20:30:08.628602+00:00",
+          "anchor_evaluated_at": "2026-05-22T20:30:04.954553+00:00",
+          "anchor_price": 46.894761,
+          "current_price": 47.220001220703125,
+          "fired": false,
+          "tier": null,
+          "details": {
+            "cumulative_move_pct": 0.6935534242367125,
+            "cumulative_move_abs": 0.3252402207031224,
+            "abs_threshold_pct": 15.0,
+            "abs_threshold_fired": false,
+            "daily_sigma": 2.340658496365628,
+            "sigma_threshold_multiple": 10.0,
+            "sigma_threshold_pct": 23.40658496365628,
+            "sigma_threshold_fired": false,
+            "fired_via": null
+          },
+          "data_quality_flags": []
+        }
+      },
+      "ANET": {
+        "price_signal": {
+          "ticker": "ANET",
+          "signal_type": "price",
+          "computed_at": "2026-05-22T20:30:08.628631+00:00",
+          "baseline_computed_at": "2026-05-22T14:00:18.084757+00:00",
+          "fired": false,
+          "tier": null,
+          "details": {
+            "daily_move": {
+              "current_pct": 3.647619828067259,
+              "absolute_pct": 3.647619828067259,
+              "fired": false,
+              "tier": null,
+              "percentile_reached": 72.42476067192987,
+              "threshold_p95_abs": 8.26165948834068,
+              "threshold_p99_abs": 11.111043063650357
+            },
+            "move_from_open": {
+              "current_pct": 1.1493498378665916,
+              "absolute_pct": 1.1493498378665916,
+              "fired": false,
+              "tier": null,
+              "threshold_minor_pct": 3.0,
+              "threshold_major_pct": 5.0
+            }
+          },
+          "data_quality_flags": []
+        },
+        "volume_signal": {
+          "ticker": "ANET",
+          "signal_type": "volume",
+          "computed_at": "2026-05-22T20:30:08.628650+00:00",
+          "baseline_computed_at": "2026-05-22T14:00:18.084757+00:00",
+          "fired": false,
+          "tier": null,
+          "details": {
+            "current_volume": 9302725,
+            "is_partial_day": false,
+            "percentile_reached": 76.91897006736579,
+            "threshold_p95": 18282220.0,
+            "threshold_p99": 26778952.000000026,
+            "ratio_to_median": 1.2888409371146732
+          },
+          "data_quality_flags": []
+        },
+        "cumulative_signal": {
+          "ticker": "ANET",
+          "signal_type": "cumulative",
+          "computed_at": "2026-05-22T20:30:08.628667+00:00",
+          "anchor_evaluated_at": "2026-05-22T20:30:04.954553+00:00",
+          "anchor_price": 135.913904,
+          "current_price": 154.00999450683594,
+          "fired": false,
+          "tier": null,
+          "details": {
+            "cumulative_move_pct": 13.3143776863594,
+            "cumulative_move_abs": 18.096090506835935,
+            "abs_threshold_pct": 15.0,
+            "abs_threshold_fired": false,
+            "daily_sigma": 3.9082377902741134,
+            "sigma_threshold_multiple": 10.0,
+            "sigma_threshold_pct": 39.082377902741136,
+            "sigma_threshold_fired": false,
+            "fired_via": null
+          },
+          "data_quality_flags": []
+        }
+      },
+      "ALL": {
+        "price_signal": {
+          "ticker": "ALL",
+          "signal_type": "price",
+          "computed_at": "2026-05-22T20:30:08.628697+00:00",
+          "baseline_computed_at": null,
+          "fired": false,
+          "tier": null,
+          "details": {
+            "daily_move": {
+              "current_pct": 1.0072764584581535,
+              "absolute_pct": 1.0072764584581535,
+              "fired": false,
+              "tier": null,
+              "percentile_reached": null,
+              "threshold_p95_abs": null,
+              "threshold_p99_abs": null
+            },
+            "move_from_open": {
+              "current_pct": 0.09242708533851737,
+              "absolute_pct": 0.09242708533851737,
+              "fired": false,
+              "tier": null,
+              "threshold_minor_pct": 3.0,
+              "threshold_major_pct": 5.0
+            }
+          },
+          "data_quality_flags": [
+            "No baseline provided; daily move sub-signal cannot use percentile thresholds"
+          ]
+        },
+        "volume_signal": {
+          "ticker": "ALL",
+          "signal_type": "volume",
+          "computed_at": "2026-05-22T20:30:08.628707+00:00",
+          "baseline_computed_at": null,
+          "fired": false,
+          "tier": null,
+          "details": {
+            "current_volume": 950990,
+            "is_partial_day": false,
+            "percentile_reached": null,
+            "threshold_p95": null,
+            "threshold_p99": null,
+            "ratio_to_median": null
+          },
+          "data_quality_flags": [
+            "No baseline provided; volume signal cannot use percentile thresholds"
+          ]
+        },
+        "cumulative_signal": {
+          "ticker": "ALL",
+          "signal_type": "cumulative",
+          "computed_at": "2026-05-22T20:30:08.628721+00:00",
+          "anchor_evaluated_at": null,
+          "anchor_price": null,
+          "current_price": 216.60000610351562,
+          "fired": false,
+          "tier": null,
+          "details": {
+            "cumulative_move_pct": null,
+            "cumulative_move_abs": null,
+            "abs_threshold_pct": 15.0,
+            "abs_threshold_fired": false,
+            "daily_sigma": null,
+            "sigma_threshold_multiple": 10.0,
+            "sigma_threshold_pct": null,
+            "sigma_threshold_fired": false,
+            "fired_via": null
+          },
+          "data_quality_flags": [
+            "No evaluation anchor for this ticker; signal cannot fire. Anchor will be created on next successful pipeline rerun."
+          ]
+        }
+      },
+      "AU": {
+        "price_signal": {
+          "ticker": "AU",
+          "signal_type": "price",
+          "computed_at": "2026-05-22T20:30:08.629244+00:00",
+          "baseline_computed_at": null,
+          "fired": false,
+          "tier": null,
+          "details": {
+            "daily_move": {
+              "current_pct": -1.3064746523433952,
+              "absolute_pct": 1.3064746523433952,
+              "fired": false,
+              "tier": null,
+              "percentile_reached": null,
+              "threshold_p95_abs": null,
+              "threshold_p99_abs": null
+            },
+            "move_from_open": {
+              "current_pct": -0.5267153977896774,
+              "absolute_pct": 0.5267153977896774,
+              "fired": false,
+              "tier": null,
+              "threshold_minor_pct": 3.0,
+              "threshold_major_pct": 5.0
+            }
+          },
+          "data_quality_flags": [
+            "No baseline provided; daily move sub-signal cannot use percentile thresholds"
+          ]
+        },
+        "volume_signal": {
+          "ticker": "AU",
+          "signal_type": "volume",
+          "computed_at": "2026-05-22T20:30:08.629258+00:00",
+          "baseline_computed_at": null,
+          "fired": false,
+          "tier": null,
+          "details": {
+            "current_volume": 1076273,
+            "is_partial_day": false,
+            "percentile_reached": null,
+            "threshold_p95": null,
+            "threshold_p99": null,
+            "ratio_to_median": null
+          },
+          "data_quality_flags": [
+            "No baseline provided; volume signal cannot use percentile thresholds"
+          ]
+        },
+        "cumulative_signal": {
+          "ticker": "AU",
+          "signal_type": "cumulative",
+          "computed_at": "2026-05-22T20:30:08.629266+00:00",
+          "anchor_evaluated_at": null,
+          "anchor_price": null,
+          "current_price": 90.6500015258789,
+          "fired": false,
+          "tier": null,
+          "details": {
+            "cumulative_move_pct": null,
+            "cumulative_move_abs": null,
+            "abs_threshold_pct": 15.0,
+            "abs_threshold_fired": false,
+            "daily_sigma": null,
+            "sigma_threshold_multiple": 10.0,
+            "sigma_threshold_pct": null,
+            "sigma_threshold_fired": false,
+            "fired_via": null
+          },
+          "data_quality_flags": [
+            "No evaluation anchor for this ticker; signal cannot fire. Anchor will be created on next successful pipeline rerun."
+          ]
+        }
+      },
+      "APP": {
+        "price_signal": {
+          "ticker": "APP",
+          "signal_type": "price",
+          "computed_at": "2026-05-22T20:30:08.629298+00:00",
+          "baseline_computed_at": null,
+          "fired": false,
+          "tier": null,
+          "details": {
+            "daily_move": {
+              "current_pct": -0.854107779322286,
+              "absolute_pct": 0.854107779322286,
+              "fired": false,
+              "tier": null,
+              "percentile_reached": null,
+              "threshold_p95_abs": null,
+              "threshold_p99_abs": null
+            },
+            "move_from_open": {
+              "current_pct": -0.9875804007336838,
+              "absolute_pct": 0.9875804007336838,
+              "fired": false,
+              "tier": null,
+              "threshold_minor_pct": 3.0,
+              "threshold_major_pct": 5.0
+            }
+          },
+          "data_quality_flags": [
+            "No baseline provided; daily move sub-signal cannot use percentile thresholds"
+          ]
+        },
+        "volume_signal": {
+          "ticker": "APP",
+          "signal_type": "volume",
+          "computed_at": "2026-05-22T20:30:08.629308+00:00",
+          "baseline_computed_at": null,
+          "fired": false,
+          "tier": null,
+          "details": {
+            "current_volume": 3778503,
+            "is_partial_day": false,
+            "percentile_reached": null,
+            "threshold_p95": null,
+            "threshold_p99": null,
+            "ratio_to_median": null
+          },
+          "data_quality_flags": [
+            "No baseline provided; volume signal cannot use percentile thresholds"
+          ]
+        },
+        "cumulative_signal": {
+          "ticker": "APP",
+          "signal_type": "cumulative",
+          "computed_at": "2026-05-22T20:30:08.629317+00:00",
+          "anchor_evaluated_at": null,
+          "anchor_price": null,
+          "current_price": 481.739990234375,
+          "fired": false,
+          "tier": null,
+          "details": {
+            "cumulative_move_pct": null,
+            "cumulative_move_abs": null,
+            "abs_threshold_pct": 15.0,
+            "abs_threshold_fired": false,
+            "daily_sigma": null,
+            "sigma_threshold_multiple": 10.0,
+            "sigma_threshold_pct": null,
+            "sigma_threshold_fired": false,
+            "fired_via": null
+          },
+          "data_quality_flags": [
+            "No evaluation anchor for this ticker; signal cannot fire. Anchor will be created on next successful pipeline rerun."
+          ]
+        }
+      },
+      "ALAB": {
+        "price_signal": {
+          "ticker": "ALAB",
+          "signal_type": "price",
+          "computed_at": "2026-05-22T20:30:08.629344+00:00",
+          "baseline_computed_at": null,
+          "fired": false,
+          "tier": null,
+          "details": {
+            "daily_move": {
+              "current_pct": 3.0116845725873986,
+              "absolute_pct": 3.0116845725873986,
+              "fired": false,
+              "tier": null,
+              "percentile_reached": null,
+              "threshold_p95_abs": null,
+              "threshold_p99_abs": null
+            },
+            "move_from_open": {
+              "current_pct": 2.269999186197917,
+              "absolute_pct": 2.269999186197917,
+              "fired": false,
+              "tier": null,
+              "threshold_minor_pct": 3.0,
+              "threshold_major_pct": 5.0
+            }
+          },
+          "data_quality_flags": [
+            "No baseline provided; daily move sub-signal cannot use percentile thresholds"
+          ]
+        },
+        "volume_signal": {
+          "ticker": "ALAB",
+          "signal_type": "volume",
+          "computed_at": "2026-05-22T20:30:08.629353+00:00",
+          "baseline_computed_at": null,
+          "fired": false,
+          "tier": null,
+          "details": {
+            "current_volume": 6438424,
+            "is_partial_day": false,
+            "percentile_reached": null,
+            "threshold_p95": null,
+            "threshold_p99": null,
+            "ratio_to_median": null
+          },
+          "data_quality_flags": [
+            "No baseline provided; volume signal cannot use percentile thresholds"
+          ]
+        },
+        "cumulative_signal": {
+          "ticker": "ALAB",
+          "signal_type": "cumulative",
+          "computed_at": "2026-05-22T20:30:08.629362+00:00",
+          "anchor_evaluated_at": null,
+          "anchor_price": null,
+          "current_price": 306.80999755859375,
+          "fired": false,
+          "tier": null,
+          "details": {
+            "cumulative_move_pct": null,
+            "cumulative_move_abs": null,
+            "abs_threshold_pct": 15.0,
+            "abs_threshold_fired": false,
+            "daily_sigma": null,
+            "sigma_threshold_multiple": 10.0,
+            "sigma_threshold_pct": null,
+            "sigma_threshold_fired": false,
+            "fired_via": null
+          },
+          "data_quality_flags": [
+            "No evaluation anchor for this ticker; signal cannot fire. Anchor will be created on next successful pipeline rerun."
+          ]
+        }
+      },
+      "FICO": {
+        "price_signal": {
+          "ticker": "FICO",
+          "signal_type": "price",
+          "computed_at": "2026-05-22T20:30:08.629388+00:00",
+          "baseline_computed_at": null,
+          "fired": false,
+          "tier": null,
+          "details": {
+            "daily_move": {
+              "current_pct": 0.9518820705932401,
+              "absolute_pct": 0.9518820705932401,
+              "fired": false,
+              "tier": null,
+              "percentile_reached": null,
+              "threshold_p95_abs": null,
+              "threshold_p99_abs": null
+            },
+            "move_from_open": {
+              "current_pct": 0.6323083654626623,
+              "absolute_pct": 0.6323083654626623,
+              "fired": false,
+              "tier": null,
+              "threshold_minor_pct": 3.0,
+              "threshold_major_pct": 5.0
+            }
+          },
+          "data_quality_flags": [
+            "No baseline provided; daily move sub-signal cannot use percentile thresholds"
+          ]
+        },
+        "volume_signal": {
+          "ticker": "FICO",
+          "signal_type": "volume",
+          "computed_at": "2026-05-22T20:30:08.629398+00:00",
+          "baseline_computed_at": null,
+          "fired": false,
+          "tier": null,
+          "details": {
+            "current_volume": 248693,
+            "is_partial_day": false,
+            "percentile_reached": null,
+            "threshold_p95": null,
+            "threshold_p99": null,
+            "ratio_to_median": null
+          },
+          "data_quality_flags": [
+            "No baseline provided; volume signal cannot use percentile thresholds"
+          ]
+        },
+        "cumulative_signal": {
+          "ticker": "FICO",
+          "signal_type": "cumulative",
+          "computed_at": "2026-05-22T20:30:08.629404+00:00",
+          "anchor_evaluated_at": null,
+          "anchor_price": null,
+          "current_price": 1239.7900390625,
+          "fired": false,
+          "tier": null,
+          "details": {
+            "cumulative_move_pct": null,
+            "cumulative_move_abs": null,
+            "abs_threshold_pct": 15.0,
+            "abs_threshold_fired": false,
+            "daily_sigma": null,
+            "sigma_threshold_multiple": 10.0,
+            "sigma_threshold_pct": null,
+            "sigma_threshold_fired": false,
+            "fired_via": null
+          },
+          "data_quality_flags": [
+            "No evaluation anchor for this ticker; signal cannot fire. Anchor will be created on next successful pipeline rerun."
+          ]
+        }
+      },
+      "GRMN": {
+        "price_signal": {
+          "ticker": "GRMN",
+          "signal_type": "price",
+          "computed_at": "2026-05-22T20:30:08.629430+00:00",
+          "baseline_computed_at": null,
+          "fired": false,
+          "tier": null,
+          "details": {
+            "daily_move": {
+              "current_pct": 0.40870620257242135,
+              "absolute_pct": 0.40870620257242135,
+              "fired": false,
+              "tier": null,
+              "percentile_reached": null,
+              "threshold_p95_abs": null,
+              "threshold_p99_abs": null
+            },
+            "move_from_open": {
+              "current_pct": -0.0539685678699398,
+              "absolute_pct": 0.0539685678699398,
+              "fired": false,
+              "tier": null,
+              "threshold_minor_pct": 3.0,
+              "threshold_major_pct": 5.0
+            }
+          },
+          "data_quality_flags": [
+            "No baseline provided; daily move sub-signal cannot use percentile thresholds"
+          ]
+        },
+        "volume_signal": {
+          "ticker": "GRMN",
+          "signal_type": "volume",
+          "computed_at": "2026-05-22T20:30:08.629439+00:00",
+          "baseline_computed_at": null,
+          "fired": false,
+          "tier": null,
+          "details": {
+            "current_volume": 359019,
+            "is_partial_day": false,
+            "percentile_reached": null,
+            "threshold_p95": null,
+            "threshold_p99": null,
+            "ratio_to_median": null
+          },
+          "data_quality_flags": [
+            "No baseline provided; volume signal cannot use percentile thresholds"
+          ]
+        },
+        "cumulative_signal": {
+          "ticker": "GRMN",
+          "signal_type": "cumulative",
+          "computed_at": "2026-05-22T20:30:08.629449+00:00",
+          "anchor_evaluated_at": null,
+          "anchor_price": null,
+          "current_price": 240.75999450683594,
+          "fired": false,
+          "tier": null,
+          "details": {
+            "cumulative_move_pct": null,
+            "cumulative_move_abs": null,
+            "abs_threshold_pct": 15.0,
+            "abs_threshold_fired": false,
+            "daily_sigma": null,
+            "sigma_threshold_multiple": 10.0,
+            "sigma_threshold_pct": null,
+            "sigma_threshold_fired": false,
+            "fired_via": null
+          },
+          "data_quality_flags": [
+            "No evaluation anchor for this ticker; signal cannot fire. Anchor will be created on next successful pipeline rerun."
+          ]
+        }
+      },
+      "ICE": {
+        "price_signal": {
+          "ticker": "ICE",
+          "signal_type": "price",
+          "computed_at": "2026-05-22T20:30:08.629474+00:00",
+          "baseline_computed_at": null,
+          "fired": false,
+          "tier": null,
+          "details": {
+            "daily_move": {
+              "current_pct": 0.9901643313807175,
+              "absolute_pct": 0.9901643313807175,
+              "fired": false,
+              "tier": null,
+              "percentile_reached": null,
+              "threshold_p95_abs": null,
+              "threshold_p99_abs": null
+            },
+            "move_from_open": {
+              "current_pct": 1.1303587570501799,
+              "absolute_pct": 1.1303587570501799,
+              "fired": false,
+              "tier": null,
+              "threshold_minor_pct": 3.0,
+              "threshold_major_pct": 5.0
+            }
+          },
+          "data_quality_flags": [
+            "No baseline provided; daily move sub-signal cannot use percentile thresholds"
+          ]
+        },
+        "volume_signal": {
+          "ticker": "ICE",
+          "signal_type": "volume",
+          "computed_at": "2026-05-22T20:30:08.629485+00:00",
+          "baseline_computed_at": null,
+          "fired": false,
+          "tier": null,
+          "details": {
+            "current_volume": 2055141,
+            "is_partial_day": false,
+            "percentile_reached": null,
+            "threshold_p95": null,
+            "threshold_p99": null,
+            "ratio_to_median": null
+          },
+          "data_quality_flags": [
+            "No baseline provided; volume signal cannot use percentile thresholds"
+          ]
+        },
+        "cumulative_signal": {
+          "ticker": "ICE",
+          "signal_type": "cumulative",
+          "computed_at": "2026-05-22T20:30:08.629501+00:00",
+          "anchor_evaluated_at": null,
+          "anchor_price": null,
+          "current_price": 152.99000549316406,
+          "fired": false,
+          "tier": null,
+          "details": {
+            "cumulative_move_pct": null,
+            "cumulative_move_abs": null,
+            "abs_threshold_pct": 15.0,
+            "abs_threshold_fired": false,
+            "daily_sigma": null,
+            "sigma_threshold_multiple": 10.0,
+            "sigma_threshold_pct": null,
+            "sigma_threshold_fired": false,
+            "fired_via": null
+          },
+          "data_quality_flags": [
+            "No evaluation anchor for this ticker; signal cannot fire. Anchor will be created on next successful pipeline rerun."
+          ]
+        }
+      },
+      "KTOS": {
+        "price_signal": {
+          "ticker": "KTOS",
+          "signal_type": "price",
+          "computed_at": "2026-05-22T20:30:08.629527+00:00",
+          "baseline_computed_at": null,
+          "fired": false,
+          "tier": null,
+          "details": {
+            "daily_move": {
+              "current_pct": 2.762030705697387,
+              "absolute_pct": 2.762030705697387,
+              "fired": false,
+              "tier": null,
+              "percentile_reached": null,
+              "threshold_p95_abs": null,
+              "threshold_p99_abs": null
+            },
+            "move_from_open": {
+              "current_pct": 1.6096932083762994,
+              "absolute_pct": 1.6096932083762994,
+              "fired": false,
+              "tier": null,
+              "threshold_minor_pct": 3.0,
+              "threshold_major_pct": 5.0
+            }
+          },
+          "data_quality_flags": [
+            "No baseline provided; daily move sub-signal cannot use percentile thresholds"
+          ]
+        },
+        "volume_signal": {
+          "ticker": "KTOS",
+          "signal_type": "volume",
+          "computed_at": "2026-05-22T20:30:08.629536+00:00",
+          "baseline_computed_at": null,
+          "fired": false,
+          "tier": null,
+          "details": {
+            "current_volume": 2847226,
+            "is_partial_day": false,
+            "percentile_reached": null,
+            "threshold_p95": null,
+            "threshold_p99": null,
+            "ratio_to_median": null
+          },
+          "data_quality_flags": [
+            "No baseline provided; volume signal cannot use percentile thresholds"
+          ]
+        },
+        "cumulative_signal": {
+          "ticker": "KTOS",
+          "signal_type": "cumulative",
+          "computed_at": "2026-05-22T20:30:08.629543+00:00",
+          "anchor_evaluated_at": null,
+          "anchor_price": null,
+          "current_price": 56.18000030517578,
+          "fired": false,
+          "tier": null,
+          "details": {
+            "cumulative_move_pct": null,
+            "cumulative_move_abs": null,
+            "abs_threshold_pct": 15.0,
+            "abs_threshold_fired": false,
+            "daily_sigma": null,
+            "sigma_threshold_multiple": 10.0,
+            "sigma_threshold_pct": null,
+            "sigma_threshold_fired": false,
+            "fired_via": null
+          },
+          "data_quality_flags": [
+            "No evaluation anchor for this ticker; signal cannot fire. Anchor will be created on next successful pipeline rerun."
+          ]
+        }
+      },
+      "MSFT": {
+        "price_signal": {
+          "ticker": "MSFT",
+          "signal_type": "price",
+          "computed_at": "2026-05-22T20:30:08.629568+00:00",
+          "baseline_computed_at": null,
+          "fired": false,
+          "tier": null,
+          "details": {
+            "daily_move": {
+              "current_pct": -0.1216945692050844,
+              "absolute_pct": 0.1216945692050844,
+              "fired": false,
+              "tier": null,
+              "percentile_reached": null,
+              "threshold_p95_abs": null,
+              "threshold_p99_abs": null
+            },
+            "move_from_open": {
+              "current_pct": -0.21455716374810382,
+              "absolute_pct": 0.21455716374810382,
+              "fired": false,
+              "tier": null,
+              "threshold_minor_pct": 3.0,
+              "threshold_major_pct": 5.0
+            }
+          },
+          "data_quality_flags": [
+            "No baseline provided; daily move sub-signal cannot use percentile thresholds"
+          ]
+        },
+        "volume_signal": {
+          "ticker": "MSFT",
+          "signal_type": "volume",
+          "computed_at": "2026-05-22T20:30:08.629576+00:00",
+          "baseline_computed_at": null,
+          "fired": false,
+          "tier": null,
+          "details": {
+            "current_volume": 21911688,
+            "is_partial_day": false,
+            "percentile_reached": null,
+            "threshold_p95": null,
+            "threshold_p99": null,
+            "ratio_to_median": null
+          },
+          "data_quality_flags": [
+            "No baseline provided; volume signal cannot use percentile thresholds"
+          ]
+        },
+        "cumulative_signal": {
+          "ticker": "MSFT",
+          "signal_type": "cumulative",
+          "computed_at": "2026-05-22T20:30:08.629582+00:00",
+          "anchor_evaluated_at": null,
+          "anchor_price": null,
+          "current_price": 418.5799865722656,
+          "fired": false,
+          "tier": null,
+          "details": {
+            "cumulative_move_pct": null,
+            "cumulative_move_abs": null,
+            "abs_threshold_pct": 15.0,
+            "abs_threshold_fired": false,
+            "daily_sigma": null,
+            "sigma_threshold_multiple": 10.0,
+            "sigma_threshold_pct": null,
+            "sigma_threshold_fired": false,
+            "fired_via": null
+          },
+          "data_quality_flags": [
+            "No evaluation anchor for this ticker; signal cannot fire. Anchor will be created on next successful pipeline rerun."
+          ]
+        }
+      },
+      "NVDA": {
+        "price_signal": {
+          "ticker": "NVDA",
+          "signal_type": "price",
+          "computed_at": "2026-05-22T20:30:08.629988+00:00",
+          "baseline_computed_at": null,
+          "fired": false,
+          "tier": null,
+          "details": {
+            "daily_move": {
+              "current_pct": -1.9406836196259274,
+              "absolute_pct": 1.9406836196259274,
+              "fired": false,
+              "tier": null,
+              "percentile_reached": null,
+              "threshold_p95_abs": null,
+              "threshold_p99_abs": null
+            },
+            "move_from_open": {
+              "current_pct": -2.5594859214493995,
+              "absolute_pct": 2.5594859214493995,
+              "fired": false,
+              "tier": null,
+              "threshold_minor_pct": 3.0,
+              "threshold_major_pct": 5.0
+            }
+          },
+          "data_quality_flags": [
+            "No baseline provided; daily move sub-signal cannot use percentile thresholds"
+          ]
+        },
+        "volume_signal": {
+          "ticker": "NVDA",
+          "signal_type": "volume",
+          "computed_at": "2026-05-22T20:30:08.629999+00:00",
+          "baseline_computed_at": null,
+          "fired": false,
+          "tier": null,
+          "details": {
+            "current_volume": 158836764,
+            "is_partial_day": false,
+            "percentile_reached": null,
+            "threshold_p95": null,
+            "threshold_p99": null,
+            "ratio_to_median": null
+          },
+          "data_quality_flags": [
+            "No baseline provided; volume signal cannot use percentile thresholds"
+          ]
+        },
+        "cumulative_signal": {
+          "ticker": "NVDA",
+          "signal_type": "cumulative",
+          "computed_at": "2026-05-22T20:30:08.630005+00:00",
+          "anchor_evaluated_at": null,
+          "anchor_price": null,
+          "current_price": 215.25,
+          "fired": false,
+          "tier": null,
+          "details": {
+            "cumulative_move_pct": null,
+            "cumulative_move_abs": null,
+            "abs_threshold_pct": 15.0,
+            "abs_threshold_fired": false,
+            "daily_sigma": null,
+            "sigma_threshold_multiple": 10.0,
+            "sigma_threshold_pct": null,
+            "sigma_threshold_fired": false,
+            "fired_via": null
+          },
+          "data_quality_flags": [
+            "No evaluation anchor for this ticker; signal cannot fire. Anchor will be created on next successful pipeline rerun."
+          ]
+        }
+      },
+      "QXO": {
+        "price_signal": {
+          "ticker": "QXO",
+          "signal_type": "price",
+          "computed_at": "2026-05-22T20:30:08.630036+00:00",
+          "baseline_computed_at": null,
+          "fired": true,
+          "tier": "minor",
+          "details": {
+            "daily_move": {
+              "current_pct": -2.113920116479301,
+              "absolute_pct": 2.113920116479301,
+              "fired": false,
+              "tier": null,
+              "percentile_reached": null,
+              "threshold_p95_abs": null,
+              "threshold_p99_abs": null
+            },
+            "move_from_open": {
+              "current_pct": -4.742856706891741,
+              "absolute_pct": 4.742856706891741,
+              "fired": true,
+              "tier": "minor",
+              "threshold_minor_pct": 3.0,
+              "threshold_major_pct": 5.0
+            }
+          },
+          "data_quality_flags": [
+            "No baseline provided; daily move sub-signal cannot use percentile thresholds"
+          ]
+        },
+        "volume_signal": {
+          "ticker": "QXO",
+          "signal_type": "volume",
+          "computed_at": "2026-05-22T20:30:08.630046+00:00",
+          "baseline_computed_at": null,
+          "fired": false,
+          "tier": null,
+          "details": {
+            "current_volume": 9493453,
+            "is_partial_day": false,
+            "percentile_reached": null,
+            "threshold_p95": null,
+            "threshold_p99": null,
+            "ratio_to_median": null
+          },
+          "data_quality_flags": [
+            "No baseline provided; volume signal cannot use percentile thresholds"
+          ]
+        },
+        "cumulative_signal": {
+          "ticker": "QXO",
+          "signal_type": "cumulative",
+          "computed_at": "2026-05-22T20:30:08.630052+00:00",
+          "anchor_evaluated_at": null,
+          "anchor_price": null,
+          "current_price": 16.670000076293945,
+          "fired": false,
+          "tier": null,
+          "details": {
+            "cumulative_move_pct": null,
+            "cumulative_move_abs": null,
+            "abs_threshold_pct": 15.0,
+            "abs_threshold_fired": false,
+            "daily_sigma": null,
+            "sigma_threshold_multiple": 10.0,
+            "sigma_threshold_pct": null,
+            "sigma_threshold_fired": false,
+            "fired_via": null
+          },
+          "data_quality_flags": [
+            "No evaluation anchor for this ticker; signal cannot fire. Anchor will be created on next successful pipeline rerun."
+          ]
+        }
+      },
+      "RDDT": {
+        "price_signal": {
+          "ticker": "RDDT",
+          "signal_type": "price",
+          "computed_at": "2026-05-22T20:30:08.630080+00:00",
+          "baseline_computed_at": null,
+          "fired": false,
+          "tier": null,
+          "details": {
+            "daily_move": {
+              "current_pct": -5.55851553657823,
+              "absolute_pct": 5.55851553657823,
+              "fired": false,
+              "tier": null,
+              "percentile_reached": null,
+              "threshold_p95_abs": null,
+              "threshold_p99_abs": null
+            },
+            "move_from_open": {
+              "current_pct": -2.4306265118394568,
+              "absolute_pct": 2.4306265118394568,
+              "fired": false,
+              "tier": null,
+              "threshold_minor_pct": 3.0,
+              "threshold_major_pct": 5.0
+            }
+          },
+          "data_quality_flags": [
+            "No baseline provided; daily move sub-signal cannot use percentile thresholds"
+          ]
+        },
+        "volume_signal": {
+          "ticker": "RDDT",
+          "signal_type": "volume",
+          "computed_at": "2026-05-22T20:30:08.630088+00:00",
+          "baseline_computed_at": null,
+          "fired": false,
+          "tier": null,
+          "details": {
+            "current_volume": 7429084,
+            "is_partial_day": false,
+            "percentile_reached": null,
+            "threshold_p95": null,
+            "threshold_p99": null,
+            "ratio_to_median": null
+          },
+          "data_quality_flags": [
+            "No baseline provided; volume signal cannot use percentile thresholds"
+          ]
+        },
+        "cumulative_signal": {
+          "ticker": "RDDT",
+          "signal_type": "cumulative",
+          "computed_at": "2026-05-22T20:30:08.630095+00:00",
+          "anchor_evaluated_at": null,
+          "anchor_price": null,
+          "current_price": 141.6999969482422,
+          "fired": false,
+          "tier": null,
+          "details": {
+            "cumulative_move_pct": null,
+            "cumulative_move_abs": null,
+            "abs_threshold_pct": 15.0,
+            "abs_threshold_fired": false,
+            "daily_sigma": null,
+            "sigma_threshold_multiple": 10.0,
+            "sigma_threshold_pct": null,
+            "sigma_threshold_fired": false,
+            "fired_via": null
+          },
+          "data_quality_flags": [
+            "No evaluation anchor for this ticker; signal cannot fire. Anchor will be created on next successful pipeline rerun."
+          ]
+        }
+      },
+      "CI": {
+        "price_signal": {
+          "ticker": "CI",
+          "signal_type": "price",
+          "computed_at": "2026-05-22T20:30:08.630121+00:00",
+          "baseline_computed_at": null,
+          "fired": false,
+          "tier": null,
+          "details": {
+            "daily_move": {
+              "current_pct": 1.4928097782643892,
+              "absolute_pct": 1.4928097782643892,
+              "fired": false,
+              "tier": null,
+              "percentile_reached": null,
+              "threshold_p95_abs": null,
+              "threshold_p99_abs": null
+            },
+            "move_from_open": {
+              "current_pct": 0.7568376920897828,
+              "absolute_pct": 0.7568376920897828,
+              "fired": false,
+              "tier": null,
+              "threshold_minor_pct": 3.0,
+              "threshold_major_pct": 5.0
+            }
+          },
+          "data_quality_flags": [
+            "No baseline provided; daily move sub-signal cannot use percentile thresholds"
+          ]
+        },
+        "volume_signal": {
+          "ticker": "CI",
+          "signal_type": "volume",
+          "computed_at": "2026-05-22T20:30:08.630129+00:00",
+          "baseline_computed_at": null,
+          "fired": false,
+          "tier": null,
+          "details": {
+            "current_volume": 995819,
+            "is_partial_day": false,
+            "percentile_reached": null,
+            "threshold_p95": null,
+            "threshold_p99": null,
+            "ratio_to_median": null
+          },
+          "data_quality_flags": [
+            "No baseline provided; volume signal cannot use percentile thresholds"
+          ]
+        },
+        "cumulative_signal": {
+          "ticker": "CI",
+          "signal_type": "cumulative",
+          "computed_at": "2026-05-22T20:30:08.630135+00:00",
+          "anchor_evaluated_at": null,
+          "anchor_price": null,
+          "current_price": 286.2300109863281,
+          "fired": false,
+          "tier": null,
+          "details": {
+            "cumulative_move_pct": null,
+            "cumulative_move_abs": null,
+            "abs_threshold_pct": 15.0,
+            "abs_threshold_fired": false,
+            "daily_sigma": null,
+            "sigma_threshold_multiple": 10.0,
+            "sigma_threshold_pct": null,
+            "sigma_threshold_fired": false,
+            "fired_via": null
+          },
+          "data_quality_flags": [
+            "No evaluation anchor for this ticker; signal cannot fire. Anchor will be created on next successful pipeline rerun."
+          ]
+        }
+      }
+    },
+    "aggregation": {
+      "computed_at": "2026-05-22T20:30:08.630376+00:00",
+      "decisions": {
+        "ARDX": {
+          "ticker": "ARDX",
+          "computed_at": "2026-05-22T20:30:08.630387+00:00",
+          "triggered": false,
+          "trigger_path": null,
+          "fired_signals": [
+            {
+              "signal_type": "price",
+              "tier": "minor",
+              "details": {
+                "daily_move": {
+                  "current_pct": -3.8582659722615937,
+                  "absolute_pct": 3.8582659722615937,
+                  "fired": false,
+                  "tier": null,
+                  "percentile_reached": 80.52006342191957,
+                  "threshold_p95_abs": 6.225932607539301,
+                  "threshold_p99_abs": 8.255092729973672
+                },
+                "move_from_open": {
+                  "current_pct": -3.8582659722615937,
+                  "absolute_pct": 3.8582659722615937,
+                  "fired": true,
+                  "tier": "minor",
+                  "threshold_minor_pct": 3.0,
+                  "threshold_major_pct": 5.0
+                }
+              }
+            }
+          ],
+          "signal_summary": {
+            "price_fired": true,
+            "price_tier": "minor",
+            "volume_fired": false,
+            "volume_tier": null,
+            "cumulative_fired": false,
+            "major_count": 0,
+            "minor_count": 1
+          },
+          "config": {
+            "minor_signals_required_for_trigger": 2
+          },
+          "data_quality_flags": []
+        },
+        "SEK.AX": {
+          "ticker": "SEK.AX",
+          "computed_at": "2026-05-22T20:30:08.630403+00:00",
+          "triggered": true,
+          "trigger_path": "major",
+          "fired_signals": [
+            {
+              "signal_type": "price",
+              "tier": "major",
+              "details": {
+                "daily_move": {
+                  "current_pct": -5.851851569281684,
+                  "absolute_pct": 5.851851569281684,
+                  "fired": true,
+                  "tier": "minor",
+                  "percentile_reached": 96.90130508453075,
+                  "threshold_p95_abs": 4.489447952766032,
+                  "threshold_p99_abs": 7.35569730454095
+                },
+                "move_from_open": {
+                  "current_pct": -5.361133660967439,
+                  "absolute_pct": 5.361133660967439,
+                  "fired": true,
+                  "tier": "major",
+                  "threshold_minor_pct": 3.0,
+                  "threshold_major_pct": 5.0
+                }
+              }
+            }
+          ],
+          "signal_summary": {
+            "price_fired": true,
+            "price_tier": "major",
+            "volume_fired": false,
+            "volume_tier": null,
+            "cumulative_fired": false,
+            "major_count": 1,
+            "minor_count": 0
+          },
+          "config": {
+            "minor_signals_required_for_trigger": 2
+          },
+          "data_quality_flags": [
+            "cumulative_signal: No evaluation anchor for this ticker; signal cannot fire. Anchor will be created on next successful pipeline rerun."
+          ]
+        },
+        "ANG.AX": {
+          "ticker": "ANG.AX",
+          "computed_at": "2026-05-22T20:30:08.630416+00:00",
+          "triggered": false,
+          "trigger_path": null,
+          "fired_signals": [],
+          "signal_summary": {
+            "price_fired": false,
+            "price_tier": null,
+            "volume_fired": false,
+            "volume_tier": null,
+            "cumulative_fired": false,
+            "major_count": 0,
+            "minor_count": 0
+          },
+          "config": {
+            "minor_signals_required_for_trigger": 2
+          },
+          "data_quality_flags": [
+            "cumulative_signal: No evaluation anchor for this ticker; signal cannot fire. Anchor will be created on next successful pipeline rerun."
+          ]
+        },
+        "VST": {
+          "ticker": "VST",
+          "computed_at": "2026-05-22T20:30:08.630425+00:00",
+          "triggered": false,
+          "trigger_path": null,
+          "fired_signals": [
+            {
+              "signal_type": "price",
+              "tier": "minor",
+              "details": {
+                "daily_move": {
+                  "current_pct": 4.822915450158325,
+                  "absolute_pct": 4.822915450158325,
+                  "fired": false,
+                  "tier": null,
+                  "percentile_reached": 92.39667974041852,
+                  "threshold_p95_abs": 5.12480288380327,
+                  "threshold_p99_abs": 9.416036002379373
+                },
+                "move_from_open": {
+                  "current_pct": 3.469513034176334,
+                  "absolute_pct": 3.469513034176334,
+                  "fired": true,
+                  "tier": "minor",
+                  "threshold_minor_pct": 3.0,
+                  "threshold_major_pct": 5.0
+                }
+              }
+            }
+          ],
+          "signal_summary": {
+            "price_fired": true,
+            "price_tier": "minor",
+            "volume_fired": false,
+            "volume_tier": null,
+            "cumulative_fired": false,
+            "major_count": 0,
+            "minor_count": 1
+          },
+          "config": {
+            "minor_signals_required_for_trigger": 2
+          },
+          "data_quality_flags": []
+        },
+        "LLY": {
+          "ticker": "LLY",
+          "computed_at": "2026-05-22T20:30:08.630434+00:00",
+          "triggered": false,
+          "trigger_path": null,
+          "fired_signals": [],
+          "signal_summary": {
+            "price_fired": false,
+            "price_tier": null,
+            "volume_fired": false,
+            "volume_tier": null,
+            "cumulative_fired": false,
+            "major_count": 0,
+            "minor_count": 0
+          },
+          "config": {
+            "minor_signals_required_for_trigger": 2
+          },
+          "data_quality_flags": []
+        },
+        "RMD": {
+          "ticker": "RMD",
+          "computed_at": "2026-05-22T20:30:08.630443+00:00",
+          "triggered": false,
+          "trigger_path": null,
+          "fired_signals": [],
+          "signal_summary": {
+            "price_fired": false,
+            "price_tier": null,
+            "volume_fired": false,
+            "volume_tier": null,
+            "cumulative_fired": false,
+            "major_count": 0,
+            "minor_count": 0
+          },
+          "config": {
+            "minor_signals_required_for_trigger": 2
+          },
+          "data_quality_flags": []
+        },
+        "NFLX": {
+          "ticker": "NFLX",
+          "computed_at": "2026-05-22T20:30:08.630451+00:00",
+          "triggered": false,
+          "trigger_path": null,
+          "fired_signals": [],
+          "signal_summary": {
+            "price_fired": false,
+            "price_tier": null,
+            "volume_fired": false,
+            "volume_tier": null,
+            "cumulative_fired": false,
+            "major_count": 0,
+            "minor_count": 0
+          },
+          "config": {
+            "minor_signals_required_for_trigger": 2
+          },
+          "data_quality_flags": []
+        },
+        "META": {
+          "ticker": "META",
+          "computed_at": "2026-05-22T20:30:08.630459+00:00",
+          "triggered": false,
+          "trigger_path": null,
+          "fired_signals": [],
+          "signal_summary": {
+            "price_fired": false,
+            "price_tier": null,
+            "volume_fired": false,
+            "volume_tier": null,
+            "cumulative_fired": false,
+            "major_count": 0,
+            "minor_count": 0
+          },
+          "config": {
+            "minor_signals_required_for_trigger": 2
+          },
+          "data_quality_flags": []
+        },
+        "NOW": {
+          "ticker": "NOW",
+          "computed_at": "2026-05-22T20:30:08.630466+00:00",
+          "triggered": false,
+          "trigger_path": null,
+          "fired_signals": [],
+          "signal_summary": {
+            "price_fired": false,
+            "price_tier": null,
+            "volume_fired": false,
+            "volume_tier": null,
+            "cumulative_fired": false,
+            "major_count": 0,
+            "minor_count": 0
+          },
+          "config": {
+            "minor_signals_required_for_trigger": 2
+          },
+          "data_quality_flags": []
+        },
+        "MA": {
+          "ticker": "MA",
+          "computed_at": "2026-05-22T20:30:08.630474+00:00",
+          "triggered": false,
+          "trigger_path": null,
+          "fired_signals": [],
+          "signal_summary": {
+            "price_fired": false,
+            "price_tier": null,
+            "volume_fired": false,
+            "volume_tier": null,
+            "cumulative_fired": false,
+            "major_count": 0,
+            "minor_count": 0
+          },
+          "config": {
+            "minor_signals_required_for_trigger": 2
+          },
+          "data_quality_flags": []
+        },
+        "BIP": {
+          "ticker": "BIP",
+          "computed_at": "2026-05-22T20:30:08.630481+00:00",
+          "triggered": false,
+          "trigger_path": null,
+          "fired_signals": [],
+          "signal_summary": {
+            "price_fired": false,
+            "price_tier": null,
+            "volume_fired": false,
+            "volume_tier": null,
+            "cumulative_fired": false,
+            "major_count": 0,
+            "minor_count": 0
+          },
+          "config": {
+            "minor_signals_required_for_trigger": 2
+          },
+          "data_quality_flags": []
+        },
+        "HALO": {
+          "ticker": "HALO",
+          "computed_at": "2026-05-22T20:30:08.630495+00:00",
+          "triggered": false,
+          "trigger_path": null,
+          "fired_signals": [],
+          "signal_summary": {
+            "price_fired": false,
+            "price_tier": null,
+            "volume_fired": false,
+            "volume_tier": null,
+            "cumulative_fired": false,
+            "major_count": 0,
+            "minor_count": 0
+          },
+          "config": {
+            "minor_signals_required_for_trigger": 2
+          },
+          "data_quality_flags": []
+        },
+        "AVGO": {
+          "ticker": "AVGO",
+          "computed_at": "2026-05-22T20:30:08.630503+00:00",
+          "triggered": false,
+          "trigger_path": null,
+          "fired_signals": [],
+          "signal_summary": {
+            "price_fired": false,
+            "price_tier": null,
+            "volume_fired": false,
+            "volume_tier": null,
+            "cumulative_fired": false,
+            "major_count": 0,
+            "minor_count": 0
+          },
+          "config": {
+            "minor_signals_required_for_trigger": 2
+          },
+          "data_quality_flags": []
+        },
+        "DVN": {
+          "ticker": "DVN",
+          "computed_at": "2026-05-22T20:30:08.630510+00:00",
+          "triggered": false,
+          "trigger_path": null,
+          "fired_signals": [],
+          "signal_summary": {
+            "price_fired": false,
+            "price_tier": null,
+            "volume_fired": false,
+            "volume_tier": null,
+            "cumulative_fired": false,
+            "major_count": 0,
+            "minor_count": 0
+          },
+          "config": {
+            "minor_signals_required_for_trigger": 2
+          },
+          "data_quality_flags": []
+        },
+        "ANET": {
+          "ticker": "ANET",
+          "computed_at": "2026-05-22T20:30:08.630518+00:00",
+          "triggered": false,
+          "trigger_path": null,
+          "fired_signals": [],
+          "signal_summary": {
+            "price_fired": false,
+            "price_tier": null,
+            "volume_fired": false,
+            "volume_tier": null,
+            "cumulative_fired": false,
+            "major_count": 0,
+            "minor_count": 0
+          },
+          "config": {
+            "minor_signals_required_for_trigger": 2
+          },
+          "data_quality_flags": []
+        },
+        "ALL": {
+          "ticker": "ALL",
+          "computed_at": "2026-05-22T20:30:08.630525+00:00",
+          "triggered": false,
+          "trigger_path": null,
+          "fired_signals": [],
+          "signal_summary": {
+            "price_fired": false,
+            "price_tier": null,
+            "volume_fired": false,
+            "volume_tier": null,
+            "cumulative_fired": false,
+            "major_count": 0,
+            "minor_count": 0
+          },
+          "config": {
+            "minor_signals_required_for_trigger": 2
+          },
+          "data_quality_flags": [
+            "price_signal: No baseline provided; daily move sub-signal cannot use percentile thresholds",
+            "volume_signal: No baseline provided; volume signal cannot use percentile thresholds",
+            "cumulative_signal: No evaluation anchor for this ticker; signal cannot fire. Anchor will be created on next successful pipeline rerun."
+          ]
+        },
+        "AU": {
+          "ticker": "AU",
+          "computed_at": "2026-05-22T20:30:08.630534+00:00",
+          "triggered": false,
+          "trigger_path": null,
+          "fired_signals": [],
+          "signal_summary": {
+            "price_fired": false,
+            "price_tier": null,
+            "volume_fired": false,
+            "volume_tier": null,
+            "cumulative_fired": false,
+            "major_count": 0,
+            "minor_count": 0
+          },
+          "config": {
+            "minor_signals_required_for_trigger": 2
+          },
+          "data_quality_flags": [
+            "price_signal: No baseline provided; daily move sub-signal cannot use percentile thresholds",
+            "volume_signal: No baseline provided; volume signal cannot use percentile thresholds",
+            "cumulative_signal: No evaluation anchor for this ticker; signal cannot fire. Anchor will be created on next successful pipeline rerun."
+          ]
+        },
+        "APP": {
+          "ticker": "APP",
+          "computed_at": "2026-05-22T20:30:08.630542+00:00",
+          "triggered": false,
+          "trigger_path": null,
+          "fired_signals": [],
+          "signal_summary": {
+            "price_fired": false,
+            "price_tier": null,
+            "volume_fired": false,
+            "volume_tier": null,
+            "cumulative_fired": false,
+            "major_count": 0,
+            "minor_count": 0
+          },
+          "config": {
+            "minor_signals_required_for_trigger": 2
+          },
+          "data_quality_flags": [
+            "price_signal: No baseline provided; daily move sub-signal cannot use percentile thresholds",
+            "volume_signal: No baseline provided; volume signal cannot use percentile thresholds",
+            "cumulative_signal: No evaluation anchor for this ticker; signal cannot fire. Anchor will be created on next successful pipeline rerun."
+          ]
+        },
+        "ALAB": {
+          "ticker": "ALAB",
+          "computed_at": "2026-05-22T20:30:08.630551+00:00",
+          "triggered": false,
+          "trigger_path": null,
+          "fired_signals": [],
+          "signal_summary": {
+            "price_fired": false,
+            "price_tier": null,
+            "volume_fired": false,
+            "volume_tier": null,
+            "cumulative_fired": false,
+            "major_count": 0,
+            "minor_count": 0
+          },
+          "config": {
+            "minor_signals_required_for_trigger": 2
+          },
+          "data_quality_flags": [
+            "price_signal: No baseline provided; daily move sub-signal cannot use percentile thresholds",
+            "volume_signal: No baseline provided; volume signal cannot use percentile thresholds",
+            "cumulative_signal: No evaluation anchor for this ticker; signal cannot fire. Anchor will be created on next successful pipeline rerun."
+          ]
+        },
+        "FICO": {
+          "ticker": "FICO",
+          "computed_at": "2026-05-22T20:30:08.630559+00:00",
+          "triggered": false,
+          "trigger_path": null,
+          "fired_signals": [],
+          "signal_summary": {
+            "price_fired": false,
+            "price_tier": null,
+            "volume_fired": false,
+            "volume_tier": null,
+            "cumulative_fired": false,
+            "major_count": 0,
+            "minor_count": 0
+          },
+          "config": {
+            "minor_signals_required_for_trigger": 2
+          },
+          "data_quality_flags": [
+            "price_signal: No baseline provided; daily move sub-signal cannot use percentile thresholds",
+            "volume_signal: No baseline provided; volume signal cannot use percentile thresholds",
+            "cumulative_signal: No evaluation anchor for this ticker; signal cannot fire. Anchor will be created on next successful pipeline rerun."
+          ]
+        },
+        "GRMN": {
+          "ticker": "GRMN",
+          "computed_at": "2026-05-22T20:30:08.630568+00:00",
+          "triggered": false,
+          "trigger_path": null,
+          "fired_signals": [],
+          "signal_summary": {
+            "price_fired": false,
+            "price_tier": null,
+            "volume_fired": false,
+            "volume_tier": null,
+            "cumulative_fired": false,
+            "major_count": 0,
+            "minor_count": 0
+          },
+          "config": {
+            "minor_signals_required_for_trigger": 2
+          },
+          "data_quality_flags": [
+            "price_signal: No baseline provided; daily move sub-signal cannot use percentile thresholds",
+            "volume_signal: No baseline provided; volume signal cannot use percentile thresholds",
+            "cumulative_signal: No evaluation anchor for this ticker; signal cannot fire. Anchor will be created on next successful pipeline rerun."
+          ]
+        },
+        "ICE": {
+          "ticker": "ICE",
+          "computed_at": "2026-05-22T20:30:08.630576+00:00",
+          "triggered": false,
+          "trigger_path": null,
+          "fired_signals": [],
+          "signal_summary": {
+            "price_fired": false,
+            "price_tier": null,
+            "volume_fired": false,
+            "volume_tier": null,
+            "cumulative_fired": false,
+            "major_count": 0,
+            "minor_count": 0
+          },
+          "config": {
+            "minor_signals_required_for_trigger": 2
+          },
+          "data_quality_flags": [
+            "price_signal: No baseline provided; daily move sub-signal cannot use percentile thresholds",
+            "volume_signal: No baseline provided; volume signal cannot use percentile thresholds",
+            "cumulative_signal: No evaluation anchor for this ticker; signal cannot fire. Anchor will be created on next successful pipeline rerun."
+          ]
+        },
+        "KTOS": {
+          "ticker": "KTOS",
+          "computed_at": "2026-05-22T20:30:08.630586+00:00",
+          "triggered": false,
+          "trigger_path": null,
+          "fired_signals": [],
+          "signal_summary": {
+            "price_fired": false,
+            "price_tier": null,
+            "volume_fired": false,
+            "volume_tier": null,
+            "cumulative_fired": false,
+            "major_count": 0,
+            "minor_count": 0
+          },
+          "config": {
+            "minor_signals_required_for_trigger": 2
+          },
+          "data_quality_flags": [
+            "price_signal: No baseline provided; daily move sub-signal cannot use percentile thresholds",
+            "volume_signal: No baseline provided; volume signal cannot use percentile thresholds",
+            "cumulative_signal: No evaluation anchor for this ticker; signal cannot fire. Anchor will be created on next successful pipeline rerun."
+          ]
+        },
+        "MSFT": {
+          "ticker": "MSFT",
+          "computed_at": "2026-05-22T20:30:08.630594+00:00",
+          "triggered": false,
+          "trigger_path": null,
+          "fired_signals": [],
+          "signal_summary": {
+            "price_fired": false,
+            "price_tier": null,
+            "volume_fired": false,
+            "volume_tier": null,
+            "cumulative_fired": false,
+            "major_count": 0,
+            "minor_count": 0
+          },
+          "config": {
+            "minor_signals_required_for_trigger": 2
+          },
+          "data_quality_flags": [
+            "price_signal: No baseline provided; daily move sub-signal cannot use percentile thresholds",
+            "volume_signal: No baseline provided; volume signal cannot use percentile thresholds",
+            "cumulative_signal: No evaluation anchor for this ticker; signal cannot fire. Anchor will be created on next successful pipeline rerun."
+          ]
+        },
+        "NVDA": {
+          "ticker": "NVDA",
+          "computed_at": "2026-05-22T20:30:08.630602+00:00",
+          "triggered": false,
+          "trigger_path": null,
+          "fired_signals": [],
+          "signal_summary": {
+            "price_fired": false,
+            "price_tier": null,
+            "volume_fired": false,
+            "volume_tier": null,
+            "cumulative_fired": false,
+            "major_count": 0,
+            "minor_count": 0
+          },
+          "config": {
+            "minor_signals_required_for_trigger": 2
+          },
+          "data_quality_flags": [
+            "price_signal: No baseline provided; daily move sub-signal cannot use percentile thresholds",
+            "volume_signal: No baseline provided; volume signal cannot use percentile thresholds",
+            "cumulative_signal: No evaluation anchor for this ticker; signal cannot fire. Anchor will be created on next successful pipeline rerun."
+          ]
+        },
+        "QXO": {
+          "ticker": "QXO",
+          "computed_at": "2026-05-22T20:30:08.630616+00:00",
+          "triggered": false,
+          "trigger_path": null,
+          "fired_signals": [
+            {
+              "signal_type": "price",
+              "tier": "minor",
+              "details": {
+                "daily_move": {
+                  "current_pct": -2.113920116479301,
+                  "absolute_pct": 2.113920116479301,
+                  "fired": false,
+                  "tier": null,
+                  "percentile_reached": null,
+                  "threshold_p95_abs": null,
+                  "threshold_p99_abs": null
+                },
+                "move_from_open": {
+                  "current_pct": -4.742856706891741,
+                  "absolute_pct": 4.742856706891741,
+                  "fired": true,
+                  "tier": "minor",
+                  "threshold_minor_pct": 3.0,
+                  "threshold_major_pct": 5.0
+                }
+              }
+            }
+          ],
+          "signal_summary": {
+            "price_fired": true,
+            "price_tier": "minor",
+            "volume_fired": false,
+            "volume_tier": null,
+            "cumulative_fired": false,
+            "major_count": 0,
+            "minor_count": 1
+          },
+          "config": {
+            "minor_signals_required_for_trigger": 2
+          },
+          "data_quality_flags": [
+            "price_signal: No baseline provided; daily move sub-signal cannot use percentile thresholds",
+            "volume_signal: No baseline provided; volume signal cannot use percentile thresholds",
+            "cumulative_signal: No evaluation anchor for this ticker; signal cannot fire. Anchor will be created on next successful pipeline rerun."
+          ]
+        },
+        "RDDT": {
+          "ticker": "RDDT",
+          "computed_at": "2026-05-22T20:30:08.630626+00:00",
+          "triggered": false,
+          "trigger_path": null,
+          "fired_signals": [],
+          "signal_summary": {
+            "price_fired": false,
+            "price_tier": null,
+            "volume_fired": false,
+            "volume_tier": null,
+            "cumulative_fired": false,
+            "major_count": 0,
+            "minor_count": 0
+          },
+          "config": {
+            "minor_signals_required_for_trigger": 2
+          },
+          "data_quality_flags": [
+            "price_signal: No baseline provided; daily move sub-signal cannot use percentile thresholds",
+            "volume_signal: No baseline provided; volume signal cannot use percentile thresholds",
+            "cumulative_signal: No evaluation anchor for this ticker; signal cannot fire. Anchor will be created on next successful pipeline rerun."
+          ]
+        },
+        "CI": {
+          "ticker": "CI",
+          "computed_at": "2026-05-22T20:30:08.630635+00:00",
+          "triggered": false,
+          "trigger_path": null,
+          "fired_signals": [],
+          "signal_summary": {
+            "price_fired": false,
+            "price_tier": null,
+            "volume_fired": false,
+            "volume_tier": null,
+            "cumulative_fired": false,
+            "major_count": 0,
+            "minor_count": 0
+          },
+          "config": {
+            "minor_signals_required_for_trigger": 2
+          },
+          "data_quality_flags": [
+            "price_signal: No baseline provided; daily move sub-signal cannot use percentile thresholds",
+            "volume_signal: No baseline provided; volume signal cannot use percentile thresholds",
+            "cumulative_signal: No evaluation anchor for this ticker; signal cannot fire. Anchor will be created on next successful pipeline rerun."
+          ]
+        }
+      },
+      "triggered_tickers": [
+        "SEK.AX"
+      ],
+      "summary": {
+        "tickers_total": 28,
+        "tickers_triggered": 1,
+        "tickers_by_path": {
+          "major": 1,
+          "minor_corroboration": 0,
+          "cumulative": 0
+        }
+      }
+    }
+  },
+  "gate0_results": {
+    "computed_at": "2026-05-22T20:30:08.630991+00:00",
+    "decisions": {
+      "SEK.AX": {
+        "ticker": "SEK.AX",
+        "computed_at": "2026-05-22T20:30:08.631017+00:00",
+        "action": "investigate",
+        "rationale": "Residual move (-5.38%) exceeds threshold (5.00% = 2.0σ × 2.50% residual stddev). Unexplained component warrants investigation.",
+        "details": {
+          "actual_move_pct": -5.851851569281684,
+          "market_beta": 0.572919440970272,
+          "sector_beta": 0.8493028207288629,
+          "sector_etf_symbol": "XLC",
+          "spy_move_pct": 0.4012335229231923,
+          "sector_move_pct": -0.5512484048749532,
+          "expected_move_from_market_pct": 0.22987448565168817,
+          "expected_move_from_sector_pct": -0.46817682518258397,
+          "expected_move_pct": -0.46817682518258397,
+          "residual_move_pct": -5.3836747440991,
+          "residual_volatility": 2.499846224423174,
+          "skip_threshold_pct": 4.999692448846348,
+          "sigma_multiple": 2.0
+        },
+        "data_quality_flags": []
+      }
+    },
+    "summary": {
+      "tickers_evaluated": 1,
+      "tickers_skipped": 0,
+      "tickers_to_investigate": 1,
+      "tickers_bypassed_to_investigate": 0
+    }
+  },
+  "novelty_filter": {
+    "evaluated_at": "2026-05-22T20:30:08.712182+00:00",
+    "trading_day_et": "2026-05-22",
+    "per_ticker": {
+      "SEK.AX": {
+        "decision": "fetch_failed",
+        "prior_verdict_run_id": null,
+        "prior_verdict_cadence": null,
+        "prior_news_ids": [],
+        "current_news_ids": [],
+        "new_ids": [],
+        "alpaca_fetch_status": "fetch_failed",
+        "alpaca_fetch_error": "Failed to fetch Alpaca news: 1 validation error for NewsRequest\nsymbols\n  Input should be a valid string [type=string_type, input_value=['SEK-AX'], input_type=list]\n    For further information visit https://errors.pydantic.dev/2.13/v/string_type",
+        "since_utc": "2026-05-21T20:30:01.611473+00:00",
+        "news_snapshot": {
+          "data_source": "alpacaNews",
+          "ticker": "SEK-AX",
+          "fetched_at": "2026-05-22T20:30:08.631613+00:00",
+          "since_utc": "2026-05-21T20:30:01.611473+00:00",
+          "until_utc": "2026-05-22T20:30:01.611473+00:00",
+          "status": "fetch_failed",
+          "items": [],
+          "ids": [],
+          "errors": [
+            "Failed to fetch Alpaca news: 1 validation error for NewsRequest\nsymbols\n  Input should be a valid string [type=string_type, input_value=['SEK-AX'], input_type=list]\n    For further information visit https://errors.pydantic.dev/2.13/v/string_type"
+          ]
+        }
+      }
+    },
+    "summary": {
+      "tickers_evaluated": 1,
+      "suppressed": 0,
+      "proceeded_novel": 0,
+      "proceeded_no_prior": 0,
+      "proceeded_fetch_failed": 1
+    }
+  },
+  "llm_results": {
+    "per_ticker_results": {
+      "SEK.AX": {
+        "call_one": {
+          "ticker": "SEK.AX",
+          "investigation": {
+            "ticker": "SEK.AX",
+            "investigation_summary": "On 22 May 2026, SEEK Limited (ASX: SEK) closed down 5.85% at A$12.71, touching an intraday low of A$12.70 on volume of 1,320,440 shares ***(SEEK Limited investor centre, 22 May 2026)***. The decline extended a severe year-to-date drawdown that pushed the stock to its lowest level in roughly a decade *(The Bull, 22 May 2026)*. A May 22 market commentary piece attributed the day's weakness to strategic setbacks, including the company's recently announced plans to exit its Employment Hero stake and a tightening of its longer-term FY26 outlook, stating that these developments triggered an immediate negative share price reaction *(The Bull, 22 May 2026)*. However, the underlying strategic decisions—the commencement of the Employment Hero divestment and the tightening of FY26 guidance—were originally disclosed by SEEK on 17 February 2026 ***(Employment Hero press release, 17 Feb 2026; AFR company announcement PDF, 17 Feb 2026)***. The same May 22 report also noted that broker Citi had recently flagged concerns about management commentary on ad volumes and implications for FY26-FY27 forecasts following a results call, which reportedly added to selling pressure *(The Bull, 22 May 2026)*. Additional headwinds cited include an ongoing writedown related to SEEK's Chinese platform Zhaopin and structural competitive threats from LinkedIn and AI-powered recruiting solutions *(The Bull, 22 May 2026)*. It is not definitively established whether the 22 May drop was sparked by a discrete new announcement or by cumulative market digestion of these existing pressures.",
+            "established_facts": [
+              "SEK.AX closed at A$12.71 on 22 May 2026, down 5.85%, with an intraday low of A$12.70 and volume of 1,320,440 shares ***(SEEK Limited investor centre, 22 May 2026)***.",
+              "SEEK announced on 17 February 2026 that its Growth Fund commenced a process to divest its stake in Employment Hero, targeting a liquidity window in calendar 2026 ***(Employment Hero press release, 17 Feb 2026)***.",
+              "SEEK tightened its FY26 guidance on 17 February 2026 to net revenue of $1.19bn–$1.23bn and EBITDA of $530m–$550m ***(AFR company announcement PDF, 17 Feb 2026)***.",
+              "A 22 May 2026 commentary piece reported that SEEK shares hit a decade low and cited strategic pressures including the Employment Hero exit, Zhaopin writedowns, and competitive threats from LinkedIn and AI as weighing on the stock *(The Bull, 22 May 2026)*.",
+              "Broker Citi was reported to have raised concerns about SEEK management commentary on ad volumes and FY26-FY27 forecasts after a recent results call *(The Bull, 22 May 2026)*."
+            ],
+            "candidate_causes": [
+              {
+                "cause": "Cumulative repricing of known strategic risks (Employment Hero exit, Zhaopin writedown, FY26 outlook, and a recent Citi note on ad volumes) resurfaced in a May 22 market report or broker commentary",
+                "supporting_evidence": "The Bull (22 May 2026) directly links the day's drop to these strategic setbacks and cites Citi's concerns about ad volumes and forecasts. The underlying facts (Employment Hero exit, FY26 guidance tightening) were previously announced on 17 February 2026.",
+                "confidence": "medium",
+                "time_horizon": "days"
+              },
+              {
+                "cause": "Ongoing cyclical weakness in Australian and New Zealand job ad volumes undermining yield-driven revenue growth",
+                "supporting_evidence": "The Bull (22 May 2026) notes official data showing online job ads running materially below prior-year levels and describes market skepticism that yield initiatives can sustainably offset falling volumes.",
+                "confidence": "medium",
+                "time_horizon": "weeks"
+              }
+            ],
+            "relationship_to_existing_thesis": "No Stage 3 thesis was available for this ticker, so all findings are new context for the monitoring system. The Employment Hero divestment and FY26 guidance tightening were originally announced on 17 February 2026, meaning they are not brand-new disclosures; the 22 May price move appears to reflect either a fresh repricing of these known risks or a reaction to a more recent broker note that the system had not previously captured.",
+            "sources_consulted": [
+              {
+                "url": "https://au.seek.com/about/investors",
+                "publisher": "SEEK Limited",
+                "date": "2026-05-22",
+                "credibility": "***"
+              },
+              {
+                "url": "https://thebull.com.au/news/seek-shares-sek-hit-decade-low-as-pressures-mount-the-latest/",
+                "publisher": "The Bull",
+                "date": "2026-05-22",
+                "credibility": "*"
+              },
+              {
+                "url": "https://employmenthero.com/blog/at-a300m-arr-ai-powered-employment-hero-enters-next-phase-as-seek-growth-fund-launches-stake-sale/",
+                "publisher": "Employment Hero press release",
+                "date": "2026-02-17",
+                "credibility": "***"
+              },
+              {
+                "url": "https://company-announcements.afr.com/asx/sek/5ccfdd68-0b7e-11f1-a0ab-0e65f3ebf4fb.pdf",
+                "publisher": "AFR company announcements",
+                "date": "2026-02-17",
+                "credibility": "***"
+              }
+            ],
+            "search_queries_used": [
+              "SEK.AX SEEK Limited news May 22 2026 share price drop",
+              "SEEK Limited exit Employment Hero stake FY26 outlook May 2026",
+              "SEEK share price May 22 2026 Citi downgrade ad volumes FY26 forecast",
+              "ASX SEK announcement 22 May 2026 SEEK Limited",
+              "SEEK shares fall 5% May 22 2026 ASX news",
+              "SEEK Employment Hero exit announcement May 2026 press release",
+              "SEEK FY26 outlook tightened May 2026 guidance",
+              "SEEK tightens FY26 guidance May 2026 ASX announcement",
+              "Citi SEEK downgrade May 2026 ad volumes FY26",
+              "SEEK FY26 outlook tightened May 2026 guidance"
+            ],
+            "investigation_confidence": "medium",
+            "ambiguity_notes": "It is unclear whether the 22 May drop was driven by a discrete new company announcement or by cumulative market digestion of previously known strategic issues. The Employment Hero exit and FY26 guidance tightening were first announced on 17 February 2026. The reference in the 22 May report to a 'recent results call' and a Citi note could not be independently verified with primary sources."
+          },
+          "raw_response": "```json\n{\n  \"ticker\": \"SEK.AX\",\n  \"investigation_summary\": \"On 22 May 2026, SEEK Limited (ASX: SEK) closed down 5.85% at A$12.71, touching an intraday low of A$12.70 on volume of 1,320,440 shares ***(SEEK Limited investor centre, 22 May 2026)***. The decline extended a severe year-to-date drawdown that pushed the stock to its lowest level in roughly a decade *(The Bull, 22 May 2026)*. A May 22 market commentary piece attributed the day's weakness to strategic setbacks, including the company's recently announced plans to exit its Employment Hero stake and a tightening of its longer-term FY26 outlook, stating that these developments triggered an immediate negative share price reaction *(The Bull, 22 May 2026)*. However, the underlying strategic decisions—the commencement of the Employment Hero divestment and the tightening of FY26 guidance—were originally disclosed by SEEK on 17 February 2026 ***(Employment Hero press release, 17 Feb 2026; AFR company announcement PDF, 17 Feb 2026)***. The same May 22 report also noted that broker Citi had recently flagged concerns about management commentary on ad volumes and implications for FY26-FY27 forecasts following a results call, which reportedly added to selling pressure *(The Bull, 22 May 2026)*. Additional headwinds cited include an ongoing writedown related to SEEK's Chinese platform Zhaopin and structural competitive threats from LinkedIn and AI-powered recruiting solutions *(The Bull, 22 May 2026)*. It is not definitively established whether the 22 May drop was sparked by a discrete new announcement or by cumulative market digestion of these existing pressures.\",\n  \"established_facts\": [\n    \"SEK.AX closed at A$12.71 on 22 May 2026, down 5.85%, with an intraday low of A$12.70 and volume of 1,320,440 shares ***(SEEK Limited investor centre, 22 May 2026)***.\",\n    \"SEEK announced on 17 February 2026 that its Growth Fund commenced a process to divest its stake in Employment Hero, targeting a liquidity window in calendar 2026 ***(Employment Hero press release, 17 Feb 2026)***.\",\n    \"SEEK tightened its FY26 guidance on 17 February 2026 to net revenue of $1.19bn–$1.23bn and EBITDA of $530m–$550m ***(AFR company announcement PDF, 17 Feb 2026)***.\",\n    \"A 22 May 2026 commentary piece reported that SEEK shares hit a decade low and cited strategic pressures including the Employment Hero exit, Zhaopin writedowns, and competitive threats from LinkedIn and AI as weighing on the stock *(The Bull, 22 May 2026)*.\",\n    \"Broker Citi was reported to have raised concerns about SEEK management commentary on ad volumes and FY26-FY27 forecasts after a recent results call *(The Bull, 22 May 2026)*.\"\n  ],\n  \"candidate_causes\": [\n    {\n      \"cause\": \"Cumulative repricing of known strategic risks (Employment Hero exit, Zhaopin writedown, FY26 outlook, and a recent Citi note on ad volumes) resurfaced in a May 22 market report or broker commentary\",\n      \"supporting_evidence\": \"The Bull (22 May 2026) directly links the day's drop to these strategic setbacks and cites Citi's concerns about ad volumes and forecasts. The underlying facts (Employment Hero exit, FY26 guidance tightening) were previously announced on 17 February 2026.\",\n      \"confidence\": \"medium\",\n      \"time_horizon\": \"days\"\n    },\n    {\n      \"cause\": \"Ongoing cyclical weakness in Australian and New Zealand job ad volumes undermining yield-driven revenue growth\",\n      \"supporting_evidence\": \"The Bull (22 May 2026) notes official data showing online job ads running materially below prior-year levels and describes market skepticism that yield initiatives can sustainably offset falling volumes.\",\n      \"confidence\": \"medium\",\n      \"time_horizon\": \"weeks\"\n    }\n  ],\n  \"relationship_to_existing_thesis\": \"No Stage 3 thesis was available for this ticker, so all findings are new context for the monitoring system. The Employment Hero divestment and FY26 guidance tightening were originally announced on 17 February 2026, meaning they are not brand-new disclosures; the 22 May price move appears to reflect either a fresh repricing of these known risks or a reaction to a more recent broker note that the system had not previously captured.\",\n  \"sources_consulted\": [\n    {\n      \"url\": \"https://au.seek.com/about/investors\",\n      \"publisher\": \"SEEK Limited\",\n      \"date\": \"2026-05-22\",\n      \"credibility\": \"***\"\n    },\n    {\n      \"url\": \"https://thebull.com.au/news/seek-shares-sek-hit-decade-low-as-pressures-mount-the-latest/\",\n      \"publisher\": \"The Bull\",\n      \"date\": \"2026-05-22\",\n      \"credibility\": \"*\"\n    },\n    {\n      \"url\": \"https://employmenthero.com/blog/at-a300m-arr-ai-powered-employment-hero-enters-next-phase-as-seek-growth-fund-launches-stake-sale/\",\n      \"publisher\": \"Employment Hero press release\",\n      \"date\": \"2026-02-17\",\n      \"credibility\": \"***\"\n    },\n    {\n      \"url\": \"https://company-announcements.afr.com/asx/sek/5ccfdd68-0b7e-11f1-a0ab-0e65f3ebf4fb.pdf\",\n      \"publisher\": \"AFR company announcements\",\n      \"date\": \"2026-02-17\",\n      \"credibility\": \"***\"\n    }\n  ],\n  \"search_queries_used\": [\n    \"SEK.AX SEEK Limited news May 22 2026 share price drop\",\n    \"SEEK Limited exit Employment Hero stake FY26 outlook May 2026\",\n    \"SEEK share price May 22 2026 Citi downgrade ad volumes FY26 forecast\",\n    \"ASX SEK announcement 22 May 2026 SEEK Limited\",\n    \"SEEK shares fall 5% May 22 2026 ASX news\",\n    \"SEEK Employment Hero exit announcement May 2026 press release\",\n    \"SEEK FY26 outlook tightened May 2026 guidance\",\n    \"SEEK tightens FY26 guidance May 2026 ASX announcement\",\n    \"Citi SEEK downgrade May 2026 ad volumes FY26\",\n    \"SEEK FY26 outlook tightened May 2026 guidance\"\n  ],\n  \"investigation_confidence\": \"medium\",\n  \"ambiguity_notes\": \"It is unclear whether the 22 May drop was driven by a discrete new company announcement or by cumulative market digestion of previously known strategic issues. The Employment Hero exit and FY26 guidance tightening were first announced on 17 February 2026. The reference in the 22 May report to a 'recent results call' and a Citi note could not be independently verified with primary sources.\"\n}\n```",
+          "validation_violations": [],
+          "web_search_calls_made": 10,
+          "web_search_cap_reached": true,
+          "token_usage": {
+            "input_tokens": 113818,
+            "output_tokens": 8036,
+            "total_tokens": 121854
+          },
+          "model": "kimi-k2.6",
+          "status": "ok",
+          "error": null
+        },
+        "call_two": {
+          "ticker": "SEK.AX",
+          "decision": {
+            "ticker": "SEK.AX",
+            "rerun_decision": false,
+            "rationale": "Call 1 attributes the 22 May decline primarily to the repricing of strategic risks—specifically the Employment Hero divestment and tightened FY26 guidance—that SEEK originally disclosed on 17 February 2026 (***, Employment Hero press release; ***, AFR company announcement PDF). Because these drivers were already known to the market for more than three months, the price action appears to reflect cumulative digestion of existing information rather than a reaction to a discrete new material event. The one potentially newer factor, a Citi broker note raising concerns about ad volumes and FY26-FY27 forecasts, is sourced solely to The Bull (*) and could not be independently verified by Call 1 against primary or established outlets. References to Zhaopin writedowns and competitive threats from LinkedIn/AI are similarly carried only by The Bull (*). With no existing Stage 3 or Stage 4 thesis to challenge, and no high-credibility evidence of a fresh catalyst, the investigation does not clear the threshold for an expensive pipeline rerun. Call 1 itself rates its confidence as medium and explicitly flags ambiguity over whether the drop stems from a new announcement or ongoing repricing, which under the decision framework counsels toward inaction.",
+            "thesis_elements_touched": [],
+            "evidence_strength": "low",
+            "key_facts_relied_on": [
+              "SEEK announced on 17 February 2026 that its Growth Fund commenced a process to divest its stake in Employment Hero, targeting a liquidity window in calendar 2026 (***, Employment Hero press release, 17 Feb 2026)",
+              "SEEK tightened its FY26 guidance on 17 February 2026 to net revenue of $1.19bn–$1.23bn and EBITDA of $530m–$550m (***, AFR company announcement PDF, 17 Feb 2026)",
+              "Broker Citi was reported to have raised concerns about SEEK management commentary on ad volumes and FY26-FY27 forecasts after a recent results call (*, The Bull, 22 May 2026)",
+              "It is unclear whether the 22 May drop was driven by a discrete new company announcement or by cumulative market digestion of previously known strategic issues (Call 1 ambiguity notes)"
+            ],
+            "uncertainty_acknowledged": "The decision is complicated by the severity of the price action—a decade low on a major signal—and the possibility that an unverified Citi note reflects a material incremental deterioration in ad volumes. However, the inability to confirm that note with primary or established sources, combined with the lack of an existing thesis to anchor the analysis, means the evidence is too speculative to justify rerun costs. If the cumulative drawdown exceeds 15% from anchor and fresh primary-source confirmation of the broker concerns emerges, the calculus would shift.",
+            "considered_alternative": "The case for rerun rests on the major price signal pushing SEK to decade lows and the possibility that the Citi ad-volume commentary—if accurate—signals structural earnings impairment not yet priced in, which would be valuable to evaluate afresh in a new thesis. However, this case depends on unverified, weakly sourced secondary reporting and treats a cumulative repricing of old news as a new event, which is insufficient under the default-no-rerun standard."
+          },
+          "raw_response": "```json\n{\n  \"ticker\": \"SEK.AX\",\n  \"rerun_decision\": false,\n  \"rationale\": \"Call 1 attributes the 22 May decline primarily to the repricing of strategic risks—specifically the Employment Hero divestment and tightened FY26 guidance—that SEEK originally disclosed on 17 February 2026 (***, Employment Hero press release; ***, AFR company announcement PDF). Because these drivers were already known to the market for more than three months, the price action appears to reflect cumulative digestion of existing information rather than a reaction to a discrete new material event. The one potentially newer factor, a Citi broker note raising concerns about ad volumes and FY26-FY27 forecasts, is sourced solely to The Bull (*) and could not be independently verified by Call 1 against primary or established outlets. References to Zhaopin writedowns and competitive threats from LinkedIn/AI are similarly carried only by The Bull (*). With no existing Stage 3 or Stage 4 thesis to challenge, and no high-credibility evidence of a fresh catalyst, the investigation does not clear the threshold for an expensive pipeline rerun. Call 1 itself rates its confidence as medium and explicitly flags ambiguity over whether the drop stems from a new announcement or ongoing repricing, which under the decision framework counsels toward inaction.\",\n  \"thesis_elements_touched\": [],\n  \"evidence_strength\": \"low\",\n  \"key_facts_relied_on\": [\n    \"SEEK announced on 17 February 2026 that its Growth Fund commenced a process to divest its stake in Employment Hero, targeting a liquidity window in calendar 2026 (***, Employment Hero press release, 17 Feb 2026)\",\n    \"SEEK tightened its FY26 guidance on 17 February 2026 to net revenue of $1.19bn–$1.23bn and EBITDA of $530m–$550m (***, AFR company announcement PDF, 17 Feb 2026)\",\n    \"Broker Citi was reported to have raised concerns about SEEK management commentary on ad volumes and FY26-FY27 forecasts after a recent results call (*, The Bull, 22 May 2026)\",\n    \"It is unclear whether the 22 May drop was driven by a discrete new company announcement or by cumulative market digestion of previously known strategic issues (Call 1 ambiguity notes)\"\n  ],\n  \"uncertainty_acknowledged\": \"The decision is complicated by the severity of the price action—a decade low on a major signal—and the possibility that an unverified Citi note reflects a material incremental deterioration in ad volumes. However, the inability to confirm that note with primary or established sources, combined with the lack of an existing thesis to anchor the analysis, means the evidence is too speculative to justify rerun costs. If the cumulative drawdown exceeds 15% from anchor and fresh primary-source confirmation of the broker concerns emerges, the calculus would shift.\",\n  \"considered_alternative\": \"The case for rerun rests on the major price signal pushing SEK to decade lows and the possibility that the Citi ad-volume commentary—if accurate—signals structural earnings impairment not yet priced in, which would be valuable to evaluate afresh in a new thesis. However, this case depends on unverified, weakly sourced secondary reporting and treats a cumulative repricing of old news as a new event, which is insufficient under the default-no-rerun standard.\"\n}\n```",
+          "validation_violations": [],
+          "token_usage": {
+            "input_tokens": 2971,
+            "output_tokens": 3030,
+            "total_tokens": 6001
+          },
+          "model": "kimi-k2.6",
+          "status": "ok",
+          "error": null
+        },
+        "rerun_decision": false
+      }
+    },
+    "summary": {
+      "tickers_to_investigate": 1,
+      "call_one_succeeded": 1,
+      "call_one_failed": 0,
+      "call_two_succeeded": 1,
+      "call_two_failed": 0,
+      "rerun_yes": 0,
+      "rerun_no": 1,
+      "skipped_no_llm": 0,
+      "total_input_tokens": 116789,
+      "total_output_tokens": 11066
+    }
+  },
+  "pipeline_invocation": {
+    "status": "no_reruns"
+  },
+  "ended_at": "2026-05-22T20:35:31.762599+00:00",
+  "duration_seconds": 330.151126
+}
