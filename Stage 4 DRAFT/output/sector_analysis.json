@@ -32,9 +32,29 @@
             "sector": "Utilities",
             "industry": "Utilities - Diversified"
         },
+        "BKNG": {
+            "sector": "Consumer Cyclical",
+            "industry": "Travel Services"
+        },
         "DVN": {
             "sector": "Energy",
             "industry": "Oil & Gas E&P"
+        },
+        "DECK": {
+            "sector": "Consumer Cyclical",
+            "industry": "Footwear & Accessories"
+        },
+        "DXCM": {
+            "sector": "Healthcare",
+            "industry": "Medical Devices"
+        },
+        "EXLS": {
+            "sector": "Technology",
+            "industry": "Information Technology Services"
+        },
+        "EVR": {
+            "sector": "Financial Services",
+            "industry": "Capital Markets"
         },
         "FICO": {
             "sector": "Technology",
@@ -47,6 +67,10 @@
         "HALO": {
             "sector": "Healthcare",
             "industry": "Biotechnology"
+        },
+        "HWM": {
+            "sector": "Industrials",
+            "industry": "Aerospace & Defense"
         },
         "ICE": {
             "sector": "Financial Services",
@@ -68,6 +92,10 @@
             "sector": "Technology",
             "industry": "Software - Infrastructure"
         },
+        "MNST": {
+            "sector": "Consumer Defensive",
+            "industry": "Beverages - Non-Alcoholic"
+        },
         "NFLX": {
             "sector": "Communication Services",
             "industry": "Entertainment"
@@ -75,6 +103,14 @@
         "NVDA": {
             "sector": "Technology",
             "industry": "Semiconductors"
+        },
+        "NBIX": {
+            "sector": "Healthcare",
+            "industry": "Drug Manufacturers - Specialty & Generic"
+        },
+        "NEM": {
+            "sector": "Basic Materials",
+            "industry": "Gold"
         },
         "QXO": {
             "sector": "Industrials",
@@ -92,6 +128,10 @@
             "sector": "Technology",
             "industry": "Software - Application"
         },
+        "SCCO": {
+            "sector": "Basic Materials",
+            "industry": "Copper"
+        },
         "CI": {
             "sector": "Healthcare",
             "industry": "Healthcare Plans"
@@ -103,20 +143,23 @@
     },
     "sector_breakdown": {
         "Financial Services": {
-            "count": 3,
+            "count": 4,
             "tickers": [
                 "ALL",
+                "EVR",
                 "ICE",
                 "MA"
             ],
-            "share_of_universe": 0.12
+            "share_of_universe": 0.1143
         },
         "Basic Materials": {
-            "count": 1,
+            "count": 3,
             "tickers": [
-                "AU"
+                "AU",
+                "NEM",
+                "SCCO"
             ],
-            "share_of_universe": 0.04
+            "share_of_universe": 0.0857
         },
         "Communication Services": {
             "count": 4,
@@ -126,31 +169,34 @@
                 "NFLX",
                 "RDDT"
             ],
-            "share_of_universe": 0.16
+            "share_of_universe": 0.1143
         },
         "Healthcare": {
-            "count": 4,
+            "count": 6,
             "tickers": [
                 "ARDX",
+                "DXCM",
                 "HALO",
+                "NBIX",
                 "RMD",
                 "CI"
             ],
-            "share_of_universe": 0.16
+            "share_of_universe": 0.1714
         },
         "Technology": {
-            "count": 8,
+            "count": 9,
             "tickers": [
                 "ANET",
                 "ALAB",
                 "AVGO",
+                "EXLS",
                 "FICO",
                 "GRMN",
                 "MSFT",
                 "NVDA",
                 "NOW"
             ],
-            "share_of_universe": 0.32
+            "share_of_universe": 0.2571
         },
         "Utilities": {
             "count": 2,
@@ -158,24 +204,40 @@
                 "BIP",
                 "VST"
             ],
-            "share_of_universe": 0.08
+            "share_of_universe": 0.0571
+        },
+        "Consumer Cyclical": {
+            "count": 2,
+            "tickers": [
+                "BKNG",
+                "DECK"
+            ],
+            "share_of_universe": 0.0571
         },
         "Energy": {
             "count": 1,
             "tickers": [
                 "DVN"
             ],
-            "share_of_universe": 0.04
+            "share_of_universe": 0.0286
         },
         "Industrials": {
-            "count": 2,
+            "count": 3,
             "tickers": [
+                "HWM",
                 "KTOS",
                 "QXO"
             ],
-            "share_of_universe": 0.08
+            "share_of_universe": 0.0857
+        },
+        "Consumer Defensive": {
+            "count": 1,
+            "tickers": [
+                "MNST"
+            ],
+            "share_of_universe": 0.0286
         }
     },
     "data_quality_flags": [],
-    "analysis_date": "2026-05-22"
+    "analysis_date": "2026-05-25"
 }
