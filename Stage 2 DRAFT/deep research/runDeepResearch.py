@@ -2,6 +2,7 @@ import asyncio
 import json
 import datetime
 import os
+import re
 import sys
 from deepResearch import run_deep_research
 
@@ -10,6 +11,17 @@ from pipeline_git import commit_company_progress
 
 REPORT_TYPES = ["FINANCE", "NEWS", "ENVIRONMENT"]
 COMPANY_CONCURRENCY = 5
+
+# Inline citations in the deep-research output look like
+#   [Source: <publisher> / Title: <title> / Date: <YYYY-MM-DD>]
+# They exist to keep the model honest to itself during fact-finding. Strip
+# them before saving so every downstream Stage 2 consumer (debate cases,
+# debate rebuttals, research digest) reads clean text.
+_CITATION_RE = re.compile(r'\s*\[Source:[^\]]*\]')
+
+
+def _strip_citations(report: str) -> str:
+   return _CITATION_RE.sub('', report)
 
 
 def safe_filename(target_company: str) -> str:
@@ -53,6 +65,8 @@ async def run_one_report(target_company, report_type, today_str, company_data, f
    except Exception as e:
       print(f"[{target_company}] {report_type} failed: {e}")
       return
+
+   result = _strip_citations(result)
 
    print(f"[{target_company}] {report_type} complete (snippet: {result[:80]}...)")
 
