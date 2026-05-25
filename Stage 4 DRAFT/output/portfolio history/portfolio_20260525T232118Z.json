@@ -1,0 +1,442 @@
+{
+    "consolidation_date": "2026-05-25",
+    "method": "LLM selector (from union of A+B) + Quant allocator (MIQP-equivalent, LAMBDA=2.0)",
+    "status": "optimal",
+    "iterations_run": 1,
+    "max_iterations": 5,
+    "track_a_tickers": [
+        "ARDX",
+        "APP",
+        "RDDT",
+        "VST",
+        "KTOS",
+        "BKNG",
+        "NOW",
+        "NVDA",
+        "RMD",
+        "ICE",
+        "META",
+        "NFLX",
+        "HALO",
+        "AVGO",
+        "MSFT"
+    ],
+    "track_b_tickers": [
+        "NVDA",
+        "NOW",
+        "MSFT",
+        "APP",
+        "META",
+        "RDDT",
+        "RMD",
+        "HALO",
+        "DXCM",
+        "ARDX",
+        "BKNG",
+        "ICE",
+        "MA",
+        "VST",
+        "KTOS"
+    ],
+    "union_tickers": [
+        "ARDX",
+        "APP",
+        "RDDT",
+        "VST",
+        "KTOS",
+        "BKNG",
+        "NOW",
+        "NVDA",
+        "RMD",
+        "ICE",
+        "META",
+        "NFLX",
+        "HALO",
+        "AVGO",
+        "MSFT",
+        "DXCM",
+        "MA"
+    ],
+    "iterations": [
+        {
+            "iteration": 1,
+            "llm_selection_violations": [],
+            "llm_parsed": {
+                "selected_tickers": [
+                    "ARDX",
+                    "APP",
+                    "RDDT",
+                    "VST",
+                    "KTOS",
+                    "BKNG",
+                    "NOW",
+                    "NVDA",
+                    "RMD",
+                    "ICE",
+                    "META",
+                    "NFLX",
+                    "HALO",
+                    "AVGO",
+                    "MSFT"
+                ],
+                "per_pick_rationale": [
+                    {
+                        "ticker": "ARDX",
+                        "rationale": "Highest probability-weighted expected return in the universe; IBSRELA is scaling toward $420M with a 3.7x forward sales multiple, creating a highly asymmetric risk/reward despite the binary path to profitability."
+                    },
+                    {
+                        "ticker": "APP",
+                        "rationale": "Dominant AI-driven mobile ad platform generating mid-80% EBITDA margins and massive FCF; the regulatory overhang is priced into a discounted forward multiple, offering a self-funding compounder with binary upside on clarity."
+                    },
+                    {
+                        "ticker": "RDDT",
+                        "rationale": "Capital-light audience platform transitioning from hypergrowth to durable compounding; 40% EBITDA margins and $2.8B net cash provide downside resilience while advertiser adoption remains in early innings."
+                    },
+                    {
+                        "ticker": "VST",
+                        "rationale": "Nation’s largest competitive integrated power producer with 98% of 2026 generation hedged and scarce nuclear baseload; data-center demand growth and Cogentrix accretion underpin a 25%+ expected return with visible earnings."
+                    },
+                    {
+                        "ticker": "KTOS",
+                        "rationale": "Defense prime-contractor inflection story with a record $2B backlog and bipartisan hypersonic tailwinds; fortress balance sheet offsets near-term negative free cash flow as the company graduates from subcontractor to prime."
+                    },
+                    {
+                        "ticker": "BKNG",
+                        "rationale": "World’s largest online accommodation marketplace trading at 13x forward earnings with a 6% FCF yield; aggressive buybacks and a transient geopolitical demand-shock narrative create a positively skewed deep-value setup."
+                    },
+                    {
+                        "ticker": "NOW",
+                        "rationale": "Enterprise workflow leader with $27.7B in backlog and a V-shaped margin recovery narrative; Now Assist AI monetization and 97% renewal rates offer a distinct rerating lever within software."
+                    },
+                    {
+                        "ticker": "NVDA",
+                        "rationale": "Dominant AI computing platform with supply-constrained Blackwell and Vera Rubin ramps; forward earnings multiple below semiconductor peers and ~$50B quarterly FCF provide a high-confidence operational floor."
+                    },
+                    {
+                        "ticker": "RMD",
+                        "rationale": "Global leader in PAP therapy with a de facto U.S. monopoly and 30%+ FCF conversion; GLP-1 complementarity data and the Philips competitive vacuum support an underappreciated defensive growth profile at 17x earnings."
+                    },
+                    {
+                        "ticker": "ICE",
+                        "rationale": "Globally dominant exchange and data infrastructure trading at a discount to peers despite 57% operating margins; Treasury clearing mandates and mortgage technology inflection provide idiosyncratic catalysts."
+                    },
+                    {
+                        "ticker": "META",
+                        "rationale": "Core social advertising engine remains best-in-class with 41% operating margins and $81B net cash; AI capex intensity is priced in at <17x forward earnings, offering asymmetry if execution stabilizes."
+                    },
+                    {
+                        "ticker": "NFLX",
+                        "rationale": "Global streaming leader guiding to 31.5% operating margins and nearly $10B annual FCF; a $25B buyback program and international expansion sustain mid-teens EPS growth even as the platform matures."
+                    },
+                    {
+                        "ticker": "HALO",
+                        "rationale": "Royalty-model biotech with contractually protected ENHANZE cash flows and 60% EBITDA margins; near-term deleveraging and buybacks are visible through 2027, supported by 43% royalty growth."
+                    },
+                    {
+                        "ticker": "AVGO",
+                        "rationale": "Fabless semiconductor and software conglomerate with a $73B AI backlog and 67% EBITDA margins; forward earnings discount compensates for VMware renewal uncertainty and customer concentration."
+                    },
+                    {
+                        "ticker": "MSFT",
+                        "rationale": "Unparalleled enterprise demand engine anchored by $627B in commercial RPO and Azure growth near 40%; defensive tech compounder that balances the portfolio’s growth tilt despite near-term capex opacity."
+                    }
+                ],
+                "comparison_notes": "Track A prioritized probability-weighted expected return via MILP optimization, while Track B emphasized qualitative risk layering and deliberate sector diversification. I largely sided with Track A on the disagreement names because MA and DXCM offered the poorest risk/reward profiles and lowest expected returns in the entire candidate pool, making them easy exclusions despite Track B’s defensive rationale. Conversely, I retained AVGO and NFLX—which Track B rejected—because AVGO’s $73B contracted AI backlog and forward earnings discount justify inclusion even alongside NVDA, while NFLX’s subscription economics and buyback program provide a distinct cash-flow resilience within Communication Services. The final selection preserves all thirteen consensus names where both tracks aligned, reflecting strong quantitative and qualitative conviction.",
+                "notable_rejections": [
+                    {
+                        "ticker": "DXCM",
+                        "rationale": "Probability-weighted expected return of only ~6% with a fat left tail from Medicare competitive bidding and Abbott parity; premium valuation near 24x forward earnings offers a thin margin of safety."
+                    },
+                    {
+                        "ticker": "MA",
+                        "rationale": "Lowest expected return in the union pool at ~4% with structural network yield compression and escalating regulatory timelines; the 22x forward premium is not justified by decelerating payment volume growth."
+                    }
+                ],
+                "portfolio_thesis": "The consolidated portfolio targets double-digit probability-weighted returns by combining high-conviction growth compounders with durable moats and visible earnings floors. Healthcare balances commercial biotech execution, royalty extraction, and defensive medtech; Technology spans AI infrastructure, enterprise software margin recovery, and cloud durability; Communication Services blends advertising fortresses, platform transitions, and subscription resilience; while Financials, Utilities, Consumer Cyclical, and Industrials add macro ballast and idiosyncratic catalysts. The allocator can express conviction through sizing while the 35% sector cap and correlation-aware construction remain fully feasible.",
+                "key_risks": [
+                    "Synchronized multiple compression across AI-exposed Technology names if 2027 capex guidance disappoints or cloud margins fail to inflect.",
+                    "Regulatory enforcement or data-access restrictions could simultaneously impair APP, META, and RDDT's core advertising and data-licensing models.",
+                    "Medicare reimbursement resets or GLP-1 substitution fears could pressure the Healthcare cluster's pricing power and growth narratives.",
+                    "VST's deleveraging thesis depends on Cogentrix approval and sustained ERCOT scarcity pricing; failure would impair the portfolio's primary utility exposure.",
+                    "A prolonged geopolitical demand shock or global de-risking event could delay BKNG's travel recovery and compress consumer cyclical valuations."
+                ]
+            },
+            "allocator_result": {
+                "status": "optimal",
+                "objective_value": 0.086686,
+                "allocations": [
+                    {
+                        "ticker": "ARDX",
+                        "allocation_pct": 14.8651,
+                        "sector": "Healthcare",
+                        "expected_return_12m": 0.5256
+                    },
+                    {
+                        "ticker": "APP",
+                        "allocation_pct": 9.1916,
+                        "sector": "Communication Services",
+                        "expected_return_12m": 0.2986
+                    },
+                    {
+                        "ticker": "RDDT",
+                        "allocation_pct": 8.5669,
+                        "sector": "Communication Services",
+                        "expected_return_12m": 0.2737
+                    },
+                    {
+                        "ticker": "VST",
+                        "allocation_pct": 8.0844,
+                        "sector": "Utilities",
+                        "expected_return_12m": 0.2544
+                    },
+                    {
+                        "ticker": "KTOS",
+                        "allocation_pct": 7.3637,
+                        "sector": "Industrials",
+                        "expected_return_12m": 0.2255
+                    },
+                    {
+                        "ticker": "BKNG",
+                        "allocation_pct": 6.9393,
+                        "sector": "Consumer Cyclical",
+                        "expected_return_12m": 0.2086
+                    },
+                    {
+                        "ticker": "NOW",
+                        "allocation_pct": 6.3171,
+                        "sector": "Technology",
+                        "expected_return_12m": 0.1837
+                    },
+                    {
+                        "ticker": "NVDA",
+                        "allocation_pct": 6.314,
+                        "sector": "Technology",
+                        "expected_return_12m": 0.1835
+                    },
+                    {
+                        "ticker": "RMD",
+                        "allocation_pct": 5.6037,
+                        "sector": "Healthcare",
+                        "expected_return_12m": 0.1551
+                    },
+                    {
+                        "ticker": "ICE",
+                        "allocation_pct": 5.0111,
+                        "sector": "Financial Services",
+                        "expected_return_12m": 0.1314
+                    },
+                    {
+                        "ticker": "META",
+                        "allocation_pct": 4.9923,
+                        "sector": "Communication Services",
+                        "expected_return_12m": 0.1307
+                    },
+                    {
+                        "ticker": "NFLX",
+                        "allocation_pct": 4.5641,
+                        "sector": "Communication Services",
+                        "expected_return_12m": 0.1135
+                    },
+                    {
+                        "ticker": "HALO",
+                        "allocation_pct": 4.4545,
+                        "sector": "Healthcare",
+                        "expected_return_12m": 0.1092
+                    },
+                    {
+                        "ticker": "AVGO",
+                        "allocation_pct": 4.1333,
+                        "sector": "Technology",
+                        "expected_return_12m": 0.0963
+                    },
+                    {
+                        "ticker": "MSFT",
+                        "allocation_pct": 3.5991,
+                        "sector": "Technology",
+                        "expected_return_12m": 0.0749
+                    }
+                ],
+                "infeasibility_reason": null,
+                "constraints": {
+                    "portfolio_size": 15,
+                    "min_position_weight": 0.03,
+                    "max_position_weight": 0.2,
+                    "sector_cap": 0.35,
+                    "lambda_concentration_penalty": 2.0
+                }
+            }
+        }
+    ],
+    "objective_value": 0.086686,
+    "constraints": {
+        "portfolio_size": 15,
+        "min_position_weight": 0.03,
+        "max_position_weight": 0.2,
+        "sector_cap": 0.35,
+        "lambda_concentration_penalty": 2.0
+    },
+    "portfolio": {
+        "positions": [
+            {
+                "ticker": "ARDX",
+                "allocation_pct": 14.8651,
+                "sector": "Healthcare",
+                "expected_return_12m": 0.5256,
+                "rationale": "Highest probability-weighted expected return in the universe; IBSRELA is scaling toward $420M with a 3.7x forward sales multiple, creating a highly asymmetric risk/reward despite the binary path to profitability.",
+                "entry_date": "2026-05-25",
+                "entry_price": 6.11
+            },
+            {
+                "ticker": "APP",
+                "allocation_pct": 9.1916,
+                "sector": "Communication Services",
+                "expected_return_12m": 0.2986,
+                "rationale": "Dominant AI-driven mobile ad platform generating mid-80% EBITDA margins and massive FCF; the regulatory overhang is priced into a discounted forward multiple, offering a self-funding compounder with binary upside on clarity.",
+                "entry_date": "2026-05-25",
+                "entry_price": 481.68
+            },
+            {
+                "ticker": "RDDT",
+                "allocation_pct": 8.5669,
+                "sector": "Communication Services",
+                "expected_return_12m": 0.2737,
+                "rationale": "Capital-light audience platform transitioning from hypergrowth to durable compounding; 40% EBITDA margins and $2.8B net cash provide downside resilience while advertiser adoption remains in early innings.",
+                "entry_date": "2026-05-25",
+                "entry_price": 141.67
+            },
+            {
+                "ticker": "VST",
+                "allocation_pct": 8.0844,
+                "sector": "Utilities",
+                "expected_return_12m": 0.2544,
+                "rationale": "Nation’s largest competitive integrated power producer with 98% of 2026 generation hedged and scarce nuclear baseload; data-center demand growth and Cogentrix accretion underpin a 25%+ expected return with visible earnings.",
+                "entry_date": "2026-05-25",
+                "entry_price": 156.27
+            },
+            {
+                "ticker": "KTOS",
+                "allocation_pct": 7.3637,
+                "sector": "Industrials",
+                "expected_return_12m": 0.2255,
+                "rationale": "Defense prime-contractor inflection story with a record $2B backlog and bipartisan hypersonic tailwinds; fortress balance sheet offsets near-term negative free cash flow as the company graduates from subcontractor to prime.",
+                "entry_date": "2026-05-25",
+                "entry_price": 56.18
+            },
+            {
+                "ticker": "BKNG",
+                "allocation_pct": 6.9393,
+                "sector": "Consumer Cyclical",
+                "expected_return_12m": 0.2086,
+                "rationale": "World’s largest online accommodation marketplace trading at 13x forward earnings with a 6% FCF yield; aggressive buybacks and a transient geopolitical demand-shock narrative create a positively skewed deep-value setup.",
+                "entry_date": "2026-05-25",
+                "entry_price": 161.06
+            },
+            {
+                "ticker": "NOW",
+                "allocation_pct": 6.3171,
+                "sector": "Technology",
+                "expected_return_12m": 0.1837,
+                "rationale": "Enterprise workflow leader with $27.7B in backlog and a V-shaped margin recovery narrative; Now Assist AI monetization and 97% renewal rates offer a distinct rerating lever within software.",
+                "entry_date": "2026-05-25",
+                "entry_price": 102.13
+            },
+            {
+                "ticker": "NVDA",
+                "allocation_pct": 6.314,
+                "sector": "Technology",
+                "expected_return_12m": 0.1835,
+                "rationale": "Dominant AI computing platform with supply-constrained Blackwell and Vera Rubin ramps; forward earnings multiple below semiconductor peers and ~$50B quarterly FCF provide a high-confidence operational floor.",
+                "entry_date": "2026-05-25",
+                "entry_price": 215.33
+            },
+            {
+                "ticker": "RMD",
+                "allocation_pct": 5.6037,
+                "sector": "Healthcare",
+                "expected_return_12m": 0.1551,
+                "rationale": "Global leader in PAP therapy with a de facto U.S. monopoly and 30%+ FCF conversion; GLP-1 complementarity data and the Philips competitive vacuum support an underappreciated defensive growth profile at 17x earnings.",
+                "entry_date": "2026-05-25",
+                "entry_price": 208.05
+            },
+            {
+                "ticker": "ICE",
+                "allocation_pct": 5.0111,
+                "sector": "Financial Services",
+                "expected_return_12m": 0.1314,
+                "rationale": "Globally dominant exchange and data infrastructure trading at a discount to peers despite 57% operating margins; Treasury clearing mandates and mortgage technology inflection provide idiosyncratic catalysts.",
+                "entry_date": "2026-05-25",
+                "entry_price": 152.97
+            },
+            {
+                "ticker": "META",
+                "allocation_pct": 4.9923,
+                "sector": "Communication Services",
+                "expected_return_12m": 0.1307,
+                "rationale": "Core social advertising engine remains best-in-class with 41% operating margins and $81B net cash; AI capex intensity is priced in at <17x forward earnings, offering asymmetry if execution stabilizes.",
+                "entry_date": "2026-05-25",
+                "entry_price": 610.26
+            },
+            {
+                "ticker": "NFLX",
+                "allocation_pct": 4.5641,
+                "sector": "Communication Services",
+                "expected_return_12m": 0.1135,
+                "rationale": "Global streaming leader guiding to 31.5% operating margins and nearly $10B annual FCF; a $25B buyback program and international expansion sustain mid-teens EPS growth even as the platform matures.",
+                "entry_date": "2026-05-25",
+                "entry_price": 88.6
+            },
+            {
+                "ticker": "HALO",
+                "allocation_pct": 4.4545,
+                "sector": "Healthcare",
+                "expected_return_12m": 0.1092,
+                "rationale": "Royalty-model biotech with contractually protected ENHANZE cash flows and 60% EBITDA margins; near-term deleveraging and buybacks are visible through 2027, supported by 43% royalty growth.",
+                "entry_date": "2026-05-25",
+                "entry_price": 68.32
+            },
+            {
+                "ticker": "AVGO",
+                "allocation_pct": 4.1333,
+                "sector": "Technology",
+                "expected_return_12m": 0.0963,
+                "rationale": "Fabless semiconductor and software conglomerate with a $73B AI backlog and 67% EBITDA margins; forward earnings discount compensates for VMware renewal uncertainty and customer concentration.",
+                "entry_date": "2026-05-25",
+                "entry_price": 414.14
+            },
+            {
+                "ticker": "MSFT",
+                "allocation_pct": 3.5991,
+                "sector": "Technology",
+                "expected_return_12m": 0.0749,
+                "rationale": "Unparalleled enterprise demand engine anchored by $627B in commercial RPO and Azure growth near 40%; defensive tech compounder that balances the portfolio’s growth tilt despite near-term capex opacity.",
+                "entry_date": "2026-05-25",
+                "entry_price": 418.57
+            }
+        ],
+        "comparison_notes": "Track A prioritized probability-weighted expected return via MILP optimization, while Track B emphasized qualitative risk layering and deliberate sector diversification. I largely sided with Track A on the disagreement names because MA and DXCM offered the poorest risk/reward profiles and lowest expected returns in the entire candidate pool, making them easy exclusions despite Track B’s defensive rationale. Conversely, I retained AVGO and NFLX—which Track B rejected—because AVGO’s $73B contracted AI backlog and forward earnings discount justify inclusion even alongside NVDA, while NFLX’s subscription economics and buyback program provide a distinct cash-flow resilience within Communication Services. The final selection preserves all thirteen consensus names where both tracks aligned, reflecting strong quantitative and qualitative conviction.",
+        "notable_rejections": [
+            {
+                "ticker": "DXCM",
+                "rationale": "Probability-weighted expected return of only ~6% with a fat left tail from Medicare competitive bidding and Abbott parity; premium valuation near 24x forward earnings offers a thin margin of safety."
+            },
+            {
+                "ticker": "MA",
+                "rationale": "Lowest expected return in the union pool at ~4% with structural network yield compression and escalating regulatory timelines; the 22x forward premium is not justified by decelerating payment volume growth."
+            }
+        ],
+        "portfolio_thesis": "The consolidated portfolio targets double-digit probability-weighted returns by combining high-conviction growth compounders with durable moats and visible earnings floors. Healthcare balances commercial biotech execution, royalty extraction, and defensive medtech; Technology spans AI infrastructure, enterprise software margin recovery, and cloud durability; Communication Services blends advertising fortresses, platform transitions, and subscription resilience; while Financials, Utilities, Consumer Cyclical, and Industrials add macro ballast and idiosyncratic catalysts. The allocator can express conviction through sizing while the 35% sector cap and correlation-aware construction remain fully feasible.",
+        "key_risks": [
+            "Synchronized multiple compression across AI-exposed Technology names if 2027 capex guidance disappoints or cloud margins fail to inflect.",
+            "Regulatory enforcement or data-access restrictions could simultaneously impair APP, META, and RDDT's core advertising and data-licensing models.",
+            "Medicare reimbursement resets or GLP-1 substitution fears could pressure the Healthcare cluster's pricing power and growth narratives.",
+            "VST's deleveraging thesis depends on Cogentrix approval and sustained ERCOT scarcity pricing; failure would impair the portfolio's primary utility exposure.",
+            "A prolonged geopolitical demand shock or global de-risking event could delay BKNG's travel recovery and compress consumer cyclical valuations."
+        ]
+    },
+    "reconciled_date": "2026-05-25",
+    "reconciliation": {
+        "status": "first_run_no_incumbent",
+        "note": "No prior portfolio existed; the candidate was adopted as-is and entry data was seeded for future reconciliations.",
+        "incumbent_file": null
+    }
+}
