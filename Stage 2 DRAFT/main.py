@@ -1,18 +1,26 @@
+import argparse
 import asyncio
 import sys
 import os
 from datetime import datetime
 
 
+# Toggle the research digest stage. Flip to False to skip it entirely.
+# The GitHub workflow's "Run research digest" input overrides this via
+# the --no-digest / --digest CLI flag handled in main().
+RUN_RESEARCH_DIGEST = True
+
+
 # Each stage is (display_name, relative_path_from_main.py).
 # Paths reflect the current pre-reorganization structure.
-PIPELINE_STAGES = [
+BASE_PIPELINE_STAGES = [
     ("Deep Research", "deep research/runDeepResearch.py"),
     ("Debate Cases", "debate/runDebate.py"),
     ("Debate Rebuttals", "debate rebuttal/runDebateRebuttal.py"),
     ("Debate Synthesis", "debate synthesis/runDebateSynthesis.py"),
-    ("Research Digest", "research digest/runResearchDigest.py"),
 ]
+
+DIGEST_STAGE = ("Research Digest", "research digest/runResearchDigest.py")
 
 
 async def stream_and_capture(stream, output_buffer, terminal_stream):
@@ -69,16 +77,35 @@ async def run_stage(stage_name: str, relative_script_path: str, stage_num: int, 
     return success
 
 
+def resolve_run_digest(argv: list[str]) -> bool:
+    """CLI flags override the module-level constant. --no-digest wins over --digest."""
+    parser = argparse.ArgumentParser(description="Run Stage 2 of the investment pipeline.")
+    parser.add_argument("--no-digest", action="store_true", help="Skip the research digest stage.")
+    parser.add_argument("--digest", action="store_true", help="Force the research digest stage on.")
+    args = parser.parse_args(argv)
+    if args.no_digest:
+        return False
+    if args.digest:
+        return True
+    return RUN_RESEARCH_DIGEST
+
+
 async def main():
     print(f"\n{'='*70}")
     print(f"  Investment Pipeline — Full Run")
     print(f"  Started: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
     print(f"{'='*70}", flush=True)
-    
+
+    run_digest = resolve_run_digest(sys.argv[1:])
+    pipeline_stages = list(BASE_PIPELINE_STAGES)
+    if run_digest:
+        pipeline_stages.append(DIGEST_STAGE)
+    print(f"  Research digest stage: {'enabled' if run_digest else 'disabled'}", flush=True)
+
     results = []
-    total_stages = len(PIPELINE_STAGES)
-    
-    for idx, (stage_name, relative_script_path) in enumerate(PIPELINE_STAGES, start=1):
+    total_stages = len(pipeline_stages)
+
+    for idx, (stage_name, relative_script_path) in enumerate(pipeline_stages, start=1):
         success = await run_stage(stage_name, relative_script_path, idx, total_stages)
         results.append((stage_name, success))
     

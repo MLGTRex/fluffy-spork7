@@ -11,7 +11,9 @@ from pipeline_git import commit_company_progress
 
 COMPANY_CONCURRENCY = 5
 
-# Required Stage 2 fields that must be present and non-empty before any Stage 3b agents run
+# Required Stage 2 fields that must be present and non-empty before any Stage 3b agents run.
+# The research digest is optional — if absent, assemble_research_dump() falls back to the
+# three raw reports, so legacy JSONs (and Stage 2 runs invoked with --no-digest) still work.
 REQUIRED_STAGE2_FIELDS = [
     "bull_case",
     "bear_case",
@@ -22,8 +24,6 @@ REQUIRED_STAGE2_FIELDS = [
     "finance_research_report",
     "news_research_report",
     "environment_research_report",
-    "research_digest",
-    "research_digest_date",
 ]
 
 # Stage 3b field pairs (content + date) — used both for resets and per-agent freshness checks
@@ -235,11 +235,33 @@ async def run_and_save(
     return content
 
 
-def assemble_research_dump(company_data: dict) -> str:
-    """Concatenate Stage 2 research digest + debate outputs into a single labeled block for the agents."""
-    return f"""# RESEARCH DOSSIER
+def assemble_research_dump(company_data: dict, target_company: str) -> str:
+    """
+    Concatenate Stage 2 research + debate outputs into a single labeled block for the agents.
 
-{company_data['research_digest']}
+    Prefers the research digest when present. Falls back to the three raw deep-research
+    reports when the digest is missing or empty (legacy Stage 2 JSONs, or runs where the
+    digest stage was disabled). Emits one line indicating which mode was used so the
+    digest cost A/B is visible in the run log.
+    """
+    digest = company_data.get("research_digest", "")
+    if digest:
+        print(f"[{target_company}] using digest")
+        research_section = f"# RESEARCH DOSSIER\n\n{digest}"
+    else:
+        print(f"[{target_company}] using raw reports (no digest)")
+        research_section = (
+            "# FINANCIAL RESEARCH\n\n"
+            f"{company_data['finance_research_report']}\n\n"
+            "---\n\n"
+            "# NEWS & NARRATIVE RESEARCH\n\n"
+            f"{company_data['news_research_report']}\n\n"
+            "---\n\n"
+            "# COMPETITIVE & MACRO RESEARCH\n\n"
+            f"{company_data['environment_research_report']}"
+        )
+
+    return f"""{research_section}
 
 ---
 
@@ -312,7 +334,7 @@ async def process_target_company(target_company: str, today_str: str, stage2_dir
         with open(stage3_path, "w", encoding="utf-8") as f:
             json.dump(company_data, f, indent=4, ensure_ascii=False)
 
-    research_dump = assemble_research_dump(company_data)
+    research_dump = assemble_research_dump(company_data, target_company)
     lock = asyncio.Lock()
 
     # ============= PHASE 1 =============
