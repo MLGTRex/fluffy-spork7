@@ -1,4 +1,5 @@
 import os
+import re
 import sys
 import logging
 from datetime import datetime
@@ -9,6 +10,17 @@ sys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__)), ".."
 from moonshot_cache import extract_cache_stats, log_cache_stats
 
 PROMPTS_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "prompts")
+
+# Inline citations in the deep-research output look like
+#   [Source: <publisher> / Title: <title> / Date: <YYYY-MM-DD>]
+# They exist to keep deep research honest to itself during fact-finding.
+# Downstream stages treat the dossier as accurate, so they're pure overhead
+# from the digest onward.
+_CITATION_RE = re.compile(r'\s*\[Source:[^\]]*\]')
+
+
+def _strip_citations(report: str) -> str:
+    return _CITATION_RE.sub('', report)
 
 
 def _load_prompt(name: str) -> str:
@@ -54,23 +66,27 @@ async def run_research_digest(
     model = "kimi-k2.6"
     max_tokens = 32768
 
+    finance_clean = _strip_citations(finance_report)
+    news_clean = _strip_citations(news_report)
+    environment_clean = _strip_citations(environment_report)
+
     user_message = f"""Produce a deduplicated research dossier for {company_name} from the three reports below.
 
 # FINANCIAL RESEARCH
 
-{finance_report}
+{finance_clean}
 
 ---
 
 # NEWS & NARRATIVE RESEARCH
 
-{news_report}
+{news_clean}
 
 ---
 
 # COMPETITIVE & MACRO RESEARCH
 
-{environment_report}
+{environment_clean}
 """
 
     messages = [
