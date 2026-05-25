@@ -247,7 +247,7 @@ def fetch_news_for_ticker(
 
     try:
         request = NewsRequest(
-            symbols=[norm_ticker],
+            symbols=norm_ticker,
             start=since_utc,
             end=until_utc,
             limit=int(limit),
