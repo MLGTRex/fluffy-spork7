@@ -22,6 +22,8 @@ REQUIRED_STAGE2_FIELDS = [
     "finance_research_report",
     "news_research_report",
     "environment_research_report",
+    "research_digest",
+    "research_digest_date",
 ]
 
 # Stage 3b field pairs (content + date) — used both for resets and per-agent freshness checks
@@ -57,26 +59,29 @@ ALL_STAGE3_DATE_FIELDS = (
 # Per-agent dependency map: which upstream date fields each agent's freshness depends on.
 # An agent re-runs if its own date is older than ANY of these dates, OR if its content is empty.
 AGENT_DEPENDENCY_DATES = {
-    # Phase 1 — only synthesis is upstream
-    "scenario_bull": ["synthesis_date"],
-    "scenario_bear": ["synthesis_date"],
-    "scenario_base_initial": ["synthesis_date"],
-    # Phase 2 — depends on synthesis + all phase 1 outputs
+    # Phase 1 — depends on synthesis and the research digest
+    "scenario_bull": ["synthesis_date", "research_digest_date"],
+    "scenario_bear": ["synthesis_date", "research_digest_date"],
+    "scenario_base_initial": ["synthesis_date", "research_digest_date"],
+    # Phase 2 — depends on synthesis + digest + all phase 1 outputs
     "scenario_bull_rebuttal": [
         "synthesis_date",
+        "research_digest_date",
         "scenario_bull_date",
         "scenario_bear_date",
         "scenario_base_initial_date",
     ],
     "scenario_bear_rebuttal": [
         "synthesis_date",
+        "research_digest_date",
         "scenario_bull_date",
         "scenario_bear_date",
         "scenario_base_initial_date",
     ],
-    # Phase 3 — depends on synthesis + all phase 1 + all phase 2 outputs
+    # Phase 3 — depends on synthesis + digest + all phase 1 + all phase 2 outputs
     "scenario_base_final": [
         "synthesis_date",
+        "research_digest_date",
         "scenario_bull_date",
         "scenario_bear_date",
         "scenario_base_initial_date",
@@ -231,22 +236,10 @@ async def run_and_save(
 
 
 def assemble_research_dump(company_data: dict) -> str:
-    """Concatenate Stage 2 research + debate outputs into a single labeled block for the agents."""
-    return f"""# FINANCIAL RESEARCH
+    """Concatenate Stage 2 research digest + debate outputs into a single labeled block for the agents."""
+    return f"""# RESEARCH DOSSIER
 
-{company_data['finance_research_report']}
-
----
-
-# NEWS & NARRATIVE RESEARCH
-
-{company_data['news_research_report']}
-
----
-
-# COMPETITIVE & MACRO RESEARCH
-
-{company_data['environment_research_report']}
+{company_data['research_digest']}
 
 ---
 

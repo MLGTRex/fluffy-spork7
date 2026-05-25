@@ -11,6 +11,7 @@ PIPELINE_STAGES = [
     ("Debate Cases", "debate/runDebate.py"),
     ("Debate Rebuttals", "debate rebuttal/runDebateRebuttal.py"),
     ("Debate Synthesis", "debate synthesis/runDebateSynthesis.py"),
+    ("Research Digest", "research digest/runResearchDigest.py"),
 ]
 
 
