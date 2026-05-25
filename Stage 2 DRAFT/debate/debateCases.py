@@ -63,7 +63,7 @@ async def run_debate_case(case_type: str, research_dump: str, company_name: str)
     api_key = os.getenv("MOONSHOT_API_KEY")
     base_url = os.getenv("MOONSHOT_BASE_URL") or "https://api.moonshot.ai/v1"
 
-    client = AsyncOpenAI(base_url=base_url, api_key=api_key)
+    client = AsyncOpenAI(base_url=base_url, api_key=api_key, max_retries=5)
     model = "kimi-k2.6"
     max_tokens = 32768
 

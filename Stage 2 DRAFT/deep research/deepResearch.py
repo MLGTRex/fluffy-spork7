@@ -33,7 +33,7 @@ logger = logging.getLogger(__name__)
 
 class FormulaChatClient:
     def __init__(self, moonshot_base_url: str, api_key: str, model: str, max_tokens: int):
-        self.openai = AsyncOpenAI(base_url=moonshot_base_url, api_key=api_key)
+        self.openai = AsyncOpenAI(base_url=moonshot_base_url, api_key=api_key, max_retries=5)
         self.httpx = httpx.AsyncClient(base_url=moonshot_base_url, headers={"Authorization": f"Bearer {api_key}"}, timeout=30.0)
         self.model = model
         self.max_tokens = max_tokens
