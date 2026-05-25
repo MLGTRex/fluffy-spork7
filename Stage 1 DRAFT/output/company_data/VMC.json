@@ -5,7 +5,7 @@
     "financial_raw_metrics": {
         "sector": "Basic Materials",
         "industry": "Building Materials",
-        "market_cap_usd": 34006159360,
+        "market_cap_usd": 33820610560,
         "profitability": {
             "gross_margin_ttm": 0.27684,
             "operating_margin_ttm": 0.15064,
@@ -38,28 +38,28 @@
             "fcf_cagr_3yr": 0.2845667895921915
         },
         "valuation": {
-            "pe_trailing": 31.015385,
-            "pe_forward": 24.16789,
-            "ps_ratio": 4.2178707,
-            "pb_ratio": 4.0149517,
-            "ev_ebitda": 16.753,
-            "peg_ratio": 2.8131,
-            "fcf_yield": 0.007028506026503547
+            "pe_trailing": 30.846153,
+            "pe_forward": 24.036022,
+            "ps_ratio": 4.1948566,
+            "pb_ratio": 3.9930449,
+            "ev_ebitda": 16.608,
+            "peg_ratio": 2.7852,
+            "fcf_yield": 0.007067066266470147
         },
         "data_quality_flags": [
             "VMC: eps_cagr_3yr approximated by net income CAGR (share count changes not adjusted)"
         ]
     },
-    "financial_raw_metrics_date": "2026-05-21",
-    "financial_score": 54.115771985659265,
-    "financial_score_date": "2026-05-21",
+    "financial_raw_metrics_date": "2026-05-25",
+    "financial_score": 54.13023870115801,
+    "financial_score_date": "2026-05-25",
     "financial_subscores": {
-        "profitability": 55.40686324892176,
-        "returns_on_capital": 54.0318244028266,
+        "profitability": 55.3584049823668,
+        "returns_on_capital": 54.018338692362136,
         "cash_flow_quality": 32.690551701069154,
         "balance_sheet": 79.31118735764,
         "growth": 68.88288085538568,
-        "valuation": 33.968943121302466
+        "valuation": 34.14797986065332
     },
     "financial_drivers": {
         "strongest": [
@@ -68,78 +68,82 @@
             "fcf_cagr_3yr (growth): score=91, value=28.5%"
         ],
         "weakest": [
-            "peg_ratio (valuation): score=16, value=2.81",
+            "peg_ratio (valuation): score=16, value=2.79",
             "fcf_yield (valuation): score=17, value=0.7%",
             "fcf_to_net_income_ttm (cash_flow_quality): score=23, value=21.4%"
         ]
     },
     "professional_raw_metrics": {
+        "sector": "Basic Materials",
+        "industry": "Building Materials",
+        "market_cap_usd": 33820610560,
+        "current_price": 260.65,
+        "analyst": {
+            "recommendation_mean": 1.71429,
+            "recommendation_key": "buy",
+            "target_mean_price": 328.8095,
+            "target_median_price": 340.0,
+            "target_high_price": 365.0,
+            "target_low_price": 198.0,
+            "upside_to_target": 0.2614981776328411,
+            "target_dispersion": 0.5078928680588608,
+            "num_analysts": 21
+        },
+        "rating_momentum": {
+            "upgrades_12m": 0,
+            "downgrades_12m": 2,
+            "total_actions_12m": 32
+        },
+        "institutional": {
+            "held_pct_institutions": 0.98283994,
+            "held_pct_insiders": 0.00211
+        },
+        "short_interest": {
+            "short_pct_of_float": 0.039300002,
+            "short_ratio": 3.92,
+            "short_change_pct": -0.13100608764493996
+        },
+        "data_quality_flags": []
+    },
+    "professional_raw_metrics_date": "2026-05-25",
+    "professional_score": 67.65150718907718,
+    "professional_score_date": "2026-05-25",
+    "professional_subscores": {
+        "analyst_consensus": 83.57599184218941,
+        "rating_momentum": 48.5625,
+        "institutional_positioning": 67.79782607117106,
+        "short_interest": 62.06552351012077
+    },
+    "professional_drivers": {
+        "strongest": [
+            "upside_to_target (analyst_consensus): score=84, value=26.1%",
+            "recommendation_mean (analyst_consensus): score=84, value=1.71",
+            "held_pct_institutions (institutional_positioning): score=75, value=98.3%"
+        ],
+        "weakest": [
+            "upgrades_12m (rating_momentum): score=49, value=0.00",
+            "downgrades_12m (rating_momentum): score=49, value=2.00",
+            "total_actions_12m (rating_momentum): score=49, value=32.00"
+        ]
+    },
+    "news_sentiment_raw_metrics": {
         "sector": null,
         "industry": null,
         "market_cap_usd": null,
         "current_price": null,
-        "analyst": {
-            "recommendation_mean": null,
-            "recommendation_key": null,
-            "target_mean_price": null,
-            "target_median_price": null,
-            "target_high_price": null,
-            "target_low_price": null,
-            "upside_to_target": null,
-            "target_dispersion": null,
-            "num_analysts": null
-        },
-        "rating_momentum": {
-            "upgrades_12m": 0,
-            "downgrades_12m": 0,
-            "total_actions_12m": 0
-        },
-        "institutional": {
-            "held_pct_institutions": null,
-            "held_pct_insiders": null
-        },
-        "short_interest": {
-            "short_pct_of_float": null,
-            "short_ratio": null,
-            "short_change_pct": null
-        },
-        "data_quality_flags": [
-            "VMC: failed to fetch .info (Too Many Requests. Rate limited. Try after a while.)",
-            "VMC: sector classification unavailable",
-            "VMC: upgrades/downgrades fetch failed (Too Many Requests. Rate limited. Try after a while.)"
-        ]
-    },
-    "professional_raw_metrics_date": "2026-05-21",
-    "professional_score": null,
-    "professional_score_date": "2026-05-21",
-    "professional_subscores": {
-        "analyst_consensus": null,
-        "rating_momentum": 50.0,
-        "institutional_positioning": null,
-        "short_interest": null
-    },
-    "professional_drivers": {
-        "strongest": [],
-        "weakest": []
-    },
-    "news_sentiment_raw_metrics": {
-        "sector": "Basic Materials",
-        "industry": "Building Materials",
-        "market_cap_usd": 34006159360,
-        "current_price": 262.08,
         "earnings": {
             "beat_count_4q": null,
             "miss_count_4q": null,
             "total_quarters_4q": null,
             "avg_surprise_magnitude_4q": null,
             "eps_estimate_revision_90d": null,
-            "trailing_eps": 8.45,
-            "forward_eps": 10.84414
+            "trailing_eps": null,
+            "forward_eps": null
         },
         "price_momentum": {
-            "return_1m": -0.09851403790742552,
-            "return_3m": -0.12287370316802,
-            "return_6m": -0.0761829540910821
+            "return_1m": -0.09976145359001175,
+            "return_3m": -0.13599813299875138,
+            "return_6m": -0.08499850231209588
         },
         "insider_activity": {
             "insider_purchases_count_90d": null,
@@ -147,44 +151,52 @@
             "insider_net_value_90d_usd": null
         },
         "data_quality_flags": [
-            "VMC: earnings_dates fetch failed (['Earnings Date'])"
+            "VMC: failed to fetch .info (Too Many Requests. Rate limited. Try after a while.)",
+            "VMC: sector classification unavailable",
+            "VMC: earnings_dates fetch failed (['Earnings Date'])",
+            "VMC: eps_revisions fetch failed (Too Many Requests. Rate limited. Try after a while.)",
+            "VMC: insider_transactions fetch failed (Too Many Requests. Rate limited. Try after a while.)"
         ]
     },
-    "news_sentiment_raw_metrics_date": "2026-05-21",
+    "news_sentiment_raw_metrics_date": "2026-05-25",
     "news_sentiment_score": null,
-    "news_sentiment_score_date": "2026-05-21",
+    "news_sentiment_score_date": "2026-05-25",
     "news_sentiment_subscores": {
         "earnings_surprise_revisions": null,
-        "price_momentum": 33.64875212965063,
+        "price_momentum": 32.24348152134929,
         "insider_activity": null
     },
     "news_sentiment_drivers": {
         "strongest": [
-            "return_6m (price_momentum): score=37, value=-7.6%",
-            "return_1m (price_momentum): score=34, value=-9.9%",
-            "return_3m (price_momentum): score=30, value=-12.3%"
+            "return_6m (price_momentum): score=36, value=-8.5%",
+            "return_1m (price_momentum): score=33, value=-10.0%",
+            "return_3m (price_momentum): score=27, value=-13.6%"
         ],
         "weakest": [
-            "return_3m (price_momentum): score=30, value=-12.3%",
-            "return_1m (price_momentum): score=34, value=-9.9%",
-            "return_6m (price_momentum): score=37, value=-7.6%"
+            "return_3m (price_momentum): score=27, value=-13.6%",
+            "return_1m (price_momentum): score=33, value=-10.0%",
+            "return_6m (price_momentum): score=36, value=-8.5%"
         ]
     },
-    "composite_score": null,
-    "composite_score_date": "2026-05-21",
-    "composite_rank": null,
+    "composite_score": 57.14678056284262,
+    "composite_score_date": "2026-05-25",
+    "composite_rank": 356,
     "composite_metadata": {
         "scores_used": [
-            "financial"
+            "financial",
+            "professional"
         ],
-        "scores_imputed": [],
-        "imputed_values": {},
-        "imputation_r_squared": null,
+        "scores_imputed": [
+            "news_sentiment"
+        ],
+        "imputed_values": {
+            "news_sentiment": 48.93104527770234
+        },
+        "imputation_r_squared": 0.031937368103860275,
         "weights_applied": {
             "financial": 50,
             "professional": 30,
             "news_sentiment": 20
-        },
-        "skip_reason": "Only 1 of 3 scores populated; need at least 2"
+        }
     }
 }

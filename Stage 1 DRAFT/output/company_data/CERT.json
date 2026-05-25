@@ -5,7 +5,7 @@
     "financial_raw_metrics": {
         "sector": "Healthcare",
         "industry": "Health Information Services",
-        "market_cap_usd": 804269056,
+        "market_cap_usd": 815158528,
         "profitability": {
             "gross_margin_ttm": 0.61591,
             "operating_margin_ttm": 0.03798,
@@ -39,31 +39,31 @@
         },
         "valuation": {
             "pe_trailing": null,
-            "pe_forward": 12.508166,
-            "ps_ratio": 1.9160714,
-            "pb_ratio": 0.7794362,
-            "ev_ebitda": 9.376,
+            "pe_forward": 12.677522,
+            "ps_ratio": 1.9420142,
+            "pb_ratio": 0.7899894,
+            "ev_ebitda": 10.319,
             "peg_ratio": null,
-            "fcf_yield": 0.1449382829419711
+            "fcf_yield": 0.14300209345291914
         },
         "data_quality_flags": [
             "CERT: eps_cagr_3yr approximated by net income CAGR (share count changes not adjusted)"
         ]
     },
-    "financial_raw_metrics_date": "2026-05-21",
-    "financial_score": 54.42335638901198,
-    "financial_score_date": "2026-05-21",
+    "financial_raw_metrics_date": "2026-05-25",
+    "financial_score": 54.44357313250589,
+    "financial_score_date": "2026-05-25",
     "financial_subscores": {
-        "profitability": 46.3809441502735,
-        "returns_on_capital": 45.717625078703634,
+        "profitability": 46.5891081202293,
+        "returns_on_capital": 45.811571569745226,
         "cash_flow_quality": 53.26832994804395,
         "balance_sheet": 71.42262853260961,
         "growth": 40.58844854770524,
-        "valuation": 74.74487659308487
+        "valuation": 74.47684093504775
     },
     "financial_drivers": {
         "strongest": [
-            "fcf_yield (valuation): score=100, value=14.5%",
+            "fcf_yield (valuation): score=100, value=14.3%",
             "fcf_margin_ttm (cash_flow_quality): score=96, value=27.8%",
             "debt_to_equity (balance_sheet): score=92, value=30.0%"
         ],
@@ -76,8 +76,8 @@
     "professional_raw_metrics": {
         "sector": "Healthcare",
         "industry": "Health Information Services",
-        "market_cap_usd": 804269056,
-        "current_price": 5.17,
+        "market_cap_usd": 815158528,
+        "current_price": 5.24,
         "analyst": {
             "recommendation_mean": 2.16667,
             "recommendation_key": "buy",
@@ -85,7 +85,7 @@
             "target_median_price": 8.0,
             "target_high_price": 10.0,
             "target_low_price": 6.0,
-            "upside_to_target": 0.47353578336557056,
+            "upside_to_target": 0.4538511450381678,
             "target_dispersion": 0.525059791183721,
             "num_analysts": 11
         },
@@ -105,92 +105,87 @@
         },
         "data_quality_flags": []
     },
-    "professional_raw_metrics_date": "2026-05-21",
-    "professional_score": 54.342702059904624,
-    "professional_score_date": "2026-05-21",
+    "professional_raw_metrics_date": "2026-05-25",
+    "professional_score": 53.825196387109244,
+    "professional_score_date": "2026-05-25",
     "professional_subscores": {
-        "analyst_consensus": 80.47063566731143,
+        "analyst_consensus": 80.07694290076336,
         "rating_momentum": 52.5,
-        "institutional_positioning": 38.24975580965929,
+        "institutional_positioning": 36.7309029916451,
         "short_interest": 23.270270826205348
     },
     "professional_drivers": {
         "strongest": [
-            "upside_to_target (analyst_consensus): score=99, value=47.4%",
+            "upside_to_target (analyst_consensus): score=98, value=45.4%",
             "recommendation_mean (analyst_consensus): score=68, value=2.17",
             "held_pct_insiders (institutional_positioning): score=68, value=2.6%"
         ],
         "weakest": [
             "short_pct_of_float (short_interest): score=5, value=24.6%",
-            "held_pct_institutions (institutional_positioning): score=26, value=1.1%",
+            "held_pct_institutions (institutional_positioning): score=23, value=1.1%",
             "short_change_pct (short_interest): score=40, value=8.2%"
         ]
     },
     "news_sentiment_raw_metrics": {
-        "sector": null,
-        "industry": null,
-        "market_cap_usd": null,
-        "current_price": null,
+        "sector": "Healthcare",
+        "industry": "Health Information Services",
+        "market_cap_usd": 815158528,
+        "current_price": 5.24,
         "earnings": {
-            "beat_count_4q": 1,
-            "miss_count_4q": 1,
-            "total_quarters_4q": 4,
-            "avg_surprise_magnitude_4q": 0.05757575757575758,
+            "beat_count_4q": null,
+            "miss_count_4q": null,
+            "total_quarters_4q": null,
+            "avg_surprise_magnitude_4q": null,
             "eps_estimate_revision_90d": null,
-            "trailing_eps": null,
-            "forward_eps": null
+            "trailing_eps": -0.1,
+            "forward_eps": 0.41333
         },
         "price_momentum": {
-            "return_1m": null,
-            "return_3m": null,
-            "return_6m": null
+            "return_1m": -0.17868340031226104,
+            "return_3m": -0.21203008648822055,
+            "return_6m": -0.3474470517745409
         },
         "insider_activity": {
-            "insider_purchases_count_90d": null,
-            "insider_sales_count_90d": null,
+            "insider_purchases_count_90d": 0,
+            "insider_sales_count_90d": 0,
             "insider_net_value_90d_usd": null
         },
         "data_quality_flags": [
-            "CERT: failed to fetch .info (Too Many Requests. Rate limited. Try after a while.)",
-            "CERT: sector classification unavailable",
-            "CERT: eps_revisions fetch failed (Too Many Requests. Rate limited. Try after a while.)",
-            "CERT: price momentum fetch failed (Too Many Requests. Rate limited. Try after a while.)",
-            "CERT: insider_transactions fetch failed (Too Many Requests. Rate limited. Try after a while.)"
+            "CERT: earnings_dates fetch failed (['Earnings Date'])"
         ]
     },
-    "news_sentiment_raw_metrics_date": "2026-05-21",
-    "news_sentiment_score": null,
-    "news_sentiment_score_date": "2026-05-21",
+    "news_sentiment_raw_metrics_date": "2026-05-25",
+    "news_sentiment_score": 23.45762440567306,
+    "news_sentiment_score_date": "2026-05-25",
     "news_sentiment_subscores": {
-        "earnings_surprise_revisions": 49.12587412587413,
-        "price_momentum": null,
-        "insider_activity": null
+        "earnings_surprise_revisions": null,
+        "price_momentum": 10.18643660850959,
+        "insider_activity": 50.0
     },
     "news_sentiment_drivers": {
         "strongest": [
-            "avg_surprise_magnitude_4q (earnings_surprise_revisions): score=77, value=5.8%",
-            "beat_rate_4q (earnings_surprise_revisions): score=25, value=25.0%"
+            "insider_activity_summary (insider_activity): score=50, value=no activity in 90d",
+            "return_1m (price_momentum): score=20, value=-17.9%",
+            "return_3m (price_momentum): score=15, value=-21.2%"
         ],
         "weakest": [
-            "beat_rate_4q (earnings_surprise_revisions): score=25, value=25.0%",
-            "avg_surprise_magnitude_4q (earnings_surprise_revisions): score=77, value=5.8%"
+            "return_6m (price_momentum): score=0, value=-34.7%",
+            "return_3m (price_momentum): score=15, value=-21.2%",
+            "return_1m (price_momentum): score=20, value=-17.9%"
         ]
     },
-    "composite_score": 53.824665736789974,
-    "composite_score_date": "2026-05-21",
-    "composite_rank": 504,
+    "composite_score": 48.06087036352032,
+    "composite_score_date": "2026-05-25",
+    "composite_rank": 827,
     "composite_metadata": {
         "scores_used": [
             "financial",
-            "professional"
-        ],
-        "scores_imputed": [
+            "professional",
             "news_sentiment"
         ],
-        "imputed_values": {
-            "news_sentiment": 51.55088462156299
-        },
-        "imputation_r_squared": 0.05693184104207816,
+        "scores_imputed": [],
+        "imputed_values": {},
+        "imputation_r_squared": null,
         "weights_applied": {
             "financial": 50,
             "professional": 30,

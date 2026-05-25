@@ -5,7 +5,7 @@
     "financial_raw_metrics": {
         "sector": "Industrials",
         "industry": "Conglomerates",
-        "market_cap_usd": 9825249280,
+        "market_cap_usd": 9967551488,
         "profitability": {
             "gross_margin_ttm": 0.3043,
             "operating_margin_ttm": 0.15016,
@@ -38,28 +38,28 @@
             "fcf_cagr_3yr": 0.10160178435949208
         },
         "valuation": {
-            "pe_trailing": 28.163607,
-            "pe_forward": 19.949514,
-            "ps_ratio": 2.3595786,
-            "pb_ratio": 6.0551314,
-            "ev_ebitda": 16.516,
+            "pe_trailing": 28.571508,
+            "pe_forward": 20.23845,
+            "ps_ratio": 2.393753,
+            "pb_ratio": 6.1428294,
+            "ev_ebitda": 16.822,
             "peg_ratio": 1.59,
-            "fcf_yield": 0.01905498727458241
+            "fcf_yield": 0.01878294787093855
         },
         "data_quality_flags": [
             "VMI: eps_cagr_3yr approximated by net income CAGR (share count changes not adjusted)"
         ]
     },
-    "financial_raw_metrics_date": "2026-05-21",
-    "financial_score": 55.69466667194884,
-    "financial_score_date": "2026-05-21",
+    "financial_raw_metrics_date": "2026-05-25",
+    "financial_score": 55.6356404638375,
+    "financial_score_date": "2026-05-25",
     "financial_subscores": {
-        "profitability": 53.96236766849855,
-        "returns_on_capital": 55.81817908267108,
+        "profitability": 53.9988160218414,
+        "returns_on_capital": 55.844707489277525,
         "cash_flow_quality": 41.90524466101261,
         "balance_sheet": 88.36928198376131,
         "growth": 49.149671506294546,
-        "valuation": 45.49951732703093
+        "valuation": 45.022040259689646
     },
     "financial_drivers": {
         "strongest": [
@@ -74,117 +74,125 @@
         ]
     },
     "professional_raw_metrics": {
-        "sector": null,
-        "industry": null,
-        "market_cap_usd": null,
-        "current_price": null,
+        "sector": "Industrials",
+        "industry": "Conglomerates",
+        "market_cap_usd": 9967551488,
+        "current_price": 513.43,
         "analyst": {
             "recommendation_mean": null,
-            "recommendation_key": null,
-            "target_mean_price": null,
-            "target_median_price": null,
-            "target_high_price": null,
-            "target_low_price": null,
-            "upside_to_target": null,
-            "target_dispersion": null,
-            "num_analysts": null
+            "recommendation_key": "none",
+            "target_mean_price": 527.0,
+            "target_median_price": 520.0,
+            "target_high_price": 541.0,
+            "target_low_price": 520.0,
+            "upside_to_target": 0.026430087840601545,
+            "target_dispersion": 0.03984819734345351,
+            "num_analysts": 3
         },
         "rating_momentum": {
             "upgrades_12m": 0,
             "downgrades_12m": 0,
-            "total_actions_12m": 0
+            "total_actions_12m": 12
         },
         "institutional": {
-            "held_pct_institutions": null,
-            "held_pct_insiders": null
+            "held_pct_institutions": 0.95564,
+            "held_pct_insiders": 0.0256
         },
         "short_interest": {
-            "short_pct_of_float": null,
-            "short_ratio": null,
-            "short_change_pct": null
+            "short_pct_of_float": 0.0221,
+            "short_ratio": 1.65,
+            "short_change_pct": -0.11761260893405043
         },
-        "data_quality_flags": [
-            "VMI: failed to fetch .info (Too Many Requests. Rate limited. Try after a while.)",
-            "VMI: sector classification unavailable",
-            "VMI: upgrades/downgrades fetch failed (Too Many Requests. Rate limited. Try after a while.)"
-        ]
+        "data_quality_flags": []
     },
-    "professional_raw_metrics_date": "2026-05-21",
-    "professional_score": null,
-    "professional_score_date": "2026-05-21",
+    "professional_raw_metrics_date": "2026-05-25",
+    "professional_score": 49.332004520290695,
+    "professional_score_date": "2026-05-25",
     "professional_subscores": {
-        "analyst_consensus": null,
-        "rating_momentum": 50.0,
-        "institutional_positioning": null,
-        "short_interest": null
+        "analyst_consensus": 23.050318446526322,
+        "rating_momentum": 52.5,
+        "institutional_positioning": 70.63970830312844,
+        "short_interest": 69.86310658816247
     },
     "professional_drivers": {
-        "strongest": [],
-        "weakest": []
+        "strongest": [
+            "short_ratio (short_interest): score=84, value=1.65",
+            "held_pct_institutions (institutional_positioning): score=72, value=95.6%",
+            "held_pct_insiders (institutional_positioning): score=68, value=2.6%"
+        ],
+        "weakest": [
+            "upside_to_target (analyst_consensus): score=33, value=2.6%",
+            "upgrades_12m (rating_momentum): score=52, value=0.00",
+            "downgrades_12m (rating_momentum): score=52, value=0.00"
+        ]
     },
     "news_sentiment_raw_metrics": {
-        "sector": "Industrials",
-        "industry": "Conglomerates",
-        "market_cap_usd": 9825249280,
-        "current_price": 506.1,
+        "sector": null,
+        "industry": null,
+        "market_cap_usd": null,
+        "current_price": null,
         "earnings": {
             "beat_count_4q": null,
             "miss_count_4q": null,
             "total_quarters_4q": null,
             "avg_surprise_magnitude_4q": null,
             "eps_estimate_revision_90d": null,
-            "trailing_eps": 17.97,
-            "forward_eps": 25.36904
+            "trailing_eps": null,
+            "forward_eps": null
         },
         "price_momentum": {
-            "return_1m": 0.10316719079224178,
-            "return_3m": 0.1145301084496943,
-            "return_6m": 0.29835939282330465
+            "return_1m": 0.10001069668083824,
+            "return_3m": 0.10921778074083607,
+            "return_6m": 0.3587756987298039
         },
         "insider_activity": {
-            "insider_purchases_count_90d": 0,
-            "insider_sales_count_90d": 2,
-            "insider_net_value_90d_usd": -8831197.0
+            "insider_purchases_count_90d": null,
+            "insider_sales_count_90d": null,
+            "insider_net_value_90d_usd": null
         },
         "data_quality_flags": [
-            "VMI: earnings_dates fetch failed (['Earnings Date'])"
+            "VMI: failed to fetch .info (Too Many Requests. Rate limited. Try after a while.)",
+            "VMI: sector classification unavailable",
+            "VMI: earnings_dates fetch failed (['Earnings Date'])",
+            "VMI: eps_revisions fetch failed (Too Many Requests. Rate limited. Try after a while.)",
+            "VMI: insider_transactions fetch failed (Too Many Requests. Rate limited. Try after a while.)"
         ]
     },
-    "news_sentiment_raw_metrics_date": "2026-05-21",
-    "news_sentiment_score": 60.33696530659906,
-    "news_sentiment_score_date": "2026-05-21",
+    "news_sentiment_raw_metrics_date": "2026-05-25",
+    "news_sentiment_score": null,
+    "news_sentiment_score_date": "2026-05-25",
     "news_sentiment_subscores": {
         "earnings_surprise_revisions": null,
-        "price_momentum": 80.87018213079588,
-        "insider_activity": 19.270531658205417
+        "price_momentum": 80.53814957158369,
+        "insider_activity": null
     },
     "news_sentiment_drivers": {
         "strongest": [
-            "return_6m (price_momentum): score=100, value=29.8%",
-            "return_3m (price_momentum): score=69, value=11.5%",
-            "return_1m (price_momentum): score=67, value=10.3%"
+            "return_6m (price_momentum): score=100, value=35.9%",
+            "return_3m (price_momentum): score=68, value=10.9%",
+            "return_1m (price_momentum): score=67, value=10.0%"
         ],
         "weakest": [
-            "insider_count_ratio_90d (insider_activity): score=0, value=-1.00",
-            "net_insider_value_pct_mcap_90d (insider_activity): score=28, value=-0.1%",
-            "return_1m (price_momentum): score=67, value=10.3%"
+            "return_1m (price_momentum): score=67, value=10.0%",
+            "return_3m (price_momentum): score=68, value=10.9%",
+            "return_6m (price_momentum): score=100, value=35.9%"
         ]
     },
-    "composite_score": 56.9542459221281,
-    "composite_score_date": "2026-05-21",
-    "composite_rank": 328,
+    "composite_score": 53.151427486547746,
+    "composite_score_date": "2026-05-25",
+    "composite_rank": 602,
     "composite_metadata": {
         "scores_used": [
             "financial",
-            "news_sentiment"
-        ],
-        "scores_imputed": [
             "professional"
         ],
+        "scores_imputed": [
+            "news_sentiment"
+        ],
         "imputed_values": {
-            "professional": 56.7983984161129
+            "news_sentiment": 52.67002949270893
         },
-        "imputation_r_squared": 0.04516719672877956,
+        "imputation_r_squared": 0.031937368103860275,
         "weights_applied": {
             "financial": 50,
             "professional": 30,

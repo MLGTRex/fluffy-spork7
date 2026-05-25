@@ -5,7 +5,7 @@
     "financial_raw_metrics": {
         "sector": "Basic Materials",
         "industry": "Specialty Chemicals",
-        "market_cap_usd": 8369273856,
+        "market_cap_usd": 8475619328,
         "profitability": {
             "gross_margin_ttm": 0.19829,
             "operating_margin_ttm": 0.09784,
@@ -38,34 +38,34 @@
             "fcf_cagr_3yr": 0.05217543374969025
         },
         "valuation": {
-            "pe_trailing": 21.15318,
-            "pe_forward": 10.439042,
-            "ps_ratio": 0.96877813,
-            "pb_ratio": 1.3921595,
-            "ev_ebitda": 9.445,
-            "peg_ratio": 0.6023,
-            "fcf_yield": 0.051856350678364034
+            "pe_trailing": 21.421967,
+            "pe_forward": 10.571688,
+            "ps_ratio": 0.98108804,
+            "pb_ratio": 1.4098492,
+            "ev_ebitda": 9.735,
+            "peg_ratio": 0.6319,
+            "fcf_yield": 0.05120569756669468
         },
         "data_quality_flags": [
             "EMN: eps_cagr_3yr approximated by net income CAGR (share count changes not adjusted)"
         ]
     },
-    "financial_raw_metrics_date": "2026-05-21",
-    "financial_score": 47.015851401083516,
-    "financial_score_date": "2026-05-21",
+    "financial_raw_metrics_date": "2026-05-25",
+    "financial_score": 46.92665097103455,
+    "financial_score_date": "2026-05-25",
     "financial_subscores": {
         "profitability": 37.8855069984273,
         "returns_on_capital": 43.53216650736391,
         "cash_flow_quality": 55.25299978035764,
         "balance_sheet": 56.69688977683564,
         "growth": 14.56025398075053,
-        "valuation": 78.37196779489136
+        "valuation": 77.77729826123158
     },
     "financial_drivers": {
         "strongest": [
             "fcf_to_net_income_ttm (cash_flow_quality): score=95, value=1.09",
-            "peg_ratio (valuation): score=92, value=60.2%",
-            "pe_forward (valuation): score=89, value=10.44"
+            "peg_ratio (valuation): score=92, value=63.2%",
+            "pe_forward (valuation): score=88, value=10.57"
         ],
         "weakest": [
             "eps_growth_1yr (growth): score=0, value=-40.8%",
@@ -76,8 +76,8 @@
     "professional_raw_metrics": {
         "sector": "Basic Materials",
         "industry": "Specialty Chemicals",
-        "market_cap_usd": 8369273856,
-        "current_price": 73.19,
+        "market_cap_usd": 8475619328,
+        "current_price": 74.12,
         "analyst": {
             "recommendation_mean": 2.0,
             "recommendation_key": "buy",
@@ -85,7 +85,7 @@
             "target_median_price": 83.0,
             "target_high_price": 100.0,
             "target_low_price": 74.0,
-            "upside_to_target": 0.15225208361798068,
+            "upside_to_target": 0.1377945223961144,
             "target_dispersion": 0.3083004074427038,
             "num_analysts": 15
         },
@@ -95,7 +95,7 @@
             "total_actions_12m": 36
         },
         "institutional": {
-            "held_pct_institutions": 0.96989,
+            "held_pct_institutions": 0.96987,
             "held_pct_insiders": 0.00931
         },
         "short_interest": {
@@ -105,14 +105,14 @@
         },
         "data_quality_flags": []
     },
-    "professional_raw_metrics_date": "2026-05-21",
-    "professional_score": 62.770969306739225,
-    "professional_score_date": "2026-05-21",
+    "professional_raw_metrics_date": "2026-05-25",
+    "professional_score": 62.315792775248404,
+    "professional_score_date": "2026-05-25",
     "professional_subscores": {
-        "analyst_consensus": 71.15013890786538,
+        "analyst_consensus": 69.77945223961144,
         "rating_momentum": 50.75,
-        "institutional_positioning": 68.14356748536804,
-        "short_interest": 54.3001921176289
+        "institutional_positioning": 67.98249162879486,
+        "short_interest": 54.7324105612379
     },
     "professional_drivers": {
         "strongest": [
@@ -129,52 +129,54 @@
     "news_sentiment_raw_metrics": {
         "sector": "Basic Materials",
         "industry": "Specialty Chemicals",
-        "market_cap_usd": 8369273856,
-        "current_price": 73.19,
+        "market_cap_usd": 8475619328,
+        "current_price": 74.12,
         "earnings": {
-            "beat_count_4q": 2,
-            "miss_count_4q": 2,
-            "total_quarters_4q": 4,
-            "avg_surprise_magnitude_4q": -0.010346689474047939,
+            "beat_count_4q": null,
+            "miss_count_4q": null,
+            "total_quarters_4q": null,
+            "avg_surprise_magnitude_4q": null,
             "eps_estimate_revision_90d": null,
             "trailing_eps": 3.46,
             "forward_eps": 7.01118
         },
         "price_momentum": {
-            "return_1m": 0.010074536637466951,
-            "return_3m": -0.0771065747630321,
-            "return_6m": 0.3063959881387265
+            "return_1m": 0.0219219805247947,
+            "return_3m": -0.03854614377605009,
+            "return_6m": 0.34810855020547615
         },
         "insider_activity": {
             "insider_purchases_count_90d": 0,
             "insider_sales_count_90d": 0,
             "insider_net_value_90d_usd": null
         },
-        "data_quality_flags": []
+        "data_quality_flags": [
+            "EMN: earnings_dates fetch failed (['Earnings Date'])"
+        ]
     },
-    "news_sentiment_raw_metrics_date": "2026-05-21",
-    "news_sentiment_score": 55.60469231012144,
-    "news_sentiment_score_date": "2026-05-21",
+    "news_sentiment_raw_metrics_date": "2026-05-25",
+    "news_sentiment_score": 62.44326053439791,
+    "news_sentiment_score_date": "2026-05-25",
     "news_sentiment_subscores": {
-        "earnings_surprise_revisions": 48.089841943252694,
-        "price_momentum": 65.92188883205091,
+        "earnings_surprise_revisions": null,
+        "price_momentum": 68.66489080159685,
         "insider_activity": 50.0
     },
     "news_sentiment_drivers": {
         "strongest": [
-            "return_6m (price_momentum): score=100, value=30.6%",
-            "return_1m (price_momentum): score=52, value=1.0%",
+            "return_6m (price_momentum): score=100, value=34.8%",
+            "return_1m (price_momentum): score=54, value=2.2%",
             "insider_activity_summary (insider_activity): score=50, value=no activity in 90d"
         ],
         "weakest": [
-            "return_3m (price_momentum): score=37, value=-7.7%",
-            "avg_surprise_magnitude_4q (earnings_surprise_revisions): score=46, value=-1.0%",
-            "beat_rate_4q (earnings_surprise_revisions): score=50, value=50.0%"
+            "return_3m (price_momentum): score=44, value=-3.9%",
+            "insider_activity_summary (insider_activity): score=50, value=no activity in 90d",
+            "return_1m (price_momentum): score=54, value=2.2%"
         ]
     },
-    "composite_score": 53.460154954587814,
-    "composite_score_date": "2026-05-21",
-    "composite_rank": 523,
+    "composite_score": 54.64671542497138,
+    "composite_score_date": "2026-05-25",
+    "composite_rank": 510,
     "composite_metadata": {
         "scores_used": [
             "financial",

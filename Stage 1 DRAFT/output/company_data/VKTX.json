@@ -5,7 +5,7 @@
     "financial_raw_metrics": {
         "sector": "Healthcare",
         "industry": "Biotechnology",
-        "market_cap_usd": 3562120960,
+        "market_cap_usd": 3586503168,
         "profitability": {
             "gross_margin_ttm": 0.0,
             "operating_margin_ttm": 0.0,
@@ -39,23 +39,23 @@
         },
         "valuation": {
             "pe_trailing": null,
-            "pe_forward": -6.75765,
+            "pe_forward": -6.8039045,
             "ps_ratio": null,
-            "pb_ratio": 5.5110474,
+            "pb_ratio": 5.5487695,
             "ev_ebitda": null,
             "peg_ratio": null,
-            "fcf_yield": -0.04978908745423401
+            "fcf_yield": -0.0494506051416375
         },
         "data_quality_flags": [
             "VKTX: eps_cagr_3yr approximated by net income CAGR (share count changes not adjusted)"
         ]
     },
-    "financial_raw_metrics_date": "2026-05-21",
+    "financial_raw_metrics_date": "2026-05-25",
     "financial_score": null,
-    "financial_score_date": "2026-05-21",
+    "financial_score_date": "2026-05-25",
     "financial_subscores": {
-        "profitability": 45.28829868151368,
-        "returns_on_capital": 34.090838593123834,
+        "profitability": 46.00160895333651,
+        "returns_on_capital": 33.929828865648744,
         "cash_flow_quality": null,
         "balance_sheet": null,
         "growth": null,
@@ -68,114 +68,122 @@
             "net_margin_ttm (profitability): score=54, value=0.00"
         ],
         "weakest": [
-            "fcf_yield (valuation): score=0, value=-5.0%",
-            "gross_margin_ttm (profitability): score=26, value=0.00",
-            "roa_ttm (returns_on_capital): score=28, value=-42.5%"
+            "fcf_yield (valuation): score=0, value=-4.9%",
+            "roa_ttm (returns_on_capital): score=28, value=-42.5%",
+            "gross_margin_ttm (profitability): score=28, value=0.00"
         ]
     },
     "professional_raw_metrics": {
-        "sector": null,
-        "industry": null,
-        "market_cap_usd": null,
-        "current_price": null,
+        "sector": "Healthcare",
+        "industry": "Biotechnology",
+        "market_cap_usd": 3586503168,
+        "current_price": 30.89,
         "analyst": {
-            "recommendation_mean": null,
-            "recommendation_key": null,
-            "target_mean_price": null,
-            "target_median_price": null,
-            "target_high_price": null,
-            "target_low_price": null,
-            "upside_to_target": null,
-            "target_dispersion": null,
-            "num_analysts": null
+            "recommendation_mean": 1.47368,
+            "recommendation_key": "strong_buy",
+            "target_mean_price": 92.33333,
+            "target_median_price": 97.5,
+            "target_high_price": 125.0,
+            "target_low_price": 34.0,
+            "upside_to_target": 1.989101003561023,
+            "target_dispersion": 0.9855596023667726,
+            "num_analysts": 18
         },
         "rating_momentum": {
             "upgrades_12m": 0,
             "downgrades_12m": 0,
-            "total_actions_12m": 0
+            "total_actions_12m": 13
         },
         "institutional": {
-            "held_pct_institutions": null,
-            "held_pct_insiders": null
+            "held_pct_institutions": 0.64476997,
+            "held_pct_insiders": 0.02782
         },
         "short_interest": {
-            "short_pct_of_float": null,
-            "short_ratio": null,
-            "short_change_pct": null
+            "short_pct_of_float": 0.2062,
+            "short_ratio": 9.42,
+            "short_change_pct": -0.056393771362957465
         },
-        "data_quality_flags": [
-            "VKTX: failed to fetch .info (Too Many Requests. Rate limited. Try after a while.)",
-            "VKTX: sector classification unavailable",
-            "VKTX: upgrades/downgrades fetch failed (Too Many Requests. Rate limited. Try after a while.)"
-        ]
+        "data_quality_flags": []
     },
-    "professional_raw_metrics_date": "2026-05-21",
-    "professional_score": null,
-    "professional_score_date": "2026-05-21",
+    "professional_raw_metrics_date": "2026-05-25",
+    "professional_score": 66.7460453042468,
+    "professional_score_date": "2026-05-25",
     "professional_subscores": {
-        "analyst_consensus": null,
-        "rating_momentum": 50.0,
-        "institutional_positioning": null,
-        "short_interest": null
+        "analyst_consensus": 94.31584,
+        "rating_momentum": 52.5,
+        "institutional_positioning": 65.69702662476848,
+        "short_interest": 27.908297653697957
     },
     "professional_drivers": {
-        "strongest": [],
-        "weakest": []
+        "strongest": [
+            "upside_to_target (analyst_consensus): score=100, value=1.99",
+            "recommendation_mean (analyst_consensus): score=91, value=1.47",
+            "held_pct_insiders (institutional_positioning): score=69, value=2.8%"
+        ],
+        "weakest": [
+            "short_pct_of_float (short_interest): score=18, value=20.6%",
+            "short_ratio (short_interest): score=23, value=9.42",
+            "upgrades_12m (rating_momentum): score=52, value=0.00"
+        ]
     },
     "news_sentiment_raw_metrics": {
-        "sector": "Healthcare",
-        "industry": "Biotechnology",
-        "market_cap_usd": 3562120960,
-        "current_price": 30.68,
+        "sector": null,
+        "industry": null,
+        "market_cap_usd": null,
+        "current_price": null,
         "earnings": {
             "beat_count_4q": null,
             "miss_count_4q": null,
             "total_quarters_4q": null,
             "avg_surprise_magnitude_4q": null,
             "eps_estimate_revision_90d": null,
-            "trailing_eps": -4.15,
-            "forward_eps": -4.54004
+            "trailing_eps": null,
+            "forward_eps": null
         },
         "price_momentum": {
-            "return_1m": -0.0923076718191039,
-            "return_3m": 0.017578785677462714,
-            "return_6m": -0.14872366202460502
+            "return_1m": -0.09810220760150548,
+            "return_3m": -0.006752443384097632,
+            "return_6m": -0.09862856793016221
         },
         "insider_activity": {
-            "insider_purchases_count_90d": 1,
-            "insider_sales_count_90d": 0,
-            "insider_net_value_90d_usd": 149912.0
+            "insider_purchases_count_90d": null,
+            "insider_sales_count_90d": null,
+            "insider_net_value_90d_usd": null
         },
         "data_quality_flags": [
-            "VKTX: earnings_dates fetch failed (['Earnings Date'])"
+            "VKTX: failed to fetch .info (Too Many Requests. Rate limited. Try after a while.)",
+            "VKTX: sector classification unavailable",
+            "VKTX: earnings_dates fetch failed (['Earnings Date'])",
+            "VKTX: eps_revisions fetch failed (Too Many Requests. Rate limited. Try after a while.)",
+            "VKTX: insider_transactions fetch failed (Too Many Requests. Rate limited. Try after a while.)"
         ]
     },
-    "news_sentiment_raw_metrics_date": "2026-05-21",
-    "news_sentiment_score": 46.75507297522275,
-    "news_sentiment_score_date": "2026-05-21",
+    "news_sentiment_raw_metrics_date": "2026-05-25",
+    "news_sentiment_score": null,
+    "news_sentiment_score_date": "2026-05-25",
     "news_sentiment_subscores": {
         "earnings_surprise_revisions": null,
-        "price_momentum": 37.26436537041566,
-        "insider_activity": 65.73648818483693
+        "price_momentum": 38.943277623854094,
+        "insider_activity": null
     },
     "news_sentiment_drivers": {
         "strongest": [
-            "insider_count_ratio_90d (insider_activity): score=100, value=1.00",
-            "return_3m (price_momentum): score=53, value=1.8%",
-            "net_insider_value_pct_mcap_90d (insider_activity): score=51, value=0.0%"
+            "return_3m (price_momentum): score=49, value=-0.7%",
+            "return_1m (price_momentum): score=34, value=-9.8%",
+            "return_6m (price_momentum): score=34, value=-9.9%"
         ],
         "weakest": [
-            "return_6m (price_momentum): score=25, value=-14.9%",
-            "return_1m (price_momentum): score=35, value=-9.2%",
-            "net_insider_value_pct_mcap_90d (insider_activity): score=51, value=0.0%"
+            "return_6m (price_momentum): score=34, value=-9.9%",
+            "return_1m (price_momentum): score=34, value=-9.8%",
+            "return_3m (price_momentum): score=49, value=-0.7%"
         ]
     },
     "composite_score": null,
-    "composite_score_date": "2026-05-21",
+    "composite_score_date": "2026-05-25",
     "composite_rank": null,
     "composite_metadata": {
         "scores_used": [
-            "news_sentiment"
+            "professional"
         ],
         "scores_imputed": [],
         "imputed_values": {},

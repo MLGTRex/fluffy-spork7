@@ -5,7 +5,7 @@
     "financial_raw_metrics": {
         "sector": "Industrials",
         "industry": "Marine Shipping",
-        "market_cap_usd": 7786592256,
+        "market_cap_usd": 7664676352,
         "profitability": {
             "gross_margin_ttm": 0.33887002,
             "operating_margin_ttm": 0.13315,
@@ -20,7 +20,7 @@
         "cash_flow": {
             "fcf_margin_ttm": 0.10372966710853129,
             "fcf_to_net_income_ttm": 0.9868922658310509,
-            "ocf_cagr_3yr": null
+            "ocf_cagr_3yr": 0.3159020047272174
         },
         "balance_sheet": {
             "debt_to_equity": 0.34684,
@@ -35,37 +35,37 @@
             "revenue_cagr_3yr": 0.06502189259126423,
             "eps_growth_1yr": 0.128,
             "eps_cagr_3yr": 0.4259427476976019,
-            "fcf_cagr_3yr": null
+            "fcf_cagr_3yr": 0.4946095776985253
         },
         "valuation": {
-            "pe_trailing": 22.403076,
-            "pe_forward": 17.606497,
-            "ps_ratio": 2.2751248,
-            "pb_ratio": 2.2822304,
-            "ev_ebitda": 11.639,
+            "pe_trailing": 22.086287,
+            "pe_forward": 17.33083,
+            "ps_ratio": 2.239503,
+            "pb_ratio": 2.2464972,
+            "ev_ebitda": 11.272,
             "peg_ratio": 2.63,
-            "fcf_yield": 0.045592956241729786
+            "fcf_yield": 0.046318167094865484
         },
         "data_quality_flags": [
             "KEX: eps_cagr_3yr approximated by net income CAGR (share count changes not adjusted)"
         ]
     },
-    "financial_raw_metrics_date": "2026-05-21",
-    "financial_score": 61.92850364562296,
-    "financial_score_date": "2026-05-21",
+    "financial_raw_metrics_date": "2026-05-25",
+    "financial_score": 63.55564115030593,
+    "financial_score_date": "2026-05-25",
     "financial_subscores": {
-        "profitability": 56.32735832791528,
-        "returns_on_capital": 44.183602635317314,
-        "cash_flow_quality": 70.2281424095056,
+        "profitability": 56.36889819301072,
+        "returns_on_capital": 44.19779256258032,
+        "cash_flow_quality": 74.69392104807976,
         "balance_sheet": 83.97998597855761,
-        "growth": 70.93686061490146,
-        "valuation": 53.6970873502116
+        "growth": 76.74948849192117,
+        "valuation": 54.19195780935964
     },
     "financial_drivers": {
         "strongest": [
+            "fcf_cagr_3yr (growth): score=100, value=49.5%",
             "eps_cagr_3yr (growth): score=100, value=42.6%",
-            "interest_coverage (balance_sheet): score=96, value=11.18",
-            "fcf_to_net_income_ttm (cash_flow_quality): score=94, value=98.7%"
+            "ocf_cagr_3yr (cash_flow_quality): score=100, value=31.6%"
         ],
         "weakest": [
             "peg_ratio (valuation): score=18, value=2.63",
@@ -76,8 +76,8 @@
     "professional_raw_metrics": {
         "sector": "Industrials",
         "industry": "Marine Shipping",
-        "market_cap_usd": 7786592256,
-        "current_price": 145.62,
+        "market_cap_usd": 7664676352,
+        "current_price": 143.34,
         "analyst": {
             "recommendation_mean": null,
             "recommendation_key": "none",
@@ -85,7 +85,7 @@
             "target_median_price": 167.5,
             "target_high_price": 175.0,
             "target_low_price": 158.0,
-            "upside_to_target": 0.14224234308474099,
+            "upside_to_target": 0.16041112041300395,
             "target_dispersion": 0.10220441086581987,
             "num_analysts": 6
         },
@@ -105,87 +105,94 @@
         },
         "data_quality_flags": []
     },
-    "professional_raw_metrics_date": "2026-05-21",
-    "professional_score": 53.93470193792109,
-    "professional_score_date": "2026-05-21",
+    "professional_raw_metrics_date": "2026-05-25",
+    "professional_score": 55.370175117708044,
+    "professional_score_date": "2026-05-25",
     "professional_subscores": {
-        "analyst_consensus": 63.060585771185245,
+        "analyst_consensus": 66.73518673550066,
         "rating_momentum": 56.4375,
-        "institutional_positioning": 28.86508089625304,
-        "short_interest": 70.25234462628663
+        "institutional_positioning": 29.18054542892527,
+        "short_interest": 70.72232268700996
     },
     "professional_drivers": {
         "strongest": [
             "short_change_pct (short_interest): score=83, value=-24.0%",
             "short_ratio (short_interest): score=82, value=1.80",
-            "upside_to_target (analyst_consensus): score=63, value=14.2%"
+            "upside_to_target (analyst_consensus): score=67, value=16.0%"
         ],
         "weakest": [
-            "held_pct_institutions (institutional_positioning): score=16, value=1.0%",
+            "held_pct_institutions (institutional_positioning): score=17, value=1.0%",
             "upgrades_12m (rating_momentum): score=56, value=1.00",
             "downgrades_12m (rating_momentum): score=56, value=0.00"
         ]
     },
     "news_sentiment_raw_metrics": {
-        "sector": "Industrials",
-        "industry": "Marine Shipping",
-        "market_cap_usd": 7786592256,
-        "current_price": 145.62,
+        "sector": null,
+        "industry": null,
+        "market_cap_usd": null,
+        "current_price": null,
         "earnings": {
             "beat_count_4q": null,
             "miss_count_4q": null,
             "total_quarters_4q": null,
             "avg_surprise_magnitude_4q": null,
             "eps_estimate_revision_90d": null,
-            "trailing_eps": 6.5,
-            "forward_eps": 8.27081
+            "trailing_eps": null,
+            "forward_eps": null
         },
         "price_momentum": {
-            "return_1m": 0.013290607451822724,
-            "return_3m": 0.13943659250951082,
-            "return_6m": 0.3492078160683263
+            "return_1m": -0.03331536607819276,
+            "return_3m": 0.11696403251514376,
+            "return_6m": 0.35430840228189836
         },
         "insider_activity": {
-            "insider_purchases_count_90d": 0,
-            "insider_sales_count_90d": 7,
-            "insider_net_value_90d_usd": -8912326.0
+            "insider_purchases_count_90d": null,
+            "insider_sales_count_90d": null,
+            "insider_net_value_90d_usd": null
         },
         "data_quality_flags": [
-            "KEX: earnings_dates fetch failed (['Earnings Date'])"
+            "KEX: failed to fetch .info (Too Many Requests. Rate limited. Try after a while.)",
+            "KEX: sector classification unavailable",
+            "KEX: earnings_dates fetch failed (['Earnings Date'])",
+            "KEX: eps_revisions fetch failed (Too Many Requests. Rate limited. Try after a while.)",
+            "KEX: insider_transactions fetch failed (Too Many Requests. Rate limited. Try after a while.)"
         ]
     },
-    "news_sentiment_raw_metrics_date": "2026-05-21",
-    "news_sentiment_score": 58.0808815549755,
-    "news_sentiment_score_date": "2026-05-21",
+    "news_sentiment_raw_metrics_date": "2026-05-25",
+    "news_sentiment_score": null,
+    "news_sentiment_score_date": "2026-05-25",
     "news_sentiment_subscores": {
         "earnings_surprise_revisions": null,
-        "price_momentum": 78.68757654021408,
-        "insider_activity": 16.867491584498346
+        "price_momentum": 75.43476164345869,
+        "insider_activity": null
     },
     "news_sentiment_drivers": {
         "strongest": [
-            "return_6m (price_momentum): score=100, value=34.9%",
-            "return_3m (price_momentum): score=73, value=13.9%",
-            "return_1m (price_momentum): score=52, value=1.3%"
+            "return_6m (price_momentum): score=100, value=35.4%",
+            "return_3m (price_momentum): score=69, value=11.7%",
+            "return_1m (price_momentum): score=44, value=-3.3%"
         ],
         "weakest": [
-            "insider_count_ratio_90d (insider_activity): score=0, value=-1.00",
-            "net_insider_value_pct_mcap_90d (insider_activity): score=24, value=-0.1%",
-            "return_1m (price_momentum): score=52, value=1.3%"
+            "return_1m (price_momentum): score=44, value=-3.3%",
+            "return_3m (price_momentum): score=69, value=11.7%",
+            "return_6m (price_momentum): score=100, value=35.4%"
         ]
     },
-    "composite_score": 58.7608387151829,
-    "composite_score_date": "2026-05-21",
-    "composite_rank": 241,
+    "composite_score": 58.481275258426066,
+    "composite_score_date": "2026-05-25",
+    "composite_rank": 290,
     "composite_metadata": {
         "scores_used": [
             "financial",
-            "professional",
+            "professional"
+        ],
+        "scores_imputed": [
             "news_sentiment"
         ],
-        "scores_imputed": [],
-        "imputed_values": {},
-        "imputation_r_squared": null,
+        "imputed_values": {
+            "news_sentiment": 50.46201073980349
+        },
+        "imputation_r_squared": 0.031937368103860275,
         "weights_applied": {
             "financial": 50,
             "professional": 30,

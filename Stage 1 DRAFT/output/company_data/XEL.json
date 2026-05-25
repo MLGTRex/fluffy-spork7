@@ -5,7 +5,7 @@
     "financial_raw_metrics": {
         "sector": "Utilities",
         "industry": "Utilities - Regulated Electric",
-        "market_cap_usd": 50066415616,
+        "market_cap_usd": 50615779328,
         "profitability": {
             "gross_margin_ttm": 0.45928,
             "operating_margin_ttm": 0.18155001,
@@ -38,34 +38,34 @@
             "fcf_cagr_3yr": null
         },
         "valuation": {
-            "pe_trailing": 23.11239,
-            "pe_forward": 17.694622,
-            "ps_ratio": 3.386527,
-            "pb_ratio": 2.1183865,
-            "ev_ebitda": 14.411,
-            "peg_ratio": 2.1763,
-            "fcf_yield": -0.14923427459448987
+            "pe_trailing": 23.365995,
+            "pe_forward": 17.890833,
+            "ps_ratio": 3.4236863,
+            "pb_ratio": 2.141631,
+            "ev_ebitda": 14.536,
+            "peg_ratio": 2.2096,
+            "fcf_yield": -0.14761454461823909
         },
         "data_quality_flags": [
             "XEL: eps_cagr_3yr approximated by net income CAGR (share count changes not adjusted)"
         ]
     },
-    "financial_raw_metrics_date": "2026-05-21",
-    "financial_score": 29.797062320766276,
-    "financial_score_date": "2026-05-21",
+    "financial_raw_metrics_date": "2026-05-25",
+    "financial_score": 29.724148663838996,
+    "financial_score_date": "2026-05-25",
     "financial_subscores": {
         "profitability": 45.76602457458575,
         "returns_on_capital": 28.70536931682112,
         "cash_flow_quality": 5.258429648444578,
         "balance_sheet": 23.0775449087863,
         "growth": 32.52640253400787,
-        "valuation": 38.489513191993936
+        "valuation": 38.003422145812046
     },
     "financial_drivers": {
         "strongest": [
-            "pe_forward (valuation): score=67, value=17.69",
+            "pe_forward (valuation): score=66, value=17.89",
             "debt_to_equity (balance_sheet): score=59, value=1.65",
-            "pe_trailing (valuation): score=52, value=23.11"
+            "pe_trailing (valuation): score=52, value=23.37"
         ],
         "weakest": [
             "fcf_margin_ttm (cash_flow_quality): score=0, value=-50.5%",
@@ -74,117 +74,125 @@
         ]
     },
     "professional_raw_metrics": {
+        "sector": "Utilities",
+        "industry": "Utilities - Regulated Electric",
+        "market_cap_usd": 50615779328,
+        "current_price": 81.08,
+        "analyst": {
+            "recommendation_mean": 1.42105,
+            "recommendation_key": "strong_buy",
+            "target_mean_price": 91.38889,
+            "target_median_price": 92.0,
+            "target_high_price": 99.0,
+            "target_low_price": 74.0,
+            "upside_to_target": 0.12714467192895912,
+            "target_dispersion": 0.2735562276771279,
+            "num_analysts": 18
+        },
+        "rating_momentum": {
+            "upgrades_12m": 2,
+            "downgrades_12m": 0,
+            "total_actions_12m": 32
+        },
+        "institutional": {
+            "held_pct_institutions": 0.93588996,
+            "held_pct_insiders": 0.00202
+        },
+        "short_interest": {
+            "short_pct_of_float": 0.0515,
+            "short_ratio": 6.31,
+            "short_change_pct": -0.05616334945648629
+        },
+        "data_quality_flags": []
+    },
+    "professional_raw_metrics_date": "2026-05-25",
+    "professional_score": 63.82619460617161,
+    "professional_score_date": "2026-05-25",
+    "professional_subscores": {
+        "analyst_consensus": 78.66186719289591,
+        "rating_momentum": 56.4375,
+        "institutional_positioning": 61.472339720011284,
+        "short_interest": 45.44720772436812
+    },
+    "professional_drivers": {
+        "strongest": [
+            "recommendation_mean (analyst_consensus): score=92, value=1.42",
+            "held_pct_institutions (institutional_positioning): score=66, value=93.6%",
+            "upside_to_target (analyst_consensus): score=59, value=12.7%"
+        ],
+        "weakest": [
+            "short_ratio (short_interest): score=42, value=6.31",
+            "short_pct_of_float (short_interest): score=42, value=5.1%",
+            "held_pct_insiders (institutional_positioning): score=52, value=0.2%"
+        ]
+    },
+    "news_sentiment_raw_metrics": {
         "sector": null,
         "industry": null,
         "market_cap_usd": null,
         "current_price": null,
-        "analyst": {
-            "recommendation_mean": null,
-            "recommendation_key": null,
-            "target_mean_price": null,
-            "target_median_price": null,
-            "target_high_price": null,
-            "target_low_price": null,
-            "upside_to_target": null,
-            "target_dispersion": null,
-            "num_analysts": null
-        },
-        "rating_momentum": {
-            "upgrades_12m": 0,
-            "downgrades_12m": 0,
-            "total_actions_12m": 0
-        },
-        "institutional": {
-            "held_pct_institutions": null,
-            "held_pct_insiders": null
-        },
-        "short_interest": {
-            "short_pct_of_float": null,
-            "short_ratio": null,
-            "short_change_pct": null
-        },
-        "data_quality_flags": [
-            "XEL: failed to fetch .info (Too Many Requests. Rate limited. Try after a while.)",
-            "XEL: sector classification unavailable",
-            "XEL: upgrades/downgrades fetch failed (Too Many Requests. Rate limited. Try after a while.)"
-        ]
-    },
-    "professional_raw_metrics_date": "2026-05-21",
-    "professional_score": null,
-    "professional_score_date": "2026-05-21",
-    "professional_subscores": {
-        "analyst_consensus": null,
-        "rating_momentum": 50.0,
-        "institutional_positioning": null,
-        "short_interest": null
-    },
-    "professional_drivers": {
-        "strongest": [],
-        "weakest": []
-    },
-    "news_sentiment_raw_metrics": {
-        "sector": "Utilities",
-        "industry": "Utilities - Regulated Electric",
-        "market_cap_usd": 50066415616,
-        "current_price": 80.2,
         "earnings": {
             "beat_count_4q": null,
             "miss_count_4q": null,
             "total_quarters_4q": null,
             "avg_surprise_magnitude_4q": null,
             "eps_estimate_revision_90d": null,
-            "trailing_eps": 3.47,
-            "forward_eps": 4.53245
+            "trailing_eps": null,
+            "forward_eps": null
         },
         "price_momentum": {
-            "return_1m": 0.014162849557566557,
-            "return_3m": 0.013965831428927532,
-            "return_6m": 0.021920341931957202
+            "return_1m": 0.03802331580457732,
+            "return_3m": 0.01063229053758095,
+            "return_6m": 0.035472873069166876
         },
         "insider_activity": {
-            "insider_purchases_count_90d": 0,
-            "insider_sales_count_90d": 2,
-            "insider_net_value_90d_usd": -1401496.0
+            "insider_purchases_count_90d": null,
+            "insider_sales_count_90d": null,
+            "insider_net_value_90d_usd": null
         },
         "data_quality_flags": [
-            "XEL: earnings_dates fetch failed (['Earnings Date'])"
+            "XEL: failed to fetch .info (Too Many Requests. Rate limited. Try after a while.)",
+            "XEL: sector classification unavailable",
+            "XEL: earnings_dates fetch failed (['Earnings Date'])",
+            "XEL: eps_revisions fetch failed (Too Many Requests. Rate limited. Try after a while.)",
+            "XEL: insider_transactions fetch failed (Too Many Requests. Rate limited. Try after a while.)"
         ]
     },
-    "news_sentiment_raw_metrics_date": "2026-05-21",
-    "news_sentiment_score": 46.74747460832304,
-    "news_sentiment_score_date": "2026-05-21",
+    "news_sentiment_raw_metrics_date": "2026-05-25",
+    "news_sentiment_score": null,
+    "news_sentiment_score_date": "2026-05-25",
     "news_sentiment_subscores": {
         "earnings_surprise_revisions": null,
-        "price_momentum": 52.86614836038319,
-        "insider_activity": 34.510127104202724
+        "price_momentum": 54.5693799778274,
+        "insider_activity": null
     },
     "news_sentiment_drivers": {
         "strongest": [
-            "return_6m (price_momentum): score=54, value=2.2%",
-            "return_1m (price_momentum): score=52, value=1.4%",
-            "return_3m (price_momentum): score=52, value=1.4%"
+            "return_1m (price_momentum): score=56, value=3.8%",
+            "return_6m (price_momentum): score=56, value=3.5%",
+            "return_3m (price_momentum): score=52, value=1.1%"
         ],
         "weakest": [
-            "insider_count_ratio_90d (insider_activity): score=0, value=-1.00",
-            "net_insider_value_pct_mcap_90d (insider_activity): score=49, value=-0.0%",
-            "return_3m (price_momentum): score=52, value=1.4%"
+            "return_3m (price_momentum): score=52, value=1.1%",
+            "return_6m (price_momentum): score=56, value=3.5%",
+            "return_1m (price_momentum): score=56, value=3.8%"
         ]
     },
-    "composite_score": 41.18365350993691,
-    "composite_score_date": "2026-05-21",
-    "composite_rank": 912,
+    "composite_score": 44.52542756656729,
+    "composite_score_date": "2026-05-25",
+    "composite_rank": 923,
     "composite_metadata": {
         "scores_used": [
             "financial",
-            "news_sentiment"
-        ],
-        "scores_imputed": [
             "professional"
         ],
+        "scores_imputed": [
+            "news_sentiment"
+        ],
         "imputed_values": {
-            "professional": 56.45209142629723
+            "news_sentiment": 52.5774742639815
         },
-        "imputation_r_squared": 0.04516719672877956,
+        "imputation_r_squared": 0.031937368103860275,
         "weights_applied": {
             "financial": 50,
             "professional": 30,

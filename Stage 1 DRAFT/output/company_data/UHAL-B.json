@@ -5,7 +5,7 @@
     "financial_raw_metrics": {
         "sector": "Industrials",
         "industry": "Rental & Leasing Services",
-        "market_cap_usd": 8998235136,
+        "market_cap_usd": 9048182784,
         "profitability": {
             "gross_margin_ttm": 0.28601,
             "operating_margin_ttm": 0.02545,
@@ -38,33 +38,33 @@
             "fcf_cagr_3yr": null
         },
         "valuation": {
-            "pe_trailing": 99.65958,
-            "pe_forward": 36.009995,
-            "ps_ratio": 1.4998286,
-            "pb_ratio": 1.1631776,
-            "ev_ebitda": 20.532,
+            "pe_trailing": 100.21276,
+            "pe_forward": 36.209877,
+            "ps_ratio": 1.5081539,
+            "pb_ratio": 1.1696341,
+            "ev_ebitda": 20.813,
             "peg_ratio": null,
-            "fcf_yield": -0.24381946002083224
+            "fcf_yield": -0.24247353135698987
         },
         "data_quality_flags": [
             "UHAL-B: eps_cagr_3yr approximated by net income CAGR (share count changes not adjusted)"
         ]
     },
-    "financial_raw_metrics_date": "2026-05-21",
-    "financial_score": 23.258618013428187,
-    "financial_score_date": "2026-05-21",
+    "financial_raw_metrics_date": "2026-05-25",
+    "financial_score": 23.249265855643124,
+    "financial_score_date": "2026-05-25",
     "financial_subscores": {
-        "profitability": 25.621783025851162,
-        "returns_on_capital": 35.55212895398236,
+        "profitability": 25.652278059176155,
+        "returns_on_capital": 35.555505873233145,
         "cash_flow_quality": 2.418081536856893,
         "balance_sheet": 33.10270039737112,
         "growth": 17.285340706577497,
-        "valuation": 20.686114808937678
+        "valuation": 20.578604486936246
     },
     "financial_drivers": {
         "strongest": [
             "debt_to_equity (balance_sheet): score=74, value=1.04",
-            "ev_ebitda (valuation): score=48, value=20.53",
+            "ev_ebitda (valuation): score=48, value=20.81",
             "roe_ttm (returns_on_capital): score=47, value=1.7%"
         ],
         "weakest": [
@@ -74,13 +74,13 @@
         ]
     },
     "professional_raw_metrics": {
-        "sector": null,
-        "industry": null,
-        "market_cap_usd": null,
-        "current_price": null,
+        "sector": "Industrials",
+        "industry": "Rental & Leasing Services",
+        "market_cap_usd": 9048182784,
+        "current_price": 47.1,
         "analyst": {
             "recommendation_mean": null,
-            "recommendation_key": null,
+            "recommendation_key": "none",
             "target_mean_price": null,
             "target_median_price": null,
             "target_high_price": null,
@@ -95,51 +95,55 @@
             "total_actions_12m": 0
         },
         "institutional": {
-            "held_pct_institutions": null,
-            "held_pct_insiders": null
+            "held_pct_institutions": 0.36756,
+            "held_pct_insiders": 0.42806998
         },
         "short_interest": {
-            "short_pct_of_float": null,
-            "short_ratio": null,
-            "short_change_pct": null
+            "short_pct_of_float": 0.0182,
+            "short_ratio": 3.6,
+            "short_change_pct": 0.09472775477835
         },
-        "data_quality_flags": [
-            "UHAL-B: failed to fetch .info (Too Many Requests. Rate limited. Try after a while.)",
-            "UHAL-B: sector classification unavailable",
-            "UHAL-B: upgrades/downgrades fetch failed (Too Many Requests. Rate limited. Try after a while.)"
-        ]
+        "data_quality_flags": []
     },
-    "professional_raw_metrics_date": "2026-05-21",
-    "professional_score": null,
-    "professional_score_date": "2026-05-21",
+    "professional_raw_metrics_date": "2026-05-25",
+    "professional_score": 54.16893040716598,
+    "professional_score_date": "2026-05-25",
     "professional_subscores": {
         "analyst_consensus": null,
         "rating_momentum": 50.0,
-        "institutional_positioning": null,
-        "short_interest": null
+        "institutional_positioning": 55.490227964935855,
+        "short_interest": 58.91498515615949
     },
     "professional_drivers": {
-        "strongest": [],
-        "weakest": []
+        "strongest": [
+            "held_pct_insiders (institutional_positioning): score=100, value=42.8%",
+            "short_pct_of_float (short_interest): score=64, value=1.8%",
+            "short_ratio (short_interest): score=64, value=3.60"
+        ],
+        "weakest": [
+            "held_pct_institutions (institutional_positioning): score=36, value=36.8%",
+            "short_change_pct (short_interest): score=38, value=9.5%",
+            "short_ratio (short_interest): score=64, value=3.60"
+        ]
     },
     "news_sentiment_raw_metrics": {
-        "sector": "Industrials",
-        "industry": "Rental & Leasing Services",
-        "market_cap_usd": 8998235136,
-        "current_price": 46.84,
+        "sector": null,
+        "industry": null,
+        "market_cap_usd": null,
+        "current_price": null,
         "earnings": {
             "beat_count_4q": null,
             "miss_count_4q": null,
             "total_quarters_4q": null,
             "avg_surprise_magnitude_4q": null,
             "eps_estimate_revision_90d": null,
-            "trailing_eps": 0.47,
-            "forward_eps": 1.30075
+            "trailing_eps": null,
+            "forward_eps": null
         },
         "price_momentum": {
-            "return_1m": -0.05981532944757939,
-            "return_3m": -0.014405666264926228,
-            "return_6m": 0.0351055727476144
+            "return_1m": -0.048677033510702766,
+            "return_3m": -0.013908801885068576,
+            "return_6m": 0.04731749509655023
         },
         "insider_activity": {
             "insider_purchases_count_90d": null,
@@ -147,44 +151,50 @@
             "insider_net_value_90d_usd": null
         },
         "data_quality_flags": [
+            "UHAL-B: failed to fetch .info (Too Many Requests. Rate limited. Try after a while.)",
+            "UHAL-B: sector classification unavailable",
             "UHAL-B: earnings_dates fetch failed (['Earnings Date'])"
         ]
     },
-    "news_sentiment_raw_metrics_date": "2026-05-21",
+    "news_sentiment_raw_metrics_date": "2026-05-25",
     "news_sentiment_score": null,
-    "news_sentiment_score_date": "2026-05-21",
+    "news_sentiment_score_date": "2026-05-25",
     "news_sentiment_subscores": {
         "earnings_surprise_revisions": null,
-        "price_momentum": 49.007735590737795,
+        "price_momentum": 50.31494316686173,
         "insider_activity": null
     },
     "news_sentiment_drivers": {
         "strongest": [
-            "return_6m (price_momentum): score=56, value=3.5%",
+            "return_6m (price_momentum): score=58, value=4.7%",
             "return_3m (price_momentum): score=48, value=-1.4%",
-            "return_1m (price_momentum): score=40, value=-6.0%"
+            "return_1m (price_momentum): score=42, value=-4.9%"
         ],
         "weakest": [
-            "return_1m (price_momentum): score=40, value=-6.0%",
+            "return_1m (price_momentum): score=42, value=-4.9%",
             "return_3m (price_momentum): score=48, value=-1.4%",
-            "return_6m (price_momentum): score=56, value=3.5%"
+            "return_6m (price_momentum): score=58, value=4.7%"
         ]
     },
-    "composite_score": null,
-    "composite_score_date": "2026-05-21",
-    "composite_rank": null,
+    "composite_score": 38.95353140027988,
+    "composite_score_date": "2026-05-25",
+    "composite_rank": 985,
     "composite_metadata": {
         "scores_used": [
-            "financial"
+            "financial",
+            "professional"
         ],
-        "scores_imputed": [],
-        "imputed_values": {},
-        "imputation_r_squared": null,
+        "scores_imputed": [
+            "news_sentiment"
+        ],
+        "imputed_values": {
+            "news_sentiment": 55.39109675154262
+        },
+        "imputation_r_squared": 0.031937368103860275,
         "weights_applied": {
             "financial": 50,
             "professional": 30,
             "news_sentiment": 20
-        },
-        "skip_reason": "Only 1 of 3 scores populated; need at least 2"
+        }
     }
 }

@@ -5,7 +5,7 @@
     "financial_raw_metrics": {
         "sector": "Consumer Cyclical",
         "industry": "Lodging",
-        "market_cap_usd": 6044234752,
+        "market_cap_usd": 5924458496,
         "profitability": {
             "gross_margin_ttm": 0.6125,
             "operating_margin_ttm": 0.37003,
@@ -38,34 +38,34 @@
             "fcf_cagr_3yr": -0.037499765746575986
         },
         "valuation": {
-            "pe_trailing": 32.03968,
-            "pe_forward": 14.990104,
-            "ps_ratio": 4.1973853,
-            "pb_ratio": 13.0078945,
-            "ev_ebitda": 15.772,
-            "peg_ratio": 0.665,
-            "fcf_yield": 0.05625195147946497
+            "pe_trailing": 31.404762,
+            "pe_forward": 14.69305,
+            "ps_ratio": 4.1142073,
+            "pb_ratio": 12.750121,
+            "ev_ebitda": 15.531,
+            "peg_ratio": 0.6506,
+            "fcf_yield": 0.05738921122150773
         },
         "data_quality_flags": [
             "WH: eps_cagr_3yr approximated by net income CAGR (share count changes not adjusted)"
         ]
     },
-    "financial_raw_metrics_date": "2026-05-21",
-    "financial_score": 49.594199340750876,
-    "financial_score_date": "2026-05-21",
+    "financial_raw_metrics_date": "2026-05-25",
+    "financial_score": 49.71435513652407,
+    "financial_score_date": "2026-05-25",
     "financial_subscores": {
-        "profitability": 61.887794478523084,
-        "returns_on_capital": 52.27505299839595,
+        "profitability": 61.88797875488971,
+        "returns_on_capital": 52.18113100938166,
         "cash_flow_quality": 76.42447683462537,
         "balance_sheet": 18.80659085863523,
         "growth": 19.873306134839247,
-        "valuation": 63.30649180768065
+        "valuation": 64.23251406303217
     },
     "financial_drivers": {
         "strongest": [
             "fcf_margin_ttm (cash_flow_quality): score=92, value=23.6%",
-            "peg_ratio (valuation): score=91, value=66.5%",
-            "fcf_yield (valuation): score=80, value=5.6%"
+            "peg_ratio (valuation): score=91, value=65.1%",
+            "fcf_yield (valuation): score=82, value=5.7%"
         ],
         "weakest": [
             "debt_to_equity (balance_sheet): score=0, value=5.93",
@@ -74,117 +74,125 @@
         ]
     },
     "professional_raw_metrics": {
+        "sector": "Consumer Cyclical",
+        "industry": "Lodging",
+        "market_cap_usd": 5924458496,
+        "current_price": 79.14,
+        "analyst": {
+            "recommendation_mean": 1.58824,
+            "recommendation_key": "buy",
+            "target_mean_price": 100.17647,
+            "target_median_price": 100.0,
+            "target_high_price": 115.0,
+            "target_low_price": 89.0,
+            "upside_to_target": 0.2658133687136719,
+            "target_dispersion": 0.25954198625685254,
+            "num_analysts": 17
+        },
+        "rating_momentum": {
+            "upgrades_12m": 1,
+            "downgrades_12m": 1,
+            "total_actions_12m": 28
+        },
+        "institutional": {
+            "held_pct_institutions": 0.011250399,
+            "held_pct_insiders": 0.02446
+        },
+        "short_interest": {
+            "short_pct_of_float": 0.09020001,
+            "short_ratio": 5.03,
+            "short_change_pct": -0.19185618280494432
+        },
+        "data_quality_flags": []
+    },
+    "professional_raw_metrics_date": "2026-05-25",
+    "professional_score": 60.352506471505315,
+    "professional_score_date": "2026-05-25",
+    "professional_subscores": {
+        "analyst_consensus": 86.13257124757813,
+        "rating_momentum": 52.5,
+        "institutional_positioning": 34.251453779503656,
+        "short_interest": 56.788287266513755
+    },
+    "professional_drivers": {
+        "strongest": [
+            "recommendation_mean (analyst_consensus): score=87, value=1.59",
+            "upside_to_target (analyst_consensus): score=84, value=26.6%",
+            "short_change_pct (short_interest): score=79, value=-19.2%"
+        ],
+        "weakest": [
+            "held_pct_institutions (institutional_positioning): score=20, value=1.1%",
+            "short_ratio (short_interest): score=50, value=5.03",
+            "short_pct_of_float (short_interest): score=52, value=9.0%"
+        ]
+    },
+    "news_sentiment_raw_metrics": {
         "sector": null,
         "industry": null,
         "market_cap_usd": null,
         "current_price": null,
-        "analyst": {
-            "recommendation_mean": null,
-            "recommendation_key": null,
-            "target_mean_price": null,
-            "target_median_price": null,
-            "target_high_price": null,
-            "target_low_price": null,
-            "upside_to_target": null,
-            "target_dispersion": null,
-            "num_analysts": null
-        },
-        "rating_momentum": {
-            "upgrades_12m": 0,
-            "downgrades_12m": 0,
-            "total_actions_12m": 0
-        },
-        "institutional": {
-            "held_pct_institutions": null,
-            "held_pct_insiders": null
-        },
-        "short_interest": {
-            "short_pct_of_float": null,
-            "short_ratio": null,
-            "short_change_pct": null
-        },
-        "data_quality_flags": [
-            "WH: failed to fetch .info (Too Many Requests. Rate limited. Try after a while.)",
-            "WH: sector classification unavailable",
-            "WH: upgrades/downgrades fetch failed (Too Many Requests. Rate limited. Try after a while.)"
-        ]
-    },
-    "professional_raw_metrics_date": "2026-05-21",
-    "professional_score": null,
-    "professional_score_date": "2026-05-21",
-    "professional_subscores": {
-        "analyst_consensus": null,
-        "rating_momentum": 50.0,
-        "institutional_positioning": null,
-        "short_interest": null
-    },
-    "professional_drivers": {
-        "strongest": [],
-        "weakest": []
-    },
-    "news_sentiment_raw_metrics": {
-        "sector": "Consumer Cyclical",
-        "industry": "Lodging",
-        "market_cap_usd": 6044234752,
-        "current_price": 80.74,
         "earnings": {
             "beat_count_4q": null,
             "miss_count_4q": null,
             "total_quarters_4q": null,
             "avg_surprise_magnitude_4q": null,
             "eps_estimate_revision_90d": null,
-            "trailing_eps": 2.52,
-            "forward_eps": 5.38622
+            "trailing_eps": null,
+            "forward_eps": null
         },
         "price_momentum": {
-            "return_1m": -0.08239570450944142,
-            "return_3m": 0.011733367291196837,
-            "return_6m": 0.15376709213387885
+            "return_1m": -0.07156263053725206,
+            "return_3m": -0.060645340535418424,
+            "return_6m": 0.15423598492477408
         },
         "insider_activity": {
-            "insider_purchases_count_90d": 0,
-            "insider_sales_count_90d": 4,
-            "insider_net_value_90d_usd": -3291936.0
+            "insider_purchases_count_90d": null,
+            "insider_sales_count_90d": null,
+            "insider_net_value_90d_usd": null
         },
         "data_quality_flags": [
-            "WH: earnings_dates fetch failed (['Earnings Date'])"
+            "WH: failed to fetch .info (Too Many Requests. Rate limited. Try after a while.)",
+            "WH: sector classification unavailable",
+            "WH: earnings_dates fetch failed (['Earnings Date'])",
+            "WH: eps_revisions fetch failed (Too Many Requests. Rate limited. Try after a while.)",
+            "WH: insider_transactions fetch failed (Too Many Requests. Rate limited. Try after a while.)"
         ]
     },
-    "news_sentiment_raw_metrics_date": "2026-05-21",
-    "news_sentiment_score": 46.82455051860081,
-    "news_sentiment_score_date": "2026-05-21",
+    "news_sentiment_raw_metrics_date": "2026-05-25",
+    "news_sentiment_score": null,
+    "news_sentiment_score_date": "2026-05-25",
     "news_sentiment_subscores": {
         "earnings_surprise_revisions": null,
-        "price_momentum": 57.50243154635169,
-        "insider_activity": 25.468788463099056
+        "price_momentum": 53.762977858033366,
+        "insider_activity": null
     },
     "news_sentiment_drivers": {
         "strongest": [
             "return_6m (price_momentum): score=76, value=15.4%",
-            "return_3m (price_momentum): score=52, value=1.2%",
-            "net_insider_value_pct_mcap_90d (insider_activity): score=36, value=-0.1%"
+            "return_3m (price_momentum): score=40, value=-6.1%",
+            "return_1m (price_momentum): score=38, value=-7.2%"
         ],
         "weakest": [
-            "insider_count_ratio_90d (insider_activity): score=0, value=-1.00",
-            "return_1m (price_momentum): score=36, value=-8.2%",
-            "net_insider_value_pct_mcap_90d (insider_activity): score=36, value=-0.1%"
+            "return_1m (price_momentum): score=38, value=-7.2%",
+            "return_3m (price_momentum): score=40, value=-6.1%",
+            "return_6m (price_momentum): score=76, value=15.4%"
         ]
     },
-    "composite_score": 51.46728523491995,
-    "composite_score_date": "2026-05-21",
-    "composite_rank": 643,
+    "composite_score": 53.16336902214358,
+    "composite_score_date": "2026-05-25",
+    "composite_rank": 600,
     "composite_metadata": {
         "scores_used": [
             "financial",
-            "news_sentiment"
-        ],
-        "scores_imputed": [
             "professional"
         ],
+        "scores_imputed": [
+            "news_sentiment"
+        ],
         "imputed_values": {
-            "professional": 57.68425153608118
+            "news_sentiment": 51.00219756214972
         },
-        "imputation_r_squared": 0.04516719672877956,
+        "imputation_r_squared": 0.031937368103860275,
         "weights_applied": {
             "financial": 50,
             "professional": 30,

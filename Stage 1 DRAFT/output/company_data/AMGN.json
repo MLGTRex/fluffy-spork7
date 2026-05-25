@@ -51,15 +51,15 @@
         ]
     },
     "financial_raw_metrics_date": "2026-05-25",
-    "financial_score": 56.951650837516524,
-    "financial_score_date": "2026-05-21",
+    "financial_score": 56.91293396808394,
+    "financial_score_date": "2026-05-25",
     "financial_subscores": {
         "profitability": 47.53538614748828,
-        "returns_on_capital": 69.94164880649758,
+        "returns_on_capital": 69.94139457558728,
         "cash_flow_quality": 77.82839658070496,
         "balance_sheet": 41.7782731641864,
         "growth": 49.47509824279018,
-        "valuation": 53.9598576571142
+        "valuation": 53.70208416877732
     },
     "financial_drivers": {
         "strongest": [
@@ -70,14 +70,14 @@
         "weakest": [
             "debt_to_equity (balance_sheet): score=0, value=6.24",
             "fcf_cagr_3yr (growth): score=22, value=-2.7%",
-            "peg_ratio (valuation): score=29, value=2.19"
+            "peg_ratio (valuation): score=28, value=2.24"
         ]
     },
     "professional_raw_metrics": {
         "sector": "Healthcare",
         "industry": "Drug Manufacturers - General",
-        "market_cap_usd": 182206808064,
-        "current_price": 337.42,
+        "market_cap_usd": 183123017728,
+        "current_price": 339.3,
         "analyst": {
             "recommendation_mean": 2.45714,
             "recommendation_key": "buy",
@@ -85,7 +85,7 @@
             "target_median_price": 352.5,
             "target_high_price": 427.0,
             "target_low_price": 200.0,
-            "upside_to_target": 0.04390178412660774,
+            "upside_to_target": 0.038117712938402555,
             "target_dispersion": 0.6444591531284347,
             "num_analysts": 30
         },
@@ -95,8 +95,8 @@
             "total_actions_12m": 41
         },
         "institutional": {
-            "held_pct_institutions": 0.85246,
-            "held_pct_insiders": 0.00217
+            "held_pct_institutions": 0.85249,
+            "held_pct_insiders": 0.0021799998
         },
         "short_interest": {
             "short_pct_of_float": 0.024,
@@ -105,92 +105,85 @@
         },
         "data_quality_flags": []
     },
-    "professional_raw_metrics_date": "2026-05-21",
-    "professional_score": 55.295455013845,
-    "professional_score_date": "2026-05-21",
+    "professional_raw_metrics_date": "2026-05-25",
+    "professional_score": 51.32704169065742,
+    "professional_score_date": "2026-05-25",
     "professional_subscores": {
-        "analyst_consensus": 49.296854095192934,
+        "analyst_consensus": 48.60276555260831,
         "rating_momentum": 49.42682926829269,
-        "institutional_positioning": 66.90925022110065,
-        "short_interest": 59.716908054527536
+        "institutional_positioning": 56.56255823727601,
+        "short_interest": 52.12484580568214
     },
     "professional_drivers": {
         "strongest": [
-            "held_pct_institutions (institutional_positioning): score=73, value=85.2%",
-            "short_pct_of_float (short_interest): score=66, value=2.4%",
-            "short_change_pct (short_interest): score=61, value=-7.3%"
+            "short_change_pct (short_interest): score=61, value=-7.3%",
+            "held_pct_institutions (institutional_positioning): score=58, value=85.2%",
+            "recommendation_mean (analyst_consensus): score=57, value=2.46"
         ],
         "weakest": [
-            "upside_to_target (analyst_consensus): score=38, value=4.4%",
+            "upside_to_target (analyst_consensus): score=36, value=3.8%",
             "short_ratio (short_interest): score=49, value=5.14",
             "upgrades_12m (rating_momentum): score=49, value=0.00"
         ]
     },
     "news_sentiment_raw_metrics": {
-        "sector": null,
-        "industry": null,
-        "market_cap_usd": null,
-        "current_price": null,
+        "sector": "Healthcare",
+        "industry": "Drug Manufacturers - General",
+        "market_cap_usd": 183123017728,
+        "current_price": 339.3,
         "earnings": {
             "beat_count_4q": 4,
             "miss_count_4q": 0,
             "total_quarters_4q": 4,
             "avg_surprise_magnitude_4q": 0.11598945576210987,
             "eps_estimate_revision_90d": null,
-            "trailing_eps": null,
-            "forward_eps": null
+            "trailing_eps": 14.39,
+            "forward_eps": 23.4771
         },
         "price_momentum": {
-            "return_1m": null,
-            "return_3m": null,
-            "return_6m": null
+            "return_1m": -0.011730472619392132,
+            "return_3m": -0.08958130598311648,
+            "return_6m": 0.03158927276097866
         },
         "insider_activity": {
-            "insider_purchases_count_90d": null,
-            "insider_sales_count_90d": null,
-            "insider_net_value_90d_usd": null
+            "insider_purchases_count_90d": 0,
+            "insider_sales_count_90d": 2,
+            "insider_net_value_90d_usd": -21173046.0
         },
-        "data_quality_flags": [
-            "AMGN: failed to fetch .info (Too Many Requests. Rate limited. Try after a while.)",
-            "AMGN: sector classification unavailable",
-            "AMGN: eps_revisions fetch failed (Too Many Requests. Rate limited. Try after a while.)",
-            "AMGN: price momentum fetch failed (Too Many Requests. Rate limited. Try after a while.)",
-            "AMGN: insider_transactions fetch failed (Too Many Requests. Rate limited. Try after a while.)"
-        ]
+        "data_quality_flags": []
     },
-    "news_sentiment_raw_metrics_date": "2026-05-21",
-    "news_sentiment_score": null,
-    "news_sentiment_score_date": "2026-05-21",
+    "news_sentiment_raw_metrics_date": "2026-05-25",
+    "news_sentiment_score": 63.60100143136798,
+    "news_sentiment_score_date": "2026-05-25",
     "news_sentiment_subscores": {
         "earnings_surprise_revisions": 96.12259026594353,
-        "price_momentum": null,
-        "insider_activity": null
+        "price_momentum": 46.39160564257544,
+        "insider_activity": 32.976615339802
     },
     "news_sentiment_drivers": {
         "strongest": [
             "beat_rate_4q (earnings_surprise_revisions): score=100, value=1.00",
-            "avg_surprise_magnitude_4q (earnings_surprise_revisions): score=92, value=11.6%"
+            "avg_surprise_magnitude_4q (earnings_surprise_revisions): score=92, value=11.6%",
+            "return_6m (price_momentum): score=55, value=3.2%"
         ],
         "weakest": [
-            "avg_surprise_magnitude_4q (earnings_surprise_revisions): score=92, value=11.6%",
-            "beat_rate_4q (earnings_surprise_revisions): score=100, value=1.00"
+            "insider_count_ratio_90d (insider_activity): score=0, value=-1.00",
+            "return_3m (price_momentum): score=35, value=-9.0%",
+            "net_insider_value_pct_mcap_90d (insider_activity): score=47, value=-0.0%"
         ]
     },
-    "composite_score": 55.214144531539574,
-    "composite_score_date": "2026-05-21",
-    "composite_rank": 424,
+    "composite_score": 56.574779777512795,
+    "composite_score_date": "2026-05-25",
+    "composite_rank": 387,
     "composite_metadata": {
         "scores_used": [
             "financial",
-            "professional"
-        ],
-        "scores_imputed": [
+            "professional",
             "news_sentiment"
         ],
-        "imputed_values": {
-            "news_sentiment": 50.748413043139095
-        },
-        "imputation_r_squared": 0.05693184104207816,
+        "scores_imputed": [],
+        "imputed_values": {},
+        "imputation_r_squared": null,
         "weights_applied": {
             "financial": 50,
             "professional": 30,

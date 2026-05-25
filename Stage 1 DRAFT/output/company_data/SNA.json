@@ -5,7 +5,7 @@
     "financial_raw_metrics": {
         "sector": "Industrials",
         "industry": "Tools & Accessories",
-        "market_cap_usd": 18768351232,
+        "market_cap_usd": 18993172480,
         "profitability": {
             "gross_margin_ttm": 0.51616,
             "operating_margin_ttm": 0.24566,
@@ -38,28 +38,28 @@
             "fcf_cagr_3yr": 0.19387902731569406
         },
         "valuation": {
-            "pe_trailing": 18.71436,
-            "pe_forward": 17.013853,
-            "ps_ratio": 3.5946434,
-            "pb_ratio": 3.1680148,
-            "ev_ebitda": 13.064,
-            "peg_ratio": 2.0274,
-            "fcf_yield": 0.055856663115542445
+            "pe_trailing": 18.938532,
+            "pe_forward": 17.217657,
+            "ps_ratio": 3.6377027,
+            "pb_ratio": 3.2059634,
+            "ev_ebitda": 13.224,
+            "peg_ratio": 2.046,
+            "fcf_yield": 0.05519549054292588
         },
         "data_quality_flags": [
             "SNA: eps_cagr_3yr approximated by net income CAGR (share count changes not adjusted)"
         ]
     },
-    "financial_raw_metrics_date": "2026-05-21",
-    "financial_score": 70.88590602181326,
-    "financial_score_date": "2026-05-21",
+    "financial_raw_metrics_date": "2026-05-25",
+    "financial_score": 70.81185445923178,
+    "financial_score_date": "2026-05-25",
     "financial_subscores": {
-        "profitability": 79.57718406295189,
-        "returns_on_capital": 55.351543678554435,
+        "profitability": 79.61379877729115,
+        "returns_on_capital": 55.37766144509675,
         "cash_flow_quality": 87.00019564055661,
         "balance_sheet": 97.89205833333332,
         "growth": 46.995729418587814,
-        "valuation": 60.77975309760219
+        "valuation": 60.20243270588359
     },
     "financial_drivers": {
         "strongest": [
@@ -69,122 +69,129 @@
         ],
         "weakest": [
             "revenue_cagr_3yr (growth): score=33, value=2.1%",
-            "peg_ratio (valuation): score=34, value=2.03",
+            "peg_ratio (valuation): score=34, value=2.05",
             "eps_cagr_3yr (growth): score=35, value=3.7%"
         ]
     },
     "professional_raw_metrics": {
-        "sector": null,
-        "industry": null,
-        "market_cap_usd": null,
-        "current_price": null,
+        "sector": "Industrials",
+        "industry": "Tools & Accessories",
+        "market_cap_usd": 18993172480,
+        "current_price": 366.65,
         "analyst": {
-            "recommendation_mean": null,
-            "recommendation_key": null,
-            "target_mean_price": null,
-            "target_median_price": null,
-            "target_high_price": null,
-            "target_low_price": null,
-            "upside_to_target": null,
-            "target_dispersion": null,
-            "num_analysts": null
+            "recommendation_mean": 2.6,
+            "recommendation_key": "hold",
+            "target_mean_price": 389.8125,
+            "target_median_price": 401.25,
+            "target_high_price": 445.0,
+            "target_low_price": 330.0,
+            "upside_to_target": 0.06317332606027554,
+            "target_dispersion": 0.29501362834696165,
+            "num_analysts": 8
         },
         "rating_momentum": {
             "upgrades_12m": 0,
             "downgrades_12m": 0,
-            "total_actions_12m": 0
+            "total_actions_12m": 14
         },
         "institutional": {
-            "held_pct_institutions": null,
-            "held_pct_insiders": null
+            "held_pct_institutions": 0.98426,
+            "held_pct_insiders": 0.02397
         },
         "short_interest": {
-            "short_pct_of_float": null,
-            "short_ratio": null,
-            "short_change_pct": null
+            "short_pct_of_float": 0.0708,
+            "short_ratio": 7.76,
+            "short_change_pct": 0.050548861376680757
         },
-        "data_quality_flags": [
-            "SNA: failed to fetch .info (Too Many Requests. Rate limited. Try after a while.)",
-            "SNA: sector classification unavailable",
-            "SNA: upgrades/downgrades fetch failed (Too Many Requests. Rate limited. Try after a while.)"
-        ]
+        "data_quality_flags": []
     },
-    "professional_raw_metrics_date": "2026-05-21",
-    "professional_score": null,
-    "professional_score_date": "2026-05-21",
+    "professional_raw_metrics_date": "2026-05-25",
+    "professional_score": 53.8091097175478,
+    "professional_score_date": "2026-05-25",
     "professional_subscores": {
-        "analyst_consensus": null,
-        "rating_momentum": 50.0,
-        "institutional_positioning": null,
-        "short_interest": null
+        "analyst_consensus": 47.91733260602756,
+        "rating_momentum": 52.5,
+        "institutional_positioning": 71.60260751289424,
+        "short_interest": 40.08260951476398
     },
     "professional_drivers": {
-        "strongest": [],
-        "weakest": []
+        "strongest": [
+            "held_pct_institutions (institutional_positioning): score=74, value=98.4%",
+            "held_pct_insiders (institutional_positioning): score=67, value=2.4%",
+            "total_actions_12m (rating_momentum): score=52, value=14.00"
+        ],
+        "weakest": [
+            "short_ratio (short_interest): score=33, value=7.76",
+            "short_pct_of_float (short_interest): score=43, value=7.1%",
+            "upside_to_target (analyst_consensus): score=43, value=6.3%"
+        ]
     },
     "news_sentiment_raw_metrics": {
-        "sector": "Industrials",
-        "industry": "Tools & Accessories",
-        "market_cap_usd": 18768351232,
-        "current_price": 362.31,
+        "sector": null,
+        "industry": null,
+        "market_cap_usd": null,
+        "current_price": null,
         "earnings": {
             "beat_count_4q": null,
             "miss_count_4q": null,
             "total_quarters_4q": null,
             "avg_surprise_magnitude_4q": null,
             "eps_estimate_revision_90d": null,
-            "trailing_eps": 19.36,
-            "forward_eps": 21.295
+            "trailing_eps": null,
+            "forward_eps": null
         },
         "price_momentum": {
-            "return_1m": -0.04900469130513701,
-            "return_3m": -0.04488729923880918,
-            "return_6m": 0.12015855596771478
+            "return_1m": -0.03459290767649892,
+            "return_3m": -0.032212495253450824,
+            "return_6m": 0.129948762697054
         },
         "insider_activity": {
-            "insider_purchases_count_90d": 0,
-            "insider_sales_count_90d": 4,
-            "insider_net_value_90d_usd": -20328275.0
+            "insider_purchases_count_90d": null,
+            "insider_sales_count_90d": null,
+            "insider_net_value_90d_usd": null
         },
         "data_quality_flags": [
-            "SNA: earnings_dates fetch failed (['Earnings Date'])"
+            "SNA: failed to fetch .info (Too Many Requests. Rate limited. Try after a while.)",
+            "SNA: sector classification unavailable",
+            "SNA: earnings_dates fetch failed (['Earnings Date'])",
+            "SNA: eps_revisions fetch failed (Too Many Requests. Rate limited. Try after a while.)"
         ]
     },
-    "news_sentiment_raw_metrics_date": "2026-05-21",
-    "news_sentiment_score": 41.27897954090789,
-    "news_sentiment_score_date": "2026-05-21",
+    "news_sentiment_raw_metrics_date": "2026-05-25",
+    "news_sentiment_score": null,
+    "news_sentiment_score_date": "2026-05-25",
     "news_sentiment_subscores": {
         "earnings_surprise_revisions": null,
-        "price_momentum": 53.35028247120307,
-        "insider_activity": 17.136373680317536
+        "price_momentum": 55.342817470164846,
+        "insider_activity": null
     },
     "news_sentiment_drivers": {
         "strongest": [
-            "return_6m (price_momentum): score=70, value=12.0%",
-            "return_3m (price_momentum): score=43, value=-4.5%",
-            "return_1m (price_momentum): score=42, value=-4.9%"
+            "return_6m (price_momentum): score=72, value=13.0%",
+            "return_3m (price_momentum): score=45, value=-3.2%",
+            "return_1m (price_momentum): score=44, value=-3.5%"
         ],
         "weakest": [
-            "insider_count_ratio_90d (insider_activity): score=0, value=-1.00",
-            "net_insider_value_pct_mcap_90d (insider_activity): score=24, value=-0.1%",
-            "return_1m (price_momentum): score=42, value=-4.9%"
+            "return_1m (price_momentum): score=44, value=-3.5%",
+            "return_3m (price_momentum): score=45, value=-3.2%",
+            "return_6m (price_momentum): score=72, value=13.0%"
         ]
     },
-    "composite_score": 61.56000195066792,
-    "composite_score_date": "2026-05-21",
-    "composite_rank": 125,
+    "composite_score": 61.539525032101345,
+    "composite_score_date": "2026-05-25",
+    "composite_rank": 143,
     "composite_metadata": {
         "scores_used": [
             "financial",
-            "news_sentiment"
-        ],
-        "scores_imputed": [
             "professional"
         ],
+        "scores_imputed": [
+            "news_sentiment"
+        ],
         "imputed_values": {
-            "professional": 59.5375101052657
+            "news_sentiment": 49.95432443610557
         },
-        "imputation_r_squared": 0.04516719672877956,
+        "imputation_r_squared": 0.031937368103860275,
         "weights_applied": {
             "financial": 50,
             "professional": 30,

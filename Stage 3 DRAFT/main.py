@@ -76,9 +76,20 @@ async def main():
     results = []
     total_stages = len(PIPELINE_STAGES)
 
+    # Halt on first section failure: each section now drives itself to completeness
+    # internally (see pipeline tools/section_runner.py). A non-zero exit means
+    # the section exhausted its retry budget — downstream sections cannot
+    # produce valid output against an incomplete upstream, so we stop.
     for idx, (stage_name, relative_script_path) in enumerate(PIPELINE_STAGES, start=1):
         success = await run_stage(stage_name, relative_script_path, idx, total_stages)
         results.append((stage_name, success))
+        if not success:
+            print(
+                f"\n[Stage 3] Halting: '{stage_name}' did not complete. "
+                f"Remaining sections skipped to avoid running on incomplete upstream.",
+                flush=True,
+            )
+            break
 
     print(f"\n{'='*70}")
     print(f"  Stage 3 Pipeline Summary")

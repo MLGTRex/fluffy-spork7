@@ -5,7 +5,7 @@
     "financial_raw_metrics": {
         "sector": "Industrials",
         "industry": "Electrical Equipment & Parts",
-        "market_cap_usd": 124220784640,
+        "market_cap_usd": 125780262912,
         "profitability": {
             "gross_margin_ttm": 0.37151,
             "operating_margin_ttm": 0.16364999,
@@ -34,32 +34,32 @@
             "revenue_growth_1yr": 0.301,
             "revenue_cagr_3yr": 0.2158543401649824,
             "eps_growth_1yr": 1.357,
-            "eps_cagr_3yr": 1.5912664461652786,
+            "eps_cagr_3yr": 1.5912664461652781,
             "fcf_cagr_3yr": null
         },
         "valuation": {
-            "pe_trailing": 81.25628,
-            "pe_forward": 36.56981,
-            "ps_ratio": 11.455889,
-            "pb_ratio": 31.388914,
-            "ev_ebitda": 51.203,
-            "peg_ratio": 1.5825,
-            "fcf_yield": 0.015816595891693767
+            "pe_trailing": 81.865,
+            "pe_forward": 37.056442,
+            "ps_ratio": 11.599707,
+            "pb_ratio": 31.782974,
+            "ev_ebitda": 53.103,
+            "peg_ratio": 1.6416,
+            "fcf_yield": 0.015620494873465191
         },
         "data_quality_flags": [
             "VRT: eps_cagr_3yr approximated by net income CAGR (share count changes not adjusted)"
         ]
     },
-    "financial_raw_metrics_date": "2026-05-21",
-    "financial_score": 68.68334301179408,
-    "financial_score_date": "2026-05-21",
+    "financial_raw_metrics_date": "2026-05-25",
+    "financial_score": 68.62424474916483,
+    "financial_score_date": "2026-05-25",
     "financial_subscores": {
-        "profitability": 64.86270483923431,
-        "returns_on_capital": 58.861007699742615,
+        "profitability": 64.9083093753319,
+        "returns_on_capital": 58.89028762728944,
         "cash_flow_quality": 83.63064947230278,
         "balance_sheet": 87.67474003433637,
         "growth": 96.15505808644129,
-        "valuation": 25.46355576691094
+        "valuation": 24.96972139785669
     },
     "financial_drivers": {
         "strongest": [
@@ -68,123 +68,131 @@
             "revenue_growth_1yr (growth): score=100, value=30.1%"
         ],
         "weakest": [
-            "pe_trailing (valuation): score=0, value=81.26",
+            "pe_trailing (valuation): score=0, value=81.86",
             "fcf_yield (valuation): score=26, value=1.6%",
-            "pe_forward (valuation): score=27, value=36.57"
+            "pe_forward (valuation): score=26, value=37.06"
         ]
     },
     "professional_raw_metrics": {
+        "sector": "Industrials",
+        "industry": "Electrical Equipment & Parts",
+        "market_cap_usd": 125780262912,
+        "current_price": 327.46,
+        "analyst": {
+            "recommendation_mean": 1.5,
+            "recommendation_key": "strong_buy",
+            "target_mean_price": 377.20834,
+            "target_median_price": 378.0,
+            "target_high_price": 500.0,
+            "target_low_price": 236.0,
+            "upside_to_target": 0.1519218835888354,
+            "target_dispersion": 0.6998784809476906,
+            "num_analysts": 24
+        },
+        "rating_momentum": {
+            "upgrades_12m": 2,
+            "downgrades_12m": 1,
+            "total_actions_12m": 63
+        },
+        "institutional": {
+            "held_pct_institutions": 0.85675,
+            "held_pct_insiders": 0.00234
+        },
+        "short_interest": {
+            "short_pct_of_float": 0.0309,
+            "short_ratio": 2.12,
+            "short_change_pct": -0.09785874063661432
+        },
+        "data_quality_flags": []
+    },
+    "professional_raw_metrics_date": "2026-05-25",
+    "professional_score": 66.78612536565075,
+    "professional_score_date": "2026-05-25",
+    "professional_subscores": {
+        "analyst_consensus": 80.12812557258903,
+        "rating_momentum": 53.5,
+        "institutional_positioning": 61.82981075408092,
+        "short_interest": 66.05885817816244
+    },
+    "professional_drivers": {
+        "strongest": [
+            "recommendation_mean (analyst_consensus): score=90, value=1.50",
+            "short_ratio (short_interest): score=79, value=2.12",
+            "held_pct_institutions (institutional_positioning): score=66, value=85.7%"
+        ],
+        "weakest": [
+            "held_pct_insiders (institutional_positioning): score=52, value=0.2%",
+            "upgrades_12m (rating_momentum): score=54, value=2.00",
+            "downgrades_12m (rating_momentum): score=54, value=1.00"
+        ]
+    },
+    "news_sentiment_raw_metrics": {
         "sector": null,
         "industry": null,
         "market_cap_usd": null,
         "current_price": null,
-        "analyst": {
-            "recommendation_mean": null,
-            "recommendation_key": null,
-            "target_mean_price": null,
-            "target_median_price": null,
-            "target_high_price": null,
-            "target_low_price": null,
-            "upside_to_target": null,
-            "target_dispersion": null,
-            "num_analysts": null
-        },
-        "rating_momentum": {
-            "upgrades_12m": 0,
-            "downgrades_12m": 0,
-            "total_actions_12m": 0
-        },
-        "institutional": {
-            "held_pct_institutions": null,
-            "held_pct_insiders": null
-        },
-        "short_interest": {
-            "short_pct_of_float": null,
-            "short_ratio": null,
-            "short_change_pct": null
-        },
-        "data_quality_flags": [
-            "VRT: failed to fetch .info (Too Many Requests. Rate limited. Try after a while.)",
-            "VRT: sector classification unavailable",
-            "VRT: upgrades/downgrades fetch failed (Too Many Requests. Rate limited. Try after a while.)"
-        ]
-    },
-    "professional_raw_metrics_date": "2026-05-21",
-    "professional_score": null,
-    "professional_score_date": "2026-05-21",
-    "professional_subscores": {
-        "analyst_consensus": null,
-        "rating_momentum": 50.0,
-        "institutional_positioning": null,
-        "short_interest": null
-    },
-    "professional_drivers": {
-        "strongest": [],
-        "weakest": []
-    },
-    "news_sentiment_raw_metrics": {
-        "sector": "Industrials",
-        "industry": "Electrical Equipment & Parts",
-        "market_cap_usd": 124220784640,
-        "current_price": 323.4,
         "earnings": {
             "beat_count_4q": null,
             "miss_count_4q": null,
             "total_quarters_4q": null,
             "avg_surprise_magnitude_4q": null,
             "eps_estimate_revision_90d": null,
-            "trailing_eps": 3.98,
-            "forward_eps": 8.84336
+            "trailing_eps": null,
+            "forward_eps": null
         },
         "price_momentum": {
-            "return_1m": 0.03507872702903695,
-            "return_3m": 0.33003153141676494,
-            "return_6m": 0.8962654177558936
+            "return_1m": 0.07314667279005099,
+            "return_3m": 0.3475599655644226,
+            "return_6m": 1.0528798540551383
         },
         "insider_activity": {
-            "insider_purchases_count_90d": 0,
-            "insider_sales_count_90d": 6,
-            "insider_net_value_90d_usd": -123356256.0
+            "insider_purchases_count_90d": null,
+            "insider_sales_count_90d": null,
+            "insider_net_value_90d_usd": null
         },
         "data_quality_flags": [
-            "VRT: earnings_dates fetch failed (['Earnings Date'])"
+            "VRT: failed to fetch .info (Too Many Requests. Rate limited. Try after a while.)",
+            "VRT: sector classification unavailable",
+            "VRT: earnings_dates fetch failed (['Earnings Date'])",
+            "VRT: eps_revisions fetch failed (Too Many Requests. Rate limited. Try after a while.)",
+            "VRT: insider_transactions fetch failed (Too Many Requests. Rate limited. Try after a while.)"
         ]
     },
-    "news_sentiment_raw_metrics_date": "2026-05-21",
-    "news_sentiment_score": 65.18167349576487,
-    "news_sentiment_score_date": "2026-05-21",
+    "news_sentiment_raw_metrics_date": "2026-05-25",
+    "news_sentiment_score": null,
+    "news_sentiment_score_date": "2026-05-25",
     "news_sentiment_subscores": {
         "earnings_surprise_revisions": null,
-        "price_momentum": 88.96161362620987,
-        "insider_activity": 17.621793234874865
+        "price_momentum": 90.54777803291879,
+        "insider_activity": null
     },
     "news_sentiment_drivers": {
         "strongest": [
-            "return_6m (price_momentum): score=100, value=89.6%",
-            "return_3m (price_momentum): score=100, value=33.0%",
-            "return_1m (price_momentum): score=56, value=3.5%"
+            "return_6m (price_momentum): score=100, value=1.05",
+            "return_3m (price_momentum): score=100, value=34.8%",
+            "return_1m (price_momentum): score=62, value=7.3%"
         ],
         "weakest": [
-            "insider_count_ratio_90d (insider_activity): score=0, value=-1.00",
-            "net_insider_value_pct_mcap_90d (insider_activity): score=25, value=-0.1%",
-            "return_1m (price_momentum): score=56, value=3.5%"
+            "return_1m (price_momentum): score=62, value=7.3%",
+            "return_3m (price_momentum): score=100, value=34.8%",
+            "return_6m (price_momentum): score=100, value=1.05"
         ]
     },
-    "composite_score": 64.52510795714633,
-    "composite_score_date": "2026-05-21",
-    "composite_rank": 48,
+    "composite_score": 63.835102181260396,
+    "composite_score_date": "2026-05-25",
+    "composite_rank": 78,
     "composite_metadata": {
         "scores_used": [
             "financial",
-            "news_sentiment"
-        ],
-        "scores_imputed": [
             "professional"
         ],
+        "scores_imputed": [
+            "news_sentiment"
+        ],
         "imputed_values": {
-            "professional": 57.15700584032104
+            "news_sentiment": 47.4357109849138
         },
-        "imputation_r_squared": 0.04516719672877956,
+        "imputation_r_squared": 0.031937368103860275,
         "weights_applied": {
             "financial": 50,
             "professional": 30,

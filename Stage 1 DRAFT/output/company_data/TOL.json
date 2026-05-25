@@ -5,7 +5,7 @@
     "financial_raw_metrics": {
         "sector": "Consumer Cyclical",
         "industry": "Residential Construction",
-        "market_cap_usd": 12595515392,
+        "market_cap_usd": 12578661376,
         "profitability": {
             "gross_margin_ttm": 0.25203,
             "operating_margin_ttm": 0.15068,
@@ -38,34 +38,34 @@
             "fcf_cagr_3yr": 0.038942847028253125
         },
         "valuation": {
-            "pe_trailing": 10.228897,
-            "pe_forward": 9.54791,
-            "ps_ratio": 1.1403433,
-            "pb_ratio": 1.5158788,
-            "ev_ebitda": 7.903,
-            "peg_ratio": 0.9963,
+            "pe_trailing": 10.207447,
+            "pe_forward": 9.50174,
+            "ps_ratio": 1.1388173,
+            "pb_ratio": 1.5138503,
+            "ev_ebitda": 7.893,
+            "peg_ratio": 0.992,
             "fcf_yield": null
         },
         "data_quality_flags": [
             "TOL: eps_cagr_3yr approximated by net income CAGR (share count changes not adjusted)"
         ]
     },
-    "financial_raw_metrics_date": "2026-05-21",
-    "financial_score": 57.631092703279286,
-    "financial_score_date": "2026-05-21",
+    "financial_raw_metrics_date": "2026-05-25",
+    "financial_score": 57.62130319895817,
+    "financial_score_date": "2026-05-25",
     "financial_subscores": {
-        "profitability": 48.274198203498315,
-        "returns_on_capital": 48.77341415259117,
+        "profitability": 48.27580797961864,
+        "returns_on_capital": 48.68007914000558,
         "cash_flow_quality": null,
         "balance_sheet": 91.73913860428522,
         "growth": 26.825223684339033,
-        "valuation": 78.615013221839
+        "valuation": 78.6818396793064
     },
     "financial_drivers": {
         "strongest": [
             "current_ratio (balance_sheet): score=100, value=4.54",
             "debt_to_equity (balance_sheet): score=92, value=32.8%",
-            "pe_forward (valuation): score=91, value=9.55"
+            "pe_forward (valuation): score=91, value=9.50"
         ],
         "weakest": [
             "eps_growth_1yr (growth): score=8, value=-22.3%",
@@ -74,117 +74,125 @@
         ]
     },
     "professional_raw_metrics": {
+        "sector": "Consumer Cyclical",
+        "industry": "Residential Construction",
+        "market_cap_usd": 12578661376,
+        "current_price": 134.33,
+        "analyst": {
+            "recommendation_mean": 1.94737,
+            "recommendation_key": "buy",
+            "target_mean_price": 163.8125,
+            "target_median_price": 162.5,
+            "target_high_price": 187.0,
+            "target_low_price": 115.0,
+            "upside_to_target": 0.21947815082260094,
+            "target_dispersion": 0.43952689813048457,
+            "num_analysts": 16
+        },
+        "rating_momentum": {
+            "upgrades_12m": 3,
+            "downgrades_12m": 2,
+            "total_actions_12m": 48
+        },
+        "institutional": {
+            "held_pct_institutions": 0.91926,
+            "held_pct_insiders": 0.00723
+        },
+        "short_interest": {
+            "short_pct_of_float": 0.0498,
+            "short_ratio": 3.63,
+            "short_change_pct": 0.14905945492399392
+        },
+        "data_quality_flags": []
+    },
+    "professional_raw_metrics_date": "2026-05-25",
+    "professional_score": 65.96132990390603,
+    "professional_score_date": "2026-05-25",
+    "professional_subscores": {
+        "analyst_consensus": 76.57921672150673,
+        "rating_momentum": 53.8125,
+        "institutional_positioning": 68.58682658251678,
+        "short_interest": 57.058482704996564
+    },
+    "professional_drivers": {
+        "strongest": [
+            "upside_to_target (analyst_consensus): score=77, value=21.9%",
+            "recommendation_mean (analyst_consensus): score=77, value=1.95",
+            "held_pct_institutions (institutional_positioning): score=73, value=91.9%"
+        ],
+        "weakest": [
+            "short_change_pct (short_interest): score=31, value=14.9%",
+            "upgrades_12m (rating_momentum): score=54, value=3.00",
+            "downgrades_12m (rating_momentum): score=54, value=2.00"
+        ]
+    },
+    "news_sentiment_raw_metrics": {
         "sector": null,
         "industry": null,
         "market_cap_usd": null,
         "current_price": null,
-        "analyst": {
-            "recommendation_mean": null,
-            "recommendation_key": null,
-            "target_mean_price": null,
-            "target_median_price": null,
-            "target_high_price": null,
-            "target_low_price": null,
-            "upside_to_target": null,
-            "target_dispersion": null,
-            "num_analysts": null
-        },
-        "rating_momentum": {
-            "upgrades_12m": 0,
-            "downgrades_12m": 0,
-            "total_actions_12m": 0
-        },
-        "institutional": {
-            "held_pct_institutions": null,
-            "held_pct_insiders": null
-        },
-        "short_interest": {
-            "short_pct_of_float": null,
-            "short_ratio": null,
-            "short_change_pct": null
-        },
-        "data_quality_flags": [
-            "TOL: failed to fetch .info (Too Many Requests. Rate limited. Try after a while.)",
-            "TOL: sector classification unavailable",
-            "TOL: upgrades/downgrades fetch failed (Too Many Requests. Rate limited. Try after a while.)"
-        ]
-    },
-    "professional_raw_metrics_date": "2026-05-21",
-    "professional_score": null,
-    "professional_score_date": "2026-05-21",
-    "professional_subscores": {
-        "analyst_consensus": null,
-        "rating_momentum": 50.0,
-        "institutional_positioning": null,
-        "short_interest": null
-    },
-    "professional_drivers": {
-        "strongest": [],
-        "weakest": []
-    },
-    "news_sentiment_raw_metrics": {
-        "sector": "Consumer Cyclical",
-        "industry": "Residential Construction",
-        "market_cap_usd": 12595515392,
-        "current_price": 134.51,
         "earnings": {
             "beat_count_4q": null,
             "miss_count_4q": null,
             "total_quarters_4q": null,
             "avg_surprise_magnitude_4q": null,
             "eps_estimate_revision_90d": null,
-            "trailing_eps": 13.15,
-            "forward_eps": 14.0879
+            "trailing_eps": null,
+            "forward_eps": null
         },
         "price_momentum": {
-            "return_1m": -0.09310953777146802,
-            "return_3m": -0.15775085756041432,
-            "return_6m": 0.06853063281663067
+            "return_1m": -0.0924875155131533,
+            "return_3m": -0.1599280340546182,
+            "return_6m": 0.06794599306337709
         },
         "insider_activity": {
-            "insider_purchases_count_90d": 0,
-            "insider_sales_count_90d": 4,
-            "insider_net_value_90d_usd": -12031506.0
+            "insider_purchases_count_90d": null,
+            "insider_sales_count_90d": null,
+            "insider_net_value_90d_usd": null
         },
         "data_quality_flags": [
-            "TOL: earnings_dates fetch failed (['Earnings Date'])"
+            "TOL: failed to fetch .info (Too Many Requests. Rate limited. Try after a while.)",
+            "TOL: sector classification unavailable",
+            "TOL: earnings_dates fetch failed (['Earnings Date'])",
+            "TOL: eps_revisions fetch failed (Too Many Requests. Rate limited. Try after a while.)",
+            "TOL: insider_transactions fetch failed (Too Many Requests. Rate limited. Try after a while.)"
         ]
     },
-    "news_sentiment_raw_metrics_date": "2026-05-21",
-    "news_sentiment_score": 33.75254937752166,
-    "news_sentiment_score_date": "2026-05-21",
+    "news_sentiment_raw_metrics_date": "2026-05-25",
+    "news_sentiment_score": null,
+    "news_sentiment_score_date": "2026-05-25",
     "news_sentiment_subscores": {
         "earnings_surprise_revisions": null,
-        "price_momentum": 41.48701142294004,
-        "insider_activity": 18.28362528668489
+        "price_momentum": 41.346951071324355,
+        "insider_activity": null
     },
     "news_sentiment_drivers": {
         "strongest": [
-            "return_6m (price_momentum): score=61, value=6.9%",
-            "return_1m (price_momentum): score=34, value=-9.3%",
-            "net_insider_value_pct_mcap_90d (insider_activity): score=26, value=-0.1%"
+            "return_6m (price_momentum): score=61, value=6.8%",
+            "return_1m (price_momentum): score=35, value=-9.2%",
+            "return_3m (price_momentum): score=23, value=-16.0%"
         ],
         "weakest": [
-            "insider_count_ratio_90d (insider_activity): score=0, value=-1.00",
-            "return_3m (price_momentum): score=24, value=-15.8%",
-            "net_insider_value_pct_mcap_90d (insider_activity): score=26, value=-0.1%"
+            "return_3m (price_momentum): score=23, value=-16.0%",
+            "return_1m (price_momentum): score=35, value=-9.2%",
+            "return_6m (price_momentum): score=61, value=6.8%"
         ]
     },
-    "composite_score": 53.390210479012374,
-    "composite_score_date": "2026-05-21",
-    "composite_rank": 527,
+    "composite_score": 58.37653277680366,
+    "composite_score_date": "2026-05-25",
+    "composite_rank": 295,
     "composite_metadata": {
         "scores_used": [
             "financial",
-            "news_sentiment"
-        ],
-        "scores_imputed": [
             "professional"
         ],
+        "scores_imputed": [
+            "news_sentiment"
+        ],
         "imputed_values": {
-            "professional": 59.413847506227995
+            "news_sentiment": 48.88741103076387
         },
-        "imputation_r_squared": 0.04516719672877956,
+        "imputation_r_squared": 0.031937368103860275,
         "weights_applied": {
             "financial": 50,
             "professional": 30,

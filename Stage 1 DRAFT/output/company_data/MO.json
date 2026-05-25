@@ -51,15 +51,15 @@
         ]
     },
     "financial_raw_metrics_date": "2026-05-25",
-    "financial_score": 75.16165189181099,
-    "financial_score_date": "2026-05-21",
+    "financial_score": 75.14450968640054,
+    "financial_score_date": "2026-05-25",
     "financial_subscores": {
         "profitability": 100,
         "returns_on_capital": null,
         "cash_flow_quality": 90.15699344809956,
         "balance_sheet": 63.7237542600393,
         "growth": 42.3672336561102,
-        "valuation": 71.28082872540955
+        "valuation": 71.1894036298872
     },
     "financial_drivers": {
         "strongest": [
@@ -76,8 +76,8 @@
     "professional_raw_metrics": {
         "sector": "Consumer Defensive",
         "industry": "Tobacco",
-        "market_cap_usd": 123087675392,
-        "current_price": 73.71,
+        "market_cap_usd": 123404959744,
+        "current_price": 73.9,
         "analyst": {
             "recommendation_mean": 2.61538,
             "recommendation_key": "hold",
@@ -85,17 +85,17 @@
             "target_median_price": 71.0,
             "target_high_price": 82.0,
             "target_low_price": 50.0,
-            "upside_to_target": -0.057732329398996016,
+            "upside_to_target": -0.060154939106901326,
             "target_dispersion": 0.46073295414051346,
             "num_analysts": 11
         },
         "rating_momentum": {
             "upgrades_12m": 2,
             "downgrades_12m": 0,
-            "total_actions_12m": 19
+            "total_actions_12m": 18
         },
         "institutional": {
-            "held_pct_institutions": 0.63495,
+            "held_pct_institutions": 0.63487,
             "held_pct_insiders": 0.0013
         },
         "short_interest": {
@@ -105,92 +105,85 @@
         },
         "data_quality_flags": []
     },
-    "professional_raw_metrics_date": "2026-05-21",
-    "professional_score": 48.38706524400083,
-    "professional_score_date": "2026-05-21",
+    "professional_raw_metrics_date": "2026-05-25",
+    "professional_score": 48.53700412646159,
+    "professional_score_date": "2026-05-25",
     "professional_subscores": {
-        "analyst_consensus": 34.4576470601004,
-        "rating_momentum": 59.131578947368425,
-        "institutional_positioning": 52.18980715575624,
-        "short_interest": 56.643614981230165
+        "analyst_consensus": 34.21538608930987,
+        "rating_momentum": 59.5,
+        "institutional_positioning": 54.03817427343171,
+        "short_interest": 54.513836178968035
     },
     "professional_drivers": {
         "strongest": [
-            "short_pct_of_float (short_interest): score=72, value=3.0%",
-            "total_actions_12m (rating_momentum): score=59, value=19.00",
-            "downgrades_12m (rating_momentum): score=59, value=0.00"
+            "short_pct_of_float (short_interest): score=67, value=3.0%",
+            "total_actions_12m (rating_momentum): score=60, value=18.00",
+            "downgrades_12m (rating_momentum): score=60, value=0.00"
         ],
         "weakest": [
-            "upside_to_target (analyst_consensus): score=11, value=-5.8%",
+            "upside_to_target (analyst_consensus): score=10, value=-6.0%",
             "short_change_pct (short_interest): score=33, value=13.5%",
             "short_ratio (short_interest): score=47, value=5.45"
         ]
     },
     "news_sentiment_raw_metrics": {
-        "sector": null,
-        "industry": null,
-        "market_cap_usd": null,
-        "current_price": null,
+        "sector": "Consumer Defensive",
+        "industry": "Tobacco",
+        "market_cap_usd": 123404959744,
+        "current_price": 73.9,
         "earnings": {
             "beat_count_4q": 2,
             "miss_count_4q": 1,
             "total_quarters_4q": 4,
             "avg_surprise_magnitude_4q": 0.021081686429512535,
             "eps_estimate_revision_90d": null,
-            "trailing_eps": null,
-            "forward_eps": null
+            "trailing_eps": 4.79,
+            "forward_eps": 5.86742
         },
         "price_momentum": {
-            "return_1m": null,
-            "return_3m": null,
-            "return_6m": null
+            "return_1m": 0.1337833638232093,
+            "return_3m": 0.10513737972948606,
+            "return_6m": 0.31511504686229486
         },
         "insider_activity": {
-            "insider_purchases_count_90d": null,
-            "insider_sales_count_90d": null,
-            "insider_net_value_90d_usd": null
+            "insider_purchases_count_90d": 0,
+            "insider_sales_count_90d": 1,
+            "insider_net_value_90d_usd": -1885718.0
         },
-        "data_quality_flags": [
-            "MO: failed to fetch .info (Too Many Requests. Rate limited. Try after a while.)",
-            "MO: sector classification unavailable",
-            "MO: eps_revisions fetch failed (Too Many Requests. Rate limited. Try after a while.)",
-            "MO: price momentum fetch failed (Too Many Requests. Rate limited. Try after a while.)",
-            "MO: insider_transactions fetch failed (Too Many Requests. Rate limited. Try after a while.)"
-        ]
+        "data_quality_flags": []
     },
-    "news_sentiment_raw_metrics_date": "2026-05-21",
-    "news_sentiment_score": null,
-    "news_sentiment_score_date": "2026-05-21",
+    "news_sentiment_raw_metrics_date": "2026-05-25",
+    "news_sentiment_score": 61.575447522998246,
+    "news_sentiment_score_date": "2026-05-25",
     "news_sentiment_subscores": {
         "earnings_surprise_revisions": 54.86500456065675,
-        "price_momentum": null,
-        "insider_activity": null
+        "price_momentum": 81.7073206435204,
+        "insider_activity": 34.73258720663693
     },
     "news_sentiment_drivers": {
         "strongest": [
-            "avg_surprise_magnitude_4q (earnings_surprise_revisions): score=61, value=2.1%",
-            "beat_rate_4q (earnings_surprise_revisions): score=50, value=50.0%"
+            "return_6m (price_momentum): score=100, value=31.5%",
+            "return_1m (price_momentum): score=72, value=13.4%",
+            "return_3m (price_momentum): score=68, value=10.5%"
         ],
         "weakest": [
-            "beat_rate_4q (earnings_surprise_revisions): score=50, value=50.0%",
-            "avg_surprise_magnitude_4q (earnings_surprise_revisions): score=61, value=2.1%"
+            "insider_count_ratio_90d (insider_activity): score=0, value=-1.00",
+            "net_insider_value_pct_mcap_90d (insider_activity): score=50, value=-0.0%",
+            "beat_rate_4q (earnings_surprise_revisions): score=50, value=50.0%"
         ]
     },
-    "composite_score": 62.02431382970317,
-    "composite_score_date": "2026-05-21",
-    "composite_rank": 107,
+    "composite_score": 64.4484455857384,
+    "composite_score_date": "2026-05-25",
+    "composite_rank": 59,
     "composite_metadata": {
         "scores_used": [
             "financial",
-            "professional"
-        ],
-        "scores_imputed": [
+            "professional",
             "news_sentiment"
         ],
-        "imputed_values": {
-            "news_sentiment": 49.63684155298716
-        },
-        "imputation_r_squared": 0.05693184104207816,
+        "scores_imputed": [],
+        "imputed_values": {},
+        "imputation_r_squared": null,
         "weights_applied": {
             "financial": 50,
             "professional": 30,
@@ -214,6 +207,6 @@
         "check_status": "ok",
         "error_message": null
     },
-    "disqualifier_check_date": "2026-05-18",
+    "disqualifier_check_date": "2026-05-25",
     "qualified": false
 }

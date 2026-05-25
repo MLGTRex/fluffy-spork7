@@ -51,15 +51,15 @@
         ]
     },
     "financial_raw_metrics_date": "2026-05-25",
-    "financial_score": 48.415322736192046,
-    "financial_score_date": "2026-05-21",
+    "financial_score": 48.35201045920517,
+    "financial_score_date": "2026-05-25",
     "financial_subscores": {
         "profitability": 79.07850452390787,
         "returns_on_capital": 58.42918106261861,
         "cash_flow_quality": 13.588697516116046,
         "balance_sheet": 26.03083448696779,
         "growth": 58.523937111157046,
-        "valuation": 41.281768345004124
+        "valuation": 40.85968649842487
     },
     "financial_drivers": {
         "strongest": [
@@ -76,8 +76,8 @@
     "professional_raw_metrics": {
         "sector": "Utilities",
         "industry": "Utilities - Regulated Water",
-        "market_cap_usd": 24191350784,
-        "current_price": 123.88,
+        "market_cap_usd": 24449122304,
+        "current_price": 125.2,
         "analyst": {
             "recommendation_mean": 2.76923,
             "recommendation_key": "hold",
@@ -85,7 +85,7 @@
             "target_median_price": 134.0,
             "target_high_price": 155.0,
             "target_low_price": 124.0,
-            "upside_to_target": 0.09857047142395878,
+            "upside_to_target": 0.08698809904153358,
             "target_dispersion": 0.2277889096340086,
             "num_analysts": 11
         },
@@ -95,7 +95,7 @@
             "total_actions_12m": 16
         },
         "institutional": {
-            "held_pct_institutions": 0.010264,
+            "held_pct_institutions": 0.0102633,
             "held_pct_insiders": 0.00117
         },
         "short_interest": {
@@ -105,14 +105,14 @@
         },
         "data_quality_flags": []
     },
-    "professional_raw_metrics_date": "2026-05-21",
-    "professional_score": 42.08349661215841,
-    "professional_score_date": "2026-05-21",
+    "professional_raw_metrics_date": "2026-05-25",
+    "professional_score": 41.60129273219625,
+    "professional_score_date": "2026-05-25",
     "professional_subscores": {
-        "analyst_consensus": 47.39552714239588,
+        "analyst_consensus": 46.23728990415336,
         "rating_momentum": 60.375,
-        "institutional_positioning": 16.54161466634485,
-        "short_interest": 41.77272297155764
+        "institutional_positioning": 17.275861951289784,
+        "short_interest": 40.03683851946756
     },
     "professional_drivers": {
         "strongest": [
@@ -121,76 +121,69 @@
             "upgrades_12m (rating_momentum): score=60, value=2.00"
         ],
         "weakest": [
-            "held_pct_institutions (institutional_positioning): score=2, value=1.0%",
-            "short_pct_of_float (short_interest): score=33, value=6.5%",
+            "held_pct_institutions (institutional_positioning): score=3, value=1.0%",
+            "short_pct_of_float (short_interest): score=30, value=6.5%",
             "recommendation_mean (analyst_consensus): score=44, value=2.77"
         ]
     },
     "news_sentiment_raw_metrics": {
-        "sector": null,
-        "industry": null,
-        "market_cap_usd": null,
-        "current_price": null,
+        "sector": "Utilities",
+        "industry": "Utilities - Regulated Water",
+        "market_cap_usd": 24449122304,
+        "current_price": 125.2,
         "earnings": {
             "beat_count_4q": 1,
             "miss_count_4q": 3,
             "total_quarters_4q": 4,
-            "avg_surprise_magnitude_4q": -0.024445346900502207,
+            "avg_surprise_magnitude_4q": -0.023024254293707896,
             "eps_estimate_revision_90d": null,
-            "trailing_eps": null,
-            "forward_eps": null
+            "trailing_eps": 5.63,
+            "forward_eps": 6.56473
         },
         "price_momentum": {
-            "return_1m": null,
-            "return_3m": null,
-            "return_6m": null
+            "return_1m": -0.03839240530955154,
+            "return_3m": -0.04007607224617157,
+            "return_6m": -0.009205190682641437
         },
         "insider_activity": {
-            "insider_purchases_count_90d": null,
-            "insider_sales_count_90d": null,
+            "insider_purchases_count_90d": 0,
+            "insider_sales_count_90d": 0,
             "insider_net_value_90d_usd": null
         },
-        "data_quality_flags": [
-            "AWK: failed to fetch .info (Too Many Requests. Rate limited. Try after a while.)",
-            "AWK: sector classification unavailable",
-            "AWK: eps_revisions fetch failed (Too Many Requests. Rate limited. Try after a while.)",
-            "AWK: price momentum fetch failed (Too Many Requests. Rate limited. Try after a while.)",
-            "AWK: insider_transactions fetch failed (Too Many Requests. Rate limited. Try after a while.)"
-        ]
+        "data_quality_flags": []
     },
-    "news_sentiment_raw_metrics_date": "2026-05-21",
-    "news_sentiment_score": null,
-    "news_sentiment_score_date": "2026-05-21",
+    "news_sentiment_raw_metrics_date": "2026-05-25",
+    "news_sentiment_score": 41.09467846484486,
+    "news_sentiment_score_date": "2026-05-25",
     "news_sentiment_subscores": {
-        "earnings_surprise_revisions": 32.02547441836883,
-        "price_momentum": null,
-        "insider_activity": null
+        "earnings_surprise_revisions": 32.28782997654624,
+        "price_momentum": 45.44886618556591,
+        "insider_activity": 50.0
     },
     "news_sentiment_drivers": {
         "strongest": [
-            "avg_surprise_magnitude_4q (earnings_surprise_revisions): score=40, value=-2.4%",
-            "beat_rate_4q (earnings_surprise_revisions): score=25, value=25.0%"
+            "insider_activity_summary (insider_activity): score=50, value=no activity in 90d",
+            "return_6m (price_momentum): score=48, value=-0.9%",
+            "return_1m (price_momentum): score=44, value=-3.8%"
         ],
         "weakest": [
             "beat_rate_4q (earnings_surprise_revisions): score=25, value=25.0%",
-            "avg_surprise_magnitude_4q (earnings_surprise_revisions): score=40, value=-2.4%"
+            "avg_surprise_magnitude_4q (earnings_surprise_revisions): score=41, value=-2.3%",
+            "return_3m (price_momentum): score=43, value=-4.0%"
         ]
     },
-    "composite_score": 48.201943600770775,
-    "composite_score_date": "2026-05-21",
-    "composite_rank": 784,
+    "composite_score": 44.87532874223043,
+    "composite_score_date": "2026-05-25",
+    "composite_rank": 915,
     "composite_metadata": {
         "scores_used": [
             "financial",
-            "professional"
-        ],
-        "scores_imputed": [
+            "professional",
             "news_sentiment"
         ],
-        "imputed_values": {
-            "news_sentiment": 56.846166245136146
-        },
-        "imputation_r_squared": 0.05693184104207816,
+        "scores_imputed": [],
+        "imputed_values": {},
+        "imputation_r_squared": null,
         "weights_applied": {
             "financial": 50,
             "professional": 30,

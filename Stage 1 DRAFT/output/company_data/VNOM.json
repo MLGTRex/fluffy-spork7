@@ -5,7 +5,7 @@
     "financial_raw_metrics": {
         "sector": "Energy",
         "industry": "Oil & Gas Midstream",
-        "market_cap_usd": 16854802432,
+        "market_cap_usd": 16833262592,
         "profitability": {
             "gross_margin_ttm": 1.0,
             "operating_margin_ttm": 0.55876,
@@ -39,27 +39,27 @@
         },
         "valuation": {
             "pe_trailing": null,
-            "pe_forward": 19.576368,
-            "ps_ratio": 10.681117,
-            "pb_ratio": 1.7838824,
-            "ev_ebitda": 10.712,
+            "pe_forward": 19.55135,
+            "ps_ratio": 10.667467,
+            "pb_ratio": 1.7816026,
+            "ev_ebitda": 10.608,
             "peg_ratio": 0.64,
-            "fcf_yield": -0.06209654656128811
+            "fcf_yield": -0.062176005291892024
         },
         "data_quality_flags": [
             "VNOM: eps_cagr_3yr approximated by net income CAGR (share count changes not adjusted)"
         ]
     },
-    "financial_raw_metrics_date": "2026-05-21",
-    "financial_score": 52.67087505557931,
-    "financial_score_date": "2026-05-21",
+    "financial_raw_metrics_date": "2026-05-25",
+    "financial_score": 52.68522362281271,
+    "financial_score_date": "2026-05-25",
     "financial_subscores": {
         "profitability": 60.716777440397166,
         "returns_on_capital": 27.208600767934207,
         "cash_flow_quality": 32.816163218837886,
         "balance_sheet": 77.77080649711496,
         "growth": 75.36959320903361,
-        "valuation": 47.948766501100394
+        "valuation": 48.04442361598975
     },
     "financial_drivers": {
         "strongest": [
@@ -74,117 +74,125 @@
         ]
     },
     "professional_raw_metrics": {
-        "sector": null,
-        "industry": null,
-        "market_cap_usd": null,
-        "current_price": null,
+        "sector": "Energy",
+        "industry": "Oil & Gas Midstream",
+        "market_cap_usd": 16833262592,
+        "current_price": 46.89,
         "analyst": {
-            "recommendation_mean": null,
-            "recommendation_key": null,
-            "target_mean_price": null,
-            "target_median_price": null,
-            "target_high_price": null,
-            "target_low_price": null,
-            "upside_to_target": null,
-            "target_dispersion": null,
-            "num_analysts": null
+            "recommendation_mean": 1.23529,
+            "recommendation_key": "strong_buy",
+            "target_mean_price": 57.76471,
+            "target_median_price": 58.0,
+            "target_high_price": 65.0,
+            "target_low_price": 49.0,
+            "upside_to_target": 0.23191959906163362,
+            "target_dispersion": 0.2769857236364555,
+            "num_analysts": 17
         },
         "rating_momentum": {
             "upgrades_12m": 0,
             "downgrades_12m": 0,
-            "total_actions_12m": 0
+            "total_actions_12m": 36
         },
         "institutional": {
-            "held_pct_institutions": null,
-            "held_pct_insiders": null
+            "held_pct_institutions": 0.010612600000000002,
+            "held_pct_insiders": 0.00212
         },
         "short_interest": {
-            "short_pct_of_float": null,
-            "short_ratio": null,
-            "short_change_pct": null
+            "short_pct_of_float": 0.0383,
+            "short_ratio": 4.08,
+            "short_change_pct": -0.3013984828934793
         },
-        "data_quality_flags": [
-            "VNOM: failed to fetch .info (Too Many Requests. Rate limited. Try after a while.)",
-            "VNOM: sector classification unavailable",
-            "VNOM: upgrades/downgrades fetch failed (Too Many Requests. Rate limited. Try after a while.)"
-        ]
+        "data_quality_flags": []
     },
-    "professional_raw_metrics_date": "2026-05-21",
-    "professional_score": null,
-    "professional_score_date": "2026-05-21",
+    "professional_raw_metrics_date": "2026-05-25",
+    "professional_score": 57.497064373024706,
+    "professional_score_date": "2026-05-25",
     "professional_subscores": {
-        "analyst_consensus": null,
-        "rating_momentum": 50.0,
-        "institutional_positioning": null,
-        "short_interest": null
+        "analyst_consensus": 88.63782660410891,
+        "rating_momentum": 52.5,
+        "institutional_positioning": 16.056172736386113,
+        "short_interest": 62.231879183267054
     },
     "professional_drivers": {
-        "strongest": [],
-        "weakest": []
+        "strongest": [
+            "recommendation_mean (analyst_consensus): score=95, value=1.24",
+            "short_change_pct (short_interest): score=87, value=-30.1%",
+            "upside_to_target (analyst_consensus): score=79, value=23.2%"
+        ],
+        "weakest": [
+            "held_pct_institutions (institutional_positioning): score=1, value=1.1%",
+            "held_pct_insiders (institutional_positioning): score=52, value=0.2%",
+            "upgrades_12m (rating_momentum): score=52, value=0.00"
+        ]
     },
     "news_sentiment_raw_metrics": {
-        "sector": "Energy",
-        "industry": "Oil & Gas Midstream",
-        "market_cap_usd": 16854802432,
-        "current_price": 46.95,
+        "sector": null,
+        "industry": null,
+        "market_cap_usd": null,
+        "current_price": null,
         "earnings": {
             "beat_count_4q": null,
             "miss_count_4q": null,
             "total_quarters_4q": null,
             "avg_surprise_magnitude_4q": null,
             "eps_estimate_revision_90d": null,
-            "trailing_eps": -0.57,
-            "forward_eps": 2.3983
+            "trailing_eps": null,
+            "forward_eps": null
         },
         "price_momentum": {
-            "return_1m": 0.012967276749085481,
-            "return_3m": 0.08004276413271139,
-            "return_6m": 0.32364577454124976
+            "return_1m": -0.002124758637793719,
+            "return_3m": 0.067179828001818,
+            "return_6m": 0.3426097563879447
         },
         "insider_activity": {
-            "insider_purchases_count_90d": 0,
-            "insider_sales_count_90d": 2,
-            "insider_net_value_90d_usd": -589463824.0
+            "insider_purchases_count_90d": null,
+            "insider_sales_count_90d": null,
+            "insider_net_value_90d_usd": null
         },
         "data_quality_flags": [
-            "VNOM: earnings_dates fetch failed (['Earnings Date'])"
+            "VNOM: failed to fetch .info (Too Many Requests. Rate limited. Try after a while.)",
+            "VNOM: sector classification unavailable",
+            "VNOM: earnings_dates fetch failed (['Earnings Date'])",
+            "VNOM: eps_revisions fetch failed (Too Many Requests. Rate limited. Try after a while.)",
+            "VNOM: insider_transactions fetch failed (Too Many Requests. Rate limited. Try after a while.)"
         ]
     },
-    "news_sentiment_raw_metrics_date": "2026-05-21",
-    "news_sentiment_score": 50.13964295930226,
-    "news_sentiment_score_date": "2026-05-21",
+    "news_sentiment_raw_metrics_date": "2026-05-25",
+    "news_sentiment_score": null,
+    "news_sentiment_score_date": "2026-05-25",
     "news_sentiment_subscores": {
         "earnings_surprise_revisions": null,
-        "price_momentum": 75.20946443895339,
-        "insider_activity": 0.0
+        "price_momentum": 73.83029169019798,
+        "insider_activity": null
     },
     "news_sentiment_drivers": {
         "strongest": [
-            "return_6m (price_momentum): score=100, value=32.4%",
-            "return_3m (price_momentum): score=63, value=8.0%",
-            "return_1m (price_momentum): score=52, value=1.3%"
+            "return_6m (price_momentum): score=100, value=34.3%",
+            "return_3m (price_momentum): score=61, value=6.7%",
+            "return_1m (price_momentum): score=50, value=-0.2%"
         ],
         "weakest": [
-            "net_insider_value_pct_mcap_90d (insider_activity): score=0, value=-3.5%",
-            "insider_count_ratio_90d (insider_activity): score=0, value=-1.00",
-            "return_1m (price_momentum): score=52, value=1.3%"
+            "return_1m (price_momentum): score=50, value=-0.2%",
+            "return_3m (price_momentum): score=61, value=6.7%",
+            "return_6m (price_momentum): score=100, value=34.3%"
         ]
     },
-    "composite_score": 53.633116571716144,
-    "composite_score_date": "2026-05-21",
-    "composite_rank": 512,
+    "composite_score": 53.84529025525704,
+    "composite_score_date": "2026-05-25",
+    "composite_rank": 562,
     "composite_metadata": {
         "scores_used": [
             "financial",
-            "news_sentiment"
-        ],
-        "scores_imputed": [
             "professional"
         ],
+        "scores_imputed": [
+            "news_sentiment"
+        ],
         "imputed_values": {
-            "professional": 57.56583484022014
+            "news_sentiment": 51.2677956597164
         },
-        "imputation_r_squared": 0.04516719672877956,
+        "imputation_r_squared": 0.031937368103860275,
         "weights_applied": {
             "financial": 50,
             "professional": 30,

@@ -5,7 +5,7 @@
     "financial_raw_metrics": {
         "sector": "Technology",
         "industry": "Electronic Components",
-        "market_cap_usd": 4280979200,
+        "market_cap_usd": 4409076736,
         "profitability": {
             "gross_margin_ttm": 0.74166,
             "operating_margin_ttm": 0.30062,
@@ -38,28 +38,28 @@
             "fcf_cagr_3yr": 0.2194431774886525
         },
         "valuation": {
-            "pe_trailing": 20.39421,
-            "pe_forward": 18.363802,
-            "ps_ratio": 6.832676,
-            "pb_ratio": 2.5123463,
-            "ev_ebitda": 13.851,
+            "pe_trailing": 21.004456,
+            "pe_forward": 18.913292,
+            "ps_ratio": 7.0371265,
+            "pb_ratio": 2.5875218,
+            "ev_ebitda": 14.483,
             "peg_ratio": 1.0,
-            "fcf_yield": 0.030196741904282086
+            "fcf_yield": 0.02931943164982829
         },
         "data_quality_flags": [
             "OLED: eps_cagr_3yr approximated by net income CAGR (share count changes not adjusted)"
         ]
     },
-    "financial_raw_metrics_date": "2026-05-21",
-    "financial_score": 61.83711835339747,
-    "financial_score_date": "2026-05-21",
+    "financial_raw_metrics_date": "2026-05-25",
+    "financial_score": 61.6968711430994,
+    "financial_score_date": "2026-05-25",
     "financial_subscores": {
-        "profitability": 63.27052535045736,
-        "returns_on_capital": 46.93320473576204,
+        "profitability": 63.227188932034835,
+        "returns_on_capital": 46.950268881762355,
         "cash_flow_quality": 73.04708629042469,
         "balance_sheet": 98.49123529411764,
         "growth": 36.50713924292987,
-        "valuation": 57.26368808021837
+        "valuation": 56.36373637479415
     },
     "financial_drivers": {
         "strongest": [
@@ -74,117 +74,124 @@
         ]
     },
     "professional_raw_metrics": {
-        "sector": null,
-        "industry": null,
-        "market_cap_usd": null,
-        "current_price": null,
+        "sector": "Technology",
+        "industry": "Electronic Components",
+        "market_cap_usd": 4409076736,
+        "current_price": 94.31,
         "analyst": {
-            "recommendation_mean": null,
-            "recommendation_key": null,
-            "target_mean_price": null,
-            "target_median_price": null,
-            "target_high_price": null,
-            "target_low_price": null,
-            "upside_to_target": null,
-            "target_dispersion": null,
-            "num_analysts": null
+            "recommendation_mean": 1.77778,
+            "recommendation_key": "buy",
+            "target_mean_price": 128.11111,
+            "target_median_price": 130.0,
+            "target_high_price": 168.0,
+            "target_low_price": 100.0,
+            "upside_to_target": 0.3584043049517548,
+            "target_dispersion": 0.5307892500502104,
+            "num_analysts": 9
         },
         "rating_momentum": {
             "upgrades_12m": 0,
             "downgrades_12m": 0,
-            "total_actions_12m": 0
+            "total_actions_12m": 7
         },
         "institutional": {
-            "held_pct_institutions": null,
-            "held_pct_insiders": null
+            "held_pct_institutions": 0.90765,
+            "held_pct_insiders": 0.08194
         },
         "short_interest": {
-            "short_pct_of_float": null,
-            "short_ratio": null,
-            "short_change_pct": null
+            "short_pct_of_float": 0.0723,
+            "short_ratio": 4.2,
+            "short_change_pct": 0.30174302531998903
         },
-        "data_quality_flags": [
-            "OLED: failed to fetch .info (Too Many Requests. Rate limited. Try after a while.)",
-            "OLED: sector classification unavailable",
-            "OLED: upgrades/downgrades fetch failed (Too Many Requests. Rate limited. Try after a while.)"
-        ]
+        "data_quality_flags": []
     },
-    "professional_raw_metrics_date": "2026-05-21",
-    "professional_score": null,
-    "professional_score_date": "2026-05-21",
+    "professional_raw_metrics_date": "2026-05-25",
+    "professional_score": 69.14475094273146,
+    "professional_score_date": "2026-05-25",
     "professional_subscores": {
-        "analyst_consensus": null,
+        "analyst_consensus": 86.1680460990351,
         "rating_momentum": 50.0,
-        "institutional_positioning": null,
-        "short_interest": null
+        "institutional_positioning": 77.45906202884888,
+        "short_interest": 47.4744620057131
     },
     "professional_drivers": {
-        "strongest": [],
-        "weakest": []
+        "strongest": [
+            "upside_to_target (analyst_consensus): score=93, value=35.8%",
+            "held_pct_insiders (institutional_positioning): score=86, value=8.2%",
+            "recommendation_mean (analyst_consensus): score=82, value=1.78"
+        ],
+        "weakest": [
+            "short_change_pct (short_interest): score=17, value=30.2%",
+            "upgrades_12m (rating_momentum): score=50, value=0.00",
+            "downgrades_12m (rating_momentum): score=50, value=0.00"
+        ]
     },
     "news_sentiment_raw_metrics": {
-        "sector": "Technology",
-        "industry": "Electronic Components",
-        "market_cap_usd": 4280979200,
-        "current_price": 91.57,
+        "sector": null,
+        "industry": null,
+        "market_cap_usd": null,
+        "current_price": null,
         "earnings": {
             "beat_count_4q": null,
             "miss_count_4q": null,
             "total_quarters_4q": null,
             "avg_surprise_magnitude_4q": null,
             "eps_estimate_revision_90d": null,
-            "trailing_eps": 4.49,
-            "forward_eps": 4.98644
+            "trailing_eps": null,
+            "forward_eps": null
         },
         "price_momentum": {
-            "return_1m": -0.07533069646827525,
-            "return_3m": -0.23239207340990106,
-            "return_6m": -0.16587244619189023
+            "return_1m": -0.04919855593002156,
+            "return_3m": -0.19052301483192027,
+            "return_6m": -0.1239103362832335
         },
         "insider_activity": {
-            "insider_purchases_count_90d": 3,
-            "insider_sales_count_90d": 0,
-            "insider_net_value_90d_usd": 1465644.0
+            "insider_purchases_count_90d": null,
+            "insider_sales_count_90d": null,
+            "insider_net_value_90d_usd": null
         },
         "data_quality_flags": [
-            "OLED: earnings_dates fetch failed (['Earnings Date'])"
+            "OLED: failed to fetch .info (argument of type 'NoneType' is not iterable)",
+            "OLED: sector classification unavailable",
+            "OLED: earnings_dates fetch failed (['Earnings Date'])",
+            "OLED: insider_transactions fetch failed (Too Many Requests. Rate limited. Try after a while.)"
         ]
     },
-    "news_sentiment_raw_metrics_date": "2026-05-21",
-    "news_sentiment_score": 38.495013260433986,
-    "news_sentiment_score_date": "2026-05-21",
+    "news_sentiment_raw_metrics_date": "2026-05-25",
+    "news_sentiment_score": null,
+    "news_sentiment_score_date": "2026-05-25",
     "news_sentiment_subscores": {
         "earnings_surprise_revisions": null,
-        "price_momentum": 22.246853618784954,
-        "insider_activity": 70.99133254373206
+        "price_momentum": 28.57552855217152,
+        "insider_activity": null
     },
     "news_sentiment_drivers": {
         "strongest": [
-            "insider_count_ratio_90d (insider_activity): score=100, value=1.00",
-            "net_insider_value_pct_mcap_90d (insider_activity): score=59, value=0.0%",
-            "return_1m (price_momentum): score=37, value=-7.5%"
+            "return_1m (price_momentum): score=42, value=-4.9%",
+            "return_6m (price_momentum): score=29, value=-12.4%",
+            "return_3m (price_momentum): score=18, value=-19.1%"
         ],
         "weakest": [
-            "return_3m (price_momentum): score=11, value=-23.2%",
-            "return_6m (price_momentum): score=22, value=-16.6%",
-            "return_1m (price_momentum): score=37, value=-7.5%"
+            "return_3m (price_momentum): score=18, value=-19.1%",
+            "return_6m (price_momentum): score=29, value=-12.4%",
+            "return_1m (price_momentum): score=42, value=-4.9%"
         ]
     },
-    "composite_score": 56.387225892830955,
-    "composite_score_date": "2026-05-21",
-    "composite_rank": 355,
+    "composite_score": 61.138840545820095,
+    "composite_score_date": "2026-05-25",
+    "composite_rank": 158,
     "composite_metadata": {
         "scores_used": [
             "financial",
-            "news_sentiment"
-        ],
-        "scores_imputed": [
             "professional"
         ],
+        "scores_imputed": [
+            "news_sentiment"
+        ],
         "imputed_values": {
-            "professional": 59.232213546818066
+            "news_sentiment": 47.734898457254786
         },
-        "imputation_r_squared": 0.04516719672877956,
+        "imputation_r_squared": 0.031937368103860275,
         "weights_applied": {
             "financial": 50,
             "professional": 30,

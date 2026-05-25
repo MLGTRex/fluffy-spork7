@@ -51,15 +51,15 @@
         ]
     },
     "financial_raw_metrics_date": "2026-05-25",
-    "financial_score": 56.43444386544543,
-    "financial_score_date": "2026-05-21",
+    "financial_score": 56.482587788372086,
+    "financial_score_date": "2026-05-25",
     "financial_subscores": {
-        "profitability": 62.56831869982911,
-        "returns_on_capital": 49.206455362104606,
+        "profitability": 62.568895249172726,
+        "returns_on_capital": 49.11641362111776,
         "cash_flow_quality": 29.068769025370898,
         "balance_sheet": 82.92096266512493,
         "growth": 80.96743558793455,
-        "valuation": 34.23942640862752
+        "valuation": 34.67967281699622
     },
     "financial_drivers": {
         "strongest": [
@@ -76,8 +76,8 @@
     "professional_raw_metrics": {
         "sector": "Consumer Cyclical",
         "industry": "Internet Retail",
-        "market_cap_usd": 2887853539328,
-        "current_price": 268.46,
+        "market_cap_usd": 2864833626112,
+        "current_price": 266.32,
         "analyst": {
             "recommendation_mean": 1.34848,
             "recommendation_key": "strong_buy",
@@ -85,7 +85,7 @@
             "target_median_price": 317.0,
             "target_high_price": 370.0,
             "target_low_price": 207.0,
-            "upside_to_target": 0.16453885122550846,
+            "upside_to_target": 0.1738964403724842,
             "target_dispersion": 0.5213796024144673,
             "num_analysts": 62
         },
@@ -95,7 +95,7 @@
             "total_actions_12m": 167
         },
         "institutional": {
-            "held_pct_institutions": 0.67987996,
+            "held_pct_institutions": 0.67978996,
             "held_pct_insiders": 0.08898
         },
         "short_interest": {
@@ -105,14 +105,14 @@
         },
         "data_quality_flags": []
     },
-    "professional_raw_metrics_date": "2026-05-21",
-    "professional_score": 69.47548878861409,
-    "professional_score_date": "2026-05-21",
+    "professional_raw_metrics_date": "2026-05-25",
+    "professional_score": 69.7696582507264,
+    "professional_score_date": "2026-05-25",
     "professional_subscores": {
-        "analyst_consensus": 82.78749674836723,
+        "analyst_consensus": 83.41133602483228,
         "rating_momentum": 52.12275449101797,
-        "institutional_positioning": 67.33880754009145,
-        "short_interest": 70.89649612605473
+        "institutional_positioning": 67.68481325475938,
+        "short_interest": 70.82532470393838
     },
     "professional_drivers": {
         "strongest": [
@@ -127,74 +127,79 @@
         ]
     },
     "news_sentiment_raw_metrics": {
-        "sector": null,
-        "industry": null,
-        "market_cap_usd": null,
-        "current_price": null,
+        "sector": "Consumer Cyclical",
+        "industry": "Internet Retail",
+        "market_cap_usd": 2864833626112,
+        "current_price": 266.32,
         "earnings": {
             "beat_count_4q": 3,
             "miss_count_4q": 1,
             "total_quarters_4q": 4,
             "avg_surprise_magnitude_4q": 0.29822608469225004,
             "eps_estimate_revision_90d": null,
-            "trailing_eps": null,
-            "forward_eps": null
+            "trailing_eps": 8.42,
+            "forward_eps": 9.85939
         },
         "price_momentum": {
-            "return_1m": null,
-            "return_3m": null,
-            "return_6m": null
+            "return_1m": 0.04291979700600041,
+            "return_3m": 0.3000097588916187,
+            "return_6m": 0.22648982568200227
         },
         "insider_activity": {
-            "insider_purchases_count_90d": null,
-            "insider_sales_count_90d": null,
-            "insider_net_value_90d_usd": null
+            "insider_purchases_count_90d": 0,
+            "insider_sales_count_90d": 10,
+            "insider_net_value_90d_usd": -35801327.0
         },
-        "data_quality_flags": [
-            "AMZN: failed to fetch .info (Too Many Requests. Rate limited. Try after a while.)",
-            "AMZN: sector classification unavailable",
-            "AMZN: eps_revisions fetch failed (Too Many Requests. Rate limited. Try after a while.)",
-            "AMZN: price momentum fetch failed (Too Many Requests. Rate limited. Try after a while.)",
-            "AMZN: insider_transactions fetch failed (Too Many Requests. Rate limited. Try after a while.)"
-        ]
+        "data_quality_flags": []
     },
-    "news_sentiment_raw_metrics_date": "2026-05-21",
-    "news_sentiment_score": null,
-    "news_sentiment_score_date": "2026-05-21",
+    "news_sentiment_raw_metrics_date": "2026-05-25",
+    "news_sentiment_score": 75.32670435975886,
+    "news_sentiment_score_date": "2026-05-25",
     "news_sentiment_subscores": {
         "earnings_surprise_revisions": 86.53846153846155,
-        "price_momentum": null,
-        "insider_activity": null
+        "price_momentum": 84.3876465873835,
+        "insider_activity": 34.78130554710422
     },
     "news_sentiment_drivers": {
         "strongest": [
+            "return_3m (price_momentum): score=100, value=30.0%",
             "avg_surprise_magnitude_4q (earnings_surprise_revisions): score=100, value=29.8%",
-            "beat_rate_4q (earnings_surprise_revisions): score=75, value=75.0%"
+            "return_6m (price_momentum): score=88, value=22.6%"
         ],
         "weakest": [
-            "beat_rate_4q (earnings_surprise_revisions): score=75, value=75.0%",
-            "avg_surprise_magnitude_4q (earnings_surprise_revisions): score=100, value=29.8%"
+            "insider_count_ratio_90d (insider_activity): score=0, value=-1.00",
+            "net_insider_value_pct_mcap_90d (insider_activity): score=50, value=-0.0%",
+            "return_1m (price_momentum): score=57, value=4.3%"
         ]
     },
-    "composite_score": 58.26776420734444,
-    "composite_score_date": "2026-05-21",
-    "composite_rank": 258,
+    "composite_score": 64.23753224135572,
+    "composite_score_date": "2026-05-25",
+    "composite_rank": 70,
     "composite_metadata": {
         "scores_used": [
             "financial",
-            "professional"
-        ],
-        "scores_imputed": [
+            "professional",
             "news_sentiment"
         ],
-        "imputed_values": {
-            "news_sentiment": 46.03947819018747
-        },
-        "imputation_r_squared": 0.05693184104207816,
+        "scores_imputed": [],
+        "imputed_values": {},
+        "imputation_r_squared": null,
         "weights_applied": {
             "financial": 50,
             "professional": 30,
             "news_sentiment": 20
         }
-    }
+    },
+    "disqualifier_flags": {
+        "bankruptcy_8k": {
+            "triggered": false
+        },
+        "material_restatement_10ka": {
+            "triggered": false
+        },
+        "check_status": "ok",
+        "error_message": null
+    },
+    "disqualifier_check_date": "2026-05-25",
+    "qualified": true
 }

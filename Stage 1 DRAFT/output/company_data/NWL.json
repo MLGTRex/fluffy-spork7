@@ -5,7 +5,7 @@
     "financial_raw_metrics": {
         "sector": "Consumer Defensive",
         "industry": "Household & Personal Products",
-        "market_cap_usd": 1521241344,
+        "market_cap_usd": 1546737152,
         "profitability": {
             "gross_margin_ttm": 0.33992,
             "operating_margin_ttm": 0.02711,
@@ -39,32 +39,32 @@
         },
         "valuation": {
             "pe_trailing": null,
-            "pe_forward": 5.37231,
-            "ps_ratio": 0.2116657,
-            "pb_ratio": 0.64949197,
-            "ev_ebitda": 8.752,
+            "pe_forward": 5.462349,
+            "ps_ratio": 0.2152132,
+            "pb_ratio": 0.6603774,
+            "ev_ebitda": 8.811,
             "peg_ratio": 0.97,
-            "fcf_yield": 0.28438945188173903
+            "fcf_yield": 0.2797016878017035
         },
         "data_quality_flags": [
             "NWL: eps_cagr_3yr approximated by net income CAGR (share count changes not adjusted)"
         ]
     },
-    "financial_raw_metrics_date": "2026-05-21",
-    "financial_score": 29.456564232534674,
-    "financial_score_date": "2026-05-21",
+    "financial_raw_metrics_date": "2026-05-25",
+    "financial_score": 29.88468175089316,
+    "financial_score_date": "2026-05-25",
     "financial_subscores": {
-        "profitability": 17.478860803086913,
+        "profitability": 19.569690565634588,
         "returns_on_capital": 29.9142525590107,
         "cash_flow_quality": 22.6873072496204,
         "balance_sheet": 16.476625,
         "growth": 9.485097864622249,
-        "valuation": 84.53724695319171
+        "valuation": 84.60359072551806
     },
     "financial_drivers": {
         "strongest": [
-            "fcf_yield (valuation): score=100, value=28.4%",
-            "pe_forward (valuation): score=99, value=5.37",
+            "fcf_yield (valuation): score=100, value=28.0%",
+            "pe_forward (valuation): score=99, value=5.46",
             "peg_ratio (valuation): score=76, value=97.0%"
         ],
         "weakest": [
@@ -74,117 +74,124 @@
         ]
     },
     "professional_raw_metrics": {
+        "sector": "Consumer Defensive",
+        "industry": "Household & Personal Products",
+        "market_cap_usd": 1546737152,
+        "current_price": 3.64,
+        "analyst": {
+            "recommendation_mean": 2.77778,
+            "recommendation_key": "hold",
+            "target_mean_price": 4.9375,
+            "target_median_price": 4.5,
+            "target_high_price": 9.0,
+            "target_low_price": 3.5,
+            "upside_to_target": 0.3564560439560439,
+            "target_dispersion": 1.1139240506329113,
+            "num_analysts": 8
+        },
+        "rating_momentum": {
+            "upgrades_12m": 1,
+            "downgrades_12m": 1,
+            "total_actions_12m": 29
+        },
+        "institutional": {
+            "held_pct_institutions": 0.99272,
+            "held_pct_insiders": 0.01451
+        },
+        "short_interest": {
+            "short_pct_of_float": 0.1418,
+            "short_ratio": 7.34,
+            "short_change_pct": 0.029321830375375637
+        },
+        "data_quality_flags": []
+    },
+    "professional_raw_metrics_date": "2026-05-25",
+    "professional_score": 56.49954063211685,
+    "professional_score_date": "2026-05-25",
+    "professional_subscores": {
+        "analyst_consensus": 63.46240087912088,
+        "rating_momentum": 52.5,
+        "institutional_positioning": 66.10449639422023,
+        "short_interest": 30.910508172463224
+    },
+    "professional_drivers": {
+        "strongest": [
+            "upside_to_target (analyst_consensus): score=93, value=35.6%",
+            "held_pct_institutions (institutional_positioning): score=68, value=99.3%",
+            "held_pct_insiders (institutional_positioning): score=62, value=1.5%"
+        ],
+        "weakest": [
+            "short_pct_of_float (short_interest): score=22, value=14.2%",
+            "short_ratio (short_interest): score=36, value=7.34",
+            "recommendation_mean (analyst_consensus): score=44, value=2.78"
+        ]
+    },
+    "news_sentiment_raw_metrics": {
         "sector": null,
         "industry": null,
         "market_cap_usd": null,
         "current_price": null,
-        "analyst": {
-            "recommendation_mean": null,
-            "recommendation_key": null,
-            "target_mean_price": null,
-            "target_median_price": null,
-            "target_high_price": null,
-            "target_low_price": null,
-            "upside_to_target": null,
-            "target_dispersion": null,
-            "num_analysts": null
-        },
-        "rating_momentum": {
-            "upgrades_12m": 0,
-            "downgrades_12m": 0,
-            "total_actions_12m": 0
-        },
-        "institutional": {
-            "held_pct_institutions": null,
-            "held_pct_insiders": null
-        },
-        "short_interest": {
-            "short_pct_of_float": null,
-            "short_ratio": null,
-            "short_change_pct": null
-        },
-        "data_quality_flags": [
-            "NWL: failed to fetch .info (Too Many Requests. Rate limited. Try after a while.)",
-            "NWL: sector classification unavailable",
-            "NWL: upgrades/downgrades fetch failed (Too Many Requests. Rate limited. Try after a while.)"
-        ]
-    },
-    "professional_raw_metrics_date": "2026-05-21",
-    "professional_score": null,
-    "professional_score_date": "2026-05-21",
-    "professional_subscores": {
-        "analyst_consensus": null,
-        "rating_momentum": 50.0,
-        "institutional_positioning": null,
-        "short_interest": null
-    },
-    "professional_drivers": {
-        "strongest": [],
-        "weakest": []
-    },
-    "news_sentiment_raw_metrics": {
-        "sector": "Consumer Defensive",
-        "industry": "Household & Personal Products",
-        "market_cap_usd": 1521241344,
-        "current_price": 3.58,
         "earnings": {
             "beat_count_4q": null,
             "miss_count_4q": null,
             "total_quarters_4q": null,
             "avg_surprise_magnitude_4q": null,
             "eps_estimate_revision_90d": null,
-            "trailing_eps": -0.67,
-            "forward_eps": 0.66638
+            "trailing_eps": null,
+            "forward_eps": null
         },
         "price_momentum": {
-            "return_1m": -0.1556603317797138,
-            "return_3m": -0.23310614719046296,
-            "return_6m": 0.12356922417526703
+            "return_1m": -0.1165048043659767,
+            "return_3m": -0.21528663972156037,
+            "return_6m": 0.16715791124969334
         },
         "insider_activity": {
-            "insider_purchases_count_90d": 0,
-            "insider_sales_count_90d": 2,
-            "insider_net_value_90d_usd": -856686.0
+            "insider_purchases_count_90d": null,
+            "insider_sales_count_90d": null,
+            "insider_net_value_90d_usd": null
         },
         "data_quality_flags": [
-            "NWL: earnings_dates fetch failed (['Earnings Date'])"
+            "NWL: failed to fetch .info (Too Many Requests. Rate limited. Try after a while.)",
+            "NWL: sector classification unavailable",
+            "NWL: earnings_dates fetch failed (['Earnings Date'])",
+            "NWL: insider_transactions fetch failed (Too Many Requests. Rate limited. Try after a while.)"
         ]
     },
-    "news_sentiment_raw_metrics_date": "2026-05-21",
-    "news_sentiment_score": 33.81779076551717,
-    "news_sentiment_score_date": "2026-05-21",
+    "news_sentiment_raw_metrics_date": "2026-05-25",
+    "news_sentiment_score": null,
+    "news_sentiment_score_date": "2026-05-25",
     "news_sentiment_subscores": {
         "earnings_surprise_revisions": null,
-        "price_momentum": 38.15424253475272,
-        "insider_activity": 25.14488722704607
+        "price_momentum": 43.731106584306175,
+        "insider_activity": null
     },
     "news_sentiment_drivers": {
         "strongest": [
-            "return_6m (price_momentum): score=71, value=12.4%",
-            "net_insider_value_pct_mcap_90d (insider_activity): score=36, value=-0.1%",
-            "return_1m (price_momentum): score=24, value=-15.6%"
+            "return_6m (price_momentum): score=78, value=16.7%",
+            "return_1m (price_momentum): score=31, value=-11.7%",
+            "return_3m (price_momentum): score=14, value=-21.5%"
         ],
         "weakest": [
-            "insider_count_ratio_90d (insider_activity): score=0, value=-1.00",
-            "return_3m (price_momentum): score=11, value=-23.3%",
-            "return_1m (price_momentum): score=24, value=-15.6%"
+            "return_3m (price_momentum): score=14, value=-21.5%",
+            "return_1m (price_momentum): score=31, value=-11.7%",
+            "return_6m (price_momentum): score=78, value=16.7%"
         ]
     },
-    "composite_score": 38.78500177511787,
-    "composite_score_date": "2026-05-21",
-    "composite_rank": 924,
+    "composite_score": 42.71700668123633,
+    "composite_score_date": "2026-05-25",
+    "composite_rank": 947,
     "composite_metadata": {
         "scores_used": [
             "financial",
-            "news_sentiment"
-        ],
-        "scores_imputed": [
             "professional"
         ],
+        "scores_imputed": [
+            "news_sentiment"
+        ],
         "imputed_values": {
-            "professional": 57.64387168582368
+            "news_sentiment": 54.12401808077345
         },
-        "imputation_r_squared": 0.04516719672877956,
+        "imputation_r_squared": 0.031937368103860275,
         "weights_applied": {
             "financial": 50,
             "professional": 30,

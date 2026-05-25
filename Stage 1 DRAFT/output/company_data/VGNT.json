@@ -5,7 +5,7 @@
     "financial_raw_metrics": {
         "sector": "Consumer Cyclical",
         "industry": "Auto Parts",
-        "market_cap_usd": 2897423872,
+        "market_cap_usd": 2915856384,
         "profitability": {
             "gross_margin_ttm": 0.11959,
             "operating_margin_ttm": 0.061929997,
@@ -38,11 +38,11 @@
             "fcf_cagr_3yr": 0.0789022549751548
         },
         "valuation": {
-            "pe_trailing": 6.109118,
-            "pe_forward": 5.359262,
-            "ps_ratio": 0.3217215,
+            "pe_trailing": 6.147982,
+            "pe_forward": 5.393356,
+            "ps_ratio": 0.3237682,
             "pb_ratio": null,
-            "ev_ebitda": 5.822,
+            "ev_ebitda": 5.843,
             "peg_ratio": null,
             "fcf_yield": null
         },
@@ -50,21 +50,21 @@
             "VGNT: eps_cagr_3yr approximated by net income CAGR (share count changes not adjusted)"
         ]
     },
-    "financial_raw_metrics_date": "2026-05-21",
-    "financial_score": 52.911598233613184,
-    "financial_score_date": "2026-05-21",
+    "financial_raw_metrics_date": "2026-05-25",
+    "financial_score": 52.89788546968424,
+    "financial_score_date": "2026-05-25",
     "financial_subscores": {
-        "profitability": 45.654668875546065,
+        "profitability": 45.65466887554607,
         "returns_on_capital": null,
         "cash_flow_quality": null,
         "balance_sheet": 44.18953783113245,
         "growth": 43.88301986313821,
-        "valuation": 80.33814281732505
+        "valuation": 80.27872084029963
     },
     "financial_drivers": {
         "strongest": [
-            "pe_forward (valuation): score=99, value=5.36",
-            "pe_trailing (valuation): score=98, value=6.11",
+            "pe_forward (valuation): score=99, value=5.39",
+            "pe_trailing (valuation): score=98, value=6.15",
             "net_debt_to_ebitda (balance_sheet): score=64, value=2.32"
         ],
         "weakest": [
@@ -74,70 +74,74 @@
         ]
     },
     "professional_raw_metrics": {
-        "sector": null,
-        "industry": null,
-        "market_cap_usd": null,
-        "current_price": null,
+        "sector": "Consumer Cyclical",
+        "industry": "Auto Parts",
+        "market_cap_usd": 2915856384,
+        "current_price": 41.13,
         "analyst": {
-            "recommendation_mean": null,
-            "recommendation_key": null,
-            "target_mean_price": null,
-            "target_median_price": null,
-            "target_high_price": null,
-            "target_low_price": null,
-            "upside_to_target": null,
-            "target_dispersion": null,
-            "num_analysts": null
+            "recommendation_mean": 1.66667,
+            "recommendation_key": "buy",
+            "target_mean_price": 47.11111,
+            "target_median_price": 49.0,
+            "target_high_price": 60.0,
+            "target_low_price": 34.0,
+            "upside_to_target": 0.14541964502795998,
+            "target_dispersion": 0.5518868054690285,
+            "num_analysts": 9
         },
         "rating_momentum": {
             "upgrades_12m": 0,
             "downgrades_12m": 0,
-            "total_actions_12m": 0
+            "total_actions_12m": 6
         },
         "institutional": {
-            "held_pct_institutions": null,
-            "held_pct_insiders": null
+            "held_pct_institutions": 0.28643,
+            "held_pct_insiders": 0.0
         },
         "short_interest": {
             "short_pct_of_float": null,
-            "short_ratio": null,
-            "short_change_pct": null
+            "short_ratio": 0.42,
+            "short_change_pct": 1712060.0
         },
-        "data_quality_flags": [
-            "VGNT: failed to fetch .info (Too Many Requests. Rate limited. Try after a while.)",
-            "VGNT: sector classification unavailable",
-            "VGNT: upgrades/downgrades fetch failed (Too Many Requests. Rate limited. Try after a while.)"
-        ]
+        "data_quality_flags": []
     },
-    "professional_raw_metrics_date": "2026-05-21",
-    "professional_score": null,
-    "professional_score_date": "2026-05-21",
+    "professional_raw_metrics_date": "2026-05-25",
+    "professional_score": 58.85331304137395,
+    "professional_score_date": "2026-05-25",
     "professional_subscores": {
-        "analyst_consensus": null,
+        "analyst_consensus": 76.541904502796,
         "rating_momentum": 50.0,
-        "institutional_positioning": null,
-        "short_interest": null
+        "institutional_positioning": 43.76658586158142,
+        "short_interest": 57.48
     },
     "professional_drivers": {
-        "strongest": [],
-        "weakest": []
+        "strongest": [
+            "short_ratio (short_interest): score=96, value=42.0%",
+            "recommendation_mean (analyst_consensus): score=85, value=1.67",
+            "upside_to_target (analyst_consensus): score=64, value=14.5%"
+        ],
+        "weakest": [
+            "short_change_pct (short_interest): score=0, value=1712060.00",
+            "held_pct_institutions (institutional_positioning): score=41, value=28.6%",
+            "upgrades_12m (rating_momentum): score=50, value=0.00"
+        ]
     },
     "news_sentiment_raw_metrics": {
-        "sector": "Consumer Cyclical",
-        "industry": "Auto Parts",
-        "market_cap_usd": 2897423872,
-        "current_price": 40.87,
+        "sector": null,
+        "industry": null,
+        "market_cap_usd": null,
+        "current_price": null,
         "earnings": {
             "beat_count_4q": null,
             "miss_count_4q": null,
             "total_quarters_4q": null,
             "avg_surprise_magnitude_4q": null,
             "eps_estimate_revision_90d": null,
-            "trailing_eps": 6.69,
-            "forward_eps": 7.62605
+            "trailing_eps": null,
+            "forward_eps": null
         },
         "price_momentum": {
-            "return_1m": 0.167380804324762,
+            "return_1m": 0.1808785215579122,
             "return_3m": null,
             "return_6m": null
         },
@@ -147,40 +151,49 @@
             "insider_net_value_90d_usd": null
         },
         "data_quality_flags": [
-            "VGNT: earnings_dates fetch failed (['Earnings Date'])"
+            "VGNT: failed to fetch .info (Too Many Requests. Rate limited. Try after a while.)",
+            "VGNT: sector classification unavailable",
+            "VGNT: earnings_dates fetch failed (['Earnings Date'])",
+            "VGNT: eps_revisions fetch failed (Too Many Requests. Rate limited. Try after a while.)",
+            "VGNT: insider_transactions fetch failed (Too Many Requests. Rate limited. Try after a while.)",
+            "VGNT: extraction gave up after 6 rate-limited attempts"
         ]
     },
-    "news_sentiment_raw_metrics_date": "2026-05-21",
+    "news_sentiment_raw_metrics_date": "2026-05-25",
     "news_sentiment_score": null,
-    "news_sentiment_score_date": "2026-05-21",
+    "news_sentiment_score_date": "2026-05-25",
     "news_sentiment_subscores": {
         "earnings_surprise_revisions": null,
-        "price_momentum": 77.89680072079366,
+        "price_momentum": 80.14642025965203,
         "insider_activity": null
     },
     "news_sentiment_drivers": {
         "strongest": [
-            "return_1m (price_momentum): score=78, value=16.7%"
+            "return_1m (price_momentum): score=80, value=18.1%"
         ],
         "weakest": [
-            "return_1m (price_momentum): score=78, value=16.7%"
+            "return_1m (price_momentum): score=80, value=18.1%"
         ]
     },
-    "composite_score": null,
-    "composite_score_date": "2026-05-21",
-    "composite_rank": null,
+    "composite_score": 54.29561965034013,
+    "composite_score_date": "2026-05-25",
+    "composite_rank": 530,
     "composite_metadata": {
         "scores_used": [
-            "financial"
+            "financial",
+            "professional"
         ],
-        "scores_imputed": [],
-        "imputed_values": {},
-        "imputation_r_squared": null,
+        "scores_imputed": [
+            "news_sentiment"
+        ],
+        "imputed_values": {
+            "news_sentiment": 50.9534150154291
+        },
+        "imputation_r_squared": 0.031937368103860275,
         "weights_applied": {
             "financial": 50,
             "professional": 30,
             "news_sentiment": 20
-        },
-        "skip_reason": "Only 1 of 3 scores populated; need at least 2"
+        }
     }
 }

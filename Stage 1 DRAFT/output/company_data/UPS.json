@@ -5,7 +5,7 @@
     "financial_raw_metrics": {
         "sector": "Industrials",
         "industry": "Integrated Freight & Logistics",
-        "market_cap_usd": 83513114624,
+        "market_cap_usd": 85867634688,
         "profitability": {
             "gross_margin_ttm": 0.2245,
             "operating_margin_ttm": 0.0633,
@@ -38,34 +38,34 @@
             "fcf_cagr_3yr": -0.2008109449541734
         },
         "valuation": {
-            "pe_trailing": 15.898059,
-            "pe_forward": 12.277628,
-            "ps_ratio": 0.9456063,
-            "pb_ratio": 5.14048,
-            "ev_ebitda": 9.036,
-            "peg_ratio": 1.5603,
-            "fcf_yield": 0.055386512415748455
+            "pe_trailing": 16.34628,
+            "pe_forward": 12.6237755,
+            "ps_ratio": 0.9722662,
+            "pb_ratio": 5.2854075,
+            "ev_ebitda": 9.19,
+            "peg_ratio": 1.5942,
+            "fcf_yield": 0.05386779520370803
         },
         "data_quality_flags": [
             "UPS: eps_cagr_3yr approximated by net income CAGR (share count changes not adjusted)"
         ]
     },
-    "financial_raw_metrics_date": "2026-05-21",
-    "financial_score": 43.901490092841776,
-    "financial_score_date": "2026-05-21",
+    "financial_raw_metrics_date": "2026-05-25",
+    "financial_score": 43.747859017408935,
+    "financial_score_date": "2026-05-25",
     "financial_subscores": {
-        "profitability": 28.963772777144847,
-        "returns_on_capital": 49.23212956946054,
+        "profitability": 29.00489283020223,
+        "returns_on_capital": 49.251251251671135,
         "cash_flow_quality": 47.9759254606884,
         "balance_sheet": 64.39315926324052,
         "growth": 8.189624988018517,
-        "valuation": 67.85668777819058
+        "valuation": 66.75215829494762
     },
     "financial_drivers": {
         "strongest": [
             "interest_coverage (balance_sheet): score=85, value=8.04",
-            "pe_forward (valuation): score=83, value=12.28",
-            "fcf_to_net_income_ttm (cash_flow_quality): score=83, value=88.1%"
+            "fcf_to_net_income_ttm (cash_flow_quality): score=83, value=88.1%",
+            "pe_forward (valuation): score=82, value=12.62"
         ],
         "weakest": [
             "eps_cagr_3yr (growth): score=0, value=-21.6%",
@@ -74,72 +74,76 @@
         ]
     },
     "professional_raw_metrics": {
+        "sector": "Industrials",
+        "industry": "Integrated Freight & Logistics",
+        "market_cap_usd": 85867634688,
+        "current_price": 101.02,
+        "analyst": {
+            "recommendation_mean": 2.21429,
+            "recommendation_key": "buy",
+            "target_mean_price": 112.88462,
+            "target_median_price": 115.0,
+            "target_high_price": 135.0,
+            "target_low_price": 75.0,
+            "upside_to_target": 0.11744822807364881,
+            "target_dispersion": 0.5315161622548759,
+            "num_analysts": 26
+        },
+        "rating_momentum": {
+            "upgrades_12m": 0,
+            "downgrades_12m": 4,
+            "total_actions_12m": 54
+        },
+        "institutional": {
+            "held_pct_institutions": 0.7065,
+            "held_pct_insiders": 0.0002
+        },
+        "short_interest": {
+            "short_pct_of_float": 0.0248,
+            "short_ratio": 3.52,
+            "short_change_pct": 0.05479032784882544
+        },
+        "data_quality_flags": []
+    },
+    "professional_raw_metrics_date": "2026-05-25",
+    "professional_score": 56.40160875946965,
+    "professional_score_date": "2026-05-25",
+    "professional_subscores": {
+        "analyst_consensus": 62.60186280736488,
+        "rating_momentum": 47.833333333333336,
+        "institutional_positioning": 54.84917583908052,
+        "short_interest": 58.802196558589884
+    },
+    "professional_drivers": {
+        "strongest": [
+            "recommendation_mean (analyst_consensus): score=66, value=2.21",
+            "short_ratio (short_interest): score=65, value=3.52",
+            "short_pct_of_float (short_interest): score=61, value=2.5%"
+        ],
+        "weakest": [
+            "short_change_pct (short_interest): score=43, value=5.5%",
+            "upgrades_12m (rating_momentum): score=48, value=0.00",
+            "downgrades_12m (rating_momentum): score=48, value=4.00"
+        ]
+    },
+    "news_sentiment_raw_metrics": {
         "sector": null,
         "industry": null,
         "market_cap_usd": null,
         "current_price": null,
-        "analyst": {
-            "recommendation_mean": null,
-            "recommendation_key": null,
-            "target_mean_price": null,
-            "target_median_price": null,
-            "target_high_price": null,
-            "target_low_price": null,
-            "upside_to_target": null,
-            "target_dispersion": null,
-            "num_analysts": null
-        },
-        "rating_momentum": {
-            "upgrades_12m": 0,
-            "downgrades_12m": 0,
-            "total_actions_12m": 0
-        },
-        "institutional": {
-            "held_pct_institutions": null,
-            "held_pct_insiders": null
-        },
-        "short_interest": {
-            "short_pct_of_float": null,
-            "short_ratio": null,
-            "short_change_pct": null
-        },
-        "data_quality_flags": [
-            "UPS: failed to fetch .info (Too Many Requests. Rate limited. Try after a while.)",
-            "UPS: sector classification unavailable",
-            "UPS: upgrades/downgrades fetch failed (Too Many Requests. Rate limited. Try after a while.)"
-        ]
-    },
-    "professional_raw_metrics_date": "2026-05-21",
-    "professional_score": null,
-    "professional_score_date": "2026-05-21",
-    "professional_subscores": {
-        "analyst_consensus": null,
-        "rating_momentum": 50.0,
-        "institutional_positioning": null,
-        "short_interest": null
-    },
-    "professional_drivers": {
-        "strongest": [],
-        "weakest": []
-    },
-    "news_sentiment_raw_metrics": {
-        "sector": "Industrials",
-        "industry": "Integrated Freight & Logistics",
-        "market_cap_usd": 83513114624,
-        "current_price": 98.25,
         "earnings": {
             "beat_count_4q": null,
             "miss_count_4q": null,
             "total_quarters_4q": null,
             "avg_surprise_magnitude_4q": null,
             "eps_estimate_revision_90d": null,
-            "trailing_eps": 6.18,
-            "forward_eps": 8.00236
+            "trailing_eps": null,
+            "forward_eps": null
         },
         "price_momentum": {
-            "return_1m": -0.06023722365265928,
-            "return_3m": -0.13962986608828623,
-            "return_6m": 0.09619549081083142
+            "return_1m": -0.024474174364070417,
+            "return_3m": -0.11093237700102263,
+            "return_6m": 0.1462022621424971
         },
         "insider_activity": {
             "insider_purchases_count_90d": null,
@@ -147,44 +151,52 @@
             "insider_net_value_90d_usd": null
         },
         "data_quality_flags": [
-            "UPS: earnings_dates fetch failed (['Earnings Date'])"
+            "UPS: failed to fetch .info (Too Many Requests. Rate limited. Try after a while.)",
+            "UPS: sector classification unavailable",
+            "UPS: earnings_dates fetch failed (['Earnings Date'])",
+            "UPS: eps_revisions fetch failed (Too Many Requests. Rate limited. Try after a while.)",
+            "UPS: insider_transactions fetch failed (Too Many Requests. Rate limited. Try after a while.)"
         ]
     },
-    "news_sentiment_raw_metrics_date": "2026-05-21",
+    "news_sentiment_raw_metrics_date": "2026-05-25",
     "news_sentiment_score": null,
-    "news_sentiment_score_date": "2026-05-21",
+    "news_sentiment_score_date": "2026-05-25",
     "news_sentiment_subscores": {
         "earnings_surprise_revisions": null,
-        "price_momentum": 45.758072880044594,
+        "price_momentum": 52.256004885937216,
         "insider_activity": null
     },
     "news_sentiment_drivers": {
         "strongest": [
-            "return_6m (price_momentum): score=66, value=9.6%",
-            "return_1m (price_momentum): score=40, value=-6.0%",
-            "return_3m (price_momentum): score=27, value=-14.0%"
+            "return_6m (price_momentum): score=74, value=14.6%",
+            "return_1m (price_momentum): score=46, value=-2.4%",
+            "return_3m (price_momentum): score=32, value=-11.1%"
         ],
         "weakest": [
-            "return_3m (price_momentum): score=27, value=-14.0%",
-            "return_1m (price_momentum): score=40, value=-6.0%",
-            "return_6m (price_momentum): score=66, value=9.6%"
+            "return_3m (price_momentum): score=32, value=-11.1%",
+            "return_1m (price_momentum): score=46, value=-2.4%",
+            "return_6m (price_momentum): score=74, value=14.6%"
         ]
     },
-    "composite_score": null,
-    "composite_score_date": "2026-05-21",
-    "composite_rank": null,
+    "composite_score": 49.30198527980016,
+    "composite_score_date": "2026-05-25",
+    "composite_rank": 782,
     "composite_metadata": {
         "scores_used": [
-            "financial"
+            "financial",
+            "professional"
         ],
-        "scores_imputed": [],
-        "imputed_values": {},
-        "imputation_r_squared": null,
+        "scores_imputed": [
+            "news_sentiment"
+        ],
+        "imputed_values": {
+            "news_sentiment": 52.53786571627398
+        },
+        "imputation_r_squared": 0.031937368103860275,
         "weights_applied": {
             "financial": 50,
             "professional": 30,
             "news_sentiment": 20
-        },
-        "skip_reason": "Only 1 of 3 scores populated; need at least 2"
+        }
     }
 }

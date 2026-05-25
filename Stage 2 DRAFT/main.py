@@ -8,7 +8,7 @@ from datetime import datetime
 # Toggle the research digest stage. Flip to False to skip it entirely.
 # The GitHub workflow's "Run research digest" input overrides this via
 # the --no-digest / --digest CLI flag handled in main().
-RUN_RESEARCH_DIGEST = True
+RUN_RESEARCH_DIGEST = False
 
 
 # Each stage is (display_name, relative_path_from_main.py).
@@ -105,10 +105,21 @@ async def main():
     results = []
     total_stages = len(pipeline_stages)
 
+    # Halt on first section failure: each section now drives itself to completeness
+    # internally (see pipeline tools/section_runner.py). A non-zero exit means
+    # the section exhausted its retry budget — downstream sections cannot
+    # produce valid output against an incomplete upstream, so we stop.
     for idx, (stage_name, relative_script_path) in enumerate(pipeline_stages, start=1):
         success = await run_stage(stage_name, relative_script_path, idx, total_stages)
         results.append((stage_name, success))
-    
+        if not success:
+            print(
+                f"\n[Stage 2] Halting: '{stage_name}' did not complete. "
+                f"Remaining sections skipped to avoid running on incomplete upstream.",
+                flush=True,
+            )
+            break
+
     print(f"\n{'='*70}")
     print(f"  Pipeline Summary")
     print(f"  Finished: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")

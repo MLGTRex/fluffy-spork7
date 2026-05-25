@@ -5,7 +5,7 @@
     "financial_raw_metrics": {
         "sector": "Healthcare",
         "industry": "Drug Manufacturers - Specialty & Generic",
-        "market_cap_usd": 15635522560,
+        "market_cap_usd": 15756182528,
         "profitability": {
             "gross_margin_ttm": 0.6437,
             "operating_margin_ttm": 0.22836,
@@ -38,28 +38,28 @@
             "fcf_cagr_3yr": 0.3235690282443393
         },
         "valuation": {
-            "pe_trailing": 23.923077,
-            "pe_forward": 12.238293,
-            "ps_ratio": 5.039815,
-            "pb_ratio": 4.590948,
-            "ev_ebitda": 17.74,
-            "peg_ratio": 0.4391,
-            "fcf_yield": 0.037769765208282235
+            "pe_trailing": 24.107693,
+            "pe_forward": 12.332736,
+            "ps_ratio": 5.0787077,
+            "pb_ratio": 4.6263766,
+            "ev_ebitda": 17.986,
+            "peg_ratio": 0.4449,
+            "fcf_yield": 0.037480526450524757
         },
         "data_quality_flags": [
             "NBIX: eps_cagr_3yr approximated by net income CAGR (share count changes not adjusted)"
         ]
     },
-    "financial_raw_metrics_date": "2026-05-21",
-    "financial_score": 76.07154112885841,
-    "financial_score_date": "2026-05-21",
+    "financial_raw_metrics_date": "2026-05-25",
+    "financial_score": 76.08806250459409,
+    "financial_score_date": "2026-05-25",
     "financial_subscores": {
-        "profitability": 64.98964512591513,
-        "returns_on_capital": 58.457566959509606,
+        "profitability": 65.18701409225136,
+        "returns_on_capital": 58.55215237041219,
         "cash_flow_quality": 84.20830401107546,
         "balance_sheet": 97.28932352941176,
         "growth": 97.04020714971998,
-        "valuation": 64.00949005494923
+        "valuation": 63.73036005686869
     },
     "financial_drivers": {
         "strongest": [
@@ -68,123 +68,131 @@
             "revenue_growth_1yr (growth): score=100, value=42.2%"
         ],
         "weakest": [
-            "ev_ebitda (valuation): score=46, value=17.74",
-            "pe_trailing (valuation): score=50, value=23.92",
+            "ev_ebitda (valuation): score=46, value=17.99",
+            "pe_trailing (valuation): score=50, value=24.11",
             "operating_margin_ttm (profitability): score=53, value=22.8%"
         ]
     },
     "professional_raw_metrics": {
+        "sector": "Healthcare",
+        "industry": "Drug Manufacturers - Specialty & Generic",
+        "market_cap_usd": 15756182528,
+        "current_price": 156.7,
+        "analyst": {
+            "recommendation_mean": 1.42857,
+            "recommendation_key": "strong_buy",
+            "target_mean_price": 192.05893,
+            "target_median_price": 187.0,
+            "target_high_price": 250.65,
+            "target_low_price": 144.0,
+            "upside_to_target": 0.22564728781110413,
+            "target_dispersion": 0.5552983139081322,
+            "num_analysts": 28
+        },
+        "rating_momentum": {
+            "upgrades_12m": 0,
+            "downgrades_12m": 1,
+            "total_actions_12m": 64
+        },
+        "institutional": {
+            "held_pct_institutions": 0.0103477,
+            "held_pct_insiders": 0.010779999
+        },
+        "short_interest": {
+            "short_pct_of_float": 0.0776,
+            "short_ratio": 5.14,
+            "short_change_pct": 0.31497770966476285
+        },
+        "data_quality_flags": []
+    },
+    "professional_raw_metrics_date": "2026-05-25",
+    "professional_score": 57.769893110289395,
+    "professional_score_date": "2026-05-25",
+    "professional_subscores": {
+        "analyst_consensus": 85.90031252074027,
+        "rating_momentum": 51.515625,
+        "institutional_positioning": 34.476404399391896,
+        "short_interest": 41.37850918788211
+    },
+    "professional_drivers": {
+        "strongest": [
+            "recommendation_mean (analyst_consensus): score=91, value=1.43",
+            "upside_to_target (analyst_consensus): score=78, value=22.6%",
+            "held_pct_insiders (institutional_positioning): score=60, value=1.1%"
+        ],
+        "weakest": [
+            "short_change_pct (short_interest): score=15, value=31.5%",
+            "held_pct_institutions (institutional_positioning): score=23, value=1.0%",
+            "short_pct_of_float (short_interest): score=47, value=7.8%"
+        ]
+    },
+    "news_sentiment_raw_metrics": {
         "sector": null,
         "industry": null,
         "market_cap_usd": null,
         "current_price": null,
-        "analyst": {
-            "recommendation_mean": null,
-            "recommendation_key": null,
-            "target_mean_price": null,
-            "target_median_price": null,
-            "target_high_price": null,
-            "target_low_price": null,
-            "upside_to_target": null,
-            "target_dispersion": null,
-            "num_analysts": null
-        },
-        "rating_momentum": {
-            "upgrades_12m": 0,
-            "downgrades_12m": 0,
-            "total_actions_12m": 0
-        },
-        "institutional": {
-            "held_pct_institutions": null,
-            "held_pct_insiders": null
-        },
-        "short_interest": {
-            "short_pct_of_float": null,
-            "short_ratio": null,
-            "short_change_pct": null
-        },
-        "data_quality_flags": [
-            "NBIX: failed to fetch .info (Too Many Requests. Rate limited. Try after a while.)",
-            "NBIX: sector classification unavailable",
-            "NBIX: upgrades/downgrades fetch failed (Too Many Requests. Rate limited. Try after a while.)"
-        ]
-    },
-    "professional_raw_metrics_date": "2026-05-21",
-    "professional_score": null,
-    "professional_score_date": "2026-05-21",
-    "professional_subscores": {
-        "analyst_consensus": null,
-        "rating_momentum": 50.0,
-        "institutional_positioning": null,
-        "short_interest": null
-    },
-    "professional_drivers": {
-        "strongest": [],
-        "weakest": []
-    },
-    "news_sentiment_raw_metrics": {
-        "sector": "Healthcare",
-        "industry": "Drug Manufacturers - Specialty & Generic",
-        "market_cap_usd": 15635522560,
-        "current_price": 155.5,
         "earnings": {
             "beat_count_4q": null,
             "miss_count_4q": null,
             "total_quarters_4q": null,
             "avg_surprise_magnitude_4q": null,
             "eps_estimate_revision_90d": null,
-            "trailing_eps": 6.5,
-            "forward_eps": 12.70602
+            "trailing_eps": null,
+            "forward_eps": null
         },
         "price_momentum": {
-            "return_1m": 0.194132994488697,
-            "return_3m": 0.21124781185312388,
-            "return_6m": 0.12632190895124837
+            "return_1m": 0.19454189432328348,
+            "return_3m": 0.2044580291838108,
+            "return_6m": 0.12750037246685483
         },
         "insider_activity": {
-            "insider_purchases_count_90d": 0,
-            "insider_sales_count_90d": 2,
-            "insider_net_value_90d_usd": -2955361.0
+            "insider_purchases_count_90d": null,
+            "insider_sales_count_90d": null,
+            "insider_net_value_90d_usd": null
         },
         "data_quality_flags": [
-            "NBIX: earnings_dates fetch failed (['Earnings Date'])"
+            "NBIX: failed to fetch .info (Too Many Requests. Rate limited. Try after a while.)",
+            "NBIX: sector classification unavailable",
+            "NBIX: earnings_dates fetch failed (['Earnings Date'])",
+            "NBIX: eps_revisions fetch failed (Too Many Requests. Rate limited. Try after a while.)",
+            "NBIX: insider_transactions fetch failed (Too Many Requests. Rate limited. Try after a while.)"
         ]
     },
-    "news_sentiment_raw_metrics_date": "2026-05-21",
-    "news_sentiment_score": 63.11949068853686,
-    "news_sentiment_score_date": "2026-05-21",
+    "news_sentiment_raw_metrics_date": "2026-05-25",
+    "news_sentiment_score": null,
+    "news_sentiment_score_date": "2026-05-25",
     "news_sentiment_subscores": {
         "earnings_surprise_revisions": null,
-        "price_momentum": 78.83312439187782,
-        "insider_activity": 31.69222328185493
+        "price_momentum": 78.53265546364943,
+        "insider_activity": null
     },
     "news_sentiment_drivers": {
         "strongest": [
-            "return_3m (price_momentum): score=85, value=21.1%",
-            "return_1m (price_momentum): score=82, value=19.4%",
-            "return_6m (price_momentum): score=71, value=12.6%"
+            "return_3m (price_momentum): score=84, value=20.4%",
+            "return_1m (price_momentum): score=82, value=19.5%",
+            "return_6m (price_momentum): score=71, value=12.8%"
         ],
         "weakest": [
-            "insider_count_ratio_90d (insider_activity): score=0, value=-1.00",
-            "net_insider_value_pct_mcap_90d (insider_activity): score=45, value=-0.0%",
-            "return_6m (price_momentum): score=71, value=12.6%"
+            "return_6m (price_momentum): score=71, value=12.8%",
+            "return_1m (price_momentum): score=82, value=19.5%",
+            "return_3m (price_momentum): score=84, value=20.4%"
         ]
     },
-    "composite_score": 68.00357480755189,
-    "composite_score_date": "2026-05-21",
-    "composite_rank": 12,
+    "composite_score": 65.07431224848995,
+    "composite_score_date": "2026-05-25",
+    "composite_rank": 48,
     "composite_metadata": {
         "scores_used": [
             "financial",
-            "news_sentiment"
-        ],
-        "scores_imputed": [
             "professional"
         ],
+        "scores_imputed": [
+            "news_sentiment"
+        ],
         "imputed_values": {
-            "professional": 57.81302035138435
+            "news_sentiment": 48.49656531553042
         },
-        "imputation_r_squared": 0.04516719672877956,
+        "imputation_r_squared": 0.031937368103860275,
         "weights_applied": {
             "financial": 50,
             "professional": 30,
@@ -201,6 +209,6 @@
         "check_status": "ok",
         "error_message": null
     },
-    "disqualifier_check_date": "2026-05-21",
+    "disqualifier_check_date": "2026-05-25",
     "qualified": true
 }

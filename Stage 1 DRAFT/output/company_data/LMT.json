@@ -5,7 +5,7 @@
     "financial_raw_metrics": {
         "sector": "Industrials",
         "industry": "Aerospace & Defense",
-        "market_cap_usd": 120536350720,
+        "market_cap_usd": 122945740800,
         "profitability": {
             "gross_margin_ttm": 0.09906,
             "operating_margin_ttm": 0.110039994,
@@ -38,34 +38,34 @@
             "fcf_cagr_3yr": 0.04051911024828336
         },
         "valuation": {
-            "pe_trailing": 25.328972,
-            "pe_forward": 16.294931,
-            "ps_ratio": 1.6048831,
-            "pb_ratio": 16.05571,
-            "ev_ebitda": 17.423,
-            "peg_ratio": 1.1051,
-            "fcf_yield": 0.03307819564955882
+            "pe_trailing": 25.835272,
+            "pe_forward": 16.62065,
+            "ps_ratio": 1.6369629,
+            "pb_ratio": 16.376646,
+            "ev_ebitda": 17.73,
+            "peg_ratio": 1.1276,
+            "fcf_yield": 0.03242995622342047
         },
         "data_quality_flags": [
             "LMT: eps_cagr_3yr approximated by net income CAGR (share count changes not adjusted)"
         ]
     },
-    "financial_raw_metrics_date": "2026-05-21",
-    "financial_score": 47.32456543454838,
-    "financial_score_date": "2026-05-21",
+    "financial_raw_metrics_date": "2026-05-25",
+    "financial_score": 47.18584441855741,
+    "financial_score_date": "2026-05-25",
     "financial_subscores": {
         "profitability": 29.97181837461556,
         "returns_on_capital": 62.496106153066506,
         "cash_flow_quality": 51.781533571122345,
         "balance_sheet": 52.54514702901187,
         "growth": 31.466370479414394,
-        "valuation": 56.41348578053124
+        "valuation": 55.488679007258035
     },
     "financial_drivers": {
         "strongest": [
             "fcf_to_net_income_ttm (cash_flow_quality): score=78, value=83.2%",
             "interest_coverage (balance_sheet): score=76, value=6.30",
-            "pe_forward (valuation): score=71, value=16.29"
+            "pe_forward (valuation): score=70, value=16.62"
         ],
         "weakest": [
             "eps_cagr_3yr (growth): score=16, value=-4.3%",
@@ -76,18 +76,18 @@
     "professional_raw_metrics": {
         "sector": "Industrials",
         "industry": "Aerospace & Defense",
-        "market_cap_usd": 120536350720,
-        "current_price": 522.79,
+        "market_cap_usd": 122945740800,
+        "current_price": 533.24,
         "analyst": {
-            "recommendation_mean": 2.54545,
+            "recommendation_mean": 2.61905,
             "recommendation_key": "hold",
-            "target_mean_price": 630.05,
-            "target_median_price": 627.0,
+            "target_mean_price": 626.6316,
+            "target_median_price": 614.0,
             "target_high_price": 756.0,
             "target_low_price": 511.0,
-            "upside_to_target": 0.20516842326746876,
-            "target_dispersion": 0.38885802714070317,
-            "num_analysts": 20
+            "upside_to_target": 0.1751398994824095,
+            "target_dispersion": 0.39097932501329324,
+            "num_analysts": 19
         },
         "rating_momentum": {
             "upgrades_12m": 1,
@@ -95,7 +95,7 @@
             "total_actions_12m": 37
         },
         "institutional": {
-            "held_pct_institutions": 0.75998,
+            "held_pct_institutions": 0.76017,
             "held_pct_insiders": 0.0010800001
         },
         "short_interest": {
@@ -105,87 +105,94 @@
         },
         "data_quality_flags": []
     },
-    "professional_raw_metrics_date": "2026-05-21",
-    "professional_score": 55.78603493894527,
-    "professional_score_date": "2026-05-21",
+    "professional_raw_metrics_date": "2026-05-25",
+    "professional_score": 54.904312596747,
+    "professional_score_date": "2026-05-25",
     "professional_subscores": {
-        "analyst_consensus": 61.587094884497915,
+        "analyst_consensus": 57.8187932988273,
         "rating_momentum": 47.39189189189189,
-        "institutional_positioning": 47.99713642931517,
-        "short_interest": 69.22196432712822
+        "institutional_positioning": 49.47850022251133,
+        "short_interest": 69.6675794237109
     },
     "professional_drivers": {
         "strongest": [
             "short_ratio (short_interest): score=84, value=1.55",
-            "upside_to_target (analyst_consensus): score=74, value=20.5%",
-            "short_pct_of_float (short_interest): score=66, value=1.2%"
+            "upside_to_target (analyst_consensus): score=69, value=17.5%",
+            "short_pct_of_float (short_interest): score=67, value=1.2%"
         ],
         "weakest": [
-            "held_pct_institutions (institutional_positioning): score=47, value=76.0%",
             "upgrades_12m (rating_momentum): score=47, value=1.00",
-            "downgrades_12m (rating_momentum): score=47, value=4.00"
+            "downgrades_12m (rating_momentum): score=47, value=4.00",
+            "total_actions_12m (rating_momentum): score=47, value=37.00"
         ]
     },
     "news_sentiment_raw_metrics": {
-        "sector": "Industrials",
-        "industry": "Aerospace & Defense",
-        "market_cap_usd": 120536350720,
-        "current_price": 522.79,
+        "sector": null,
+        "industry": null,
+        "market_cap_usd": null,
+        "current_price": null,
         "earnings": {
             "beat_count_4q": null,
             "miss_count_4q": null,
             "total_quarters_4q": null,
             "avg_surprise_magnitude_4q": null,
             "eps_estimate_revision_90d": null,
-            "trailing_eps": 20.64,
-            "forward_eps": 32.08298
+            "trailing_eps": null,
+            "forward_eps": null
         },
         "price_momentum": {
-            "return_1m": -0.08595158870149061,
-            "return_3m": -0.19123257228317792,
-            "return_6m": 0.12688646811961493
+            "return_1m": -0.039951033854880656,
+            "return_3m": -0.19573563146544126,
+            "return_6m": 0.1534618759411828
         },
         "insider_activity": {
-            "insider_purchases_count_90d": 0,
-            "insider_sales_count_90d": 3,
-            "insider_net_value_90d_usd": -6461647.0
+            "insider_purchases_count_90d": null,
+            "insider_sales_count_90d": null,
+            "insider_net_value_90d_usd": null
         },
         "data_quality_flags": [
-            "LMT: earnings_dates fetch failed (['Earnings Date'])"
+            "LMT: failed to fetch .info (Too Many Requests. Rate limited. Try after a while.)",
+            "LMT: sector classification unavailable",
+            "LMT: earnings_dates fetch failed (['Earnings Date'])",
+            "LMT: eps_revisions fetch failed (Too Many Requests. Rate limited. Try after a while.)",
+            "LMT: insider_transactions fetch failed (Too Many Requests. Rate limited. Try after a while.)"
         ]
     },
-    "news_sentiment_raw_metrics_date": "2026-05-21",
-    "news_sentiment_score": 40.50232204273245,
-    "news_sentiment_score_date": "2026-05-21",
+    "news_sentiment_raw_metrics_date": "2026-05-25",
+    "news_sentiment_score": null,
+    "news_sentiment_score_date": "2026-05-25",
     "news_sentiment_subscores": {
         "earnings_surprise_revisions": null,
-        "price_momentum": 43.72254829556017,
-        "insider_activity": 34.06186953707702
+        "price_momentum": 47.14825348330809,
+        "insider_activity": null
     },
     "news_sentiment_drivers": {
         "strongest": [
-            "return_6m (price_momentum): score=71, value=12.7%",
-            "net_insider_value_pct_mcap_90d (insider_activity): score=49, value=-0.0%",
-            "return_1m (price_momentum): score=36, value=-8.6%"
+            "return_6m (price_momentum): score=76, value=15.3%",
+            "return_1m (price_momentum): score=43, value=-4.0%",
+            "return_3m (price_momentum): score=17, value=-19.6%"
         ],
         "weakest": [
-            "insider_count_ratio_90d (insider_activity): score=0, value=-1.00",
-            "return_3m (price_momentum): score=18, value=-19.1%",
-            "return_1m (price_momentum): score=36, value=-8.6%"
+            "return_3m (price_momentum): score=17, value=-19.6%",
+            "return_1m (price_momentum): score=43, value=-4.0%",
+            "return_6m (price_momentum): score=76, value=15.3%"
         ]
     },
-    "composite_score": 48.49855760750426,
-    "composite_score_date": "2026-05-21",
-    "composite_rank": 775,
+    "composite_score": 50.55605207888526,
+    "composite_score_date": "2026-05-25",
+    "composite_rank": 730,
     "composite_metadata": {
         "scores_used": [
             "financial",
-            "professional",
+            "professional"
+        ],
+        "scores_imputed": [
             "news_sentiment"
         ],
-        "scores_imputed": [],
-        "imputed_values": {},
-        "imputation_r_squared": null,
+        "imputed_values": {
+            "news_sentiment": 52.45918045291228
+        },
+        "imputation_r_squared": 0.031937368103860275,
         "weights_applied": {
             "financial": 50,
             "professional": 30,

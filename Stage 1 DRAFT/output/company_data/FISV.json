@@ -5,7 +5,7 @@
     "financial_raw_metrics": {
         "sector": null,
         "industry": null,
-        "market_cap_usd": 29766238208,
+        "market_cap_usd": 30464800768,
         "profitability": {
             "gross_margin_ttm": null,
             "operating_margin_ttm": null,
@@ -38,12 +38,12 @@
             "fcf_cagr_3yr": 0.11051742262210151
         },
         "valuation": {
-            "pe_trailing": 9.461017,
-            "pe_forward": 6.2316008,
+            "pe_trailing": 9.683051,
+            "pe_forward": 6.378038,
             "ps_ratio": null,
-            "pb_ratio": 1.1355221,
+            "pb_ratio": 1.162171,
             "ev_ebitda": null,
-            "peg_ratio": 0.9224,
+            "peg_ratio": 0.9387,
             "fcf_yield": null
         },
         "data_quality_flags": [
@@ -52,22 +52,22 @@
             "FISV: eps_cagr_3yr approximated by net income CAGR (share count changes not adjusted)"
         ]
     },
-    "financial_raw_metrics_date": "2026-05-21",
+    "financial_raw_metrics_date": "2026-05-25",
     "financial_score": null,
-    "financial_score_date": "2026-05-21",
+    "financial_score_date": "2026-05-25",
     "financial_subscores": {
         "profitability": null,
         "returns_on_capital": null,
         "cash_flow_quality": null,
         "balance_sheet": null,
         "growth": 59.30218513543489,
-        "valuation": 90.09991432727273
+        "valuation": 89.60966254545454
     },
     "financial_drivers": {
         "strongest": [
-            "pe_forward (valuation): score=98, value=6.23",
-            "pe_trailing (valuation): score=91, value=9.46",
-            "peg_ratio (valuation): score=79, value=92.2%"
+            "pe_forward (valuation): score=97, value=6.38",
+            "pe_trailing (valuation): score=91, value=9.68",
+            "peg_ratio (valuation): score=78, value=93.9%"
         ],
         "weakest": [
             "interest_coverage (balance_sheet): score=54, value=3.79",
@@ -78,8 +78,8 @@
     "professional_raw_metrics": {
         "sector": null,
         "industry": null,
-        "market_cap_usd": 29766238208,
-        "current_price": 55.82,
+        "market_cap_usd": 30464800768,
+        "current_price": 57.13,
         "analyst": {
             "recommendation_mean": 2.63889,
             "recommendation_key": "hold",
@@ -87,7 +87,7 @@
             "target_median_price": 65.0,
             "target_high_price": 115.0,
             "target_low_price": 40.0,
-            "upside_to_target": 0.25668487997133643,
+            "upside_to_target": 0.2278688955014878,
             "target_dispersion": 1.069165758469753,
             "num_analysts": 27
         },
@@ -109,18 +109,18 @@
             "FISV: sector classification unavailable"
         ]
     },
-    "professional_raw_metrics_date": "2026-05-21",
-    "professional_score": 53.76245655261937,
-    "professional_score_date": "2026-05-21",
+    "professional_raw_metrics_date": "2026-05-25",
+    "professional_score": 52.64183493434748,
+    "professional_score_date": "2026-05-25",
     "professional_subscores": {
-        "analyst_consensus": 62.778965331422434,
+        "analyst_consensus": 60.85789970009919,
         "rating_momentum": 41.13934426229508,
         "institutional_positioning": null,
         "short_interest": null
     },
     "professional_drivers": {
         "strongest": [
-            "upside_to_target (analyst_consensus): score=83, value=25.7%",
+            "upside_to_target (analyst_consensus): score=78, value=22.8%",
             "recommendation_mean (analyst_consensus): score=49, value=2.64",
             "total_actions_12m (rating_momentum): score=41, value=61.00"
         ],
@@ -133,8 +133,8 @@
     "news_sentiment_raw_metrics": {
         "sector": null,
         "industry": null,
-        "market_cap_usd": 29766238208,
-        "current_price": 55.82,
+        "market_cap_usd": 30464800768,
+        "current_price": 57.13,
         "earnings": {
             "beat_count_4q": null,
             "miss_count_4q": null,
@@ -145,9 +145,9 @@
             "forward_eps": null
         },
         "price_momentum": {
-            "return_1m": -0.11760984064080644,
-            "return_3m": -0.1141088480092226,
-            "return_6m": -0.08746114646217842
+            "return_1m": -0.09690165166265263,
+            "return_3m": -0.07150981418152326,
+            "return_6m": -0.044169323030693625
         },
         "insider_activity": {
             "insider_purchases_count_90d": null,
@@ -159,28 +159,28 @@
             "FISV: earnings_dates fetch failed (['Earnings Date'])"
         ]
     },
-    "news_sentiment_raw_metrics_date": "2026-05-21",
+    "news_sentiment_raw_metrics_date": "2026-05-25",
     "news_sentiment_score": null,
-    "news_sentiment_score_date": "2026-05-21",
+    "news_sentiment_score_date": "2026-05-25",
     "news_sentiment_subscores": {
         "earnings_surprise_revisions": null,
-        "price_momentum": 32.61249740861652,
+        "price_momentum": 38.84640381808771,
         "insider_activity": null
     },
     "news_sentiment_drivers": {
         "strongest": [
-            "return_6m (price_momentum): score=35, value=-8.7%",
-            "return_3m (price_momentum): score=31, value=-11.4%",
-            "return_1m (price_momentum): score=30, value=-11.8%"
+            "return_6m (price_momentum): score=43, value=-4.4%",
+            "return_3m (price_momentum): score=38, value=-7.2%",
+            "return_1m (price_momentum): score=34, value=-9.7%"
         ],
         "weakest": [
-            "return_1m (price_momentum): score=30, value=-11.8%",
-            "return_3m (price_momentum): score=31, value=-11.4%",
-            "return_6m (price_momentum): score=35, value=-8.7%"
+            "return_1m (price_momentum): score=34, value=-9.7%",
+            "return_3m (price_momentum): score=38, value=-7.2%",
+            "return_6m (price_momentum): score=43, value=-4.4%"
         ]
     },
     "composite_score": null,
-    "composite_score_date": "2026-05-21",
+    "composite_score_date": "2026-05-25",
     "composite_rank": null,
     "composite_metadata": {
         "scores_used": [

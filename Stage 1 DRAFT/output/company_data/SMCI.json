@@ -5,7 +5,7 @@
     "financial_raw_metrics": {
         "sector": "Technology",
         "industry": "Computer Hardware",
-        "market_cap_usd": 20123461632,
+        "market_cap_usd": 21398470656,
         "profitability": {
             "gross_margin_ttm": 0.08394,
             "operating_margin_ttm": 0.061100002,
@@ -38,28 +38,28 @@
             "fcf_cagr_3yr": null
         },
         "valuation": {
-            "pe_trailing": 17.610525,
-            "pe_forward": 10.391207,
-            "ps_ratio": 0.5971317,
-            "pb_ratio": 2.6561878,
-            "ev_ebitda": 17.718,
+            "pe_trailing": 18.726316,
+            "pe_forward": 11.049587,
+            "ps_ratio": 0.63496554,
+            "pb_ratio": 2.8244822,
+            "ev_ebitda": 18.525,
             "peg_ratio": 0.91,
-            "fcf_yield": -0.37013430513146417
+            "fcf_yield": -0.34808017861367674
         },
         "data_quality_flags": [
             "SMCI: eps_cagr_3yr approximated by net income CAGR (share count changes not adjusted)"
         ]
     },
-    "financial_raw_metrics_date": "2026-05-21",
-    "financial_score": 47.184716747036084,
-    "financial_score_date": "2026-05-21",
+    "financial_raw_metrics_date": "2026-05-25",
+    "financial_score": 47.03478889530489,
+    "financial_score_date": "2026-05-25",
     "financial_subscores": {
-        "profitability": 30.10568333665303,
-        "returns_on_capital": 46.61179918647931,
+        "profitability": 30.13765261434556,
+        "returns_on_capital": 46.631236771574855,
         "cash_flow_quality": 0.0,
         "balance_sheet": 57.045987830623645,
         "growth": 100.00000000000001,
-        "valuation": 55.22881378544045
+        "valuation": 54.16075229018168
     },
     "financial_drivers": {
         "strongest": [
@@ -70,24 +70,24 @@
         "weakest": [
             "fcf_margin_ttm (cash_flow_quality): score=0, value=-22.1%",
             "fcf_to_net_income_ttm (cash_flow_quality): score=0, value=-5.97",
-            "fcf_yield (valuation): score=0, value=-37.0%"
+            "fcf_yield (valuation): score=0, value=-34.8%"
         ]
     },
     "professional_raw_metrics": {
-        "sector": null,
-        "industry": null,
-        "market_cap_usd": null,
-        "current_price": null,
+        "sector": "Technology",
+        "industry": "Computer Hardware",
+        "market_cap_usd": 21398470656,
+        "current_price": 35.58,
         "analyst": {
-            "recommendation_mean": null,
-            "recommendation_key": null,
-            "target_mean_price": null,
-            "target_median_price": null,
-            "target_high_price": null,
-            "target_low_price": null,
-            "upside_to_target": null,
-            "target_dispersion": null,
-            "num_analysts": null
+            "recommendation_mean": 2.83333,
+            "recommendation_key": "hold",
+            "target_mean_price": 37.125,
+            "target_median_price": 35.0,
+            "target_high_price": 58.0,
+            "target_low_price": 15.0,
+            "upside_to_target": 0.04342327150084322,
+            "target_dispersion": 1.1582491582491583,
+            "num_analysts": 16
         },
         "rating_momentum": {
             "upgrades_12m": 0,
@@ -95,96 +95,102 @@
             "total_actions_12m": 0
         },
         "institutional": {
-            "held_pct_institutions": null,
-            "held_pct_insiders": null
+            "held_pct_institutions": 0.58479,
+            "held_pct_insiders": 0.13838
         },
         "short_interest": {
-            "short_pct_of_float": null,
-            "short_ratio": null,
-            "short_change_pct": null
+            "short_pct_of_float": 0.17940001,
+            "short_ratio": 2.65,
+            "short_change_pct": -0.031331623040552654
         },
-        "data_quality_flags": [
-            "SMCI: failed to fetch .info (Too Many Requests. Rate limited. Try after a while.)",
-            "SMCI: sector classification unavailable",
-            "SMCI: upgrades/downgrades fetch failed (Too Many Requests. Rate limited. Try after a while.)"
-        ]
+        "data_quality_flags": []
     },
-    "professional_raw_metrics_date": "2026-05-21",
-    "professional_score": null,
-    "professional_score_date": "2026-05-21",
+    "professional_raw_metrics_date": "2026-05-25",
+    "professional_score": 48.97300072558148,
+    "professional_score_date": "2026-05-25",
     "professional_subscores": {
-        "analyst_consensus": null,
+        "analyst_consensus": 40.21087258010118,
         "rating_momentum": 50.0,
-        "institutional_positioning": null,
-        "short_interest": null
+        "institutional_positioning": 65.81441711504186,
+        "short_interest": 39.6372736252373
     },
     "professional_drivers": {
-        "strongest": [],
-        "weakest": []
+        "strongest": [
+            "held_pct_insiders (institutional_positioning): score=93, value=13.8%",
+            "short_ratio (short_interest): score=74, value=2.65",
+            "short_change_pct (short_interest): score=55, value=-3.1%"
+        ],
+        "weakest": [
+            "short_pct_of_float (short_interest): score=13, value=17.9%",
+            "upside_to_target (analyst_consensus): score=38, value=4.3%",
+            "recommendation_mean (analyst_consensus): score=42, value=2.83"
+        ]
     },
     "news_sentiment_raw_metrics": {
-        "sector": "Technology",
-        "industry": "Computer Hardware",
-        "market_cap_usd": 20123461632,
-        "current_price": 33.46,
+        "sector": null,
+        "industry": null,
+        "market_cap_usd": null,
+        "current_price": null,
         "earnings": {
             "beat_count_4q": null,
             "miss_count_4q": null,
             "total_quarters_4q": null,
             "avg_surprise_magnitude_4q": null,
             "eps_estimate_revision_90d": null,
-            "trailing_eps": 1.9,
-            "forward_eps": 3.22003
+            "trailing_eps": null,
+            "forward_eps": null
         },
         "price_momentum": {
-            "return_1m": 0.1769257699905297,
-            "return_3m": 0.12622016260805638,
-            "return_6m": -0.00800473008895944
+            "return_1m": 0.219328357057752,
+            "return_3m": 0.10634334576707975,
+            "return_6m": 0.12737650295116276
         },
         "insider_activity": {
-            "insider_purchases_count_90d": 0,
-            "insider_sales_count_90d": 0,
+            "insider_purchases_count_90d": null,
+            "insider_sales_count_90d": null,
             "insider_net_value_90d_usd": null
         },
         "data_quality_flags": [
+            "SMCI: failed to fetch .info (Too Many Requests. Rate limited. Try after a while.)",
+            "SMCI: sector classification unavailable",
             "SMCI: earnings_dates fetch failed (['Earnings Date'])"
         ]
     },
-    "news_sentiment_raw_metrics_date": "2026-05-21",
-    "news_sentiment_score": 59.46740081942982,
-    "news_sentiment_score_date": "2026-05-21",
+    "news_sentiment_raw_metrics_date": "2026-05-25",
+    "news_sentiment_score": null,
+    "news_sentiment_score_date": "2026-05-25",
     "news_sentiment_subscores": {
         "earnings_surprise_revisions": null,
-        "price_momentum": 64.20110122914473,
-        "insider_activity": 50.0
+        "price_momentum": 73.83381024389683,
+        "insider_activity": null
     },
     "news_sentiment_drivers": {
         "strongest": [
-            "return_1m (price_momentum): score=79, value=17.7%",
-            "return_3m (price_momentum): score=71, value=12.6%",
-            "insider_activity_summary (insider_activity): score=50, value=no activity in 90d"
+            "return_1m (price_momentum): score=87, value=21.9%",
+            "return_6m (price_momentum): score=71, value=12.7%",
+            "return_3m (price_momentum): score=68, value=10.6%"
         ],
         "weakest": [
-            "return_6m (price_momentum): score=49, value=-0.8%",
-            "insider_activity_summary (insider_activity): score=50, value=no activity in 90d",
-            "return_3m (price_momentum): score=71, value=12.6%"
+            "return_3m (price_momentum): score=68, value=10.6%",
+            "return_6m (price_momentum): score=71, value=12.7%",
+            "return_1m (price_momentum): score=87, value=21.9%"
         ]
     },
-    "composite_score": 52.390004942994594,
-    "composite_score_date": "2026-05-21",
-    "composite_rank": 594,
+    "composite_score": 48.95804775396484,
+    "composite_score_date": "2026-05-25",
+    "composite_rank": 797,
     "composite_metadata": {
         "scores_used": [
             "financial",
-            "news_sentiment"
-        ],
-        "scores_imputed": [
             "professional"
         ],
+        "scores_imputed": [
+            "news_sentiment"
+        ],
         "imputed_values": {
-            "professional": 56.34722135196863
+            "news_sentiment": 53.74376544318973
         },
-        "imputation_r_squared": 0.04516719672877956,
+        "imputation_r_squared": 0.031937368103860275,
         "weights_applied": {
             "financial": 50,
             "professional": 30,

@@ -5,7 +5,7 @@
     "financial_raw_metrics": {
         "sector": "Communication Services",
         "industry": "Advertising Agencies",
-        "market_cap_usd": 21024907264,
+        "market_cap_usd": 21355515904,
         "profitability": {
             "gross_margin_ttm": 0.18431999,
             "operating_margin_ttm": 0.11918,
@@ -39,31 +39,31 @@
         },
         "valuation": {
             "pe_trailing": null,
-            "pe_forward": 5.9324913,
-            "ps_ratio": 1.060557,
-            "pb_ratio": 2.227893,
-            "ev_ebitda": 9.091,
+            "pe_forward": 6.0257773,
+            "ps_ratio": 1.0772339,
+            "pb_ratio": 2.2629259,
+            "ev_ebitda": 9.366,
             "peg_ratio": 15.9708,
-            "fcf_yield": 0.2409832323339374
+            "fcf_yield": 0.2372525269244837
         },
         "data_quality_flags": [
             "OMC: eps_cagr_3yr approximated by net income CAGR (share count changes not adjusted)"
         ]
     },
-    "financial_raw_metrics_date": "2026-05-21",
-    "financial_score": 57.62691416572491,
-    "financial_score_date": "2026-05-21",
+    "financial_raw_metrics_date": "2026-05-25",
+    "financial_score": 57.49145531511249,
+    "financial_score_date": "2026-05-25",
     "financial_subscores": {
-        "profitability": 34.435593705948335,
-        "returns_on_capital": 49.16128239922405,
+        "profitability": 34.16946706014999,
+        "returns_on_capital": 48.79382765952221,
         "cash_flow_quality": 83.59294103382587,
         "balance_sheet": 53.3248511679724,
         "growth": 71.92297341249895,
-        "valuation": 63.87616068363902
+        "valuation": 63.81787686022315
     },
     "financial_drivers": {
         "strongest": [
-            "fcf_yield (valuation): score=100, value=24.1%",
+            "fcf_yield (valuation): score=100, value=23.7%",
             "fcf_cagr_3yr (growth): score=100, value=48.7%",
             "revenue_growth_1yr (growth): score=100, value=69.2%"
         ],
@@ -74,53 +74,57 @@
         ]
     },
     "professional_raw_metrics": {
-        "sector": null,
-        "industry": null,
-        "market_cap_usd": null,
-        "current_price": null,
+        "sector": "Communication Services",
+        "industry": "Advertising Agencies",
+        "market_cap_usd": 21355515904,
+        "current_price": 74.93,
         "analyst": {
-            "recommendation_mean": null,
-            "recommendation_key": null,
-            "target_mean_price": null,
-            "target_median_price": null,
-            "target_high_price": null,
-            "target_low_price": null,
-            "upside_to_target": null,
-            "target_dispersion": null,
-            "num_analysts": null
+            "recommendation_mean": 2.09091,
+            "recommendation_key": "buy",
+            "target_mean_price": 99.8,
+            "target_median_price": 100.5,
+            "target_high_price": 115.0,
+            "target_low_price": 79.0,
+            "upside_to_target": 0.33190978246363256,
+            "target_dispersion": 0.36072144288577157,
+            "num_analysts": 10
         },
         "rating_momentum": {
-            "upgrades_12m": 0,
-            "downgrades_12m": 0,
-            "total_actions_12m": 0
+            "upgrades_12m": 2,
+            "downgrades_12m": 2,
+            "total_actions_12m": 13
         },
         "institutional": {
-            "held_pct_institutions": null,
-            "held_pct_insiders": null
+            "held_pct_institutions": 0.0110728,
+            "held_pct_insiders": 0.0086900005
         },
         "short_interest": {
-            "short_pct_of_float": null,
-            "short_ratio": null,
-            "short_change_pct": null
+            "short_pct_of_float": 0.0964,
+            "short_ratio": 5.74,
+            "short_change_pct": -0.19888944190705832
         },
-        "data_quality_flags": [
-            "OMC: failed to fetch .info (Too Many Requests. Rate limited. Try after a while.)",
-            "OMC: sector classification unavailable",
-            "OMC: upgrades/downgrades fetch failed (Too Many Requests. Rate limited. Try after a while.)"
-        ]
+        "data_quality_flags": []
     },
-    "professional_raw_metrics_date": "2026-05-21",
-    "professional_score": null,
-    "professional_score_date": "2026-05-21",
+    "professional_raw_metrics_date": "2026-05-25",
+    "professional_score": 55.23064139528702,
+    "professional_score_date": "2026-05-25",
     "professional_subscores": {
-        "analyst_consensus": null,
-        "rating_momentum": 50.0,
-        "institutional_positioning": null,
-        "short_interest": null
+        "analyst_consensus": 79.45635564927264,
+        "rating_momentum": 52.5,
+        "institutional_positioning": 26.72989895820572,
+        "short_interest": 50.75628118993442
     },
     "professional_drivers": {
-        "strongest": [],
-        "weakest": []
+        "strongest": [
+            "upside_to_target (analyst_consensus): score=92, value=33.2%",
+            "short_change_pct (short_interest): score=80, value=-19.9%",
+            "recommendation_mean (analyst_consensus): score=71, value=2.09"
+        ],
+        "weakest": [
+            "held_pct_institutions (institutional_positioning): score=13, value=1.1%",
+            "short_pct_of_float (short_interest): score=42, value=9.6%",
+            "short_ratio (short_interest): score=46, value=5.74"
+        ]
     },
     "news_sentiment_raw_metrics": {
         "sector": null,
@@ -137,9 +141,9 @@
             "forward_eps": null
         },
         "price_momentum": {
-            "return_1m": -0.05507881476324494,
-            "return_3m": 0.06194462154172934,
-            "return_6m": 0.04504424953793135
+            "return_1m": -0.04071182025767838,
+            "return_3m": -0.06501584800386742,
+            "return_6m": 0.06875038291205118
         },
         "insider_activity": {
             "insider_purchases_count_90d": null,
@@ -154,41 +158,45 @@
             "OMC: insider_transactions fetch failed (Too Many Requests. Rate limited. Try after a while.)"
         ]
     },
-    "news_sentiment_raw_metrics_date": "2026-05-21",
+    "news_sentiment_raw_metrics_date": "2026-05-25",
     "news_sentiment_score": null,
-    "news_sentiment_score_date": "2026-05-21",
+    "news_sentiment_score_date": "2026-05-25",
     "news_sentiment_subscores": {
         "earnings_surprise_revisions": null,
-        "price_momentum": 54.3214356106611,
+        "price_momentum": 49.094441883174554,
         "insider_activity": null
     },
     "news_sentiment_drivers": {
         "strongest": [
-            "return_3m (price_momentum): score=60, value=6.2%",
-            "return_6m (price_momentum): score=58, value=4.5%",
-            "return_1m (price_momentum): score=41, value=-5.5%"
+            "return_6m (price_momentum): score=61, value=6.9%",
+            "return_1m (price_momentum): score=43, value=-4.1%",
+            "return_3m (price_momentum): score=39, value=-6.5%"
         ],
         "weakest": [
-            "return_1m (price_momentum): score=41, value=-5.5%",
-            "return_6m (price_momentum): score=58, value=4.5%",
-            "return_3m (price_momentum): score=60, value=6.2%"
+            "return_3m (price_momentum): score=39, value=-6.5%",
+            "return_1m (price_momentum): score=43, value=-4.1%",
+            "return_6m (price_momentum): score=61, value=6.9%"
         ]
     },
-    "composite_score": null,
-    "composite_score_date": "2026-05-21",
-    "composite_rank": null,
+    "composite_score": 55.55388055681358,
+    "composite_score_date": "2026-05-25",
+    "composite_rank": 450,
     "composite_metadata": {
         "scores_used": [
-            "financial"
+            "financial",
+            "professional"
         ],
-        "scores_imputed": [],
-        "imputed_values": {},
-        "imputation_r_squared": null,
+        "scores_imputed": [
+            "news_sentiment"
+        ],
+        "imputed_values": {
+            "news_sentiment": 51.19480240335615
+        },
+        "imputation_r_squared": 0.031937368103860275,
         "weights_applied": {
             "financial": 50,
             "professional": 30,
             "news_sentiment": 20
-        },
-        "skip_reason": "Only 1 of 3 scores populated; need at least 2"
+        }
     }
 }

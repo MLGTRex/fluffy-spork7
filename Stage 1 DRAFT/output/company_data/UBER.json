@@ -5,7 +5,7 @@
     "financial_raw_metrics": {
         "sector": "Technology",
         "industry": "Software - Application",
-        "market_cap_usd": 149840445440,
+        "market_cap_usd": 146196725760,
         "profitability": {
             "gross_margin_ttm": 0.39635,
             "operating_margin_ttm": 0.14565,
@@ -38,28 +38,28 @@
             "fcf_cagr_3yr": 1.9253167244957807
         },
         "valuation": {
-            "pe_trailing": 18.265509,
-            "pe_forward": 16.957705,
-            "ps_ratio": 2.7910004,
-            "pb_ratio": 5.6289673,
-            "ev_ebitda": 22.684,
-            "peg_ratio": 6.0513,
-            "fcf_yield": 0.04362390363166288
+            "pe_trailing": 17.821339,
+            "pe_forward": 16.545338,
+            "ps_ratio": 2.7231307,
+            "pb_ratio": 5.4920855,
+            "ev_ebitda": 21.878,
+            "peg_ratio": 5.8258,
+            "fcf_yield": 0.04471115969266424
         },
         "data_quality_flags": [
             "UBER: eps_cagr_3yr approximated by net income CAGR (share count changes not adjusted)"
         ]
     },
-    "financial_raw_metrics_date": "2026-05-21",
-    "financial_score": 61.86396730874387,
-    "financial_score_date": "2026-05-21",
+    "financial_raw_metrics_date": "2026-05-25",
+    "financial_score": 61.96119010311375,
+    "financial_score_date": "2026-05-25",
     "financial_subscores": {
-        "profitability": 42.41163107457955,
-        "returns_on_capital": 58.44745997025009,
+        "profitability": 42.338911485215526,
+        "returns_on_capital": 58.408397471375956,
         "cash_flow_quality": 69.89469637501331,
         "balance_sheet": 79.40721380904162,
         "growth": 75.89317788924771,
-        "valuation": 52.75257259188365
+        "valuation": 53.549767338667124
     },
     "financial_drivers": {
         "strongest": [
@@ -69,122 +69,128 @@
         ],
         "weakest": [
             "eps_growth_1yr (growth): score=0, value=-84.6%",
-            "peg_ratio (valuation): score=0, value=6.05",
+            "peg_ratio (valuation): score=0, value=5.83",
             "gross_margin_ttm (profitability): score=4, value=39.6%"
         ]
     },
     "professional_raw_metrics": {
+        "sector": "Technology",
+        "industry": "Software - Application",
+        "market_cap_usd": 146196725760,
+        "current_price": 71.82,
+        "analyst": {
+            "recommendation_mean": 1.48077,
+            "recommendation_key": "strong_buy",
+            "target_mean_price": 104.4512,
+            "target_median_price": 106.9,
+            "target_high_price": 150.0,
+            "target_low_price": 70.0,
+            "upside_to_target": 0.454346978557505,
+            "target_dispersion": 0.7659079072332343,
+            "num_analysts": 50
+        },
+        "rating_momentum": {
+            "upgrades_12m": 2,
+            "downgrades_12m": 1,
+            "total_actions_12m": 80
+        },
+        "institutional": {
+            "held_pct_institutions": 0.85991997,
+            "held_pct_insiders": 0.00447
+        },
+        "short_interest": {
+            "short_pct_of_float": 0.0272,
+            "short_ratio": 3.84,
+            "short_change_pct": -0.05218836828442886
+        },
+        "data_quality_flags": []
+    },
+    "professional_raw_metrics_date": "2026-05-25",
+    "professional_score": 72.58111187662963,
+    "professional_score_date": "2026-05-25",
+    "professional_subscores": {
+        "analyst_consensus": 93.31769957115011,
+        "rating_momentum": 53.2875,
+        "institutional_positioning": 65.22959650869007,
+        "short_interest": 68.60428599703056
+    },
+    "professional_drivers": {
+        "strongest": [
+            "upside_to_target (analyst_consensus): score=98, value=45.4%",
+            "recommendation_mean (analyst_consensus): score=90, value=1.48",
+            "short_pct_of_float (short_interest): score=77, value=2.7%"
+        ],
+        "weakest": [
+            "upgrades_12m (rating_momentum): score=53, value=2.00",
+            "downgrades_12m (rating_momentum): score=53, value=1.00",
+            "total_actions_12m (rating_momentum): score=53, value=80.00"
+        ]
+    },
+    "news_sentiment_raw_metrics": {
         "sector": null,
         "industry": null,
         "market_cap_usd": null,
         "current_price": null,
-        "analyst": {
-            "recommendation_mean": null,
-            "recommendation_key": null,
-            "target_mean_price": null,
-            "target_median_price": null,
-            "target_high_price": null,
-            "target_low_price": null,
-            "upside_to_target": null,
-            "target_dispersion": null,
-            "num_analysts": null
-        },
-        "rating_momentum": {
-            "upgrades_12m": 0,
-            "downgrades_12m": 0,
-            "total_actions_12m": 0
-        },
-        "institutional": {
-            "held_pct_institutions": null,
-            "held_pct_insiders": null
-        },
-        "short_interest": {
-            "short_pct_of_float": null,
-            "short_ratio": null,
-            "short_change_pct": null
-        },
-        "data_quality_flags": [
-            "UBER: failed to fetch .info (Too Many Requests. Rate limited. Try after a while.)",
-            "UBER: sector classification unavailable",
-            "UBER: upgrades/downgrades fetch failed (Too Many Requests. Rate limited. Try after a while.)"
-        ]
-    },
-    "professional_raw_metrics_date": "2026-05-21",
-    "professional_score": null,
-    "professional_score_date": "2026-05-21",
-    "professional_subscores": {
-        "analyst_consensus": null,
-        "rating_momentum": 50.0,
-        "institutional_positioning": null,
-        "short_interest": null
-    },
-    "professional_drivers": {
-        "strongest": [],
-        "weakest": []
-    },
-    "news_sentiment_raw_metrics": {
-        "sector": "Technology",
-        "industry": "Software - Application",
-        "market_cap_usd": 149840445440,
-        "current_price": 73.61,
         "earnings": {
             "beat_count_4q": null,
             "miss_count_4q": null,
             "total_quarters_4q": null,
             "avg_surprise_magnitude_4q": null,
             "eps_estimate_revision_90d": null,
-            "trailing_eps": 4.03,
-            "forward_eps": 4.3408
+            "trailing_eps": null,
+            "forward_eps": null
         },
         "price_momentum": {
-            "return_1m": -0.0472431016736774,
-            "return_3m": 0.011543265022448361,
-            "return_6m": -0.1778174801335779
+            "return_1m": -0.049748637802831334,
+            "return_3m": -0.01535512351376387,
+            "return_6m": -0.1384357105450203
         },
         "insider_activity": {
-            "insider_purchases_count_90d": 1,
-            "insider_sales_count_90d": 1,
-            "insider_net_value_90d_usd": -633825.0
+            "insider_purchases_count_90d": null,
+            "insider_sales_count_90d": null,
+            "insider_net_value_90d_usd": null
         },
         "data_quality_flags": [
+            "UBER: failed to fetch .info (Too Many Requests. Rate limited. Try after a while.)",
+            "UBER: sector classification unavailable",
             "UBER: earnings_dates fetch failed (['Earnings Date'])"
         ]
     },
-    "news_sentiment_raw_metrics_date": "2026-05-21",
-    "news_sentiment_score": 41.20892225727907,
-    "news_sentiment_score_date": "2026-05-21",
+    "news_sentiment_raw_metrics_date": "2026-05-25",
+    "news_sentiment_score": null,
+    "news_sentiment_score_date": "2026-05-25",
     "news_sentiment_subscores": {
         "earnings_surprise_revisions": null,
-        "price_momentum": 36.85039588100106,
-        "insider_activity": 49.9259750098351
+        "price_momentum": 37.802377183577775,
+        "insider_activity": null
     },
     "news_sentiment_drivers": {
         "strongest": [
-            "return_3m (price_momentum): score=52, value=1.2%",
-            "insider_count_ratio_90d (insider_activity): score=50, value=0.00",
-            "net_insider_value_pct_mcap_90d (insider_activity): score=50, value=-0.0%"
+            "return_3m (price_momentum): score=47, value=-1.5%",
+            "return_1m (price_momentum): score=42, value=-5.0%",
+            "return_6m (price_momentum): score=27, value=-13.8%"
         ],
         "weakest": [
-            "return_6m (price_momentum): score=20, value=-17.8%",
-            "return_1m (price_momentum): score=42, value=-4.7%",
-            "net_insider_value_pct_mcap_90d (insider_activity): score=50, value=-0.0%"
+            "return_6m (price_momentum): score=27, value=-13.8%",
+            "return_1m (price_momentum): score=42, value=-5.0%",
+            "return_3m (price_momentum): score=47, value=-1.5%"
         ]
     },
-    "composite_score": 56.867548602625675,
-    "composite_score_date": "2026-05-21",
-    "composite_rank": 334,
+    "composite_score": 62.14896189387315,
+    "composite_score_date": "2026-05-25",
+    "composite_rank": 123,
     "composite_metadata": {
         "scores_used": [
             "financial",
-            "news_sentiment"
-        ],
-        "scores_imputed": [
             "professional"
         ],
+        "scores_imputed": [
+            "news_sentiment"
+        ],
         "imputed_values": {
-            "professional": 58.97926832265975
+            "news_sentiment": 46.970166396636884
         },
-        "imputation_r_squared": 0.04516719672877956,
+        "imputation_r_squared": 0.031937368103860275,
         "weights_applied": {
             "financial": 50,
             "professional": 30,

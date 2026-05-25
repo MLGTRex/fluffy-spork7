@@ -5,7 +5,7 @@
     "financial_raw_metrics": {
         "sector": "Real Estate",
         "industry": "REIT - Hotel & Motel",
-        "market_cap_usd": 2307606784,
+        "market_cap_usd": 2317674752,
         "profitability": {
             "gross_margin_ttm": 0.30457002,
             "operating_margin_ttm": 0.11075,
@@ -39,31 +39,31 @@
         },
         "valuation": {
             "pe_trailing": null,
-            "pe_forward": 22.69307,
-            "ps_ratio": 0.9092226,
-            "pb_ratio": 0.74687177,
-            "ev_ebitda": 10.769,
+            "pe_forward": 22.79208,
+            "ps_ratio": 0.9131895,
+            "pb_ratio": 0.75013036,
+            "ev_ebitda": 10.811,
             "peg_ratio": 0.65,
-            "fcf_yield": 0.45090002994201633
+            "fcf_yield": 0.44894132237584994
         },
         "data_quality_flags": [
             "PK: eps_cagr_3yr approximated by net income CAGR (share count changes not adjusted)"
         ]
     },
-    "financial_raw_metrics_date": "2026-05-21",
-    "financial_score": 33.91856453763721,
-    "financial_score_date": "2026-05-21",
+    "financial_raw_metrics_date": "2026-05-25",
+    "financial_score": 33.91458559802561,
+    "financial_score_date": "2026-05-25",
     "financial_subscores": {
-        "profitability": 14.130553785257913,
+        "profitability": 14.130553785257916,
         "returns_on_capital": 30.48018504566968,
         "cash_flow_quality": 54.2964526604679,
         "balance_sheet": 16.664625,
         "growth": 16.070252869226586,
-        "valuation": 79.61144794665012
+        "valuation": 79.58492168257277
     },
     "financial_drivers": {
         "strongest": [
-            "fcf_yield (valuation): score=100, value=45.1%",
+            "fcf_yield (valuation): score=100, value=44.9%",
             "fcf_margin_ttm (cash_flow_quality): score=100, value=41.0%",
             "peg_ratio (valuation): score=91, value=65.0%"
         ],
@@ -74,117 +74,124 @@
         ]
     },
     "professional_raw_metrics": {
+        "sector": "Real Estate",
+        "industry": "REIT - Hotel & Motel",
+        "market_cap_usd": 2317674752,
+        "current_price": 11.51,
+        "analyst": {
+            "recommendation_mean": 2.66667,
+            "recommendation_key": "hold",
+            "target_mean_price": 12.40625,
+            "target_median_price": 11.5,
+            "target_high_price": 19.5,
+            "target_low_price": 9.0,
+            "upside_to_target": 0.07786707211120766,
+            "target_dispersion": 0.8463476070528967,
+            "num_analysts": 16
+        },
+        "rating_momentum": {
+            "upgrades_12m": 0,
+            "downgrades_12m": 3,
+            "total_actions_12m": 19
+        },
+        "institutional": {
+            "held_pct_institutions": 0.0104108,
+            "held_pct_insiders": 0.03972
+        },
+        "short_interest": {
+            "short_pct_of_float": 0.2518,
+            "short_ratio": 9.04,
+            "short_change_pct": -0.02156673635633483
+        },
+        "data_quality_flags": []
+    },
+    "professional_raw_metrics_date": "2026-05-25",
+    "professional_score": 40.90203161617147,
+    "professional_score_date": "2026-05-25",
+    "professional_subscores": {
+        "analyst_consensus": 47.78662721112077,
+        "rating_momentum": 42.55263157894737,
+        "institutional_positioning": 41.62921553575539,
+        "short_interest": 20.875002090690046
+    },
+    "professional_drivers": {
+        "strongest": [
+            "held_pct_insiders (institutional_positioning): score=75, value=4.0%",
+            "short_change_pct (short_interest): score=53, value=-2.2%",
+            "recommendation_mean (analyst_consensus): score=48, value=2.67"
+        ],
+        "weakest": [
+            "short_pct_of_float (short_interest): score=5, value=25.2%",
+            "short_ratio (short_interest): score=26, value=9.04",
+            "held_pct_institutions (institutional_positioning): score=27, value=1.0%"
+        ]
+    },
+    "news_sentiment_raw_metrics": {
         "sector": null,
         "industry": null,
         "market_cap_usd": null,
         "current_price": null,
-        "analyst": {
-            "recommendation_mean": null,
-            "recommendation_key": null,
-            "target_mean_price": null,
-            "target_median_price": null,
-            "target_high_price": null,
-            "target_low_price": null,
-            "upside_to_target": null,
-            "target_dispersion": null,
-            "num_analysts": null
-        },
-        "rating_momentum": {
-            "upgrades_12m": 0,
-            "downgrades_12m": 0,
-            "total_actions_12m": 0
-        },
-        "institutional": {
-            "held_pct_institutions": null,
-            "held_pct_insiders": null
-        },
-        "short_interest": {
-            "short_pct_of_float": null,
-            "short_ratio": null,
-            "short_change_pct": null
-        },
-        "data_quality_flags": [
-            "PK: failed to fetch .info (Too Many Requests. Rate limited. Try after a while.)",
-            "PK: sector classification unavailable",
-            "PK: upgrades/downgrades fetch failed (Too Many Requests. Rate limited. Try after a while.)"
-        ]
-    },
-    "professional_raw_metrics_date": "2026-05-21",
-    "professional_score": null,
-    "professional_score_date": "2026-05-21",
-    "professional_subscores": {
-        "analyst_consensus": null,
-        "rating_momentum": 50.0,
-        "institutional_positioning": null,
-        "short_interest": null
-    },
-    "professional_drivers": {
-        "strongest": [],
-        "weakest": []
-    },
-    "news_sentiment_raw_metrics": {
-        "sector": "Real Estate",
-        "industry": "REIT - Hotel & Motel",
-        "market_cap_usd": 2307606784,
-        "current_price": 11.46,
         "earnings": {
             "beat_count_4q": null,
             "miss_count_4q": null,
             "total_quarters_4q": null,
             "avg_surprise_magnitude_4q": null,
             "eps_estimate_revision_90d": null,
-            "trailing_eps": -1.09,
-            "forward_eps": 0.505
+            "trailing_eps": null,
+            "forward_eps": null
         },
         "price_momentum": {
-            "return_1m": 0.022301513024290186,
-            "return_3m": 0.02691306283991181,
-            "return_6m": 0.19795575092346337
+            "return_1m": 0.03321363322765584,
+            "return_3m": 0.03229667537469274,
+            "return_6m": 0.22641442329070746
         },
         "insider_activity": {
-            "insider_purchases_count_90d": 0,
-            "insider_sales_count_90d": 0,
+            "insider_purchases_count_90d": null,
+            "insider_sales_count_90d": null,
             "insider_net_value_90d_usd": null
         },
         "data_quality_flags": [
-            "PK: earnings_dates fetch failed (['Earnings Date'])"
+            "PK: failed to fetch .info (argument of type 'NoneType' is not iterable)",
+            "PK: sector classification unavailable",
+            "PK: earnings_dates fetch failed (['Earnings Date'])",
+            "PK: eps_revisions fetch failed (Too Many Requests. Rate limited. Try after a while.)"
         ]
     },
-    "news_sentiment_raw_metrics_date": "2026-05-21",
-    "news_sentiment_score": 60.46413895771411,
-    "news_sentiment_score_date": "2026-05-21",
+    "news_sentiment_raw_metrics_date": "2026-05-25",
+    "news_sentiment_score": null,
+    "news_sentiment_score_date": "2026-05-25",
     "news_sentiment_subscores": {
         "earnings_surprise_revisions": null,
-        "price_momentum": 65.69620843657117,
-        "insider_activity": 50.0
+        "price_momentum": 68.36216900072324,
+        "insider_activity": null
     },
     "news_sentiment_drivers": {
         "strongest": [
-            "return_6m (price_momentum): score=83, value=19.8%",
-            "return_3m (price_momentum): score=54, value=2.7%",
-            "return_1m (price_momentum): score=54, value=2.2%"
+            "return_6m (price_momentum): score=88, value=22.6%",
+            "return_1m (price_momentum): score=56, value=3.3%",
+            "return_3m (price_momentum): score=55, value=3.2%"
         ],
         "weakest": [
-            "insider_activity_summary (insider_activity): score=50, value=no activity in 90d",
-            "return_1m (price_momentum): score=54, value=2.2%",
-            "return_3m (price_momentum): score=54, value=2.7%"
+            "return_3m (price_momentum): score=55, value=3.2%",
+            "return_1m (price_momentum): score=56, value=3.3%",
+            "return_6m (price_momentum): score=88, value=22.6%"
         ]
     },
-    "composite_score": 45.679064894940105,
-    "composite_score_date": "2026-05-21",
-    "composite_rank": 848,
+    "composite_score": 40.62567578361247,
+    "composite_score_date": "2026-05-25",
+    "composite_rank": 970,
     "composite_metadata": {
         "scores_used": [
             "financial",
-            "news_sentiment"
-        ],
-        "scores_imputed": [
             "professional"
         ],
+        "scores_imputed": [
+            "news_sentiment"
+        ],
         "imputed_values": {
-            "professional": 55.42318278192891
+            "news_sentiment": 56.98886749874114
         },
-        "imputation_r_squared": 0.04516719672877956,
+        "imputation_r_squared": 0.031937368103860275,
         "weights_applied": {
             "financial": 50,
             "professional": 30,

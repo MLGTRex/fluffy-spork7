@@ -5,7 +5,7 @@
     "financial_raw_metrics": {
         "sector": "Financial Services",
         "industry": "Financial Data & Stock Exchanges",
-        "market_cap_usd": 8197367808,
+        "market_cap_usd": 8452021760,
         "profitability": {
             "gross_margin_ttm": 0.51936,
             "operating_margin_ttm": 0.29799,
@@ -38,28 +38,28 @@
             "fcf_cagr_3yr": 0.08223751725614559
         },
         "valuation": {
-            "pe_trailing": 14.470096,
-            "pe_forward": 11.587463,
-            "ps_ratio": 3.4140604,
-            "pb_ratio": 3.872272,
-            "ev_ebitda": 10.347,
-            "peg_ratio": 1.0615,
-            "fcf_yield": 0.07200474076861137
+            "pe_trailing": 14.929215,
+            "pe_forward": 11.947432,
+            "ps_ratio": 3.5201194,
+            "pb_ratio": 3.9925654,
+            "ev_ebitda": 10.68,
+            "peg_ratio": 1.1009,
+            "fcf_yield": 0.06983528447517863
         },
         "data_quality_flags": [
             "FDS: eps_cagr_3yr approximated by net income CAGR (share count changes not adjusted)"
         ]
     },
-    "financial_raw_metrics_date": "2026-05-21",
-    "financial_score": 65.52011529374158,
-    "financial_score_date": "2026-05-21",
+    "financial_raw_metrics_date": "2026-05-25",
+    "financial_score": 65.39170011728345,
+    "financial_score_date": "2026-05-25",
     "financial_subscores": {
         "profitability": 37.72866189800524,
         "returns_on_capital": 58.40496503472455,
         "cash_flow_quality": 90.20354690470097,
         "balance_sheet": 80.77556859678698,
         "growth": 57.810141435868694,
-        "valuation": 79.83334244394746
+        "valuation": 78.97724126755998
     },
     "financial_drivers": {
         "strongest": [
@@ -76,8 +76,8 @@
     "professional_raw_metrics": {
         "sector": "Financial Services",
         "industry": "Financial Data & Stock Exchanges",
-        "market_cap_usd": 8197367808,
-        "current_price": 225.01,
+        "market_cap_usd": 8452021760,
+        "current_price": 232.0,
         "analyst": {
             "recommendation_mean": 3.16667,
             "recommendation_key": "hold",
@@ -85,7 +85,7 @@
             "target_median_price": 245.5,
             "target_high_price": 380.0,
             "target_low_price": 200.0,
-            "upside_to_target": 0.1218945824630017,
+            "upside_to_target": 0.08809267241379311,
             "target_dispersion": 0.7130477841049765,
             "num_analysts": 16
         },
@@ -95,7 +95,7 @@
             "total_actions_12m": 32
         },
         "institutional": {
-            "held_pct_institutions": 0.0107101,
+            "held_pct_institutions": 0.010708200000000001,
             "held_pct_insiders": 0.00405
         },
         "short_interest": {
@@ -105,14 +105,14 @@
         },
         "data_quality_flags": []
     },
-    "professional_raw_metrics_date": "2026-05-21",
-    "professional_score": 36.829340008018505,
-    "professional_score_date": "2026-05-21",
+    "professional_raw_metrics_date": "2026-05-25",
+    "professional_score": 36.35353916524016,
+    "professional_score_date": "2026-05-25",
     "professional_subscores": {
-        "analyst_consensus": 41.689408246300175,
+        "analyst_consensus": 38.309217241379315,
         "rating_momentum": 60.375,
-        "institutional_positioning": 17.494391321581954,
-        "short_interest": 18.471328609453053
+        "institutional_positioning": 20.583057178017633,
+        "short_interest": 18.038658908353245
     },
     "professional_drivers": {
         "strongest": [
@@ -121,60 +121,62 @@
             "upgrades_12m (rating_momentum): score=60, value=4.00"
         ],
         "weakest": [
-            "held_pct_institutions (institutional_positioning): score=2, value=1.1%",
-            "short_pct_of_float (short_interest): score=4, value=15.8%",
+            "short_pct_of_float (short_interest): score=3, value=15.8%",
+            "held_pct_institutions (institutional_positioning): score=6, value=1.1%",
             "short_change_pct (short_interest): score=7, value=41.8%"
         ]
     },
     "news_sentiment_raw_metrics": {
         "sector": "Financial Services",
         "industry": "Financial Data & Stock Exchanges",
-        "market_cap_usd": 8197367808,
-        "current_price": 225.01,
+        "market_cap_usd": 8452021760,
+        "current_price": 232.0,
         "earnings": {
-            "beat_count_4q": 2,
-            "miss_count_4q": 2,
-            "total_quarters_4q": 4,
-            "avg_surprise_magnitude_4q": 0.006580326418236548,
+            "beat_count_4q": null,
+            "miss_count_4q": null,
+            "total_quarters_4q": null,
+            "avg_surprise_magnitude_4q": null,
             "eps_estimate_revision_90d": null,
-            "trailing_eps": 15.55,
+            "trailing_eps": 15.54,
             "forward_eps": 19.4184
         },
         "price_momentum": {
-            "return_1m": -0.0637067529028652,
-            "return_3m": 0.14273992298844326,
-            "return_6m": -0.14960865374989218
+            "return_1m": -0.04416612214399061,
+            "return_3m": 0.1725520284780721,
+            "return_6m": -0.142554319144451
         },
         "insider_activity": {
             "insider_purchases_count_90d": 0,
             "insider_sales_count_90d": 0,
             "insider_net_value_90d_usd": null
         },
-        "data_quality_flags": []
+        "data_quality_flags": [
+            "FDS: earnings_dates fetch failed (['Earnings Date'])"
+        ]
     },
-    "news_sentiment_raw_metrics_date": "2026-05-21",
-    "news_sentiment_score": 48.886669634317556,
-    "news_sentiment_score_date": "2026-05-21",
+    "news_sentiment_raw_metrics_date": "2026-05-25",
+    "news_sentiment_score": 49.147772419283015,
+    "news_sentiment_score_date": "2026-05-25",
     "news_sentiment_subscores": {
-        "earnings_surprise_revisions": 51.51853686574691,
-        "price_momentum": 45.698137220046995,
+        "earnings_surprise_revisions": null,
+        "price_momentum": 48.72165862892453,
         "insider_activity": 50.0
     },
     "news_sentiment_drivers": {
         "strongest": [
-            "return_3m (price_momentum): score=74, value=14.3%",
-            "avg_surprise_magnitude_4q (earnings_surprise_revisions): score=53, value=0.7%",
-            "insider_activity_summary (insider_activity): score=50, value=no activity in 90d"
+            "return_3m (price_momentum): score=79, value=17.3%",
+            "insider_activity_summary (insider_activity): score=50, value=no activity in 90d",
+            "return_1m (price_momentum): score=43, value=-4.4%"
         ],
         "weakest": [
-            "return_6m (price_momentum): score=25, value=-15.0%",
-            "return_1m (price_momentum): score=39, value=-6.4%",
-            "beat_rate_4q (earnings_surprise_revisions): score=50, value=50.0%"
+            "return_6m (price_momentum): score=26, value=-14.3%",
+            "return_1m (price_momentum): score=43, value=-4.4%",
+            "insider_activity_summary (insider_activity): score=50, value=no activity in 90d"
         ]
     },
-    "composite_score": 53.586193576139856,
-    "composite_score_date": "2026-05-21",
-    "composite_rank": 513,
+    "composite_score": 53.431466292070375,
+    "composite_score_date": "2026-05-25",
+    "composite_rank": 590,
     "composite_metadata": {
         "scores_used": [
             "financial",

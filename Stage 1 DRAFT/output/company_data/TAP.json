@@ -5,7 +5,7 @@
     "financial_raw_metrics": {
         "sector": "Consumer Defensive",
         "industry": "Beverages - Brewers",
-        "market_cap_usd": 7976559104,
+        "market_cap_usd": 7980310016,
         "profitability": {
             "gross_margin_ttm": 0.38622,
             "operating_margin_ttm": 0.124239996,
@@ -39,27 +39,27 @@
         },
         "valuation": {
             "pe_trailing": null,
-            "pe_forward": 8.480964,
-            "ps_ratio": 0.7129694,
-            "pb_ratio": 0.7932038,
-            "ev_ebitda": 5.868,
-            "peg_ratio": 4.2332,
-            "fcf_yield": 0.09704216039869012
+            "pe_forward": 8.484952,
+            "ps_ratio": 0.71330464,
+            "pb_ratio": 0.7935768,
+            "ev_ebitda": 5.852,
+            "peg_ratio": 4.2125,
+            "fcf_yield": 0.09699654856115304
         },
         "data_quality_flags": [
             "TAP: eps_cagr_3yr approximated by net income CAGR (share count changes not adjusted)"
         ]
     },
-    "financial_raw_metrics_date": "2026-05-21",
-    "financial_score": 43.454871018582054,
-    "financial_score_date": "2026-05-21",
+    "financial_raw_metrics_date": "2026-05-25",
+    "financial_score": 43.515163610681135,
+    "financial_score_date": "2026-05-25",
     "financial_subscores": {
-        "profitability": 39.10996460660893,
-        "returns_on_capital": 34.85687957257397,
+        "profitability": 39.2636002166654,
+        "returns_on_capital": 34.89229563158065,
         "cash_flow_quality": 28.767832112191385,
         "balance_sheet": 46.29145885001941,
         "growth": 45.22371768682896,
-        "valuation": 70.79367256926335
+        "valuation": 70.94355429117307
     },
     "financial_drivers": {
         "strongest": [
@@ -70,121 +70,129 @@
         "weakest": [
             "fcf_to_net_income_ttm (cash_flow_quality): score=0, value=-36.7%",
             "interest_coverage (balance_sheet): score=0, value=-9.16",
-            "peg_ratio (valuation): score=0, value=4.23"
+            "peg_ratio (valuation): score=0, value=4.21"
         ]
     },
     "professional_raw_metrics": {
+        "sector": "Consumer Defensive",
+        "industry": "Beverages - Brewers",
+        "market_cap_usd": 7980310016,
+        "current_price": 42.55,
+        "analyst": {
+            "recommendation_mean": 2.7619,
+            "recommendation_key": "hold",
+            "target_mean_price": 46.14286,
+            "target_median_price": 45.0,
+            "target_high_price": 61.0,
+            "target_low_price": 36.0,
+            "upside_to_target": 0.08443854289071685,
+            "target_dispersion": 0.5417956320869578,
+            "num_analysts": 21
+        },
+        "rating_momentum": {
+            "upgrades_12m": 0,
+            "downgrades_12m": 4,
+            "total_actions_12m": 51
+        },
+        "institutional": {
+            "held_pct_institutions": 0.0100363,
+            "held_pct_insiders": 0.127
+        },
+        "short_interest": {
+            "short_pct_of_float": 0.1721,
+            "short_ratio": 6.21,
+            "short_change_pct": 0.06715710106859088
+        },
+        "data_quality_flags": []
+    },
+    "professional_raw_metrics_date": "2026-05-25",
+    "professional_score": 42.57647713673078,
+    "professional_score_date": "2026-05-25",
+    "professional_subscores": {
+        "analyst_consensus": 46.15825428907169,
+        "rating_momentum": 47.55882352941177,
+        "institutional_positioning": 39.905178754042225,
+        "short_interest": 30.367250431281285
+    },
+    "professional_drivers": {
+        "strongest": [
+            "held_pct_insiders (institutional_positioning): score=92, value=12.7%",
+            "upside_to_target (analyst_consensus): score=49, value=8.4%",
+            "total_actions_12m (rating_momentum): score=48, value=51.00"
+        ],
+        "weakest": [
+            "held_pct_institutions (institutional_positioning): score=18, value=1.0%",
+            "short_pct_of_float (short_interest): score=18, value=17.2%",
+            "short_change_pct (short_interest): score=42, value=6.7%"
+        ]
+    },
+    "news_sentiment_raw_metrics": {
         "sector": null,
         "industry": null,
         "market_cap_usd": null,
         "current_price": null,
-        "analyst": {
-            "recommendation_mean": null,
-            "recommendation_key": null,
-            "target_mean_price": null,
-            "target_median_price": null,
-            "target_high_price": null,
-            "target_low_price": null,
-            "upside_to_target": null,
-            "target_dispersion": null,
-            "num_analysts": null
-        },
-        "rating_momentum": {
-            "upgrades_12m": 0,
-            "downgrades_12m": 0,
-            "total_actions_12m": 0
-        },
-        "institutional": {
-            "held_pct_institutions": null,
-            "held_pct_insiders": null
-        },
-        "short_interest": {
-            "short_pct_of_float": null,
-            "short_ratio": null,
-            "short_change_pct": null
-        },
-        "data_quality_flags": [
-            "TAP: failed to fetch .info (Too Many Requests. Rate limited. Try after a while.)",
-            "TAP: sector classification unavailable",
-            "TAP: upgrades/downgrades fetch failed (Too Many Requests. Rate limited. Try after a while.)"
-        ]
-    },
-    "professional_raw_metrics_date": "2026-05-21",
-    "professional_score": null,
-    "professional_score_date": "2026-05-21",
-    "professional_subscores": {
-        "analyst_consensus": null,
-        "rating_momentum": 50.0,
-        "institutional_positioning": null,
-        "short_interest": null
-    },
-    "professional_drivers": {
-        "strongest": [],
-        "weakest": []
-    },
-    "news_sentiment_raw_metrics": {
-        "sector": "Consumer Defensive",
-        "industry": "Beverages - Brewers",
-        "market_cap_usd": 7976559104,
-        "current_price": 42.53,
         "earnings": {
             "beat_count_4q": null,
             "miss_count_4q": null,
             "total_quarters_4q": null,
             "avg_surprise_magnitude_4q": null,
             "eps_estimate_revision_90d": null,
-            "trailing_eps": -10.55,
-            "forward_eps": 5.01476
+            "trailing_eps": null,
+            "forward_eps": null
         },
         "price_momentum": {
-            "return_1m": -0.02431750743008333,
-            "return_3m": -0.15450828661155275,
-            "return_6m": -0.040961610023767366
+            "return_1m": -0.003512916234163088,
+            "return_3m": -0.11089767456727288,
+            "return_6m": -0.044730848074016526
         },
         "insider_activity": {
-            "insider_purchases_count_90d": 1,
-            "insider_sales_count_90d": 0,
-            "insider_net_value_90d_usd": 93338.0
+            "insider_purchases_count_90d": null,
+            "insider_sales_count_90d": null,
+            "insider_net_value_90d_usd": null
         },
         "data_quality_flags": [
-            "TAP: earnings_dates fetch failed (['Earnings Date'])"
+            "TAP: failed to fetch .info (Too Many Requests. Rate limited. Try after a while.)",
+            "TAP: sector classification unavailable",
+            "TAP: earnings_dates fetch failed (['Earnings Date'])",
+            "TAP: eps_revisions fetch failed (Too Many Requests. Rate limited. Try after a while.)",
+            "TAP: insider_transactions fetch failed (Too Many Requests. Rate limited. Try after a while.)"
         ]
     },
-    "news_sentiment_raw_metrics_date": "2026-05-21",
-    "news_sentiment_score": 46.563601055737124,
-    "news_sentiment_score_date": "2026-05-21",
+    "news_sentiment_raw_metrics_date": "2026-05-25",
+    "news_sentiment_score": null,
+    "news_sentiment_score_date": "2026-05-25",
     "news_sentiment_subscores": {
         "earnings_surprise_revisions": null,
-        "price_momentum": 37.24301313648813,
-        "insider_activity": 65.20477689423512
+        "price_momentum": 40.40254093555119,
+        "insider_activity": null
     },
     "news_sentiment_drivers": {
         "strongest": [
-            "insider_count_ratio_90d (insider_activity): score=100, value=1.00",
-            "net_insider_value_pct_mcap_90d (insider_activity): score=50, value=0.0%",
-            "return_1m (price_momentum): score=46, value=-2.4%"
+            "return_1m (price_momentum): score=49, value=-0.4%",
+            "return_6m (price_momentum): score=43, value=-4.5%",
+            "return_3m (price_momentum): score=32, value=-11.1%"
         ],
         "weakest": [
-            "return_3m (price_momentum): score=24, value=-15.5%",
-            "return_6m (price_momentum): score=43, value=-4.1%",
-            "return_1m (price_momentum): score=46, value=-2.4%"
+            "return_3m (price_momentum): score=32, value=-11.1%",
+            "return_6m (price_momentum): score=43, value=-4.5%",
+            "return_1m (price_momentum): score=49, value=-0.4%"
         ]
     },
-    "composite_score": 48.23747103799937,
-    "composite_score_date": "2026-05-21",
-    "composite_rank": 782,
+    "composite_score": 45.634170687170844,
+    "composite_score_date": "2026-05-25",
+    "composite_rank": 899,
     "composite_metadata": {
         "scores_used": [
             "financial",
-            "news_sentiment"
-        ],
-        "scores_imputed": [
             "professional"
         ],
+        "scores_imputed": [
+            "news_sentiment"
+        ],
         "imputed_values": {
-            "professional": 57.32438439186972
+            "news_sentiment": 55.51822870405519
         },
-        "imputation_r_squared": 0.04516719672877956,
+        "imputation_r_squared": 0.031937368103860275,
         "weights_applied": {
             "financial": 50,
             "professional": 30,

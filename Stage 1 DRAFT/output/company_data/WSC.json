@@ -5,7 +5,7 @@
     "financial_raw_metrics": {
         "sector": "Industrials",
         "industry": "Rental & Leasing Services",
-        "market_cap_usd": 4369211392,
+        "market_cap_usd": 4485048320,
         "profitability": {
             "gross_margin_ttm": 0.52406,
             "operating_margin_ttm": 0.1855,
@@ -39,31 +39,31 @@
         },
         "valuation": {
             "pe_trailing": null,
-            "pe_forward": 17.705736,
-            "ps_ratio": 1.9243195,
-            "pb_ratio": 5.1079135,
-            "ev_ebitda": 13.749,
-            "peg_ratio": 1.4596,
-            "fcf_yield": 0.07495397466912034
+            "pe_forward": 18.175152,
+            "ps_ratio": 1.9753371,
+            "pb_ratio": 5.2433352,
+            "ev_ebitda": 14.063,
+            "peg_ratio": 1.5232,
+            "fcf_yield": 0.0730181118762172
         },
         "data_quality_flags": [
             "WSC: eps_cagr_3yr approximated by net income CAGR (share count changes not adjusted)"
         ]
     },
-    "financial_raw_metrics_date": "2026-05-21",
-    "financial_score": 40.50774581109922,
-    "financial_score_date": "2026-05-21",
+    "financial_raw_metrics_date": "2026-05-25",
+    "financial_score": 40.33944233706174,
+    "financial_score_date": "2026-05-25",
     "financial_subscores": {
-        "profitability": 47.62921148647025,
-        "returns_on_capital": 43.68574279444575,
+        "profitability": 47.638024513951855,
+        "returns_on_capital": 43.699820790841756,
         "cash_flow_quality": 38.95299826740621,
         "balance_sheet": 5.418562499999998,
         "growth": 38.51240929365195,
-        "valuation": 65.41439630504865
+        "valuation": 64.26185177962861
     },
     "financial_drivers": {
         "strongest": [
-            "fcf_yield (valuation): score=91, value=7.5%",
+            "fcf_yield (valuation): score=90, value=7.3%",
             "gross_margin_ttm (profitability): score=82, value=52.4%",
             "fcf_cagr_3yr (growth): score=79, value=17.7%"
         ],
@@ -74,117 +74,124 @@
         ]
     },
     "professional_raw_metrics": {
+        "sector": "Industrials",
+        "industry": "Rental & Leasing Services",
+        "market_cap_usd": 4485048320,
+        "current_price": 24.78,
+        "analyst": {
+            "recommendation_mean": 2.4,
+            "recommendation_key": "buy",
+            "target_mean_price": 28.1,
+            "target_median_price": 27.5,
+            "target_high_price": 37.0,
+            "target_low_price": 24.0,
+            "upside_to_target": 0.13397901533494755,
+            "target_dispersion": 0.4626334519572953,
+            "num_analysts": 10
+        },
+        "rating_momentum": {
+            "upgrades_12m": 1,
+            "downgrades_12m": 3,
+            "total_actions_12m": 25
+        },
+        "institutional": {
+            "held_pct_institutions": 0.0123281,
+            "held_pct_insiders": 0.025190001
+        },
+        "short_interest": {
+            "short_pct_of_float": 0.2226,
+            "short_ratio": 10.12,
+            "short_change_pct": -0.03736066242821596
+        },
+        "data_quality_flags": []
+    },
+    "professional_raw_metrics_date": "2026-05-25",
+    "professional_score": 43.77200746858732,
+    "professional_score_date": "2026-05-25",
+    "professional_subscores": {
+        "analyst_consensus": 59.79790153349476,
+        "rating_momentum": 47.46000000000001,
+        "institutional_positioning": 32.18167580374871,
+        "short_interest": 19.54881987284648
+    },
+    "professional_drivers": {
+        "strongest": [
+            "held_pct_insiders (institutional_positioning): score=68, value=2.5%",
+            "upside_to_target (analyst_consensus): score=61, value=13.4%",
+            "recommendation_mean (analyst_consensus): score=59, value=2.40"
+        ],
+        "weakest": [
+            "short_pct_of_float (short_interest): score=5, value=22.3%",
+            "held_pct_institutions (institutional_positioning): score=17, value=1.2%",
+            "short_ratio (short_interest): score=20, value=10.12"
+        ]
+    },
+    "news_sentiment_raw_metrics": {
         "sector": null,
         "industry": null,
         "market_cap_usd": null,
         "current_price": null,
-        "analyst": {
-            "recommendation_mean": null,
-            "recommendation_key": null,
-            "target_mean_price": null,
-            "target_median_price": null,
-            "target_high_price": null,
-            "target_low_price": null,
-            "upside_to_target": null,
-            "target_dispersion": null,
-            "num_analysts": null
-        },
-        "rating_momentum": {
-            "upgrades_12m": 0,
-            "downgrades_12m": 0,
-            "total_actions_12m": 0
-        },
-        "institutional": {
-            "held_pct_institutions": null,
-            "held_pct_insiders": null
-        },
-        "short_interest": {
-            "short_pct_of_float": null,
-            "short_ratio": null,
-            "short_change_pct": null
-        },
-        "data_quality_flags": [
-            "WSC: failed to fetch .info (Too Many Requests. Rate limited. Try after a while.)",
-            "WSC: sector classification unavailable",
-            "WSC: upgrades/downgrades fetch failed (Too Many Requests. Rate limited. Try after a while.)"
-        ]
-    },
-    "professional_raw_metrics_date": "2026-05-21",
-    "professional_score": null,
-    "professional_score_date": "2026-05-21",
-    "professional_subscores": {
-        "analyst_consensus": null,
-        "rating_momentum": 50.0,
-        "institutional_positioning": null,
-        "short_interest": null
-    },
-    "professional_drivers": {
-        "strongest": [],
-        "weakest": []
-    },
-    "news_sentiment_raw_metrics": {
-        "sector": "Industrials",
-        "industry": "Rental & Leasing Services",
-        "market_cap_usd": 4369211392,
-        "current_price": 24.14,
         "earnings": {
             "beat_count_4q": null,
             "miss_count_4q": null,
             "total_quarters_4q": null,
             "avg_surprise_magnitude_4q": null,
             "eps_estimate_revision_90d": null,
-            "trailing_eps": -0.37,
-            "forward_eps": 1.3634
+            "trailing_eps": null,
+            "forward_eps": null
         },
         "price_momentum": {
-            "return_1m": 0.11604257682016667,
-            "return_3m": 0.09646926894958135,
-            "return_6m": 0.6225460023579925
+            "return_1m": 0.14035900638106,
+            "return_3m": 0.1245207512802254,
+            "return_6m": 0.5741407937345793
         },
         "insider_activity": {
-            "insider_purchases_count_90d": 0,
-            "insider_sales_count_90d": 1,
-            "insider_net_value_90d_usd": -4205566.0
+            "insider_purchases_count_90d": null,
+            "insider_sales_count_90d": null,
+            "insider_net_value_90d_usd": null
         },
         "data_quality_flags": [
-            "WSC: earnings_dates fetch failed (['Earnings Date'])"
+            "WSC: failed to fetch .info (Too Many Requests. Rate limited. Try after a while.)",
+            "WSC: sector classification unavailable",
+            "WSC: earnings_dates fetch failed (['Earnings Date'])",
+            "WSC: eps_revisions fetch failed (Too Many Requests. Rate limited. Try after a while.)"
         ]
     },
-    "news_sentiment_raw_metrics_date": "2026-05-21",
-    "news_sentiment_score": 59.69347052608483,
-    "news_sentiment_score_date": "2026-05-21",
+    "news_sentiment_raw_metrics_date": "2026-05-25",
+    "news_sentiment_score": null,
+    "news_sentiment_score_date": "2026-05-25",
     "news_sentiment_subscores": {
         "earnings_surprise_revisions": null,
-        "price_momentum": 80.46248138956585,
-        "insider_activity": 18.155448799122787
+        "price_momentum": 83.11200242389066,
+        "insider_activity": null
     },
     "news_sentiment_drivers": {
         "strongest": [
-            "return_6m (price_momentum): score=100, value=62.3%",
-            "return_1m (price_momentum): score=69, value=11.6%",
-            "return_3m (price_momentum): score=66, value=9.6%"
+            "return_6m (price_momentum): score=100, value=57.4%",
+            "return_1m (price_momentum): score=73, value=14.0%",
+            "return_3m (price_momentum): score=71, value=12.5%"
         ],
         "weakest": [
-            "insider_count_ratio_90d (insider_activity): score=0, value=-1.00",
-            "net_insider_value_pct_mcap_90d (insider_activity): score=26, value=-0.1%",
-            "return_3m (price_momentum): score=66, value=9.6%"
+            "return_3m (price_momentum): score=71, value=12.5%",
+            "return_1m (price_momentum): score=73, value=14.0%",
+            "return_6m (price_momentum): score=100, value=57.4%"
         ]
     },
-    "composite_score": 48.96496757859411,
-    "composite_score_date": "2026-05-21",
-    "composite_rank": 752,
+    "composite_score": 44.427518588810024,
+    "composite_score_date": "2026-05-25",
+    "composite_rank": 929,
     "composite_metadata": {
         "scores_used": [
             "financial",
-            "news_sentiment"
-        ],
-        "scores_imputed": [
             "professional"
         ],
+        "scores_imputed": [
+            "news_sentiment"
+        ],
         "imputed_values": {
-            "professional": 55.90800189275847
+            "news_sentiment": 55.630975898514805
         },
-        "imputation_r_squared": 0.04516719672877956,
+        "imputation_r_squared": 0.031937368103860275,
         "weights_applied": {
             "financial": 50,
             "professional": 30,

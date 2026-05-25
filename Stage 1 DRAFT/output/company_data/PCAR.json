@@ -5,7 +5,7 @@
     "financial_raw_metrics": {
         "sector": "Industrials",
         "industry": "Farm & Heavy Construction Machinery",
-        "market_cap_usd": 57544134656,
+        "market_cap_usd": 57549398016,
         "profitability": {
             "gross_margin_ttm": 0.13583,
             "operating_margin_ttm": 0.103190005,
@@ -35,37 +35,37 @@
             "revenue_cagr_3yr": -0.004355093626742135,
             "eps_growth_1yr": 0.197,
             "eps_cagr_3yr": -0.07600235745953676,
-            "fcf_cagr_3yr": null
+            "fcf_cagr_3yr": 0.2278273774886752
         },
         "valuation": {
-            "pe_trailing": 23.26383,
-            "pe_forward": 16.142248,
-            "ps_ratio": 2.0714529,
-            "pb_ratio": 2.9124713,
-            "ev_ebitda": 20.238,
-            "peg_ratio": 1.1417,
-            "fcf_yield": 0.025809102958595717
+            "pe_trailing": 23.265959,
+            "pe_forward": 16.143724,
+            "ps_ratio": 2.0716424,
+            "pb_ratio": 2.9127376,
+            "ev_ebitda": 19.864,
+            "peg_ratio": 1.1186,
+            "fcf_yield": 0.025806742506447974
         },
         "data_quality_flags": [
             "PCAR: eps_cagr_3yr approximated by net income CAGR (share count changes not adjusted)"
         ]
     },
-    "financial_raw_metrics_date": "2026-05-21",
-    "financial_score": 45.325778588736895,
-    "financial_score_date": "2026-05-21",
+    "financial_raw_metrics_date": "2026-05-25",
+    "financial_score": 47.29489610672112,
+    "financial_score_date": "2026-05-25",
     "financial_subscores": {
-        "profitability": 30.784415361125895,
-        "returns_on_capital": 41.571942224501164,
+        "profitability": 30.82667842240091,
+        "returns_on_capital": 41.583243027197305,
         "cash_flow_quality": 47.46820935127908,
         "balance_sheet": 80.60959936192748,
-        "growth": 22.87954430738382,
-        "valuation": 54.739360790152865
+        "growth": 35.72104610823718,
+        "valuation": 54.95389062389941
     },
     "financial_drivers": {
         "strongest": [
             "current_ratio (balance_sheet): score=100, value=5.56",
-            "debt_to_equity (balance_sheet): score=82, value=76.2%",
-            "eps_growth_1yr (growth): score=79, value=19.7%"
+            "fcf_cagr_3yr (growth): score=87, value=22.8%",
+            "debt_to_equity (balance_sheet): score=82, value=76.2%"
         ],
         "weakest": [
             "revenue_growth_1yr (growth): score=10, value=-8.9%",
@@ -74,117 +74,124 @@
         ]
     },
     "professional_raw_metrics": {
+        "sector": "Industrials",
+        "industry": "Farm & Heavy Construction Machinery",
+        "market_cap_usd": 57549398016,
+        "current_price": 109.35,
+        "analyst": {
+            "recommendation_mean": 2.42105,
+            "recommendation_key": "buy",
+            "target_mean_price": 126.12312,
+            "target_median_price": 125.0,
+            "target_high_price": 140.0,
+            "target_low_price": 109.0,
+            "upside_to_target": 0.15338930041152268,
+            "target_dispersion": 0.24579157255228065,
+            "num_analysts": 16
+        },
+        "rating_momentum": {
+            "upgrades_12m": 3,
+            "downgrades_12m": 1,
+            "total_actions_12m": 29
+        },
+        "institutional": {
+            "held_pct_institutions": 0.75598997,
+            "held_pct_insiders": 0.018609999
+        },
+        "short_interest": {
+            "short_pct_of_float": 0.0252,
+            "short_ratio": 4.02,
+            "short_change_pct": 0.01991598534087945
+        },
+        "data_quality_flags": []
+    },
+    "professional_raw_metrics_date": "2026-05-25",
+    "professional_score": 59.60942539011081,
+    "professional_score_date": "2026-05-25",
+    "professional_subscores": {
+        "analyst_consensus": 61.12075336076818,
+        "rating_momentum": 56.844827586206904,
+        "institutional_positioning": 61.16852162441711,
+        "short_interest": 58.09216274123959
+    },
+    "professional_drivers": {
+        "strongest": [
+            "upside_to_target (analyst_consensus): score=66, value=15.3%",
+            "held_pct_insiders (institutional_positioning): score=64, value=1.9%",
+            "short_pct_of_float (short_interest): score=61, value=2.5%"
+        ],
+        "weakest": [
+            "short_change_pct (short_interest): score=48, value=2.0%",
+            "upgrades_12m (rating_momentum): score=57, value=3.00",
+            "downgrades_12m (rating_momentum): score=57, value=1.00"
+        ]
+    },
+    "news_sentiment_raw_metrics": {
         "sector": null,
         "industry": null,
         "market_cap_usd": null,
         "current_price": null,
-        "analyst": {
-            "recommendation_mean": null,
-            "recommendation_key": null,
-            "target_mean_price": null,
-            "target_median_price": null,
-            "target_high_price": null,
-            "target_low_price": null,
-            "upside_to_target": null,
-            "target_dispersion": null,
-            "num_analysts": null
-        },
-        "rating_momentum": {
-            "upgrades_12m": 0,
-            "downgrades_12m": 0,
-            "total_actions_12m": 0
-        },
-        "institutional": {
-            "held_pct_institutions": null,
-            "held_pct_insiders": null
-        },
-        "short_interest": {
-            "short_pct_of_float": null,
-            "short_ratio": null,
-            "short_change_pct": null
-        },
-        "data_quality_flags": [
-            "PCAR: failed to fetch .info (Too Many Requests. Rate limited. Try after a while.)",
-            "PCAR: sector classification unavailable",
-            "PCAR: upgrades/downgrades fetch failed (Too Many Requests. Rate limited. Try after a while.)"
-        ]
-    },
-    "professional_raw_metrics_date": "2026-05-21",
-    "professional_score": null,
-    "professional_score_date": "2026-05-21",
-    "professional_subscores": {
-        "analyst_consensus": null,
-        "rating_momentum": 50.0,
-        "institutional_positioning": null,
-        "short_interest": null
-    },
-    "professional_drivers": {
-        "strongest": [],
-        "weakest": []
-    },
-    "news_sentiment_raw_metrics": {
-        "sector": "Industrials",
-        "industry": "Farm & Heavy Construction Machinery",
-        "market_cap_usd": 57544134656,
-        "current_price": 109.34,
         "earnings": {
             "beat_count_4q": null,
             "miss_count_4q": null,
             "total_quarters_4q": null,
             "avg_surprise_magnitude_4q": null,
             "eps_estimate_revision_90d": null,
-            "trailing_eps": 4.7,
-            "forward_eps": 6.77353
+            "trailing_eps": null,
+            "forward_eps": null
         },
         "price_momentum": {
-            "return_1m": -0.13076856200894096,
-            "return_3m": -0.12375469995377693,
-            "return_6m": 0.15414531520362904
+            "return_1m": -0.12437408918299768,
+            "return_3m": -0.12178018651732209,
+            "return_6m": 0.14112364914399342
         },
         "insider_activity": {
-            "insider_purchases_count_90d": 0,
-            "insider_sales_count_90d": 0,
+            "insider_purchases_count_90d": null,
+            "insider_sales_count_90d": null,
             "insider_net_value_90d_usd": null
         },
         "data_quality_flags": [
-            "PCAR: earnings_dates fetch failed (['Earnings Date'])"
+            "PCAR: failed to fetch .info (Too Many Requests. Rate limited. Try after a while.)",
+            "PCAR: sector classification unavailable",
+            "PCAR: earnings_dates fetch failed (['Earnings Date'])",
+            "PCAR: insider_transactions fetch failed (Too Many Requests. Rate limited. Try after a while.)"
         ]
     },
-    "news_sentiment_raw_metrics_date": "2026-05-21",
-    "news_sentiment_score": 48.40576006615494,
-    "news_sentiment_score_date": "2026-05-21",
+    "news_sentiment_raw_metrics_date": "2026-05-25",
+    "news_sentiment_score": null,
+    "news_sentiment_score_date": "2026-05-25",
     "news_sentiment_subscores": {
         "earnings_surprise_revisions": null,
-        "price_momentum": 47.60864009923241,
-        "insider_activity": 50.0
+        "price_momentum": 47.12214534679754,
+        "insider_activity": null
     },
     "news_sentiment_drivers": {
         "strongest": [
-            "return_6m (price_momentum): score=76, value=15.4%",
-            "insider_activity_summary (insider_activity): score=50, value=no activity in 90d",
-            "return_3m (price_momentum): score=29, value=-12.4%"
+            "return_6m (price_momentum): score=74, value=14.1%",
+            "return_3m (price_momentum): score=30, value=-12.2%",
+            "return_1m (price_momentum): score=29, value=-12.4%"
         ],
         "weakest": [
-            "return_1m (price_momentum): score=28, value=-13.1%",
-            "return_3m (price_momentum): score=29, value=-12.4%",
-            "insider_activity_summary (insider_activity): score=50, value=no activity in 90d"
+            "return_1m (price_momentum): score=29, value=-12.4%",
+            "return_3m (price_momentum): score=30, value=-12.2%",
+            "return_6m (price_momentum): score=74, value=14.1%"
         ]
     },
-    "composite_score": 49.52464398007582,
-    "composite_score_date": "2026-05-21",
-    "composite_rank": 728,
+    "composite_score": 51.81855786666233,
+    "composite_score_date": "2026-05-25",
+    "composite_rank": 679,
     "composite_metadata": {
         "scores_used": [
             "financial",
-            "news_sentiment"
-        ],
-        "scores_imputed": [
             "professional"
         ],
+        "scores_imputed": [
+            "news_sentiment"
+        ],
         "imputed_values": {
-            "professional": 57.268675574921296
+            "news_sentiment": 51.44141098134263
         },
-        "imputation_r_squared": 0.04516719672877956,
+        "imputation_r_squared": 0.031937368103860275,
         "weights_applied": {
             "financial": 50,
             "professional": 30,

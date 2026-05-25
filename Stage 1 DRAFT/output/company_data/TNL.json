@@ -5,7 +5,7 @@
     "financial_raw_metrics": {
         "sector": "Consumer Cyclical",
         "industry": "Travel Services",
-        "market_cap_usd": 4074448640,
+        "market_cap_usd": 4065085440,
         "profitability": {
             "gross_margin_ttm": 0.50741,
             "operating_margin_ttm": 0.18834999,
@@ -38,34 +38,34 @@
             "fcf_cagr_3yr": 0.10275497890267582
         },
         "valuation": {
-            "pe_trailing": 18.181059,
-            "pe_forward": 7.7054844,
-            "ps_ratio": 1.0065337,
-            "pb_ratio": -4.1955385,
-            "ev_ebitda": 10.181,
+            "pe_trailing": 18.139277,
+            "pe_forward": 7.687777,
+            "ps_ratio": 1.0042207,
+            "pb_ratio": -4.1858974,
+            "ev_ebitda": 10.197,
             "peg_ratio": 0.53,
-            "fcf_yield": 0.13035505878900955
+            "fcf_yield": 0.13065530844045434
         },
         "data_quality_flags": [
             "TNL: eps_cagr_3yr approximated by net income CAGR (share count changes not adjusted)"
         ]
     },
-    "financial_raw_metrics_date": "2026-05-21",
-    "financial_score": 54.0874599688655,
-    "financial_score_date": "2026-05-21",
+    "financial_raw_metrics_date": "2026-05-25",
+    "financial_score": 54.098543252777894,
+    "financial_score_date": "2026-05-25",
     "financial_subscores": {
-        "profitability": 50.418982865077815,
+        "profitability": 50.419281303816895,
         "returns_on_capital": null,
         "cash_flow_quality": 67.3681637870179,
         "balance_sheet": 33.36702417902439,
         "growth": 39.7885733564394,
-        "valuation": 80.71738135803061
+        "valuation": 80.77609428724456
     },
     "financial_drivers": {
         "strongest": [
-            "fcf_yield (valuation): score=100, value=13.0%",
+            "fcf_yield (valuation): score=100, value=13.1%",
             "current_ratio (balance_sheet): score=96, value=2.93",
-            "pe_forward (valuation): score=95, value=7.71"
+            "pe_forward (valuation): score=95, value=7.69"
         ],
         "weakest": [
             "net_debt_to_ebitda (balance_sheet): score=1, value=5.94",
@@ -74,117 +74,125 @@
         ]
     },
     "professional_raw_metrics": {
+        "sector": "Consumer Cyclical",
+        "industry": "Travel Services",
+        "market_cap_usd": 4065085440,
+        "current_price": 65.12,
+        "analyst": {
+            "recommendation_mean": 1.5,
+            "recommendation_key": "strong_buy",
+            "target_mean_price": 86.08333,
+            "target_median_price": 87.0,
+            "target_high_price": 105.0,
+            "target_low_price": 73.0,
+            "upside_to_target": 0.3219184582309582,
+            "target_dispersion": 0.37173283143205543,
+            "num_analysts": 12
+        },
+        "rating_momentum": {
+            "upgrades_12m": 2,
+            "downgrades_12m": 0,
+            "total_actions_12m": 17
+        },
+        "institutional": {
+            "held_pct_institutions": 0.010067099,
+            "held_pct_insiders": 0.04419
+        },
+        "short_interest": {
+            "short_pct_of_float": 0.0594,
+            "short_ratio": 3.18,
+            "short_change_pct": 0.21457215357029577
+        },
+        "data_quality_flags": []
+    },
+    "professional_raw_metrics_date": "2026-05-25",
+    "professional_score": 64.25878090017817,
+    "professional_score_date": "2026-05-25",
+    "professional_subscores": {
+        "analyst_consensus": 90.43836916461916,
+        "rating_momentum": 59.91176470588236,
+        "institutional_positioning": 37.171139273402645,
+        "short_interest": 55.56417131826808
+    },
+    "professional_drivers": {
+        "strongest": [
+            "upside_to_target (analyst_consensus): score=91, value=32.2%",
+            "recommendation_mean (analyst_consensus): score=90, value=1.50",
+            "held_pct_insiders (institutional_positioning): score=77, value=4.4%"
+        ],
+        "weakest": [
+            "held_pct_institutions (institutional_positioning): score=20, value=1.0%",
+            "short_change_pct (short_interest): score=24, value=21.5%",
+            "upgrades_12m (rating_momentum): score=60, value=2.00"
+        ]
+    },
+    "news_sentiment_raw_metrics": {
         "sector": null,
         "industry": null,
         "market_cap_usd": null,
         "current_price": null,
-        "analyst": {
-            "recommendation_mean": null,
-            "recommendation_key": null,
-            "target_mean_price": null,
-            "target_median_price": null,
-            "target_high_price": null,
-            "target_low_price": null,
-            "upside_to_target": null,
-            "target_dispersion": null,
-            "num_analysts": null
-        },
-        "rating_momentum": {
-            "upgrades_12m": 0,
-            "downgrades_12m": 0,
-            "total_actions_12m": 0
-        },
-        "institutional": {
-            "held_pct_institutions": null,
-            "held_pct_insiders": null
-        },
-        "short_interest": {
-            "short_pct_of_float": null,
-            "short_ratio": null,
-            "short_change_pct": null
-        },
-        "data_quality_flags": [
-            "TNL: failed to fetch .info (Too Many Requests. Rate limited. Try after a while.)",
-            "TNL: sector classification unavailable",
-            "TNL: upgrades/downgrades fetch failed (Too Many Requests. Rate limited. Try after a while.)"
-        ]
-    },
-    "professional_raw_metrics_date": "2026-05-21",
-    "professional_score": null,
-    "professional_score_date": "2026-05-21",
-    "professional_subscores": {
-        "analyst_consensus": null,
-        "rating_momentum": 50.0,
-        "institutional_positioning": null,
-        "short_interest": null
-    },
-    "professional_drivers": {
-        "strongest": [],
-        "weakest": []
-    },
-    "news_sentiment_raw_metrics": {
-        "sector": "Consumer Cyclical",
-        "industry": "Travel Services",
-        "market_cap_usd": 4074448640,
-        "current_price": 65.27,
         "earnings": {
             "beat_count_4q": null,
             "miss_count_4q": null,
             "total_quarters_4q": null,
             "avg_surprise_magnitude_4q": null,
             "eps_estimate_revision_90d": null,
-            "trailing_eps": 3.59,
-            "forward_eps": 8.47059
+            "trailing_eps": null,
+            "forward_eps": null
         },
         "price_momentum": {
-            "return_1m": -0.14287591999826077,
-            "return_3m": -0.12678789467361276,
-            "return_6m": 0.06927962572642143
+            "return_1m": -0.010033384690827422,
+            "return_3m": -0.12914111308899914,
+            "return_6m": 0.07829165602059962
         },
         "insider_activity": {
-            "insider_purchases_count_90d": 1,
-            "insider_sales_count_90d": 6,
-            "insider_net_value_90d_usd": -11162591.0
+            "insider_purchases_count_90d": null,
+            "insider_sales_count_90d": null,
+            "insider_net_value_90d_usd": null
         },
         "data_quality_flags": [
-            "TNL: earnings_dates fetch failed (['Earnings Date'])"
+            "TNL: failed to fetch .info (Too Many Requests. Rate limited. Try after a while.)",
+            "TNL: sector classification unavailable",
+            "TNL: earnings_dates fetch failed (['Earnings Date'])",
+            "TNL: eps_revisions fetch failed (Too Many Requests. Rate limited. Try after a while.)",
+            "TNL: insider_transactions fetch failed (Too Many Requests. Rate limited. Try after a while.)"
         ]
     },
-    "news_sentiment_raw_metrics_date": "2026-05-21",
-    "news_sentiment_score": 32.23791714042044,
-    "news_sentiment_score_date": "2026-05-21",
+    "news_sentiment_raw_metrics_date": "2026-05-25",
+    "news_sentiment_score": null,
+    "news_sentiment_score_date": "2026-05-25",
     "news_sentiment_subscores": {
         "earnings_surprise_revisions": null,
-        "price_momentum": 41.26951785920649,
-        "insider_activity": 14.174715702848356
+        "price_momentum": 47.26815444239722,
+        "insider_activity": null
     },
     "news_sentiment_drivers": {
         "strongest": [
-            "return_6m (price_momentum): score=62, value=6.9%",
-            "return_3m (price_momentum): score=29, value=-12.7%",
-            "return_1m (price_momentum): score=26, value=-14.3%"
+            "return_6m (price_momentum): score=63, value=7.8%",
+            "return_1m (price_momentum): score=48, value=-1.0%",
+            "return_3m (price_momentum): score=28, value=-12.9%"
         ],
         "weakest": [
-            "net_insider_value_pct_mcap_90d (insider_activity): score=14, value=-0.3%",
-            "insider_count_ratio_90d (insider_activity): score=14, value=-71.4%",
-            "return_1m (price_momentum): score=26, value=-14.3%"
+            "return_3m (price_momentum): score=28, value=-12.9%",
+            "return_1m (price_momentum): score=48, value=-1.0%",
+            "return_6m (price_momentum): score=63, value=7.8%"
         ]
     },
-    "composite_score": 51.29154540193303,
-    "composite_score_date": "2026-05-21",
-    "composite_rank": 650,
+    "composite_score": 56.25880375442162,
+    "composite_score_date": "2026-05-25",
+    "composite_rank": 400,
     "composite_metadata": {
         "scores_used": [
             "financial",
-            "news_sentiment"
-        ],
-        "scores_imputed": [
             "professional"
         ],
+        "scores_imputed": [
+            "news_sentiment"
+        ],
         "imputed_values": {
-            "professional": 59.334106631387286
+            "news_sentiment": 49.65948928989616
         },
-        "imputation_r_squared": 0.04516719672877956,
+        "imputation_r_squared": 0.031937368103860275,
         "weights_applied": {
             "financial": 50,
             "professional": 30,

@@ -5,7 +5,7 @@
     "financial_raw_metrics": {
         "sector": "Consumer Cyclical",
         "industry": "Footwear & Accessories",
-        "market_cap_usd": 65736572928,
+        "market_cap_usd": 66151223296,
         "profitability": {
             "gross_margin_ttm": 0.40919998,
             "operating_margin_ttm": 0.06942,
@@ -38,28 +38,28 @@
             "fcf_cagr_3yr": -0.09643491560240325
         },
         "valuation": {
-            "pe_trailing": 29.203947,
-            "pe_forward": 24.325153,
-            "ps_ratio": 1.4129909,
-            "pb_ratio": 4.6628146,
-            "ev_ebitda": 17.744,
-            "peg_ratio": 1.5186,
-            "fcf_yield": 0.019986970501779305
+            "pe_trailing": 29.388157,
+            "pe_forward": 24.47859,
+            "ps_ratio": 1.4219037,
+            "pb_ratio": 4.6922264,
+            "ev_ebitda": 17.928,
+            "peg_ratio": 1.5351,
+            "fcf_yield": 0.01986168778952039
         },
         "data_quality_flags": [
             "NKE: eps_cagr_3yr approximated by net income CAGR (share count changes not adjusted)"
         ]
     },
-    "financial_raw_metrics_date": "2026-05-21",
-    "financial_score": 44.33300052934981,
-    "financial_score_date": "2026-05-21",
+    "financial_raw_metrics_date": "2026-05-25",
+    "financial_score": 44.29369795620667,
+    "financial_score_date": "2026-05-25",
     "financial_subscores": {
-        "profitability": 46.5064528034078,
-        "returns_on_capital": 45.72674281640126,
+        "profitability": 46.507117350126784,
+        "returns_on_capital": 45.64500406180433,
         "cash_flow_quality": 31.58694694433091,
         "balance_sheet": 86.10261870580115,
         "growth": 12.986513495591126,
-        "valuation": 41.89966355686346
+        "valuation": 41.745745346413145
     },
     "financial_drivers": {
         "strongest": [
@@ -74,53 +74,57 @@
         ]
     },
     "professional_raw_metrics": {
-        "sector": null,
-        "industry": null,
-        "market_cap_usd": null,
-        "current_price": null,
+        "sector": "Consumer Cyclical",
+        "industry": "Footwear & Accessories",
+        "market_cap_usd": 66151223296,
+        "current_price": 44.67,
         "analyst": {
-            "recommendation_mean": null,
-            "recommendation_key": null,
-            "target_mean_price": null,
-            "target_median_price": null,
-            "target_high_price": null,
-            "target_low_price": null,
-            "upside_to_target": null,
-            "target_dispersion": null,
-            "num_analysts": null
+            "recommendation_mean": 2.28947,
+            "recommendation_key": "buy",
+            "target_mean_price": 60.77576,
+            "target_median_price": 55.8,
+            "target_high_price": 120.0,
+            "target_low_price": 23.0,
+            "upside_to_target": 0.3605498097156928,
+            "target_dispersion": 1.5960310492209395,
+            "num_analysts": 33
         },
         "rating_momentum": {
-            "upgrades_12m": 0,
-            "downgrades_12m": 0,
-            "total_actions_12m": 0
+            "upgrades_12m": 7,
+            "downgrades_12m": 7,
+            "total_actions_12m": 82
         },
         "institutional": {
-            "held_pct_institutions": null,
-            "held_pct_insiders": null
+            "held_pct_institutions": 0.82204,
+            "held_pct_insiders": 0.014630001
         },
         "short_interest": {
-            "short_pct_of_float": null,
-            "short_ratio": null,
-            "short_change_pct": null
+            "short_pct_of_float": 0.053200003,
+            "short_ratio": 1.76,
+            "short_change_pct": 0.10275778880171217
         },
-        "data_quality_flags": [
-            "NKE: failed to fetch .info (Too Many Requests. Rate limited. Try after a while.)",
-            "NKE: sector classification unavailable",
-            "NKE: upgrades/downgrades fetch failed (Too Many Requests. Rate limited. Try after a while.)"
-        ]
+        "data_quality_flags": []
     },
-    "professional_raw_metrics_date": "2026-05-21",
-    "professional_score": null,
-    "professional_score_date": "2026-05-21",
+    "professional_raw_metrics_date": "2026-05-25",
+    "professional_score": 65.47650153804886,
+    "professional_score_date": "2026-05-25",
     "professional_subscores": {
-        "analyst_consensus": null,
-        "rating_momentum": 50.0,
-        "institutional_positioning": null,
-        "short_interest": null
+        "analyst_consensus": 75.26371619431386,
+        "rating_momentum": 52.5,
+        "institutional_positioning": 66.02337392771257,
+        "short_interest": 63.35571592073917
     },
     "professional_drivers": {
-        "strongest": [],
-        "weakest": []
+        "strongest": [
+            "upside_to_target (analyst_consensus): score=93, value=36.1%",
+            "short_ratio (short_interest): score=82, value=1.76",
+            "held_pct_institutions (institutional_positioning): score=68, value=82.2%"
+        ],
+        "weakest": [
+            "short_change_pct (short_interest): score=37, value=10.3%",
+            "upgrades_12m (rating_momentum): score=52, value=7.00",
+            "downgrades_12m (rating_momentum): score=52, value=7.00"
+        ]
     },
     "news_sentiment_raw_metrics": {
         "sector": null,
@@ -137,9 +141,9 @@
             "forward_eps": null
         },
         "price_momentum": {
-            "return_1m": -0.043112740381847994,
-            "return_3m": -0.3183121779921496,
-            "return_6m": -0.28208944395143815
+            "return_1m": -0.02211037936696402,
+            "return_3m": -0.3146395908663655,
+            "return_6m": -0.263331035038098
         },
         "insider_activity": {
             "insider_purchases_count_90d": null,
@@ -154,41 +158,45 @@
             "NKE: insider_transactions fetch failed (Too Many Requests. Rate limited. Try after a while.)"
         ]
     },
-    "news_sentiment_raw_metrics_date": "2026-05-21",
+    "news_sentiment_raw_metrics_date": "2026-05-25",
     "news_sentiment_score": null,
-    "news_sentiment_score_date": "2026-05-21",
+    "news_sentiment_score_date": "2026-05-25",
     "news_sentiment_subscores": {
         "earnings_surprise_revisions": null,
-        "price_momentum": 11.897672887327122,
+        "price_momentum": 14.023331857169962,
         "insider_activity": null
     },
     "news_sentiment_drivers": {
         "strongest": [
-            "return_1m (price_momentum): score=43, value=-4.3%",
-            "return_6m (price_momentum): score=3, value=-28.2%",
-            "return_3m (price_momentum): score=0, value=-31.8%"
+            "return_1m (price_momentum): score=46, value=-2.2%",
+            "return_6m (price_momentum): score=6, value=-26.3%",
+            "return_3m (price_momentum): score=0, value=-31.5%"
         ],
         "weakest": [
-            "return_3m (price_momentum): score=0, value=-31.8%",
-            "return_6m (price_momentum): score=3, value=-28.2%",
-            "return_1m (price_momentum): score=43, value=-4.3%"
+            "return_3m (price_momentum): score=0, value=-31.5%",
+            "return_6m (price_momentum): score=6, value=-26.3%",
+            "return_1m (price_momentum): score=46, value=-2.2%"
         ]
     },
-    "composite_score": null,
-    "composite_score_date": "2026-05-21",
-    "composite_rank": null,
+    "composite_score": 51.89699338640723,
+    "composite_score_date": "2026-05-25",
+    "composite_rank": 675,
     "composite_metadata": {
         "scores_used": [
-            "financial"
+            "financial",
+            "professional"
         ],
-        "scores_imputed": [],
-        "imputed_values": {},
-        "imputation_r_squared": null,
+        "scores_imputed": [
+            "news_sentiment"
+        ],
+        "imputed_values": {
+            "news_sentiment": 50.53596973444618
+        },
+        "imputation_r_squared": 0.031937368103860275,
         "weights_applied": {
             "financial": 50,
             "professional": 30,
             "news_sentiment": 20
-        },
-        "skip_reason": "Only 1 of 3 scores populated; need at least 2"
+        }
     }
 }

@@ -5,7 +5,7 @@
     "financial_raw_metrics": {
         "sector": "Consumer Cyclical",
         "industry": "Restaurants",
-        "market_cap_usd": 42533867520,
+        "market_cap_usd": 42762629120,
         "profitability": {
             "gross_margin_ttm": 0.45663,
             "operating_margin_ttm": 0.31083,
@@ -38,28 +38,28 @@
             "fcf_cagr_3yr": 0.12601892173015283
         },
         "valuation": {
-            "pe_trailing": 24.890324,
-            "pe_forward": 20.586596,
-            "ps_ratio": 5.01224,
-            "pb_ratio": -5.8357286,
-            "ev_ebitda": 18.372,
-            "peg_ratio": 1.8915,
-            "fcf_yield": 0.029658719170242997
+            "pe_trailing": 24.983896,
+            "pe_forward": 20.697317,
+            "ps_ratio": 5.0391974,
+            "pb_ratio": -5.867115,
+            "ev_ebitda": 18.449,
+            "peg_ratio": 1.9217,
+            "fcf_yield": 0.029500057829933538
         },
         "data_quality_flags": [
             "YUM: eps_cagr_3yr approximated by net income CAGR (share count changes not adjusted)"
         ]
     },
-    "financial_raw_metrics_date": "2026-05-21",
-    "financial_score": 58.43303791754263,
-    "financial_score_date": "2026-05-21",
+    "financial_raw_metrics_date": "2026-05-25",
+    "financial_score": 58.63959177738693,
+    "financial_score_date": "2026-05-25",
     "financial_subscores": {
         "profitability": 75.75808105370378,
         "returns_on_capital": null,
         "cash_flow_quality": 68.6797421259717,
         "balance_sheet": 30.84035599273524,
         "growth": 62.284562410328434,
-        "valuation": 48.8274336262536
+        "valuation": 49.92905421208991
     },
     "financial_drivers": {
         "strongest": [
@@ -70,121 +70,128 @@
         "weakest": [
             "current_ratio (balance_sheet): score=9, value=65.1%",
             "net_debt_to_ebitda (balance_sheet): score=27, value=4.16",
-            "peg_ratio (valuation): score=38, value=1.89"
+            "peg_ratio (valuation): score=37, value=1.92"
         ]
     },
     "professional_raw_metrics": {
+        "sector": "Consumer Cyclical",
+        "industry": "Restaurants",
+        "market_cap_usd": 42762629120,
+        "current_price": 155.15,
+        "analyst": {
+            "recommendation_mean": 2.28571,
+            "recommendation_key": "buy",
+            "target_mean_price": 173.86957,
+            "target_median_price": 175.0,
+            "target_high_price": 200.0,
+            "target_low_price": 147.0,
+            "upside_to_target": 0.12065465678375768,
+            "target_dispersion": 0.3048261981668212,
+            "num_analysts": 23
+        },
+        "rating_momentum": {
+            "upgrades_12m": 6,
+            "downgrades_12m": 1,
+            "total_actions_12m": 38
+        },
+        "institutional": {
+            "held_pct_institutions": 0.89654,
+            "held_pct_insiders": 0.00159
+        },
+        "short_interest": {
+            "short_pct_of_float": 0.026800001,
+            "short_ratio": 4.13,
+            "short_change_pct": -0.09436602863647882
+        },
+        "data_quality_flags": []
+    },
+    "professional_raw_metrics_date": "2026-05-25",
+    "professional_score": 60.98827728236998,
+    "professional_score_date": "2026-05-25",
+    "professional_subscores": {
+        "analyst_consensus": 61.208425678375775,
+        "rating_momentum": 60.78947368421053,
+        "institutional_positioning": 59.00405016313675,
+        "short_interest": 64.11298222067761
+    },
+    "professional_drivers": {
+        "strongest": [
+            "short_pct_of_float (short_interest): score=67, value=2.7%",
+            "short_change_pct (short_interest): score=64, value=-9.4%",
+            "recommendation_mean (analyst_consensus): score=64, value=2.29"
+        ],
+        "weakest": [
+            "held_pct_insiders (institutional_positioning): score=52, value=0.2%",
+            "upside_to_target (analyst_consensus): score=58, value=12.1%",
+            "short_ratio (short_interest): score=59, value=4.13"
+        ]
+    },
+    "news_sentiment_raw_metrics": {
         "sector": null,
         "industry": null,
         "market_cap_usd": null,
         "current_price": null,
-        "analyst": {
-            "recommendation_mean": null,
-            "recommendation_key": null,
-            "target_mean_price": null,
-            "target_median_price": null,
-            "target_high_price": null,
-            "target_low_price": null,
-            "upside_to_target": null,
-            "target_dispersion": null,
-            "num_analysts": null
-        },
-        "rating_momentum": {
-            "upgrades_12m": 0,
-            "downgrades_12m": 0,
-            "total_actions_12m": 0
-        },
-        "institutional": {
-            "held_pct_institutions": null,
-            "held_pct_insiders": null
-        },
-        "short_interest": {
-            "short_pct_of_float": null,
-            "short_ratio": null,
-            "short_change_pct": null
-        },
-        "data_quality_flags": [
-            "YUM: failed to fetch .info (Too Many Requests. Rate limited. Try after a while.)",
-            "YUM: sector classification unavailable",
-            "YUM: upgrades/downgrades fetch failed (Too Many Requests. Rate limited. Try after a while.)"
-        ]
-    },
-    "professional_raw_metrics_date": "2026-05-21",
-    "professional_score": null,
-    "professional_score_date": "2026-05-21",
-    "professional_subscores": {
-        "analyst_consensus": null,
-        "rating_momentum": 50.0,
-        "institutional_positioning": null,
-        "short_interest": null
-    },
-    "professional_drivers": {
-        "strongest": [],
-        "weakest": []
-    },
-    "news_sentiment_raw_metrics": {
-        "sector": "Consumer Cyclical",
-        "industry": "Restaurants",
-        "market_cap_usd": 42533867520,
-        "current_price": 154.32,
         "earnings": {
             "beat_count_4q": null,
             "miss_count_4q": null,
             "total_quarters_4q": null,
             "avg_surprise_magnitude_4q": null,
             "eps_estimate_revision_90d": null,
-            "trailing_eps": 6.2,
-            "forward_eps": 7.49614
+            "trailing_eps": null,
+            "forward_eps": null
         },
         "price_momentum": {
-            "return_1m": -0.03754519443298766,
-            "return_3m": -0.048362645211865236,
-            "return_6m": 0.05019817235580678
+            "return_1m": -0.024581942173543835,
+            "return_3m": -0.04658023738749421,
+            "return_6m": 0.04954867356022283
         },
         "insider_activity": {
-            "insider_purchases_count_90d": 0,
-            "insider_sales_count_90d": 10,
-            "insider_net_value_90d_usd": -1534085.0
+            "insider_purchases_count_90d": null,
+            "insider_sales_count_90d": null,
+            "insider_net_value_90d_usd": null
         },
         "data_quality_flags": [
-            "YUM: earnings_dates fetch failed (['Earnings Date'])"
+            "YUM: failed to fetch .info (Too Many Requests. Rate limited. Try after a while.)",
+            "YUM: sector classification unavailable",
+            "YUM: earnings_dates fetch failed (['Earnings Date'])",
+            "YUM: eps_revisions fetch failed (Too Many Requests. Rate limited. Try after a while.)"
         ]
     },
-    "news_sentiment_raw_metrics_date": "2026-05-21",
-    "news_sentiment_score": 44.09694525119577,
-    "news_sentiment_score_date": "2026-05-21",
+    "news_sentiment_raw_metrics_date": "2026-05-25",
+    "news_sentiment_score": null,
+    "news_sentiment_score_date": "2026-05-25",
     "news_sentiment_subscores": {
         "earnings_surprise_revisions": null,
-        "price_momentum": 48.96100741832049,
-        "insider_activity": 34.368820916946326
+        "price_momentum": 49.561816799180036,
+        "insider_activity": null
     },
     "news_sentiment_drivers": {
         "strongest": [
             "return_6m (price_momentum): score=58, value=5.0%",
-            "net_insider_value_pct_mcap_90d (insider_activity): score=49, value=-0.0%",
-            "return_1m (price_momentum): score=44, value=-3.8%"
+            "return_1m (price_momentum): score=46, value=-2.5%",
+            "return_3m (price_momentum): score=42, value=-4.7%"
         ],
         "weakest": [
-            "insider_count_ratio_90d (insider_activity): score=0, value=-1.00",
-            "return_3m (price_momentum): score=42, value=-4.8%",
-            "return_1m (price_momentum): score=44, value=-3.8%"
+            "return_3m (price_momentum): score=42, value=-4.7%",
+            "return_1m (price_momentum): score=46, value=-2.5%",
+            "return_6m (price_momentum): score=58, value=5.0%"
         ]
     },
-    "composite_score": 55.58396235342883,
-    "composite_score_date": "2026-05-21",
-    "composite_rank": 403,
+    "composite_score": 57.582625753873145,
+    "composite_score_date": "2026-05-25",
+    "composite_rank": 325,
     "composite_metadata": {
         "scores_used": [
             "financial",
-            "news_sentiment"
-        ],
-        "scores_imputed": [
             "professional"
         ],
+        "scores_imputed": [
+            "news_sentiment"
+        ],
         "imputed_values": {
-            "professional": 58.493514481394584
+            "news_sentiment": 49.83173340234346
         },
-        "imputation_r_squared": 0.04516719672877956,
+        "imputation_r_squared": 0.031937368103860275,
         "weights_applied": {
             "financial": 50,
             "professional": 30,

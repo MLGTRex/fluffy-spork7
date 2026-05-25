@@ -5,7 +5,7 @@
     "financial_raw_metrics": {
         "sector": "Communication Services",
         "industry": "Telecom Services",
-        "market_cap_usd": 206592868352,
+        "market_cap_usd": 207209725952,
         "profitability": {
             "gross_margin_ttm": 0.63281,
             "operating_margin_ttm": 0.2401,
@@ -38,153 +38,161 @@
             "fcf_cagr_3yr": null
         },
         "valuation": {
-            "pe_trailing": 20.286928,
-            "pe_forward": 13.66261,
-            "ps_ratio": 2.2820377,
-            "pb_ratio": 3.5692916,
-            "ev_ebitda": 9.574,
-            "peg_ratio": 0.7537,
-            "fcf_yield": 0.05395817716711654
+            "pe_trailing": 20.36915,
+            "pe_forward": 13.703405,
+            "ps_ratio": 2.2888515,
+            "pb_ratio": 3.5799491,
+            "ev_ebitda": 9.616,
+            "peg_ratio": 0.7589,
+            "fcf_yield": 0.0537975451720943
         },
         "data_quality_flags": [
             "TMUS: eps_cagr_3yr approximated by net income CAGR (share count changes not adjusted)"
         ]
     },
-    "financial_raw_metrics_date": "2026-05-21",
-    "financial_score": 65.70866598170005,
-    "financial_score_date": "2026-05-21",
+    "financial_raw_metrics_date": "2026-05-25",
+    "financial_score": 65.72208144498663,
+    "financial_score_date": "2026-05-25",
     "financial_subscores": {
         "profitability": 71.47563021465132,
         "returns_on_capital": 70.88472497027405,
         "cash_flow_quality": 76.25599398345389,
         "balance_sheet": 44.795638339442284,
         "growth": 61.476709442640114,
-        "valuation": 65.71562453256354
+        "valuation": 65.80506095447406
     },
     "financial_drivers": {
         "strongest": [
             "eps_cagr_3yr (growth): score=100, value=61.9%",
             "fcf_to_net_income_ttm (cash_flow_quality): score=95, value=1.06",
-            "peg_ratio (valuation): score=87, value=75.4%"
+            "peg_ratio (valuation): score=87, value=75.9%"
         ],
         "weakest": [
             "eps_growth_1yr (growth): score=18, value=-12.0%",
             "current_ratio (balance_sheet): score=37, value=1.09",
-            "ev_ebitda (valuation): score=38, value=9.57"
+            "ev_ebitda (valuation): score=39, value=9.62"
         ]
     },
     "professional_raw_metrics": {
+        "sector": "Communication Services",
+        "industry": "Telecom Services",
+        "market_cap_usd": 207209725952,
+        "current_price": 191.47,
+        "analyst": {
+            "recommendation_mean": 1.60714,
+            "recommendation_key": "buy",
+            "target_mean_price": 260.80768,
+            "target_median_price": 260.5,
+            "target_high_price": 300.0,
+            "target_low_price": 212.0,
+            "upside_to_target": 0.3621333890426699,
+            "target_dispersion": 0.3374133767839965,
+            "num_analysts": 26
+        },
+        "rating_momentum": {
+            "upgrades_12m": 8,
+            "downgrades_12m": 2,
+            "total_actions_12m": 35
+        },
+        "institutional": {
+            "held_pct_institutions": 0.43817002,
+            "held_pct_insiders": 0.55068
+        },
+        "short_interest": {
+            "short_pct_of_float": 0.0378,
+            "short_ratio": 2.76,
+            "short_change_pct": -0.1394814672660475
+        },
+        "data_quality_flags": []
+    },
+    "professional_raw_metrics_date": "2026-05-25",
+    "professional_score": 68.6154070931794,
+    "professional_score_date": "2026-05-25",
+    "professional_subscores": {
+        "analyst_consensus": 89.3141477808534,
+        "rating_momentum": 63.300000000000004,
+        "institutional_positioning": 47.352686440289446,
+        "short_interest": 64.61522506538901
+    },
+    "professional_drivers": {
+        "strongest": [
+            "held_pct_insiders (institutional_positioning): score=100, value=55.1%",
+            "upside_to_target (analyst_consensus): score=93, value=36.2%",
+            "recommendation_mean (analyst_consensus): score=87, value=1.61"
+        ],
+        "weakest": [
+            "held_pct_institutions (institutional_positioning): score=25, value=43.8%",
+            "short_pct_of_float (short_interest): score=57, value=3.8%",
+            "upgrades_12m (rating_momentum): score=63, value=8.00"
+        ]
+    },
+    "news_sentiment_raw_metrics": {
         "sector": null,
         "industry": null,
         "market_cap_usd": null,
         "current_price": null,
-        "analyst": {
-            "recommendation_mean": null,
-            "recommendation_key": null,
-            "target_mean_price": null,
-            "target_median_price": null,
-            "target_high_price": null,
-            "target_low_price": null,
-            "upside_to_target": null,
-            "target_dispersion": null,
-            "num_analysts": null
-        },
-        "rating_momentum": {
-            "upgrades_12m": 0,
-            "downgrades_12m": 0,
-            "total_actions_12m": 0
-        },
-        "institutional": {
-            "held_pct_institutions": null,
-            "held_pct_insiders": null
-        },
-        "short_interest": {
-            "short_pct_of_float": null,
-            "short_ratio": null,
-            "short_change_pct": null
-        },
-        "data_quality_flags": [
-            "TMUS: failed to fetch .info (Too Many Requests. Rate limited. Try after a while.)",
-            "TMUS: sector classification unavailable",
-            "TMUS: upgrades/downgrades fetch failed (Too Many Requests. Rate limited. Try after a while.)"
-        ]
-    },
-    "professional_raw_metrics_date": "2026-05-21",
-    "professional_score": null,
-    "professional_score_date": "2026-05-21",
-    "professional_subscores": {
-        "analyst_consensus": null,
-        "rating_momentum": 50.0,
-        "institutional_positioning": null,
-        "short_interest": null
-    },
-    "professional_drivers": {
-        "strongest": [],
-        "weakest": []
-    },
-    "news_sentiment_raw_metrics": {
-        "sector": "Communication Services",
-        "industry": "Telecom Services",
-        "market_cap_usd": 206592868352,
-        "current_price": 190.9,
         "earnings": {
             "beat_count_4q": null,
             "miss_count_4q": null,
             "total_quarters_4q": null,
             "avg_surprise_magnitude_4q": null,
             "eps_estimate_revision_90d": null,
-            "trailing_eps": 9.41,
-            "forward_eps": 13.97244
+            "trailing_eps": null,
+            "forward_eps": null
         },
         "price_momentum": {
-            "return_1m": -0.022979678610338884,
-            "return_3m": -0.10050214707742806,
-            "return_6m": -0.08757398296712518
+            "return_1m": 0.013497793121284194,
+            "return_3m": -0.10640660628753815,
+            "return_6m": -0.08154563108331064
         },
         "insider_activity": {
-            "insider_purchases_count_90d": 1,
-            "insider_sales_count_90d": 5,
-            "insider_net_value_90d_usd": -4745880.0
+            "insider_purchases_count_90d": null,
+            "insider_sales_count_90d": null,
+            "insider_net_value_90d_usd": null
         },
         "data_quality_flags": [
-            "TMUS: earnings_dates fetch failed (['Earnings Date'])"
+            "TMUS: failed to fetch .info (Too Many Requests. Rate limited. Try after a while.)",
+            "TMUS: sector classification unavailable",
+            "TMUS: earnings_dates fetch failed (['Earnings Date'])",
+            "TMUS: eps_revisions fetch failed (Too Many Requests. Rate limited. Try after a while.)",
+            "TMUS: insider_transactions fetch failed (Too Many Requests. Rate limited. Try after a while.)"
         ]
     },
-    "news_sentiment_raw_metrics_date": "2026-05-21",
-    "news_sentiment_score": 38.09374426759741,
-    "news_sentiment_score_date": "2026-05-21",
+    "news_sentiment_raw_metrics_date": "2026-05-25",
+    "news_sentiment_score": null,
+    "news_sentiment_score_date": "2026-05-25",
     "news_sentiment_subscores": {
         "earnings_surprise_revisions": null,
-        "price_momentum": 37.34162261391089,
-        "insider_activity": 39.59798757497044
+        "price_momentum": 38.91898060772641,
+        "insider_activity": null
     },
     "news_sentiment_drivers": {
         "strongest": [
-            "net_insider_value_pct_mcap_90d (insider_activity): score=49, value=-0.0%",
-            "return_1m (price_momentum): score=46, value=-2.3%",
-            "return_6m (price_momentum): score=35, value=-8.8%"
+            "return_1m (price_momentum): score=52, value=1.3%",
+            "return_6m (price_momentum): score=36, value=-8.2%",
+            "return_3m (price_momentum): score=32, value=-10.6%"
         ],
         "weakest": [
-            "insider_count_ratio_90d (insider_activity): score=17, value=-66.7%",
-            "return_3m (price_momentum): score=33, value=-10.1%",
-            "return_6m (price_momentum): score=35, value=-8.8%"
+            "return_3m (price_momentum): score=32, value=-10.6%",
+            "return_6m (price_momentum): score=36, value=-8.2%",
+            "return_1m (price_momentum): score=52, value=1.3%"
         ]
     },
-    "composite_score": 58.326753334013304,
-    "composite_score_date": "2026-05-21",
-    "composite_rank": 256,
+    "composite_score": 62.9219351310952,
+    "composite_score_date": "2026-05-25",
+    "composite_rank": 100,
     "composite_metadata": {
         "scores_used": [
             "financial",
-            "news_sentiment"
-        ],
-        "scores_imputed": [
             "professional"
         ],
+        "scores_imputed": [
+            "news_sentiment"
+        ],
         "imputed_values": {
-            "professional": 59.51223829881264
+            "news_sentiment": 47.38136140324035
         },
-        "imputation_r_squared": 0.04516719672877956,
+        "imputation_r_squared": 0.031937368103860275,
         "weights_applied": {
             "financial": 50,
             "professional": 30,

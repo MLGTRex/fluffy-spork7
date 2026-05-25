@@ -5,7 +5,7 @@
     "financial_raw_metrics": {
         "sector": "Healthcare",
         "industry": "Medical Instruments & Supplies",
-        "market_cap_usd": 30313881600,
+        "market_cap_usd": 30178981888,
         "profitability": {
             "gross_margin_ttm": 0.62181,
             "operating_margin_ttm": 0.35327,
@@ -38,28 +38,28 @@
             "fcf_cagr_3yr": 1.0377475102618
         },
         "valuation": {
-            "pe_trailing": 20.152363,
-            "pe_forward": 17.13278,
-            "ps_ratio": 5.4740047,
-            "pb_ratio": 4.815873,
-            "ev_ebitda": 13.977,
-            "peg_ratio": 1.2336,
-            "fcf_yield": 0.04772252933784633
+            "pe_trailing": 20.082047,
+            "pe_forward": 17.056536,
+            "ps_ratio": 5.4496446,
+            "pb_ratio": 4.648227,
+            "ev_ebitda": 13.853,
+            "peg_ratio": 1.223,
+            "fcf_yield": 0.04793584851102052
         },
         "data_quality_flags": [
             "RMD: eps_cagr_3yr approximated by net income CAGR (share count changes not adjusted)"
         ]
     },
-    "financial_raw_metrics_date": "2026-05-21",
-    "financial_score": 85.19518956742719,
-    "financial_score_date": "2026-05-21",
+    "financial_raw_metrics_date": "2026-05-25",
+    "financial_score": 85.24252824528497,
+    "financial_score_date": "2026-05-25",
     "financial_subscores": {
         "profitability": 88.48512520834787,
         "returns_on_capital": 85.76813818217336,
         "cash_flow_quality": 94.25787459022526,
         "balance_sheet": 97.3693725490196,
         "growth": 80.66176343970258,
-        "valuation": 63.34123534987217
+        "valuation": 63.65682653559074
     },
     "financial_drivers": {
         "strongest": [
@@ -68,123 +68,131 @@
             "ocf_cagr_3yr (cash_flow_quality): score=100, value=70.9%"
         ],
         "weakest": [
-            "ev_ebitda (valuation): score=57, value=13.98",
-            "pe_trailing (valuation): score=60, value=20.15",
+            "ev_ebitda (valuation): score=57, value=13.85",
+            "pe_trailing (valuation): score=60, value=20.08",
             "eps_growth_1yr (growth): score=61, value=10.5%"
         ]
     },
     "professional_raw_metrics": {
+        "sector": "Healthcare",
+        "industry": "Medical Instruments & Supplies",
+        "market_cap_usd": 30178981888,
+        "current_price": 208.05,
+        "analyst": {
+            "recommendation_mean": 2.10526,
+            "recommendation_key": "buy",
+            "target_mean_price": 270.6,
+            "target_median_price": 286.0,
+            "target_high_price": 340.0,
+            "target_low_price": 180.0,
+            "upside_to_target": 0.3006488824801731,
+            "target_dispersion": 0.5912786400591278,
+            "num_analysts": 15
+        },
+        "rating_momentum": {
+            "upgrades_12m": 1,
+            "downgrades_12m": 1,
+            "total_actions_12m": 26
+        },
+        "institutional": {
+            "held_pct_institutions": 0.69935995,
+            "held_pct_insiders": 0.00501
+        },
+        "short_interest": {
+            "short_pct_of_float": 0.09770001,
+            "short_ratio": 11.67,
+            "short_change_pct": 0.03436770897640126
+        },
+        "data_quality_flags": []
+    },
+    "professional_raw_metrics_date": "2026-05-25",
+    "professional_score": 61.51456883542477,
+    "professional_score_date": "2026-05-25",
+    "professional_subscores": {
+        "analyst_consensus": 78.48673764960347,
+        "rating_momentum": 52.5,
+        "institutional_positioning": 68.27704308648914,
+        "short_interest": 25.666332576275153
+    },
+    "professional_drivers": {
+        "strongest": [
+            "upside_to_target (analyst_consensus): score=90, value=30.1%",
+            "held_pct_institutions (institutional_positioning): score=74, value=69.9%",
+            "recommendation_mean (analyst_consensus): score=71, value=2.11"
+        ],
+        "weakest": [
+            "short_ratio (short_interest): score=17, value=11.67",
+            "short_pct_of_float (short_interest): score=23, value=9.8%",
+            "short_change_pct (short_interest): score=46, value=3.4%"
+        ]
+    },
+    "news_sentiment_raw_metrics": {
         "sector": null,
         "industry": null,
         "market_cap_usd": null,
         "current_price": null,
-        "analyst": {
-            "recommendation_mean": null,
-            "recommendation_key": null,
-            "target_mean_price": null,
-            "target_median_price": null,
-            "target_high_price": null,
-            "target_low_price": null,
-            "upside_to_target": null,
-            "target_dispersion": null,
-            "num_analysts": null
-        },
-        "rating_momentum": {
-            "upgrades_12m": 0,
-            "downgrades_12m": 0,
-            "total_actions_12m": 0
-        },
-        "institutional": {
-            "held_pct_institutions": null,
-            "held_pct_insiders": null
-        },
-        "short_interest": {
-            "short_pct_of_float": null,
-            "short_ratio": null,
-            "short_change_pct": null
-        },
-        "data_quality_flags": [
-            "RMD: failed to fetch .info (Too Many Requests. Rate limited. Try after a while.)",
-            "RMD: sector classification unavailable",
-            "RMD: upgrades/downgrades fetch failed (Too Many Requests. Rate limited. Try after a while.)"
-        ]
-    },
-    "professional_raw_metrics_date": "2026-05-21",
-    "professional_score": null,
-    "professional_score_date": "2026-05-21",
-    "professional_subscores": {
-        "analyst_consensus": null,
-        "rating_momentum": 50.0,
-        "institutional_positioning": null,
-        "short_interest": null
-    },
-    "professional_drivers": {
-        "strongest": [],
-        "weakest": []
-    },
-    "news_sentiment_raw_metrics": {
-        "sector": "Healthcare",
-        "industry": "Medical Instruments & Supplies",
-        "market_cap_usd": 30313881600,
-        "current_price": 208.98,
         "earnings": {
             "beat_count_4q": null,
             "miss_count_4q": null,
             "total_quarters_4q": null,
             "avg_surprise_magnitude_4q": null,
             "eps_estimate_revision_90d": null,
-            "trailing_eps": 10.37,
-            "forward_eps": 12.19767
+            "trailing_eps": null,
+            "forward_eps": null
         },
         "price_momentum": {
-            "return_1m": -0.05252040797266535,
-            "return_3m": -0.19044671182432424,
-            "return_6m": -0.14246723277787268
+            "return_1m": -0.06022034025641573,
+            "return_3m": -0.18581035569145987,
+            "return_6m": -0.14253836412995355
         },
         "insider_activity": {
-            "insider_purchases_count_90d": 0,
-            "insider_sales_count_90d": 7,
-            "insider_net_value_90d_usd": -4864671.0
+            "insider_purchases_count_90d": null,
+            "insider_sales_count_90d": null,
+            "insider_net_value_90d_usd": null
         },
         "data_quality_flags": [
-            "RMD: earnings_dates fetch failed (['Earnings Date'])"
+            "RMD: failed to fetch .info (Too Many Requests. Rate limited. Try after a while.)",
+            "RMD: sector classification unavailable",
+            "RMD: earnings_dates fetch failed (['Earnings Date'])",
+            "RMD: eps_revisions fetch failed (Too Many Requests. Rate limited. Try after a while.)",
+            "RMD: insider_transactions fetch failed (Too Many Requests. Rate limited. Try after a while.)"
         ]
     },
-    "news_sentiment_raw_metrics_date": "2026-05-21",
-    "news_sentiment_score": 28.866847798962915,
-    "news_sentiment_score_date": "2026-05-21",
+    "news_sentiment_raw_metrics_date": "2026-05-25",
+    "news_sentiment_score": null,
+    "news_sentiment_score_date": "2026-05-25",
     "news_sentiment_subscores": {
         "earnings_surprise_revisions": null,
-        "price_momentum": 27.20444262619518,
-        "insider_activity": 32.19165814449839
+        "price_momentum": 27.149324131983946,
+        "insider_activity": null
     },
     "news_sentiment_drivers": {
         "strongest": [
-            "net_insider_value_pct_mcap_90d (insider_activity): score=46, value=-0.0%",
-            "return_1m (price_momentum): score=41, value=-5.3%",
-            "return_6m (price_momentum): score=26, value=-14.2%"
+            "return_1m (price_momentum): score=40, value=-6.0%",
+            "return_6m (price_momentum): score=26, value=-14.3%",
+            "return_3m (price_momentum): score=19, value=-18.6%"
         ],
         "weakest": [
-            "insider_count_ratio_90d (insider_activity): score=0, value=-1.00",
-            "return_3m (price_momentum): score=18, value=-19.0%",
-            "return_6m (price_momentum): score=26, value=-14.2%"
+            "return_3m (price_momentum): score=19, value=-18.6%",
+            "return_6m (price_momentum): score=26, value=-14.3%",
+            "return_1m (price_momentum): score=40, value=-6.0%"
         ]
     },
-    "composite_score": 66.8503270784095,
-    "composite_score_date": "2026-05-21",
-    "composite_rank": 22,
+    "composite_score": 70.40271267411295,
+    "composite_score_date": "2026-05-25",
+    "composite_rank": 11,
     "composite_metadata": {
         "scores_used": [
             "financial",
-            "news_sentiment"
-        ],
-        "scores_imputed": [
             "professional"
         ],
+        "scores_imputed": [
+            "news_sentiment"
+        ],
         "imputed_values": {
-            "professional": 61.597875783011084
+            "news_sentiment": 46.63538950421511
         },
-        "imputation_r_squared": 0.04516719672877956,
+        "imputation_r_squared": 0.031937368103860275,
         "weights_applied": {
             "financial": 50,
             "professional": 30,
@@ -201,6 +209,6 @@
         "check_status": "ok",
         "error_message": null
     },
-    "disqualifier_check_date": "2026-05-21",
+    "disqualifier_check_date": "2026-05-25",
     "qualified": true
 }

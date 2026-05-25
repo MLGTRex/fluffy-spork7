@@ -8,8 +8,16 @@ from scenarioModelling import run_scenario_agent
 
 sys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "..", "pipeline tools"))
 from pipeline_git import commit_company_progress
+from section_runner import run_section_until_complete
 
 COMPANY_CONCURRENCY = 5
+
+# Section keys for the per-section retry budget (see pipeline tools/section_attempts.json).
+# Each scenarios phase is its own section so the helper drives all companies through
+# phase 1 before any company starts phase 2, and so on.
+PHASE1_SECTION_KEY = "scenarios_phase_1"
+PHASE2_SECTION_KEY = "scenarios_phase_2"
+PHASE3_SECTION_KEY = "scenarios_phase_3"
 
 # Required Stage 2 fields that must be present and non-empty before any Stage 3b agents run.
 # The research digest is optional — if absent, assemble_research_dump() falls back to the
@@ -300,17 +308,26 @@ def all_present(company_data: dict, fields: list) -> bool:
     return all(company_data.get(f) for f in fields)
 
 
-async def process_target_company(target_company: str, today_str: str, stage2_dir: str, stage3_output_dir: str):
-    safe_company_name = (
+def _paths_for(target_company: str, stage2_dir: str, stage3_output_dir: str):
+    """Return (stage2_path, stage3_path) for this company."""
+    safe = (
         target_company.replace(" ", "_")
         .replace("(", "")
         .replace(")", "")
         .replace(".", "")
         .replace("/", "-")
     )
-    file_name_only = f"{safe_company_name}_research.json"
-    stage2_path = os.path.join(stage2_dir, file_name_only)
-    stage3_path = os.path.join(stage3_output_dir, file_name_only)
+    file_name_only = f"{safe}_research.json"
+    return (
+        os.path.join(stage2_dir, file_name_only),
+        os.path.join(stage3_output_dir, file_name_only),
+    )
+
+
+async def process_phase1(target_company: str, today_str: str, stage2_dir: str, stage3_output_dir: str):
+    """Phase 1: bull/bear/base_initial scenarios. Also does the Stage 2 sync
+    and the synthesis-newer-than-Stage-3 reset, since those gate everything."""
+    stage2_path, stage3_path = _paths_for(target_company, stage2_dir, stage3_output_dir)
 
     if not sync_stage2_json(target_company, stage2_path, stage3_path):
         return
@@ -337,16 +354,15 @@ async def process_target_company(target_company: str, today_str: str, stage2_dir
     research_dump = assemble_research_dump(company_data, target_company)
     lock = asyncio.Lock()
 
-    # ============= PHASE 1 =============
-    phase1_tasks = []
     phase1_field_map = {
         "bull": "scenario_bull",
         "bear": "scenario_bear",
         "base_initial": "scenario_base_initial",
     }
+    tasks = []
     for agent_key, field_name in phase1_field_map.items():
         if needs_run(company_data, field_name):
-            phase1_tasks.append(
+            tasks.append(
                 run_and_save(
                     agent_key, field_name, target_company, today_str,
                     company_data, stage3_path, lock,
@@ -356,32 +372,43 @@ async def process_target_company(target_company: str, today_str: str, stage2_dir
         else:
             print(f"[{target_company}] Skipping {agent_key} scenario: already current.")
 
-    if phase1_tasks:
-        print(f"[{target_company}] Phase 1: running {len(phase1_tasks)} initial scenario(s) in parallel.")
-        await asyncio.gather(*phase1_tasks, return_exceptions=True)
+    if tasks:
+        print(f"[{target_company}] Phase 1: running {len(tasks)} initial scenario(s) in parallel.")
+        await asyncio.gather(*tasks, return_exceptions=True)
 
-    # Refresh in-memory state from disk before phase 2 freshness checks
+
+async def process_phase2(target_company: str, today_str: str, stage2_dir: str, stage3_output_dir: str):
+    """Phase 2: bull/bear rebuttal scenarios. Reads phase 1 outputs from disk."""
+    _, stage3_path = _paths_for(target_company, stage2_dir, stage3_output_dir)
+
+    if not os.path.exists(stage3_path):
+        print(f"[{target_company}] Skipping phase 2: Stage 3 file missing.")
+        return
+
     with open(stage3_path, "r", encoding="utf-8") as f:
         company_data = json.load(f)
 
-    if not all_present(company_data, PHASE1_SCENARIO_FIELDS):
-        missing = [f for f in PHASE1_SCENARIO_FIELDS if not company_data.get(f)]
-        print(f"[{target_company}] Aborting: phase 1 incomplete (missing: {missing}). Skipping phase 2 and 3.")
+    if not stage2_inputs_valid(company_data, target_company):
         return
 
+    if not all_present(company_data, PHASE1_SCENARIO_FIELDS):
+        missing = [f for f in PHASE1_SCENARIO_FIELDS if not company_data.get(f)]
+        print(f"[{target_company}] Skipping phase 2: phase 1 incomplete (missing: {missing}).")
+        return
+
+    research_dump = assemble_research_dump(company_data, target_company)
     bull_initial = company_data["scenario_bull"]
     bear_initial = company_data["scenario_bear"]
-    base_initial = company_data["scenario_base_initial"]
+    lock = asyncio.Lock()
 
-    # ============= PHASE 2 =============
-    phase2_tasks = []
     phase2_field_map = {
         "bull_rebuttal": "scenario_bull_rebuttal",
         "bear_rebuttal": "scenario_bear_rebuttal",
     }
+    tasks = []
     for agent_key, field_name in phase2_field_map.items():
         if needs_run(company_data, field_name):
-            phase2_tasks.append(
+            tasks.append(
                 run_and_save(
                     agent_key, field_name, target_company, today_str,
                     company_data, stage3_path, lock,
@@ -393,23 +420,38 @@ async def process_target_company(target_company: str, today_str: str, stage2_dir
         else:
             print(f"[{target_company}] Skipping {agent_key} scenario: already current.")
 
-    if phase2_tasks:
-        print(f"[{target_company}] Phase 2: running {len(phase2_tasks)} rebuttal(s) in parallel.")
-        await asyncio.gather(*phase2_tasks, return_exceptions=True)
+    if tasks:
+        print(f"[{target_company}] Phase 2: running {len(tasks)} rebuttal(s) in parallel.")
+        await asyncio.gather(*tasks, return_exceptions=True)
 
-    # Refresh in-memory state from disk before phase 3 freshness check
+
+async def process_phase3(target_company: str, today_str: str, stage2_dir: str, stage3_output_dir: str):
+    """Phase 3: base arbitration scenario + git commit of the completed file."""
+    _, stage3_path = _paths_for(target_company, stage2_dir, stage3_output_dir)
+
+    if not os.path.exists(stage3_path):
+        print(f"[{target_company}] Skipping phase 3: Stage 3 file missing.")
+        return
+
     with open(stage3_path, "r", encoding="utf-8") as f:
         company_data = json.load(f)
 
-    if not all_present(company_data, PHASE2_REBUTTAL_FIELDS):
-        missing = [f for f in PHASE2_REBUTTAL_FIELDS if not company_data.get(f)]
-        print(f"[{target_company}] Aborting: phase 2 incomplete (missing: {missing}). Skipping phase 3.")
+    if not stage2_inputs_valid(company_data, target_company):
         return
 
+    if not all_present(company_data, PHASE2_REBUTTAL_FIELDS):
+        missing = [f for f in PHASE2_REBUTTAL_FIELDS if not company_data.get(f)]
+        print(f"[{target_company}] Skipping phase 3: phase 2 incomplete (missing: {missing}).")
+        return
+
+    research_dump = assemble_research_dump(company_data, target_company)
+    bull_initial = company_data["scenario_bull"]
+    bear_initial = company_data["scenario_bear"]
+    base_initial = company_data["scenario_base_initial"]
     bull_rebuttal = company_data["scenario_bull_rebuttal"]
     bear_rebuttal = company_data["scenario_bear_rebuttal"]
+    lock = asyncio.Lock()
 
-    # ============= PHASE 3 =============
     if needs_run(company_data, "scenario_base_final"):
         print(f"[{target_company}] Phase 3: running base arbitration.")
         await run_and_save(
@@ -425,9 +467,44 @@ async def process_target_company(target_company: str, today_str: str, stage2_dir
     else:
         print(f"[{target_company}] Skipping base arbitration: already current.")
 
-    print(f"[{target_company}] Stage 3b processing complete.")
-
+    # Commit happens once all three phases have produced their content for this company,
+    # mirroring the prior behavior where commit_company_progress fired at the end of
+    # process_target_company.
     await commit_company_progress(stage3_path, "scenarios", target_company)
+
+
+def _make_phase_predicate(required_fields: list, stage3_output_dir: str):
+    """Build a completeness predicate bound to this run's Stage 3 output dir."""
+    def predicate(target_company: str) -> bool:
+        _, stage3_path = _paths_for(target_company, "", stage3_output_dir)
+        if not os.path.exists(stage3_path):
+            return False
+        try:
+            with open(stage3_path, "r", encoding="utf-8") as f:
+                data = json.load(f)
+        except Exception:
+            return False
+        return all(data.get(k) for k in required_fields)
+    return predicate
+
+
+async def _run_phase(label: str, section_key: str, target_companies: list, predicate, process_one):
+    """Drive one phase to completeness across all companies; halt on exhaustion."""
+    print(f"\n=== Scenarios {label} ===")
+    result = await run_section_until_complete(
+        target_companies,
+        process_one,
+        predicate,
+        section_key=section_key,
+        concurrency=COMPANY_CONCURRENCY,
+    )
+    if not result.is_complete:
+        print(
+            f"\n[{section_key}] HALT: {len(result.incomplete_companies)} companies still "
+            f"incomplete after {result.attempts_used} attempt(s): {result.incomplete_companies}"
+        )
+        sys.exit(1)
+    print(f"[{section_key}] All {len(target_companies)} companies complete in {result.attempts_used} attempt(s).")
 
 
 async def main():
@@ -442,7 +519,7 @@ async def main():
 
     if not os.path.isdir(stage2_dir):
         print(f"Error: Stage 2 output directory not found at {stage2_dir}.")
-        return
+        sys.exit(1)
 
     stage2_files = sorted(
         f for f in os.listdir(stage2_dir)
@@ -451,7 +528,7 @@ async def main():
 
     if not stage2_files:
         print(f"Error: no *_research.json files found in {stage2_dir}.")
-        return
+        sys.exit(1)
 
     target_companies = []
     for fname in stage2_files:
@@ -469,20 +546,37 @@ async def main():
 
     if not target_companies:
         print("Error: no valid companies to process.")
-        return
+        sys.exit(1)
 
-    sem = asyncio.Semaphore(COMPANY_CONCURRENCY)
-
-    async def bounded(company):
-        async with sem:
-            await process_target_company(company, today_str, stage2_dir, stage3_output_dir)
-
-    print(f"Processing {len(target_companies)} companies, up to {COMPANY_CONCURRENCY} at a time.")
-    await asyncio.gather(
-        *(bounded(c) for c in target_companies),
-        return_exceptions=True,
+    # Each phase is driven across the full company list before the next phase
+    # starts. Phase N's predicate checks that phase N's own deliverables are
+    # populated (present-only); per-company freshness/staleness is left to the
+    # existing needs_run() logic inside each process_phaseN.
+    await _run_phase(
+        "Phase 1 (initial bull/bear/base)",
+        PHASE1_SECTION_KEY,
+        target_companies,
+        _make_phase_predicate(PHASE1_SCENARIO_FIELDS, stage3_output_dir),
+        lambda c: process_phase1(c, today_str, stage2_dir, stage3_output_dir),
     )
-    print("\nAll companies processed.")
+
+    await _run_phase(
+        "Phase 2 (bull/bear rebuttals)",
+        PHASE2_SECTION_KEY,
+        target_companies,
+        _make_phase_predicate(PHASE2_REBUTTAL_FIELDS, stage3_output_dir),
+        lambda c: process_phase2(c, today_str, stage2_dir, stage3_output_dir),
+    )
+
+    await _run_phase(
+        "Phase 3 (base arbitration)",
+        PHASE3_SECTION_KEY,
+        target_companies,
+        _make_phase_predicate(["scenario_base_final"], stage3_output_dir),
+        lambda c: process_phase3(c, today_str, stage2_dir, stage3_output_dir),
+    )
+
+    print("\nAll scenario phases complete.")
 
 
 if __name__ == "__main__":

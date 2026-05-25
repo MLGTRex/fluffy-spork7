@@ -7,8 +7,29 @@ from debateRebuttals import run_debate_rebuttal
 
 sys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "..", "pipeline tools"))
 from pipeline_git import commit_company_progress
+from section_runner import run_section_until_complete
 
 COMPANY_CONCURRENCY = 5
+SECTION_KEY = "debate_rebuttal"
+
+
+def _safe_filename(target_company: str) -> str:
+    safe = target_company.replace(" ", "_").replace("(", "").replace(")", "").replace(".", "").replace("/", "-")
+    output_dir = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "output")
+    return os.path.join(output_dir, f"{safe}_research.json")
+
+
+def _is_section_complete(target_company: str) -> bool:
+    """Predicate for section_runner: bull_rebuttal and bear_rebuttal both populated."""
+    file_name = _safe_filename(target_company)
+    if not os.path.exists(file_name):
+        return False
+    try:
+        with open(file_name, "r", encoding="utf-8") as f:
+            data = json.load(f)
+    except Exception:
+        return False
+    return bool(data.get("bull_rebuttal")) and bool(data.get("bear_rebuttal"))
 
 
 def ensure_debate_fields(company_data: dict) -> dict:
@@ -145,23 +166,29 @@ async def main():
 
     if not os.path.exists(input_file):
         print(f"Error: Could not find {input_file}.")
-        return
+        sys.exit(1)
 
     with open(input_file, "r", encoding="utf-8") as f:
         target_companies = json.load(f)
 
-    sem = asyncio.Semaphore(COMPANY_CONCURRENCY)
+    async def process_one(company):
+        await process_target_company(company, today_str)
 
-    async def bounded(company):
-        async with sem:
-            await process_target_company(company, today_str)
-
-    print(f"Processing {len(target_companies)} companies, up to {COMPANY_CONCURRENCY} at a time.")
-    await asyncio.gather(
-        *(bounded(c) for c in target_companies),
-        return_exceptions=True,
+    result = await run_section_until_complete(
+        target_companies,
+        process_one,
+        _is_section_complete,
+        section_key=SECTION_KEY,
+        concurrency=COMPANY_CONCURRENCY,
     )
-    print("\nAll companies processed successfully.")
+
+    if not result.is_complete:
+        print(
+            f"\n[{SECTION_KEY}] HALT: {len(result.incomplete_companies)} companies still "
+            f"incomplete after {result.attempts_used} attempt(s): {result.incomplete_companies}"
+        )
+        sys.exit(1)
+    print(f"\n[{SECTION_KEY}] All {len(target_companies)} companies complete in {result.attempts_used} attempt(s).")
 
 
 if __name__ == "__main__":

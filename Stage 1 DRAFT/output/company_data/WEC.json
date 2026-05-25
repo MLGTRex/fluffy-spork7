@@ -5,7 +5,7 @@
     "financial_raw_metrics": {
         "sector": "Utilities",
         "industry": "Utilities - Regulated Electric",
-        "market_cap_usd": 36517105664,
+        "market_cap_usd": 36940550144,
         "profitability": {
             "gross_margin_ttm": 0.41764,
             "operating_margin_ttm": 0.28952998,
@@ -38,151 +38,161 @@
             "fcf_cagr_3yr": null
         },
         "valuation": {
-            "pe_trailing": 22.466934,
-            "pe_forward": 18.672241,
-            "ps_ratio": 3.6210043,
-            "pb_ratio": 2.680198,
-            "ev_ebitda": 14.94,
-            "peg_ratio": 2.454,
-            "fcf_yield": -0.056603951556810875
+            "pe_trailing": 22.727457,
+            "pe_forward": 18.88876,
+            "ps_ratio": 3.6629927,
+            "pb_ratio": 2.711277,
+            "ev_ebitda": 15.169,
+            "peg_ratio": 2.5152,
+            "fcf_yield": -0.05595510819255437
         },
         "data_quality_flags": [
             "WEC: eps_cagr_3yr approximated by net income CAGR (share count changes not adjusted)"
         ]
     },
-    "financial_raw_metrics_date": "2026-05-21",
-    "financial_score": 41.080193110959655,
-    "financial_score_date": "2026-05-21",
+    "financial_raw_metrics_date": "2026-05-25",
+    "financial_score": 40.953497268682554,
+    "financial_score_date": "2026-05-25",
     "financial_subscores": {
         "profitability": 62.371005663785006,
         "returns_on_capital": 59.13472390371987,
         "cash_flow_quality": 12.585129863234693,
         "balance_sheet": 25.607254751810103,
         "growth": 37.93009094138312,
-        "valuation": 35.73783909329658
+        "valuation": 34.8932001447826
     },
     "financial_drivers": {
         "strongest": [
             "ocf_cagr_3yr (cash_flow_quality): score=84, value=17.9%",
             "operating_margin_ttm (profitability): score=78, value=29.0%",
-            "pe_forward (valuation): score=64, value=18.67"
+            "pe_forward (valuation): score=63, value=18.89"
         ],
         "weakest": [
             "fcf_margin_ttm (cash_flow_quality): score=0, value=-20.5%",
             "fcf_to_net_income_ttm (cash_flow_quality): score=0, value=-1.26",
-            "fcf_yield (valuation): score=0, value=-5.7%"
+            "fcf_yield (valuation): score=0, value=-5.6%"
         ]
     },
     "professional_raw_metrics": {
+        "sector": "Utilities",
+        "industry": "Utilities - Regulated Electric",
+        "market_cap_usd": 36940550144,
+        "current_price": 113.41,
+        "analyst": {
+            "recommendation_mean": 2.35,
+            "recommendation_key": "buy",
+            "target_mean_price": 124.41667,
+            "target_median_price": 124.5,
+            "target_high_price": 140.0,
+            "target_low_price": 108.0,
+            "upside_to_target": 0.0970520236310731,
+            "target_dispersion": 0.25720026102611493,
+            "num_analysts": 18
+        },
+        "rating_momentum": {
+            "upgrades_12m": 0,
+            "downgrades_12m": 1,
+            "total_actions_12m": 28
+        },
+        "institutional": {
+            "held_pct_institutions": 0.87195,
+            "held_pct_insiders": 0.00154
+        },
+        "short_interest": {
+            "short_pct_of_float": 0.0545,
+            "short_ratio": 8.73,
+            "short_change_pct": 0.016949535355041217
+        },
+        "data_quality_flags": []
+    },
+    "professional_raw_metrics_date": "2026-05-25",
+    "professional_score": 52.744108755155395,
+    "professional_score_date": "2026-05-25",
+    "professional_subscores": {
+        "analyst_consensus": 57.30520236310731,
+        "rating_momentum": 50.25000000000001,
+        "institutional_positioning": 57.939392571153874,
+        "short_interest": 37.59959856852914
+    },
+    "professional_drivers": {
+        "strongest": [
+            "recommendation_mean (analyst_consensus): score=61, value=2.35",
+            "held_pct_institutions (institutional_positioning): score=61, value=87.2%",
+            "upside_to_target (analyst_consensus): score=52, value=9.7%"
+        ],
+        "weakest": [
+            "short_ratio (short_interest): score=28, value=8.73",
+            "short_pct_of_float (short_interest): score=39, value=5.5%",
+            "short_change_pct (short_interest): score=48, value=1.7%"
+        ]
+    },
+    "news_sentiment_raw_metrics": {
         "sector": null,
         "industry": null,
         "market_cap_usd": null,
         "current_price": null,
-        "analyst": {
-            "recommendation_mean": null,
-            "recommendation_key": null,
-            "target_mean_price": null,
-            "target_median_price": null,
-            "target_high_price": null,
-            "target_low_price": null,
-            "upside_to_target": null,
-            "target_dispersion": null,
-            "num_analysts": null
+        "earnings": {
+            "beat_count_4q": null,
+            "miss_count_4q": null,
+            "total_quarters_4q": null,
+            "avg_surprise_magnitude_4q": null,
+            "eps_estimate_revision_90d": null,
+            "trailing_eps": null,
+            "forward_eps": null
         },
-        "rating_momentum": {
-            "upgrades_12m": 0,
-            "downgrades_12m": 0,
-            "total_actions_12m": 0
+        "price_momentum": {
+            "return_1m": 0.008833491678191037,
+            "return_3m": 0.0014142525914546753,
+            "return_6m": 0.04243587423090347
         },
-        "institutional": {
-            "held_pct_institutions": null,
-            "held_pct_insiders": null
-        },
-        "short_interest": {
-            "short_pct_of_float": null,
-            "short_ratio": null,
-            "short_change_pct": null
+        "insider_activity": {
+            "insider_purchases_count_90d": null,
+            "insider_sales_count_90d": null,
+            "insider_net_value_90d_usd": null
         },
         "data_quality_flags": [
             "WEC: failed to fetch .info (Too Many Requests. Rate limited. Try after a while.)",
             "WEC: sector classification unavailable",
-            "WEC: upgrades/downgrades fetch failed (Too Many Requests. Rate limited. Try after a while.)"
+            "WEC: earnings_dates fetch failed (['Earnings Date'])",
+            "WEC: eps_revisions fetch failed (Too Many Requests. Rate limited. Try after a while.)",
+            "WEC: insider_transactions fetch failed (Too Many Requests. Rate limited. Try after a while.)"
         ]
     },
-    "professional_raw_metrics_date": "2026-05-21",
-    "professional_score": null,
-    "professional_score_date": "2026-05-21",
-    "professional_subscores": {
-        "analyst_consensus": null,
-        "rating_momentum": 50.0,
-        "institutional_positioning": null,
-        "short_interest": null
-    },
-    "professional_drivers": {
-        "strongest": [],
-        "weakest": []
-    },
-    "news_sentiment_raw_metrics": {
-        "sector": "Utilities",
-        "industry": "Utilities - Regulated Electric",
-        "market_cap_usd": 36517105664,
-        "current_price": 112.11,
-        "earnings": {
-            "beat_count_4q": 3,
-            "miss_count_4q": 1,
-            "total_quarters_4q": 4,
-            "avg_surprise_magnitude_4q": -0.03762135252916414,
-            "eps_estimate_revision_90d": null,
-            "trailing_eps": 4.99,
-            "forward_eps": 6.0041
-        },
-        "price_momentum": {
-            "return_1m": -0.0044867814624093335,
-            "return_3m": -0.005712336990618525,
-            "return_6m": 0.03507028547603958
-        },
-        "insider_activity": {
-            "insider_purchases_count_90d": 0,
-            "insider_sales_count_90d": 3,
-            "insider_net_value_90d_usd": -1050889.0
-        },
-        "data_quality_flags": []
-    },
-    "news_sentiment_raw_metrics_date": "2026-05-21",
-    "news_sentiment_score": 50.2328402819576,
-    "news_sentiment_score_date": "2026-05-21",
+    "news_sentiment_raw_metrics_date": "2026-05-25",
+    "news_sentiment_score": null,
+    "news_sentiment_score_date": "2026-05-25",
     "news_sentiment_subscores": {
-        "earnings_surprise_revisions": 56.51605799461586,
-        "price_momentum": 51.81785014634951,
-        "insider_activity": 34.49638512785721
+        "earnings_surprise_revisions": null,
+        "price_momentum": 53.279618503153046,
+        "insider_activity": null
     },
     "news_sentiment_drivers": {
         "strongest": [
-            "beat_rate_4q (earnings_surprise_revisions): score=75, value=75.0%",
-            "return_6m (price_momentum): score=56, value=3.5%",
-            "net_insider_value_pct_mcap_90d (insider_activity): score=49, value=-0.0%"
+            "return_6m (price_momentum): score=57, value=4.2%",
+            "return_1m (price_momentum): score=51, value=0.9%",
+            "return_3m (price_momentum): score=50, value=0.1%"
         ],
         "weakest": [
-            "insider_count_ratio_90d (insider_activity): score=0, value=-1.00",
-            "avg_surprise_magnitude_4q (earnings_surprise_revisions): score=35, value=-3.8%",
-            "return_3m (price_momentum): score=49, value=-0.6%"
+            "return_3m (price_momentum): score=50, value=0.1%",
+            "return_1m (price_momentum): score=51, value=0.9%",
+            "return_6m (price_momentum): score=57, value=4.2%"
         ]
     },
-    "composite_score": 47.63610290371626,
-    "composite_score_date": "2026-05-21",
-    "composite_rank": 800,
+    "composite_score": 47.02860742999805,
+    "composite_score_date": "2026-05-25",
+    "composite_rank": 858,
     "composite_metadata": {
         "scores_used": [
             "financial",
-            "news_sentiment"
-        ],
-        "scores_imputed": [
             "professional"
         ],
+        "scores_imputed": [
+            "news_sentiment"
+        ],
         "imputed_values": {
-            "professional": 56.83146097281634
+            "news_sentiment": 53.64313084555074
         },
-        "imputation_r_squared": 0.04516719672877956,
+        "imputation_r_squared": 0.031937368103860275,
         "weights_applied": {
             "financial": 50,
             "professional": 30,

@@ -42,7 +42,7 @@
             "pe_forward": -1.2494652,
             "ps_ratio": 1.626526,
             "pb_ratio": 2.6654496,
-            "ev_ebitda": -2.149,
+            "ev_ebitda": -2.168,
             "peg_ratio": null,
             "fcf_yield": -1.3317099367126926
         },
@@ -50,12 +50,12 @@
             "LCID: eps_cagr_3yr approximated by net income CAGR (share count changes not adjusted)"
         ]
     },
-    "financial_raw_metrics_date": "2026-05-21",
-    "financial_score": 41.06661149613696,
-    "financial_score_date": "2026-05-21",
+    "financial_raw_metrics_date": "2026-05-25",
+    "financial_score": 41.06526042448172,
+    "financial_score_date": "2026-05-25",
     "financial_subscores": {
-        "profitability": 24.36563401815358,
-        "returns_on_capital": 13.029631463016305,
+        "profitability": 24.366150739555653,
+        "returns_on_capital": 13.023372687079428,
         "cash_flow_quality": 28.144261349158377,
         "balance_sheet": 61.6525625,
         "growth": 93.0536206540579,
@@ -95,7 +95,7 @@
             "total_actions_12m": 15
         },
         "institutional": {
-            "held_pct_institutions": 0.61904997,
+            "held_pct_institutions": 0.61912996,
             "held_pct_insiders": 0.10297
         },
         "short_interest": {
@@ -105,13 +105,13 @@
         },
         "data_quality_flags": []
     },
-    "professional_raw_metrics_date": "2026-05-21",
-    "professional_score": 51.39594099919577,
-    "professional_score_date": "2026-05-21",
+    "professional_raw_metrics_date": "2026-05-25",
+    "professional_score": 51.48849505881789,
+    "professional_score_date": "2026-05-25",
     "professional_subscores": {
         "analyst_consensus": 57.26707328767124,
         "rating_momentum": 44.1,
-        "institutional_positioning": 65.48391253633444,
+        "institutional_positioning": 65.8541287748229,
         "short_interest": 26.37658142951487
     },
     "professional_drivers": {
@@ -127,65 +127,71 @@
         ]
     },
     "news_sentiment_raw_metrics": {
-        "sector": "Consumer Cyclical",
-        "industry": "Auto Manufacturers",
-        "market_cap_usd": 2279099648,
-        "current_price": 5.84,
+        "sector": null,
+        "industry": null,
+        "market_cap_usd": null,
+        "current_price": null,
         "earnings": {
             "beat_count_4q": null,
             "miss_count_4q": null,
             "total_quarters_4q": null,
             "avg_surprise_magnitude_4q": null,
             "eps_estimate_revision_90d": null,
-            "trailing_eps": -13.14,
-            "forward_eps": -4.674
+            "trailing_eps": null,
+            "forward_eps": null
         },
         "price_momentum": {
-            "return_1m": -0.17862167505848633,
-            "return_3m": -0.40408164425126597,
-            "return_6m": -0.5316760324824371
+            "return_1m": -0.15484800556471046,
+            "return_3m": -0.40102562537560094,
+            "return_6m": -0.501706482975327
         },
         "insider_activity": {
-            "insider_purchases_count_90d": 0,
-            "insider_sales_count_90d": 0,
+            "insider_purchases_count_90d": null,
+            "insider_sales_count_90d": null,
             "insider_net_value_90d_usd": null
         },
         "data_quality_flags": [
-            "LCID: earnings_dates fetch failed (['Earnings Date'])"
+            "LCID: failed to fetch .info (Too Many Requests. Rate limited. Try after a while.)",
+            "LCID: sector classification unavailable",
+            "LCID: earnings_dates fetch failed (['Earnings Date'])",
+            "LCID: insider_transactions fetch failed (Too Many Requests. Rate limited. Try after a while.)"
         ]
     },
-    "news_sentiment_raw_metrics_date": "2026-05-21",
-    "news_sentiment_score": 20.038286803930934,
-    "news_sentiment_score_date": "2026-05-21",
+    "news_sentiment_raw_metrics_date": "2026-05-25",
+    "news_sentiment_score": null,
+    "news_sentiment_score_date": "2026-05-25",
     "news_sentiment_subscores": {
         "earnings_surprise_revisions": null,
-        "price_momentum": 5.057430205896402,
-        "insider_activity": 50.0
+        "price_momentum": 6.047999768137064,
+        "insider_activity": null
     },
     "news_sentiment_drivers": {
         "strongest": [
-            "insider_activity_summary (insider_activity): score=50, value=no activity in 90d",
-            "return_1m (price_momentum): score=20, value=-17.9%",
-            "return_6m (price_momentum): score=0, value=-53.2%"
+            "return_1m (price_momentum): score=24, value=-15.5%",
+            "return_6m (price_momentum): score=0, value=-50.2%",
+            "return_3m (price_momentum): score=0, value=-40.1%"
         ],
         "weakest": [
-            "return_3m (price_momentum): score=0, value=-40.4%",
-            "return_6m (price_momentum): score=0, value=-53.2%",
-            "return_1m (price_momentum): score=20, value=-17.9%"
+            "return_3m (price_momentum): score=0, value=-40.1%",
+            "return_6m (price_momentum): score=0, value=-50.2%",
+            "return_1m (price_momentum): score=24, value=-15.5%"
         ]
     },
-    "composite_score": 39.9597454086134,
-    "composite_score_date": "2026-05-21",
-    "composite_rank": 918,
+    "composite_score": 46.75885968726294,
+    "composite_score_date": "2026-05-25",
+    "composite_rank": 869,
     "composite_metadata": {
         "scores_used": [
             "financial",
-            "professional",
+            "professional"
+        ],
+        "scores_imputed": [
             "news_sentiment"
         ],
-        "scores_imputed": [],
-        "imputed_values": {},
-        "imputation_r_squared": null,
+        "imputed_values": {
+            "news_sentiment": 53.89840478688354
+        },
+        "imputation_r_squared": 0.031937368103860275,
         "weights_applied": {
             "financial": 50,
             "professional": 30,
