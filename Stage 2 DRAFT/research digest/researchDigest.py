@@ -1,3 +1,4 @@
+import asyncio
 import os
 import sys
 import logging
@@ -31,6 +32,54 @@ logging.basicConfig(
 )
 logger = logging.getLogger(__name__)
 
+# Per-section output budget. Smaller than the previous single-call 32768 so each
+# section call finishes well within the SDK's response-timeout window, removing
+# the timeout-driven retry loop that re-bills full input on every attempt.
+_SECTION_MAX_TOKENS = 16384
+
+
+async def _digest_section(
+    section_label: str,
+    section_content: str,
+    company_name: str,
+) -> str:
+    """Run the dedup pass on a single research section. Returns the cleaned text."""
+    api_key = os.getenv("MOONSHOT_API_KEY")
+    base_url = os.getenv("MOONSHOT_BASE_URL") or "https://api.moonshot.ai/v1"
+
+    client = AsyncOpenAI(base_url=base_url, api_key=api_key, max_retries=5)
+    model = "kimi-k2.6"
+
+    user_message = (
+        f"Below is the {section_label} research report for {company_name}. "
+        f"Produce the cleaned version per your instructions.\n\n{section_content}"
+    )
+
+    messages = [
+        {"role": "system", "content": _load_prompt("research_digest_section.md")},
+        {"role": "user", "content": user_message},
+    ]
+
+    try:
+        logger.info(f"Sending {section_label} digest request to model for {company_name}...")
+
+        response = await client.chat.completions.create(
+            model=model,
+            messages=messages,
+            max_tokens=_SECTION_MAX_TOKENS,
+        )
+
+        content = response.choices[0].message.content
+        logger.info(f"{section_label} digest generated for {company_name}.")
+
+        cache_label = f"research_digest_{section_label.lower().replace(' & ', '_').replace(' ', '_')}"
+        log_cache_stats(logger, cache_label, company_name, extract_cache_stats(response))
+
+        return content
+
+    finally:
+        await client.close()
+
 
 async def run_research_digest(
     finance_report: str,
@@ -41,59 +90,42 @@ async def run_research_digest(
     """
     Produce a deduplicated research dossier from the three Stage 2 deep-research reports.
 
-    The output preserves every fact, number, date, name, quote and material claim
-    from the originals, with cross-report repetition and boilerplate removed.
-    Downstream Stage 3 scenario agents consume this in place of the raw concatenation.
+    Each report is cleaned independently in parallel — smaller, faster, no
+    cross-section dedup. The three cleaned sections are reassembled into one
+    dossier with the same labelled headers Stage 3's raw-reports fallback uses,
+    so downstream consumers don't care which path produced the input.
     """
     logger.info(f"Initialising Research Digest for {company_name}...")
 
-    api_key = os.getenv("MOONSHOT_API_KEY")
-    base_url = os.getenv("MOONSHOT_BASE_URL") or "https://api.moonshot.ai/v1"
+    sections = [
+        ("FINANCIAL", finance_report),
+        ("NEWS & NARRATIVE", news_report),
+        ("COMPETITIVE & MACRO", environment_report),
+    ]
 
-    client = AsyncOpenAI(base_url=base_url, api_key=api_key, max_retries=5)
-    model = "kimi-k2.6"
-    max_tokens = 32768
+    try:
+        results = await asyncio.gather(
+            *(_digest_section(label, content, company_name) for label, content in sections),
+        )
 
-    user_message = f"""Produce a deduplicated research dossier for {company_name} from the three reports below.
+        finance_clean, news_clean, environment_clean = results
 
-# FINANCIAL RESEARCH
+        return f"""# FINANCIAL RESEARCH
 
-{finance_report}
+{finance_clean}
 
 ---
 
 # NEWS & NARRATIVE RESEARCH
 
-{news_report}
+{news_clean}
 
 ---
 
 # COMPETITIVE & MACRO RESEARCH
 
-{environment_report}
+{environment_clean}
 """
 
-    messages = [
-        {"role": "system", "content": _load_prompt("research_digest.md")},
-        {"role": "user", "content": user_message},
-    ]
-
-    try:
-        logger.info(f"Sending research-digest request to model for {company_name}...")
-
-        response = await client.chat.completions.create(
-            model=model,
-            messages=messages,
-            max_tokens=max_tokens,
-        )
-
-        content = response.choices[0].message.content
-        logger.info(f"Research digest generated for {company_name}.")
-
-        log_cache_stats(logger, "research_digest", company_name, extract_cache_stats(response))
-
-        return content
-
     finally:
-        await client.close()
         logger.info(f"Research Digest completed for {company_name}.\n")
