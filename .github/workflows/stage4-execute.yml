@@ -1,0 +1,78 @@
+name: Stage 4 Executor (manual)
+
+# Manual dispatch only — runs the Stage 4 executor sub-stage in isolation
+# against the current consolidation_portfolio.json on main. Use this when
+# you want to re-run Alpaca order submission without re-running the LLM
+# pipeline (candidate summaries → pre-optimization → Track A/B →
+# consolidation → reconciliation). Typical use: delete the latest
+# execution_*.json under "Stage 4 DRAFT/portfolio execution/output/",
+# push, then dispatch this workflow.
+on:
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: "Dry run? When true, the executor computes the diff but does NOT submit orders to Alpaca."
+        type: boolean
+        required: true
+        default: false
+
+permissions:
+  contents: write
+
+# Share the `pipeline` group so an executor-only run can't race with the
+# full pipeline or another single-stage run.
+concurrency:
+  group: pipeline
+  cancel-in-progress: false
+
+jobs:
+  execute:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+
+    env:
+      ALPACA_API_KEY: ${{ secrets.ALPACA_API_KEY }}
+      ALPACA_SECRET_KEY: ${{ secrets.ALPACA_SECRET_KEY }}
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Run executor (dry-run)
+        if: ${{ inputs.dry_run }}
+        run: python -u "Stage 4 DRAFT/portfolio execution/executor/runExecute.py" --dry-run
+
+      - name: Run executor (live)
+        if: ${{ !inputs.dry_run }}
+        run: python -u "Stage 4 DRAFT/portfolio execution/executor/runExecute.py" --live
+
+      - name: Commit & push state
+        if: always()
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          if git diff --cached --quiet; then
+            echo "No state changes to commit."
+            exit 0
+          fi
+          git commit -m "stage 4 executor: manual run ($(date -u +%Y-%m-%dT%H:%M:%SZ))"
+          for attempt in 1 2 3 4 5; do
+            git pull --rebase --autostash origin main \
+              && git push origin HEAD:main \
+              && { echo "Pushed on attempt $attempt."; exit 0; }
+            echo "Push attempt $attempt failed; retrying..."
+            sleep 5
+          done
+          echo "Could not push state after 5 attempts." >&2
+          exit 1
