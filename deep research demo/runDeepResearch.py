@@ -1,5 +1,6 @@
 import asyncio
 import json
+import os
 import sys
 from datetime import date
 
@@ -35,10 +36,15 @@ async def main():
         sys.exit(1)
 
     today = date.today().isoformat()
-    output = {"company_name": company}
+    fname = f"{safe_filename(company)}_research_demo.json"
+    if os.path.exists(fname):
+        with open(fname, "r", encoding="utf-8") as f:
+            output = json.load(f)
+    else:
+        output = {"company_name": company}
     for rt in REPORT_TYPES:
-        output[f"{rt.lower()}_research_report_date"] = ""
-        output[f"{rt.lower()}_research_report"] = ""
+        output.setdefault(f"{rt.lower()}_research_report_date", "")
+        output.setdefault(f"{rt.lower()}_research_report", "")
 
     for rt in types:
         print(f"\n=== {rt} ===")
@@ -52,7 +58,6 @@ async def main():
         preview = result[:500] + ("..." if len(result) > 500 else "")
         print(f"\n--- {rt} report ({len(result)} chars) ---\n{preview}")
 
-    fname = f"{safe_filename(company)}_research_demo.json"
     with open(fname, "w", encoding="utf-8") as f:
         json.dump(output, f, indent=4, ensure_ascii=False)
     print(f"\nSaved to {fname}")
