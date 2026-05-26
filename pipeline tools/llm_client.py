@@ -21,7 +21,7 @@ from openai import AsyncOpenAI
 # ============ BACKEND TOGGLE ============
 # Flip this single line to swap providers across the entire pipeline.
 # Valid values: "moonshot" (direct), "openrouter".
-BACKEND = "moonshot"
+BACKEND = "openrouter"
 
 # Model id used for each backend. The Moonshot slug is Moonshot's native
 # id; the OpenRouter slug should be verified against their catalogue
