@@ -1,0 +1,202 @@
+{
+    "ticker": "WAB",
+    "company_name": "Wabtec",
+    "universe_added_date": "2026-05-18",
+    "financial_raw_metrics": {
+        "sector": "Industrials",
+        "industry": "Railroads",
+        "market_cap_usd": 43506966528,
+        "profitability": {
+            "gross_margin_ttm": 0.35239,
+            "operating_margin_ttm": 0.18983,
+            "net_margin_ttm": 0.10515001,
+            "operating_margin_trend_3yr": 0.03965828134186074
+        },
+        "returns_on_capital": {
+            "roe_ttm": 0.11305001,
+            "roa_ttm": 0.06041,
+            "roic_ttm": null
+        },
+        "cash_flow": {
+            "fcf_margin_ttm": 0.0976144969812602,
+            "fcf_to_net_income_ttm": 0.9306130807297124,
+            "ocf_cagr_3yr": 0.19221933827693927
+        },
+        "balance_sheet": {
+            "debt_to_equity": 0.6203,
+            "net_debt_to_ebitda": 2.538095314285714,
+            "current_ratio": 1.024,
+            "interest_coverage": 8.075555555555555,
+            "total_debt_usd": 6917000192,
+            "total_cash_usd": 521000000
+        },
+        "growth": {
+            "revenue_growth_1yr": 0.13,
+            "revenue_cagr_3yr": 0.10122345018267498,
+            "eps_growth_1yr": 0.128,
+            "eps_cagr_3yr": 0.22723401467359272,
+            "fcf_cagr_3yr": 0.19023657219546997
+        },
+        "valuation": {
+            "pe_trailing": 36.216103,
+            "pe_forward": 21.139563,
+            "ps_ratio": 3.7809129,
+            "pb_ratio": 3.925985,
+            "ev_ebitda": 19.822,
+            "peg_ratio": 1.37,
+            "fcf_yield": 0.025817705476595437
+        },
+        "data_quality_flags": [
+            "WAB: eps_cagr_3yr approximated by net income CAGR (share count changes not adjusted)"
+        ]
+    },
+    "financial_raw_metrics_date": "2026-05-25",
+    "financial_score": 59.91846108330441,
+    "financial_score_date": "2026-05-25",
+    "financial_subscores": {
+        "profitability": 61.80325424589014,
+        "returns_on_capital": 46.03249765577412,
+        "cash_flow_quality": 69.49838156279925,
+        "balance_sheet": 64.48365415238096,
+        "growth": 76.42069319018997,
+        "valuation": 45.272675781106884
+    },
+    "financial_drivers": {
+        "strongest": [
+            "fcf_to_net_income_ttm (cash_flow_quality): score=88, value=93.1%",
+            "eps_cagr_3yr (growth): score=87, value=22.7%",
+            "debt_to_equity (balance_sheet): score=86, value=62.0%"
+        ],
+        "weakest": [
+            "pe_trailing (valuation): score=27, value=36.22",
+            "current_ratio (balance_sheet): score=32, value=1.02",
+            "fcf_yield (valuation): score=39, value=2.6%"
+        ]
+    },
+    "professional_raw_metrics": {
+        "sector": "Industrials",
+        "industry": "Railroads",
+        "market_cap_usd": 43506966528,
+        "current_price": 256.41,
+        "analyst": {
+            "recommendation_mean": 1.45455,
+            "recommendation_key": "strong_buy",
+            "target_mean_price": 300.0,
+            "target_median_price": 303.0,
+            "target_high_price": 318.0,
+            "target_low_price": 280.0,
+            "upside_to_target": 0.17000117000116988,
+            "target_dispersion": 0.12666666666666668,
+            "num_analysts": 11
+        },
+        "rating_momentum": {
+            "upgrades_12m": 2,
+            "downgrades_12m": 0,
+            "total_actions_12m": 26
+        },
+        "institutional": {
+            "held_pct_institutions": 0.96049005,
+            "held_pct_insiders": 0.0070499997
+        },
+        "short_interest": {
+            "short_pct_of_float": 0.0229,
+            "short_ratio": 2.68,
+            "short_change_pct": 0.3601243498156178
+        },
+        "data_quality_flags": []
+    },
+    "professional_raw_metrics_date": "2026-05-25",
+    "professional_score": 68.21078271380973,
+    "professional_score_date": "2026-05-25",
+    "professional_subscores": {
+        "analyst_consensus": 81.87881133341132,
+        "rating_momentum": 57.34615384615385,
+        "institutional_positioning": 67.61931850443958,
+        "short_interest": 55.412204396449425
+    },
+    "professional_drivers": {
+        "strongest": [
+            "recommendation_mean (analyst_consensus): score=91, value=1.45",
+            "short_ratio (short_interest): score=73, value=2.68",
+            "held_pct_institutions (institutional_positioning): score=72, value=96.0%"
+        ],
+        "weakest": [
+            "short_change_pct (short_interest): score=12, value=36.0%",
+            "held_pct_insiders (institutional_positioning): score=57, value=0.7%",
+            "upgrades_12m (rating_momentum): score=57, value=2.00"
+        ]
+    },
+    "news_sentiment_raw_metrics": {
+        "sector": null,
+        "industry": null,
+        "market_cap_usd": null,
+        "current_price": null,
+        "earnings": {
+            "beat_count_4q": null,
+            "miss_count_4q": null,
+            "total_quarters_4q": null,
+            "avg_surprise_magnitude_4q": null,
+            "eps_estimate_revision_90d": null,
+            "trailing_eps": null,
+            "forward_eps": null
+        },
+        "price_momentum": {
+            "return_1m": -0.018346957078077118,
+            "return_3m": -0.019696394456657666,
+            "return_6m": 0.31045722198683917
+        },
+        "insider_activity": {
+            "insider_purchases_count_90d": null,
+            "insider_sales_count_90d": null,
+            "insider_net_value_90d_usd": null
+        },
+        "data_quality_flags": [
+            "WAB: failed to fetch .info (Too Many Requests. Rate limited. Try after a while.)",
+            "WAB: sector classification unavailable",
+            "WAB: earnings_dates fetch failed (['Earnings Date'])",
+            "WAB: eps_revisions fetch failed (Too Many Requests. Rate limited. Try after a while.)",
+            "WAB: insider_transactions fetch failed (Too Many Requests. Rate limited. Try after a while.)"
+        ]
+    },
+    "news_sentiment_raw_metrics_date": "2026-05-25",
+    "news_sentiment_score": null,
+    "news_sentiment_score_date": "2026-05-25",
+    "news_sentiment_subscores": {
+        "earnings_surprise_revisions": null,
+        "price_momentum": 68.08658711177509,
+        "insider_activity": null
+    },
+    "news_sentiment_drivers": {
+        "strongest": [
+            "return_6m (price_momentum): score=100, value=31.0%",
+            "return_1m (price_momentum): score=47, value=-1.8%",
+            "return_3m (price_momentum): score=47, value=-2.0%"
+        ],
+        "weakest": [
+            "return_3m (price_momentum): score=47, value=-2.0%",
+            "return_1m (price_momentum): score=47, value=-1.8%",
+            "return_6m (price_momentum): score=100, value=31.0%"
+        ]
+    },
+    "composite_score": 60.050580794500554,
+    "composite_score_date": "2026-05-25",
+    "composite_rank": 209,
+    "composite_metadata": {
+        "scores_used": [
+            "financial",
+            "professional"
+        ],
+        "scores_imputed": [
+            "news_sentiment"
+        ],
+        "imputed_values": {
+            "news_sentiment": 48.14057719352718
+        },
+        "imputation_r_squared": 0.031937368103860275,
+        "weights_applied": {
+            "financial": 50,
+            "professional": 30,
+            "news_sentiment": 20
+        }
+    }
+}

@@ -1,0 +1,195 @@
+{
+    "ticker": "ED",
+    "company_name": "Consolidated Edison",
+    "universe_added_date": "2026-05-18",
+    "financial_raw_metrics": {
+        "sector": "Utilities",
+        "industry": "Utilities - Regulated Electric",
+        "market_cap_usd": 40000212992,
+        "profitability": {
+            "gross_margin_ttm": 0.53192,
+            "operating_margin_ttm": 0.25613,
+            "net_margin_ttm": 0.12524,
+            "operating_margin_trend_3yr": 0.009872191801997277
+        },
+        "returns_on_capital": {
+            "roe_ttm": 0.08732,
+            "roa_ttm": 0.0317,
+            "roic_ttm": null
+        },
+        "cash_flow": {
+            "fcf_margin_ttm": -0.04840255336161076,
+            "fcf_to_net_income_ttm": -0.38647958441558444,
+            "ocf_cagr_3yr": 0.06847779278082311
+        },
+        "balance_sheet": {
+            "debt_to_equity": 1.06177,
+            "net_debt_to_ebitda": 4.492272103623968,
+            "current_ratio": 1.189,
+            "interest_coverage": 3.106244931062449,
+            "total_debt_usd": 27177000960,
+            "total_cash_usd": 147000000
+        },
+        "growth": {
+            "revenue_growth_1yr": 0.062,
+            "revenue_cagr_3yr": 0.02587238970223038,
+            "eps_growth_1yr": 0.129,
+            "eps_cagr_3yr": 0.06814267090496018,
+            "fcf_cagr_3yr": null
+        },
+        "valuation": {
+            "pe_trailing": 18.303541,
+            "pe_forward": 16.72566,
+            "ps_ratio": 2.3235674,
+            "pb_ratio": 1.5605141,
+            "ev_ebitda": 11.14,
+            "peg_ratio": 2.5788,
+            "fcf_yield": -0.020831138678352765
+        },
+        "data_quality_flags": [
+            "ED: eps_cagr_3yr approximated by net income CAGR (share count changes not adjusted)"
+        ]
+    },
+    "financial_raw_metrics_date": "2026-05-25",
+    "financial_score": 41.86271723986183,
+    "financial_score_date": "2026-05-25",
+    "financial_subscores": {
+        "profitability": 56.667949806807826,
+        "returns_on_capital": 41.228481579711826,
+        "cash_flow_quality": 10.911373007056502,
+        "balance_sheet": 42.162250533133154,
+        "growth": 46.36412154612186,
+        "valuation": 49.11846133074111
+    },
+    "financial_drivers": {
+        "strongest": [
+            "debt_to_equity (balance_sheet): score=73, value=1.06",
+            "ev_ebitda (valuation): score=73, value=11.14",
+            "pe_forward (valuation): score=70, value=16.73"
+        ],
+        "weakest": [
+            "fcf_to_net_income_ttm (cash_flow_quality): score=0, value=-38.6%",
+            "fcf_margin_ttm (cash_flow_quality): score=5, value=-4.8%",
+            "fcf_yield (valuation): score=6, value=-2.1%"
+        ]
+    },
+    "professional_raw_metrics": {
+        "sector": "Utilities",
+        "industry": "Utilities - Regulated Electric",
+        "market_cap_usd": 40000212992,
+        "current_price": 108.54,
+        "analyst": {
+            "recommendation_mean": 3.16667,
+            "recommendation_key": "hold",
+            "target_mean_price": 110.8125,
+            "target_median_price": 110.5,
+            "target_high_price": 130.0,
+            "target_low_price": 97.0,
+            "upside_to_target": 0.020936981757877223,
+            "target_dispersion": 0.29780033840947545,
+            "num_analysts": 16
+        },
+        "rating_momentum": {
+            "upgrades_12m": 1,
+            "downgrades_12m": 1,
+            "total_actions_12m": 32
+        },
+        "institutional": {
+            "held_pct_institutions": 0.75,
+            "held_pct_insiders": 0.0018799999
+        },
+        "short_interest": {
+            "short_pct_of_float": 0.0296,
+            "short_ratio": 4.79,
+            "short_change_pct": -0.01912064419582413
+        },
+        "data_quality_flags": []
+    },
+    "professional_raw_metrics_date": "2026-05-25",
+    "professional_score": 45.48672618248993,
+    "professional_score_date": "2026-05-25",
+    "professional_subscores": {
+        "analyst_consensus": 31.01238781094527,
+        "rating_momentum": 52.5,
+        "institutional_positioning": 51.577795992091936,
+        "short_interest": 57.4196096709073
+    },
+    "professional_drivers": {
+        "strongest": [
+            "short_pct_of_float (short_interest): score=62, value=3.0%",
+            "short_change_pct (short_interest): score=53, value=-1.9%",
+            "total_actions_12m (rating_momentum): score=52, value=32.00"
+        ],
+        "weakest": [
+            "recommendation_mean (analyst_consensus): score=31, value=3.17",
+            "upside_to_target (analyst_consensus): score=31, value=2.1%",
+            "held_pct_institutions (institutional_positioning): score=51, value=75.0%"
+        ]
+    },
+    "news_sentiment_raw_metrics": {
+        "sector": "Utilities",
+        "industry": "Utilities - Regulated Electric",
+        "market_cap_usd": 40000212992,
+        "current_price": 108.54,
+        "earnings": {
+            "beat_count_4q": null,
+            "miss_count_4q": null,
+            "total_quarters_4q": null,
+            "avg_surprise_magnitude_4q": null,
+            "eps_estimate_revision_90d": null,
+            "trailing_eps": 5.93,
+            "forward_eps": 6.48943
+        },
+        "price_momentum": {
+            "return_1m": 0.012199918549046083,
+            "return_3m": -0.0220767307814055,
+            "return_6m": 0.09270946199100095
+        },
+        "insider_activity": {
+            "insider_purchases_count_90d": 1,
+            "insider_sales_count_90d": 2,
+            "insider_net_value_90d_usd": -1111437.0
+        },
+        "data_quality_flags": [
+            "ED: earnings_dates fetch failed (['Earnings Date'])"
+        ]
+    },
+    "news_sentiment_raw_metrics_date": "2026-05-25",
+    "news_sentiment_score": 51.77201726280439,
+    "news_sentiment_score_date": "2026-05-25",
+    "news_sentiment_subscores": {
+        "earnings_surprise_revisions": null,
+        "price_momentum": 55.40115144336166,
+        "insider_activity": 44.513748901689844
+    },
+    "news_sentiment_drivers": {
+        "strongest": [
+            "return_6m (price_momentum): score=65, value=9.3%",
+            "return_1m (price_momentum): score=52, value=1.2%",
+            "net_insider_value_pct_mcap_90d (insider_activity): score=49, value=-0.0%"
+        ],
+        "weakest": [
+            "insider_count_ratio_90d (insider_activity): score=33, value=-33.3%",
+            "return_3m (price_momentum): score=46, value=-2.2%",
+            "net_insider_value_pct_mcap_90d (insider_activity): score=49, value=-0.0%"
+        ]
+    },
+    "composite_score": 44.931779927238765,
+    "composite_score_date": "2026-05-25",
+    "composite_rank": 914,
+    "composite_metadata": {
+        "scores_used": [
+            "financial",
+            "professional",
+            "news_sentiment"
+        ],
+        "scores_imputed": [],
+        "imputed_values": {},
+        "imputation_r_squared": null,
+        "weights_applied": {
+            "financial": 50,
+            "professional": 30,
+            "news_sentiment": 20
+        }
+    }
+}

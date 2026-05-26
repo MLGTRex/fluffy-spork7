@@ -1,0 +1,202 @@
+{
+    "ticker": "OTIS",
+    "company_name": "Otis Worldwide",
+    "universe_added_date": "2026-05-18",
+    "financial_raw_metrics": {
+        "sector": "Industrials",
+        "industry": "Specialty Industrial Machinery",
+        "market_cap_usd": 27923015680,
+        "profitability": {
+            "gross_margin_ttm": 0.30546,
+            "operating_margin_ttm": 0.15395,
+            "net_margin_ttm": 0.101110004,
+            "operating_margin_trend_3yr": 0.0024326208596679166
+        },
+        "returns_on_capital": {
+            "roe_ttm": null,
+            "roa_ttm": 0.13346,
+            "roic_ttm": null
+        },
+        "cash_flow": {
+            "fcf_margin_ttm": 0.11484434004574058,
+            "fcf_to_net_income_ttm": 1.1358035980360772,
+            "ocf_cagr_3yr": 0.00763388322800207
+        },
+        "balance_sheet": {
+            "debt_to_equity": null,
+            "net_debt_to_ebitda": 2.961893325937093,
+            "current_ratio": 0.837,
+            "interest_coverage": null,
+            "total_debt_usd": 8217999872,
+            "total_cash_usd": 834000000
+        },
+        "growth": {
+            "revenue_growth_1yr": 0.064,
+            "revenue_cagr_3yr": 0.017850220319947985,
+            "eps_growth_1yr": 0.426,
+            "eps_cagr_3yr": 0.03370116653270716,
+            "fcf_cagr_3yr": -0.00023073374146198589
+        },
+        "valuation": {
+            "pe_trailing": 19.353722,
+            "pe_forward": 15.412441,
+            "ps_ratio": 1.9063983,
+            "pb_ratio": -4.9416,
+            "ev_ebitda": 14.261,
+            "peg_ratio": 1.385,
+            "fcf_yield": 0.06024152531650908
+        },
+        "data_quality_flags": [
+            "OTIS: eps_cagr_3yr approximated by net income CAGR (share count changes not adjusted)"
+        ]
+    },
+    "financial_raw_metrics_date": "2026-05-25",
+    "financial_score": 49.4444092154507,
+    "financial_score_date": "2026-05-25",
+    "financial_subscores": {
+        "profitability": 35.96119282553739,
+        "returns_on_capital": null,
+        "cash_flow_quality": 67.05579250168472,
+        "balance_sheet": 40.581422320838755,
+        "growth": 40.41254163603212,
+        "valuation": 67.70550225646494
+    },
+    "financial_drivers": {
+        "strongest": [
+            "eps_growth_1yr (growth): score=97, value=42.6%",
+            "fcf_to_net_income_ttm (cash_flow_quality): score=95, value=1.14",
+            "roa_ttm (returns_on_capital): score=88, value=13.3%"
+        ],
+        "weakest": [
+            "current_ratio (balance_sheet): score=20, value=83.7%",
+            "gross_margin_ttm (profitability): score=21, value=30.5%",
+            "fcf_cagr_3yr (growth): score=25, value=-0.0%"
+        ]
+    },
+    "professional_raw_metrics": {
+        "sector": "Industrials",
+        "industry": "Specialty Industrial Machinery",
+        "market_cap_usd": 27923015680,
+        "current_price": 72.77,
+        "analyst": {
+            "recommendation_mean": 2.4375,
+            "recommendation_key": "buy",
+            "target_mean_price": 94.35714,
+            "target_median_price": 93.5,
+            "target_high_price": 120.0,
+            "target_low_price": 77.0,
+            "upside_to_target": 0.29664889377490733,
+            "target_dispersion": 0.4557153809452046,
+            "num_analysts": 14
+        },
+        "rating_momentum": {
+            "upgrades_12m": 3,
+            "downgrades_12m": 1,
+            "total_actions_12m": 23
+        },
+        "institutional": {
+            "held_pct_institutions": 0.94628,
+            "held_pct_insiders": 0.00115
+        },
+        "short_interest": {
+            "short_pct_of_float": 0.045900002,
+            "short_ratio": 4.55,
+            "short_change_pct": 0.326704816733766
+        },
+        "data_quality_flags": []
+    },
+    "professional_raw_metrics_date": "2026-05-25",
+    "professional_score": 61.31490976790124,
+    "professional_score_date": "2026-05-25",
+    "professional_subscores": {
+        "analyst_consensus": 70.27659291832717,
+        "rating_momentum": 57.97826086956522,
+        "institutional_positioning": 63.6276579361681,
+        "short_interest": 42.11081696702273
+    },
+    "professional_drivers": {
+        "strongest": [
+            "upside_to_target (analyst_consensus): score=89, value=29.7%",
+            "held_pct_institutions (institutional_positioning): score=69, value=94.6%",
+            "total_actions_12m (rating_momentum): score=58, value=23.00"
+        ],
+        "weakest": [
+            "short_change_pct (short_interest): score=14, value=32.7%",
+            "short_pct_of_float (short_interest): score=46, value=4.6%",
+            "held_pct_insiders (institutional_positioning): score=51, value=0.1%"
+        ]
+    },
+    "news_sentiment_raw_metrics": {
+        "sector": null,
+        "industry": null,
+        "market_cap_usd": null,
+        "current_price": null,
+        "earnings": {
+            "beat_count_4q": null,
+            "miss_count_4q": null,
+            "total_quarters_4q": null,
+            "avg_surprise_magnitude_4q": null,
+            "eps_estimate_revision_90d": null,
+            "trailing_eps": null,
+            "forward_eps": null
+        },
+        "price_momentum": {
+            "return_1m": -0.059952337821948844,
+            "return_3m": -0.21312443612570595,
+            "return_6m": -0.1532629763096554
+        },
+        "insider_activity": {
+            "insider_purchases_count_90d": null,
+            "insider_sales_count_90d": null,
+            "insider_net_value_90d_usd": null
+        },
+        "data_quality_flags": [
+            "OTIS: failed to fetch .info (Too Many Requests. Rate limited. Try after a while.)",
+            "OTIS: sector classification unavailable",
+            "OTIS: earnings_dates fetch failed (['Earnings Date'])",
+            "OTIS: eps_revisions fetch failed (Too Many Requests. Rate limited. Try after a while.)",
+            "OTIS: insider_transactions fetch failed (Too Many Requests. Rate limited. Try after a while.)"
+        ]
+    },
+    "news_sentiment_raw_metrics_date": "2026-05-25",
+    "news_sentiment_score": null,
+    "news_sentiment_score_date": "2026-05-25",
+    "news_sentiment_subscores": {
+        "earnings_surprise_revisions": null,
+        "price_momentum": 24.852195396108925,
+        "insider_activity": null
+    },
+    "news_sentiment_drivers": {
+        "strongest": [
+            "return_1m (price_momentum): score=40, value=-6.0%",
+            "return_6m (price_momentum): score=24, value=-15.3%",
+            "return_3m (price_momentum): score=14, value=-21.3%"
+        ],
+        "weakest": [
+            "return_3m (price_momentum): score=14, value=-21.3%",
+            "return_6m (price_momentum): score=24, value=-15.3%",
+            "return_1m (price_momentum): score=40, value=-6.0%"
+        ]
+    },
+    "composite_score": 53.28225708374495,
+    "composite_score_date": "2026-05-25",
+    "composite_rank": 592,
+    "composite_metadata": {
+        "scores_used": [
+            "financial",
+            "professional"
+        ],
+        "scores_imputed": [
+            "news_sentiment"
+        ],
+        "imputed_values": {
+            "news_sentiment": 50.82789772824616
+        },
+        "imputation_r_squared": 0.031937368103860275,
+        "weights_applied": {
+            "financial": 50,
+            "professional": 30,
+            "news_sentiment": 20
+        }
+    }
+}

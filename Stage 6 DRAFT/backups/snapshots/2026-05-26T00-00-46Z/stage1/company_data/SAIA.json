@@ -1,0 +1,202 @@
+{
+    "ticker": "SAIA",
+    "company_name": "Saia",
+    "universe_added_date": "2026-05-18",
+    "financial_raw_metrics": {
+        "sector": "Industrials",
+        "industry": "Trucking",
+        "market_cap_usd": 12136595456,
+        "profitability": {
+            "gross_margin_ttm": 0.23625,
+            "operating_margin_ttm": 0.08286,
+            "net_margin_ttm": 0.07842,
+            "operating_margin_trend_3yr": -0.05961370368509268
+        },
+        "returns_on_capital": {
+            "roe_ttm": 0.10231,
+            "roa_ttm": 0.06068,
+            "roic_ttm": null
+        },
+        "cash_flow": {
+            "fcf_margin_ttm": 0.010640653792442384,
+            "fcf_to_net_income_ttm": 0.1356881746584394,
+            "ocf_cagr_3yr": 0.07945385530393789
+        },
+        "balance_sheet": {
+            "debt_to_equity": 0.09971000000000001,
+            "net_debt_to_ebitda": 0.37864652289863754,
+            "current_ratio": 1.52,
+            "interest_coverage": 21.517453174410118,
+            "total_debt_usd": 261859008,
+            "total_cash_usd": 39177000
+        },
+        "growth": {
+            "revenue_growth_1yr": 0.024,
+            "revenue_cagr_3yr": 0.050230710323726724,
+            "eps_growth_1yr": 0.0,
+            "eps_cagr_3yr": -0.10640635977764878,
+            "fcf_cagr_3yr": -0.36269028816428883
+        },
+        "valuation": {
+            "pe_trailing": 47.873035,
+            "pe_forward": 32.145786,
+            "ps_ratio": 3.7309654,
+            "pb_ratio": 4.6210804,
+            "ev_ebitda": 21.016,
+            "peg_ratio": 2.4803,
+            "fcf_yield": 0.0028519839954695117
+        },
+        "data_quality_flags": [
+            "SAIA: eps_cagr_3yr approximated by net income CAGR (share count changes not adjusted)"
+        ]
+    },
+    "financial_raw_metrics_date": "2026-05-25",
+    "financial_score": 40.77933731336444,
+    "financial_score_date": "2026-05-25",
+    "financial_subscores": {
+        "profitability": 33.321908466184965,
+        "returns_on_capital": 46.07291541100856,
+        "cash_flow_quality": 22.83503860461503,
+        "balance_sheet": 90.58127687787393,
+        "growth": 25.914559968815215,
+        "valuation": 26.67160813486742
+    },
+    "financial_drivers": {
+        "strongest": [
+            "interest_coverage (balance_sheet): score=100, value=21.52",
+            "net_debt_to_ebitda (balance_sheet): score=95, value=37.9%",
+            "debt_to_equity (balance_sheet): score=94, value=10.0%"
+        ],
+        "weakest": [
+            "fcf_cagr_3yr (growth): score=0, value=-36.3%",
+            "eps_cagr_3yr (growth): score=9, value=-10.6%",
+            "pe_trailing (valuation): score=13, value=47.87"
+        ]
+    },
+    "professional_raw_metrics": {
+        "sector": "Industrials",
+        "industry": "Trucking",
+        "market_cap_usd": 12136595456,
+        "current_price": 456.23,
+        "analyst": {
+            "recommendation_mean": 2.45,
+            "recommendation_key": "buy",
+            "target_mean_price": 444.55,
+            "target_median_price": 457.5,
+            "target_high_price": 550.0,
+            "target_low_price": 265.0,
+            "upside_to_target": -0.02560112224097496,
+            "target_dispersion": 0.6410977392869194,
+            "num_analysts": 20
+        },
+        "rating_momentum": {
+            "upgrades_12m": 3,
+            "downgrades_12m": 4,
+            "total_actions_12m": 62
+        },
+        "institutional": {
+            "held_pct_institutions": 0.010794999999999999,
+            "held_pct_insiders": 0.00183
+        },
+        "short_interest": {
+            "short_pct_of_float": 0.044899996,
+            "short_ratio": 2.39,
+            "short_change_pct": -0.18891124068807272
+        },
+        "data_quality_flags": []
+    },
+    "professional_raw_metrics_date": "2026-05-25",
+    "professional_score": 44.06216702565149,
+    "professional_score_date": "2026-05-25",
+    "professional_subscores": {
+        "analyst_consensus": 41.6398877759025,
+        "rating_momentum": 51.483870967741936,
+        "institutional_positioning": 27.400433830450545,
+        "short_interest": 65.11420069691664
+    },
+    "professional_drivers": {
+        "strongest": [
+            "short_change_pct (short_interest): score=78, value=-18.9%",
+            "short_ratio (short_interest): score=76, value=2.39",
+            "recommendation_mean (analyst_consensus): score=57, value=2.45"
+        ],
+        "weakest": [
+            "held_pct_institutions (institutional_positioning): score=17, value=1.1%",
+            "upside_to_target (analyst_consensus): score=19, value=-2.6%",
+            "upgrades_12m (rating_momentum): score=51, value=3.00"
+        ]
+    },
+    "news_sentiment_raw_metrics": {
+        "sector": null,
+        "industry": null,
+        "market_cap_usd": null,
+        "current_price": null,
+        "earnings": {
+            "beat_count_4q": null,
+            "miss_count_4q": null,
+            "total_quarters_4q": null,
+            "avg_surprise_magnitude_4q": null,
+            "eps_estimate_revision_90d": null,
+            "trailing_eps": null,
+            "forward_eps": null
+        },
+        "price_momentum": {
+            "return_1m": 0.057409771524155224,
+            "return_3m": 0.16186618632718974,
+            "return_6m": 0.8214229430225427
+        },
+        "insider_activity": {
+            "insider_purchases_count_90d": null,
+            "insider_sales_count_90d": null,
+            "insider_net_value_90d_usd": null
+        },
+        "data_quality_flags": [
+            "SAIA: failed to fetch .info (Too Many Requests. Rate limited. Try after a while.)",
+            "SAIA: sector classification unavailable",
+            "SAIA: earnings_dates fetch failed (['Earnings Date'])",
+            "SAIA: eps_revisions fetch failed (Too Many Requests. Rate limited. Try after a while.)",
+            "SAIA: insider_transactions fetch failed (Too Many Requests. Rate limited. Try after a while.)"
+        ]
+    },
+    "news_sentiment_raw_metrics_date": "2026-05-25",
+    "news_sentiment_score": null,
+    "news_sentiment_score_date": "2026-05-25",
+    "news_sentiment_subscores": {
+        "earnings_surprise_revisions": null,
+        "price_momentum": 81.83426801592587,
+        "insider_activity": null
+    },
+    "news_sentiment_drivers": {
+        "strongest": [
+            "return_6m (price_momentum): score=100, value=82.1%",
+            "return_3m (price_momentum): score=77, value=16.2%",
+            "return_1m (price_momentum): score=60, value=5.7%"
+        ],
+        "weakest": [
+            "return_1m (price_momentum): score=60, value=5.7%",
+            "return_3m (price_momentum): score=77, value=16.2%",
+            "return_6m (price_momentum): score=100, value=82.1%"
+        ]
+    },
+    "composite_score": 44.711918036223494,
+    "composite_score_date": "2026-05-25",
+    "composite_rank": 917,
+    "composite_metadata": {
+        "scores_used": [
+            "financial",
+            "professional"
+        ],
+        "scores_imputed": [
+            "news_sentiment"
+        ],
+        "imputed_values": {
+            "news_sentiment": 55.51799635922918
+        },
+        "imputation_r_squared": 0.031937368103860275,
+        "weights_applied": {
+            "financial": 50,
+            "professional": 30,
+            "news_sentiment": 20
+        }
+    }
+}

@@ -1,0 +1,201 @@
+{
+    "ticker": "MUSA",
+    "company_name": "Murphy USA",
+    "universe_added_date": "2026-05-18",
+    "financial_raw_metrics": {
+        "sector": "Consumer Cyclical",
+        "industry": "Specialty Retail",
+        "market_cap_usd": 10024778752,
+        "profitability": {
+            "gross_margin_ttm": 0.08303001,
+            "operating_margin_ttm": 0.04816,
+            "net_margin_ttm": 0.03201,
+            "operating_margin_trend_3yr": -0.003143109899103276
+        },
+        "returns_on_capital": {
+            "roe_ttm": 0.80345,
+            "roa_ttm": 0.11418,
+            "roic_ttm": null
+        },
+        "cash_flow": {
+            "fcf_margin_ttm": 0.0225632428892539,
+            "fcf_to_net_income_ttm": 0.7049169849328942,
+            "ocf_cagr_3yr": -0.0646812436800035
+        },
+        "balance_sheet": {
+            "debt_to_equity": 4.12267,
+            "net_debt_to_ebitda": 2.278269847438692,
+            "current_ratio": 0.83,
+            "interest_coverage": 6.493237150586114,
+            "total_debt_usd": 2715599872,
+            "total_cash_usd": 118600000
+        },
+        "growth": {
+            "revenue_growth_1yr": 0.071,
+            "revenue_cagr_3yr": -0.061449606633966036,
+            "eps_growth_1yr": 1.768,
+            "eps_cagr_3yr": -0.11236626763880475,
+            "fcf_cagr_3yr": -0.1842015997486055
+        },
+        "valuation": {
+            "pe_trailing": 18.86479,
+            "pe_forward": 18.571161,
+            "ps_ratio": 0.5795139,
+            "pb_ratio": 15.219001,
+            "ev_ebitda": 11.073,
+            "peg_ratio": 1.39,
+            "fcf_yield": 0.03893477568491279
+        },
+        "data_quality_flags": [
+            "MUSA: eps_cagr_3yr approximated by net income CAGR (share count changes not adjusted)"
+        ]
+    },
+    "financial_raw_metrics_date": "2026-05-25",
+    "financial_score": 40.69520479839186,
+    "financial_score_date": "2026-05-25",
+    "financial_subscores": {
+        "profitability": 17.08333220850057,
+        "returns_on_capital": 62.48828657788871,
+        "cash_flow_quality": 36.05292629093991,
+        "balance_sheet": 44.09542533343005,
+        "growth": 24.264834916019808,
+        "valuation": 60.79268706703692
+    },
+    "financial_drivers": {
+        "strongest": [
+            "eps_growth_1yr (growth): score=100, value=1.77",
+            "interest_coverage (balance_sheet): score=77, value=6.49",
+            "net_debt_to_ebitda (balance_sheet): score=64, value=2.28"
+        ],
+        "weakest": [
+            "gross_margin_ttm (profitability): score=2, value=8.3%",
+            "fcf_cagr_3yr (growth): score=7, value=-18.4%",
+            "revenue_cagr_3yr (growth): score=8, value=-6.1%"
+        ]
+    },
+    "professional_raw_metrics": {
+        "sector": "Consumer Cyclical",
+        "industry": "Specialty Retail",
+        "market_cap_usd": 10024778752,
+        "current_price": 542.74,
+        "analyst": {
+            "recommendation_mean": 2.5,
+            "recommendation_key": "buy",
+            "target_mean_price": 558.0,
+            "target_median_price": 600.0,
+            "target_high_price": 655.0,
+            "target_low_price": 380.0,
+            "upside_to_target": 0.028116593580720033,
+            "target_dispersion": 0.492831541218638,
+            "num_analysts": 9
+        },
+        "rating_momentum": {
+            "upgrades_12m": 0,
+            "downgrades_12m": 1,
+            "total_actions_12m": 4
+        },
+        "institutional": {
+            "held_pct_institutions": 0.89105004,
+            "held_pct_insiders": 0.09822
+        },
+        "short_interest": {
+            "short_pct_of_float": 0.053000003,
+            "short_ratio": 2.59,
+            "short_change_pct": -0.23289937708584862
+        },
+        "data_quality_flags": []
+    },
+    "professional_raw_metrics_date": "2026-05-25",
+    "professional_score": 54.749232861639705,
+    "professional_score_date": "2026-05-25",
+    "professional_subscores": {
+        "analyst_consensus": 46.3739912296864,
+        "rating_momentum": 35.0,
+        "institutional_positioning": 77.6575141950295,
+        "short_interest": 69.0263825499472
+    },
+    "professional_drivers": {
+        "strongest": [
+            "held_pct_insiders (institutional_positioning): score=90, value=9.8%",
+            "short_change_pct (short_interest): score=82, value=-23.3%",
+            "short_ratio (short_interest): score=74, value=2.59"
+        ],
+        "weakest": [
+            "upside_to_target (analyst_consensus): score=33, value=2.8%",
+            "upgrades_12m (rating_momentum): score=35, value=0.00",
+            "downgrades_12m (rating_momentum): score=35, value=1.00"
+        ]
+    },
+    "news_sentiment_raw_metrics": {
+        "sector": null,
+        "industry": null,
+        "market_cap_usd": null,
+        "current_price": null,
+        "earnings": {
+            "beat_count_4q": null,
+            "miss_count_4q": null,
+            "total_quarters_4q": null,
+            "avg_surprise_magnitude_4q": null,
+            "eps_estimate_revision_90d": null,
+            "trailing_eps": null,
+            "forward_eps": null
+        },
+        "price_momentum": {
+            "return_1m": 0.04536364033926567,
+            "return_3m": 0.3737493395623036,
+            "return_6m": 0.4287468837426323
+        },
+        "insider_activity": {
+            "insider_purchases_count_90d": null,
+            "insider_sales_count_90d": null,
+            "insider_net_value_90d_usd": null
+        },
+        "data_quality_flags": [
+            "MUSA: failed to fetch .info (Too Many Requests. Rate limited. Try after a while.)",
+            "MUSA: sector classification unavailable",
+            "MUSA: earnings_dates fetch failed (['Earnings Date'])",
+            "MUSA: eps_revisions fetch failed (Too Many Requests. Rate limited. Try after a while.)"
+        ]
+    },
+    "news_sentiment_raw_metrics_date": "2026-05-25",
+    "news_sentiment_score": null,
+    "news_sentiment_score_date": "2026-05-25",
+    "news_sentiment_subscores": {
+        "earnings_surprise_revisions": null,
+        "price_momentum": 89.39015168080275,
+        "insider_activity": null
+    },
+    "news_sentiment_drivers": {
+        "strongest": [
+            "return_6m (price_momentum): score=100, value=42.9%",
+            "return_3m (price_momentum): score=100, value=37.4%",
+            "return_1m (price_momentum): score=58, value=4.5%"
+        ],
+        "weakest": [
+            "return_1m (price_momentum): score=58, value=4.5%",
+            "return_3m (price_momentum): score=100, value=37.4%",
+            "return_6m (price_momentum): score=100, value=42.9%"
+        ]
+    },
+    "composite_score": 47.42131811686164,
+    "composite_score_date": "2026-05-25",
+    "composite_rank": 847,
+    "composite_metadata": {
+        "scores_used": [
+            "financial",
+            "professional"
+        ],
+        "scores_imputed": [
+            "news_sentiment"
+        ],
+        "imputed_values": {
+            "news_sentiment": 53.24472929586898
+        },
+        "imputation_r_squared": 0.031937368103860275,
+        "weights_applied": {
+            "financial": 50,
+            "professional": 30,
+            "news_sentiment": 20
+        }
+    }
+}

@@ -1,17 +1,17 @@
 {
   "ticker": "RMD",
-  "generated_at": "2026-05-22T14:47:09.296103+00:00",
-  "snapshot_id": "2026-05-22T14-47-06Z",
+  "generated_at": "2026-05-26T00:00:48.131628+00:00",
+  "snapshot_id": "2026-05-26T00-00-46Z",
   "company_name": "RESMED (RMD)",
   "stage1_scores": {
-    "financial_score": 85.19518956742719,
+    "financial_score": 85.24252824528497,
     "financial_subscores": {
       "profitability": 88.48512520834787,
       "returns_on_capital": 85.76813818217336,
       "cash_flow_quality": 94.25787459022526,
       "balance_sheet": 97.3693725490196,
       "growth": 80.66176343970258,
-      "valuation": 63.34123534987217
+      "valuation": 63.65682653559074
     },
     "financial_drivers": {
       "strongest": [
@@ -20,54 +20,62 @@
         "ocf_cagr_3yr (cash_flow_quality): score=100, value=70.9%"
       ],
       "weakest": [
-        "ev_ebitda (valuation): score=57, value=13.98",
-        "pe_trailing (valuation): score=60, value=20.15",
+        "ev_ebitda (valuation): score=57, value=13.85",
+        "pe_trailing (valuation): score=60, value=20.08",
         "eps_growth_1yr (growth): score=61, value=10.5%"
       ]
     },
-    "professional_score": null,
+    "professional_score": 61.51456883542477,
     "professional_subscores": {
-      "analyst_consensus": null,
-      "rating_momentum": 50.0,
-      "institutional_positioning": null,
-      "short_interest": null
+      "analyst_consensus": 78.48673764960347,
+      "rating_momentum": 52.5,
+      "institutional_positioning": 68.27704308648914,
+      "short_interest": 25.666332576275153
     },
     "professional_drivers": {
-      "strongest": [],
-      "weakest": []
+      "strongest": [
+        "upside_to_target (analyst_consensus): score=90, value=30.1%",
+        "held_pct_institutions (institutional_positioning): score=74, value=69.9%",
+        "recommendation_mean (analyst_consensus): score=71, value=2.11"
+      ],
+      "weakest": [
+        "short_ratio (short_interest): score=17, value=11.67",
+        "short_pct_of_float (short_interest): score=23, value=9.8%",
+        "short_change_pct (short_interest): score=46, value=3.4%"
+      ]
     },
-    "news_sentiment_score": 28.866847798962915,
+    "news_sentiment_score": null,
     "news_sentiment_subscores": {
       "earnings_surprise_revisions": null,
-      "price_momentum": 27.20444262619518,
-      "insider_activity": 32.19165814449839
+      "price_momentum": 27.149324131983946,
+      "insider_activity": null
     },
     "news_sentiment_drivers": {
       "strongest": [
-        "net_insider_value_pct_mcap_90d (insider_activity): score=46, value=-0.0%",
-        "return_1m (price_momentum): score=41, value=-5.3%",
-        "return_6m (price_momentum): score=26, value=-14.2%"
+        "return_1m (price_momentum): score=40, value=-6.0%",
+        "return_6m (price_momentum): score=26, value=-14.3%",
+        "return_3m (price_momentum): score=19, value=-18.6%"
       ],
       "weakest": [
-        "insider_count_ratio_90d (insider_activity): score=0, value=-1.00",
-        "return_3m (price_momentum): score=18, value=-19.0%",
-        "return_6m (price_momentum): score=26, value=-14.2%"
+        "return_3m (price_momentum): score=19, value=-18.6%",
+        "return_6m (price_momentum): score=26, value=-14.3%",
+        "return_1m (price_momentum): score=40, value=-6.0%"
       ]
     },
-    "composite_score": 66.8503270784095,
-    "composite_rank": 22,
+    "composite_score": 70.40271267411295,
+    "composite_rank": 11,
     "composite_metadata": {
       "scores_used": [
         "financial",
-        "news_sentiment"
-      ],
-      "scores_imputed": [
         "professional"
       ],
+      "scores_imputed": [
+        "news_sentiment"
+      ],
       "imputed_values": {
-        "professional": 61.597875783011084
+        "news_sentiment": 46.63538950421511
       },
-      "imputation_r_squared": 0.04516719672877956,
+      "imputation_r_squared": 0.031937368103860275,
       "weights_applied": {
         "financial": 50,
         "professional": 30,
@@ -312,42 +320,34 @@
     "downside_return_12m": -0.29179824372780006
   },
   "stage4_candidate_summary": {
-    "summary": "ResMed is the dominant global player in sleep-disordered breathing therapy, manufacturing CPAP and BiPAP flow generators alongside higher-margin disposable masks while layering on a cloud-based patient-management ecosystem and residential care software. The central investment case today hinges on a tension between best-in-class current execution—operating margins near 35%, gross margins approaching 63%, and more than $600 million in annual share repurchases funded by free cash flow conversion exceeding 30%—and a wall of scheduled normalization risks that limit multiple expansion. The stock trades at roughly 17 times forward earnings, which sits at a slight premium to the median medtech peer rather than at the distressed cyclical valuation bulls sometimes claim, reflecting a market that still pays up for quality but has already repriced the name for Medicare reimbursement compression set to take effect in January 2027 and for unresolved uncertainty over whether GLP-1 obesity drugs complement or ultimately substitute for pneumatic therapy in obstructive sleep apnea.\n\nThe strongest bull drivers rest on three structural pillars. First, ResMed currently enjoys a near-monopoly in U.S. flow generators because Philips Respironics remains sidelined by an FDA consent decree with no credible path to re-entering the American market before the late 2020s, allowing ResMed to deepen its installed base and command pricing leverage with durable medical equipment providers. Second, the company has assembled a vertically integrated demand funnel—spanning the VirtuOx diagnostics platform, a consumer partnership with Oura, and the AirView cloud repository holding more than 23 billion nights of respiratory data—that converts rising sleep-apnea awareness into sticky, high-margin mask resupply revenue while raising switching costs for patients and providers alike. Third, capital allocation is exceptionally shareholder-friendly; the balance sheet carries roughly $800 million in net cash, and management is aggressively reducing share count by 2% to 3% annually, which alone can drive low-double-digit earnings-per-share growth even if top-line momentum moderates.\n\nThe bear risks are equally well-defined. The most immediate is the Medicare DMEPOS Competitive Bidding Program, scheduled to reopen in January 2026 and activate in January 2027; historical rounds cut CPAP reimbursement by approximately 35%, and consolidated mega-DMEs are likely to preemptively squeeze ResMed on contract renewals, creating a pricing headwind that could cap gross margins near 62% rather than allowing the structural expansion toward the mid-60s that bulls project. The second is the unresolved GLP-1 substitution debate: while aggregate volume data currently shows no collapse in new patients, tirzepatide is already FDA-approved for OSA and demonstrates 50–58% reductions in apnea severity; if primary care physicians increasingly prescribe pharmacotherapy as first-line therapy for mild-to-moderate obese patients without concurrent CPAP referral, ResMed’s new-patient funnel could structurally shrink over a multi-year horizon. A third material risk sits on the balance sheet in the form of $3.47 billion of goodwill and intangibles tied to Residential Care Software; stagnation in that segment could eventually force impairment and undermine the strategic diversification narrative.\n\nConviction sits at Medium because the evidence of current operational strength is undeniable—revenue is growing near 8% in constant currency, mask resupply is expanding at 12% to 14%, and returns on equity are roughly double the medtech median—yet the two debates that matter most for re-rating, GLP-1 complementarity and fiscal 2027 margin durability, remain genuinely unresolved. Moreover, the bull case for an irrational valuation discount is weakened by the reality that ResMed trades at a forward earnings premium to peers and at nearly twice the peer median price-to-sales ratio, implying the market still prices in scarcity rather than distress. Conviction would rise if management’s upcoming fiscal fourth-quarter guidance affirmed constant-currency revenue growth above 8% and gross margins sustained above 62.5% into fiscal 2027, or if real-world data proved GLP-1s were causally expanding new CPAP prescriptions rather than merely improving adherence among existing users. It would fall if revenue growth decelerated below 6% for two consecutive quarters or if gross margins contracted below 61.5%, proving that fiscal 2026 profitability was a cyclical peak driven by component costs and abnormal monopoly volumes rather than structural excellence.\n\nFrom a risk-reward perspective, the probability-weighted twelve-month expected return is approximately 15.5%, shaped by a 45% probability base case that delivers roughly 24% upside as stable execution and buyback-supported earnings growth grind the stock higher, offset by a 30% probability bear case that could cut the stock by nearly 30% if reimbursement and demand risks converge. The 25% bull case offers more than 50% upside should narrative and margins inflect simultaneously, but the highest-probability outcome is a quality compounder that appreciates toward $260 while struggling to re-rate much above 22 times forward earnings. A portfolio manager should therefore treat ResMed as a defensive growth holding with modest positive asymmetry: the downside is cushioned by a pristine net-cash balance sheet and relentless capital return, but the upside is capped by a hard valuation ceiling until the Medicare competitive bidding outcome and the GLP-1 debate are definitively resolved.\n\nWhat distinguishes ResMed from typical medtech peers is the unusual combination of a near-monopoly hardware position in the U.S.—a structural anomaly created by a competitor’s regulatory exile—and a software-and-data ecosystem that deepens patient adherence and provider lock-in. No peer in the medical supply universe matches its 35% operating margin, 25% return on equity, and 30%-plus free cash flow conversion while simultaneously shrinking its share count at the pace ResMed maintains. That profitability profile is unique, though it comes with the idiosyncratic risk of a scheduled reimbursement shock and a pharmacological disruption thesis that is more than hypothetical.",
+    "summary": "ResMed is the dominant global player in positive airway pressure (PAP) therapy for obstructive sleep apnea, entering the next twelve months from a position of genuine operational strength but facing a pivotal window defined by contested long-term demand trends and scheduled reimbursement normalization. The company currently generates industry-leading profitability—operating margins near 35% and return on equity above 25%, roughly double the medtech median—while sustaining mid-single-digit device growth and low-double-digit mask resupply momentum. Its investment case rests on a central tension: near-term execution is pristine, supported by $600 million in annual buybacks, a net cash balance sheet exceeding $800 million, and a U.S. competitive landscape still shaped by Philips Respironics’ absence, yet the forward path is crowded with the January 2027 Medicare DMEPOS competitive bidding relaunch and an unresolved market debate over whether GLP-1 obesity drugs complement or substitute for CPAP therapy. At roughly 17 times forward earnings, the stock is not priced for disruption-driven distress—its forward multiple actually sits at a slight premium to medtech peers—but neither is it priced for the historical scarcity premium bulls often cite. This makes ResMed a high-quality compounder with a visible earnings floor and a hard valuation ceiling, offering a probability-weighted twelve-month expected return near 15.5%.\n\nThe most compelling upside case rests on four pillars. First, GLP-1 therapies such as tirzepatide may ultimately prove to be a demand-generation tailwind rather than a replacement, expanding awareness of sleep-disordered breathing and improving adherence among existing PAP users; early real-world cohort data shows higher initiation and resupply rates among patients using both therapies. Second, ResMed’s gross margins—already above 62%—appear to be benefiting from operational mix shift toward higher-margin masks and manufacturing efficiencies rather than merely cyclical supply-chain recovery, with management targeting continued annual expansion. Third, the competitive vacuum left by Philips Respironics’ FDA consent decree is expected to persist through at least mid-2027, allowing ResMed to deepen its installed base, fortify its AirView data moat, and sustain pricing leverage with durable medical equipment providers. Fourth, the company’s capital-return intensity—funded by free cash flow margins above 30%—creates a structural bid under the shares and supports mid-teens EPS growth even if top-line momentum moderates.\n\nThe bear case is grounded in scheduled risks that could transform ResMed from a premium compounder into a reimbursement-exposed hardware stock. The foremost risk is that GLP-1 drugs, now FDA-approved specifically for OSA, increasingly capture newly diagnosed mild-to-moderate obese patients at the point of diagnosis, bypassing CPAP referrals and structurally shrinking the new-patient funnel despite strong resupply metrics among existing users. Simultaneously, the Medicare DMEPOS Competitive Bidding Program is set to reopen in January 2026 with contracts live in January 2027; historical rounds cut CPAP reimbursement by roughly 35%, and mega-DMEs are likely to preemptively squeeze device and mask pricing as they prepare for their own margin compression. A third risk is that Philips achieves regulatory milestones clarifying a late-2020s U.S. return, causing the market to price in restored duopoly dynamics before a single new device ships. Finally, the $3.47 billion goodwill balance tied to Residential Care Software represents a latent balance-sheet risk if the segment fails to reaccelerate and forces impairment.\n\nConviction is Medium rather than High because the evidence supports exceptional current execution but leaves the two most consequential forward debates genuinely unresolved. On one hand, volume data disproves an imminent collapse in CPAP demand, and the company’s cash-generation capacity is indisputable; on the other hand, it remains impossible to confirm whether FY2026 margins near 62% represent a sustainable plateau or a cyclical peak, and the GLP-1 impact at the diagnosis point—distinct from adherence among existing patients—will not be fully visible for several quarters. Conviction would rise toward High if ResMed sustains gross margins above 63% through FY2027 or publishes evidence that GLP-1 prescribing is causally expanding new PAP script-fill rates. It would fall toward Low if management guides FY2027 revenue below 7% constant currency or gross margins below 62% on the upcoming Q4 earnings call, or if two consecutive quarters show revenue growth below 6%.\n\nThe scenario distribution offers a modestly positive but capped risk/reward profile. With a 45% probability of the base case delivering roughly 24% returns, a 25% probability of bull-case upside near 53%, and a 30% probability of bear-case downside approaching 29%, the probability-weighted expected return sits around 15.5% over twelve months. This is not an extreme asymmetric setup; rather, it resembles a high-quality earnings compounder with a put provided by buybacks and a cap imposed by reimbursement and competitive normalization. The asymmetry is more favorable over a six-month horizon, where operational resilience may drive a grind higher toward $245 before the January 2027 Medicare headwinds become imminent. For portfolio construction, ResMed functions best as a defensive growth position with embedded optionality: the floor is supported by current earnings and capital returns, while the ceiling will not lift unless the GLP-1 narrative undergoes a durable rehabilitation.\n\nResMed stands apart from typical medtech candidates through a rare combination of near-monopoly U.S. market structure, software-integrated hardware economics, and extraordinary capital efficiency. While many peers face immediate competitive pricing pressure, ResMed operates in a de facto single-player U.S. flow-generator market with a vertically integrated ecosystem spanning diagnostics, devices, masks, and cloud-based patient-management platforms. Its 35% operating margin and 25% ROE are exceptional even among high-quality healthcare names, and its net cash position with 30%-plus free cash flow conversion provides strategic and financial flexibility that capital-intensive peers lack. The GLP-1 overhang is also a uniquely binary narrative variable: no other large-cap medtech name carries comparable investor anxiety about pharmacological obsolescence, meaning the stock could experience significant narrative-driven rerating if complementarity data hardens, even as the core business continues to compound.",
     "source_date": "2026-05-22",
     "error": null,
-    "analysis_date": "2026-05-22",
+    "analysis_date": "2026-05-25",
     "model": "kimi-k2.6"
   },
   "stage4_portfolio_status": {
     "in_current_target": true,
-    "status": "held",
-    "target_allocation_pct": 7.115,
-    "actual_allocation_pct": 7.196457433289487,
-    "drift_pct": 0.0814574332894864,
-    "entry_date_pipeline": "2026-05-19",
-    "entry_price_pipeline": 204.15,
-    "entry_price": 201.78
+    "status": "pending_buy",
+    "target_allocation_pct": 5.6037,
+    "actual_allocation_pct": 0.0,
+    "drift_pct": -5.6037,
+    "entry_date_pipeline": "2026-05-25",
+    "entry_price_pipeline": 208.05,
+    "entry_price": 208.05
   },
-  "live_position": {
-    "qty": 35.436614134,
-    "market_value": 7360.184756,
-    "cost_basis": 7150.4,
-    "current_price": 207.7,
-    "lastday_price": 208.98,
-    "unrealized_pl": 209.784756,
-    "unrealized_plpc": 0.02934
-  },
+  "live_position": null,
   "history": [
     {
       "ticker": "RMD",
-      "entry_date": "2026-05-19",
-      "entry_price": 204.15,
+      "entry_date": "2026-05-25",
+      "entry_price": 208.05,
       "exit_date": null,
       "exit_price": null,
       "holding_period_days": null,
       "sector": "Healthcare",
-      "allocation_pct_at_entry": 7.115,
-      "entry_archive_id": "portfolio_20260519T061450Z",
+      "allocation_pct_at_entry": 5.6037,
+      "entry_archive_id": "portfolio_20260525T232118Z",
       "exit_archive_id": null
     }
   ]

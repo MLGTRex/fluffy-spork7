@@ -1,0 +1,128 @@
+{
+    "track": "B",
+    "method": "Pure LLM (Kimi K2.6)",
+    "analysis_date": "2026-05-25",
+    "model": "kimi-k2.6",
+    "n_input_candidates": 35,
+    "constraints": {
+        "portfolio_size": 15,
+        "min_position_weight": 3.0,
+        "max_position_weight": 20.0,
+        "sector_cap": 35.0,
+        "base_return_filter": "base_return_12m > 0"
+    },
+    "constraint_violations": [],
+    "portfolio": {
+        "positions": [
+            {
+                "ticker": "NVDA",
+                "allocation_pct": 8.0,
+                "rationale": "AI infrastructure leader with exceptional near-term earnings visibility and a discounted forward multiple; supply-constrained demand provides a hard operational floor."
+            },
+            {
+                "ticker": "NOW",
+                "allocation_pct": 7.0,
+                "rationale": "Enterprise workflow platform with $27.7B backlog and a V-shaped margin recovery narrative; AI monetization via Now Assist offers a rerating lever distinct from infrastructure plays."
+            },
+            {
+                "ticker": "MSFT",
+                "allocation_pct": 6.0,
+                "rationale": "Defensive tech compounder anchored by $627B in commercial RPO; balances the portfolio’s growth tilt with durable enterprise cash flows despite near-term capex opacity."
+            },
+            {
+                "ticker": "APP",
+                "allocation_pct": 7.0,
+                "rationale": "Dominant AI-driven mobile ad platform generating mid-80% EBITDA margins and massive FCF; the regulatory overhang creates a discounted entry on a self-funding compounder."
+            },
+            {
+                "ticker": "META",
+                "allocation_pct": 7.0,
+                "rationale": "Core social advertising engine remains best-in-class with 41% operating margins; AI capex intensity is priced in, offering asymmetry if execution stabilizes or improves."
+            },
+            {
+                "ticker": "RDDT",
+                "allocation_pct": 6.0,
+                "rationale": "Profitable, capital-light audience platform transitioning from hypergrowth to durable compounding; 40% EBITDA margins and $2.8B net cash provide downside resilience."
+            },
+            {
+                "ticker": "RMD",
+                "allocation_pct": 7.0,
+                "rationale": "De facto monopoly in PAP therapy with GLP-1 complementarity data likely underappreciated; 17x forward earnings and 30%+ FCF conversion offer defensive growth."
+            },
+            {
+                "ticker": "HALO",
+                "allocation_pct": 6.0,
+                "rationale": "Royalty-model biotech with contractually protected ENHANZE cash flows, 60% EBITDA margins, and a visible path to deleveraging and buybacks through 2027."
+            },
+            {
+                "ticker": "DXCM",
+                "allocation_pct": 5.0,
+                "rationale": "CGM leader inflecting on operating leverage and international expansion; premium valuation is partially offset by rising margin guidance and CMS optionality."
+            },
+            {
+                "ticker": "ARDX",
+                "allocation_pct": 4.0,
+                "rationale": "High-conviction biotech execution story with IBSRELA scaling toward $420M and a 3.7x forward sales multiple that prices in execution risk rather than failure."
+            },
+            {
+                "ticker": "BKNG",
+                "allocation_pct": 10.0,
+                "rationale": "Deep-value travel compounder at 13x forward earnings with a 6% FCF yield; aggressive buybacks and a transient demand-shock narrative create a positively skewed setup."
+            },
+            {
+                "ticker": "ICE",
+                "allocation_pct": 8.0,
+                "rationale": "Exchange and data infrastructure trading at a discount to peers despite 57% operating margins; Treasury clearing and mortgage inflection provide idiosyncratic catalysts."
+            },
+            {
+                "ticker": "MA",
+                "allocation_pct": 6.0,
+                "rationale": "Payment network duopoly with best-in-class capital returns; acts as a defensive ballast with mechanical EPS growth from $12–15B annual buybacks."
+            },
+            {
+                "ticker": "VST",
+                "allocation_pct": 9.0,
+                "rationale": "Integrated power producer with 98% of 2026 generation hedged and scarce nuclear baseload; Cogentrix accretion and deleveraging visibility underpin a 25%+ expected return."
+            },
+            {
+                "ticker": "KTOS",
+                "allocation_pct": 4.0,
+                "rationale": "Defense prime-contractor inflection story with a record $2B backlog and bipartisan hypersonic tailwinds; sized modestly given negative near-term FCF and high valuation."
+            }
+        ],
+        "notable_rejections": [
+            {
+                "ticker": "AVGO",
+                "rationale": "Strong AI backlog and best-in-class margins, but excluded due to extreme correlation with NVDA (0.64) and an unresolved VMware renewal cliff that adds redundant binary risk."
+            },
+            {
+                "ticker": "ANET",
+                "rationale": "Supply-constrained hardware execution at 33x forward earnings offers poor asymmetry, and its factor profile overlaps significantly with semiconductor names already in the portfolio."
+            },
+            {
+                "ticker": "DECK",
+                "rationale": "Debt-free balance sheet and buyback support are attractive, but HOKA domestic deceleration and a 4.8% expected return offered insufficient upside alongside BKNG."
+            },
+            {
+                "ticker": "BIP",
+                "rationale": "Infrastructure compounder with a 28x forward P/E and negative trailing free cash flow yield; VST provided superior risk/reward and clearer earnings visibility in the utilities complex."
+            },
+            {
+                "ticker": "NEM",
+                "rationale": "Gold supermajor with a negative probability-weighted expected return; operational cost pressures and Nevada Gold Mines disputes outweighed the supportive macro gold backdrop."
+            },
+            {
+                "ticker": "CI",
+                "rationale": "Flat expected return with an undisclosed 19% client concentration in Pharmacy Benefit Services and an unresolved DOL fiduciary rule created an asymmetric downside we could not underwrite."
+            }
+        ],
+        "portfolio_thesis": "The portfolio targets double-digit probability-weighted returns by combining high-conviction growth compounders at reasonable valuations with defensive cash-flow engines and deliberate sector diversification. Technology allocations emphasize differentiated layers of the AI stack—semiconductor cyclicality (NVDA), enterprise software margin recovery (NOW), and infrastructure durability (MSFT)—while communication services balances regulatory optionality (APP) with advertising fortresses (META, RDDT). Healthcare blends biotech royalty extraction (HALO), medtech defensive growth (RMD, DXCM), and commercial-stage operating leverage (ARDX). Financials (ICE, MA) and utilities (VST) provide macro ballast through contracted cash flows and aggressive buybacks, and the single industrials position (KTOS) adds defense-policy idiosyncrasy without overconcentration. The result is a portfolio anchored by visible earnings, capital return, and durable moats, with controlled exposure to higher-beta inflection stories.",
+        "key_risks": [
+            "AI capital-allocation fatigue across MSFT, NVDA, and NOW could trigger synchronized multiple compression if 2027 capex guidance disappoints or cloud margins fail to inflect.",
+            "Regulatory enforcement or data-access restrictions could simultaneously impair APP, META, and RDDT's core advertising and data-licensing monetization models.",
+            "Scheduled Medicare reimbursement resets in 2027 threaten DXCM and RMD's U.S. pricing power, creating a concentrated healthcare-policy left tail.",
+            "VST's deleveraging and earnings narrative depends on Cogentrix approval and sustained ERCOT scarcity pricing; failure on either front would pressure the portfolio's largest utility exposure.",
+            "The portfolio maintains an elevated net credit-beta and housing-factor sensitivity through its technology and consumer cyclical allocations, leaving it vulnerable to a synchronized macro de-risking event."
+        ]
+    }
+}

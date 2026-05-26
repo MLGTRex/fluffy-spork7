@@ -1,0 +1,164 @@
+{
+    "track": "A",
+    "method": "Quant MILP with quadratic concentration penalty",
+    "constraints": {
+        "portfolio_size": 15,
+        "min_position_weight": 0.03,
+        "max_position_weight": 0.2,
+        "sector_cap": 0.35,
+        "base_return_filter": "base_return_12m > 0",
+        "lambda_concentration_penalty": 2.0
+    },
+    "n_input_candidates": 35,
+    "n_eligible": 26,
+    "n_filtered_out": 9,
+    "filtered_out": [
+        {
+            "ticker": "ALL",
+            "reason": "base_return_12m=-0.0440 <= 0"
+        },
+        {
+            "ticker": "AU",
+            "reason": "base_return_12m=-0.0746 <= 0"
+        },
+        {
+            "ticker": "ALAB",
+            "reason": "base_return_12m=-0.2110 <= 0"
+        },
+        {
+            "ticker": "DVN",
+            "reason": "base_return_12m=-0.1509 <= 0"
+        },
+        {
+            "ticker": "EVR",
+            "reason": "base_return_12m=-0.1766 <= 0"
+        },
+        {
+            "ticker": "FICO",
+            "reason": "base_return_12m=-0.1206 <= 0"
+        },
+        {
+            "ticker": "GRMN",
+            "reason": "base_return_12m=-0.0908 <= 0"
+        },
+        {
+            "ticker": "HWM",
+            "reason": "base_return_12m=-0.1113 <= 0"
+        },
+        {
+            "ticker": "SCCO",
+            "reason": "base_return_12m=-0.1317 <= 0"
+        }
+    ],
+    "status": "optimal",
+    "objective_value": 0.086686,
+    "positions": [
+        {
+            "ticker": "ARDX",
+            "allocation_pct": 14.864,
+            "sector": "Healthcare",
+            "expected_return_12m": 0.5256,
+            "base_return_12m": 0.4961
+        },
+        {
+            "ticker": "APP",
+            "allocation_pct": 9.1965,
+            "sector": "Communication Services",
+            "expected_return_12m": 0.2986,
+            "base_return_12m": 0.4407
+        },
+        {
+            "ticker": "RDDT",
+            "allocation_pct": 8.5746,
+            "sector": "Communication Services",
+            "expected_return_12m": 0.2737,
+            "base_return_12m": 0.3863
+        },
+        {
+            "ticker": "VST",
+            "allocation_pct": 8.0759,
+            "sector": "Utilities",
+            "expected_return_12m": 0.2544,
+            "base_return_12m": 0.2611
+        },
+        {
+            "ticker": "KTOS",
+            "allocation_pct": 7.3538,
+            "sector": "Industrials",
+            "expected_return_12m": 0.2255,
+            "base_return_12m": 0.189
+        },
+        {
+            "ticker": "BKNG",
+            "allocation_pct": 6.9304,
+            "sector": "Consumer Cyclical",
+            "expected_return_12m": 0.2086,
+            "base_return_12m": 0.1921
+        },
+        {
+            "ticker": "NOW",
+            "allocation_pct": 6.3197,
+            "sector": "Technology",
+            "expected_return_12m": 0.1837,
+            "base_return_12m": 0.2539
+        },
+        {
+            "ticker": "NVDA",
+            "allocation_pct": 6.3079,
+            "sector": "Technology",
+            "expected_return_12m": 0.1835,
+            "base_return_12m": 0.23
+        },
+        {
+            "ticker": "RMD",
+            "allocation_pct": 5.603,
+            "sector": "Healthcare",
+            "expected_return_12m": 0.1551,
+            "base_return_12m": 0.2441
+        },
+        {
+            "ticker": "ICE",
+            "allocation_pct": 5.0131,
+            "sector": "Financial Services",
+            "expected_return_12m": 0.1314,
+            "base_return_12m": 0.1882
+        },
+        {
+            "ticker": "META",
+            "allocation_pct": 5.0,
+            "sector": "Communication Services",
+            "expected_return_12m": 0.1307,
+            "base_return_12m": 0.1772
+        },
+        {
+            "ticker": "NFLX",
+            "allocation_pct": 4.5657,
+            "sector": "Communication Services",
+            "expected_return_12m": 0.1135,
+            "base_return_12m": 0.1758
+        },
+        {
+            "ticker": "HALO",
+            "allocation_pct": 4.4604,
+            "sector": "Healthcare",
+            "expected_return_12m": 0.1092,
+            "base_return_12m": 0.1092
+        },
+        {
+            "ticker": "AVGO",
+            "allocation_pct": 4.1314,
+            "sector": "Technology",
+            "expected_return_12m": 0.0963,
+            "base_return_12m": 0.1819
+        },
+        {
+            "ticker": "MSFT",
+            "allocation_pct": 3.6035,
+            "sector": "Technology",
+            "expected_return_12m": 0.0749,
+            "base_return_12m": 0.0738
+        }
+    ],
+    "error_message": null,
+    "analysis_date": "2026-05-25"
+}

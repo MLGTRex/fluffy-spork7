@@ -1,0 +1,202 @@
+{
+    "ticker": "ORCL",
+    "company_name": "Oracle Corporation",
+    "universe_added_date": "2026-05-18",
+    "financial_raw_metrics": {
+        "sector": "Technology",
+        "industry": "Software - Infrastructure",
+        "market_cap_usd": 552430927872,
+        "profitability": {
+            "gross_margin_ttm": 0.67084,
+            "operating_margin_ttm": 0.32676,
+            "net_margin_ttm": 0.25298,
+            "operating_margin_trend_3yr": -0.058496919861152186
+        },
+        "returns_on_capital": {
+            "roe_ttm": 0.57572,
+            "roa_ttm": 0.06335,
+            "roic_ttm": null
+        },
+        "cash_flow": {
+            "fcf_margin_ttm": -0.3480007901017384,
+            "fcf_to_net_income_ttm": -1.377470887037772,
+            "ocf_cagr_3yr": 0.29717801189264326
+        },
+        "balance_sheet": {
+            "debt_to_equity": 4.1526499999999995,
+            "net_debt_to_ebitda": 4.483546367820824,
+            "current_ratio": 1.347,
+            "interest_coverage": 4.957518166573505,
+            "total_debt_usd": 162164998144,
+            "total_cash_usd": 39132000256
+        },
+        "growth": {
+            "revenue_growth_1yr": 0.217,
+            "revenue_cagr_3yr": 0.10588419257288817,
+            "eps_growth_1yr": 0.245,
+            "eps_cagr_3yr": 0.22814577238811062,
+            "fcf_cagr_3yr": null
+        },
+        "valuation": {
+            "pe_trailing": 34.484737,
+            "pe_forward": 23.912825,
+            "ps_ratio": 8.621495,
+            "pb_ratio": 16.464941,
+            "ev_ebitda": 24.816,
+            "peg_ratio": 1.215,
+            "fcf_yield": -0.040364320581932796
+        },
+        "data_quality_flags": [
+            "ORCL: eps_cagr_3yr approximated by net income CAGR (share count changes not adjusted)"
+        ]
+    },
+    "financial_raw_metrics_date": "2026-05-25",
+    "financial_score": 46.77270723152988,
+    "financial_score_date": "2026-05-25",
+    "financial_subscores": {
+        "profitability": 53.39285862426118,
+        "returns_on_capital": 56.25431175729925,
+        "cash_flow_quality": 14.943560237852864,
+        "balance_sheet": 32.74663414058042,
+        "growth": 81.25665661707244,
+        "valuation": 36.67497003927953
+    },
+    "financial_drivers": {
+        "strongest": [
+            "ocf_cagr_3yr (cash_flow_quality): score=100, value=29.7%",
+            "eps_growth_1yr (growth): score=89, value=24.5%",
+            "revenue_growth_1yr (growth): score=89, value=21.7%"
+        ],
+        "weakest": [
+            "fcf_margin_ttm (cash_flow_quality): score=0, value=-34.8%",
+            "fcf_to_net_income_ttm (cash_flow_quality): score=0, value=-1.38",
+            "fcf_yield (valuation): score=2, value=-4.0%"
+        ]
+    },
+    "professional_raw_metrics": {
+        "sector": "Technology",
+        "industry": "Software - Infrastructure",
+        "market_cap_usd": 552430927872,
+        "current_price": 192.08,
+        "analyst": {
+            "recommendation_mean": 1.51163,
+            "recommendation_key": "buy",
+            "target_mean_price": 244.02513,
+            "target_median_price": 228.0,
+            "target_high_price": 400.0,
+            "target_low_price": 155.0,
+            "upside_to_target": 0.27043487088713025,
+            "target_dispersion": 1.0039949574045919,
+            "num_analysts": 39
+        },
+        "rating_momentum": {
+            "upgrades_12m": 8,
+            "downgrades_12m": 0,
+            "total_actions_12m": 139
+        },
+        "institutional": {
+            "held_pct_institutions": 0.43935,
+            "held_pct_insiders": 0.40545
+        },
+        "short_interest": {
+            "short_pct_of_float": 0.0183,
+            "short_ratio": 1.04,
+            "short_change_pct": 0.13292887107307422
+        },
+        "data_quality_flags": []
+    },
+    "professional_raw_metrics_date": "2026-05-25",
+    "professional_score": 70.64184050631995,
+    "professional_score_date": "2026-05-25",
+    "professional_subscores": {
+        "analyst_consensus": 87.81965139247535,
+        "rating_momentum": 56.12589928057554,
+        "institutional_positioning": 61.11648726388426,
+        "short_interest": 70.62910588559083
+    },
+    "professional_drivers": {
+        "strongest": [
+            "held_pct_insiders (institutional_positioning): score=100, value=40.5%",
+            "recommendation_mean (analyst_consensus): score=90, value=1.51",
+            "short_ratio (short_interest): score=90, value=1.04"
+        ],
+        "weakest": [
+            "short_change_pct (short_interest): score=33, value=13.3%",
+            "held_pct_institutions (institutional_positioning): score=44, value=43.9%",
+            "upgrades_12m (rating_momentum): score=56, value=8.00"
+        ]
+    },
+    "news_sentiment_raw_metrics": {
+        "sector": null,
+        "industry": null,
+        "market_cap_usd": null,
+        "current_price": null,
+        "earnings": {
+            "beat_count_4q": null,
+            "miss_count_4q": null,
+            "total_quarters_4q": null,
+            "avg_surprise_magnitude_4q": null,
+            "eps_estimate_revision_90d": null,
+            "trailing_eps": null,
+            "forward_eps": null
+        },
+        "price_momentum": {
+            "return_1m": 0.024426676432291666,
+            "return_3m": 0.2313202421253648,
+            "return_6m": -0.08272637936564912
+        },
+        "insider_activity": {
+            "insider_purchases_count_90d": null,
+            "insider_sales_count_90d": null,
+            "insider_net_value_90d_usd": null
+        },
+        "data_quality_flags": [
+            "ORCL: failed to fetch .info (Too Many Requests. Rate limited. Try after a while.)",
+            "ORCL: sector classification unavailable",
+            "ORCL: earnings_dates fetch failed (['Earnings Date'])",
+            "ORCL: eps_revisions fetch failed (Too Many Requests. Rate limited. Try after a while.)",
+            "ORCL: insider_transactions fetch failed (Too Many Requests. Rate limited. Try after a while.)"
+        ]
+    },
+    "news_sentiment_raw_metrics_date": "2026-05-25",
+    "news_sentiment_score": null,
+    "news_sentiment_score_date": "2026-05-25",
+    "news_sentiment_subscores": {
+        "earnings_surprise_revisions": null,
+        "price_momentum": 58.99636701761516,
+        "insider_activity": null
+    },
+    "news_sentiment_drivers": {
+        "strongest": [
+            "return_3m (price_momentum): score=89, value=23.1%",
+            "return_1m (price_momentum): score=54, value=2.4%",
+            "return_6m (price_momentum): score=36, value=-8.3%"
+        ],
+        "weakest": [
+            "return_6m (price_momentum): score=36, value=-8.3%",
+            "return_1m (price_momentum): score=54, value=2.4%",
+            "return_3m (price_momentum): score=89, value=23.1%"
+        ]
+    },
+    "composite_score": 54.40793576859477,
+    "composite_score_date": "2026-05-25",
+    "composite_rank": 523,
+    "composite_metadata": {
+        "scores_used": [
+            "financial",
+            "professional"
+        ],
+        "scores_imputed": [
+            "news_sentiment"
+        ],
+        "imputed_values": {
+            "news_sentiment": 49.14515000466924
+        },
+        "imputation_r_squared": 0.031937368103860275,
+        "weights_applied": {
+            "financial": 50,
+            "professional": 30,
+            "news_sentiment": 20
+        }
+    }
+}

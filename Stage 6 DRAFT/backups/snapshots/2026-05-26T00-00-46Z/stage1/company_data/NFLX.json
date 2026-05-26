@@ -1,0 +1,214 @@
+{
+    "ticker": "NFLX",
+    "company_name": "Netflix",
+    "universe_added_date": "2026-05-18",
+    "financial_raw_metrics": {
+        "sector": "Communication Services",
+        "industry": "Entertainment",
+        "market_cap_usd": 373076754432,
+        "profitability": {
+            "gross_margin_ttm": 0.49029,
+            "operating_margin_ttm": 0.32303002,
+            "net_margin_ttm": 0.28521,
+            "operating_margin_trend_3yr": 0.1167805741765191
+        },
+        "returns_on_capital": {
+            "roe_ttm": 0.48494998,
+            "roa_ttm": 0.15402001,
+            "roic_ttm": null
+        },
+        "cash_flow": {
+            "fcf_margin_ttm": 0.5543544706419217,
+            "fcf_to_net_income_ttm": 1.9436500034149564,
+            "ocf_cagr_3yr": 0.7109873636599002
+        },
+        "balance_sheet": {
+            "debt_to_equity": 0.5378799999999999,
+            "net_debt_to_ebitda": 0.3117018239938035,
+            "current_ratio": 1.407,
+            "interest_coverage": 17.384273222495526,
+            "total_debt_usd": 16742200320,
+            "total_cash_usd": 12288449536
+        },
+        "growth": {
+            "revenue_growth_1yr": 0.162,
+            "revenue_cagr_3yr": 0.12639718371360664,
+            "eps_growth_1yr": 0.864,
+            "eps_cagr_3yr": 0.34711854154857535,
+            "fcf_cagr_3yr": 0.8013844914210326
+        },
+        "valuation": {
+            "pe_trailing": 28.580645,
+            "pe_forward": 23.055685,
+            "ps_ratio": 7.956426,
+            "pb_ratio": 11.990797,
+            "ev_ebitda": 26.434,
+            "peg_ratio": 1.7403,
+            "fcf_yield": 0.06967380436118224
+        },
+        "data_quality_flags": [
+            "NFLX: eps_cagr_3yr approximated by net income CAGR (share count changes not adjusted)"
+        ]
+    },
+    "financial_raw_metrics_date": "2026-05-25",
+    "financial_score": 83.79360297547784,
+    "financial_score_date": "2026-05-25",
+    "financial_subscores": {
+        "profitability": 79.29144596962963,
+        "returns_on_capital": 100.0,
+        "cash_flow_quality": 90.92963331739688,
+        "balance_sheet": 87.86931076372021,
+        "growth": 89.04372728697147,
+        "valuation": 51.72608717559088
+    },
+    "financial_drivers": {
+        "strongest": [
+            "fcf_cagr_3yr (growth): score=100, value=80.1%",
+            "eps_growth_1yr (growth): score=100, value=86.4%",
+            "ocf_cagr_3yr (cash_flow_quality): score=100, value=71.1%"
+        ],
+        "weakest": [
+            "ev_ebitda (valuation): score=38, value=26.43",
+            "pe_trailing (valuation): score=39, value=28.58",
+            "peg_ratio (valuation): score=43, value=1.74"
+        ]
+    },
+    "professional_raw_metrics": {
+        "sector": "Communication Services",
+        "industry": "Entertainment",
+        "market_cap_usd": 373076754432,
+        "current_price": 88.6,
+        "analyst": {
+            "recommendation_mean": 1.68,
+            "recommendation_key": "buy",
+            "target_mean_price": 114.555,
+            "target_median_price": 115.0,
+            "target_high_price": 151.4,
+            "target_low_price": 80.0,
+            "upside_to_target": 0.2929458239277654,
+            "target_dispersion": 0.6232813932172319,
+            "num_analysts": 44
+        },
+        "rating_momentum": {
+            "upgrades_12m": 7,
+            "downgrades_12m": 4,
+            "total_actions_12m": 96
+        },
+        "institutional": {
+            "held_pct_institutions": 0.84994006,
+            "held_pct_insiders": 0.00567
+        },
+        "short_interest": {
+            "short_pct_of_float": 0.0227,
+            "short_ratio": 2.27,
+            "short_change_pct": 0.18291139839043719
+        },
+        "data_quality_flags": []
+    },
+    "professional_raw_metrics_date": "2026-05-25",
+    "professional_score": 69.53267086200168,
+    "professional_score_date": "2026-05-25",
+    "professional_subscores": {
+        "analyst_consensus": 86.28972159518436,
+        "rating_momentum": 54.46875,
+        "institutional_positioning": 64.00710095990371,
+        "short_interest": 64.74870375807492
+    },
+    "professional_drivers": {
+        "strongest": [
+            "upside_to_target (analyst_consensus): score=89, value=29.3%",
+            "recommendation_mean (analyst_consensus): score=85, value=1.68",
+            "short_ratio (short_interest): score=77, value=2.27"
+        ],
+        "weakest": [
+            "short_change_pct (short_interest): score=27, value=18.3%",
+            "upgrades_12m (rating_momentum): score=54, value=7.00",
+            "downgrades_12m (rating_momentum): score=54, value=4.00"
+        ]
+    },
+    "news_sentiment_raw_metrics": {
+        "sector": null,
+        "industry": null,
+        "market_cap_usd": null,
+        "current_price": null,
+        "earnings": {
+            "beat_count_4q": null,
+            "miss_count_4q": null,
+            "total_quarters_4q": null,
+            "avg_surprise_magnitude_4q": null,
+            "eps_estimate_revision_90d": null,
+            "trailing_eps": null,
+            "forward_eps": null
+        },
+        "price_momentum": {
+            "return_1m": -0.049764044358171444,
+            "return_3m": 0.15064933083274148,
+            "return_6m": -0.16154064531668377
+        },
+        "insider_activity": {
+            "insider_purchases_count_90d": null,
+            "insider_sales_count_90d": null,
+            "insider_net_value_90d_usd": null
+        },
+        "data_quality_flags": [
+            "NFLX: failed to fetch .info (Too Many Requests. Rate limited. Try after a while.)",
+            "NFLX: sector classification unavailable",
+            "NFLX: earnings_dates fetch failed (['Earnings Date'])",
+            "NFLX: eps_revisions fetch failed (Too Many Requests. Rate limited. Try after a while.)",
+            "NFLX: insider_transactions fetch failed (Too Many Requests. Rate limited. Try after a while.)"
+        ]
+    },
+    "news_sentiment_raw_metrics_date": "2026-05-25",
+    "news_sentiment_score": null,
+    "news_sentiment_score_date": "2026-05-25",
+    "news_sentiment_subscores": {
+        "earnings_surprise_revisions": null,
+        "price_momentum": 45.94499942920719,
+        "insider_activity": null
+    },
+    "news_sentiment_drivers": {
+        "strongest": [
+            "return_3m (price_momentum): score=75, value=15.1%",
+            "return_1m (price_momentum): score=42, value=-5.0%",
+            "return_6m (price_momentum): score=23, value=-16.2%"
+        ],
+        "weakest": [
+            "return_6m (price_momentum): score=23, value=-16.2%",
+            "return_1m (price_momentum): score=42, value=-5.0%",
+            "return_3m (price_momentum): score=75, value=15.1%"
+        ]
+    },
+    "composite_score": 71.7747009018443,
+    "composite_score_date": "2026-05-25",
+    "composite_rank": 7,
+    "composite_metadata": {
+        "scores_used": [
+            "financial",
+            "professional"
+        ],
+        "scores_imputed": [
+            "news_sentiment"
+        ],
+        "imputed_values": {
+            "news_sentiment": 45.09049077752434
+        },
+        "imputation_r_squared": 0.031937368103860275,
+        "weights_applied": {
+            "financial": 50,
+            "professional": 30,
+            "news_sentiment": 20
+        }
+    },
+    "disqualifier_flags": {
+        "bankruptcy_8k": {
+            "triggered": false
+        },
+        "material_restatement_10ka": {
+            "triggered": false
+        },
+        "check_status": "ok",
+        "error_message": null
+    },
+    "disqualifier_check_date": "2026-05-25",
+    "qualified": true
+}

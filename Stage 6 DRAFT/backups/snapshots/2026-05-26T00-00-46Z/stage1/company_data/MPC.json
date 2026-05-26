@@ -1,0 +1,202 @@
+{
+    "ticker": "MPC",
+    "company_name": "Marathon Petroleum",
+    "universe_added_date": "2026-05-18",
+    "financial_raw_metrics": {
+        "sector": "Energy",
+        "industry": "Oil & Gas Refining & Marketing",
+        "market_cap_usd": 74341662720,
+        "profitability": {
+            "gross_margin_ttm": 0.10739,
+            "operating_margin_ttm": 0.03556,
+            "net_margin_ttm": 0.03407,
+            "operating_margin_trend_3yr": -0.06343475249243571
+        },
+        "returns_on_capital": {
+            "roe_ttm": 0.27458,
+            "roa_ttm": 0.051459998,
+            "roic_ttm": null
+        },
+        "cash_flow": {
+            "fcf_margin_ttm": 0.0258834381964271,
+            "fcf_to_net_income_ttm": 0.7603176634920747,
+            "ocf_cagr_3yr": -0.20396163293065173
+        },
+        "balance_sheet": {
+            "debt_to_equity": 1.46523,
+            "net_debt_to_ebitda": 3.136576326133922,
+            "current_ratio": 1.176,
+            "interest_coverage": 5.968130311614731,
+            "total_debt_usd": 34325999616,
+            "total_cash_usd": 2151000064
+        },
+        "growth": {
+            "revenue_growth_1yr": 0.088,
+            "revenue_cagr_3yr": -0.09232974945771899,
+            "eps_growth_1yr": null,
+            "eps_cagr_3yr": -0.34672593811933494,
+            "fcf_cagr_3yr": -0.3007211254712685
+        },
+        "valuation": {
+            "pe_trailing": 16.75329,
+            "pe_forward": 11.376897,
+            "ps_ratio": 0.546847,
+            "pb_ratio": 4.453714,
+            "ev_ebitda": 11.034,
+            "peg_ratio": 0.9836,
+            "fcf_yield": 0.04733213951984097
+        },
+        "data_quality_flags": [
+            "MPC: eps_cagr_3yr approximated by net income CAGR (share count changes not adjusted)"
+        ]
+    },
+    "financial_raw_metrics_date": "2026-05-25",
+    "financial_score": 41.08395749740358,
+    "financial_score_date": "2026-05-25",
+    "financial_subscores": {
+        "profitability": 19.433202863323828,
+        "returns_on_capital": 58.478647794218816,
+        "cash_flow_quality": 36.10049747503316,
+        "balance_sheet": 54.79179962463968,
+        "growth": 10.7446833694854,
+        "valuation": 68.37360197014212
+    },
+    "financial_drivers": {
+        "strongest": [
+            "pe_forward (valuation): score=86, value=11.38",
+            "peg_ratio (valuation): score=76, value=98.4%",
+            "interest_coverage (balance_sheet): score=75, value=5.97"
+        ],
+        "weakest": [
+            "ocf_cagr_3yr (cash_flow_quality): score=0, value=-20.4%",
+            "eps_cagr_3yr (growth): score=0, value=-34.7%",
+            "fcf_cagr_3yr (growth): score=0, value=-30.1%"
+        ]
+    },
+    "professional_raw_metrics": {
+        "sector": "Energy",
+        "industry": "Oil & Gas Refining & Marketing",
+        "market_cap_usd": 74341662720,
+        "current_price": 254.65,
+        "analyst": {
+            "recommendation_mean": 2.31579,
+            "recommendation_key": "buy",
+            "target_mean_price": 258.77777,
+            "target_median_price": 257.0,
+            "target_high_price": 335.0,
+            "target_low_price": 186.0,
+            "upside_to_target": 0.016209581778912113,
+            "target_dispersion": 0.5757836154164248,
+            "num_analysts": 18
+        },
+        "rating_momentum": {
+            "upgrades_12m": 0,
+            "downgrades_12m": 2,
+            "total_actions_12m": 49
+        },
+        "institutional": {
+            "held_pct_institutions": 0.78071,
+            "held_pct_insiders": 0.00322
+        },
+        "short_interest": {
+            "short_pct_of_float": 0.0221,
+            "short_ratio": 2.52,
+            "short_change_pct": -0.1788996341325384
+        },
+        "data_quality_flags": []
+    },
+    "professional_raw_metrics_date": "2026-05-25",
+    "professional_score": 54.381572821237896,
+    "professional_score_date": "2026-05-25",
+    "professional_subscores": {
+        "analyst_consensus": 49.36618981346946,
+        "rating_momentum": 49.92857142857143,
+        "institutional_positioning": 55.38943874049133,
+        "short_interest": 71.82602562838599
+    },
+    "professional_drivers": {
+        "strongest": [
+            "short_change_pct (short_interest): score=77, value=-17.9%",
+            "short_ratio (short_interest): score=75, value=2.52",
+            "short_pct_of_float (short_interest): score=68, value=2.2%"
+        ],
+        "weakest": [
+            "upside_to_target (analyst_consensus): score=30, value=1.6%",
+            "upgrades_12m (rating_momentum): score=50, value=0.00",
+            "downgrades_12m (rating_momentum): score=50, value=2.00"
+        ]
+    },
+    "news_sentiment_raw_metrics": {
+        "sector": null,
+        "industry": null,
+        "market_cap_usd": null,
+        "current_price": null,
+        "earnings": {
+            "beat_count_4q": null,
+            "miss_count_4q": null,
+            "total_quarters_4q": null,
+            "avg_surprise_magnitude_4q": null,
+            "eps_estimate_revision_90d": null,
+            "trailing_eps": null,
+            "forward_eps": null
+        },
+        "price_momentum": {
+            "return_1m": 0.15108688657325262,
+            "return_3m": 0.3010732753593541,
+            "return_6m": 0.36745050402420465
+        },
+        "insider_activity": {
+            "insider_purchases_count_90d": null,
+            "insider_sales_count_90d": null,
+            "insider_net_value_90d_usd": null
+        },
+        "data_quality_flags": [
+            "MPC: failed to fetch .info (Too Many Requests. Rate limited. Try after a while.)",
+            "MPC: sector classification unavailable",
+            "MPC: earnings_dates fetch failed (['Earnings Date'])",
+            "MPC: eps_revisions fetch failed (Too Many Requests. Rate limited. Try after a while.)",
+            "MPC: insider_transactions fetch failed (Too Many Requests. Rate limited. Try after a while.)"
+        ]
+    },
+    "news_sentiment_raw_metrics_date": "2026-05-25",
+    "news_sentiment_score": null,
+    "news_sentiment_score_date": "2026-05-25",
+    "news_sentiment_subscores": {
+        "earnings_surprise_revisions": null,
+        "price_momentum": 93.79528694055219,
+        "insider_activity": null
+    },
+    "news_sentiment_drivers": {
+        "strongest": [
+            "return_6m (price_momentum): score=100, value=36.7%",
+            "return_3m (price_momentum): score=100, value=30.1%",
+            "return_1m (price_momentum): score=75, value=15.1%"
+        ],
+        "weakest": [
+            "return_1m (price_momentum): score=75, value=15.1%",
+            "return_3m (price_momentum): score=100, value=30.1%",
+            "return_6m (price_momentum): score=100, value=36.7%"
+        ]
+    },
+    "composite_score": 47.51209155644073,
+    "composite_score_date": "2026-05-25",
+    "composite_rank": 845,
+    "composite_metadata": {
+        "scores_used": [
+            "financial",
+            "professional"
+        ],
+        "scores_imputed": [
+            "news_sentiment"
+        ],
+        "imputed_values": {
+            "news_sentiment": 53.27820480683785
+        },
+        "imputation_r_squared": 0.031937368103860275,
+        "weights_applied": {
+            "financial": 50,
+            "professional": 30,
+            "news_sentiment": 20
+        }
+    }
+}

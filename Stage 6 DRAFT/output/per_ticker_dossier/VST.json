@@ -1,17 +1,17 @@
 {
   "ticker": "VST",
-  "generated_at": "2026-05-22T14:47:09.296103+00:00",
-  "snapshot_id": "2026-05-22T14-47-06Z",
+  "generated_at": "2026-05-26T00:00:48.131628+00:00",
+  "snapshot_id": "2026-05-26T00-00-46Z",
   "company_name": "VISTRA CORP (VST)",
   "stage1_scores": {
-    "financial_score": 61.30115514290903,
+    "financial_score": 61.7392791650918,
     "financial_subscores": {
-      "profitability": 54.070225614591614,
+      "profitability": 54.07022561459161,
       "returns_on_capital": 100.0,
       "cash_flow_quality": 34.518520198567195,
       "balance_sheet": 35.36295614369877,
       "growth": 75.99492081244712,
-      "valuation": 57.37100297855833
+      "valuation": 60.29182979311012
     },
     "financial_drivers": {
       "strongest": [
@@ -25,49 +25,57 @@
         "fcf_margin_ttm (cash_flow_quality): score=22, value=2.5%"
       ]
     },
-    "professional_score": null,
+    "professional_score": 68.77328826249908,
     "professional_subscores": {
-      "analyst_consensus": null,
-      "rating_momentum": 50.0,
-      "institutional_positioning": null,
-      "short_interest": null
+      "analyst_consensus": 94.41291533371728,
+      "rating_momentum": 52.5,
+      "institutional_positioning": 61.43239171731185,
+      "short_interest": 48.30446644246716
     },
     "professional_drivers": {
-      "strongest": [],
-      "weakest": []
+      "strongest": [
+        "upside_to_target (analyst_consensus): score=97, value=44.2%",
+        "recommendation_mean (analyst_consensus): score=93, value=1.37",
+        "short_ratio (short_interest): score=67, value=3.33"
+      ],
+      "weakest": [
+        "short_change_pct (short_interest): score=14, value=33.6%",
+        "short_pct_of_float (short_interest): score=51, value=4.3%",
+        "upgrades_12m (rating_momentum): score=52, value=1.00"
+      ]
     },
-    "news_sentiment_score": 31.559573996339843,
+    "news_sentiment_score": null,
     "news_sentiment_subscores": {
       "earnings_surprise_revisions": null,
-      "price_momentum": 30.11841246348606,
-      "insider_activity": 34.44189706204741
+      "price_momentum": 38.15678544701812,
+      "insider_activity": null
     },
     "news_sentiment_drivers": {
       "strongest": [
-        "net_insider_value_pct_mcap_90d (insider_activity): score=49, value=-0.0%",
-        "return_1m (price_momentum): score=44, value=-3.8%",
-        "return_3m (price_momentum): score=29, value=-12.5%"
+        "return_1m (price_momentum): score=51, value=0.3%",
+        "return_3m (price_momentum): score=35, value=-9.3%",
+        "return_6m (price_momentum): score=34, value=-9.8%"
       ],
       "weakest": [
-        "insider_count_ratio_90d (insider_activity): score=0, value=-1.00",
-        "return_6m (price_momentum): score=22, value=-16.6%",
-        "return_3m (price_momentum): score=29, value=-12.5%"
+        "return_6m (price_momentum): score=34, value=-9.8%",
+        "return_3m (price_momentum): score=35, value=-9.3%",
+        "return_1m (price_momentum): score=51, value=0.3%"
       ]
     },
-    "composite_score": 54.91730066320592,
-    "composite_rank": 447,
+    "composite_score": 61.06349324478232,
+    "composite_rank": 160,
     "composite_metadata": {
       "scores_used": [
         "financial",
-        "news_sentiment"
-      ],
-      "scores_imputed": [
         "professional"
       ],
+      "scores_imputed": [
+        "news_sentiment"
+      ],
       "imputed_values": {
-        "professional": 59.84936097494479
+        "news_sentiment": 47.80933591743346
       },
-      "imputation_r_squared": 0.04516719672877956,
+      "imputation_r_squared": 0.031937368103860275,
       "weights_applied": {
         "financial": 50,
         "professional": 30,
@@ -309,42 +317,34 @@
     "downside_return_12m": -0.4097129130724976
   },
   "stage4_candidate_summary": {
-    "summary": "Vistra Corp is an integrated independent power producer and retail electricity provider anchored by a fleet of natural gas and nuclear generation across ERCOT and PJM, coupled with the TXU Energy retail platform. The stock currently trades around $149, pricing in a transitional moment where near-term earnings are exceptionally visible—98% of 2026 generation is hedged and 89% of 2027 is covered—while the market debates whether the company is evolving into a contracted infrastructure compounder or reverting to a leveraged merchant cyclical. The central reason to own the name today is that this twelve-month window offers a de-risked earnings path backed by irreplaceable nuclear scarcity and surging data-center-driven load growth, with several identifiable catalysts that could close the gap toward a higher valuation multiple.\n\nThe bull case rests on three primary engines. First, the structural tightness in Texas and PJM power markets—driven by data-center interconnection queues, migration, and electrification—should sustain robust realized prices through the current hedge book and validate scarcity premiums for Vistra’s gas and nuclear fleet. Second, the pending $4 billion Cogentrix acquisition is expected to close in late 2026 with only minor regulatory conditions, adding modern gas capacity and stacking accretion into 2027 alongside ramping long-term nuclear power purchase agreements with Meta and Amazon Web Services. Third, sustained EBITDA growth and deleveraging could finally compel Moody’s to upgrade its B2 credit rating to investment grade, matching S&P and Fitch and removing a stubborn refinancing overhang that has compressed the valuation relative to the underlying asset quality.\n\nYet the bear case is anchored by equally concrete risks. The most significant is the 2028 re-hedging cliff: as current hedges roll off, ERCOT and PJM forward curves may already reflect structural price-shape erosion from utility-scale battery and solar additions that collapsed scarcity pricing in 2024, threatening to compress generation margins and force a cyclical-multiple re-rating. Compounding this, Vistra carries approximately $19.9 billion in long-term debt against minimal cash, faces near-term maturity walls in 2026 and 2027, and remains saddled with a Moody’s B2 split rating that could widen refinancing costs and stall deleveraging above 3.0x net debt-to-EBITDA. Finally, the Cogentrix deal could face material FERC or DOJ conditions that delay closing or raise the effective purchase price, while the retail segment’s Q1 2026 weather-driven collapse raises questions about whether competitive digital entrants are eroding TXU’s pricing power beyond temporary seasonal effects.\n\nConviction is Medium because the core operational narrative—demand growth, nuclear scarcity, and near-term hedge visibility—survived rigorous scrutiny and is structurally sound, but three high-materiality uncertainties prevent a stronger stance. The debate over whether battery additions have permanently flattened ERCOT evening peaks remains unresolved, the balance sheet is genuinely leveraged with tight liquidity, and the timeline for Moody’s convergence is unclear. Conviction would rise toward High with a clean Cogentrix close this summer, sustained real-time ERCOT scarcity pricing above $200/MWh validating structural market tightness, or a Moody’s upgrade that eliminates the split-rating discount. It would fall toward Low if management cuts 2026 guidance below the $6.8 billion floor, net leverage rises above 3.2x for consecutive quarters, or 2027 re-hedging curves soften by more than 15% from prior levels.\n\nFrom a risk-reward perspective, the probability-weighted twelve-month expected return is roughly +25%, with the base case assigning a 45% probability to modest upside toward $188, a 30% probability of a bull-case re-rating toward $268, and a 25% probability of a bear-case slide toward $88. The asymmetry is nuanced: the downside case implies a severe de-rating to a 7.0x–7.5x merchant multiple on a compressed earnings base, but the near-term hedge coverage makes an immediate collapse unlikely. Conversely, the bull case requires the market to award Vistra a high-teens forward earnings multiple as a contracted compounder, a leap that depends on balance-sheet de-risking and curve optimism that are not yet assured. The setup is best characterized as a high-conviction operational story with a medium-conviction valuation story—offering solid upside optionality but requiring execution on M&A and refinancing to avoid a cyclical trap.\n\nWhat distinguishes Vistra from typical utility or independent power peers is the rare combination of an integrated generation-retail model with genuinely irreplaceable competitive nuclear assets. Its roughly 6.4 GW nuclear fleet cannot be replicated on any relevant timeframe and sits at the center of data-center co-location opportunities, while the TXU retail platform provides a partial natural hedge to wholesale exposure. Unlike pure-play merchant generators, Vistra has demonstrated 97% fleet availability during stress events and is signing long-duration tech offtakes; unlike regulated utilities, it offers direct leverage to scarcity pricing and load growth without rate-case lag. The key differentiator is that Vistra is simultaneously one of the highest-quality operators in the IPP space and one of the most leveraged, creating a setup where the asset scarcity and earnings visibility are real, but the balance sheet demands respect.",
+    "summary": "Vistra Corp is the nation’s largest competitive integrated power producer and retailer, operating a 36+ GW fleet anchored by irreplaceable nuclear baseload in Texas and the Mid-Atlantic alongside natural gas and the TXU Energy retail platform. The stock, near $149 after a sharp drawdown from highs above $219, trades at roughly 13.6 times forward earnings—a premium to distressed merchant peers but a discount to infrastructure compounders—offering a near-term earnings window of unusual clarity: 98% of 2026 generation is hedged and 89% of 2027 is contracted, supporting management’s guidance for roughly $7.2 billion in 2026 adjusted EBITDA. The investment case rests on the tension between that operational visibility and the market’s lingering fear that Vistra remains a leveraged cyclical rather than a contracted compounder. With ERCOT and PJM load growth accelerating on data-center demand and migration, and with a pending $4 billion Cogentrix gas-fleet acquisition, the next twelve months are a proving ground for whether the company can de-risk its balance sheet and extend its earnings plateau beyond the current hedge horizon.\n\nThe bull case is powered by four reinforcing engines. First, physical scarcity pricing during summer 2026 could validate that battery and solar additions have not yet erased peak-demand premiums, allowing Vistra’s gas fleet to capture wide spark spreads and supporting favorable 2027–2028 re-hedging economics. Second, closure of the Cogentrix acquisition—expected late 2026—would add 5,500 MW of modern gas capacity and roughly $550 million of annual EBITDA, stacking onto the legacy fleet to push 2027 guidance toward or above $8 billion. Third, the company’s scarce nuclear campuses are increasingly valuable as data-center load anchors: the 20-year Meta power-purchase agreement at Comanche Peak is already ramping, and FERC-directed PJM co-location rules could unlock additional direct tie-ins with hyperscalers, converting irreplaceable baseload into long-duration contracted cash flows. Finally, a potential Moody’s upgrade from its outlier B2 rating to investment grade—joining S&P and Fitch at BBB-—would lower refinancing costs, ease the maturity-wall overhang, and validate the balance-sheet deleveraging narrative, potentially triggering a re-rating toward a high-teens forward multiple.\n\nAgainst this, the bear case hinges on a re-hedging cliff and balance-sheet fragility. The most consequential risk is that 2028 forward curves in ERCOT and PJM have structurally softened due to utility-scale battery and solar flattening evening scarcity peaks; if Vistra rolls its hedge book into materially lower prices, generation EBITDA could retreat toward $6.0–$6.5 billion and the stock would be repriced as a cyclical merchant at 7.0x–7.5x EV/EBITDA rather than a compounder. Cogentrix regulatory execution is a second critical vulnerability: objections from ISO-NE and PJM market monitors raise real FERC Section 203 and DOJ risk, and a block or material divestiture would remove the key 2027 earnings accretion pillar and force capital into less attractive deployment. Third, Vistra carries $19.9 billion of long-term debt against minimal cash, with $3.2 billion maturing in 2026 and $3.4 billion in 2027; if Moody’s refuses to converge to investment grade, refinancing spreads could widen and trap leverage above 3.2x, consuming free cash flow and forcing dilutive equity issuance. A fourth, more structural concern is that retail margins at TXU Energy may not recover fully from weather-driven Q1 weakness if digital-native competitors and virtual power plants compress pricing power.\n\nConviction is Medium because the central earnings path is well anchored by existing hedges and visible demand growth, yet the valuation re-rating required for outsized returns depends on contested secondary variables resolving favorably. The debate synthesis confirmed that nuclear scarcity and load growth are durable moats, but it also found the bear’s leverage critique to be load-bearing and only partially mitigated. Conviction would rise toward High if Cogentrix closes cleanly before year-end, summer scarcity pricing validates structurally tight reserve margins, and Moody’s upgrades within the window—signaling that the balance-sheet discount can close. It would fall toward Low if 2027 forward curves drop more than 15% from late-2025 levels, Cogentrix is materially conditioned, or net leverage fails to grind below 3.0x by year-end.\n\nFrom current levels, the probability-weighted twelve-month expected return is approximately 25%, reflecting a 45% base-case probability of roughly 26% upside as the stock grinds toward $188 on execution and modest multiple expansion, a 30% bull-case probability of nearly 80% upside if scarcity and contracting converge, and a 25% bear-case probability of roughly 41% downside if re-hedging compression and leverage fears dominate. The distribution is fat-tailed: the bear case is severe but not the modal outcome, while the base case offers solid but not spectacular asymmetry. Portfolio managers should view this as a decent-risk, decent-reward operational-execution bet where the near-term downside is cushioned by hedge coverage but the long-duration multiple is capped until deleveraging and re-hedging visibility improve.\n\nWhat distinguishes Vistra from both regulated utilities and pure-play renewable developers is its integrated generation-retail model and ownership of scarce, licensed nuclear capacity that cannot be replicated on any relevant timeline. While peers chase intermittent renewables, Vistra’s ~6.4 GW competitive nuclear fleet provides baseload scarcity value that is increasingly critical for data-center co-location, and its TXU retail platform offers a partial natural hedge against power-price volatility. At a time when ERCOT and PJM are struggling to match load growth with reliable supply, Vistra’s scale, hedge-book visibility, and nuclear site control give it a unique bargaining position with hyperscalers—provided it can execute on acquisitions and deleveraging without stumbling into the refinancing wall.",
     "source_date": "2026-05-22",
     "error": null,
-    "analysis_date": "2026-05-22",
+    "analysis_date": "2026-05-25",
     "model": "kimi-k2.6"
   },
   "stage4_portfolio_status": {
     "in_current_target": true,
-    "status": "held",
-    "target_allocation_pct": 7.7771,
-    "actual_allocation_pct": 8.038965037534547,
-    "drift_pct": 0.26186503753454726,
-    "entry_date_pipeline": "2026-05-19",
-    "entry_price_pipeline": 136.75,
-    "entry_price": 150.196812
+    "status": "pending_buy",
+    "target_allocation_pct": 8.0844,
+    "actual_allocation_pct": 0.0,
+    "drift_pct": -8.0844,
+    "entry_date_pipeline": "2026-05-25",
+    "entry_price_pipeline": 156.27,
+    "entry_price": 156.27
   },
-  "live_position": {
-    "qty": 52.656976655,
-    "market_value": 8221.860335,
-    "cost_basis": 7908.910023,
-    "current_price": 156.14,
-    "lastday_price": 149.08,
-    "unrealized_pl": 312.950312,
-    "unrealized_plpc": 0.03957
-  },
+  "live_position": null,
   "history": [
     {
       "ticker": "VST",
-      "entry_date": "2026-05-19",
-      "entry_price": 136.75,
+      "entry_date": "2026-05-25",
+      "entry_price": 156.27,
       "exit_date": null,
       "exit_price": null,
       "holding_period_days": null,
       "sector": "Utilities",
-      "allocation_pct_at_entry": 4.2857,
-      "entry_archive_id": "portfolio_20260519T061450Z",
+      "allocation_pct_at_entry": 8.0844,
+      "entry_archive_id": "portfolio_20260525T232118Z",
       "exit_archive_id": null
     }
   ]

@@ -1,0 +1,202 @@
+{
+    "ticker": "ZION",
+    "company_name": "Zions Bancorporation",
+    "universe_added_date": "2026-05-18",
+    "financial_raw_metrics": {
+        "sector": "Financial Services",
+        "industry": "Banks - Regional",
+        "market_cap_usd": 9137343488,
+        "profitability": {
+            "gross_margin_ttm": 0.0,
+            "operating_margin_ttm": 0.36098,
+            "net_margin_ttm": 0.28361,
+            "operating_margin_trend_3yr": null
+        },
+        "returns_on_capital": {
+            "roe_ttm": 0.14123,
+            "roa_ttm": 0.010930001,
+            "roic_ttm": null
+        },
+        "cash_flow": {
+            "fcf_margin_ttm": null,
+            "fcf_to_net_income_ttm": null,
+            "ocf_cagr_3yr": -0.09961663542465038
+        },
+        "balance_sheet": {
+            "debt_to_equity": null,
+            "net_debt_to_ebitda": null,
+            "current_ratio": null,
+            "interest_coverage": null,
+            "total_debt_usd": 2996000000,
+            "total_cash_usd": 3996999936
+        },
+        "growth": {
+            "revenue_growth_1yr": 0.102,
+            "revenue_cagr_3yr": 0.02405705699789351,
+            "eps_growth_1yr": 0.379,
+            "eps_cagr_3yr": -0.0029487823234305433,
+            "fcf_cagr_3yr": -0.09397052531862093
+        },
+        "valuation": {
+            "pe_trailing": 9.645963,
+            "pe_forward": 9.274701,
+            "ps_ratio": 2.6937923,
+            "pb_ratio": 1.2893049,
+            "ev_ebitda": null,
+            "peg_ratio": 3.3998,
+            "fcf_yield": null
+        },
+        "data_quality_flags": [
+            "ZION: eps_cagr_3yr approximated by net income CAGR (share count changes not adjusted)"
+        ]
+    },
+    "financial_raw_metrics_date": "2026-05-25",
+    "financial_score": 50.27981161770703,
+    "financial_score_date": "2026-05-25",
+    "financial_subscores": {
+        "profitability": 40.7256668173083,
+        "returns_on_capital": 55.63727178920341,
+        "cash_flow_quality": null,
+        "balance_sheet": null,
+        "growth": 37.73314019516265,
+        "valuation": 68.42206254545454
+    },
+    "financial_drivers": {
+        "strongest": [
+            "eps_growth_1yr (growth): score=95, value=37.9%",
+            "pe_forward (valuation): score=91, value=9.27",
+            "pe_trailing (valuation): score=91, value=9.65"
+        ],
+        "weakest": [
+            "peg_ratio (valuation): score=8, value=3.40",
+            "ocf_cagr_3yr (cash_flow_quality): score=15, value=-10.0%",
+            "fcf_cagr_3yr (growth): score=16, value=-9.4%"
+        ]
+    },
+    "professional_raw_metrics": {
+        "sector": "Financial Services",
+        "industry": "Banks - Regional",
+        "market_cap_usd": 9137343488,
+        "current_price": 62.12,
+        "analyst": {
+            "recommendation_mean": null,
+            "recommendation_key": "none",
+            "target_mean_price": 68.75,
+            "target_median_price": 67.5,
+            "target_high_price": 80.0,
+            "target_low_price": 63.0,
+            "upside_to_target": 0.1067289117836446,
+            "target_dispersion": 0.24727272727272728,
+            "num_analysts": 20
+        },
+        "rating_momentum": {
+            "upgrades_12m": 6,
+            "downgrades_12m": 1,
+            "total_actions_12m": 48
+        },
+        "institutional": {
+            "held_pct_institutions": 0.81071,
+            "held_pct_insiders": 0.01505
+        },
+        "short_interest": {
+            "short_pct_of_float": 0.0337,
+            "short_ratio": 2.73,
+            "short_change_pct": -0.15305534089043538
+        },
+        "data_quality_flags": []
+    },
+    "professional_raw_metrics_date": "2026-05-25",
+    "professional_score": 56.596783292393845,
+    "professional_score_date": "2026-05-25",
+    "professional_subscores": {
+        "analyst_consensus": 54.18222794591115,
+        "rating_momentum": 59.0625,
+        "institutional_positioning": 52.8840842592621,
+        "short_interest": 64.3090496433961
+    },
+    "professional_drivers": {
+        "strongest": [
+            "short_change_pct (short_interest): score=73, value=-15.3%",
+            "short_ratio (short_interest): score=73, value=2.73",
+            "held_pct_insiders (institutional_positioning): score=63, value=1.5%"
+        ],
+        "weakest": [
+            "held_pct_institutions (institutional_positioning): score=49, value=81.1%",
+            "upside_to_target (analyst_consensus): score=54, value=10.7%",
+            "short_pct_of_float (short_interest): score=56, value=3.4%"
+        ]
+    },
+    "news_sentiment_raw_metrics": {
+        "sector": null,
+        "industry": null,
+        "market_cap_usd": null,
+        "current_price": null,
+        "earnings": {
+            "beat_count_4q": null,
+            "miss_count_4q": null,
+            "total_quarters_4q": null,
+            "avg_surprise_magnitude_4q": null,
+            "eps_estimate_revision_90d": null,
+            "trailing_eps": null,
+            "forward_eps": null
+        },
+        "price_momentum": {
+            "return_1m": 0.01053076743355517,
+            "return_3m": 0.018091707112619138,
+            "return_6m": 0.24986577922461187
+        },
+        "insider_activity": {
+            "insider_purchases_count_90d": null,
+            "insider_sales_count_90d": null,
+            "insider_net_value_90d_usd": null
+        },
+        "data_quality_flags": [
+            "ZION: failed to fetch .info (Too Many Requests. Rate limited. Try after a while.)",
+            "ZION: sector classification unavailable",
+            "ZION: earnings_dates fetch failed (['Earnings Date'])",
+            "ZION: eps_revisions fetch failed (Too Many Requests. Rate limited. Try after a while.)",
+            "ZION: insider_transactions fetch failed (Too Many Requests. Rate limited. Try after a while.)"
+        ]
+    },
+    "news_sentiment_raw_metrics_date": "2026-05-25",
+    "news_sentiment_score": null,
+    "news_sentiment_score_date": "2026-05-25",
+    "news_sentiment_subscores": {
+        "earnings_surprise_revisions": null,
+        "price_momentum": 68.1518501729417,
+        "insider_activity": null
+    },
+    "news_sentiment_drivers": {
+        "strongest": [
+            "return_6m (price_momentum): score=92, value=25.0%",
+            "return_3m (price_momentum): score=53, value=1.8%",
+            "return_1m (price_momentum): score=52, value=1.1%"
+        ],
+        "weakest": [
+            "return_1m (price_momentum): score=52, value=1.1%",
+            "return_3m (price_momentum): score=53, value=1.8%",
+            "return_6m (price_momentum): score=92, value=25.0%"
+        ]
+    },
+    "composite_score": 52.4667332922825,
+    "composite_score_date": "2026-05-25",
+    "composite_rank": 647,
+    "composite_metadata": {
+        "scores_used": [
+            "financial",
+            "professional"
+        ],
+        "scores_imputed": [
+            "news_sentiment"
+        ],
+        "imputed_values": {
+            "news_sentiment": 51.73896247855414
+        },
+        "imputation_r_squared": 0.031937368103860275,
+        "weights_applied": {
+            "financial": 50,
+            "professional": 30,
+            "news_sentiment": 20
+        }
+    }
+}

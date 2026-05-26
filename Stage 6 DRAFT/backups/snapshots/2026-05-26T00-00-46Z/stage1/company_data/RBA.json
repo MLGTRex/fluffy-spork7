@@ -1,0 +1,202 @@
+{
+    "ticker": "RBA",
+    "company_name": "RB Global",
+    "universe_added_date": "2026-05-18",
+    "financial_raw_metrics": {
+        "sector": "Industrials",
+        "industry": "Specialty Business Services",
+        "market_cap_usd": 19509336064,
+        "profitability": {
+            "gross_margin_ttm": 0.4642,
+            "operating_margin_ttm": 0.17973,
+            "net_margin_ttm": 0.09551,
+            "operating_margin_trend_3yr": -0.023326667123705347
+        },
+        "returns_on_capital": {
+            "roe_ttm": 0.07576,
+            "roa_ttm": 0.040510003,
+            "roic_ttm": null
+        },
+        "cash_flow": {
+            "fcf_margin_ttm": 0.1444389053553915,
+            "fcf_to_net_income_ttm": 1.686741787571181,
+            "ocf_cagr_3yr": 0.2830717977129411
+        },
+        "balance_sheet": {
+            "debt_to_equity": 0.7277800000000001,
+            "net_debt_to_ebitda": 2.941607373406536,
+            "current_ratio": 1.138,
+            "interest_coverage": 3.7954070981210855,
+            "total_debt_usd": 4440399872,
+            "total_cash_usd": 667200000
+        },
+        "growth": {
+            "revenue_growth_1yr": 0.114,
+            "revenue_cagr_3yr": 0.38343886250488524,
+            "eps_growth_1yr": 0.2,
+            "eps_cagr_3yr": 0.10236056210364941,
+            "fcf_cagr_3yr": 0.15505977156695394
+        },
+        "valuation": {
+            "pe_trailing": 48.706974,
+            "pe_forward": 21.386835,
+            "ps_ratio": 4.1362257,
+            "pb_ratio": 3.4721487,
+            "ev_ebitda": 18.527,
+            "peg_ratio": 0.9537,
+            "fcf_yield": 0.03492046094060251
+        },
+        "data_quality_flags": [
+            "RBA: eps_cagr_3yr approximated by net income CAGR (share count changes not adjusted)"
+        ]
+    },
+    "financial_raw_metrics_date": "2026-05-25",
+    "financial_score": 58.41679361736533,
+    "financial_score_date": "2026-05-25",
+    "financial_subscores": {
+        "profitability": 56.59687157276801,
+        "returns_on_capital": 41.231629030078295,
+        "cash_flow_quality": 75.81678271612016,
+        "balance_sheet": 57.55760520898988,
+        "growth": 77.58115688485509,
+        "valuation": 48.05174516867531
+    },
+    "financial_drivers": {
+        "strongest": [
+            "ocf_cagr_3yr (cash_flow_quality): score=98, value=28.3%",
+            "revenue_cagr_3yr (growth): score=98, value=38.3%",
+            "debt_to_equity (balance_sheet): score=83, value=72.8%"
+        ],
+        "weakest": [
+            "pe_trailing (valuation): score=12, value=48.71",
+            "roa_ttm (returns_on_capital): score=32, value=4.1%",
+            "current_ratio (balance_sheet): score=41, value=1.14"
+        ]
+    },
+    "professional_raw_metrics": {
+        "sector": "Industrials",
+        "industry": "Specialty Business Services",
+        "market_cap_usd": 19509336064,
+        "current_price": 104.72,
+        "analyst": {
+            "recommendation_mean": 1.72727,
+            "recommendation_key": "buy",
+            "target_mean_price": 127.72727,
+            "target_median_price": 130.0,
+            "target_high_price": 150.0,
+            "target_low_price": 103.0,
+            "upside_to_target": 0.21970273109243704,
+            "target_dispersion": 0.36797153810615385,
+            "num_analysts": 11
+        },
+        "rating_momentum": {
+            "upgrades_12m": 1,
+            "downgrades_12m": 0,
+            "total_actions_12m": 11
+        },
+        "institutional": {
+            "held_pct_institutions": 0.011400701,
+            "held_pct_insiders": 0.00236
+        },
+        "short_interest": {
+            "short_pct_of_float": 0.0773,
+            "short_ratio": 10.02,
+            "short_change_pct": 0.03683588758502016
+        },
+        "data_quality_flags": []
+    },
+    "professional_raw_metrics_date": "2026-05-25",
+    "professional_score": 54.90398567320658,
+    "professional_score_date": "2026-05-25",
+    "professional_subscores": {
+        "analyst_consensus": 80.5559887394958,
+        "rating_momentum": 58.22727272727273,
+        "institutional_positioning": 27.579876120003426,
+        "short_interest": 35.05068268376002
+    },
+    "professional_drivers": {
+        "strongest": [
+            "recommendation_mean (analyst_consensus): score=83, value=1.73",
+            "upside_to_target (analyst_consensus): score=77, value=22.0%",
+            "total_actions_12m (rating_momentum): score=58, value=11.00"
+        ],
+        "weakest": [
+            "held_pct_institutions (institutional_positioning): score=17, value=1.1%",
+            "short_ratio (short_interest): score=20, value=10.02",
+            "short_pct_of_float (short_interest): score=40, value=7.7%"
+        ]
+    },
+    "news_sentiment_raw_metrics": {
+        "sector": null,
+        "industry": null,
+        "market_cap_usd": null,
+        "current_price": null,
+        "earnings": {
+            "beat_count_4q": null,
+            "miss_count_4q": null,
+            "total_quarters_4q": null,
+            "avg_surprise_magnitude_4q": null,
+            "eps_estimate_revision_90d": null,
+            "trailing_eps": null,
+            "forward_eps": null
+        },
+        "price_momentum": {
+            "return_1m": 0.02026502185720455,
+            "return_3m": 0.009933443485826058,
+            "return_6m": 0.09060617456566997
+        },
+        "insider_activity": {
+            "insider_purchases_count_90d": null,
+            "insider_sales_count_90d": null,
+            "insider_net_value_90d_usd": null
+        },
+        "data_quality_flags": [
+            "RBA: failed to fetch .info (Too Many Requests. Rate limited. Try after a while.)",
+            "RBA: sector classification unavailable",
+            "RBA: earnings_dates fetch failed (['Earnings Date'])",
+            "RBA: eps_revisions fetch failed (Too Many Requests. Rate limited. Try after a while.)",
+            "RBA: insider_transactions fetch failed (Too Many Requests. Rate limited. Try after a while.)"
+        ]
+    },
+    "news_sentiment_raw_metrics_date": "2026-05-25",
+    "news_sentiment_score": null,
+    "news_sentiment_score_date": "2026-05-25",
+    "news_sentiment_subscores": {
+        "earnings_surprise_revisions": null,
+        "price_momentum": 57.464238418434704,
+        "insider_activity": null
+    },
+    "news_sentiment_drivers": {
+        "strongest": [
+            "return_6m (price_momentum): score=65, value=9.1%",
+            "return_1m (price_momentum): score=53, value=2.0%",
+            "return_3m (price_momentum): score=52, value=1.0%"
+        ],
+        "weakest": [
+            "return_3m (price_momentum): score=52, value=1.0%",
+            "return_1m (price_momentum): score=53, value=2.0%",
+            "return_6m (price_momentum): score=65, value=9.1%"
+        ]
+    },
+    "composite_score": 55.91105557252545,
+    "composite_score_date": "2026-05-25",
+    "composite_rank": 423,
+    "composite_metadata": {
+        "scores_used": [
+            "financial",
+            "professional"
+        ],
+        "scores_imputed": [
+            "news_sentiment"
+        ],
+        "imputed_values": {
+            "news_sentiment": 51.15731530940408
+        },
+        "imputation_r_squared": 0.031937368103860275,
+        "weights_applied": {
+            "financial": 50,
+            "professional": 30,
+            "news_sentiment": 20
+        }
+    }
+}

@@ -1,0 +1,193 @@
+{
+    "ticker": "ALLE",
+    "company_name": "Allegion",
+    "universe_added_date": "2026-05-18",
+    "financial_raw_metrics": {
+        "sector": "Industrials",
+        "industry": "Security & Protection Services",
+        "market_cap_usd": 11208613888,
+        "profitability": {
+            "gross_margin_ttm": 0.4497,
+            "operating_margin_ttm": 0.18876,
+            "net_margin_ttm": 0.15237,
+            "operating_margin_trend_3yr": 0.03209646720487294
+        },
+        "returns_on_capital": {
+            "roe_ttm": 0.34179002,
+            "roa_ttm": 0.11034001,
+            "roic_ttm": null
+        },
+        "cash_flow": {
+            "fcf_margin_ttm": 0.11886571012084504,
+            "fcf_to_net_income_ttm": 0.7801207526650845,
+            "ocf_cagr_3yr": 0.19483127306079284
+        },
+        "balance_sheet": {
+            "debt_to_equity": 1.05863,
+            "net_debt_to_ebitda": 1.8954085414605184,
+            "current_ratio": 1.908,
+            "interest_coverage": 8.607920792079208,
+            "total_debt_usd": 2224399872,
+            "total_cash_usd": 308900000
+        },
+        "growth": {
+            "revenue_growth_1yr": 0.097,
+            "revenue_cagr_3yr": 0.07523170466176188,
+            "eps_growth_1yr": -0.07,
+            "eps_cagr_3yr": 0.12019895909934375,
+            "fcf_cagr_3yr": 0.20133063988641808
+        },
+        "valuation": {
+            "pe_trailing": 17.818304,
+            "pe_forward": 13.6649885,
+            "ps_ratio": 2.6950262,
+            "pb_ratio": 5.334342,
+            "ev_ebitda": 12.986,
+            "peg_ratio": 2.0052,
+            "fcf_yield": 0.0441055870904133
+        },
+        "data_quality_flags": [
+            "ALLE: eps_cagr_3yr approximated by net income CAGR (share count changes not adjusted)"
+        ]
+    },
+    "financial_raw_metrics_date": "2026-05-25",
+    "financial_score": 66.33559805326236,
+    "financial_score_date": "2026-05-25",
+    "financial_subscores": {
+        "profitability": 72.5259704577252,
+        "returns_on_capital": 58.37523160886548,
+        "cash_flow_quality": 67.88638879952136,
+        "balance_sheet": 76.46623476237527,
+        "growth": 62.90079147005116,
+        "valuation": 60.44896923434709
+    },
+    "financial_drivers": {
+        "strongest": [
+            "interest_coverage (balance_sheet): score=88, value=8.61",
+            "ocf_cagr_3yr (cash_flow_quality): score=86, value=19.5%",
+            "fcf_cagr_3yr (growth): score=85, value=20.1%"
+        ],
+        "weakest": [
+            "eps_growth_1yr (growth): score=23, value=-7.0%",
+            "peg_ratio (valuation): score=35, value=2.01",
+            "roe_ttm (returns_on_capital): score=48, value=34.2%"
+        ]
+    },
+    "professional_raw_metrics": {
+        "sector": "Industrials",
+        "industry": "Security & Protection Services",
+        "market_cap_usd": 11208613888,
+        "current_price": 130.43,
+        "analyst": {
+            "recommendation_mean": 2.46154,
+            "recommendation_key": "buy",
+            "target_mean_price": 165.91667,
+            "target_median_price": 165.0,
+            "target_high_price": 189.0,
+            "target_low_price": 150.0,
+            "upside_to_target": 0.27207444606302233,
+            "target_dispersion": 0.23505775519723243,
+            "num_analysts": 12
+        },
+        "rating_momentum": {
+            "upgrades_12m": 2,
+            "downgrades_12m": 1,
+            "total_actions_12m": 25
+        },
+        "institutional": {
+            "held_pct_institutions": 0.0101748,
+            "held_pct_insiders": 0.00245
+        },
+        "short_interest": {
+            "short_pct_of_float": 0.0416,
+            "short_ratio": 3.49,
+            "short_change_pct": 0.11408619466920737
+        },
+        "data_quality_flags": []
+    },
+    "professional_raw_metrics_date": "2026-05-25",
+    "professional_score": 52.56339128099941,
+    "professional_score_date": "2026-05-25",
+    "professional_subscores": {
+        "analyst_consensus": 68.0613364042015,
+        "rating_momentum": 55.02,
+        "institutional_positioning": 27.56550220250095,
+        "short_interest": 53.97031992602434
+    },
+    "professional_drivers": {
+        "strongest": [
+            "upside_to_target (analyst_consensus): score=85, value=27.2%",
+            "short_ratio (short_interest): score=65, value=3.49",
+            "recommendation_mean (analyst_consensus): score=57, value=2.46"
+        ],
+        "weakest": [
+            "held_pct_institutions (institutional_positioning): score=17, value=1.0%",
+            "short_change_pct (short_interest): score=36, value=11.4%",
+            "held_pct_insiders (institutional_positioning): score=52, value=0.2%"
+        ]
+    },
+    "news_sentiment_raw_metrics": {
+        "sector": "Industrials",
+        "industry": "Security & Protection Services",
+        "market_cap_usd": 11208613888,
+        "current_price": 130.43,
+        "earnings": {
+            "beat_count_4q": 2,
+            "miss_count_4q": 2,
+            "total_quarters_4q": 4,
+            "avg_surprise_magnitude_4q": -0.012303883316732999,
+            "eps_estimate_revision_90d": null,
+            "trailing_eps": 7.32,
+            "forward_eps": 9.54483
+        },
+        "price_momentum": {
+            "return_1m": -0.10004825369872725,
+            "return_3m": -0.1879692392255258,
+            "return_6m": -0.17890424962409854
+        },
+        "insider_activity": {
+            "insider_purchases_count_90d": 1,
+            "insider_sales_count_90d": 1,
+            "insider_net_value_90d_usd": -248425.0
+        },
+        "data_quality_flags": []
+    },
+    "news_sentiment_raw_metrics_date": "2026-05-25",
+    "news_sentiment_score": 38.18963258825935,
+    "news_sentiment_score_date": "2026-05-25",
+    "news_sentiment_subscores": {
+        "earnings_surprise_revisions": 47.72851384921853,
+        "price_momentum": 22.939500499457456,
+        "insider_activity": 49.612134243944794
+    },
+    "news_sentiment_drivers": {
+        "strongest": [
+            "insider_count_ratio_90d (insider_activity): score=50, value=0.00",
+            "beat_rate_4q (earnings_surprise_revisions): score=50, value=50.0%",
+            "net_insider_value_pct_mcap_90d (insider_activity): score=49, value=-0.0%"
+        ],
+        "weakest": [
+            "return_3m (price_momentum): score=19, value=-18.8%",
+            "return_6m (price_momentum): score=20, value=-17.9%",
+            "return_1m (price_momentum): score=33, value=-10.0%"
+        ]
+    },
+    "composite_score": 56.57474292858287,
+    "composite_score_date": "2026-05-25",
+    "composite_rank": 388,
+    "composite_metadata": {
+        "scores_used": [
+            "financial",
+            "professional",
+            "news_sentiment"
+        ],
+        "scores_imputed": [],
+        "imputed_values": {},
+        "imputation_r_squared": null,
+        "weights_applied": {
+            "financial": 50,
+            "professional": 30,
+            "news_sentiment": 20
+        }
+    }
+}

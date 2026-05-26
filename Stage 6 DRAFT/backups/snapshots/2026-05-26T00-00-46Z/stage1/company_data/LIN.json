@@ -1,0 +1,201 @@
+{
+    "ticker": "LIN",
+    "company_name": "Linde plc",
+    "universe_added_date": "2026-05-18",
+    "financial_raw_metrics": {
+        "sector": "Basic Materials",
+        "industry": "Specialty Chemicals",
+        "market_cap_usd": 239301722112,
+        "profitability": {
+            "gross_margin_ttm": 0.48766,
+            "operating_margin_ttm": 0.28471002,
+            "net_margin_ttm": 0.20436001,
+            "operating_margin_trend_3yr": 0.07866672153762364
+        },
+        "returns_on_capital": {
+            "roe_ttm": 0.18229,
+            "roa_ttm": 0.07237,
+            "roic_ttm": null
+        },
+        "cash_flow": {
+            "fcf_margin_ttm": 0.1354638591661463,
+            "fcf_to_net_income_ttm": 0.6628777075470695,
+            "ocf_cagr_3yr": 0.053020600479585234
+        },
+        "balance_sheet": {
+            "debt_to_equity": 0.65642,
+            "net_debt_to_ebitda": 1.6451803731971497,
+            "current_ratio": 0.828,
+            "interest_coverage": 20.174568965517242,
+            "total_debt_usd": 26317000704,
+            "total_cash_usd": 3959000064
+        },
+        "growth": {
+            "revenue_growth_1yr": 0.082,
+            "revenue_cagr_3yr": 0.006176060609136114,
+            "eps_growth_1yr": 0.134,
+            "eps_cagr_3yr": 0.1848491233539813,
+            "fcf_cagr_3yr": -0.03658229821538084
+        },
+        "valuation": {
+            "pe_trailing": 34.367863,
+            "pe_forward": 26.25977,
+            "ps_ratio": 6.9052587,
+            "pb_ratio": 6.208378,
+            "ev_ebitda": 19.376,
+            "peg_ratio": 2.4096,
+            "fcf_yield": 0.019617492923025604
+        },
+        "data_quality_flags": [
+            "LIN: eps_cagr_3yr approximated by net income CAGR (share count changes not adjusted)"
+        ]
+    },
+    "financial_raw_metrics_date": "2026-05-25",
+    "financial_score": 61.985534276197825,
+    "financial_score_date": "2026-05-25",
+    "financial_subscores": {
+        "profitability": 87.96739025761688,
+        "returns_on_capital": 63.430170116060616,
+        "cash_flow_quality": 60.74294210049561,
+        "balance_sheet": 71.1014070144228,
+        "growth": 47.303115154960715,
+        "valuation": 32.226017073203
+    },
+    "financial_drivers": {
+        "strongest": [
+            "interest_coverage (balance_sheet): score=100, value=20.17",
+            "operating_margin_ttm (profitability): score=89, value=28.5%",
+            "debt_to_equity (balance_sheet): score=85, value=65.6%"
+        ],
+        "weakest": [
+            "current_ratio (balance_sheet): score=20, value=82.8%",
+            "fcf_cagr_3yr (growth): score=21, value=-3.7%",
+            "peg_ratio (valuation): score=23, value=2.41"
+        ]
+    },
+    "professional_raw_metrics": {
+        "sector": "Basic Materials",
+        "industry": "Specialty Chemicals",
+        "market_cap_usd": 239301722112,
+        "current_price": 517.58,
+        "analyst": {
+            "recommendation_mean": 1.66667,
+            "recommendation_key": "buy",
+            "target_mean_price": 541.6092,
+            "target_median_price": 550.0,
+            "target_high_price": 600.0,
+            "target_low_price": 400.0,
+            "upside_to_target": 0.04642605973955706,
+            "target_dispersion": 0.36926994593149454,
+            "num_analysts": 25
+        },
+        "rating_momentum": {
+            "upgrades_12m": 4,
+            "downgrades_12m": 1,
+            "total_actions_12m": 26
+        },
+        "institutional": {
+            "held_pct_institutions": 0.89358,
+            "held_pct_insiders": 0.0025099998
+        },
+        "short_interest": {
+            "short_pct_of_float": 0.013300001,
+            "short_ratio": 3.06,
+            "short_change_pct": -0.13337820205277218
+        },
+        "data_quality_flags": []
+    },
+    "professional_raw_metrics_date": "2026-05-25",
+    "professional_score": 64.52248195270023,
+    "professional_score_date": "2026-05-25",
+    "professional_subscores": {
+        "analyst_consensus": 66.57106716874685,
+        "rating_momentum": 59.76923076923077,
+        "institutional_positioning": 62.47873591478333,
+        "short_interest": 71.07077848423542
+    },
+    "professional_drivers": {
+        "strongest": [
+            "recommendation_mean (analyst_consensus): score=85, value=1.67",
+            "short_pct_of_float (short_interest): score=72, value=1.3%",
+            "short_change_pct (short_interest): score=70, value=-13.3%"
+        ],
+        "weakest": [
+            "upside_to_target (analyst_consensus): score=39, value=4.6%",
+            "held_pct_insiders (institutional_positioning): score=53, value=0.3%",
+            "upgrades_12m (rating_momentum): score=60, value=4.00"
+        ]
+    },
+    "news_sentiment_raw_metrics": {
+        "sector": null,
+        "industry": null,
+        "market_cap_usd": null,
+        "current_price": null,
+        "earnings": {
+            "beat_count_4q": null,
+            "miss_count_4q": null,
+            "total_quarters_4q": null,
+            "avg_surprise_magnitude_4q": null,
+            "eps_estimate_revision_90d": null,
+            "trailing_eps": null,
+            "forward_eps": null
+        },
+        "price_momentum": {
+            "return_1m": 0.0464195184167928,
+            "return_3m": 0.059595930566731806,
+            "return_6m": 0.27593228856728225
+        },
+        "insider_activity": {
+            "insider_purchases_count_90d": null,
+            "insider_sales_count_90d": null,
+            "insider_net_value_90d_usd": null
+        },
+        "data_quality_flags": [
+            "LIN: failed to fetch .info (Too Many Requests. Rate limited. Try after a while.)",
+            "LIN: sector classification unavailable",
+            "LIN: earnings_dates fetch failed (['Earnings Date'])",
+            "LIN: eps_revisions fetch failed (Too Many Requests. Rate limited. Try after a while.)"
+        ]
+    },
+    "news_sentiment_raw_metrics_date": "2026-05-25",
+    "news_sentiment_score": null,
+    "news_sentiment_score_date": "2026-05-25",
+    "news_sentiment_subscores": {
+        "earnings_surprise_revisions": null,
+        "price_momentum": 73.80606178824453,
+        "insider_activity": null
+    },
+    "news_sentiment_drivers": {
+        "strongest": [
+            "return_6m (price_momentum): score=96, value=27.6%",
+            "return_3m (price_momentum): score=60, value=6.0%",
+            "return_1m (price_momentum): score=58, value=4.6%"
+        ],
+        "weakest": [
+            "return_1m (price_momentum): score=58, value=4.6%",
+            "return_3m (price_momentum): score=60, value=6.0%",
+            "return_6m (price_momentum): score=96, value=27.6%"
+        ]
+    },
+    "composite_score": 60.08728488756277,
+    "composite_score_date": "2026-05-25",
+    "composite_rank": 206,
+    "composite_metadata": {
+        "scores_used": [
+            "financial",
+            "professional"
+        ],
+        "scores_imputed": [
+            "news_sentiment"
+        ],
+        "imputed_values": {
+            "news_sentiment": 48.688865818268894
+        },
+        "imputation_r_squared": 0.031937368103860275,
+        "weights_applied": {
+            "financial": 50,
+            "professional": 30,
+            "news_sentiment": 20
+        }
+    }
+}

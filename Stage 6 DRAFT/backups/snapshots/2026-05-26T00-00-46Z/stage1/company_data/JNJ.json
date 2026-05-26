@@ -1,0 +1,202 @@
+{
+    "ticker": "JNJ",
+    "company_name": "Johnson & Johnson",
+    "universe_added_date": "2026-05-18",
+    "financial_raw_metrics": {
+        "sector": "Healthcare",
+        "industry": "Drug Manufacturers - General",
+        "market_cap_usd": 564107214848,
+        "profitability": {
+            "gross_margin_ttm": 0.68035007,
+            "operating_margin_ttm": 0.27408,
+            "net_margin_ttm": 0.21834,
+            "operating_margin_trend_3yr": 0.009044601294854404
+        },
+        "returns_on_capital": {
+            "roe_ttm": 0.26416,
+            "roa_ttm": 0.08424,
+            "roic_ttm": null
+        },
+        "cash_flow": {
+            "fcf_margin_ttm": 0.1298372371054547,
+            "fcf_to_net_income_ttm": 0.5946470889297234,
+            "ocf_cagr_3yr": 0.04993288719822453
+        },
+        "balance_sheet": {
+            "debt_to_equity": 0.6773,
+            "net_debt_to_ebitda": 0.9595339068250398,
+            "current_ratio": 1.025,
+            "interest_coverage": 34.55406797116375,
+            "total_debt_usd": 54987001856,
+            "total_cash_usd": 22051000320
+        },
+        "growth": {
+            "revenue_growth_1yr": 0.099,
+            "revenue_cagr_3yr": 0.05599284954178807,
+            "eps_growth_1yr": -0.529,
+            "eps_cagr_3yr": 0.14318799294699724,
+            "fcf_cagr_3yr": 0.039680905732483396
+        },
+        "valuation": {
+            "pe_trailing": 27.185616,
+            "pe_forward": 18.437393,
+            "ps_ratio": 5.8540425,
+            "pb_ratio": 6.9464946,
+            "ev_ebitda": 17.394,
+            "peg_ratio": 3.0457,
+            "fcf_yield": 0.022179073464556234
+        },
+        "data_quality_flags": [
+            "JNJ: eps_cagr_3yr approximated by net income CAGR (share count changes not adjusted)"
+        ]
+    },
+    "financial_raw_metrics_date": "2026-05-25",
+    "financial_score": 52.4171210710998,
+    "financial_score_date": "2026-05-25",
+    "financial_subscores": {
+        "profitability": 43.60611585038274,
+        "returns_on_capital": 51.32842518550909,
+        "cash_flow_quality": 56.83224585664508,
+        "balance_sheet": 77.45273583026645,
+        "growth": 50.8240039827956,
+        "valuation": 37.75910008976902
+    },
+    "financial_drivers": {
+        "strongest": [
+            "interest_coverage (balance_sheet): score=100, value=34.55",
+            "net_debt_to_ebitda (balance_sheet): score=87, value=96.0%",
+            "debt_to_equity (balance_sheet): score=85, value=67.7%"
+        ],
+        "weakest": [
+            "eps_growth_1yr (growth): score=0, value=-52.9%",
+            "peg_ratio (valuation): score=13, value=3.05",
+            "ev_ebitda (valuation): score=31, value=17.39"
+        ]
+    },
+    "professional_raw_metrics": {
+        "sector": "Healthcare",
+        "industry": "Drug Manufacturers - General",
+        "market_cap_usd": 564107214848,
+        "current_price": 234.34,
+        "analyst": {
+            "recommendation_mean": 2.04,
+            "recommendation_key": "buy",
+            "target_mean_price": 252.95833,
+            "target_median_price": 260.0,
+            "target_high_price": 285.0,
+            "target_low_price": 155.0,
+            "upside_to_target": 0.07945007254416654,
+            "target_dispersion": 0.5139186363224331,
+            "num_analysts": 24
+        },
+        "rating_momentum": {
+            "upgrades_12m": 4,
+            "downgrades_12m": 1,
+            "total_actions_12m": 55
+        },
+        "institutional": {
+            "held_pct_institutions": 0.76843,
+            "held_pct_insiders": 0.0005
+        },
+        "short_interest": {
+            "short_pct_of_float": 0.010299999,
+            "short_ratio": 2.94,
+            "short_change_pct": 0.0037442900800138835
+        },
+        "data_quality_flags": []
+    },
+    "professional_raw_metrics_date": "2026-05-25",
+    "professional_score": 54.98126123730906,
+    "professional_score_date": "2026-05-25",
+    "professional_subscores": {
+        "analyst_consensus": 62.98500725441666,
+        "rating_momentum": 55.93636363636364,
+        "institutional_positioning": 37.47465876252988,
+        "short_interest": 63.89168732359905
+    },
+    "professional_drivers": {
+        "strongest": [
+            "recommendation_mean (analyst_consensus): score=73, value=2.04",
+            "short_ratio (short_interest): score=71, value=2.94",
+            "short_pct_of_float (short_interest): score=66, value=1.0%"
+        ],
+        "weakest": [
+            "held_pct_institutions (institutional_positioning): score=32, value=76.8%",
+            "upside_to_target (analyst_consensus): score=47, value=7.9%",
+            "short_change_pct (short_interest): score=50, value=0.4%"
+        ]
+    },
+    "news_sentiment_raw_metrics": {
+        "sector": null,
+        "industry": null,
+        "market_cap_usd": null,
+        "current_price": null,
+        "earnings": {
+            "beat_count_4q": null,
+            "miss_count_4q": null,
+            "total_quarters_4q": null,
+            "avg_surprise_magnitude_4q": null,
+            "eps_estimate_revision_90d": null,
+            "trailing_eps": null,
+            "forward_eps": null
+        },
+        "price_momentum": {
+            "return_1m": 0.03644400712931638,
+            "return_3m": -0.045863779443320006,
+            "return_6m": 0.16748686761184386
+        },
+        "insider_activity": {
+            "insider_purchases_count_90d": null,
+            "insider_sales_count_90d": null,
+            "insider_net_value_90d_usd": null
+        },
+        "data_quality_flags": [
+            "JNJ: failed to fetch .info (Too Many Requests. Rate limited. Try after a while.)",
+            "JNJ: sector classification unavailable",
+            "JNJ: earnings_dates fetch failed (['Earnings Date'])",
+            "JNJ: eps_revisions fetch failed (Too Many Requests. Rate limited. Try after a while.)",
+            "JNJ: insider_transactions fetch failed (Too Many Requests. Rate limited. Try after a while.)"
+        ]
+    },
+    "news_sentiment_raw_metrics_date": "2026-05-25",
+    "news_sentiment_score": null,
+    "news_sentiment_score_date": "2026-05-25",
+    "news_sentiment_subscores": {
+        "earnings_surprise_revisions": null,
+        "price_momentum": 60.00890433698411,
+        "insider_activity": null
+    },
+    "news_sentiment_drivers": {
+        "strongest": [
+            "return_6m (price_momentum): score=78, value=16.7%",
+            "return_1m (price_momentum): score=56, value=3.6%",
+            "return_3m (price_momentum): score=42, value=-4.6%"
+        ],
+        "weakest": [
+            "return_3m (price_momentum): score=42, value=-4.6%",
+            "return_1m (price_momentum): score=56, value=3.6%",
+            "return_6m (price_momentum): score=78, value=16.7%"
+        ]
+    },
+    "composite_score": 53.07020141656575,
+    "composite_score_date": "2026-05-25",
+    "composite_rank": 606,
+    "composite_metadata": {
+        "scores_used": [
+            "financial",
+            "professional"
+        ],
+        "scores_imputed": [
+            "news_sentiment"
+        ],
+        "imputed_values": {
+            "news_sentiment": 51.83631254911566
+        },
+        "imputation_r_squared": 0.031937368103860275,
+        "weights_applied": {
+            "financial": 50,
+            "professional": 30,
+            "news_sentiment": 20
+        }
+    }
+}

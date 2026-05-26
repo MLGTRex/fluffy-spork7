@@ -1,0 +1,195 @@
+{
+    "ticker": "COST",
+    "company_name": "Costco",
+    "universe_added_date": "2026-05-18",
+    "financial_raw_metrics": {
+        "sector": "Consumer Defensive",
+        "industry": "Discount Stores",
+        "market_cap_usd": 456181284864,
+        "profitability": {
+            "gross_margin_ttm": 0.12926,
+            "operating_margin_ttm": 0.036730003,
+            "net_margin_ttm": 0.029860001,
+            "operating_margin_trend_3yr": 0.0033867719491635292
+        },
+        "returns_on_capital": {
+            "roe_ttm": 0.29650998,
+            "roa_ttm": 0.08718,
+            "roic_ttm": null
+        },
+        "cash_flow": {
+            "fcf_margin_ttm": 0.023371263642362767,
+            "fcf_to_net_income_ttm": 0.7825915332486169,
+            "ocf_cagr_3yr": 0.21733568729338337
+        },
+        "balance_sheet": {
+            "debt_to_equity": 0.6025699999999999,
+            "net_debt_to_ebitda": -0.06671618789593939,
+            "current_ratio": 1.058,
+            "interest_coverage": 71.24675324675324,
+            "total_debt_usd": 10227999744,
+            "total_cash_usd": 11125999616
+        },
+        "growth": {
+            "revenue_growth_1yr": 0.215,
+            "revenue_cagr_3yr": 0.06640442726947482,
+            "eps_growth_1yr": 0.455,
+            "eps_cagr_3yr": 0.11491150545730622,
+            "fcf_cagr_3yr": 0.3081350392193374
+        },
+        "valuation": {
+            "pe_trailing": 53.47062,
+            "pe_forward": 45.607975,
+            "ps_ratio": 1.5935628,
+            "pb_ratio": 27.583025,
+            "ev_ebitda": 33.746,
+            "peg_ratio": 5.2206,
+            "fcf_yield": 0.014666044815921334
+        },
+        "data_quality_flags": [
+            "COST: eps_cagr_3yr approximated by net income CAGR (share count changes not adjusted)"
+        ]
+    },
+    "financial_raw_metrics_date": "2026-05-25",
+    "financial_score": 49.02233415814577,
+    "financial_score_date": "2026-05-25",
+    "financial_subscores": {
+        "profitability": 29.264602124574424,
+        "returns_on_capital": 51.69542264307198,
+        "cash_flow_quality": 49.728683930776874,
+        "balance_sheet": 83.658725,
+        "growth": 74.43161188681543,
+        "valuation": 11.0498405465176
+    },
+    "financial_drivers": {
+        "strongest": [
+            "interest_coverage (balance_sheet): score=100, value=71.25",
+            "net_debt_to_ebitda (balance_sheet): score=100, value=-6.7%",
+            "eps_growth_1yr (growth): score=98, value=45.5%"
+        ],
+        "weakest": [
+            "peg_ratio (valuation): score=0, value=5.22",
+            "ev_ebitda (valuation): score=5, value=33.75",
+            "pe_trailing (valuation): score=9, value=53.47"
+        ]
+    },
+    "professional_raw_metrics": {
+        "sector": "Consumer Defensive",
+        "industry": "Discount Stores",
+        "market_cap_usd": 456181284864,
+        "current_price": 1028.24,
+        "analyst": {
+            "recommendation_mean": 1.97222,
+            "recommendation_key": "buy",
+            "target_mean_price": 1076.9688,
+            "target_median_price": 1100.0,
+            "target_high_price": 1315.0,
+            "target_low_price": 650.0,
+            "upside_to_target": 0.047390492492025295,
+            "target_dispersion": 0.6174737838273494,
+            "num_analysts": 32
+        },
+        "rating_momentum": {
+            "upgrades_12m": 2,
+            "downgrades_12m": 1,
+            "total_actions_12m": 63
+        },
+        "institutional": {
+            "held_pct_institutions": 0.73706,
+            "held_pct_insiders": 0.0016300001
+        },
+        "short_interest": {
+            "short_pct_of_float": 0.0152,
+            "short_ratio": 3.69,
+            "short_change_pct": 0.06752688356373666
+        },
+        "data_quality_flags": []
+    },
+    "professional_raw_metrics_date": "2026-05-25",
+    "professional_score": 58.9889545152668,
+    "professional_score_date": "2026-05-25",
+    "professional_subscores": {
+        "analyst_consensus": 61.18689909904303,
+        "rating_momentum": 53.5,
+        "institutional_positioning": 58.6456397685747,
+        "short_interest": 63.580865923053686
+    },
+    "professional_drivers": {
+        "strongest": [
+            "recommendation_mean (analyst_consensus): score=76, value=1.97",
+            "short_pct_of_float (short_interest): score=73, value=1.5%",
+            "short_ratio (short_interest): score=63, value=3.69"
+        ],
+        "weakest": [
+            "upside_to_target (analyst_consensus): score=39, value=4.7%",
+            "short_change_pct (short_interest): score=42, value=6.8%",
+            "held_pct_insiders (institutional_positioning): score=52, value=0.2%"
+        ]
+    },
+    "news_sentiment_raw_metrics": {
+        "sector": "Consumer Defensive",
+        "industry": "Discount Stores",
+        "market_cap_usd": 456181284864,
+        "current_price": 1028.24,
+        "earnings": {
+            "beat_count_4q": null,
+            "miss_count_4q": null,
+            "total_quarters_4q": null,
+            "avg_surprise_magnitude_4q": null,
+            "eps_estimate_revision_90d": null,
+            "trailing_eps": 19.23,
+            "forward_eps": 22.54518
+        },
+        "price_momentum": {
+            "return_1m": 0.02593602721037729,
+            "return_3m": 0.04242877649906786,
+            "return_6m": 0.15431581952101334
+        },
+        "insider_activity": {
+            "insider_purchases_count_90d": 0,
+            "insider_sales_count_90d": 2,
+            "insider_net_value_90d_usd": -1427305.0
+        },
+        "data_quality_flags": [
+            "COST: earnings_dates fetch failed (['Earnings Date'])"
+        ]
+    },
+    "news_sentiment_raw_metrics_date": "2026-05-25",
+    "news_sentiment_score": 54.21068264563491,
+    "news_sentiment_score_date": "2026-05-25",
+    "news_sentiment_subscores": {
+        "earnings_surprise_revisions": null,
+        "price_momentum": 63.84340106427891,
+        "insider_activity": 34.945245808346904
+    },
+    "news_sentiment_drivers": {
+        "strongest": [
+            "return_6m (price_momentum): score=76, value=15.4%",
+            "return_3m (price_momentum): score=57, value=4.2%",
+            "return_1m (price_momentum): score=54, value=2.6%"
+        ],
+        "weakest": [
+            "insider_count_ratio_90d (insider_activity): score=0, value=-1.00",
+            "net_insider_value_pct_mcap_90d (insider_activity): score=50, value=-0.0%",
+            "return_1m (price_momentum): score=54, value=2.6%"
+        ]
+    },
+    "composite_score": 53.04998996277991,
+    "composite_score_date": "2026-05-25",
+    "composite_rank": 610,
+    "composite_metadata": {
+        "scores_used": [
+            "financial",
+            "professional",
+            "news_sentiment"
+        ],
+        "scores_imputed": [],
+        "imputed_values": {},
+        "imputation_r_squared": null,
+        "weights_applied": {
+            "financial": 50,
+            "professional": 30,
+            "news_sentiment": 20
+        }
+    }
+}

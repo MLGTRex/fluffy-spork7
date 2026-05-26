@@ -1,0 +1,202 @@
+{
+    "ticker": "WTFC",
+    "company_name": "Wintrust Financial",
+    "universe_added_date": "2026-05-18",
+    "financial_raw_metrics": {
+        "sector": "Financial Services",
+        "industry": "Banks - Regional",
+        "market_cap_usd": 10109745152,
+        "profitability": {
+            "gross_margin_ttm": 0.0,
+            "operating_margin_ttm": 0.46325,
+            "net_margin_ttm": 0.32021,
+            "operating_margin_trend_3yr": null
+        },
+        "returns_on_capital": {
+            "roe_ttm": 0.12336001,
+            "roa_ttm": 0.01249,
+            "roic_ttm": null
+        },
+        "cash_flow": {
+            "fcf_margin_ttm": null,
+            "fcf_to_net_income_ttm": null,
+            "ocf_cagr_3yr": -0.12843138818411493
+        },
+        "balance_sheet": {
+            "debt_to_equity": null,
+            "net_debt_to_ebitda": null,
+            "current_ratio": null,
+            "interest_coverage": null,
+            "total_debt_usd": 4463176192,
+            "total_cash_usd": 3748235008
+        },
+        "growth": {
+            "revenue_growth_1yr": 0.104,
+            "revenue_cagr_3yr": 0.11691776260247577,
+            "eps_growth_1yr": 0.197,
+            "eps_cagr_3yr": 0.173586834717671,
+            "fcf_cagr_3yr": -0.133294299015142
+        },
+        "valuation": {
+            "pe_trailing": 12.564124,
+            "pe_forward": 10.810862,
+            "ps_ratio": 3.7546823,
+            "pb_ratio": 1.4690201,
+            "ev_ebitda": null,
+            "peg_ratio": 1.17,
+            "fcf_yield": null
+        },
+        "data_quality_flags": [
+            "WTFC: eps_cagr_3yr approximated by net income CAGR (share count changes not adjusted)"
+        ]
+    },
+    "financial_raw_metrics_date": "2026-05-25",
+    "financial_score": 60.623615028913655,
+    "financial_score_date": "2026-05-25",
+    "financial_subscores": {
+        "profitability": 54.01556085473948,
+        "returns_on_capital": 51.755473508803476,
+        "cash_flow_quality": null,
+        "balance_sheet": null,
+        "growth": 61.973051468388284,
+        "valuation": 79.90910618181817
+    },
+    "financial_drivers": {
+        "strongest": [
+            "pe_forward (valuation): score=88, value=10.81",
+            "pe_trailing (valuation): score=82, value=12.56",
+            "eps_growth_1yr (growth): score=79, value=19.7%"
+        ],
+        "weakest": [
+            "ocf_cagr_3yr (cash_flow_quality): score=11, value=-12.8%",
+            "fcf_cagr_3yr (growth): score=12, value=-13.3%",
+            "roa_ttm (returns_on_capital): score=47, value=1.2%"
+        ]
+    },
+    "professional_raw_metrics": {
+        "sector": "Financial Services",
+        "industry": "Banks - Regional",
+        "market_cap_usd": 10109745152,
+        "current_price": 149.89,
+        "analyst": {
+            "recommendation_mean": null,
+            "recommendation_key": "none",
+            "target_mean_price": 174.66667,
+            "target_median_price": 178.0,
+            "target_high_price": 190.0,
+            "target_low_price": 150.0,
+            "upside_to_target": 0.1652990192808061,
+            "target_dispersion": 0.22900762921741163,
+            "num_analysts": 12
+        },
+        "rating_momentum": {
+            "upgrades_12m": 0,
+            "downgrades_12m": 0,
+            "total_actions_12m": 33
+        },
+        "institutional": {
+            "held_pct_institutions": 0.98127997,
+            "held_pct_insiders": 0.01434
+        },
+        "short_interest": {
+            "short_pct_of_float": 0.031600002,
+            "short_ratio": 4.71,
+            "short_change_pct": -0.02348279287694794
+        },
+        "data_quality_flags": []
+    },
+    "professional_raw_metrics_date": "2026-05-25",
+    "professional_score": 61.67568897392344,
+    "professional_score_date": "2026-05-25",
+    "professional_subscores": {
+        "analyst_consensus": 67.54983654680102,
+        "rating_momentum": 52.5,
+        "institutional_positioning": 66.57370514645453,
+        "short_interest": 55.09879930619631
+    },
+    "professional_drivers": {
+        "strongest": [
+            "held_pct_institutions (institutional_positioning): score=68, value=98.1%",
+            "upside_to_target (analyst_consensus): score=68, value=16.5%",
+            "held_pct_insiders (institutional_positioning): score=62, value=1.4%"
+        ],
+        "weakest": [
+            "upgrades_12m (rating_momentum): score=52, value=0.00",
+            "downgrades_12m (rating_momentum): score=52, value=0.00",
+            "total_actions_12m (rating_momentum): score=52, value=33.00"
+        ]
+    },
+    "news_sentiment_raw_metrics": {
+        "sector": null,
+        "industry": null,
+        "market_cap_usd": null,
+        "current_price": null,
+        "earnings": {
+            "beat_count_4q": null,
+            "miss_count_4q": null,
+            "total_quarters_4q": null,
+            "avg_surprise_magnitude_4q": null,
+            "eps_estimate_revision_90d": null,
+            "trailing_eps": null,
+            "forward_eps": null
+        },
+        "price_momentum": {
+            "return_1m": 0.017339485789059698,
+            "return_3m": -0.01977759572274904,
+            "return_6m": 0.18036512863302484
+        },
+        "insider_activity": {
+            "insider_purchases_count_90d": null,
+            "insider_sales_count_90d": null,
+            "insider_net_value_90d_usd": null
+        },
+        "data_quality_flags": [
+            "WTFC: failed to fetch .info (Too Many Requests. Rate limited. Try after a while.)",
+            "WTFC: sector classification unavailable",
+            "WTFC: earnings_dates fetch failed (['Earnings Date'])",
+            "WTFC: eps_revisions fetch failed (Too Many Requests. Rate limited. Try after a while.)",
+            "WTFC: insider_transactions fetch failed (Too Many Requests. Rate limited. Try after a while.)"
+        ]
+    },
+    "news_sentiment_raw_metrics_date": "2026-05-25",
+    "news_sentiment_score": null,
+    "news_sentiment_score_date": "2026-05-25",
+    "news_sentiment_subscores": {
+        "earnings_surprise_revisions": null,
+        "price_momentum": 61.593127399585455,
+        "insider_activity": null
+    },
+    "news_sentiment_drivers": {
+        "strongest": [
+            "return_6m (price_momentum): score=80, value=18.0%",
+            "return_1m (price_momentum): score=53, value=1.7%",
+            "return_3m (price_momentum): score=47, value=-2.0%"
+        ],
+        "weakest": [
+            "return_3m (price_momentum): score=47, value=-2.0%",
+            "return_1m (price_momentum): score=53, value=1.7%",
+            "return_6m (price_momentum): score=80, value=18.0%"
+        ]
+    },
+    "composite_score": 58.7054921525892,
+    "composite_score_date": "2026-05-25",
+    "composite_rank": 280,
+    "composite_metadata": {
+        "scores_used": [
+            "financial",
+            "professional"
+        ],
+        "scores_imputed": [
+            "news_sentiment"
+        ],
+        "imputed_values": {
+            "news_sentiment": 49.454889729776724
+        },
+        "imputation_r_squared": 0.031937368103860275,
+        "weights_applied": {
+            "financial": 50,
+            "professional": 30,
+            "news_sentiment": 20
+        }
+    }
+}

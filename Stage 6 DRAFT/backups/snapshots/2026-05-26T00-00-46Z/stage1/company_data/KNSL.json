@@ -1,0 +1,214 @@
+{
+    "ticker": "KNSL",
+    "company_name": "Kinsale Capital Group",
+    "universe_added_date": "2026-05-18",
+    "financial_raw_metrics": {
+        "sector": "Financial Services",
+        "industry": "Insurance - Property & Casualty",
+        "market_cap_usd": 7153856000,
+        "profitability": {
+            "gross_margin_ttm": 0.29272,
+            "operating_margin_ttm": 0.30603,
+            "net_margin_ttm": 0.27484,
+            "operating_margin_trend_3yr": null
+        },
+        "returns_on_capital": {
+            "roe_ttm": 0.29684,
+            "roa_ttm": 0.07359,
+            "roic_ttm": null
+        },
+        "cash_flow": {
+            "fcf_margin_ttm": 0.5094343055143309,
+            "fcf_to_net_income_ttm": 1.8536000630598122,
+            "ocf_cagr_3yr": 0.2322545647110772
+        },
+        "balance_sheet": {
+            "debt_to_equity": 0.11410000000000001,
+            "net_debt_to_ebitda": 0.0017707516397593057,
+            "current_ratio": 0.199,
+            "interest_coverage": 60.58125117414991,
+            "total_debt_usd": 224466000,
+            "total_cash_usd": 223263008
+        },
+        "growth": {
+            "revenue_growth_1yr": 0.102,
+            "revenue_cagr_3yr": 0.30728023083230527,
+            "eps_growth_1yr": 0.274,
+            "eps_cagr_3yr": 0.4682380234941128,
+            "fcf_cagr_3yr": 0.2157890055441205
+        },
+        "valuation": {
+            "pe_trailing": 13.658741,
+            "pe_forward": 14.28011,
+            "ps_ratio": 3.7312157,
+            "pb_ratio": 3.6360335,
+            "ev_ebitda": 10.532,
+            "peg_ratio": 1.0012,
+            "fcf_yield": 0.1365330607717013
+        },
+        "data_quality_flags": [
+            "KNSL: eps_cagr_3yr approximated by net income CAGR (share count changes not adjusted)"
+        ]
+    },
+    "financial_raw_metrics_date": "2026-05-25",
+    "financial_score": 79.55240382985758,
+    "financial_score_date": "2026-05-25",
+    "financial_subscores": {
+        "profitability": 73.38078532121553,
+        "returns_on_capital": 78.27780780534133,
+        "cash_flow_quality": 89.99495766660908,
+        "balance_sheet": 78.45530599125462,
+        "growth": 90.01651646815564,
+        "valuation": 69.67112123762207
+    },
+    "financial_drivers": {
+        "strongest": [
+            "fcf_yield (valuation): score=100, value=13.7%",
+            "eps_cagr_3yr (growth): score=100, value=46.8%",
+            "interest_coverage (balance_sheet): score=100, value=60.58"
+        ],
+        "weakest": [
+            "current_ratio (balance_sheet): score=0, value=19.9%",
+            "ev_ebitda (valuation): score=29, value=10.53",
+            "gross_margin_ttm (profitability): score=42, value=29.3%"
+        ]
+    },
+    "professional_raw_metrics": {
+        "sector": "Financial Services",
+        "industry": "Insurance - Property & Casualty",
+        "market_cap_usd": 7153856000,
+        "current_price": 310.19,
+        "analyst": {
+            "recommendation_mean": 3.16667,
+            "recommendation_key": "hold",
+            "target_mean_price": 354.66666,
+            "target_median_price": 357.0,
+            "target_high_price": 442.0,
+            "target_low_price": 267.0,
+            "upside_to_target": 0.14338521551307257,
+            "target_dispersion": 0.49342106190641094,
+            "num_analysts": 9
+        },
+        "rating_momentum": {
+            "upgrades_12m": 0,
+            "downgrades_12m": 3,
+            "total_actions_12m": 22
+        },
+        "institutional": {
+            "held_pct_institutions": 0.95408994,
+            "held_pct_insiders": 0.05474
+        },
+        "short_interest": {
+            "short_pct_of_float": 0.103999995,
+            "short_ratio": 8.5,
+            "short_change_pct": 0.03335814537791722
+        },
+        "data_quality_flags": []
+    },
+    "professional_raw_metrics_date": "2026-05-25",
+    "professional_score": 47.00071842801977,
+    "professional_score_date": "2026-05-25",
+    "professional_subscores": {
+        "analyst_consensus": 43.838471551307265,
+        "rating_momentum": 43.909090909090914,
+        "institutional_positioning": 71.56214726349167,
+        "short_interest": 18.596292279443876
+    },
+    "professional_drivers": {
+        "strongest": [
+            "held_pct_insiders (institutional_positioning): score=81, value=5.5%",
+            "held_pct_institutions (institutional_positioning): score=68, value=95.4%",
+            "upside_to_target (analyst_consensus): score=63, value=14.3%"
+        ],
+        "weakest": [
+            "short_pct_of_float (short_interest): score=1, value=10.4%",
+            "short_ratio (short_interest): score=29, value=8.50",
+            "recommendation_mean (analyst_consensus): score=31, value=3.17"
+        ]
+    },
+    "news_sentiment_raw_metrics": {
+        "sector": null,
+        "industry": null,
+        "market_cap_usd": null,
+        "current_price": null,
+        "earnings": {
+            "beat_count_4q": null,
+            "miss_count_4q": null,
+            "total_quarters_4q": null,
+            "avg_surprise_magnitude_4q": null,
+            "eps_estimate_revision_90d": null,
+            "trailing_eps": null,
+            "forward_eps": null
+        },
+        "price_momentum": {
+            "return_1m": -0.11250037545587328,
+            "return_3m": -0.17005897433678163,
+            "return_6m": -0.16141492862547388
+        },
+        "insider_activity": {
+            "insider_purchases_count_90d": null,
+            "insider_sales_count_90d": null,
+            "insider_net_value_90d_usd": null
+        },
+        "data_quality_flags": [
+            "KNSL: failed to fetch .info (Too Many Requests. Rate limited. Try after a while.)",
+            "KNSL: sector classification unavailable",
+            "KNSL: earnings_dates fetch failed (['Earnings Date'])",
+            "KNSL: eps_revisions fetch failed (Too Many Requests. Rate limited. Try after a while.)",
+            "KNSL: insider_transactions fetch failed (Too Many Requests. Rate limited. Try after a while.)"
+        ]
+    },
+    "news_sentiment_raw_metrics_date": "2026-05-25",
+    "news_sentiment_score": null,
+    "news_sentiment_score_date": "2026-05-25",
+    "news_sentiment_subscores": {
+        "earnings_surprise_revisions": null,
+        "price_momentum": 24.63138227799476,
+        "insider_activity": null
+    },
+    "news_sentiment_drivers": {
+        "strongest": [
+            "return_1m (price_momentum): score=31, value=-11.3%",
+            "return_6m (price_momentum): score=23, value=-16.1%",
+            "return_3m (price_momentum): score=22, value=-17.0%"
+        ],
+        "weakest": [
+            "return_3m (price_momentum): score=22, value=-17.0%",
+            "return_6m (price_momentum): score=23, value=-16.1%",
+            "return_1m (price_momentum): score=31, value=-11.3%"
+        ]
+    },
+    "composite_score": 63.955522642225404,
+    "composite_score_date": "2026-05-25",
+    "composite_rank": 75,
+    "composite_metadata": {
+        "scores_used": [
+            "financial",
+            "professional"
+        ],
+        "scores_imputed": [
+            "news_sentiment"
+        ],
+        "imputed_values": {
+            "news_sentiment": 50.39552599445342
+        },
+        "imputation_r_squared": 0.031937368103860275,
+        "weights_applied": {
+            "financial": 50,
+            "professional": 30,
+            "news_sentiment": 20
+        }
+    },
+    "disqualifier_flags": {
+        "bankruptcy_8k": {
+            "triggered": false
+        },
+        "material_restatement_10ka": {
+            "triggered": false
+        },
+        "check_status": "ok",
+        "error_message": null
+    },
+    "disqualifier_check_date": "2026-05-25",
+    "qualified": true
+}

@@ -1,0 +1,195 @@
+{
+    "ticker": "CFG",
+    "company_name": "Citizens Financial Group",
+    "universe_added_date": "2026-05-18",
+    "financial_raw_metrics": {
+        "sector": "Financial Services",
+        "industry": "Banks - Regional",
+        "market_cap_usd": 26595045376,
+        "profitability": {
+            "gross_margin_ttm": 0.0,
+            "operating_margin_ttm": 0.32051,
+            "net_margin_ttm": 0.25048,
+            "operating_margin_trend_3yr": null
+        },
+        "returns_on_capital": {
+            "roe_ttm": 0.07739,
+            "roa_ttm": 0.00882,
+            "roic_ttm": null
+        },
+        "cash_flow": {
+            "fcf_margin_ttm": null,
+            "fcf_to_net_income_ttm": null,
+            "ocf_cagr_3yr": -0.18729615047742088
+        },
+        "balance_sheet": {
+            "debt_to_equity": null,
+            "net_debt_to_ebitda": null,
+            "current_ratio": null,
+            "interest_coverage": null,
+            "total_debt_usd": 12314000384,
+            "total_cash_usd": 13159999488
+        },
+        "growth": {
+            "revenue_growth_1yr": 0.138,
+            "revenue_cagr_3yr": 0.009305158100850308,
+            "eps_growth_1yr": 0.468,
+            "eps_cagr_3yr": -0.04053379848244776,
+            "fcf_cagr_3yr": -0.20096848979863957
+        },
+        "valuation": {
+            "pe_trailing": 14.902844,
+            "pe_forward": 9.80678,
+            "ps_ratio": 3.3728654,
+            "pb_ratio": 1.1135309,
+            "ev_ebitda": null,
+            "peg_ratio": 1.65,
+            "fcf_yield": null
+        },
+        "data_quality_flags": [
+            "CFG: eps_cagr_3yr approximated by net income CAGR (share count changes not adjusted)"
+        ]
+    },
+    "financial_raw_metrics_date": "2026-05-25",
+    "financial_score": 41.251549436589166,
+    "financial_score_date": "2026-05-25",
+    "financial_subscores": {
+        "profitability": 33.12720191120684,
+        "returns_on_capital": 31.280858659947747,
+        "cash_flow_quality": null,
+        "balance_sheet": null,
+        "growth": 33.974213700119066,
+        "valuation": 72.6556029090909
+    },
+    "financial_drivers": {
+        "strongest": [
+            "eps_growth_1yr (growth): score=99, value=46.8%",
+            "pe_forward (valuation): score=90, value=9.81",
+            "revenue_growth_1yr (growth): score=76, value=13.8%"
+        ],
+        "weakest": [
+            "ocf_cagr_3yr (cash_flow_quality): score=2, value=-18.7%",
+            "fcf_cagr_3yr (growth): score=5, value=-20.1%",
+            "eps_cagr_3yr (growth): score=16, value=-4.1%"
+        ]
+    },
+    "professional_raw_metrics": {
+        "sector": "Financial Services",
+        "industry": "Banks - Regional",
+        "market_cap_usd": 26595045376,
+        "current_price": 62.89,
+        "analyst": {
+            "recommendation_mean": 1.41176,
+            "recommendation_key": "strong_buy",
+            "target_mean_price": 73.28125,
+            "target_median_price": 74.5,
+            "target_high_price": 80.0,
+            "target_low_price": 63.0,
+            "upside_to_target": 0.16522897121958974,
+            "target_dispersion": 0.23198294243070364,
+            "num_analysts": 16
+        },
+        "rating_momentum": {
+            "upgrades_12m": 6,
+            "downgrades_12m": 2,
+            "total_actions_12m": 49
+        },
+        "institutional": {
+            "held_pct_institutions": 0.98362,
+            "held_pct_insiders": 0.0073100002
+        },
+        "short_interest": {
+            "short_pct_of_float": 0.0001,
+            "short_ratio": 0.01,
+            "short_change_pct": -0.2745050017897176
+        },
+        "data_quality_flags": []
+    },
+    "professional_raw_metrics_date": "2026-05-25",
+    "professional_score": 72.16580408190775,
+    "professional_score_date": "2026-05-25",
+    "professional_subscores": {
+        "analyst_consensus": 82.07414474797265,
+        "rating_momentum": 57.642857142857146,
+        "institutional_positioning": 65.3049726182953,
+        "short_interest": 84.68597319886146
+    },
+    "professional_drivers": {
+        "strongest": [
+            "short_ratio (short_interest): score=100, value=1.0%",
+            "recommendation_mean (analyst_consensus): score=92, value=1.41",
+            "short_change_pct (short_interest): score=85, value=-27.5%"
+        ],
+        "weakest": [
+            "held_pct_insiders (institutional_positioning): score=57, value=0.7%",
+            "upgrades_12m (rating_momentum): score=58, value=6.00",
+            "downgrades_12m (rating_momentum): score=58, value=2.00"
+        ]
+    },
+    "news_sentiment_raw_metrics": {
+        "sector": "Financial Services",
+        "industry": "Banks - Regional",
+        "market_cap_usd": 26595045376,
+        "current_price": 62.89,
+        "earnings": {
+            "beat_count_4q": null,
+            "miss_count_4q": null,
+            "total_quarters_4q": null,
+            "avg_surprise_magnitude_4q": null,
+            "eps_estimate_revision_90d": null,
+            "trailing_eps": 4.22,
+            "forward_eps": 6.41291
+        },
+        "price_momentum": {
+            "return_1m": -0.0278937224627393,
+            "return_3m": -0.019314915086832148,
+            "return_6m": 0.2581305817965475
+        },
+        "insider_activity": {
+            "insider_purchases_count_90d": 0,
+            "insider_sales_count_90d": 2,
+            "insider_net_value_90d_usd": -1145562.0
+        },
+        "data_quality_flags": [
+            "CFG: earnings_dates fetch failed (['Earnings Date'])"
+        ]
+    },
+    "news_sentiment_raw_metrics_date": "2026-05-25",
+    "news_sentiment_score": 54.69524255262585,
+    "news_sentiment_score_date": "2026-05-25",
+    "news_sentiment_subscores": {
+        "earnings_surprise_revisions": null,
+        "price_momentum": 64.91976363709048,
+        "insider_activity": 34.2462003836966
+    },
+    "news_sentiment_drivers": {
+        "strongest": [
+            "return_6m (price_momentum): score=93, value=25.8%",
+            "net_insider_value_pct_mcap_90d (insider_activity): score=49, value=-0.0%",
+            "return_3m (price_momentum): score=47, value=-1.9%"
+        ],
+        "weakest": [
+            "insider_count_ratio_90d (insider_activity): score=0, value=-1.00",
+            "return_1m (price_momentum): score=45, value=-2.8%",
+            "return_3m (price_momentum): score=47, value=-1.9%"
+        ]
+    },
+    "composite_score": 53.214564453392086,
+    "composite_score_date": "2026-05-25",
+    "composite_rank": 595,
+    "composite_metadata": {
+        "scores_used": [
+            "financial",
+            "professional",
+            "news_sentiment"
+        ],
+        "scores_imputed": [],
+        "imputed_values": {},
+        "imputation_r_squared": null,
+        "weights_applied": {
+            "financial": 50,
+            "professional": 30,
+            "news_sentiment": 20
+        }
+    }
+}

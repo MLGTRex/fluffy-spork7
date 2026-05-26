@@ -1,0 +1,200 @@
+{
+    "ticker": "KD",
+    "company_name": "Kyndryl",
+    "universe_added_date": "2026-05-18",
+    "financial_raw_metrics": {
+        "sector": "Technology",
+        "industry": "Information Technology Services",
+        "market_cap_usd": 2770746112,
+        "profitability": {
+            "gross_margin_ttm": 0.21792999,
+            "operating_margin_ttm": 0.04537,
+            "net_margin_ttm": 0.01312,
+            "operating_margin_trend_3yr": null
+        },
+        "returns_on_capital": {
+            "roe_ttm": 0.14994,
+            "roa_ttm": null,
+            "roic_ttm": null
+        },
+        "cash_flow": {
+            "fcf_margin_ttm": null,
+            "fcf_to_net_income_ttm": null,
+            "ocf_cagr_3yr": null
+        },
+        "balance_sheet": {
+            "debt_to_equity": 3.0366699999999995,
+            "net_debt_to_ebitda": 1.844803415730337,
+            "current_ratio": null,
+            "interest_coverage": null,
+            "total_debt_usd": 3975000064,
+            "total_cash_usd": 1348000000
+        },
+        "growth": {
+            "revenue_growth_1yr": -0.008,
+            "revenue_cagr_3yr": null,
+            "eps_growth_1yr": -0.729,
+            "eps_cagr_3yr": null,
+            "fcf_cagr_3yr": null
+        },
+        "valuation": {
+            "pe_trailing": 14.458823,
+            "pe_forward": 4.740232,
+            "ps_ratio": 0.18359038,
+            "pb_ratio": 2.3263297,
+            "ev_ebitda": 3.871,
+            "peg_ratio": null,
+            "fcf_yield": null
+        },
+        "data_quality_flags": []
+    },
+    "financial_raw_metrics_date": "2026-05-25",
+    "financial_score": 44.85328335150032,
+    "financial_score_date": "2026-05-25",
+    "financial_subscores": {
+        "profitability": 29.710511541739226,
+        "returns_on_capital": null,
+        "cash_flow_quality": null,
+        "balance_sheet": 54.42612142178047,
+        "growth": 14.200000000000001,
+        "valuation": 86.12409104573533
+    },
+    "financial_drivers": {
+        "strongest": [
+            "pe_forward (valuation): score=100, value=4.74",
+            "ev_ebitda (valuation): score=83, value=3.87",
+            "pe_trailing (valuation): score=77, value=14.46"
+        ],
+        "weakest": [
+            "eps_growth_1yr (growth): score=0, value=-72.9%",
+            "revenue_growth_1yr (growth): score=24, value=-0.8%",
+            "debt_to_equity (balance_sheet): score=25, value=3.04"
+        ]
+    },
+    "professional_raw_metrics": {
+        "sector": "Technology",
+        "industry": "Information Technology Services",
+        "market_cap_usd": 2770746112,
+        "current_price": 12.29,
+        "analyst": {
+            "recommendation_mean": 3.14286,
+            "recommendation_key": "hold",
+            "target_mean_price": 14.1,
+            "target_median_price": 13.0,
+            "target_high_price": 16.5,
+            "target_low_price": 13.0,
+            "upside_to_target": 0.14727420667209118,
+            "target_dispersion": 0.24822695035460993,
+            "num_analysts": 5
+        },
+        "rating_momentum": {
+            "upgrades_12m": 0,
+            "downgrades_12m": 2,
+            "total_actions_12m": 11
+        },
+        "institutional": {
+            "held_pct_institutions": 0.81688005,
+            "held_pct_insiders": 0.015140001
+        },
+        "short_interest": {
+            "short_pct_of_float": 0.15359999,
+            "short_ratio": 6.36,
+            "short_change_pct": 0.15679684216341594
+        },
+        "data_quality_flags": []
+    },
+    "professional_raw_metrics_date": "2026-05-25",
+    "professional_score": 48.8995099459761,
+    "professional_score_date": "2026-05-25",
+    "professional_subscores": {
+        "analyst_consensus": 44.58452066720911,
+        "rating_momentum": 41.04545454545455,
+        "institutional_positioning": 70.88950509025311,
+        "short_interest": 35.40791869017324
+    },
+    "professional_drivers": {
+        "strongest": [
+            "held_pct_institutions (institutional_positioning): score=74, value=81.7%",
+            "upside_to_target (analyst_consensus): score=64, value=14.7%",
+            "held_pct_insiders (institutional_positioning): score=63, value=1.5%"
+        ],
+        "weakest": [
+            "short_change_pct (short_interest): score=30, value=15.7%",
+            "recommendation_mean (analyst_consensus): score=31, value=3.14",
+            "short_pct_of_float (short_interest): score=34, value=15.4%"
+        ]
+    },
+    "news_sentiment_raw_metrics": {
+        "sector": null,
+        "industry": null,
+        "market_cap_usd": null,
+        "current_price": null,
+        "earnings": {
+            "beat_count_4q": null,
+            "miss_count_4q": null,
+            "total_quarters_4q": null,
+            "avg_surprise_magnitude_4q": null,
+            "eps_estimate_revision_90d": null,
+            "trailing_eps": null,
+            "forward_eps": null
+        },
+        "price_momentum": {
+            "return_1m": -0.13935572887466094,
+            "return_3m": -0.03909304155522136,
+            "return_6m": -0.48165329243299826
+        },
+        "insider_activity": {
+            "insider_purchases_count_90d": null,
+            "insider_sales_count_90d": null,
+            "insider_net_value_90d_usd": null
+        },
+        "data_quality_flags": [
+            "KD: failed to fetch .info (Too Many Requests. Rate limited. Try after a while.)",
+            "KD: sector classification unavailable",
+            "KD: earnings_dates fetch failed (['Earnings Date'])",
+            "KD: eps_revisions fetch failed (Too Many Requests. Rate limited. Try after a while.)",
+            "KD: insider_transactions fetch failed (Too Many Requests. Rate limited. Try after a while.)"
+        ]
+    },
+    "news_sentiment_raw_metrics_date": "2026-05-25",
+    "news_sentiment_score": null,
+    "news_sentiment_score_date": "2026-05-25",
+    "news_sentiment_subscores": {
+        "earnings_surprise_revisions": null,
+        "price_momentum": 21.913083872834548,
+        "insider_activity": null
+    },
+    "news_sentiment_drivers": {
+        "strongest": [
+            "return_3m (price_momentum): score=43, value=-3.9%",
+            "return_1m (price_momentum): score=27, value=-13.9%",
+            "return_6m (price_momentum): score=0, value=-48.2%"
+        ],
+        "weakest": [
+            "return_6m (price_momentum): score=0, value=-48.2%",
+            "return_1m (price_momentum): score=27, value=-13.9%",
+            "return_3m (price_momentum): score=43, value=-3.9%"
+        ]
+    },
+    "composite_score": 47.898965344317496,
+    "composite_score_date": "2026-05-25",
+    "composite_rank": 835,
+    "composite_metadata": {
+        "scores_used": [
+            "financial",
+            "professional"
+        ],
+        "scores_imputed": [
+            "news_sentiment"
+        ],
+        "imputed_values": {
+            "news_sentiment": 54.01235342387252
+        },
+        "imputation_r_squared": 0.031937368103860275,
+        "weights_applied": {
+            "financial": 50,
+            "professional": 30,
+            "news_sentiment": 20
+        }
+    }
+}

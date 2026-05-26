@@ -1,0 +1,193 @@
+{
+    "ticker": "NLY",
+    "company_name": "Annaly Capital Management",
+    "universe_added_date": "2026-05-18",
+    "financial_raw_metrics": {
+        "sector": "Real Estate",
+        "industry": "REIT - Mortgage",
+        "market_cap_usd": 15718050816,
+        "profitability": {
+            "gross_margin_ttm": 0.97490996,
+            "operating_margin_ttm": 0.80999,
+            "net_margin_ttm": 0.87391,
+            "operating_margin_trend_3yr": null
+        },
+        "returns_on_capital": {
+            "roe_ttm": 0.15042,
+            "roa_ttm": 0.01816,
+            "roic_ttm": null
+        },
+        "cash_flow": {
+            "fcf_margin_ttm": null,
+            "fcf_to_net_income_ttm": null,
+            "ocf_cagr_3yr": -0.49475416503236846
+        },
+        "balance_sheet": {
+            "debt_to_equity": 7.32812,
+            "net_debt_to_ebitda": null,
+            "current_ratio": 0.519,
+            "interest_coverage": null,
+            "total_debt_usd": 119637573632,
+            "total_cash_usd": 795292032
+        },
+        "growth": {
+            "revenue_growth_1yr": 0.488,
+            "revenue_cagr_3yr": 0.04722058342817825,
+            "eps_growth_1yr": 1.225,
+            "eps_cagr_3yr": 0.055228036465485575,
+            "fcf_cagr_3yr": null
+        },
+        "valuation": {
+            "pe_trailing": 6.9193554,
+            "pe_forward": 7.204369,
+            "ps_ratio": 6.2845707,
+            "pb_ratio": 1.0824586,
+            "ev_ebitda": null,
+            "peg_ratio": 32.03,
+            "fcf_yield": null
+        },
+        "data_quality_flags": [
+            "NLY: eps_cagr_3yr approximated by net income CAGR (share count changes not adjusted)"
+        ]
+    },
+    "financial_raw_metrics_date": "2026-05-25",
+    "financial_score": 56.442326458825846,
+    "financial_score_date": "2026-05-25",
+    "financial_subscores": {
+        "profitability": 92.2365186620015,
+        "returns_on_capital": 48.071116588591245,
+        "cash_flow_quality": null,
+        "balance_sheet": 0.5066666666666672,
+        "growth": 62.52813582952581,
+        "valuation": 69.72820043636364
+    },
+    "financial_drivers": {
+        "strongest": [
+            "eps_growth_1yr (growth): score=100, value=1.23",
+            "revenue_growth_1yr (growth): score=100, value=48.8%",
+            "net_margin_ttm (profitability): score=100, value=87.4%"
+        ],
+        "weakest": [
+            "ocf_cagr_3yr (cash_flow_quality): score=0, value=-49.5%",
+            "debt_to_equity (balance_sheet): score=0, value=7.33",
+            "peg_ratio (valuation): score=0, value=32.03"
+        ]
+    },
+    "professional_raw_metrics": {
+        "sector": "Real Estate",
+        "industry": "REIT - Mortgage",
+        "market_cap_usd": 15718050816,
+        "current_price": 21.45,
+        "analyst": {
+            "recommendation_mean": 1.91667,
+            "recommendation_key": "buy",
+            "target_mean_price": 24.25,
+            "target_median_price": 24.25,
+            "target_high_price": 25.0,
+            "target_low_price": 23.0,
+            "upside_to_target": 0.13053613053613058,
+            "target_dispersion": 0.08247422680412371,
+            "num_analysts": 10
+        },
+        "rating_momentum": {
+            "upgrades_12m": 1,
+            "downgrades_12m": 0,
+            "total_actions_12m": 24
+        },
+        "institutional": {
+            "held_pct_institutions": 0.62124,
+            "held_pct_insiders": 0.00114
+        },
+        "short_interest": {
+            "short_pct_of_float": 0.0001,
+            "short_ratio": 0.01,
+            "short_change_pct": -0.22430089430735212
+        },
+        "data_quality_flags": []
+    },
+    "professional_raw_metrics_date": "2026-05-25",
+    "professional_score": 65.85333044063711,
+    "professional_score_date": "2026-05-25",
+    "professional_subscores": {
+        "analyst_consensus": 70.55355305361306,
+        "rating_momentum": 55.125,
+        "institutional_positioning": 58.77592123676993,
+        "short_interest": 84.56237708453372
+    },
+    "professional_drivers": {
+        "strongest": [
+            "short_ratio (short_interest): score=100, value=1.0%",
+            "short_change_pct (short_interest): score=82, value=-22.4%",
+            "recommendation_mean (analyst_consensus): score=77, value=1.92"
+        ],
+        "weakest": [
+            "held_pct_insiders (institutional_positioning): score=51, value=0.1%",
+            "upgrades_12m (rating_momentum): score=55, value=1.00",
+            "downgrades_12m (rating_momentum): score=55, value=0.00"
+        ]
+    },
+    "news_sentiment_raw_metrics": {
+        "sector": "Real Estate",
+        "industry": "REIT - Mortgage",
+        "market_cap_usd": 15718050816,
+        "current_price": 21.45,
+        "earnings": {
+            "beat_count_4q": 4,
+            "miss_count_4q": 0,
+            "total_quarters_4q": 4,
+            "avg_surprise_magnitude_4q": 0.020695890034352335,
+            "eps_estimate_revision_90d": null,
+            "trailing_eps": 3.1,
+            "forward_eps": 2.97736
+        },
+        "price_momentum": {
+            "return_1m": -0.05214313762823088,
+            "return_3m": -0.03479975230540078,
+            "return_6m": 0.058076192363263855
+        },
+        "insider_activity": {
+            "insider_purchases_count_90d": 0,
+            "insider_sales_count_90d": 3,
+            "insider_net_value_90d_usd": -2120542.0
+        },
+        "data_quality_flags": []
+    },
+    "news_sentiment_raw_metrics_date": "2026-05-25",
+    "news_sentiment_score": 59.075083166293346,
+    "news_sentiment_score_date": "2026-05-25",
+    "news_sentiment_subscores": {
+        "earnings_surprise_revisions": 81.69905154638901,
+        "price_momentum": 49.66912987189292,
+        "insider_activity": 32.63905299490285
+    },
+    "news_sentiment_drivers": {
+        "strongest": [
+            "beat_rate_4q (earnings_surprise_revisions): score=100, value=1.00",
+            "avg_surprise_magnitude_4q (earnings_surprise_revisions): score=60, value=2.1%",
+            "return_6m (price_momentum): score=60, value=5.8%"
+        ],
+        "weakest": [
+            "insider_count_ratio_90d (insider_activity): score=0, value=-1.00",
+            "return_1m (price_momentum): score=41, value=-5.2%",
+            "return_3m (price_momentum): score=44, value=-3.5%"
+        ]
+    },
+    "composite_score": 59.79217899486273,
+    "composite_score_date": "2026-05-25",
+    "composite_rank": 219,
+    "composite_metadata": {
+        "scores_used": [
+            "financial",
+            "professional",
+            "news_sentiment"
+        ],
+        "scores_imputed": [],
+        "imputed_values": {},
+        "imputation_r_squared": null,
+        "weights_applied": {
+            "financial": 50,
+            "professional": 30,
+            "news_sentiment": 20
+        }
+    }
+}

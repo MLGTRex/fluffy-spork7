@@ -1,0 +1,202 @@
+{
+    "ticker": "MORN",
+    "company_name": "Morningstar, Inc.",
+    "universe_added_date": "2026-05-18",
+    "financial_raw_metrics": {
+        "sector": "Financial Services",
+        "industry": "Financial Data & Stock Exchanges",
+        "market_cap_usd": 6831352832,
+        "profitability": {
+            "gross_margin_ttm": 0.61713004,
+            "operating_margin_ttm": 0.24178,
+            "net_margin_ttm": 0.16058001,
+            "operating_margin_trend_3yr": 0.11634809377958145
+        },
+        "returns_on_capital": {
+            "roe_ttm": 0.30656,
+            "roa_ttm": 0.090459995,
+            "roic_ttm": null
+        },
+        "cash_flow": {
+            "fcf_margin_ttm": 0.18051845355351537,
+            "fcf_to_net_income_ttm": 1.1241621449851043,
+            "ocf_cagr_3yr": 0.25574698696229636
+        },
+        "balance_sheet": {
+            "debt_to_equity": 1.8715000000000002,
+            "net_debt_to_ebitda": 2.1486866291432145,
+            "current_ratio": 1.032,
+            "interest_coverage": 13.475,
+            "total_debt_usd": 1906499968,
+            "total_cash_usd": 532200000
+        },
+        "growth": {
+            "revenue_growth_1yr": 0.108,
+            "revenue_cagr_3yr": 0.09344156585990193,
+            "eps_growth_1yr": 0.5,
+            "eps_cagr_3yr": 0.7443684458700424,
+            "fcf_cagr_3yr": 0.3803072354954329
+        },
+        "valuation": {
+            "pe_trailing": 18.3681,
+            "pe_forward": 13.578241,
+            "ps_ratio": 2.7233903,
+            "pb_ratio": 6.705988,
+            "ev_ebitda": 12.829,
+            "peg_ratio": 2.31,
+            "fcf_yield": 0.06628445684709731
+        },
+        "data_quality_flags": [
+            "MORN: eps_cagr_3yr approximated by net income CAGR (share count changes not adjusted)"
+        ]
+    },
+    "financial_raw_metrics_date": "2026-05-25",
+    "financial_score": 63.2934001047399,
+    "financial_score_date": "2026-05-25",
+    "financial_subscores": {
+        "profitability": 34.51038385288385,
+        "returns_on_capital": 57.36461649349759,
+        "cash_flow_quality": 86.17974643343535,
+        "balance_sheet": 61.13625696685428,
+        "growth": 84.469062017421,
+        "valuation": 67.67093481871349
+    },
+    "financial_drivers": {
+        "strongest": [
+            "eps_growth_1yr (growth): score=100, value=50.0%",
+            "eps_cagr_3yr (growth): score=100, value=74.4%",
+            "fcf_cagr_3yr (growth): score=99, value=38.0%"
+        ],
+        "weakest": [
+            "net_margin_ttm (profitability): score=25, value=16.1%",
+            "peg_ratio (valuation): score=26, value=2.31",
+            "gross_margin_ttm (profitability): score=30, value=61.7%"
+        ]
+    },
+    "professional_raw_metrics": {
+        "sector": "Financial Services",
+        "industry": "Financial Data & Stock Exchanges",
+        "market_cap_usd": 6831352832,
+        "current_price": 179.64,
+        "analyst": {
+            "recommendation_mean": 1.66667,
+            "recommendation_key": "buy",
+            "target_mean_price": 252.33333,
+            "target_median_price": 265.0,
+            "target_high_price": 280.0,
+            "target_low_price": 212.0,
+            "upside_to_target": 0.4046611556446226,
+            "target_dispersion": 0.26948481201433044,
+            "num_analysts": 3
+        },
+        "rating_momentum": {
+            "upgrades_12m": 0,
+            "downgrades_12m": 0,
+            "total_actions_12m": 4
+        },
+        "institutional": {
+            "held_pct_institutions": 0.64525,
+            "held_pct_insiders": 0.49318
+        },
+        "short_interest": {
+            "short_pct_of_float": 0.064,
+            "short_ratio": 2.89,
+            "short_change_pct": 0.07335560807640641
+        },
+        "data_quality_flags": []
+    },
+    "professional_raw_metrics_date": "2026-05-25",
+    "professional_score": 57.43119583182251,
+    "professional_score_date": "2026-05-25",
+    "professional_subscores": {
+        "analyst_consensus": 62.36521417902471,
+        "rating_momentum": 50.0,
+        "institutional_positioning": 62.41456215952089,
+        "short_interest": 49.9982021952242
+    },
+    "professional_drivers": {
+        "strongest": [
+            "held_pct_insiders (institutional_positioning): score=100, value=49.3%",
+            "upside_to_target (analyst_consensus): score=95, value=40.5%",
+            "recommendation_mean (analyst_consensus): score=85, value=1.67"
+        ],
+        "weakest": [
+            "short_change_pct (short_interest): score=41, value=7.3%",
+            "short_pct_of_float (short_interest): score=41, value=6.4%",
+            "held_pct_institutions (institutional_positioning): score=46, value=64.5%"
+        ]
+    },
+    "news_sentiment_raw_metrics": {
+        "sector": null,
+        "industry": null,
+        "market_cap_usd": null,
+        "current_price": null,
+        "earnings": {
+            "beat_count_4q": null,
+            "miss_count_4q": null,
+            "total_quarters_4q": null,
+            "avg_surprise_magnitude_4q": null,
+            "eps_estimate_revision_90d": null,
+            "trailing_eps": null,
+            "forward_eps": null
+        },
+        "price_momentum": {
+            "return_1m": -0.03502365784379282,
+            "return_3m": 0.11319641632981113,
+            "return_6m": -0.1368590458890694
+        },
+        "insider_activity": {
+            "insider_purchases_count_90d": null,
+            "insider_sales_count_90d": null,
+            "insider_net_value_90d_usd": null
+        },
+        "data_quality_flags": [
+            "MORN: failed to fetch .info (Too Many Requests. Rate limited. Try after a while.)",
+            "MORN: sector classification unavailable",
+            "MORN: earnings_dates fetch failed (['Earnings Date'])",
+            "MORN: eps_revisions fetch failed (Too Many Requests. Rate limited. Try after a while.)",
+            "MORN: insider_transactions fetch failed (Too Many Requests. Rate limited. Try after a while.)"
+        ]
+    },
+    "news_sentiment_raw_metrics_date": "2026-05-25",
+    "news_sentiment_score": null,
+    "news_sentiment_score_date": "2026-05-25",
+    "news_sentiment_subscores": {
+        "earnings_surprise_revisions": null,
+        "price_momentum": 46.01986881647632,
+        "insider_activity": null
+    },
+    "news_sentiment_drivers": {
+        "strongest": [
+            "return_3m (price_momentum): score=69, value=11.3%",
+            "return_1m (price_momentum): score=44, value=-3.5%",
+            "return_6m (price_momentum): score=27, value=-13.7%"
+        ],
+        "weakest": [
+            "return_6m (price_momentum): score=27, value=-13.7%",
+            "return_1m (price_momentum): score=44, value=-3.5%",
+            "return_3m (price_momentum): score=69, value=11.3%"
+        ]
+    },
+    "composite_score": 58.88648400881062,
+    "composite_score_date": "2026-05-25",
+    "composite_rank": 267,
+    "composite_metadata": {
+        "scores_used": [
+            "financial",
+            "professional"
+        ],
+        "scores_imputed": [
+            "news_sentiment"
+        ],
+        "imputed_values": {
+            "news_sentiment": 50.05212603446955
+        },
+        "imputation_r_squared": 0.031937368103860275,
+        "weights_applied": {
+            "financial": 50,
+            "professional": 30,
+            "news_sentiment": 20
+        }
+    }
+}

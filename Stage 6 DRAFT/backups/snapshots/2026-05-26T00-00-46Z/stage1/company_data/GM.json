@@ -1,0 +1,202 @@
+{
+    "ticker": "GM",
+    "company_name": "General Motors",
+    "universe_added_date": "2026-05-18",
+    "financial_raw_metrics": {
+        "sector": "Consumer Cyclical",
+        "industry": "Auto Manufacturers",
+        "market_cap_usd": 71042203648,
+        "profitability": {
+            "gross_margin_ttm": 0.111420006,
+            "operating_margin_ttm": 0.0936,
+            "net_margin_ttm": 0.0137600005,
+            "operating_margin_trend_3yr": -0.05008263066438613
+        },
+        "returns_on_capital": {
+            "roe_ttm": 0.040149998,
+            "roa_ttm": 0.02688,
+            "roic_ttm": null
+        },
+        "cash_flow": {
+            "fcf_margin_ttm": 0.1216891982193894,
+            "fcf_to_net_income_ttm": 9.234125000815455,
+            "ocf_cagr_3yr": 0.18752983811992818
+        },
+        "balance_sheet": {
+            "debt_to_equity": 1.99048,
+            "net_debt_to_ebitda": 5.705631294604746,
+            "current_ratio": 1.152,
+            "interest_coverage": 5.287482806052269,
+            "total_debt_usd": 128773996544,
+            "total_cash_usd": 24418000896
+        },
+        "growth": {
+            "revenue_growth_1yr": -0.009,
+            "revenue_cagr_3yr": 0.05685834354915076,
+            "eps_growth_1yr": -0.158,
+            "eps_cagr_3yr": -0.3524813768340873,
+            "fcf_cagr_3yr": null
+        },
+        "valuation": {
+            "pe_trailing": 28.755474,
+            "pe_forward": 5.6115713,
+            "ps_ratio": 0.38479605,
+            "pb_ratio": 1.1342076,
+            "ev_ebitda": 9.701,
+            "peg_ratio": 0.3474,
+            "fcf_yield": 0.31624336496257444
+        },
+        "data_quality_flags": [
+            "GM: eps_cagr_3yr approximated by net income CAGR (share count changes not adjusted)"
+        ]
+    },
+    "financial_raw_metrics_date": "2026-05-25",
+    "financial_score": 45.06292629902346,
+    "financial_score_date": "2026-05-25",
+    "financial_subscores": {
+        "profitability": 34.91067626313271,
+        "returns_on_capital": 40.45824780126151,
+        "cash_flow_quality": 63.79620645079171,
+        "balance_sheet": 33.27707853331389,
+        "growth": 25.84977815390412,
+        "valuation": 77.00454676962107
+    },
+    "financial_drivers": {
+        "strongest": [
+            "fcf_yield (valuation): score=100, value=31.6%",
+            "peg_ratio (valuation): score=99, value=34.7%",
+            "pe_forward (valuation): score=99, value=5.61"
+        ],
+        "weakest": [
+            "eps_cagr_3yr (growth): score=0, value=-35.2%",
+            "net_debt_to_ebitda (balance_sheet): score=4, value=5.71",
+            "eps_growth_1yr (growth): score=14, value=-15.8%"
+        ]
+    },
+    "professional_raw_metrics": {
+        "sector": "Consumer Cyclical",
+        "industry": "Auto Manufacturers",
+        "market_cap_usd": 71042203648,
+        "current_price": 78.79,
+        "analyst": {
+            "recommendation_mean": 1.88889,
+            "recommendation_key": "buy",
+            "target_mean_price": 93.92308,
+            "target_median_price": 96.5,
+            "target_high_price": 126.0,
+            "target_low_price": 59.0,
+            "upside_to_target": 0.19206853661632176,
+            "target_dispersion": 0.7133496899803542,
+            "num_analysts": 26
+        },
+        "rating_momentum": {
+            "upgrades_12m": 6,
+            "downgrades_12m": 0,
+            "total_actions_12m": 63
+        },
+        "institutional": {
+            "held_pct_institutions": 0.88241,
+            "held_pct_insiders": 0.00224
+        },
+        "short_interest": {
+            "short_pct_of_float": 0.0226,
+            "short_ratio": 3.09,
+            "short_change_pct": -0.0021362815205931236
+        },
+        "data_quality_flags": []
+    },
+    "professional_raw_metrics_date": "2026-05-25",
+    "professional_score": 67.47631074727015,
+    "professional_score_date": "2026-05-25",
+    "professional_subscores": {
+        "analyst_consensus": 75.80454910775478,
+        "rating_momentum": 58.5,
+        "institutional_positioning": 65.53996121677892,
+        "short_interest": 66.23152170240829
+    },
+    "professional_drivers": {
+        "strongest": [
+            "recommendation_mean (analyst_consensus): score=78, value=1.89",
+            "upside_to_target (analyst_consensus): score=72, value=19.2%",
+            "held_pct_institutions (institutional_positioning): score=71, value=88.2%"
+        ],
+        "weakest": [
+            "short_change_pct (short_interest): score=50, value=-0.2%",
+            "held_pct_insiders (institutional_positioning): score=52, value=0.2%",
+            "upgrades_12m (rating_momentum): score=58, value=6.00"
+        ]
+    },
+    "news_sentiment_raw_metrics": {
+        "sector": null,
+        "industry": null,
+        "market_cap_usd": null,
+        "current_price": null,
+        "earnings": {
+            "beat_count_4q": null,
+            "miss_count_4q": null,
+            "total_quarters_4q": null,
+            "avg_surprise_magnitude_4q": null,
+            "eps_estimate_revision_90d": null,
+            "trailing_eps": null,
+            "forward_eps": null
+        },
+        "price_momentum": {
+            "return_1m": -0.0026582162591475473,
+            "return_3m": -0.03060560801808957,
+            "return_6m": 0.16305433271162845
+        },
+        "insider_activity": {
+            "insider_purchases_count_90d": null,
+            "insider_sales_count_90d": null,
+            "insider_net_value_90d_usd": null
+        },
+        "data_quality_flags": [
+            "GM: failed to fetch .info (Too Many Requests. Rate limited. Try after a while.)",
+            "GM: sector classification unavailable",
+            "GM: earnings_dates fetch failed (['Earnings Date'])",
+            "GM: eps_revisions fetch failed (Too Many Requests. Rate limited. Try after a while.)",
+            "GM: insider_transactions fetch failed (Too Many Requests. Rate limited. Try after a while.)"
+        ]
+    },
+    "news_sentiment_raw_metrics_date": "2026-05-25",
+    "news_sentiment_score": null,
+    "news_sentiment_score_date": "2026-05-25",
+    "news_sentiment_subscores": {
+        "earnings_surprise_revisions": null,
+        "price_momentum": 58.974202702255525,
+        "insider_activity": null
+    },
+    "news_sentiment_drivers": {
+        "strongest": [
+            "return_6m (price_momentum): score=77, value=16.3%",
+            "return_1m (price_momentum): score=50, value=-0.3%",
+            "return_3m (price_momentum): score=45, value=-3.1%"
+        ],
+        "weakest": [
+            "return_3m (price_momentum): score=45, value=-3.1%",
+            "return_1m (price_momentum): score=50, value=-0.3%",
+            "return_6m (price_momentum): score=77, value=16.3%"
+        ]
+    },
+    "composite_score": 52.77827425341864,
+    "composite_score_date": "2026-05-25",
+    "composite_rank": 630,
+    "composite_metadata": {
+        "scores_used": [
+            "financial",
+            "professional"
+        ],
+        "scores_imputed": [
+            "news_sentiment"
+        ],
+        "imputed_values": {
+            "news_sentiment": 50.01958939862932
+        },
+        "imputation_r_squared": 0.031937368103860275,
+        "weights_applied": {
+            "financial": 50,
+            "professional": 30,
+            "news_sentiment": 20
+        }
+    }
+}

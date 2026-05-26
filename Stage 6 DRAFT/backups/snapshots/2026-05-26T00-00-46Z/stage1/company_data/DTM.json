@@ -1,0 +1,195 @@
+{
+    "ticker": "DTM",
+    "company_name": "DT Midstream",
+    "universe_added_date": "2026-05-18",
+    "financial_raw_metrics": {
+        "sector": "Energy",
+        "industry": "Oil & Gas Midstream",
+        "market_cap_usd": 15416373248,
+        "profitability": {
+            "gross_margin_ttm": 0.7547,
+            "operating_margin_ttm": 0.49702,
+            "net_margin_ttm": 0.36285,
+            "operating_margin_trend_3yr": -0.0005990066109342607
+        },
+        "returns_on_capital": {
+            "roe_ttm": 0.098579995,
+            "roa_ttm": 0.039389998,
+            "roic_ttm": null
+        },
+        "cash_flow": {
+            "fcf_margin_ttm": 0.11442006269592477,
+            "fcf_to_net_income_ttm": 0.31533477321814257,
+            "ocf_cagr_3yr": 0.06143571589394137
+        },
+        "balance_sheet": {
+            "debt_to_equity": 0.68866,
+            "net_debt_to_ebitda": 3.590858488294314,
+            "current_ratio": 1.259,
+            "interest_coverage": 4.714285714285714,
+            "total_debt_usd": 3371000064,
+            "total_cash_usd": 150000000
+        },
+        "growth": {
+            "revenue_growth_1yr": 0.109,
+            "revenue_cagr_3yr": 0.1055059909129179,
+            "eps_growth_1yr": 0.198,
+            "eps_cagr_3yr": 0.06025978321605674,
+            "fcf_cagr_3yr": 0.04450183705902866
+        },
+        "valuation": {
+            "pe_trailing": 33.582222,
+            "pe_forward": 30.339533,
+            "ps_ratio": 12.081798,
+            "pb_ratio": 3.2434752,
+            "ev_ebitda": 20.936,
+            "peg_ratio": null,
+            "fcf_yield": 0.009470450517208443
+        },
+        "data_quality_flags": [
+            "DTM: eps_cagr_3yr approximated by net income CAGR (share count changes not adjusted)"
+        ]
+    },
+    "financial_raw_metrics_date": "2026-05-25",
+    "financial_score": 51.29849157444316,
+    "financial_score_date": "2026-05-25",
+    "financial_subscores": {
+        "profitability": 81.3349054343404,
+        "returns_on_capital": 35.96190667256052,
+        "cash_flow_quality": 46.91014842459519,
+        "balance_sheet": 56.43075352221691,
+        "growth": 58.20317737069317,
+        "valuation": 24.05011503624791
+    },
+    "financial_drivers": {
+        "strongest": [
+            "net_margin_ttm (profitability): score=89, value=36.3%",
+            "debt_to_equity (balance_sheet): score=84, value=68.9%",
+            "eps_growth_1yr (growth): score=80, value=19.8%"
+        ],
+        "weakest": [
+            "ev_ebitda (valuation): score=14, value=20.94",
+            "fcf_yield (valuation): score=19, value=0.9%",
+            "fcf_to_net_income_ttm (cash_flow_quality): score=29, value=31.5%"
+        ]
+    },
+    "professional_raw_metrics": {
+        "sector": "Energy",
+        "industry": "Oil & Gas Midstream",
+        "market_cap_usd": 15416373248,
+        "current_price": 151.12,
+        "analyst": {
+            "recommendation_mean": 2.4,
+            "recommendation_key": "buy",
+            "target_mean_price": 151.7143,
+            "target_median_price": 154.0,
+            "target_high_price": 170.0,
+            "target_low_price": 127.0,
+            "upside_to_target": 0.003932636315510879,
+            "target_dispersion": 0.2834274686038165,
+            "num_analysts": 14
+        },
+        "rating_momentum": {
+            "upgrades_12m": 1,
+            "downgrades_12m": 1,
+            "total_actions_12m": 31
+        },
+        "institutional": {
+            "held_pct_institutions": 0.88219,
+            "held_pct_insiders": 0.0057300003
+        },
+        "short_interest": {
+            "short_pct_of_float": 0.0464,
+            "short_ratio": 4.48,
+            "short_change_pct": 0.07527225459947434
+        },
+        "data_quality_flags": []
+    },
+    "professional_raw_metrics_date": "2026-05-25",
+    "professional_score": 51.801425628599134,
+    "professional_score_date": "2026-05-25",
+    "professional_subscores": {
+        "analyst_consensus": 45.8719163578613,
+        "rating_momentum": 52.5,
+        "institutional_positioning": 61.47590494348718,
+        "short_interest": 48.3485244498392
+    },
+    "professional_drivers": {
+        "strongest": [
+            "held_pct_institutions (institutional_positioning): score=64, value=88.2%",
+            "recommendation_mean (analyst_consensus): score=59, value=2.40",
+            "held_pct_insiders (institutional_positioning): score=56, value=0.6%"
+        ],
+        "weakest": [
+            "upside_to_target (analyst_consensus): score=26, value=0.4%",
+            "short_change_pct (short_interest): score=41, value=7.5%",
+            "short_pct_of_float (short_interest): score=47, value=4.6%"
+        ]
+    },
+    "news_sentiment_raw_metrics": {
+        "sector": "Energy",
+        "industry": "Oil & Gas Midstream",
+        "market_cap_usd": 15416373248,
+        "current_price": 151.12,
+        "earnings": {
+            "beat_count_4q": null,
+            "miss_count_4q": null,
+            "total_quarters_4q": null,
+            "avg_surprise_magnitude_4q": null,
+            "eps_estimate_revision_90d": null,
+            "trailing_eps": 4.5,
+            "forward_eps": 4.98096
+        },
+        "price_momentum": {
+            "return_1m": 0.1478049202234,
+            "return_3m": 0.1493450225997539,
+            "return_6m": 0.31612016855289116
+        },
+        "insider_activity": {
+            "insider_purchases_count_90d": 2,
+            "insider_sales_count_90d": 1,
+            "insider_net_value_90d_usd": -224471.0
+        },
+        "data_quality_flags": [
+            "DTM: earnings_dates fetch failed (['Earnings Date'])"
+        ]
+    },
+    "news_sentiment_raw_metrics_date": "2026-05-25",
+    "news_sentiment_score": 74.8286176288843,
+    "news_sentiment_score_date": "2026-05-25",
+    "news_sentiment_subscores": {
+        "earnings_surprise_revisions": null,
+        "price_momentum": 84.87033132762731,
+        "insider_activity": 54.74519023139831
+    },
+    "news_sentiment_drivers": {
+        "strongest": [
+            "return_6m (price_momentum): score=100, value=31.6%",
+            "return_3m (price_momentum): score=75, value=14.9%",
+            "return_1m (price_momentum): score=75, value=14.8%"
+        ],
+        "weakest": [
+            "net_insider_value_pct_mcap_90d (insider_activity): score=50, value=-0.0%",
+            "insider_count_ratio_90d (insider_activity): score=67, value=33.3%",
+            "return_1m (price_momentum): score=75, value=14.8%"
+        ]
+    },
+    "composite_score": 56.15539700157819,
+    "composite_score_date": "2026-05-25",
+    "composite_rank": 410,
+    "composite_metadata": {
+        "scores_used": [
+            "financial",
+            "professional",
+            "news_sentiment"
+        ],
+        "scores_imputed": [],
+        "imputed_values": {},
+        "imputation_r_squared": null,
+        "weights_applied": {
+            "financial": 50,
+            "professional": 30,
+            "news_sentiment": 20
+        }
+    }
+}

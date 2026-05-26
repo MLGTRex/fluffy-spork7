@@ -1,0 +1,193 @@
+{
+    "ticker": "AA",
+    "company_name": "Alcoa",
+    "universe_added_date": "2026-05-18",
+    "financial_raw_metrics": {
+        "sector": "Basic Materials",
+        "industry": "Aluminum",
+        "market_cap_usd": 18836457472,
+        "profitability": {
+            "gross_margin_ttm": 0.16254,
+            "operating_margin_ttm": 0.13937001,
+            "net_margin_ttm": 0.081709996,
+            "operating_margin_trend_3yr": -0.047823368156520926
+        },
+        "returns_on_capital": {
+            "roe_ttm": 0.15427,
+            "roa_ttm": 0.04241,
+            "roic_ttm": null
+        },
+        "cash_flow": {
+            "fcf_margin_ttm": 0.0859245369019512,
+            "fcf_to_net_income_ttm": 1.0587877078870496,
+            "ocf_cagr_3yr": 0.1296628433700142
+        },
+        "balance_sheet": {
+            "debt_to_equity": 0.37018999999999996,
+            "net_debt_to_ebitda": 0.706368,
+            "current_ratio": 1.484,
+            "interest_coverage": 7.734177215189874,
+            "total_debt_usd": 2551000064,
+            "total_cash_usd": 1352999936
+        },
+        "growth": {
+            "revenue_growth_1yr": -0.052,
+            "revenue_cagr_3yr": 0.010071437935283534,
+            "eps_growth_1yr": -0.227,
+            "eps_cagr_3yr": null,
+            "fcf_cagr_3yr": 0.1835473870063109
+        },
+        "valuation": {
+            "pe_trailing": 18.302563,
+            "pe_forward": 10.659156,
+            "ps_ratio": 1.4884597,
+            "pb_ratio": 2.7595003,
+            "ev_ebitda": 11.851,
+            "peg_ratio": 8.36,
+            "fcf_yield": 0.05772714840974531
+        },
+        "data_quality_flags": [
+            "AA: eps_cagr_3yr approximated by net income CAGR (share count changes not adjusted)"
+        ]
+    },
+    "financial_raw_metrics_date": "2026-05-25",
+    "financial_score": 55.09229052200847,
+    "financial_score_date": "2026-05-25",
+    "financial_subscores": {
+        "profitability": 37.08837512015521,
+        "returns_on_capital": 52.10258598445927,
+        "cash_flow_quality": 68.1216219094921,
+        "balance_sheet": 85.3518619113924,
+        "growth": 36.22697090488877,
+        "valuation": 58.66020061479723
+    },
+    "financial_drivers": {
+        "strongest": [
+            "fcf_to_net_income_ttm (cash_flow_quality): score=95, value=1.06",
+            "debt_to_equity (balance_sheet): score=91, value=37.0%",
+            "net_debt_to_ebitda (balance_sheet): score=91, value=70.6%"
+        ],
+        "weakest": [
+            "peg_ratio (valuation): score=0, value=8.36",
+            "eps_growth_1yr (growth): score=7, value=-22.7%",
+            "revenue_growth_1yr (growth): score=16, value=-5.2%"
+        ]
+    },
+    "professional_raw_metrics": {
+        "sector": "Basic Materials",
+        "industry": "Aluminum",
+        "market_cap_usd": 18836457472,
+        "current_price": 71.38,
+        "analyst": {
+            "recommendation_mean": 1.78571,
+            "recommendation_key": "buy",
+            "target_mean_price": 75.63846,
+            "target_median_price": 79.3,
+            "target_high_price": 92.0,
+            "target_low_price": 52.0,
+            "upside_to_target": 0.059659008125525353,
+            "target_dispersion": 0.5288314965693379,
+            "num_analysts": 13
+        },
+        "rating_momentum": {
+            "upgrades_12m": 5,
+            "downgrades_12m": 3,
+            "total_actions_12m": 37
+        },
+        "institutional": {
+            "held_pct_institutions": 0.84266996,
+            "held_pct_insiders": 0.00545
+        },
+        "short_interest": {
+            "short_pct_of_float": 0.0234,
+            "short_ratio": 1.14,
+            "short_change_pct": -0.11171257628694388
+        },
+        "data_quality_flags": []
+    },
+    "professional_raw_metrics_date": "2026-05-25",
+    "professional_score": 63.766747517279065,
+    "professional_score_date": "2026-05-25",
+    "professional_subscores": {
+        "analyst_consensus": 65.82312081255255,
+        "rating_momentum": 55.9054054054054,
+        "institutional_positioning": 62.453570188791176,
+        "short_interest": 74.25940889557683
+    },
+    "professional_drivers": {
+        "strongest": [
+            "short_ratio (short_interest): score=89, value=1.14",
+            "recommendation_mean (analyst_consensus): score=81, value=1.79",
+            "short_pct_of_float (short_interest): score=69, value=2.3%"
+        ],
+        "weakest": [
+            "upside_to_target (analyst_consensus): score=42, value=6.0%",
+            "held_pct_insiders (institutional_positioning): score=55, value=0.5%",
+            "upgrades_12m (rating_momentum): score=56, value=5.00"
+        ]
+    },
+    "news_sentiment_raw_metrics": {
+        "sector": "Basic Materials",
+        "industry": "Aluminum",
+        "market_cap_usd": 18836457472,
+        "current_price": 71.38,
+        "earnings": {
+            "beat_count_4q": 2,
+            "miss_count_4q": 1,
+            "total_quarters_4q": 4,
+            "avg_surprise_magnitude_4q": 0.1876876397317151,
+            "eps_estimate_revision_90d": null,
+            "trailing_eps": 3.9,
+            "forward_eps": 6.73588
+        },
+        "price_momentum": {
+            "return_1m": 0.04325443774445904,
+            "return_3m": 0.1997205534893594,
+            "return_6m": 0.9986412198737913
+        },
+        "insider_activity": {
+            "insider_purchases_count_90d": 0,
+            "insider_sales_count_90d": 0,
+            "insider_net_value_90d_usd": null
+        },
+        "data_quality_flags": []
+    },
+    "news_sentiment_raw_metrics_date": "2026-05-25",
+    "news_sentiment_score": 72.38451766195001,
+    "news_sentiment_score_date": "2026-05-25",
+    "news_sentiment_subscores": {
+        "earnings_surprise_revisions": 72.50866029530994,
+        "price_momentum": 83.4526338595651,
+        "insider_activity": 50.0
+    },
+    "news_sentiment_drivers": {
+        "strongest": [
+            "return_6m (price_momentum): score=100, value=99.9%",
+            "avg_surprise_magnitude_4q (earnings_surprise_revisions): score=99, value=18.8%",
+            "return_3m (price_momentum): score=83, value=20.0%"
+        ],
+        "weakest": [
+            "beat_rate_4q (earnings_surprise_revisions): score=50, value=50.0%",
+            "insider_activity_summary (insider_activity): score=50, value=no activity in 90d",
+            "return_1m (price_momentum): score=57, value=4.3%"
+        ]
+    },
+    "composite_score": 61.15307304857795,
+    "composite_score_date": "2026-05-25",
+    "composite_rank": 156,
+    "composite_metadata": {
+        "scores_used": [
+            "financial",
+            "professional",
+            "news_sentiment"
+        ],
+        "scores_imputed": [],
+        "imputed_values": {},
+        "imputation_r_squared": null,
+        "weights_applied": {
+            "financial": 50,
+            "professional": 30,
+            "news_sentiment": 20
+        }
+    }
+}

@@ -1,0 +1,202 @@
+{
+    "ticker": "WM",
+    "company_name": "Waste Management, Inc.",
+    "universe_added_date": "2026-05-18",
+    "financial_raw_metrics": {
+        "sector": "Industrials",
+        "industry": "Waste Management",
+        "market_cap_usd": 87503355904,
+        "profitability": {
+            "gross_margin_ttm": 0.40605,
+            "operating_margin_ttm": 0.1752,
+            "net_margin_ttm": 0.10994001,
+            "operating_margin_trend_3yr": 0.008760626195111337
+        },
+        "returns_on_capital": {
+            "roe_ttm": 0.29936,
+            "roa_ttm": 0.065960005,
+            "roic_ttm": null
+        },
+        "cash_flow": {
+            "fcf_margin_ttm": 0.0840809830384204,
+            "fcf_to_net_income_ttm": 0.7647637973835956,
+            "ocf_cagr_3yr": 0.10033902513219672
+        },
+        "balance_sheet": {
+            "debt_to_equity": 2.28408,
+            "net_debt_to_ebitda": 2.966979826184623,
+            "current_ratio": 0.934,
+            "interest_coverage": 4.756578947368421,
+            "total_debt_usd": 22890999808,
+            "total_cash_usd": 158000000
+        },
+        "growth": {
+            "revenue_growth_1yr": 0.035,
+            "revenue_cagr_3yr": 0.08563152473174229,
+            "eps_growth_1yr": 0.133,
+            "eps_cagr_3yr": 0.06560486012329081,
+            "fcf_cagr_3yr": 0.1305079058261911
+        },
+        "valuation": {
+            "pe_trailing": 31.534008,
+            "pe_forward": 23.564245,
+            "ps_ratio": 3.4432518,
+            "pb_ratio": 8.74714,
+            "ev_ebitda": 14.388,
+            "peg_ratio": 2.2182,
+            "fcf_yield": 0.024419062902504333
+        },
+        "data_quality_flags": [
+            "WM: eps_cagr_3yr approximated by net income CAGR (share count changes not adjusted)"
+        ]
+    },
+    "financial_raw_metrics_date": "2026-05-25",
+    "financial_score": 51.79061979086617,
+    "financial_score_date": "2026-05-25",
+    "financial_subscores": {
+        "profitability": 59.30759532004301,
+        "returns_on_capital": 47.758101536508725,
+        "cash_flow_quality": 58.04061655583591,
+        "balance_sheet": 46.209819285259854,
+        "growth": 56.938544667753874,
+        "valuation": 41.32755562152242
+    },
+    "financial_drivers": {
+        "strongest": [
+            "fcf_to_net_income_ttm (cash_flow_quality): score=71, value=76.5%",
+            "fcf_cagr_3yr (growth): score=68, value=13.1%",
+            "interest_coverage (balance_sheet): score=67, value=4.76"
+        ],
+        "weakest": [
+            "current_ratio (balance_sheet): score=26, value=93.4%",
+            "peg_ratio (valuation): score=28, value=2.22",
+            "pe_trailing (valuation): score=33, value=31.53"
+        ]
+    },
+    "professional_raw_metrics": {
+        "sector": "Industrials",
+        "industry": "Waste Management",
+        "market_cap_usd": 87503355904,
+        "current_price": 217.9,
+        "analyst": {
+            "recommendation_mean": 1.75,
+            "recommendation_key": "buy",
+            "target_mean_price": 256.04,
+            "target_median_price": 263.0,
+            "target_high_price": 285.0,
+            "target_low_price": 210.0,
+            "upside_to_target": 0.17503441945846726,
+            "target_dispersion": 0.29292298078425244,
+            "num_analysts": 25
+        },
+        "rating_momentum": {
+            "upgrades_12m": 2,
+            "downgrades_12m": 1,
+            "total_actions_12m": 51
+        },
+        "institutional": {
+            "held_pct_institutions": 0.86227995,
+            "held_pct_insiders": 0.0024899999
+        },
+        "short_interest": {
+            "short_pct_of_float": 0.0167,
+            "short_ratio": 3.4,
+            "short_change_pct": 0.1466246405575444
+        },
+        "data_quality_flags": []
+    },
+    "professional_raw_metrics_date": "2026-05-25",
+    "professional_score": 64.74868493132051,
+    "professional_score_date": "2026-05-25",
+    "professional_subscores": {
+        "analyst_consensus": 77.16896129723115,
+        "rating_momentum": 53.735294117647065,
+        "institutional_positioning": 62.108104129393446,
+        "short_interest": 58.524659436863196
+    },
+    "professional_drivers": {
+        "strongest": [
+            "recommendation_mean (analyst_consensus): score=82, value=1.75",
+            "upside_to_target (analyst_consensus): score=69, value=17.5%",
+            "held_pct_institutions (institutional_positioning): score=66, value=86.2%"
+        ],
+        "weakest": [
+            "short_change_pct (short_interest): score=32, value=14.7%",
+            "held_pct_insiders (institutional_positioning): score=52, value=0.2%",
+            "upgrades_12m (rating_momentum): score=54, value=2.00"
+        ]
+    },
+    "news_sentiment_raw_metrics": {
+        "sector": null,
+        "industry": null,
+        "market_cap_usd": null,
+        "current_price": null,
+        "earnings": {
+            "beat_count_4q": null,
+            "miss_count_4q": null,
+            "total_quarters_4q": null,
+            "avg_surprise_magnitude_4q": null,
+            "eps_estimate_revision_90d": null,
+            "trailing_eps": null,
+            "forward_eps": null
+        },
+        "price_momentum": {
+            "return_1m": -0.026928053304710525,
+            "return_3m": -0.06277782601616123,
+            "return_6m": 0.012971801587878638
+        },
+        "insider_activity": {
+            "insider_purchases_count_90d": null,
+            "insider_sales_count_90d": null,
+            "insider_net_value_90d_usd": null
+        },
+        "data_quality_flags": [
+            "WM: failed to fetch .info (Too Many Requests. Rate limited. Try after a while.)",
+            "WM: sector classification unavailable",
+            "WM: earnings_dates fetch failed (['Earnings Date'])",
+            "WM: eps_revisions fetch failed (Too Many Requests. Rate limited. Try after a while.)",
+            "WM: insider_transactions fetch failed (Too Many Requests. Rate limited. Try after a while.)"
+        ]
+    },
+    "news_sentiment_raw_metrics_date": "2026-05-25",
+    "news_sentiment_score": null,
+    "news_sentiment_score_date": "2026-05-25",
+    "news_sentiment_subscores": {
+        "earnings_surprise_revisions": null,
+        "price_momentum": 46.0807447005529,
+        "insider_activity": null
+    },
+    "news_sentiment_drivers": {
+        "strongest": [
+            "return_6m (price_momentum): score=52, value=1.3%",
+            "return_1m (price_momentum): score=46, value=-2.7%",
+            "return_3m (price_momentum): score=40, value=-6.3%"
+        ],
+        "weakest": [
+            "return_3m (price_momentum): score=40, value=-6.3%",
+            "return_1m (price_momentum): score=46, value=-2.7%",
+            "return_6m (price_momentum): score=52, value=1.3%"
+        ]
+    },
+    "composite_score": 55.2843908027599,
+    "composite_score_date": "2026-05-25",
+    "composite_rank": 466,
+    "composite_metadata": {
+        "scores_used": [
+            "financial",
+            "professional"
+        ],
+        "scores_imputed": [
+            "news_sentiment"
+        ],
+        "imputed_values": {
+            "news_sentiment": 49.82237713965333
+        },
+        "imputation_r_squared": 0.031937368103860275,
+        "weights_applied": {
+            "financial": 50,
+            "professional": 30,
+            "news_sentiment": 20
+        }
+    }
+}
