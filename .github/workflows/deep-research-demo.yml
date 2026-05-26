@@ -1,8 +1,9 @@
 name: Deep Research Demo (manual)
 
-# Manual dispatch only — runs the standalone OpenRouter Deep Research demo
-# (deep research demo/runDeepResearch.py) against user-supplied companies.
-# Self-contained: does not touch real pipeline state.
+# Manual dispatch only — runs the standalone Deep Research demo
+# (deep research demo/runDeepResearch.py) against user-supplied companies,
+# optionally on both backend variants (OpenRouter and Moonshot) for
+# side-by-side comparison. Self-contained: does not touch real pipeline state.
 on:
   workflow_dispatch:
     inputs:
@@ -10,6 +11,14 @@ on:
         description: 'Comma-separated. Bare or full ("Apple Inc (AAPL),Microsoft Corp (MSFT)").'
         required: true
         type: string
+      run_openrouter:
+        description: 'Run the OpenRouter (Kimi K2.6) variant'
+        type: boolean
+        default: true
+      run_moonshot:
+        description: 'Run the Moonshot (direct API + formula tools) variant'
+        type: boolean
+        default: true
       run_finance:
         description: 'Run FINANCE report'
         type: boolean
@@ -39,6 +48,7 @@ jobs:
 
     env:
       OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
+      MOONSHOT_API_KEY: ${{ secrets.MOONSHOT_API_KEY }}
 
     steps:
       - name: Checkout
@@ -58,6 +68,14 @@ jobs:
         working-directory: "deep research demo"
         run: |
           set -e
+          BACKENDS=()
+          if [ "${{ inputs.run_openrouter }}" = "true" ]; then BACKENDS+=("openrouter"); fi
+          if [ "${{ inputs.run_moonshot }}"   = "true" ]; then BACKENDS+=("moonshot");   fi
+          if [ ${#BACKENDS[@]} -eq 0 ]; then
+            echo "Error: at least one backend must be enabled." >&2
+            exit 1
+          fi
+
           TYPES=()
           if [ "${{ inputs.run_finance }}" = "true" ];     then TYPES+=("FINANCE"); fi
           if [ "${{ inputs.run_news }}" = "true" ];        then TYPES+=("NEWS"); fi
@@ -68,13 +86,15 @@ jobs:
           fi
 
           IFS=',' read -ra COMPANIES <<< "${{ inputs.companies }}"
-          for raw in "${COMPANIES[@]}"; do
-            company="$(echo "$raw" | sed 's/^ *//;s/ *$//')"
-            [ -z "$company" ] && continue
-            for rt in "${TYPES[@]}"; do
-              echo "::group::$company — $rt"
-              python runDeepResearch.py "$company" "$rt"
-              echo "::endgroup::"
+          for backend in "${BACKENDS[@]}"; do
+            for raw in "${COMPANIES[@]}"; do
+              company="$(echo "$raw" | sed 's/^ *//;s/ *$//')"
+              [ -z "$company" ] && continue
+              for rt in "${TYPES[@]}"; do
+                echo "::group::$backend — $company — $rt"
+                python runDeepResearch.py --backend "$backend" "$company" "$rt"
+                echo "::endgroup::"
+              done
             done
           done
 
@@ -84,7 +104,7 @@ jobs:
         with:
           name: deep-research-demo-output
           path: |
-            deep research demo/*_research_demo.json
+            deep research demo/*_research_demo_*.json
             deep research demo/research_log_*.log
           if-no-files-found: warn
 
