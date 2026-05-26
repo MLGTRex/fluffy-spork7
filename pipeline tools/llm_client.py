@@ -28,7 +28,7 @@ BACKEND = "moonshot"
 # before flipping (likely `moonshotai/kimi-k2-thinking` or similar).
 MODEL_BY_BACKEND = {
     "moonshot":   "kimi-k2.6",
-    "openrouter": "moonshotai/kimi-k2-thinking",
+    "openrouter": "moonshotai/kimi-k2.6",
 }
 
 # Base URL for each backend. Moonshot's base URL is overridable via env
