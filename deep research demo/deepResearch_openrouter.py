@@ -30,7 +30,7 @@ logger = logging.getLogger(__name__)
 
 MODEL = "moonshotai/kimi-k2.6"
 MAX_TOKENS = 32768
-MAX_SEARCH_RESULTS = 25
+MAX_SEARCH_RESULTS = 15
 
 
 async def run_deep_research(question: str, system_prompt_type: str = "FINANCE") -> str:
