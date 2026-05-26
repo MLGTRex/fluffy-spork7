@@ -1,0 +1,110 @@
+name: Deep Research Demo (manual)
+
+# Manual dispatch only — runs the standalone OpenRouter Deep Research demo
+# (deep research demo/runDeepResearch.py) against user-supplied companies.
+# Self-contained: does not touch real pipeline state.
+on:
+  workflow_dispatch:
+    inputs:
+      companies:
+        description: 'Comma-separated. Bare or full ("Apple Inc (AAPL),Microsoft Corp (MSFT)").'
+        required: true
+        type: string
+      run_finance:
+        description: 'Run FINANCE report'
+        type: boolean
+        default: true
+      run_news:
+        description: 'Run NEWS report'
+        type: boolean
+        default: true
+      run_environment:
+        description: 'Run ENVIRONMENT report'
+        type: boolean
+        default: true
+
+permissions:
+  contents: write
+
+# Separate group from `pipeline` — the demo doesn't touch pipeline state, so
+# there's no reason to serialise it against real pipeline runs.
+concurrency:
+  group: deep-research-demo
+  cancel-in-progress: false
+
+jobs:
+  demo:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+
+    env:
+      OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Run demo
+        working-directory: "deep research demo"
+        run: |
+          set -e
+          TYPES=()
+          if [ "${{ inputs.run_finance }}" = "true" ];     then TYPES+=("FINANCE"); fi
+          if [ "${{ inputs.run_news }}" = "true" ];        then TYPES+=("NEWS"); fi
+          if [ "${{ inputs.run_environment }}" = "true" ]; then TYPES+=("ENVIRONMENT"); fi
+          if [ ${#TYPES[@]} -eq 0 ]; then
+            echo "Error: at least one report type must be enabled." >&2
+            exit 1
+          fi
+
+          IFS=',' read -ra COMPANIES <<< "${{ inputs.companies }}"
+          for raw in "${COMPANIES[@]}"; do
+            company="$(echo "$raw" | sed 's/^ *//;s/ *$//')"
+            [ -z "$company" ] && continue
+            for rt in "${TYPES[@]}"; do
+              echo "::group::$company — $rt"
+              python runDeepResearch.py "$company" "$rt"
+              echo "::endgroup::"
+            done
+          done
+
+      - name: Upload artifact
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: deep-research-demo-output
+          path: |
+            deep research demo/*_research_demo.json
+            deep research demo/research_log_*.log
+          if-no-files-found: warn
+
+      - name: Commit & push results
+        if: always()
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add "deep research demo/"
+          if git diff --cached --quiet; then
+            echo "No demo output to commit."
+            exit 0
+          fi
+          git commit -m "deep research demo: ${{ inputs.companies }} ($(date -u +%Y-%m-%dT%H:%M:%SZ))"
+          for attempt in 1 2 3 4 5; do
+            git pull --rebase --autostash origin main \
+              && git push origin HEAD:main \
+              && { echo "Pushed on attempt $attempt."; exit 0; }
+            echo "Push attempt $attempt failed; retrying..."
+            sleep 5
+          done
+          echo "Could not push state after 5 attempts." >&2
+          exit 1
