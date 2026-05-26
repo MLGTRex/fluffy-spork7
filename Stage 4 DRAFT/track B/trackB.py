@@ -11,10 +11,14 @@ LLM call once if the first output violates any constraints.
 
 import os
 import re
+import sys
 import json
 import logging
 from openai import AsyncOpenAI
 from dotenv import load_dotenv
+
+sys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "..", "pipeline tools"))
+from llm_client import get_llm_client
 
 load_dotenv()
 
@@ -30,19 +34,7 @@ WEIGHT_SUM_TOLERANCE = 0.5  # allocations must sum to 100 ± 0.5
 
 # ============ LLM CONFIG ============
 
-MODEL = "kimi-k2.6"
 MAX_TOKENS = 32768
-
-
-# ============ CLIENT ============
-
-def get_client() -> AsyncOpenAI:
-    """Initialize the Kimi-compatible AsyncOpenAI client (matches Stage 2/3 pattern)."""
-    api_key = os.getenv("MOONSHOT_API_KEY")
-    base_url = os.getenv("MOONSHOT_BASE_URL") or "https://api.moonshot.ai/v1"
-    if not api_key:
-        raise EnvironmentError("Missing MOONSHOT_API_KEY environment variable")
-    return AsyncOpenAI(base_url=base_url, api_key=api_key)
 
 
 # ============ PROMPT BUILDING ============
@@ -242,7 +234,7 @@ def validate_portfolio(parsed: dict, candidates: list) -> list:
 
 # ============ LLM CALL ============
 
-async def _call_llm(client: AsyncOpenAI, system_prompt: str, user_message: str) -> str:
+async def _call_llm(client: AsyncOpenAI, model: str, system_prompt: str, user_message: str) -> str:
     """
     Single LLM call returning the response text.
 
@@ -257,7 +249,7 @@ async def _call_llm(client: AsyncOpenAI, system_prompt: str, user_message: str) 
         {"role": "user", "content": user_message},
     ]
     stream = await client.chat.completions.create(
-        model=MODEL,
+        model=model,
         messages=messages,
         max_tokens=MAX_TOKENS,
         stream=True,
@@ -296,7 +288,7 @@ async def construct_track_b_portfolio(
     """
     logger.info("Initialising Track B portfolio construction...")
 
-    client = get_client()
+    client, model = get_llm_client()
 
     try:
         user_message = build_user_message(candidates, summaries_by_ticker, pre_opt)
@@ -304,7 +296,7 @@ async def construct_track_b_portfolio(
 
         # First attempt
         logger.info("Sending initial Track B request to model...")
-        response_1 = await _call_llm(client, system_prompt, user_message)
+        response_1 = await _call_llm(client, model, system_prompt, user_message)
         logger.info(f"Initial response received ({len(response_1)} chars).")
 
         parsed_1 = None
@@ -320,7 +312,7 @@ async def construct_track_b_portfolio(
             return {
                 "constraint_violations": [],
                 "portfolio": parsed_1,
-                "model": MODEL,
+                "model": model,
                 "raw_response_attempt_1": response_1,
                 "raw_response_attempt_2": None,
             }
@@ -332,7 +324,7 @@ async def construct_track_b_portfolio(
         # Retry
         retry_user_message = build_retry_user_message(user_message, response_1, violations_1)
         logger.info("Sending retry Track B request to model...")
-        response_2 = await _call_llm(client, system_prompt, retry_user_message)
+        response_2 = await _call_llm(client, model, system_prompt, retry_user_message)
         logger.info(f"Retry response received ({len(response_2)} chars).")
 
         parsed_2 = None
@@ -348,7 +340,7 @@ async def construct_track_b_portfolio(
             return {
                 "constraint_violations": [],
                 "portfolio": parsed_2,
-                "model": MODEL,
+                "model": model,
                 "raw_response_attempt_1": response_1,
                 "raw_response_attempt_2": response_2,
             }
@@ -360,7 +352,7 @@ async def construct_track_b_portfolio(
         return {
             "constraint_violations": violations_2,
             "portfolio": parsed_2 if parsed_2 is not None else parsed_1,
-            "model": MODEL,
+            "model": model,
             "raw_response_attempt_1": response_1,
             "raw_response_attempt_2": response_2,
         }

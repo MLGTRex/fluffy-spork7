@@ -17,15 +17,18 @@ it. Threshold 0.
 
 import os
 import re
+import sys
 import json
 import asyncio
 import logging
 
 from openai import AsyncOpenAI
 
+sys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "..", "pipeline tools"))
+from llm_client import get_llm_client
+
 logger = logging.getLogger(__name__)
 
-MODEL = "kimi-k2.6"
 MAX_TOKENS = 32768
 
 STAGE4_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -40,9 +43,9 @@ def _load_prompt(name: str) -> str:
         return f.read()
 
 
-async def _call_llm(client: AsyncOpenAI, system_prompt: str, user_message: str) -> str:
+async def _call_llm(client: AsyncOpenAI, model: str, system_prompt: str, user_message: str) -> str:
     response = await client.chat.completions.create(
-        model=MODEL,
+        model=model,
         messages=[
             {"role": "system", "content": system_prompt},
             {"role": "user", "content": user_message},
@@ -132,11 +135,7 @@ async def adjudicate(change_kind: str, ticker: str, company_name: str,
     rebuttal_prompt = _load_prompt("reconciliation_rebuttal.md")
     synthesis_prompt = _load_prompt("reconciliation_synthesis.md")
 
-    api_key = os.getenv("MOONSHOT_API_KEY")
-    base_url = os.getenv("MOONSHOT_BASE_URL") or "https://api.moonshot.ai/v1"
-    if not api_key:
-        raise EnvironmentError("Missing MOONSHOT_API_KEY environment variable")
-    client = AsyncOpenAI(base_url=base_url, api_key=api_key)
+    client, model = get_llm_client()
 
     try:
         logger.info(f"[{ticker}] reconciliation debate: {frame['description']}")
@@ -149,8 +148,8 @@ async def adjudicate(change_kind: str, ticker: str, company_name: str,
             )
 
         keep_case, change_case = await asyncio.gather(
-            _call_llm(client, keep_case_prompt, case_user(frame["keep_instruction"])),
-            _call_llm(client, change_case_prompt, case_user(frame["change_instruction"])),
+            _call_llm(client, model, keep_case_prompt, case_user(frame["keep_instruction"])),
+            _call_llm(client, model, change_case_prompt, case_user(frame["change_instruction"])),
         )
 
         def rebuttal_user(side_instruction, own_case, opposing_case):
@@ -163,9 +162,9 @@ async def adjudicate(change_kind: str, ticker: str, company_name: str,
             )
 
         keep_rebuttal, change_rebuttal = await asyncio.gather(
-            _call_llm(client, rebuttal_prompt,
+            _call_llm(client, model, rebuttal_prompt,
                       rebuttal_user(frame["keep_instruction"], keep_case, change_case)),
-            _call_llm(client, rebuttal_prompt,
+            _call_llm(client, model, rebuttal_prompt,
                       rebuttal_user(frame["change_instruction"], change_case, keep_case)),
         )
 
@@ -176,7 +175,7 @@ async def adjudicate(change_kind: str, ticker: str, company_name: str,
             f"---\n\n# STATUS-QUO REBUTTAL\n\n{keep_rebuttal}\n\n"
             f"---\n\n# CHANGE REBUTTAL\n\n{change_rebuttal}"
         )
-        synthesis = await _call_llm(client, synthesis_prompt, synthesis_user)
+        synthesis = await _call_llm(client, model, synthesis_prompt, synthesis_user)
     finally:
         await client.close()
 

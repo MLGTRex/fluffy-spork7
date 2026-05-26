@@ -10,10 +10,14 @@ includes the previous selection + violation feedback so the LLM can try again.
 
 import os
 import re
+import sys
 import json
 import logging
 from openai import AsyncOpenAI
 from dotenv import load_dotenv
+
+sys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "..", "pipeline tools"))
+from llm_client import get_llm_client
 
 load_dotenv()
 
@@ -21,32 +25,21 @@ logger = logging.getLogger(__name__)
 
 # ============ LLM CONFIG ============
 
-MODEL = "kimi-k2.6"
 MAX_TOKENS = 32768
 
 PORTFOLIO_SIZE = 15
 
 
-# ============ CLIENT ============
-
-def get_client() -> AsyncOpenAI:
-    api_key = os.getenv("MOONSHOT_API_KEY")
-    base_url = os.getenv("MOONSHOT_BASE_URL") or "https://api.moonshot.ai/v1"
-    if not api_key:
-        raise EnvironmentError("Missing MOONSHOT_API_KEY environment variable")
-    return AsyncOpenAI(base_url=base_url, api_key=api_key)
-
-
 # ============ LLM CALL (STREAMING) ============
 
-async def _call_llm(client: AsyncOpenAI, system_prompt: str, user_message: str) -> str:
+async def _call_llm(client: AsyncOpenAI, model: str, system_prompt: str, user_message: str) -> str:
     """Single LLM call with streaming, returns concatenated response text."""
     messages = [
         {"role": "system", "content": system_prompt},
         {"role": "user", "content": user_message},
     ]
     stream = await client.chat.completions.create(
-        model=MODEL,
+        model=model,
         messages=messages,
         max_tokens=MAX_TOKENS,
         stream=True,
@@ -259,7 +252,7 @@ async def select_consolidation_portfolio(
             "model": str,
         }
     """
-    client = get_client()
+    client, model = get_llm_client()
     try:
         initial = build_user_message(
             union_candidates, summaries_by_ticker, track_a, track_b, pre_opt
@@ -274,7 +267,7 @@ async def select_consolidation_portfolio(
             user_message = initial
             logger.info(f"Sending consolidation initial request ({len(user_message)} chars)...")
 
-        response = await _call_llm(client, system_prompt, user_message)
+        response = await _call_llm(client, model, system_prompt, user_message)
         logger.info(f"Consolidation response received ({len(response)} chars).")
 
         parsed = None
@@ -290,7 +283,7 @@ async def select_consolidation_portfolio(
             "raw_response": response,
             "parsed": parsed,
             "selection_violations": violations,
-            "model": MODEL,
+            "model": model,
         }
     finally:
         await client.close()

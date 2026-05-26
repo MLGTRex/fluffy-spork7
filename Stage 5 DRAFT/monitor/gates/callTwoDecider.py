@@ -12,7 +12,7 @@ Design:
   - Ignores uncited claims (the prompt enforces this rule)
 
 Configuration:
-    MODEL                  = kimi-k2.6
+    Backend + model id come from pipeline tools/llm_client.py (default: kimi-k2.6 via Moonshot).
     MAX_TOKENS             = 16384
 
 Public API:
@@ -57,9 +57,12 @@ import argparse
 from datetime import datetime
 from typing import Optional
 
+sys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "..", "..", "pipeline tools"))
+
 try:
     from openai import AsyncOpenAI
     from dotenv import load_dotenv
+    from llm_client import get_llm_client
     load_dotenv()
 except ImportError:
     pass
@@ -70,7 +73,6 @@ logger = logging.getLogger(__name__)
 
 # ============ CONFIG ============
 
-MODEL = "kimi-k2.6"
 MAX_TOKENS = 16384  # smaller than Call 1; decisions are shorter than investigations
 
 
@@ -415,18 +417,10 @@ async def decide_rerun(packet: dict) -> dict:
         "validation_violations": [],
         "token_usage": {"input_tokens": None, "output_tokens": None,
                         "total_tokens": None},
-        "model": MODEL,
+        "model": None,
         "status": "unknown",
         "error": None,
     }
-
-    api_key = os.getenv("MOONSHOT_API_KEY")
-    base_url = os.getenv("MOONSHOT_BASE_URL") or "https://api.moonshot.ai/v1"
-    if not api_key:
-        result["status"] = "api_failed"
-        result["error"] = "MOONSHOT_API_KEY env var not set"
-        logger.error(result["error"])
-        return result
 
     try:
         system_prompt = _load_prompt()
@@ -439,14 +433,15 @@ async def decide_rerun(packet: dict) -> dict:
     user_message = build_user_message(packet)
 
     try:
-        openai = AsyncOpenAI(base_url=base_url, api_key=api_key)
+        openai, model = get_llm_client()
     except Exception as e:
         result["status"] = "api_failed"
-        result["error"] = f"Could not initialize OpenAI client: {e}"
+        result["error"] = f"Could not initialize LLM client: {e}"
         logger.exception("Client init failed:")
         return result
 
-    logger.info(f"[{ticker}] Call 2 decider starting (model={MODEL})")
+    result["model"] = model
+    logger.info(f"[{ticker}] Call 2 decider starting (model={model})")
 
     messages = [
         {"role": "system", "content": system_prompt},
@@ -455,7 +450,7 @@ async def decide_rerun(packet: dict) -> dict:
 
     try:
         response = await openai.chat.completions.create(
-            model=MODEL,
+            model=model,
             messages=messages,
             max_tokens=MAX_TOKENS,
         )

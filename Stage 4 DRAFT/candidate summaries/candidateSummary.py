@@ -7,10 +7,13 @@ Per-company task. One LLM call per candidate, run with concurrency control.
 """
 
 import os
+import sys
 import json
 import logging
-from openai import AsyncOpenAI
 from dotenv import load_dotenv
+
+sys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "..", "pipeline tools"))
+from llm_client import get_llm_client
 
 load_dotenv()
 
@@ -18,19 +21,7 @@ logger = logging.getLogger(__name__)
 
 # ============ LLM CONFIG ============
 
-MODEL = "kimi-k2.6"
 MAX_TOKENS = 32768
-
-
-# ============ CLIENT ============
-
-def get_client() -> AsyncOpenAI:
-    """Initialize the Kimi-compatible AsyncOpenAI client (matches Stage 2/3 pattern)."""
-    api_key = os.getenv("MOONSHOT_API_KEY")
-    base_url = os.getenv("MOONSHOT_BASE_URL") or "https://api.moonshot.ai/v1"
-    if not api_key:
-        raise EnvironmentError("Missing MOONSHOT_API_KEY environment variable")
-    return AsyncOpenAI(base_url=base_url, api_key=api_key)
 
 
 # ============ PROMPT ASSEMBLY ============
@@ -108,7 +99,7 @@ async def summarize_candidate(candidate: dict, prompt_template: str) -> dict:
     ticker = candidate.get("ticker", "?")
     logger.info(f"Initialising Candidate Summary for {ticker}...")
 
-    client = get_client()
+    client, model = get_llm_client()
     user_message = build_user_message(candidate)
 
     messages = [
@@ -119,7 +110,7 @@ async def summarize_candidate(candidate: dict, prompt_template: str) -> dict:
     try:
         logger.info(f"Sending summary request to model for {ticker}...")
         response = await client.chat.completions.create(
-            model=MODEL,
+            model=model,
             messages=messages,
             max_tokens=MAX_TOKENS,
         )
@@ -129,7 +120,7 @@ async def summarize_candidate(candidate: dict, prompt_template: str) -> dict:
         return {
             "ticker": ticker,
             "summary": content.strip(),
-            "model": MODEL,
+            "model": model,
             "error": None,
         }
 
@@ -138,7 +129,7 @@ async def summarize_candidate(candidate: dict, prompt_template: str) -> dict:
         return {
             "ticker": ticker,
             "summary": "",
-            "model": MODEL,
+            "model": model,
             "error": str(e),
         }
 
