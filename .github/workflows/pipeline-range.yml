@@ -1,0 +1,129 @@
+name: Pipeline range (manual)
+
+# Manual dispatch — run any contiguous range of stages 1-6 in one job.
+# Pick from_stage and to_stage; optionally toggle Stage 4 executor dry-run
+# and Stage 5 pruner/monitor.
+on:
+  workflow_dispatch:
+    inputs:
+      from_stage:
+        description: 'First stage to run (1-6)'
+        type: choice
+        options: ['1', '2', '3', '4', '5', '6']
+        default: '1'
+      to_stage:
+        description: 'Last stage to run (1-6)'
+        type: choice
+        options: ['1', '2', '3', '4', '5', '6']
+        default: '4'
+      dry_run_executor:
+        description: 'Stage 4 only: run Portfolio Execution in dry-run mode (no real Alpaca orders). Default true for safety.'
+        type: choice
+        options: ['true', 'false']
+        default: 'true'
+      stage5_pruner:
+        description: 'Stage 5 only: run the pruner (post-Stage-4 cleanup).'
+        type: choice
+        options: ['true', 'false']
+        default: 'true'
+      stage5_monitor:
+        description: 'Stage 5 only: run the live monitor (single-pass). Default false; it can re-fire the full pipeline.'
+        type: choice
+        options: ['true', 'false']
+        default: 'false'
+
+permissions:
+  contents: write
+
+# Share the `pipeline` group so a range run can't race with other stage workflows.
+concurrency:
+  group: pipeline
+  cancel-in-progress: false
+
+jobs:
+  run-range:
+    runs-on: ubuntu-latest
+    timeout-minutes: 360
+
+    env:
+      MOONSHOT_API_KEY: ${{ secrets.MOONSHOT_API_KEY }}
+      OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
+      ALPACA_API_KEY: ${{ secrets.ALPACA_API_KEY }}
+      ALPACA_SECRET_KEY: ${{ secrets.ALPACA_SECRET_KEY }}
+      STAGE4_EXECUTOR_DRY_RUN: ${{ inputs.dry_run_executor }}
+
+    steps:
+      - name: Validate inputs
+        run: |
+          from_stage="${{ inputs.from_stage }}"
+          to_stage="${{ inputs.to_stage }}"
+          if [ "$from_stage" -gt "$to_stage" ]; then
+            echo "::error::from_stage ($from_stage) must be <= to_stage ($to_stage)"
+            exit 1
+          fi
+          echo "Plan: run Stages $from_stage through $to_stage"
+          echo "  Stage 4 executor dry-run: ${{ inputs.dry_run_executor }}"
+          echo "  Stage 5 pruner:           ${{ inputs.stage5_pruner }}"
+          echo "  Stage 5 monitor:          ${{ inputs.stage5_monitor }}"
+
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Stage 1
+        if: ${{ fromJSON(inputs.from_stage) <= 1 && fromJSON(inputs.to_stage) >= 1 }}
+        run: python "Stage 1 DRAFT/main.py"
+
+      - name: Stage 2
+        if: ${{ fromJSON(inputs.from_stage) <= 2 && fromJSON(inputs.to_stage) >= 2 }}
+        run: python "Stage 2 DRAFT/main.py"
+
+      - name: Stage 3
+        if: ${{ fromJSON(inputs.from_stage) <= 3 && fromJSON(inputs.to_stage) >= 3 }}
+        run: python "Stage 3 DRAFT/main.py"
+
+      - name: Stage 4
+        if: ${{ fromJSON(inputs.from_stage) <= 4 && fromJSON(inputs.to_stage) >= 4 }}
+        run: python "Stage 4 DRAFT/main.py"
+
+      - name: Stage 5 — Pruner
+        if: ${{ fromJSON(inputs.from_stage) <= 5 && fromJSON(inputs.to_stage) >= 5 && inputs.stage5_pruner == 'true' }}
+        run: python "Stage 5 DRAFT/pruner/runPrune.py" --execute
+
+      - name: Stage 5 — Monitor
+        if: ${{ fromJSON(inputs.from_stage) <= 5 && fromJSON(inputs.to_stage) >= 5 && inputs.stage5_monitor == 'true' }}
+        run: python "Stage 5 DRAFT/monitor/runMonitor.py"
+
+      - name: Stage 6
+        if: ${{ fromJSON(inputs.from_stage) <= 6 && fromJSON(inputs.to_stage) >= 6 }}
+        run: python "Stage 6 DRAFT/main.py"
+
+      - name: Commit & push state
+        if: always()
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          if git diff --cached --quiet; then
+            echo "No state changes to commit."
+            exit 0
+          fi
+          git commit -m "pipeline range: stages ${{ inputs.from_stage }}-${{ inputs.to_stage }} ($(date -u +%Y-%m-%dT%H:%M:%SZ))"
+          for attempt in 1 2 3 4 5; do
+            git pull --rebase --autostash origin main \
+              && git push origin HEAD:main \
+              && { echo "Pushed on attempt $attempt."; exit 0; }
+            echo "Push attempt $attempt failed; retrying..."
+            sleep 5
+          done
+          echo "Could not push state after 5 attempts." >&2
+          exit 1
