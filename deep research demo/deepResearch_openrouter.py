@@ -30,6 +30,7 @@ logger = logging.getLogger(__name__)
 
 MODEL = "moonshotai/kimi-k2.6"
 MAX_TOKENS = 32768
+MAX_SEARCH_RESULTS = 25
 
 
 async def run_deep_research(question: str, system_prompt_type: str = "FINANCE") -> str:
@@ -56,6 +57,8 @@ async def run_deep_research(question: str, system_prompt_type: str = "FINANCE") 
         "type": "openrouter:web_search",
         "parameters": {
             "engine": "exa",
+            "max_results": MAX_SEARCH_RESULTS,
+            "max_total_results": MAX_SEARCH_RESULTS,
         },
     }]
 
