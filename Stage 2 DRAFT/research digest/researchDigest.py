@@ -3,11 +3,11 @@ import os
 import sys
 import logging
 from datetime import datetime
-from openai import AsyncOpenAI
 from dotenv import load_dotenv
 
 sys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "..", "pipeline tools"))
 from moonshot_cache import extract_cache_stats, log_cache_stats
+from llm_client import get_llm_client
 
 PROMPTS_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "prompts")
 
@@ -44,11 +44,7 @@ async def _digest_section(
     company_name: str,
 ) -> str:
     """Run the dedup pass on a single research section. Returns the cleaned text."""
-    api_key = os.getenv("MOONSHOT_API_KEY")
-    base_url = os.getenv("MOONSHOT_BASE_URL") or "https://api.moonshot.ai/v1"
-
-    client = AsyncOpenAI(base_url=base_url, api_key=api_key, max_retries=5)
-    model = "kimi-k2.6"
+    client, model = get_llm_client(max_retries=5)
 
     user_message = (
         f"Below is the {section_label} research report for {company_name}. "
