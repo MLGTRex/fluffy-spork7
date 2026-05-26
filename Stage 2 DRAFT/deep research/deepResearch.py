@@ -1,11 +1,13 @@
 import os
-import json
+import sys
 import asyncio
-import httpx
 import logging
 from datetime import datetime
-from openai import AsyncOpenAI
 from dotenv import load_dotenv
+
+sys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "..", "pipeline tools"))
+from moonshot_formula_client import FormulaChatClient, normalise_formula_uri
+
 PROMPTS_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "prompts")
 
 def _load_prompt(name: str) -> str:
@@ -31,78 +33,6 @@ logging.basicConfig(
 logger = logging.getLogger(__name__)
 # ---------------------
 
-class FormulaChatClient:
-    def __init__(self, moonshot_base_url: str, api_key: str, model: str, max_tokens: int):
-        self.openai = AsyncOpenAI(base_url=moonshot_base_url, api_key=api_key, max_retries=5)
-        self.httpx = httpx.AsyncClient(base_url=moonshot_base_url, headers={"Authorization": f"Bearer {api_key}"}, timeout=30.0)
-        self.model = model
-        self.max_tokens = max_tokens
-
-    async def get_tools(self, formula_uri: str):
-        response = await self.httpx.get(f"/formulas/{formula_uri}/tools")
-        return response.json().get("tools", [])
-    
-    async def call_tool(self, formula_uri: str, function: str, args: dict):
-        response = await self.httpx.post(
-            f"/formulas/{formula_uri}/fibers",
-            json={"name": function, "arguments": json.dumps(args)},
-        )
-        fiber = response.json()
-        if fiber.get("status") == "succeeded":
-            return fiber["context"].get("output") or fiber["context"].get("encrypted_output")
-            
-        error_msg = fiber.get('error', 'Unknown error')
-        logger.error(f"Tool Error in {function}: {error_msg}")
-        return f"Error: {error_msg}"
-
-    async def handle_response(self, response, messages, all_tools, tool_to_uri):
-        message = response.choices[0].message
-        messages.append(message)
-
-        # Base case: The AI is done and has a text answer
-        if not message.tool_calls:
-            logger.info("✓ [AI] Final text response generated.")
-            return message.content
-
-        # Recursive case: The AI wants to use tools
-        logger.info(f"⚙ [AI] Requested {len(message.tool_calls)} tool call(s).")
-        
-        for call in message.tool_calls:
-            func_name = call.function.name
-            raw_args = call.function.arguments
-            
-            short_args = raw_args[:80] + "..." if len(raw_args) > 80 else raw_args
-            logger.info(f"→ Calling tool: '{func_name}' with args: {short_args}")
-            
-            uri = tool_to_uri.get(func_name)
-            if not uri:
-                logger.error(f"URI not found for {func_name}")
-                continue
-
-            # Execute the tool
-            result = await self.call_tool(uri, func_name, json.loads(raw_args))
-            logger.info(f"← Tool '{func_name}' completed.")
-            
-            # Append the result to the conversation history
-            messages.append({"role": "tool", "tool_call_id": call.id, "content": result})
-
-        # Send the tool results back to the AI for the next step
-        logger.info("↻ [AI] Sending tool results back to the model for analysis...")
-        next_res = await self.openai.chat.completions.create(
-            model=self.model, messages=messages, tools=all_tools, max_tokens=self.max_tokens
-        )
-        return await self.handle_response(next_res, messages, all_tools, tool_to_uri)
-
-    async def close(self):
-        await self.httpx.aclose()
-
-
-def normalise_formula_uri(uri: str) -> str:
-    if "/" not in uri: uri = f"moonshot/{uri}"
-    if ":" not in uri: uri = f"{uri}:latest"
-    return uri
-
-
 async def run_deep_research(question: str, system_prompt_type: str = "FINANCE", formulas: list = None):
     logger.info("Initializing Deep Research module...")
     
@@ -118,7 +48,12 @@ async def run_deep_research(question: str, system_prompt_type: str = "FINANCE", 
     api_key = os.getenv("MOONSHOT_API_KEY")
     base_url = os.getenv("MOONSHOT_BASE_URL") or "https://api.moonshot.ai/v1"
     
-    client = FormulaChatClient(base_url, api_key, model="kimi-k2.6", max_tokens=32768)
+    client = FormulaChatClient(
+        base_url=base_url, api_key=api_key,
+        model="kimi-k2.6", max_tokens=32768,
+        httpx_timeout=30.0, openai_max_retries=5,
+        logger=logger,
+    )
     
     logger.info(f"Loading tools from {len(formulas)} formulas...")
     all_tools = []
