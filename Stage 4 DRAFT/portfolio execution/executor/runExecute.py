@@ -274,6 +274,8 @@ async def main():
         DRY_RUN = True
     elif args.live:
         DRY_RUN = False
+    elif os.getenv("STAGE4_EXECUTOR_DRY_RUN", "").lower() in ("true", "1", "yes"):
+        DRY_RUN = True
 
     print(f"[Execution] Starting (DRY_RUN={DRY_RUN}, ALLOW_LIVE={ALLOW_LIVE})...")
 
